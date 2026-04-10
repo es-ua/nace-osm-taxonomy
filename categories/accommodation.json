@@ -1,0 +1,176 @@
+{
+  "slug": "accommodation",
+  "names": {
+    "en": "Accommodation",
+    "uk": "Проживання",
+    "de": "Unterkunft",
+    "ru": "Проживание",
+    "original": "Accommodation"
+  },
+  "icon": "🏨",
+  "naceRef": "I55",
+  "subcategories": [
+    {
+      "slug": "hotel",
+      "names": {
+        "en": "Hotel",
+        "uk": "Готель",
+        "de": "Hotel",
+        "ru": "Отель",
+        "original": "Hotel"
+      },
+      "osmTag": "tourism=hotel",
+      "templates": [
+        {
+          "slug": "single-room",
+          "names": {
+            "en": "Single Room",
+            "uk": "Одномісний номер",
+            "de": "Einzelzimmer",
+            "ru": "Одноместный номер",
+            "original": "Single Room"
+          }
+        },
+        {
+          "slug": "double-room",
+          "names": {
+            "en": "Double Room",
+            "uk": "Двомісний номер",
+            "de": "Doppelzimmer",
+            "ru": "Двухместный номер",
+            "original": "Double Room"
+          }
+        },
+        {
+          "slug": "suite",
+          "names": {
+            "en": "Suite",
+            "uk": "Люкс",
+            "de": "Suite",
+            "ru": "Люкс",
+            "original": "Suite"
+          }
+        },
+        {
+          "slug": "conference-room",
+          "names": {
+            "en": "Conference Room",
+            "uk": "Конференц-зал",
+            "de": "Konferenzraum",
+            "ru": "Конференц-зал",
+            "original": "Conference Room"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "hostel",
+      "names": {
+        "en": "Hostel",
+        "uk": "Хостел",
+        "de": "Hostel",
+        "ru": "Хостел",
+        "original": "Hostel"
+      },
+      "osmTag": "tourism=hostel",
+      "templates": [
+        {
+          "slug": "dorm-bed",
+          "names": {
+            "en": "Dorm Bed",
+            "uk": "Місце в кімнаті",
+            "de": "Bett im Schlafsaal",
+            "ru": "Место в общей комнате",
+            "original": "Dorm Bed"
+          }
+        },
+        {
+          "slug": "private-room",
+          "names": {
+            "en": "Private Room",
+            "uk": "Окрема кімната",
+            "de": "Privatzimmer",
+            "ru": "Отдельная комната",
+            "original": "Private Room"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "guest-house",
+      "names": {
+        "en": "Guest House",
+        "uk": "Гостьовий будинок",
+        "de": "Pension",
+        "ru": "Гостевой дом",
+        "original": "Guest House"
+      },
+      "osmTag": "tourism=guest_house",
+      "templates": [
+        {
+          "slug": "room-night",
+          "names": {
+            "en": "Room per Night",
+            "uk": "Номер за добу",
+            "de": "Zimmer pro Nacht",
+            "ru": "Номер за сутки",
+            "original": "Room per Night"
+          }
+        },
+        {
+          "slug": "weekly-stay",
+          "names": {
+            "en": "Weekly Stay",
+            "uk": "Тижневе проживання",
+            "de": "Wochenaufenthalt",
+            "ru": "Проживание на неделю",
+            "original": "Weekly Stay"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "apartment-rental",
+      "names": {
+        "en": "Apartment Rental",
+        "uk": "Оренда квартири",
+        "de": "Ferienwohnung",
+        "ru": "Аренда квартиры",
+        "original": "Apartment Rental"
+      },
+      "osmTag": "tourism=apartment",
+      "templates": [
+        {
+          "slug": "studio-apt",
+          "names": {
+            "en": "Studio",
+            "uk": "Студія",
+            "de": "Studio",
+            "ru": "Студия",
+            "original": "Studio"
+          }
+        },
+        {
+          "slug": "one-bedroom",
+          "names": {
+            "en": "One Bedroom",
+            "uk": "Однокімнатна",
+            "de": "Einzimmerwohnung",
+            "ru": "Однокомнатная",
+            "original": "One Bedroom"
+          }
+        },
+        {
+          "slug": "two-bedroom",
+          "names": {
+            "en": "Two Bedrooms",
+            "uk": "Двокімнатна",
+            "de": "Zweizimmerwohnung",
+            "ru": "Двухкомнатная",
+            "original": "Two Bedrooms"
+          }
+        }
+      ]
+    }
+  ]
+}

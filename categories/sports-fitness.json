@@ -1,0 +1,258 @@
+{
+  "slug": "sports-fitness",
+  "names": {
+    "en": "Sports & Fitness",
+    "uk": "Спорт та фітнес",
+    "de": "Sport & Fitness",
+    "ru": "Спорт и фитнес",
+    "original": "Sports & Fitness"
+  },
+  "icon": "🏋️",
+  "naceRef": "R93",
+  "subcategories": [
+    {
+      "slug": "gym",
+      "names": {
+        "en": "Gym",
+        "uk": "Тренажерний зал",
+        "de": "Fitnessstudio",
+        "ru": "Тренажёрный зал",
+        "original": "Gym"
+      },
+      "osmTag": "leisure=fitness_centre",
+      "templates": [
+        {
+          "slug": "monthly-pass",
+          "names": {
+            "en": "Monthly Pass",
+            "uk": "Місячний абонемент",
+            "de": "Monatskarte",
+            "ru": "Месячный абонемент",
+            "original": "Monthly Pass"
+          }
+        },
+        {
+          "slug": "day-pass",
+          "names": {
+            "en": "Day Pass",
+            "uk": "Разове відвідування",
+            "de": "Tageskarte",
+            "ru": "Разовое посещение",
+            "original": "Day Pass"
+          }
+        },
+        {
+          "slug": "personal-training",
+          "names": {
+            "en": "Personal Training",
+            "uk": "Персональне тренування",
+            "de": "Personal Training",
+            "ru": "Персональная тренировка",
+            "original": "Personal Training"
+          }
+        },
+        {
+          "slug": "group-fitness",
+          "names": {
+            "en": "Group Class",
+            "uk": "Групове заняття",
+            "de": "Gruppenkurs",
+            "ru": "Групповое занятие",
+            "original": "Group Class"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "yoga-studio",
+      "names": {
+        "en": "Yoga Studio",
+        "uk": "Студія йоги",
+        "de": "Yogastudio",
+        "ru": "Студия йоги",
+        "original": "Yoga Studio"
+      },
+      "osmTag": "leisure=fitness_centre",
+      "templates": [
+        {
+          "slug": "yoga-drop-in",
+          "names": {
+            "en": "Drop-in Class",
+            "uk": "Разове заняття",
+            "de": "Einzelstunde",
+            "ru": "Разовое занятие",
+            "original": "Drop-in Class"
+          }
+        },
+        {
+          "slug": "yoga-monthly",
+          "names": {
+            "en": "Monthly Unlimited",
+            "uk": "Безлімітний абонемент",
+            "de": "Monatsflatrate",
+            "ru": "Безлимитный абонемент",
+            "original": "Monthly Unlimited"
+          }
+        },
+        {
+          "slug": "yoga-private",
+          "names": {
+            "en": "Private Session",
+            "uk": "Індивідуальне заняття",
+            "de": "Privatstunde",
+            "ru": "Индивидуальное занятие",
+            "original": "Private Session"
+          }
+        },
+        {
+          "slug": "yoga-workshop",
+          "names": {
+            "en": "Workshop",
+            "uk": "Майстер-клас",
+            "de": "Workshop",
+            "ru": "Мастер-класс",
+            "original": "Workshop"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "swimming-pool",
+      "names": {
+        "en": "Swimming Pool",
+        "uk": "Басейн",
+        "de": "Schwimmbad",
+        "ru": "Бассейн",
+        "original": "Swimming Pool"
+      },
+      "osmTag": "leisure=swimming_pool",
+      "templates": [
+        {
+          "slug": "single-swim",
+          "names": {
+            "en": "Single Swim",
+            "uk": "Разове відвідування",
+            "de": "Einzeleintritt",
+            "ru": "Разовое посещение",
+            "original": "Single Swim"
+          }
+        },
+        {
+          "slug": "swim-monthly",
+          "names": {
+            "en": "Monthly Pass",
+            "uk": "Місячний абонемент",
+            "de": "Monatskarte",
+            "ru": "Месячный абонемент",
+            "original": "Monthly Pass"
+          }
+        },
+        {
+          "slug": "swim-lesson",
+          "names": {
+            "en": "Swimming Lesson",
+            "uk": "Урок плавання",
+            "de": "Schwimmunterricht",
+            "ru": "Урок плавания",
+            "original": "Swimming Lesson"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "martial-arts",
+      "names": {
+        "en": "Martial Arts",
+        "uk": "Бойові мистецтва",
+        "de": "Kampfsport",
+        "ru": "Боевые искусства",
+        "original": "Martial Arts"
+      },
+      "osmTag": "leisure=sports_centre",
+      "templates": [
+        {
+          "slug": "ma-trial",
+          "names": {
+            "en": "Trial Class",
+            "uk": "Пробне заняття",
+            "de": "Probetraining",
+            "ru": "Пробное занятие",
+            "original": "Trial Class"
+          }
+        },
+        {
+          "slug": "ma-monthly",
+          "names": {
+            "en": "Monthly Membership",
+            "uk": "Місячний абонемент",
+            "de": "Monatsbeitrag",
+            "ru": "Месячный абонемент",
+            "original": "Monthly Membership"
+          }
+        },
+        {
+          "slug": "ma-private",
+          "names": {
+            "en": "Private Lesson",
+            "uk": "Індивідуальне заняття",
+            "de": "Privatstunde",
+            "ru": "Индивидуальное занятие",
+            "original": "Private Lesson"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "personal-trainer",
+      "names": {
+        "en": "Personal Trainer",
+        "uk": "Персональний тренер",
+        "de": "Personal Trainer",
+        "ru": "Персональный тренер",
+        "original": "Personal Trainer"
+      },
+      "templates": [
+        {
+          "slug": "pt-single",
+          "names": {
+            "en": "Single Session",
+            "uk": "Одне тренування",
+            "de": "Einzeltraining",
+            "ru": "Одна тренировка",
+            "original": "Single Session"
+          }
+        },
+        {
+          "slug": "pt-package-10",
+          "names": {
+            "en": "Package of 10",
+            "uk": "Пакет 10 тренувань",
+            "de": "10er-Karte",
+            "ru": "Пакет 10 тренировок",
+            "original": "Package of 10"
+          }
+        },
+        {
+          "slug": "nutrition-plan",
+          "names": {
+            "en": "Nutrition Plan",
+            "uk": "План харчування",
+            "de": "Ernährungsplan",
+            "ru": "План питания",
+            "original": "Nutrition Plan"
+          }
+        },
+        {
+          "slug": "online-coaching",
+          "names": {
+            "en": "Online Coaching",
+            "uk": "Онлайн-тренування",
+            "de": "Online-Coaching",
+            "ru": "Онлайн-тренировки",
+            "original": "Online Coaching"
+          }
+        }
+      ]
+    }
+  ]
+}

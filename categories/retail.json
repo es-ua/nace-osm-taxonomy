@@ -1,0 +1,308 @@
+{
+  "slug": "retail",
+  "names": {
+    "en": "Retail & Shopping",
+    "uk": "Торгівля",
+    "de": "Einzelhandel",
+    "ru": "Торговля",
+    "original": "Retail & Shopping"
+  },
+  "icon": "🛍️",
+  "naceRef": "G47",
+  "subcategories": [
+    {
+      "slug": "grocery",
+      "names": {
+        "en": "Grocery Store",
+        "uk": "Продуктовий магазин",
+        "de": "Lebensmittelgeschäft",
+        "ru": "Продуктовый магазин",
+        "original": "Grocery Store"
+      },
+      "osmTag": "shop=supermarket",
+      "templates": [
+        {
+          "slug": "home-delivery",
+          "names": {
+            "en": "Home Delivery",
+            "uk": "Доставка додому",
+            "de": "Lieferservice",
+            "ru": "Доставка на дом",
+            "original": "Home Delivery"
+          }
+        },
+        {
+          "slug": "gift-basket",
+          "names": {
+            "en": "Gift Basket",
+            "uk": "Подарунковий кошик",
+            "de": "Geschenkkorb",
+            "ru": "Подарочная корзина",
+            "original": "Gift Basket"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "clothing",
+      "names": {
+        "en": "Clothing Store",
+        "uk": "Магазин одягу",
+        "de": "Bekleidungsgeschäft",
+        "ru": "Магазин одежды",
+        "original": "Clothing Store"
+      },
+      "osmTag": "shop=clothes",
+      "templates": [
+        {
+          "slug": "personal-styling",
+          "names": {
+            "en": "Personal Styling",
+            "uk": "Персональний стиліст",
+            "de": "Persönliche Stilberatung",
+            "ru": "Персональный стилист",
+            "original": "Personal Styling"
+          }
+        },
+        {
+          "slug": "alterations",
+          "names": {
+            "en": "Alterations",
+            "uk": "Підгонка одягу",
+            "de": "Änderungen",
+            "ru": "Подгонка одежды",
+            "original": "Alterations"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "electronics",
+      "names": {
+        "en": "Electronics",
+        "uk": "Електроніка",
+        "de": "Elektronik",
+        "ru": "Электроника",
+        "original": "Electronics"
+      },
+      "osmTag": "shop=electronics",
+      "templates": [
+        {
+          "slug": "device-setup",
+          "names": {
+            "en": "Device Setup",
+            "uk": "Налаштування пристрою",
+            "de": "Geräteeinrichtung",
+            "ru": "Настройка устройства",
+            "original": "Device Setup"
+          }
+        },
+        {
+          "slug": "warranty-repair",
+          "names": {
+            "en": "Warranty Repair",
+            "uk": "Гарантійний ремонт",
+            "de": "Garantiereparatur",
+            "ru": "Гарантийный ремонт",
+            "original": "Warranty Repair"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "florist",
+      "names": {
+        "en": "Florist",
+        "uk": "Квіткова крамниця",
+        "de": "Blumenladen",
+        "ru": "Цветочный магазин",
+        "original": "Florist"
+      },
+      "osmTag": "shop=florist",
+      "templates": [
+        {
+          "slug": "bouquet",
+          "names": {
+            "en": "Bouquet",
+            "uk": "Букет",
+            "de": "Blumenstrauß",
+            "ru": "Букет",
+            "original": "Bouquet"
+          }
+        },
+        {
+          "slug": "wedding-floristry",
+          "names": {
+            "en": "Wedding Floristry",
+            "uk": "Весільна флористика",
+            "de": "Hochzeitsfloristik",
+            "ru": "Свадебная флористика",
+            "original": "Wedding Floristry"
+          }
+        },
+        {
+          "slug": "subscription-delivery",
+          "names": {
+            "en": "Flower Subscription",
+            "uk": "Підписка на квіти",
+            "de": "Blumenabo",
+            "ru": "Подписка на цветы",
+            "original": "Flower Subscription"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "pet-shop",
+      "names": {
+        "en": "Pet Shop",
+        "uk": "Зоомагазин",
+        "de": "Tierhandlung",
+        "ru": "Зоомагазин",
+        "original": "Pet Shop"
+      },
+      "osmTag": "shop=pet",
+      "templates": [
+        {
+          "slug": "pet-grooming",
+          "names": {
+            "en": "Pet Grooming",
+            "uk": "Грумінг",
+            "de": "Tierpflege",
+            "ru": "Груминг",
+            "original": "Pet Grooming"
+          }
+        },
+        {
+          "slug": "pet-food-delivery",
+          "names": {
+            "en": "Pet Food Delivery",
+            "uk": "Доставка корму",
+            "de": "Tierfutter-Lieferung",
+            "ru": "Доставка корма",
+            "original": "Pet Food Delivery"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "pharmacy",
+      "names": {
+        "en": "Pharmacy",
+        "uk": "Аптека",
+        "de": "Apotheke",
+        "ru": "Аптека",
+        "original": "Pharmacy"
+      },
+      "osmTag": "amenity=pharmacy",
+      "templates": [
+        {
+          "slug": "prescription",
+          "names": {
+            "en": "Prescription",
+            "uk": "Рецепт",
+            "de": "Rezept",
+            "ru": "Рецепт",
+            "original": "Prescription"
+          }
+        },
+        {
+          "slug": "pharma-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Beratung",
+            "ru": "Консультация",
+            "original": "Consultation"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "jewelry",
+      "names": {
+        "en": "Jewelry",
+        "uk": "Ювелірна крамниця",
+        "de": "Juwelier",
+        "ru": "Ювелирный магазин",
+        "original": "Jewelry"
+      },
+      "osmTag": "shop=jewelry",
+      "templates": [
+        {
+          "slug": "custom-jewelry",
+          "names": {
+            "en": "Custom Design",
+            "uk": "На замовлення",
+            "de": "Einzelanfertigung",
+            "ru": "На заказ",
+            "original": "Custom Design"
+          }
+        },
+        {
+          "slug": "jewelry-repair",
+          "names": {
+            "en": "Repair",
+            "uk": "Ремонт прикрас",
+            "de": "Reparatur",
+            "ru": "Ремонт украшений",
+            "original": "Repair"
+          }
+        },
+        {
+          "slug": "engraving",
+          "names": {
+            "en": "Engraving",
+            "uk": "Гравіювання",
+            "de": "Gravur",
+            "ru": "Гравировка",
+            "original": "Engraving"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "optician",
+      "names": {
+        "en": "Optician",
+        "uk": "Оптика",
+        "de": "Optiker",
+        "ru": "Оптика",
+        "original": "Optician"
+      },
+      "osmTag": "shop=optician",
+      "templates": [
+        {
+          "slug": "eye-exam",
+          "names": {
+            "en": "Eye Exam",
+            "uk": "Перевірка зору",
+            "de": "Sehtest",
+            "ru": "Проверка зрения",
+            "original": "Eye Exam"
+          }
+        },
+        {
+          "slug": "lens-fitting",
+          "names": {
+            "en": "Lens Fitting",
+            "uk": "Підбір лінз",
+            "de": "Linsenanpassung",
+            "ru": "Подбор линз",
+            "original": "Lens Fitting"
+          }
+        },
+        {
+          "slug": "frame-adjustment",
+          "names": {
+            "en": "Frame Adjustment",
+            "uk": "Регулювання оправи",
+            "de": "Brillenanpassung",
+            "ru": "Регулировка оправы",
+            "original": "Frame Adjustment"
+          }
+        }
+      ]
+    }
+  ]
+}

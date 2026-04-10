@@ -1,0 +1,282 @@
+{
+  "slug": "professional",
+  "names": {
+    "en": "Professional Services",
+    "uk": "Професійні послуги",
+    "de": "Freiberufliche Dienstleistungen",
+    "ru": "Профессиональные услуги",
+    "original": "Professional Services"
+  },
+  "icon": "💼",
+  "naceRef": "M69-M74",
+  "subcategories": [
+    {
+      "slug": "lawyer",
+      "names": {
+        "en": "Lawyer",
+        "uk": "Адвокат",
+        "de": "Rechtsanwalt",
+        "ru": "Юрист",
+        "original": "Lawyer"
+      },
+      "osmTag": "office=lawyer",
+      "templates": [
+        {
+          "slug": "legal-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Rechtsberatung",
+            "ru": "Консультация",
+            "original": "Consultation"
+          }
+        },
+        {
+          "slug": "contract-review",
+          "names": {
+            "en": "Contract Review",
+            "uk": "Перевірка договору",
+            "de": "Vertragsprüfung",
+            "ru": "Проверка договора",
+            "original": "Contract Review"
+          }
+        },
+        {
+          "slug": "court-representation",
+          "names": {
+            "en": "Court Representation",
+            "uk": "Представництво в суді",
+            "de": "Gerichtsvertretung",
+            "ru": "Представительство в суде",
+            "original": "Court Representation"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "accountant",
+      "names": {
+        "en": "Accountant",
+        "uk": "Бухгалтер",
+        "de": "Steuerberater",
+        "ru": "Бухгалтер",
+        "original": "Accountant"
+      },
+      "osmTag": "office=accountant",
+      "templates": [
+        {
+          "slug": "tax-return",
+          "names": {
+            "en": "Tax Return",
+            "uk": "Податкова декларація",
+            "de": "Steuererklärung",
+            "ru": "Налоговая декларация",
+            "original": "Tax Return"
+          }
+        },
+        {
+          "slug": "bookkeeping",
+          "names": {
+            "en": "Bookkeeping",
+            "uk": "Бухгалтерський облік",
+            "de": "Buchhaltung",
+            "ru": "Бухгалтерский учёт",
+            "original": "Bookkeeping"
+          }
+        },
+        {
+          "slug": "annual-report",
+          "names": {
+            "en": "Annual Report",
+            "uk": "Річний звіт",
+            "de": "Jahresabschluss",
+            "ru": "Годовой отчёт",
+            "original": "Annual Report"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "notary",
+      "names": {
+        "en": "Notary",
+        "uk": "Нотаріус",
+        "de": "Notar",
+        "ru": "Нотариус",
+        "original": "Notary"
+      },
+      "osmTag": "office=notary",
+      "templates": [
+        {
+          "slug": "certification",
+          "names": {
+            "en": "Certification",
+            "uk": "Засвідчення",
+            "de": "Beglaubigung",
+            "ru": "Заверение",
+            "original": "Certification"
+          }
+        },
+        {
+          "slug": "real-estate-transaction",
+          "names": {
+            "en": "Real Estate Transaction",
+            "uk": "Операція з нерухомістю",
+            "de": "Immobiliengeschäft",
+            "ru": "Сделка с недвижимостью",
+            "original": "Real Estate Transaction"
+          }
+        },
+        {
+          "slug": "will",
+          "names": {
+            "en": "Will",
+            "uk": "Заповіт",
+            "de": "Testament",
+            "ru": "Завещание",
+            "original": "Will"
+          }
+        },
+        {
+          "slug": "power-of-attorney",
+          "names": {
+            "en": "Power of Attorney",
+            "uk": "Довіреність",
+            "de": "Vollmacht",
+            "ru": "Доверенность",
+            "original": "Power of Attorney"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "architect",
+      "names": {
+        "en": "Architect",
+        "uk": "Архітектор",
+        "de": "Architekt",
+        "ru": "Архитектор",
+        "original": "Architect"
+      },
+      "osmTag": "office=architect",
+      "templates": [
+        {
+          "slug": "arch-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Beratung",
+            "ru": "Консультация",
+            "original": "Consultation"
+          }
+        },
+        {
+          "slug": "building-plan",
+          "names": {
+            "en": "Building Plan",
+            "uk": "Проєкт будівлі",
+            "de": "Bauplan",
+            "ru": "Проект здания",
+            "original": "Building Plan"
+          }
+        },
+        {
+          "slug": "interior-design",
+          "names": {
+            "en": "Interior Design",
+            "uk": "Дизайн інтер'єру",
+            "de": "Innenarchitektur",
+            "ru": "Дизайн интерьера",
+            "original": "Interior Design"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "real-estate-agent",
+      "names": {
+        "en": "Real Estate Agent",
+        "uk": "Ріелтор",
+        "de": "Immobilienmakler",
+        "ru": "Риелтор",
+        "original": "Real Estate Agent"
+      },
+      "osmTag": "office=estate_agent",
+      "templates": [
+        {
+          "slug": "property-valuation",
+          "names": {
+            "en": "Property Valuation",
+            "uk": "Оцінка нерухомості",
+            "de": "Immobilienbewertung",
+            "ru": "Оценка недвижимости",
+            "original": "Property Valuation"
+          }
+        },
+        {
+          "slug": "buyer-representation",
+          "names": {
+            "en": "Buyer Representation",
+            "uk": "Представництво покупця",
+            "de": "Käufervertretung",
+            "ru": "Представительство покупателя",
+            "original": "Buyer Representation"
+          }
+        },
+        {
+          "slug": "rental-management",
+          "names": {
+            "en": "Rental Management",
+            "uk": "Управління орендою",
+            "de": "Mietverwaltung",
+            "ru": "Управление арендой",
+            "original": "Rental Management"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "translator",
+      "names": {
+        "en": "Translator",
+        "uk": "Перекладач",
+        "de": "Übersetzer",
+        "ru": "Переводчик",
+        "original": "Translator"
+      },
+      "osmTag": "office=translator",
+      "templates": [
+        {
+          "slug": "document-translation",
+          "names": {
+            "en": "Document Translation",
+            "uk": "Переклад документів",
+            "de": "Dokumentenübersetzung",
+            "ru": "Перевод документов",
+            "original": "Document Translation"
+          }
+        },
+        {
+          "slug": "certified-translation",
+          "names": {
+            "en": "Certified Translation",
+            "uk": "Нотаріальний переклад",
+            "de": "Beglaubigte Übersetzung",
+            "ru": "Нотариальный перевод",
+            "original": "Certified Translation"
+          }
+        },
+        {
+          "slug": "interpretation",
+          "names": {
+            "en": "Interpretation",
+            "uk": "Усний переклад",
+            "de": "Dolmetschen",
+            "ru": "Устный перевод",
+            "original": "Interpretation"
+          }
+        }
+      ]
+    }
+  ]
+}

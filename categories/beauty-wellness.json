@@ -1,0 +1,405 @@
+{
+  "slug": "beauty-wellness",
+  "names": {
+    "en": "Beauty & Wellness",
+    "uk": "Краса та здоров\\'я",
+    "de": "Schönheit & Wellness",
+    "ru": "Красота и здоровье",
+    "original": "Beauty & Wellness"
+  },
+  "icon": "💇",
+  "naceRef": "S96",
+  "subcategories": [
+    {
+      "slug": "hair-salon",
+      "names": {
+        "en": "Hair Salon",
+        "uk": "Перукарня",
+        "de": "Friseursalon",
+        "ru": "Парикмахерская",
+        "original": "Hair Salon"
+      },
+      "osmTag": "shop=hairdresser",
+      "templates": [
+        {
+          "slug": "womens-haircut",
+          "names": {
+            "en": "Women's Haircut",
+            "uk": "Жіноча стрижка",
+            "de": "Damenhaarschnitt",
+            "ru": "Женская стрижка",
+            "original": "Women's Haircut"
+          }
+        },
+        {
+          "slug": "mens-haircut",
+          "names": {
+            "en": "Men's Haircut",
+            "uk": "Чоловіча стрижка",
+            "de": "Herrenhaarschnitt",
+            "ru": "Мужская стрижка",
+            "original": "Men's Haircut"
+          }
+        },
+        {
+          "slug": "hair-coloring",
+          "names": {
+            "en": "Hair Coloring",
+            "uk": "Фарбування волосся",
+            "de": "Haarfärbung",
+            "ru": "Окрашивание волос",
+            "original": "Hair Coloring"
+          }
+        },
+        {
+          "slug": "highlights",
+          "names": {
+            "en": "Highlights",
+            "uk": "Мелірування",
+            "de": "Strähnchen",
+            "ru": "Мелирование",
+            "original": "Highlights"
+          }
+        },
+        {
+          "slug": "blowdry",
+          "names": {
+            "en": "Blow Dry",
+            "uk": "Укладка",
+            "de": "Föhnen",
+            "ru": "Укладка",
+            "original": "Blow Dry"
+          }
+        },
+        {
+          "slug": "hair-treatment",
+          "names": {
+            "en": "Hair Treatment",
+            "uk": "Лікування волосся",
+            "de": "Haarbehandlung",
+            "ru": "Лечение волос",
+            "original": "Hair Treatment"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "barbershop",
+      "names": {
+        "en": "Barbershop",
+        "uk": "Барбершоп",
+        "de": "Barbershop",
+        "ru": "Барбершоп",
+        "original": "Barbershop"
+      },
+      "osmTag": "shop=hairdresser",
+      "templates": [
+        {
+          "slug": "barber-haircut",
+          "names": {
+            "en": "Haircut",
+            "uk": "Стрижка",
+            "de": "Haarschnitt",
+            "ru": "Стрижка",
+            "original": "Haircut"
+          }
+        },
+        {
+          "slug": "beard-trim",
+          "names": {
+            "en": "Beard Trim",
+            "uk": "Стрижка бороди",
+            "de": "Barttrimmen",
+            "ru": "Стрижка бороды",
+            "original": "Beard Trim"
+          }
+        },
+        {
+          "slug": "hot-towel-shave",
+          "names": {
+            "en": "Hot Towel Shave",
+            "uk": "Гоління гарячим рушником",
+            "de": "Heißtuchrasur",
+            "ru": "Бритьё горячим полотенцем",
+            "original": "Hot Towel Shave"
+          }
+        },
+        {
+          "slug": "head-shave",
+          "names": {
+            "en": "Head Shave",
+            "uk": "Гоління голови",
+            "de": "Kopfrasur",
+            "ru": "Бритьё головы",
+            "original": "Head Shave"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nail-studio",
+      "names": {
+        "en": "Nail Studio",
+        "uk": "Нігтьова студія",
+        "de": "Nagelstudio",
+        "ru": "Ногтевая студия",
+        "original": "Nail Studio"
+      },
+      "osmTag": "shop=beauty",
+      "templates": [
+        {
+          "slug": "manicure",
+          "names": {
+            "en": "Manicure",
+            "uk": "Манікюр",
+            "de": "Maniküre",
+            "ru": "Маникюр",
+            "original": "Manicure"
+          }
+        },
+        {
+          "slug": "pedicure",
+          "names": {
+            "en": "Pedicure",
+            "uk": "Педикюр",
+            "de": "Pediküre",
+            "ru": "Педикюр",
+            "original": "Pedicure"
+          }
+        },
+        {
+          "slug": "gel-nails",
+          "names": {
+            "en": "Gel Nails",
+            "uk": "Гелеві нігті",
+            "de": "Gel-Nägel",
+            "ru": "Гелевые ногти",
+            "original": "Gel Nails"
+          }
+        },
+        {
+          "slug": "nail-art",
+          "names": {
+            "en": "Nail Art",
+            "uk": "Нейл-арт",
+            "de": "Nageldesign",
+            "ru": "Нейл-арт",
+            "original": "Nail Art"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "spa-massage",
+      "names": {
+        "en": "Spa & Massage",
+        "uk": "Спа та масаж",
+        "de": "Spa & Massage",
+        "ru": "Спа и массаж",
+        "original": "Spa & Massage"
+      },
+      "osmTag": "shop=massage",
+      "templates": [
+        {
+          "slug": "swedish-massage",
+          "names": {
+            "en": "Swedish Massage",
+            "uk": "Класичний масаж",
+            "de": "Schwedische Massage",
+            "ru": "Классический массаж",
+            "original": "Swedish Massage"
+          }
+        },
+        {
+          "slug": "deep-tissue",
+          "names": {
+            "en": "Deep Tissue Massage",
+            "uk": "Глибокий масаж",
+            "de": "Tiefengewebsmassage",
+            "ru": "Глубокий массаж",
+            "original": "Deep Tissue Massage"
+          }
+        },
+        {
+          "slug": "hot-stone",
+          "names": {
+            "en": "Hot Stone Massage",
+            "uk": "Масаж гарячими каменями",
+            "de": "Hot-Stone-Massage",
+            "ru": "Массаж горячими камнями",
+            "original": "Hot Stone Massage"
+          }
+        },
+        {
+          "slug": "facial",
+          "names": {
+            "en": "Facial",
+            "uk": "Догляд за обличчям",
+            "de": "Gesichtsbehandlung",
+            "ru": "Уход за лицом",
+            "original": "Facial"
+          }
+        },
+        {
+          "slug": "body-wrap",
+          "names": {
+            "en": "Body Wrap",
+            "uk": "Обгортання",
+            "de": "Körperwickel",
+            "ru": "Обёртывание",
+            "original": "Body Wrap"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "beauty-salon",
+      "names": {
+        "en": "Beauty Salon",
+        "uk": "Салон краси",
+        "de": "Kosmetikstudio",
+        "ru": "Салон красоты",
+        "original": "Beauty Salon"
+      },
+      "osmTag": "shop=beauty",
+      "templates": [
+        {
+          "slug": "facial-treatment",
+          "names": {
+            "en": "Facial Treatment",
+            "uk": "Процедура для обличчя",
+            "de": "Gesichtsbehandlung",
+            "ru": "Процедура для лица",
+            "original": "Facial Treatment"
+          }
+        },
+        {
+          "slug": "eyebrow-shaping",
+          "names": {
+            "en": "Eyebrow Shaping",
+            "uk": "Корекція брів",
+            "de": "Augenbrauenkorrektur",
+            "ru": "Коррекция бровей",
+            "original": "Eyebrow Shaping"
+          }
+        },
+        {
+          "slug": "eyelash-extensions",
+          "names": {
+            "en": "Eyelash Extensions",
+            "uk": "Нарощування вій",
+            "de": "Wimpernverlängerung",
+            "ru": "Наращивание ресниц",
+            "original": "Eyelash Extensions"
+          }
+        },
+        {
+          "slug": "waxing",
+          "names": {
+            "en": "Waxing",
+            "uk": "Воскова депіляція",
+            "de": "Waxing",
+            "ru": "Восковая депиляция",
+            "original": "Waxing"
+          }
+        },
+        {
+          "slug": "makeup",
+          "names": {
+            "en": "Makeup",
+            "uk": "Макіяж",
+            "de": "Make-up",
+            "ru": "Макияж",
+            "original": "Makeup"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tattoo-piercing",
+      "names": {
+        "en": "Tattoo & Piercing",
+        "uk": "Тату та пірсинг",
+        "de": "Tattoo & Piercing",
+        "ru": "Тату и пирсинг",
+        "original": "Tattoo & Piercing"
+      },
+      "osmTag": "shop=tattoo",
+      "templates": [
+        {
+          "slug": "tattoo-small",
+          "names": {
+            "en": "Small Tattoo",
+            "uk": "Мале тату",
+            "de": "Kleines Tattoo",
+            "ru": "Маленькое тату",
+            "original": "Small Tattoo"
+          }
+        },
+        {
+          "slug": "tattoo-large",
+          "names": {
+            "en": "Large Tattoo",
+            "uk": "Велике тату",
+            "de": "Großes Tattoo",
+            "ru": "Большое тату",
+            "original": "Large Tattoo"
+          }
+        },
+        {
+          "slug": "piercing",
+          "names": {
+            "en": "Piercing",
+            "uk": "Пірсинг",
+            "de": "Piercing",
+            "ru": "Пирсинг",
+            "original": "Piercing"
+          }
+        },
+        {
+          "slug": "tattoo-removal",
+          "names": {
+            "en": "Tattoo Removal",
+            "uk": "Видалення тату",
+            "de": "Tattoo-Entfernung",
+            "ru": "Удаление тату",
+            "original": "Tattoo Removal"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tanning-studio",
+      "names": {
+        "en": "Tanning Studio",
+        "uk": "Солярій",
+        "de": "Sonnenstudio",
+        "ru": "Солярий",
+        "original": "Tanning Studio"
+      },
+      "osmTag": "leisure=tanning_salon",
+      "templates": [
+        {
+          "slug": "tanning-session",
+          "names": {
+            "en": "Tanning Session",
+            "uk": "Сеанс засмаги",
+            "de": "Bräunungssitzung",
+            "ru": "Сеанс загара",
+            "original": "Tanning Session"
+          }
+        },
+        {
+          "slug": "spray-tan",
+          "names": {
+            "en": "Spray Tan",
+            "uk": "Автозасмага",
+            "de": "Sprühbräune",
+            "ru": "Автозагар",
+            "original": "Spray Tan"
+          }
+        }
+      ]
+    }
+  ]
+}

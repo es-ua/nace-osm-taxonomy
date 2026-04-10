@@ -1,0 +1,398 @@
+{
+  "slug": "home-services",
+  "names": {
+    "en": "Home Services",
+    "uk": "Побутові послуги",
+    "de": "Haushaltsdienstleistungen",
+    "ru": "Бытовые услуги",
+    "original": "Home Services"
+  },
+  "icon": "🏠",
+  "naceRef": "F43+N81",
+  "subcategories": [
+    {
+      "slug": "plumber",
+      "names": {
+        "en": "Plumber",
+        "uk": "Сантехнік",
+        "de": "Klempner",
+        "ru": "Сантехник",
+        "original": "Plumber"
+      },
+      "osmTag": "craft=plumber",
+      "templates": [
+        {
+          "slug": "plumbing-repair",
+          "names": {
+            "en": "Repair",
+            "uk": "Ремонт",
+            "de": "Reparatur",
+            "ru": "Ремонт",
+            "original": "Repair"
+          }
+        },
+        {
+          "slug": "plumbing-install",
+          "names": {
+            "en": "Installation",
+            "uk": "Встановлення",
+            "de": "Installation",
+            "ru": "Установка",
+            "original": "Installation"
+          }
+        },
+        {
+          "slug": "emergency-plumber",
+          "names": {
+            "en": "Emergency Call",
+            "uk": "Аварійний виклик",
+            "de": "Notdienst",
+            "ru": "Аварийный вызов",
+            "original": "Emergency Call"
+          }
+        },
+        {
+          "slug": "drain-cleaning",
+          "names": {
+            "en": "Drain Cleaning",
+            "uk": "Прочистка каналізації",
+            "de": "Rohrreinigung",
+            "ru": "Прочистка канализации",
+            "original": "Drain Cleaning"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "electrician",
+      "names": {
+        "en": "Electrician",
+        "uk": "Електрик",
+        "de": "Elektriker",
+        "ru": "Электрик",
+        "original": "Electrician"
+      },
+      "osmTag": "craft=electrician",
+      "templates": [
+        {
+          "slug": "electrical-wiring",
+          "names": {
+            "en": "Wiring",
+            "uk": "Проводка",
+            "de": "Verkabelung",
+            "ru": "Проводка",
+            "original": "Wiring"
+          }
+        },
+        {
+          "slug": "electrical-repair",
+          "names": {
+            "en": "Repair",
+            "uk": "Ремонт",
+            "de": "Reparatur",
+            "ru": "Ремонт",
+            "original": "Repair"
+          }
+        },
+        {
+          "slug": "electrical-install",
+          "names": {
+            "en": "Installation",
+            "uk": "Встановлення",
+            "de": "Installation",
+            "ru": "Установка",
+            "original": "Installation"
+          }
+        },
+        {
+          "slug": "electrical-inspection",
+          "names": {
+            "en": "Inspection",
+            "uk": "Перевірка",
+            "de": "E-Check",
+            "ru": "Проверка",
+            "original": "Inspection"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "cleaning",
+      "names": {
+        "en": "Cleaning Service",
+        "uk": "Клінінг",
+        "de": "Reinigungsservice",
+        "ru": "Клининг",
+        "original": "Cleaning Service"
+      },
+      "osmTag": "office=cleaning",
+      "templates": [
+        {
+          "slug": "regular-cleaning",
+          "names": {
+            "en": "Regular Cleaning",
+            "uk": "Регулярне прибирання",
+            "de": "Unterhaltsreinigung",
+            "ru": "Регулярная уборка",
+            "original": "Regular Cleaning"
+          }
+        },
+        {
+          "slug": "deep-cleaning",
+          "names": {
+            "en": "Deep Cleaning",
+            "uk": "Генеральне прибирання",
+            "de": "Grundreinigung",
+            "ru": "Генеральная уборка",
+            "original": "Deep Cleaning"
+          }
+        },
+        {
+          "slug": "window-cleaning",
+          "names": {
+            "en": "Window Cleaning",
+            "uk": "Миття вікон",
+            "de": "Fensterreinigung",
+            "ru": "Мытьё окон",
+            "original": "Window Cleaning"
+          }
+        },
+        {
+          "slug": "office-cleaning",
+          "names": {
+            "en": "Office Cleaning",
+            "uk": "Прибирання офісу",
+            "de": "Büroreinigung",
+            "ru": "Уборка офиса",
+            "original": "Office Cleaning"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "landscaping",
+      "names": {
+        "en": "Landscaping",
+        "uk": "Ландшафтний дизайн",
+        "de": "Garten- und Landschaftsbau",
+        "ru": "Ландшафтный дизайн",
+        "original": "Landscaping"
+      },
+      "osmTag": "craft=gardener",
+      "templates": [
+        {
+          "slug": "lawn-care",
+          "names": {
+            "en": "Lawn Care",
+            "uk": "Догляд за газоном",
+            "de": "Rasenpflege",
+            "ru": "Уход за газоном",
+            "original": "Lawn Care"
+          }
+        },
+        {
+          "slug": "tree-trimming",
+          "names": {
+            "en": "Tree Trimming",
+            "uk": "Обрізка дерев",
+            "de": "Baumschnitt",
+            "ru": "Обрезка деревьев",
+            "original": "Tree Trimming"
+          }
+        },
+        {
+          "slug": "garden-design",
+          "names": {
+            "en": "Garden Design",
+            "uk": "Дизайн саду",
+            "de": "Gartengestaltung",
+            "ru": "Дизайн сада",
+            "original": "Garden Design"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "moving",
+      "names": {
+        "en": "Moving Service",
+        "uk": "Переїзд",
+        "de": "Umzugsservice",
+        "ru": "Переезд",
+        "original": "Moving Service"
+      },
+      "osmTag": "office=moving_company",
+      "templates": [
+        {
+          "slug": "local-move",
+          "names": {
+            "en": "Local Move",
+            "uk": "Місцевий переїзд",
+            "de": "Lokalumzug",
+            "ru": "Местный переезд",
+            "original": "Local Move"
+          }
+        },
+        {
+          "slug": "long-distance-move",
+          "names": {
+            "en": "Long Distance",
+            "uk": "Міжміський переїзд",
+            "de": "Fernumzug",
+            "ru": "Междугородний переезд",
+            "original": "Long Distance"
+          }
+        },
+        {
+          "slug": "packing-service",
+          "names": {
+            "en": "Packing",
+            "uk": "Пакування",
+            "de": "Verpackungsservice",
+            "ru": "Упаковка",
+            "original": "Packing"
+          }
+        },
+        {
+          "slug": "furniture-assembly",
+          "names": {
+            "en": "Furniture Assembly",
+            "uk": "Збірка меблів",
+            "de": "Möbelmontage",
+            "ru": "Сборка мебели",
+            "original": "Furniture Assembly"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "locksmith",
+      "names": {
+        "en": "Locksmith",
+        "uk": "Замковий майстер",
+        "de": "Schlüsseldienst",
+        "ru": "Слесарь",
+        "original": "Locksmith"
+      },
+      "osmTag": "craft=locksmith",
+      "templates": [
+        {
+          "slug": "lock-change",
+          "names": {
+            "en": "Lock Change",
+            "uk": "Заміна замка",
+            "de": "Schlossaustausch",
+            "ru": "Замена замка",
+            "original": "Lock Change"
+          }
+        },
+        {
+          "slug": "emergency-opening",
+          "names": {
+            "en": "Emergency Opening",
+            "uk": "Аварійне відкриття",
+            "de": "Türnotöffnung",
+            "ru": "Аварийное вскрытие",
+            "original": "Emergency Opening"
+          }
+        },
+        {
+          "slug": "key-copy",
+          "names": {
+            "en": "Key Copy",
+            "uk": "Дублікат ключа",
+            "de": "Schlüsselkopie",
+            "ru": "Дубликат ключа",
+            "original": "Key Copy"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "painter",
+      "names": {
+        "en": "Painter",
+        "uk": "Маляр",
+        "de": "Maler",
+        "ru": "Маляр",
+        "original": "Painter"
+      },
+      "osmTag": "craft=painter",
+      "templates": [
+        {
+          "slug": "interior-painting",
+          "names": {
+            "en": "Interior",
+            "uk": "Внутрішні роботи",
+            "de": "Innenanstrich",
+            "ru": "Внутренние работы",
+            "original": "Interior"
+          }
+        },
+        {
+          "slug": "exterior-painting",
+          "names": {
+            "en": "Exterior",
+            "uk": "Зовнішні роботи",
+            "de": "Außenanstrich",
+            "ru": "Наружные работы",
+            "original": "Exterior"
+          }
+        },
+        {
+          "slug": "wallpaper",
+          "names": {
+            "en": "Wallpaper",
+            "uk": "Шпалери",
+            "de": "Tapezieren",
+            "ru": "Обои",
+            "original": "Wallpaper"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "renovation",
+      "names": {
+        "en": "Renovation",
+        "uk": "Ремонт приміщень",
+        "de": "Renovierung",
+        "ru": "Ремонт помещений",
+        "original": "Renovation"
+      },
+      "osmTag": "craft=builder",
+      "templates": [
+        {
+          "slug": "bathroom-renovation",
+          "names": {
+            "en": "Bathroom",
+            "uk": "Ванна кімната",
+            "de": "Badsanierung",
+            "ru": "Ванная комната",
+            "original": "Bathroom"
+          }
+        },
+        {
+          "slug": "kitchen-renovation",
+          "names": {
+            "en": "Kitchen",
+            "uk": "Кухня",
+            "de": "Küchenumbau",
+            "ru": "Кухня",
+            "original": "Kitchen"
+          }
+        },
+        {
+          "slug": "full-renovation",
+          "names": {
+            "en": "Full Renovation",
+            "uk": "Капітальний ремонт",
+            "de": "Komplettsanierung",
+            "ru": "Капитальный ремонт",
+            "original": "Full Renovation"
+          }
+        }
+      ]
+    }
+  ]
+}

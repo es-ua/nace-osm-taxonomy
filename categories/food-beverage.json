@@ -1,0 +1,312 @@
+{
+  "slug": "food-beverage",
+  "names": {
+    "en": "Food & Beverage",
+    "uk": "Їжа та напої",
+    "de": "Gastronomie",
+    "ru": "Еда и напитки",
+    "original": "Food & Beverage"
+  },
+  "icon": "🍽️",
+  "naceRef": "I56",
+  "subcategories": [
+    {
+      "slug": "restaurant",
+      "names": {
+        "en": "Restaurant",
+        "uk": "Ресторан",
+        "de": "Restaurant",
+        "ru": "Ресторан",
+        "original": "Restaurant"
+      },
+      "osmTag": "amenity=restaurant",
+      "templates": [
+        {
+          "slug": "business-lunch",
+          "names": {
+            "en": "Business Lunch",
+            "uk": "Бізнес-ланч",
+            "de": "Business-Lunch",
+            "ru": "Бизнес-ланч",
+            "original": "Business Lunch"
+          }
+        },
+        {
+          "slug": "banquet",
+          "names": {
+            "en": "Banquet",
+            "uk": "Банкет",
+            "de": "Bankett",
+            "ru": "Банкет",
+            "original": "Banquet"
+          }
+        },
+        {
+          "slug": "takeaway",
+          "names": {
+            "en": "Takeaway",
+            "uk": "На винос",
+            "de": "Zum Mitnehmen",
+            "ru": "Навынос",
+            "original": "Takeaway"
+          }
+        },
+        {
+          "slug": "delivery",
+          "names": {
+            "en": "Delivery",
+            "uk": "Доставка",
+            "de": "Lieferung",
+            "ru": "Доставка",
+            "original": "Delivery"
+          }
+        },
+        {
+          "slug": "catering",
+          "names": {
+            "en": "Catering",
+            "uk": "Кейтеринг",
+            "de": "Catering",
+            "ru": "Кейтеринг",
+            "original": "Catering"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "cafe",
+      "names": {
+        "en": "Cafe",
+        "uk": "Кав\\'ярня",
+        "de": "Café",
+        "ru": "Кафе",
+        "original": "Cafe"
+      },
+      "osmTag": "amenity=cafe",
+      "templates": [
+        {
+          "slug": "coffee-drinks",
+          "names": {
+            "en": "Coffee & Drinks",
+            "uk": "Кава та напої",
+            "de": "Kaffee & Getränke",
+            "ru": "Кофе и напитки",
+            "original": "Coffee & Drinks"
+          }
+        },
+        {
+          "slug": "pastries",
+          "names": {
+            "en": "Pastries",
+            "uk": "Випічка",
+            "de": "Gebäck",
+            "ru": "Выпечка",
+            "original": "Pastries"
+          }
+        },
+        {
+          "slug": "breakfast-set",
+          "names": {
+            "en": "Breakfast Set",
+            "uk": "Сніданок",
+            "de": "Frühstücksmenü",
+            "ru": "Завтрак",
+            "original": "Breakfast Set"
+          }
+        },
+        {
+          "slug": "lunch-menu",
+          "names": {
+            "en": "Lunch Menu",
+            "uk": "Обіднє меню",
+            "de": "Mittagsmenü",
+            "ru": "Обеденное меню",
+            "original": "Lunch Menu"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bar-pub",
+      "names": {
+        "en": "Bar & Pub",
+        "uk": "Бар та паб",
+        "de": "Bar & Kneipe",
+        "ru": "Бар и паб",
+        "original": "Bar & Pub"
+      },
+      "osmTag": "amenity=bar",
+      "templates": [
+        {
+          "slug": "cocktails",
+          "names": {
+            "en": "Cocktails",
+            "uk": "Коктейлі",
+            "de": "Cocktails",
+            "ru": "Коктейли",
+            "original": "Cocktails"
+          }
+        },
+        {
+          "slug": "beer-selection",
+          "names": {
+            "en": "Craft Beer",
+            "uk": "Крафтове пиво",
+            "de": "Craft-Bier",
+            "ru": "Крафтовое пиво",
+            "original": "Craft Beer"
+          }
+        },
+        {
+          "slug": "hookah",
+          "names": {
+            "en": "Hookah",
+            "uk": "Кальян",
+            "de": "Shisha",
+            "ru": "Кальян",
+            "original": "Hookah"
+          }
+        },
+        {
+          "slug": "live-music-night",
+          "names": {
+            "en": "Live Music Night",
+            "uk": "Жива музика",
+            "de": "Live-Musik-Abend",
+            "ru": "Живая музыка",
+            "original": "Live Music Night"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fast-food",
+      "names": {
+        "en": "Fast Food",
+        "uk": "Фастфуд",
+        "de": "Schnellimbiss",
+        "ru": "Фастфуд",
+        "original": "Fast Food"
+      },
+      "osmTag": "amenity=fast_food",
+      "templates": [
+        {
+          "slug": "combo-meal",
+          "names": {
+            "en": "Combo Meal",
+            "uk": "Комбо-набір",
+            "de": "Kombi-Menü",
+            "ru": "Комбо-набор",
+            "original": "Combo Meal"
+          }
+        },
+        {
+          "slug": "ff-delivery",
+          "names": {
+            "en": "Delivery",
+            "uk": "Доставка",
+            "de": "Lieferung",
+            "ru": "Доставка",
+            "original": "Delivery"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bakery",
+      "names": {
+        "en": "Bakery",
+        "uk": "Пекарня",
+        "de": "Bäckerei",
+        "ru": "Пекарня",
+        "original": "Bakery"
+      },
+      "osmTag": "shop=bakery",
+      "templates": [
+        {
+          "slug": "fresh-bread",
+          "names": {
+            "en": "Fresh Bread",
+            "uk": "Свіжий хліб",
+            "de": "Frisches Brot",
+            "ru": "Свежий хлеб",
+            "original": "Fresh Bread"
+          }
+        },
+        {
+          "slug": "bk-pastries",
+          "names": {
+            "en": "Pastries",
+            "uk": "Випічка",
+            "de": "Feingebäck",
+            "ru": "Выпечка",
+            "original": "Pastries"
+          }
+        },
+        {
+          "slug": "custom-cake",
+          "names": {
+            "en": "Custom Cake",
+            "uk": "Торт на замовлення",
+            "de": "Torte nach Wunsch",
+            "ru": "Торт на заказ",
+            "original": "Custom Cake"
+          }
+        },
+        {
+          "slug": "wedding-cake",
+          "names": {
+            "en": "Wedding Cake",
+            "uk": "Весільний торт",
+            "de": "Hochzeitstorte",
+            "ru": "Свадебный торт",
+            "original": "Wedding Cake"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ice-cream-shop",
+      "names": {
+        "en": "Ice Cream Shop",
+        "uk": "Морозиво",
+        "de": "Eisdiele",
+        "ru": "Мороженое",
+        "original": "Ice Cream Shop"
+      },
+      "osmTag": "amenity=ice_cream",
+      "templates": [
+        {
+          "slug": "ice-cream-scoop",
+          "names": {
+            "en": "Ice Cream Scoop",
+            "uk": "Кулька морозива",
+            "de": "Kugel Eis",
+            "ru": "Шарик мороженого",
+            "original": "Ice Cream Scoop"
+          }
+        },
+        {
+          "slug": "milkshake",
+          "names": {
+            "en": "Milkshake",
+            "uk": "Молочний коктейль",
+            "de": "Milchshake",
+            "ru": "Молочный коктейль",
+            "original": "Milkshake"
+          }
+        },
+        {
+          "slug": "sorbet",
+          "names": {
+            "en": "Sorbet",
+            "uk": "Сорбет",
+            "de": "Sorbet",
+            "ru": "Сорбет",
+            "original": "Sorbet"
+          }
+        }
+      ]
+    }
+  ]
+}

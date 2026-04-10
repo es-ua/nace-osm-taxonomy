@@ -1,0 +1,176 @@
+{
+  "slug": "finance",
+  "names": {
+    "en": "Finance & Insurance",
+    "uk": "Фінанси та страхування",
+    "de": "Finanz- & Versicherungswesen",
+    "ru": "Финансы и страхование",
+    "original": "Finance & Insurance"
+  },
+  "icon": "🏦",
+  "naceRef": "K64-K66",
+  "subcategories": [
+    {
+      "slug": "bank",
+      "names": {
+        "en": "Bank",
+        "uk": "Банк",
+        "de": "Bank",
+        "ru": "Банк",
+        "original": "Bank"
+      },
+      "osmTag": "amenity=bank",
+      "templates": [
+        {
+          "slug": "account-opening",
+          "names": {
+            "en": "Account Opening",
+            "uk": "Відкриття рахунку",
+            "de": "Kontoeröffnung",
+            "ru": "Открытие счёта",
+            "original": "Account Opening"
+          }
+        },
+        {
+          "slug": "loan-consultation",
+          "names": {
+            "en": "Loan Consultation",
+            "uk": "Консультація з кредиту",
+            "de": "Kreditberatung",
+            "ru": "Консультация по кредиту",
+            "original": "Loan Consultation"
+          }
+        },
+        {
+          "slug": "mortgage-consultation",
+          "names": {
+            "en": "Mortgage Consultation",
+            "uk": "Консультація з іпотеки",
+            "de": "Hypothekenberatung",
+            "ru": "Консультация по ипотеке",
+            "original": "Mortgage Consultation"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "currency-exchange",
+      "names": {
+        "en": "Currency Exchange",
+        "uk": "Обмін валют",
+        "de": "Wechselstube",
+        "ru": "Обмен валют",
+        "original": "Currency Exchange"
+      },
+      "osmTag": "amenity=bureau_de_change",
+      "templates": [
+        {
+          "slug": "currency-exchange-op",
+          "names": {
+            "en": "Currency Exchange",
+            "uk": "Обмін валюти",
+            "de": "Geldwechsel",
+            "ru": "Обмен валюты",
+            "original": "Currency Exchange"
+          }
+        },
+        {
+          "slug": "money-transfer",
+          "names": {
+            "en": "Money Transfer",
+            "uk": "Грошовий переказ",
+            "de": "Geldüberweisung",
+            "ru": "Денежный перевод",
+            "original": "Money Transfer"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "financial-advisor",
+      "names": {
+        "en": "Financial Advisor",
+        "uk": "Фінансовий радник",
+        "de": "Finanzberater",
+        "ru": "Финансовый советник",
+        "original": "Financial Advisor"
+      },
+      "osmTag": "office=financial_advisor",
+      "templates": [
+        {
+          "slug": "fin-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Beratung",
+            "ru": "Консультация",
+            "original": "Consultation"
+          }
+        },
+        {
+          "slug": "portfolio-review",
+          "names": {
+            "en": "Portfolio Review",
+            "uk": "Огляд портфеля",
+            "de": "Portfolioüberprüfung",
+            "ru": "Обзор портфеля",
+            "original": "Portfolio Review"
+          }
+        },
+        {
+          "slug": "retirement-planning",
+          "names": {
+            "en": "Retirement Planning",
+            "uk": "Пенсійне планування",
+            "de": "Altersvorsorge",
+            "ru": "Пенсионное планирование",
+            "original": "Retirement Planning"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "insurance-agent",
+      "names": {
+        "en": "Insurance Agent",
+        "uk": "Страховий агент",
+        "de": "Versicherungsmakler",
+        "ru": "Страховой агент",
+        "original": "Insurance Agent"
+      },
+      "osmTag": "office=insurance",
+      "templates": [
+        {
+          "slug": "insurance-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Beratung",
+            "ru": "Консультация",
+            "original": "Consultation"
+          }
+        },
+        {
+          "slug": "policy-review",
+          "names": {
+            "en": "Policy Review",
+            "uk": "Огляд поліса",
+            "de": "Policenüberprüfung",
+            "ru": "Обзор полиса",
+            "original": "Policy Review"
+          }
+        },
+        {
+          "slug": "claim-assistance",
+          "names": {
+            "en": "Claim Assistance",
+            "uk": "Допомога зі страховим випадком",
+            "de": "Schadensregulierung",
+            "ru": "Помощь со страховым случаем",
+            "original": "Claim Assistance"
+          }
+        }
+      ]
+    }
+  ]
+}

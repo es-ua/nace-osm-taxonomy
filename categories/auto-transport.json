@@ -1,0 +1,206 @@
+{
+  "slug": "auto-transport",
+  "names": {
+    "en": "Auto & Transport",
+    "uk": "Авто та транспорт",
+    "de": "Auto & Transport",
+    "ru": "Авто и транспорт",
+    "original": "Auto & Transport"
+  },
+  "icon": "🚗",
+  "naceRef": "G45+H49",
+  "subcategories": [
+    {
+      "slug": "car-repair",
+      "names": {
+        "en": "Car Repair",
+        "uk": "Автосервіс",
+        "de": "Autowerkstatt",
+        "ru": "Автосервис",
+        "original": "Car Repair"
+      },
+      "osmTag": "shop=car_repair",
+      "templates": [
+        {
+          "slug": "oil-change",
+          "names": {
+            "en": "Oil Change",
+            "uk": "Заміна мастила",
+            "de": "Ölwechsel",
+            "ru": "Замена масла",
+            "original": "Oil Change"
+          }
+        },
+        {
+          "slug": "brake-service",
+          "names": {
+            "en": "Brake Service",
+            "uk": "Гальмівна система",
+            "de": "Bremsenservice",
+            "ru": "Тормозная система",
+            "original": "Brake Service"
+          }
+        },
+        {
+          "slug": "engine-diagnostic",
+          "names": {
+            "en": "Diagnostics",
+            "uk": "Діагностика",
+            "de": "Motordiagnose",
+            "ru": "Диагностика",
+            "original": "Diagnostics"
+          }
+        },
+        {
+          "slug": "car-inspection",
+          "names": {
+            "en": "Inspection (TÜV)",
+            "uk": "Техогляд",
+            "de": "TÜV/HU",
+            "ru": "Техосмотр",
+            "original": "Inspection (TÜV)"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "car-wash",
+      "names": {
+        "en": "Car Wash",
+        "uk": "Автомийка",
+        "de": "Autowäsche",
+        "ru": "Автомойка",
+        "original": "Car Wash"
+      },
+      "osmTag": "amenity=car_wash",
+      "templates": [
+        {
+          "slug": "exterior-wash",
+          "names": {
+            "en": "Exterior Wash",
+            "uk": "Зовнішня мийка",
+            "de": "Außenwäsche",
+            "ru": "Наружная мойка",
+            "original": "Exterior Wash"
+          }
+        },
+        {
+          "slug": "interior-cleaning",
+          "names": {
+            "en": "Interior Cleaning",
+            "uk": "Хімчистка салону",
+            "de": "Innenreinigung",
+            "ru": "Химчистка салона",
+            "original": "Interior Cleaning"
+          }
+        },
+        {
+          "slug": "full-detail",
+          "names": {
+            "en": "Full Detailing",
+            "uk": "Повний детейлінг",
+            "de": "Vollaufbereitung",
+            "ru": "Полный детейлинг",
+            "original": "Full Detailing"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tire-service",
+      "names": {
+        "en": "Tire Service",
+        "uk": "Шиномонтаж",
+        "de": "Reifenservice",
+        "ru": "Шиномонтаж",
+        "original": "Tire Service"
+      },
+      "osmTag": "shop=tyres",
+      "templates": [
+        {
+          "slug": "tire-change",
+          "names": {
+            "en": "Tire Change",
+            "uk": "Заміна шин",
+            "de": "Reifenwechsel",
+            "ru": "Замена шин",
+            "original": "Tire Change"
+          }
+        },
+        {
+          "slug": "balancing",
+          "names": {
+            "en": "Wheel Balancing",
+            "uk": "Балансування",
+            "de": "Auswuchten",
+            "ru": "Балансировка",
+            "original": "Wheel Balancing"
+          }
+        },
+        {
+          "slug": "alignment",
+          "names": {
+            "en": "Wheel Alignment",
+            "uk": "Розвал-сходження",
+            "de": "Achsvermessung",
+            "ru": "Развал-схождение",
+            "original": "Wheel Alignment"
+          }
+        },
+        {
+          "slug": "tire-storage",
+          "names": {
+            "en": "Tire Storage",
+            "uk": "Зберігання шин",
+            "de": "Reifeneinlagerung",
+            "ru": "Хранение шин",
+            "original": "Tire Storage"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "car-rental",
+      "names": {
+        "en": "Car Rental",
+        "uk": "Оренда авто",
+        "de": "Autovermietung",
+        "ru": "Аренда авто",
+        "original": "Car Rental"
+      },
+      "osmTag": "amenity=car_rental",
+      "templates": [
+        {
+          "slug": "daily-rental",
+          "names": {
+            "en": "Daily Rental",
+            "uk": "На добу",
+            "de": "Tagesmiete",
+            "ru": "На сутки",
+            "original": "Daily Rental"
+          }
+        },
+        {
+          "slug": "weekly-rental",
+          "names": {
+            "en": "Weekly Rental",
+            "uk": "На тиждень",
+            "de": "Wochenmiete",
+            "ru": "На неделю",
+            "original": "Weekly Rental"
+          }
+        },
+        {
+          "slug": "monthly-rental",
+          "names": {
+            "en": "Monthly Rental",
+            "uk": "На місяць",
+            "de": "Monatsmiete",
+            "ru": "На месяц",
+            "original": "Monthly Rental"
+          }
+        }
+      ]
+    }
+  ]
+}

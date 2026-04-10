@@ -1,0 +1,4201 @@
+[
+  {
+    "slug": "food-beverage",
+    "names": {
+      "en": "Food & Beverage",
+      "uk": "Їжа та напої",
+      "de": "Gastronomie",
+      "ru": "Еда и напитки",
+      "original": "Food & Beverage"
+    },
+    "icon": "🍽️",
+    "naceRef": "I56",
+    "subcategories": [
+      {
+        "slug": "restaurant",
+        "names": {
+          "en": "Restaurant",
+          "uk": "Ресторан",
+          "de": "Restaurant",
+          "ru": "Ресторан",
+          "original": "Restaurant"
+        },
+        "osmTag": "amenity=restaurant",
+        "templates": [
+          {
+            "slug": "business-lunch",
+            "names": {
+              "en": "Business Lunch",
+              "uk": "Бізнес-ланч",
+              "de": "Business-Lunch",
+              "ru": "Бизнес-ланч",
+              "original": "Business Lunch"
+            }
+          },
+          {
+            "slug": "banquet",
+            "names": {
+              "en": "Banquet",
+              "uk": "Банкет",
+              "de": "Bankett",
+              "ru": "Банкет",
+              "original": "Banquet"
+            }
+          },
+          {
+            "slug": "takeaway",
+            "names": {
+              "en": "Takeaway",
+              "uk": "На винос",
+              "de": "Zum Mitnehmen",
+              "ru": "Навынос",
+              "original": "Takeaway"
+            }
+          },
+          {
+            "slug": "delivery",
+            "names": {
+              "en": "Delivery",
+              "uk": "Доставка",
+              "de": "Lieferung",
+              "ru": "Доставка",
+              "original": "Delivery"
+            }
+          },
+          {
+            "slug": "catering",
+            "names": {
+              "en": "Catering",
+              "uk": "Кейтеринг",
+              "de": "Catering",
+              "ru": "Кейтеринг",
+              "original": "Catering"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "cafe",
+        "names": {
+          "en": "Cafe",
+          "uk": "Кав\\'ярня",
+          "de": "Café",
+          "ru": "Кафе",
+          "original": "Cafe"
+        },
+        "osmTag": "amenity=cafe",
+        "templates": [
+          {
+            "slug": "coffee-drinks",
+            "names": {
+              "en": "Coffee & Drinks",
+              "uk": "Кава та напої",
+              "de": "Kaffee & Getränke",
+              "ru": "Кофе и напитки",
+              "original": "Coffee & Drinks"
+            }
+          },
+          {
+            "slug": "pastries",
+            "names": {
+              "en": "Pastries",
+              "uk": "Випічка",
+              "de": "Gebäck",
+              "ru": "Выпечка",
+              "original": "Pastries"
+            }
+          },
+          {
+            "slug": "breakfast-set",
+            "names": {
+              "en": "Breakfast Set",
+              "uk": "Сніданок",
+              "de": "Frühstücksmenü",
+              "ru": "Завтрак",
+              "original": "Breakfast Set"
+            }
+          },
+          {
+            "slug": "lunch-menu",
+            "names": {
+              "en": "Lunch Menu",
+              "uk": "Обіднє меню",
+              "de": "Mittagsmenü",
+              "ru": "Обеденное меню",
+              "original": "Lunch Menu"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "bar-pub",
+        "names": {
+          "en": "Bar & Pub",
+          "uk": "Бар та паб",
+          "de": "Bar & Kneipe",
+          "ru": "Бар и паб",
+          "original": "Bar & Pub"
+        },
+        "osmTag": "amenity=bar",
+        "templates": [
+          {
+            "slug": "cocktails",
+            "names": {
+              "en": "Cocktails",
+              "uk": "Коктейлі",
+              "de": "Cocktails",
+              "ru": "Коктейли",
+              "original": "Cocktails"
+            }
+          },
+          {
+            "slug": "beer-selection",
+            "names": {
+              "en": "Craft Beer",
+              "uk": "Крафтове пиво",
+              "de": "Craft-Bier",
+              "ru": "Крафтовое пиво",
+              "original": "Craft Beer"
+            }
+          },
+          {
+            "slug": "hookah",
+            "names": {
+              "en": "Hookah",
+              "uk": "Кальян",
+              "de": "Shisha",
+              "ru": "Кальян",
+              "original": "Hookah"
+            }
+          },
+          {
+            "slug": "live-music-night",
+            "names": {
+              "en": "Live Music Night",
+              "uk": "Жива музика",
+              "de": "Live-Musik-Abend",
+              "ru": "Живая музыка",
+              "original": "Live Music Night"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "fast-food",
+        "names": {
+          "en": "Fast Food",
+          "uk": "Фастфуд",
+          "de": "Schnellimbiss",
+          "ru": "Фастфуд",
+          "original": "Fast Food"
+        },
+        "osmTag": "amenity=fast_food",
+        "templates": [
+          {
+            "slug": "combo-meal",
+            "names": {
+              "en": "Combo Meal",
+              "uk": "Комбо-набір",
+              "de": "Kombi-Menü",
+              "ru": "Комбо-набор",
+              "original": "Combo Meal"
+            }
+          },
+          {
+            "slug": "ff-delivery",
+            "names": {
+              "en": "Delivery",
+              "uk": "Доставка",
+              "de": "Lieferung",
+              "ru": "Доставка",
+              "original": "Delivery"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "bakery",
+        "names": {
+          "en": "Bakery",
+          "uk": "Пекарня",
+          "de": "Bäckerei",
+          "ru": "Пекарня",
+          "original": "Bakery"
+        },
+        "osmTag": "shop=bakery",
+        "templates": [
+          {
+            "slug": "fresh-bread",
+            "names": {
+              "en": "Fresh Bread",
+              "uk": "Свіжий хліб",
+              "de": "Frisches Brot",
+              "ru": "Свежий хлеб",
+              "original": "Fresh Bread"
+            }
+          },
+          {
+            "slug": "bk-pastries",
+            "names": {
+              "en": "Pastries",
+              "uk": "Випічка",
+              "de": "Feingebäck",
+              "ru": "Выпечка",
+              "original": "Pastries"
+            }
+          },
+          {
+            "slug": "custom-cake",
+            "names": {
+              "en": "Custom Cake",
+              "uk": "Торт на замовлення",
+              "de": "Torte nach Wunsch",
+              "ru": "Торт на заказ",
+              "original": "Custom Cake"
+            }
+          },
+          {
+            "slug": "wedding-cake",
+            "names": {
+              "en": "Wedding Cake",
+              "uk": "Весільний торт",
+              "de": "Hochzeitstorte",
+              "ru": "Свадебный торт",
+              "original": "Wedding Cake"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "ice-cream-shop",
+        "names": {
+          "en": "Ice Cream Shop",
+          "uk": "Морозиво",
+          "de": "Eisdiele",
+          "ru": "Мороженое",
+          "original": "Ice Cream Shop"
+        },
+        "osmTag": "amenity=ice_cream",
+        "templates": [
+          {
+            "slug": "ice-cream-scoop",
+            "names": {
+              "en": "Ice Cream Scoop",
+              "uk": "Кулька морозива",
+              "de": "Kugel Eis",
+              "ru": "Шарик мороженого",
+              "original": "Ice Cream Scoop"
+            }
+          },
+          {
+            "slug": "milkshake",
+            "names": {
+              "en": "Milkshake",
+              "uk": "Молочний коктейль",
+              "de": "Milchshake",
+              "ru": "Молочный коктейль",
+              "original": "Milkshake"
+            }
+          },
+          {
+            "slug": "sorbet",
+            "names": {
+              "en": "Sorbet",
+              "uk": "Сорбет",
+              "de": "Sorbet",
+              "ru": "Сорбет",
+              "original": "Sorbet"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "accommodation",
+    "names": {
+      "en": "Accommodation",
+      "uk": "Проживання",
+      "de": "Unterkunft",
+      "ru": "Проживание",
+      "original": "Accommodation"
+    },
+    "icon": "🏨",
+    "naceRef": "I55",
+    "subcategories": [
+      {
+        "slug": "hotel",
+        "names": {
+          "en": "Hotel",
+          "uk": "Готель",
+          "de": "Hotel",
+          "ru": "Отель",
+          "original": "Hotel"
+        },
+        "osmTag": "tourism=hotel",
+        "templates": [
+          {
+            "slug": "single-room",
+            "names": {
+              "en": "Single Room",
+              "uk": "Одномісний номер",
+              "de": "Einzelzimmer",
+              "ru": "Одноместный номер",
+              "original": "Single Room"
+            }
+          },
+          {
+            "slug": "double-room",
+            "names": {
+              "en": "Double Room",
+              "uk": "Двомісний номер",
+              "de": "Doppelzimmer",
+              "ru": "Двухместный номер",
+              "original": "Double Room"
+            }
+          },
+          {
+            "slug": "suite",
+            "names": {
+              "en": "Suite",
+              "uk": "Люкс",
+              "de": "Suite",
+              "ru": "Люкс",
+              "original": "Suite"
+            }
+          },
+          {
+            "slug": "conference-room",
+            "names": {
+              "en": "Conference Room",
+              "uk": "Конференц-зал",
+              "de": "Konferenzraum",
+              "ru": "Конференц-зал",
+              "original": "Conference Room"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "hostel",
+        "names": {
+          "en": "Hostel",
+          "uk": "Хостел",
+          "de": "Hostel",
+          "ru": "Хостел",
+          "original": "Hostel"
+        },
+        "osmTag": "tourism=hostel",
+        "templates": [
+          {
+            "slug": "dorm-bed",
+            "names": {
+              "en": "Dorm Bed",
+              "uk": "Місце в кімнаті",
+              "de": "Bett im Schlafsaal",
+              "ru": "Место в общей комнате",
+              "original": "Dorm Bed"
+            }
+          },
+          {
+            "slug": "private-room",
+            "names": {
+              "en": "Private Room",
+              "uk": "Окрема кімната",
+              "de": "Privatzimmer",
+              "ru": "Отдельная комната",
+              "original": "Private Room"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "guest-house",
+        "names": {
+          "en": "Guest House",
+          "uk": "Гостьовий будинок",
+          "de": "Pension",
+          "ru": "Гостевой дом",
+          "original": "Guest House"
+        },
+        "osmTag": "tourism=guest_house",
+        "templates": [
+          {
+            "slug": "room-night",
+            "names": {
+              "en": "Room per Night",
+              "uk": "Номер за добу",
+              "de": "Zimmer pro Nacht",
+              "ru": "Номер за сутки",
+              "original": "Room per Night"
+            }
+          },
+          {
+            "slug": "weekly-stay",
+            "names": {
+              "en": "Weekly Stay",
+              "uk": "Тижневе проживання",
+              "de": "Wochenaufenthalt",
+              "ru": "Проживание на неделю",
+              "original": "Weekly Stay"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "apartment-rental",
+        "names": {
+          "en": "Apartment Rental",
+          "uk": "Оренда квартири",
+          "de": "Ferienwohnung",
+          "ru": "Аренда квартиры",
+          "original": "Apartment Rental"
+        },
+        "osmTag": "tourism=apartment",
+        "templates": [
+          {
+            "slug": "studio-apt",
+            "names": {
+              "en": "Studio",
+              "uk": "Студія",
+              "de": "Studio",
+              "ru": "Студия",
+              "original": "Studio"
+            }
+          },
+          {
+            "slug": "one-bedroom",
+            "names": {
+              "en": "One Bedroom",
+              "uk": "Однокімнатна",
+              "de": "Einzimmerwohnung",
+              "ru": "Однокомнатная",
+              "original": "One Bedroom"
+            }
+          },
+          {
+            "slug": "two-bedroom",
+            "names": {
+              "en": "Two Bedrooms",
+              "uk": "Двокімнатна",
+              "de": "Zweizimmerwohnung",
+              "ru": "Двухкомнатная",
+              "original": "Two Bedrooms"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "retail",
+    "names": {
+      "en": "Retail & Shopping",
+      "uk": "Торгівля",
+      "de": "Einzelhandel",
+      "ru": "Торговля",
+      "original": "Retail & Shopping"
+    },
+    "icon": "🛍️",
+    "naceRef": "G47",
+    "subcategories": [
+      {
+        "slug": "grocery",
+        "names": {
+          "en": "Grocery Store",
+          "uk": "Продуктовий магазин",
+          "de": "Lebensmittelgeschäft",
+          "ru": "Продуктовый магазин",
+          "original": "Grocery Store"
+        },
+        "osmTag": "shop=supermarket",
+        "templates": [
+          {
+            "slug": "home-delivery",
+            "names": {
+              "en": "Home Delivery",
+              "uk": "Доставка додому",
+              "de": "Lieferservice",
+              "ru": "Доставка на дом",
+              "original": "Home Delivery"
+            }
+          },
+          {
+            "slug": "gift-basket",
+            "names": {
+              "en": "Gift Basket",
+              "uk": "Подарунковий кошик",
+              "de": "Geschenkkorb",
+              "ru": "Подарочная корзина",
+              "original": "Gift Basket"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "clothing",
+        "names": {
+          "en": "Clothing Store",
+          "uk": "Магазин одягу",
+          "de": "Bekleidungsgeschäft",
+          "ru": "Магазин одежды",
+          "original": "Clothing Store"
+        },
+        "osmTag": "shop=clothes",
+        "templates": [
+          {
+            "slug": "personal-styling",
+            "names": {
+              "en": "Personal Styling",
+              "uk": "Персональний стиліст",
+              "de": "Persönliche Stilberatung",
+              "ru": "Персональный стилист",
+              "original": "Personal Styling"
+            }
+          },
+          {
+            "slug": "alterations",
+            "names": {
+              "en": "Alterations",
+              "uk": "Підгонка одягу",
+              "de": "Änderungen",
+              "ru": "Подгонка одежды",
+              "original": "Alterations"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "electronics",
+        "names": {
+          "en": "Electronics",
+          "uk": "Електроніка",
+          "de": "Elektronik",
+          "ru": "Электроника",
+          "original": "Electronics"
+        },
+        "osmTag": "shop=electronics",
+        "templates": [
+          {
+            "slug": "device-setup",
+            "names": {
+              "en": "Device Setup",
+              "uk": "Налаштування пристрою",
+              "de": "Geräteeinrichtung",
+              "ru": "Настройка устройства",
+              "original": "Device Setup"
+            }
+          },
+          {
+            "slug": "warranty-repair",
+            "names": {
+              "en": "Warranty Repair",
+              "uk": "Гарантійний ремонт",
+              "de": "Garantiereparatur",
+              "ru": "Гарантийный ремонт",
+              "original": "Warranty Repair"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "florist",
+        "names": {
+          "en": "Florist",
+          "uk": "Квіткова крамниця",
+          "de": "Blumenladen",
+          "ru": "Цветочный магазин",
+          "original": "Florist"
+        },
+        "osmTag": "shop=florist",
+        "templates": [
+          {
+            "slug": "bouquet",
+            "names": {
+              "en": "Bouquet",
+              "uk": "Букет",
+              "de": "Blumenstrauß",
+              "ru": "Букет",
+              "original": "Bouquet"
+            }
+          },
+          {
+            "slug": "wedding-floristry",
+            "names": {
+              "en": "Wedding Floristry",
+              "uk": "Весільна флористика",
+              "de": "Hochzeitsfloristik",
+              "ru": "Свадебная флористика",
+              "original": "Wedding Floristry"
+            }
+          },
+          {
+            "slug": "subscription-delivery",
+            "names": {
+              "en": "Flower Subscription",
+              "uk": "Підписка на квіти",
+              "de": "Blumenabo",
+              "ru": "Подписка на цветы",
+              "original": "Flower Subscription"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "pet-shop",
+        "names": {
+          "en": "Pet Shop",
+          "uk": "Зоомагазин",
+          "de": "Tierhandlung",
+          "ru": "Зоомагазин",
+          "original": "Pet Shop"
+        },
+        "osmTag": "shop=pet",
+        "templates": [
+          {
+            "slug": "pet-grooming",
+            "names": {
+              "en": "Pet Grooming",
+              "uk": "Грумінг",
+              "de": "Tierpflege",
+              "ru": "Груминг",
+              "original": "Pet Grooming"
+            }
+          },
+          {
+            "slug": "pet-food-delivery",
+            "names": {
+              "en": "Pet Food Delivery",
+              "uk": "Доставка корму",
+              "de": "Tierfutter-Lieferung",
+              "ru": "Доставка корма",
+              "original": "Pet Food Delivery"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "pharmacy",
+        "names": {
+          "en": "Pharmacy",
+          "uk": "Аптека",
+          "de": "Apotheke",
+          "ru": "Аптека",
+          "original": "Pharmacy"
+        },
+        "osmTag": "amenity=pharmacy",
+        "templates": [
+          {
+            "slug": "prescription",
+            "names": {
+              "en": "Prescription",
+              "uk": "Рецепт",
+              "de": "Rezept",
+              "ru": "Рецепт",
+              "original": "Prescription"
+            }
+          },
+          {
+            "slug": "pharma-consultation",
+            "names": {
+              "en": "Consultation",
+              "uk": "Консультація",
+              "de": "Beratung",
+              "ru": "Консультация",
+              "original": "Consultation"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "jewelry",
+        "names": {
+          "en": "Jewelry",
+          "uk": "Ювелірна крамниця",
+          "de": "Juwelier",
+          "ru": "Ювелирный магазин",
+          "original": "Jewelry"
+        },
+        "osmTag": "shop=jewelry",
+        "templates": [
+          {
+            "slug": "custom-jewelry",
+            "names": {
+              "en": "Custom Design",
+              "uk": "На замовлення",
+              "de": "Einzelanfertigung",
+              "ru": "На заказ",
+              "original": "Custom Design"
+            }
+          },
+          {
+            "slug": "jewelry-repair",
+            "names": {
+              "en": "Repair",
+              "uk": "Ремонт прикрас",
+              "de": "Reparatur",
+              "ru": "Ремонт украшений",
+              "original": "Repair"
+            }
+          },
+          {
+            "slug": "engraving",
+            "names": {
+              "en": "Engraving",
+              "uk": "Гравіювання",
+              "de": "Gravur",
+              "ru": "Гравировка",
+              "original": "Engraving"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "optician",
+        "names": {
+          "en": "Optician",
+          "uk": "Оптика",
+          "de": "Optiker",
+          "ru": "Оптика",
+          "original": "Optician"
+        },
+        "osmTag": "shop=optician",
+        "templates": [
+          {
+            "slug": "eye-exam",
+            "names": {
+              "en": "Eye Exam",
+              "uk": "Перевірка зору",
+              "de": "Sehtest",
+              "ru": "Проверка зрения",
+              "original": "Eye Exam"
+            }
+          },
+          {
+            "slug": "lens-fitting",
+            "names": {
+              "en": "Lens Fitting",
+              "uk": "Підбір лінз",
+              "de": "Linsenanpassung",
+              "ru": "Подбор линз",
+              "original": "Lens Fitting"
+            }
+          },
+          {
+            "slug": "frame-adjustment",
+            "names": {
+              "en": "Frame Adjustment",
+              "uk": "Регулювання оправи",
+              "de": "Brillenanpassung",
+              "ru": "Регулировка оправы",
+              "original": "Frame Adjustment"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "beauty-wellness",
+    "names": {
+      "en": "Beauty & Wellness",
+      "uk": "Краса та здоров\\'я",
+      "de": "Schönheit & Wellness",
+      "ru": "Красота и здоровье",
+      "original": "Beauty & Wellness"
+    },
+    "icon": "💇",
+    "naceRef": "S96",
+    "subcategories": [
+      {
+        "slug": "hair-salon",
+        "names": {
+          "en": "Hair Salon",
+          "uk": "Перукарня",
+          "de": "Friseursalon",
+          "ru": "Парикмахерская",
+          "original": "Hair Salon"
+        },
+        "osmTag": "shop=hairdresser",
+        "templates": [
+          {
+            "slug": "womens-haircut",
+            "names": {
+              "en": "Women's Haircut",
+              "uk": "Жіноча стрижка",
+              "de": "Damenhaarschnitt",
+              "ru": "Женская стрижка",
+              "original": "Women's Haircut"
+            }
+          },
+          {
+            "slug": "mens-haircut",
+            "names": {
+              "en": "Men's Haircut",
+              "uk": "Чоловіча стрижка",
+              "de": "Herrenhaarschnitt",
+              "ru": "Мужская стрижка",
+              "original": "Men's Haircut"
+            }
+          },
+          {
+            "slug": "hair-coloring",
+            "names": {
+              "en": "Hair Coloring",
+              "uk": "Фарбування волосся",
+              "de": "Haarfärbung",
+              "ru": "Окрашивание волос",
+              "original": "Hair Coloring"
+            }
+          },
+          {
+            "slug": "highlights",
+            "names": {
+              "en": "Highlights",
+              "uk": "Мелірування",
+              "de": "Strähnchen",
+              "ru": "Мелирование",
+              "original": "Highlights"
+            }
+          },
+          {
+            "slug": "blowdry",
+            "names": {
+              "en": "Blow Dry",
+              "uk": "Укладка",
+              "de": "Föhnen",
+              "ru": "Укладка",
+              "original": "Blow Dry"
+            }
+          },
+          {
+            "slug": "hair-treatment",
+            "names": {
+              "en": "Hair Treatment",
+              "uk": "Лікування волосся",
+              "de": "Haarbehandlung",
+              "ru": "Лечение волос",
+              "original": "Hair Treatment"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "barbershop",
+        "names": {
+          "en": "Barbershop",
+          "uk": "Барбершоп",
+          "de": "Barbershop",
+          "ru": "Барбершоп",
+          "original": "Barbershop"
+        },
+        "osmTag": "shop=hairdresser",
+        "templates": [
+          {
+            "slug": "barber-haircut",
+            "names": {
+              "en": "Haircut",
+              "uk": "Стрижка",
+              "de": "Haarschnitt",
+              "ru": "Стрижка",
+              "original": "Haircut"
+            }
+          },
+          {
+            "slug": "beard-trim",
+            "names": {
+              "en": "Beard Trim",
+              "uk": "Стрижка бороди",
+              "de": "Barttrimmen",
+              "ru": "Стрижка бороды",
+              "original": "Beard Trim"
+            }
+          },
+          {
+            "slug": "hot-towel-shave",
+            "names": {
+              "en": "Hot Towel Shave",
+              "uk": "Гоління гарячим рушником",
+              "de": "Heißtuchrasur",
+              "ru": "Бритьё горячим полотенцем",
+              "original": "Hot Towel Shave"
+            }
+          },
+          {
+            "slug": "head-shave",
+            "names": {
+              "en": "Head Shave",
+              "uk": "Гоління голови",
+              "de": "Kopfrasur",
+              "ru": "Бритьё головы",
+              "original": "Head Shave"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "nail-studio",
+        "names": {
+          "en": "Nail Studio",
+          "uk": "Нігтьова студія",
+          "de": "Nagelstudio",
+          "ru": "Ногтевая студия",
+          "original": "Nail Studio"
+        },
+        "osmTag": "shop=beauty",
+        "templates": [
+          {
+            "slug": "manicure",
+            "names": {
+              "en": "Manicure",
+              "uk": "Манікюр",
+              "de": "Maniküre",
+              "ru": "Маникюр",
+              "original": "Manicure"
+            }
+          },
+          {
+            "slug": "pedicure",
+            "names": {
+              "en": "Pedicure",
+              "uk": "Педикюр",
+              "de": "Pediküre",
+              "ru": "Педикюр",
+              "original": "Pedicure"
+            }
+          },
+          {
+            "slug": "gel-nails",
+            "names": {
+              "en": "Gel Nails",
+              "uk": "Гелеві нігті",
+              "de": "Gel-Nägel",
+              "ru": "Гелевые ногти",
+              "original": "Gel Nails"
+            }
+          },
+          {
+            "slug": "nail-art",
+            "names": {
+              "en": "Nail Art",
+              "uk": "Нейл-арт",
+              "de": "Nageldesign",
+              "ru": "Нейл-арт",
+              "original": "Nail Art"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "spa-massage",
+        "names": {
+          "en": "Spa & Massage",
+          "uk": "Спа та масаж",
+          "de": "Spa & Massage",
+          "ru": "Спа и массаж",
+          "original": "Spa & Massage"
+        },
+        "osmTag": "shop=massage",
+        "templates": [
+          {
+            "slug": "swedish-massage",
+            "names": {
+              "en": "Swedish Massage",
+              "uk": "Класичний масаж",
+              "de": "Schwedische Massage",
+              "ru": "Классический массаж",
+              "original": "Swedish Massage"
+            }
+          },
+          {
+            "slug": "deep-tissue",
+            "names": {
+              "en": "Deep Tissue Massage",
+              "uk": "Глибокий масаж",
+              "de": "Tiefengewebsmassage",
+              "ru": "Глубокий массаж",
+              "original": "Deep Tissue Massage"
+            }
+          },
+          {
+            "slug": "hot-stone",
+            "names": {
+              "en": "Hot Stone Massage",
+              "uk": "Масаж гарячими каменями",
+              "de": "Hot-Stone-Massage",
+              "ru": "Массаж горячими камнями",
+              "original": "Hot Stone Massage"
+            }
+          },
+          {
+            "slug": "facial",
+            "names": {
+              "en": "Facial",
+              "uk": "Догляд за обличчям",
+              "de": "Gesichtsbehandlung",
+              "ru": "Уход за лицом",
+              "original": "Facial"
+            }
+          },
+          {
+            "slug": "body-wrap",
+            "names": {
+              "en": "Body Wrap",
+              "uk": "Обгортання",
+              "de": "Körperwickel",
+              "ru": "Обёртывание",
+              "original": "Body Wrap"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "beauty-salon",
+        "names": {
+          "en": "Beauty Salon",
+          "uk": "Салон краси",
+          "de": "Kosmetikstudio",
+          "ru": "Салон красоты",
+          "original": "Beauty Salon"
+        },
+        "osmTag": "shop=beauty",
+        "templates": [
+          {
+            "slug": "facial-treatment",
+            "names": {
+              "en": "Facial Treatment",
+              "uk": "Процедура для обличчя",
+              "de": "Gesichtsbehandlung",
+              "ru": "Процедура для лица",
+              "original": "Facial Treatment"
+            }
+          },
+          {
+            "slug": "eyebrow-shaping",
+            "names": {
+              "en": "Eyebrow Shaping",
+              "uk": "Корекція брів",
+              "de": "Augenbrauenkorrektur",
+              "ru": "Коррекция бровей",
+              "original": "Eyebrow Shaping"
+            }
+          },
+          {
+            "slug": "eyelash-extensions",
+            "names": {
+              "en": "Eyelash Extensions",
+              "uk": "Нарощування вій",
+              "de": "Wimpernverlängerung",
+              "ru": "Наращивание ресниц",
+              "original": "Eyelash Extensions"
+            }
+          },
+          {
+            "slug": "waxing",
+            "names": {
+              "en": "Waxing",
+              "uk": "Воскова депіляція",
+              "de": "Waxing",
+              "ru": "Восковая депиляция",
+              "original": "Waxing"
+            }
+          },
+          {
+            "slug": "makeup",
+            "names": {
+              "en": "Makeup",
+              "uk": "Макіяж",
+              "de": "Make-up",
+              "ru": "Макияж",
+              "original": "Makeup"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "tattoo-piercing",
+        "names": {
+          "en": "Tattoo & Piercing",
+          "uk": "Тату та пірсинг",
+          "de": "Tattoo & Piercing",
+          "ru": "Тату и пирсинг",
+          "original": "Tattoo & Piercing"
+        },
+        "osmTag": "shop=tattoo",
+        "templates": [
+          {
+            "slug": "tattoo-small",
+            "names": {
+              "en": "Small Tattoo",
+              "uk": "Мале тату",
+              "de": "Kleines Tattoo",
+              "ru": "Маленькое тату",
+              "original": "Small Tattoo"
+            }
+          },
+          {
+            "slug": "tattoo-large",
+            "names": {
+              "en": "Large Tattoo",
+              "uk": "Велике тату",
+              "de": "Großes Tattoo",
+              "ru": "Большое тату",
+              "original": "Large Tattoo"
+            }
+          },
+          {
+            "slug": "piercing",
+            "names": {
+              "en": "Piercing",
+              "uk": "Пірсинг",
+              "de": "Piercing",
+              "ru": "Пирсинг",
+              "original": "Piercing"
+            }
+          },
+          {
+            "slug": "tattoo-removal",
+            "names": {
+              "en": "Tattoo Removal",
+              "uk": "Видалення тату",
+              "de": "Tattoo-Entfernung",
+              "ru": "Удаление тату",
+              "original": "Tattoo Removal"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "tanning-studio",
+        "names": {
+          "en": "Tanning Studio",
+          "uk": "Солярій",
+          "de": "Sonnenstudio",
+          "ru": "Солярий",
+          "original": "Tanning Studio"
+        },
+        "osmTag": "leisure=tanning_salon",
+        "templates": [
+          {
+            "slug": "tanning-session",
+            "names": {
+              "en": "Tanning Session",
+              "uk": "Сеанс засмаги",
+              "de": "Bräunungssitzung",
+              "ru": "Сеанс загара",
+              "original": "Tanning Session"
+            }
+          },
+          {
+            "slug": "spray-tan",
+            "names": {
+              "en": "Spray Tan",
+              "uk": "Автозасмага",
+              "de": "Sprühbräune",
+              "ru": "Автозагар",
+              "original": "Spray Tan"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "health",
+    "names": {
+      "en": "Health & Medical",
+      "uk": "Здоров\\'я та медицина",
+      "de": "Gesundheit & Medizin",
+      "ru": "Здоровье и медицина",
+      "original": "Health & Medical"
+    },
+    "icon": "🏥",
+    "naceRef": "Q86",
+    "subcategories": [
+      {
+        "slug": "general-doctor",
+        "names": {
+          "en": "General Practitioner",
+          "uk": "Сімейний лікар",
+          "de": "Hausarzt",
+          "ru": "Семейный врач",
+          "original": "General Practitioner"
+        },
+        "osmTag": "healthcare=doctor",
+        "templates": [
+          {
+            "slug": "consultation",
+            "names": {
+              "en": "Consultation",
+              "uk": "Консультація",
+              "de": "Sprechstunde",
+              "ru": "Консультация",
+              "original": "Consultation"
+            }
+          },
+          {
+            "slug": "check-up",
+            "names": {
+              "en": "Check-up",
+              "uk": "Профогляд",
+              "de": "Vorsorgeuntersuchung",
+              "ru": "Медосмотр",
+              "original": "Check-up"
+            }
+          },
+          {
+            "slug": "vaccination",
+            "names": {
+              "en": "Vaccination",
+              "uk": "Вакцинація",
+              "de": "Impfung",
+              "ru": "Вакцинация",
+              "original": "Vaccination"
+            }
+          },
+          {
+            "slug": "blood-test",
+            "names": {
+              "en": "Blood Test",
+              "uk": "Аналіз крові",
+              "de": "Blutuntersuchung",
+              "ru": "Анализ крови",
+              "original": "Blood Test"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "dentist",
+        "names": {
+          "en": "Dentist",
+          "uk": "Стоматолог",
+          "de": "Zahnarzt",
+          "ru": "Стоматолог",
+          "original": "Dentist"
+        },
+        "osmTag": "healthcare=dentist",
+        "templates": [
+          {
+            "slug": "dental-cleaning",
+            "names": {
+              "en": "Cleaning",
+              "uk": "Чистка зубів",
+              "de": "Zahnreinigung",
+              "ru": "Чистка зубов",
+              "original": "Cleaning"
+            }
+          },
+          {
+            "slug": "filling",
+            "names": {
+              "en": "Filling",
+              "uk": "Пломбування",
+              "de": "Füllung",
+              "ru": "Пломбирование",
+              "original": "Filling"
+            }
+          },
+          {
+            "slug": "extraction",
+            "names": {
+              "en": "Extraction",
+              "uk": "Видалення зуба",
+              "de": "Zahnextraktion",
+              "ru": "Удаление зуба",
+              "original": "Extraction"
+            }
+          },
+          {
+            "slug": "whitening",
+            "names": {
+              "en": "Whitening",
+              "uk": "Відбілювання",
+              "de": "Zahnaufhellung",
+              "ru": "Отбеливание",
+              "original": "Whitening"
+            }
+          },
+          {
+            "slug": "implant",
+            "names": {
+              "en": "Dental Implant",
+              "uk": "Імплант",
+              "de": "Zahnimplantat",
+              "ru": "Имплант",
+              "original": "Dental Implant"
+            }
+          },
+          {
+            "slug": "crown",
+            "names": {
+              "en": "Crown",
+              "uk": "Коронка",
+              "de": "Zahnkrone",
+              "ru": "Коронка",
+              "original": "Crown"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "physiotherapy",
+        "names": {
+          "en": "Physiotherapy",
+          "uk": "Фізіотерапія",
+          "de": "Physiotherapie",
+          "ru": "Физиотерапия",
+          "original": "Physiotherapy"
+        },
+        "osmTag": "healthcare=physiotherapist",
+        "templates": [
+          {
+            "slug": "physio-session",
+            "names": {
+              "en": "Session",
+              "uk": "Сеанс",
+              "de": "Behandlung",
+              "ru": "Сеанс",
+              "original": "Session"
+            }
+          },
+          {
+            "slug": "physio-assessment",
+            "names": {
+              "en": "Assessment",
+              "uk": "Діагностика",
+              "de": "Befunderhebung",
+              "ru": "Диагностика",
+              "original": "Assessment"
+            }
+          },
+          {
+            "slug": "manual-therapy",
+            "names": {
+              "en": "Manual Therapy",
+              "uk": "Мануальна терапія",
+              "de": "Manuelle Therapie",
+              "ru": "Мануальная терапия",
+              "original": "Manual Therapy"
+            }
+          },
+          {
+            "slug": "sports-rehab",
+            "names": {
+              "en": "Sports Rehab",
+              "uk": "Спортивна реабілітація",
+              "de": "Sportrehabilitation",
+              "ru": "Спортивная реабилитация",
+              "original": "Sports Rehab"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "psychologist",
+        "names": {
+          "en": "Psychologist",
+          "uk": "Психолог",
+          "de": "Psychologe",
+          "ru": "Психолог",
+          "original": "Psychologist"
+        },
+        "osmTag": "healthcare=psychologist",
+        "templates": [
+          {
+            "slug": "individual-session",
+            "names": {
+              "en": "Individual Session",
+              "uk": "Індивідуальний сеанс",
+              "de": "Einzelsitzung",
+              "ru": "Индивидуальный сеанс",
+              "original": "Individual Session"
+            }
+          },
+          {
+            "slug": "couples-therapy",
+            "names": {
+              "en": "Couples Therapy",
+              "uk": "Парна терапія",
+              "de": "Paartherapie",
+              "ru": "Парная терапия",
+              "original": "Couples Therapy"
+            }
+          },
+          {
+            "slug": "psych-assessment",
+            "names": {
+              "en": "Assessment",
+              "uk": "Діагностика",
+              "de": "Diagnostik",
+              "ru": "Диагностика",
+              "original": "Assessment"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "veterinary",
+        "names": {
+          "en": "Veterinary",
+          "uk": "Ветеринарія",
+          "de": "Tierarzt",
+          "ru": "Ветеринария",
+          "original": "Veterinary"
+        },
+        "osmTag": "amenity=veterinary",
+        "templates": [
+          {
+            "slug": "vet-consultation",
+            "names": {
+              "en": "Consultation",
+              "uk": "Консультація",
+              "de": "Sprechstunde",
+              "ru": "Консультация",
+              "original": "Consultation"
+            }
+          },
+          {
+            "slug": "vet-vaccination",
+            "names": {
+              "en": "Vaccination",
+              "uk": "Вакцинація",
+              "de": "Impfung",
+              "ru": "Вакцинация",
+              "original": "Vaccination"
+            }
+          },
+          {
+            "slug": "vet-surgery",
+            "names": {
+              "en": "Surgery",
+              "uk": "Хірургія",
+              "de": "Operation",
+              "ru": "Хирургия",
+              "original": "Surgery"
+            }
+          },
+          {
+            "slug": "vet-grooming",
+            "names": {
+              "en": "Grooming",
+              "uk": "Грумінг",
+              "de": "Fellpflege",
+              "ru": "Груминг",
+              "original": "Grooming"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "ophthalmologist",
+        "names": {
+          "en": "Ophthalmologist",
+          "uk": "Офтальмолог",
+          "de": "Augenarzt",
+          "ru": "Офтальмолог",
+          "original": "Ophthalmologist"
+        },
+        "osmTag": "healthcare=doctor",
+        "templates": [
+          {
+            "slug": "oph-eye-exam",
+            "names": {
+              "en": "Eye Exam",
+              "uk": "Перевірка зору",
+              "de": "Augenuntersuchung",
+              "ru": "Проверка зрения",
+              "original": "Eye Exam"
+            }
+          },
+          {
+            "slug": "laser-consultation",
+            "names": {
+              "en": "Laser Consultation",
+              "uk": "Консультація з лазерної корекції",
+              "de": "Laser-Beratung",
+              "ru": "Консультация по лазерной коррекции",
+              "original": "Laser Consultation"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "dermatologist",
+        "names": {
+          "en": "Dermatologist",
+          "uk": "Дерматолог",
+          "de": "Hautarzt",
+          "ru": "Дерматолог",
+          "original": "Dermatologist"
+        },
+        "osmTag": "healthcare=doctor",
+        "templates": [
+          {
+            "slug": "skin-consultation",
+            "names": {
+              "en": "Consultation",
+              "uk": "Консультація",
+              "de": "Sprechstunde",
+              "ru": "Консультация",
+              "original": "Consultation"
+            }
+          },
+          {
+            "slug": "skin-check",
+            "names": {
+              "en": "Skin Check",
+              "uk": "Перевірка шкіри",
+              "de": "Hautkrebsvorsorge",
+              "ru": "Проверка кожи",
+              "original": "Skin Check"
+            }
+          },
+          {
+            "slug": "acne-treatment",
+            "names": {
+              "en": "Acne Treatment",
+              "uk": "Лікування акне",
+              "de": "Aknebehandlung",
+              "ru": "Лечение акне",
+              "original": "Acne Treatment"
+            }
+          },
+          {
+            "slug": "mole-removal",
+            "names": {
+              "en": "Mole Removal",
+              "uk": "Видалення родимок",
+              "de": "Muttermalentfernung",
+              "ru": "Удаление родинок",
+              "original": "Mole Removal"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "education",
+    "names": {
+      "en": "Education & Training",
+      "uk": "Освіта та навчання",
+      "de": "Bildung & Ausbildung",
+      "ru": "Образование и обучение",
+      "original": "Education & Training"
+    },
+    "icon": "🎓",
+    "naceRef": "P85",
+    "subcategories": [
+      {
+        "slug": "language-school",
+        "names": {
+          "en": "Language School",
+          "uk": "Мовна школа",
+          "de": "Sprachschule",
+          "ru": "Языковая школа",
+          "original": "Language School"
+        },
+        "osmTag": "amenity=language_school",
+        "templates": [
+          {
+            "slug": "group-lesson",
+            "names": {
+              "en": "Group Lesson",
+              "uk": "Групове заняття",
+              "de": "Gruppenunterricht",
+              "ru": "Групповое занятие",
+              "original": "Group Lesson"
+            }
+          },
+          {
+            "slug": "private-lesson",
+            "names": {
+              "en": "Private Lesson",
+              "uk": "Індивідуальне заняття",
+              "de": "Einzelunterricht",
+              "ru": "Индивидуальное занятие",
+              "original": "Private Lesson"
+            }
+          },
+          {
+            "slug": "intensive-course",
+            "names": {
+              "en": "Intensive Course",
+              "uk": "Інтенсивний курс",
+              "de": "Intensivkurs",
+              "ru": "Интенсивный курс",
+              "original": "Intensive Course"
+            }
+          },
+          {
+            "slug": "exam-prep",
+            "names": {
+              "en": "Exam Preparation",
+              "uk": "Підготовка до іспиту",
+              "de": "Prüfungsvorbereitung",
+              "ru": "Подготовка к экзамену",
+              "original": "Exam Preparation"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "driving-school",
+        "names": {
+          "en": "Driving School",
+          "uk": "Автошкола",
+          "de": "Fahrschule",
+          "ru": "Автошкола",
+          "original": "Driving School"
+        },
+        "osmTag": "amenity=driving_school",
+        "templates": [
+          {
+            "slug": "theory-lesson",
+            "names": {
+              "en": "Theory Lesson",
+              "uk": "Теоретичне заняття",
+              "de": "Theorieunterricht",
+              "ru": "Теоретическое занятие",
+              "original": "Theory Lesson"
+            }
+          },
+          {
+            "slug": "practical-lesson",
+            "names": {
+              "en": "Practical Lesson",
+              "uk": "Практичне заняття",
+              "de": "Fahrstunde",
+              "ru": "Практическое занятие",
+              "original": "Practical Lesson"
+            }
+          },
+          {
+            "slug": "driving-exam-prep",
+            "names": {
+              "en": "Exam Preparation",
+              "uk": "Підготовка до іспиту",
+              "de": "Prüfungsvorbereitung",
+              "ru": "Подготовка к экзамену",
+              "original": "Exam Preparation"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "music-school",
+        "names": {
+          "en": "Music School",
+          "uk": "Музична школа",
+          "de": "Musikschule",
+          "ru": "Музыкальная школа",
+          "original": "Music School"
+        },
+        "osmTag": "amenity=music_school",
+        "templates": [
+          {
+            "slug": "music-individual",
+            "names": {
+              "en": "Individual Lesson",
+              "uk": "Індивідуальне заняття",
+              "de": "Einzelunterricht",
+              "ru": "Индивидуальное занятие",
+              "original": "Individual Lesson"
+            }
+          },
+          {
+            "slug": "music-group",
+            "names": {
+              "en": "Group Lesson",
+              "uk": "Групове заняття",
+              "de": "Gruppenunterricht",
+              "ru": "Групповое занятие",
+              "original": "Group Lesson"
+            }
+          },
+          {
+            "slug": "instrument-rental",
+            "names": {
+              "en": "Instrument Rental",
+              "uk": "Оренда інструменту",
+              "de": "Instrumentenverleih",
+              "ru": "Аренда инструмента",
+              "original": "Instrument Rental"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "tutoring",
+        "names": {
+          "en": "Tutoring",
+          "uk": "Репетиторство",
+          "de": "Nachhilfe",
+          "ru": "Репетиторство",
+          "original": "Tutoring"
+        },
+        "osmTag": "office=tutoring",
+        "templates": [
+          {
+            "slug": "math-tutoring",
+            "names": {
+              "en": "Math",
+              "uk": "Математика",
+              "de": "Mathematik",
+              "ru": "Математика",
+              "original": "Math"
+            }
+          },
+          {
+            "slug": "science-tutoring",
+            "names": {
+              "en": "Science",
+              "uk": "Природничі науки",
+              "de": "Naturwissenschaften",
+              "ru": "Естественные науки",
+              "original": "Science"
+            }
+          },
+          {
+            "slug": "tutor-exam-prep",
+            "names": {
+              "en": "Exam Preparation",
+              "uk": "Підготовка до іспиту",
+              "de": "Prüfungsvorbereitung",
+              "ru": "Подготовка к экзамену",
+              "original": "Exam Preparation"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "dance-school",
+        "names": {
+          "en": "Dance School",
+          "uk": "Школа танців",
+          "de": "Tanzschule",
+          "ru": "Школа танцев",
+          "original": "Dance School"
+        },
+        "osmTag": "leisure=dance",
+        "templates": [
+          {
+            "slug": "dance-trial",
+            "names": {
+              "en": "Trial Lesson",
+              "uk": "Пробне заняття",
+              "de": "Probestunde",
+              "ru": "Пробное занятие",
+              "original": "Trial Lesson"
+            }
+          },
+          {
+            "slug": "dance-monthly",
+            "names": {
+              "en": "Monthly Pass",
+              "uk": "Місячний абонемент",
+              "de": "Monatskarte",
+              "ru": "Месячный абонемент",
+              "original": "Monthly Pass"
+            }
+          },
+          {
+            "slug": "dance-private",
+            "names": {
+              "en": "Private Lesson",
+              "uk": "Індивідуальне заняття",
+              "de": "Privatstunde",
+              "ru": "Индивидуальное занятие",
+              "original": "Private Lesson"
+            }
+          },
+          {
+            "slug": "dance-workshop",
+            "names": {
+              "en": "Workshop",
+              "uk": "Майстер-клас",
+              "de": "Workshop",
+              "ru": "Мастер-класс",
+              "original": "Workshop"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "art-school",
+        "names": {
+          "en": "Art School",
+          "uk": "Художня школа",
+          "de": "Kunstschule",
+          "ru": "Художественная школа",
+          "original": "Art School"
+        },
+        "osmTag": "amenity=school",
+        "templates": [
+          {
+            "slug": "drawing-class",
+            "names": {
+              "en": "Drawing Class",
+              "uk": "Малювання",
+              "de": "Zeichenkurs",
+              "ru": "Рисование",
+              "original": "Drawing Class"
+            }
+          },
+          {
+            "slug": "painting-class",
+            "names": {
+              "en": "Painting Class",
+              "uk": "Живопис",
+              "de": "Malkurs",
+              "ru": "Живопись",
+              "original": "Painting Class"
+            }
+          },
+          {
+            "slug": "pottery-class",
+            "names": {
+              "en": "Pottery Class",
+              "uk": "Гончарство",
+              "de": "Töpferkurs",
+              "ru": "Гончарство",
+              "original": "Pottery Class"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "kindergarten",
+        "names": {
+          "en": "Kindergarten",
+          "uk": "Дитячий садок",
+          "de": "Kindergarten",
+          "ru": "Детский сад",
+          "original": "Kindergarten"
+        },
+        "osmTag": "amenity=kindergarten",
+        "templates": [
+          {
+            "slug": "full-day-care",
+            "names": {
+              "en": "Full Day",
+              "uk": "Повний день",
+              "de": "Ganztags",
+              "ru": "Полный день",
+              "original": "Full Day"
+            }
+          },
+          {
+            "slug": "half-day-care",
+            "names": {
+              "en": "Half Day",
+              "uk": "Півдня",
+              "de": "Halbtags",
+              "ru": "Полдня",
+              "original": "Half Day"
+            }
+          },
+          {
+            "slug": "after-school",
+            "names": {
+              "en": "After School",
+              "uk": "Продовжений день",
+              "de": "Nachmittagsbetreuung",
+              "ru": "Продлёнка",
+              "original": "After School"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "auto-transport",
+    "names": {
+      "en": "Auto & Transport",
+      "uk": "Авто та транспорт",
+      "de": "Auto & Transport",
+      "ru": "Авто и транспорт",
+      "original": "Auto & Transport"
+    },
+    "icon": "🚗",
+    "naceRef": "G45+H49",
+    "subcategories": [
+      {
+        "slug": "car-repair",
+        "names": {
+          "en": "Car Repair",
+          "uk": "Автосервіс",
+          "de": "Autowerkstatt",
+          "ru": "Автосервис",
+          "original": "Car Repair"
+        },
+        "osmTag": "shop=car_repair",
+        "templates": [
+          {
+            "slug": "oil-change",
+            "names": {
+              "en": "Oil Change",
+              "uk": "Заміна мастила",
+              "de": "Ölwechsel",
+              "ru": "Замена масла",
+              "original": "Oil Change"
+            }
+          },
+          {
+            "slug": "brake-service",
+            "names": {
+              "en": "Brake Service",
+              "uk": "Гальмівна система",
+              "de": "Bremsenservice",
+              "ru": "Тормозная система",
+              "original": "Brake Service"
+            }
+          },
+          {
+            "slug": "engine-diagnostic",
+            "names": {
+              "en": "Diagnostics",
+              "uk": "Діагностика",
+              "de": "Motordiagnose",
+              "ru": "Диагностика",
+              "original": "Diagnostics"
+            }
+          },
+          {
+            "slug": "car-inspection",
+            "names": {
+              "en": "Inspection (TÜV)",
+              "uk": "Техогляд",
+              "de": "TÜV/HU",
+              "ru": "Техосмотр",
+              "original": "Inspection (TÜV)"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "car-wash",
+        "names": {
+          "en": "Car Wash",
+          "uk": "Автомийка",
+          "de": "Autowäsche",
+          "ru": "Автомойка",
+          "original": "Car Wash"
+        },
+        "osmTag": "amenity=car_wash",
+        "templates": [
+          {
+            "slug": "exterior-wash",
+            "names": {
+              "en": "Exterior Wash",
+              "uk": "Зовнішня мийка",
+              "de": "Außenwäsche",
+              "ru": "Наружная мойка",
+              "original": "Exterior Wash"
+            }
+          },
+          {
+            "slug": "interior-cleaning",
+            "names": {
+              "en": "Interior Cleaning",
+              "uk": "Хімчистка салону",
+              "de": "Innenreinigung",
+              "ru": "Химчистка салона",
+              "original": "Interior Cleaning"
+            }
+          },
+          {
+            "slug": "full-detail",
+            "names": {
+              "en": "Full Detailing",
+              "uk": "Повний детейлінг",
+              "de": "Vollaufbereitung",
+              "ru": "Полный детейлинг",
+              "original": "Full Detailing"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "tire-service",
+        "names": {
+          "en": "Tire Service",
+          "uk": "Шиномонтаж",
+          "de": "Reifenservice",
+          "ru": "Шиномонтаж",
+          "original": "Tire Service"
+        },
+        "osmTag": "shop=tyres",
+        "templates": [
+          {
+            "slug": "tire-change",
+            "names": {
+              "en": "Tire Change",
+              "uk": "Заміна шин",
+              "de": "Reifenwechsel",
+              "ru": "Замена шин",
+              "original": "Tire Change"
+            }
+          },
+          {
+            "slug": "balancing",
+            "names": {
+              "en": "Wheel Balancing",
+              "uk": "Балансування",
+              "de": "Auswuchten",
+              "ru": "Балансировка",
+              "original": "Wheel Balancing"
+            }
+          },
+          {
+            "slug": "alignment",
+            "names": {
+              "en": "Wheel Alignment",
+              "uk": "Розвал-сходження",
+              "de": "Achsvermessung",
+              "ru": "Развал-схождение",
+              "original": "Wheel Alignment"
+            }
+          },
+          {
+            "slug": "tire-storage",
+            "names": {
+              "en": "Tire Storage",
+              "uk": "Зберігання шин",
+              "de": "Reifeneinlagerung",
+              "ru": "Хранение шин",
+              "original": "Tire Storage"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "car-rental",
+        "names": {
+          "en": "Car Rental",
+          "uk": "Оренда авто",
+          "de": "Autovermietung",
+          "ru": "Аренда авто",
+          "original": "Car Rental"
+        },
+        "osmTag": "amenity=car_rental",
+        "templates": [
+          {
+            "slug": "daily-rental",
+            "names": {
+              "en": "Daily Rental",
+              "uk": "На добу",
+              "de": "Tagesmiete",
+              "ru": "На сутки",
+              "original": "Daily Rental"
+            }
+          },
+          {
+            "slug": "weekly-rental",
+            "names": {
+              "en": "Weekly Rental",
+              "uk": "На тиждень",
+              "de": "Wochenmiete",
+              "ru": "На неделю",
+              "original": "Weekly Rental"
+            }
+          },
+          {
+            "slug": "monthly-rental",
+            "names": {
+              "en": "Monthly Rental",
+              "uk": "На місяць",
+              "de": "Monatsmiete",
+              "ru": "На месяц",
+              "original": "Monthly Rental"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "home-services",
+    "names": {
+      "en": "Home Services",
+      "uk": "Побутові послуги",
+      "de": "Haushaltsdienstleistungen",
+      "ru": "Бытовые услуги",
+      "original": "Home Services"
+    },
+    "icon": "🏠",
+    "naceRef": "F43+N81",
+    "subcategories": [
+      {
+        "slug": "plumber",
+        "names": {
+          "en": "Plumber",
+          "uk": "Сантехнік",
+          "de": "Klempner",
+          "ru": "Сантехник",
+          "original": "Plumber"
+        },
+        "osmTag": "craft=plumber",
+        "templates": [
+          {
+            "slug": "plumbing-repair",
+            "names": {
+              "en": "Repair",
+              "uk": "Ремонт",
+              "de": "Reparatur",
+              "ru": "Ремонт",
+              "original": "Repair"
+            }
+          },
+          {
+            "slug": "plumbing-install",
+            "names": {
+              "en": "Installation",
+              "uk": "Встановлення",
+              "de": "Installation",
+              "ru": "Установка",
+              "original": "Installation"
+            }
+          },
+          {
+            "slug": "emergency-plumber",
+            "names": {
+              "en": "Emergency Call",
+              "uk": "Аварійний виклик",
+              "de": "Notdienst",
+              "ru": "Аварийный вызов",
+              "original": "Emergency Call"
+            }
+          },
+          {
+            "slug": "drain-cleaning",
+            "names": {
+              "en": "Drain Cleaning",
+              "uk": "Прочистка каналізації",
+              "de": "Rohrreinigung",
+              "ru": "Прочистка канализации",
+              "original": "Drain Cleaning"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "electrician",
+        "names": {
+          "en": "Electrician",
+          "uk": "Електрик",
+          "de": "Elektriker",
+          "ru": "Электрик",
+          "original": "Electrician"
+        },
+        "osmTag": "craft=electrician",
+        "templates": [
+          {
+            "slug": "electrical-wiring",
+            "names": {
+              "en": "Wiring",
+              "uk": "Проводка",
+              "de": "Verkabelung",
+              "ru": "Проводка",
+              "original": "Wiring"
+            }
+          },
+          {
+            "slug": "electrical-repair",
+            "names": {
+              "en": "Repair",
+              "uk": "Ремонт",
+              "de": "Reparatur",
+              "ru": "Ремонт",
+              "original": "Repair"
+            }
+          },
+          {
+            "slug": "electrical-install",
+            "names": {
+              "en": "Installation",
+              "uk": "Встановлення",
+              "de": "Installation",
+              "ru": "Установка",
+              "original": "Installation"
+            }
+          },
+          {
+            "slug": "electrical-inspection",
+            "names": {
+              "en": "Inspection",
+              "uk": "Перевірка",
+              "de": "E-Check",
+              "ru": "Проверка",
+              "original": "Inspection"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "cleaning",
+        "names": {
+          "en": "Cleaning Service",
+          "uk": "Клінінг",
+          "de": "Reinigungsservice",
+          "ru": "Клининг",
+          "original": "Cleaning Service"
+        },
+        "osmTag": "office=cleaning",
+        "templates": [
+          {
+            "slug": "regular-cleaning",
+            "names": {
+              "en": "Regular Cleaning",
+              "uk": "Регулярне прибирання",
+              "de": "Unterhaltsreinigung",
+              "ru": "Регулярная уборка",
+              "original": "Regular Cleaning"
+            }
+          },
+          {
+            "slug": "deep-cleaning",
+            "names": {
+              "en": "Deep Cleaning",
+              "uk": "Генеральне прибирання",
+              "de": "Grundreinigung",
+              "ru": "Генеральная уборка",
+              "original": "Deep Cleaning"
+            }
+          },
+          {
+            "slug": "window-cleaning",
+            "names": {
+              "en": "Window Cleaning",
+              "uk": "Миття вікон",
+              "de": "Fensterreinigung",
+              "ru": "Мытьё окон",
+              "original": "Window Cleaning"
+            }
+          },
+          {
+            "slug": "office-cleaning",
+            "names": {
+              "en": "Office Cleaning",
+              "uk": "Прибирання офісу",
+              "de": "Büroreinigung",
+              "ru": "Уборка офиса",
+              "original": "Office Cleaning"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "landscaping",
+        "names": {
+          "en": "Landscaping",
+          "uk": "Ландшафтний дизайн",
+          "de": "Garten- und Landschaftsbau",
+          "ru": "Ландшафтный дизайн",
+          "original": "Landscaping"
+        },
+        "osmTag": "craft=gardener",
+        "templates": [
+          {
+            "slug": "lawn-care",
+            "names": {
+              "en": "Lawn Care",
+              "uk": "Догляд за газоном",
+              "de": "Rasenpflege",
+              "ru": "Уход за газоном",
+              "original": "Lawn Care"
+            }
+          },
+          {
+            "slug": "tree-trimming",
+            "names": {
+              "en": "Tree Trimming",
+              "uk": "Обрізка дерев",
+              "de": "Baumschnitt",
+              "ru": "Обрезка деревьев",
+              "original": "Tree Trimming"
+            }
+          },
+          {
+            "slug": "garden-design",
+            "names": {
+              "en": "Garden Design",
+              "uk": "Дизайн саду",
+              "de": "Gartengestaltung",
+              "ru": "Дизайн сада",
+              "original": "Garden Design"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "moving",
+        "names": {
+          "en": "Moving Service",
+          "uk": "Переїзд",
+          "de": "Umzugsservice",
+          "ru": "Переезд",
+          "original": "Moving Service"
+        },
+        "osmTag": "office=moving_company",
+        "templates": [
+          {
+            "slug": "local-move",
+            "names": {
+              "en": "Local Move",
+              "uk": "Місцевий переїзд",
+              "de": "Lokalumzug",
+              "ru": "Местный переезд",
+              "original": "Local Move"
+            }
+          },
+          {
+            "slug": "long-distance-move",
+            "names": {
+              "en": "Long Distance",
+              "uk": "Міжміський переїзд",
+              "de": "Fernumzug",
+              "ru": "Междугородний переезд",
+              "original": "Long Distance"
+            }
+          },
+          {
+            "slug": "packing-service",
+            "names": {
+              "en": "Packing",
+              "uk": "Пакування",
+              "de": "Verpackungsservice",
+              "ru": "Упаковка",
+              "original": "Packing"
+            }
+          },
+          {
+            "slug": "furniture-assembly",
+            "names": {
+              "en": "Furniture Assembly",
+              "uk": "Збірка меблів",
+              "de": "Möbelmontage",
+              "ru": "Сборка мебели",
+              "original": "Furniture Assembly"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "locksmith",
+        "names": {
+          "en": "Locksmith",
+          "uk": "Замковий майстер",
+          "de": "Schlüsseldienst",
+          "ru": "Слесарь",
+          "original": "Locksmith"
+        },
+        "osmTag": "craft=locksmith",
+        "templates": [
+          {
+            "slug": "lock-change",
+            "names": {
+              "en": "Lock Change",
+              "uk": "Заміна замка",
+              "de": "Schlossaustausch",
+              "ru": "Замена замка",
+              "original": "Lock Change"
+            }
+          },
+          {
+            "slug": "emergency-opening",
+            "names": {
+              "en": "Emergency Opening",
+              "uk": "Аварійне відкриття",
+              "de": "Türnotöffnung",
+              "ru": "Аварийное вскрытие",
+              "original": "Emergency Opening"
+            }
+          },
+          {
+            "slug": "key-copy",
+            "names": {
+              "en": "Key Copy",
+              "uk": "Дублікат ключа",
+              "de": "Schlüsselkopie",
+              "ru": "Дубликат ключа",
+              "original": "Key Copy"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "painter",
+        "names": {
+          "en": "Painter",
+          "uk": "Маляр",
+          "de": "Maler",
+          "ru": "Маляр",
+          "original": "Painter"
+        },
+        "osmTag": "craft=painter",
+        "templates": [
+          {
+            "slug": "interior-painting",
+            "names": {
+              "en": "Interior",
+              "uk": "Внутрішні роботи",
+              "de": "Innenanstrich",
+              "ru": "Внутренние работы",
+              "original": "Interior"
+            }
+          },
+          {
+            "slug": "exterior-painting",
+            "names": {
+              "en": "Exterior",
+              "uk": "Зовнішні роботи",
+              "de": "Außenanstrich",
+              "ru": "Наружные работы",
+              "original": "Exterior"
+            }
+          },
+          {
+            "slug": "wallpaper",
+            "names": {
+              "en": "Wallpaper",
+              "uk": "Шпалери",
+              "de": "Tapezieren",
+              "ru": "Обои",
+              "original": "Wallpaper"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "renovation",
+        "names": {
+          "en": "Renovation",
+          "uk": "Ремонт приміщень",
+          "de": "Renovierung",
+          "ru": "Ремонт помещений",
+          "original": "Renovation"
+        },
+        "osmTag": "craft=builder",
+        "templates": [
+          {
+            "slug": "bathroom-renovation",
+            "names": {
+              "en": "Bathroom",
+              "uk": "Ванна кімната",
+              "de": "Badsanierung",
+              "ru": "Ванная комната",
+              "original": "Bathroom"
+            }
+          },
+          {
+            "slug": "kitchen-renovation",
+            "names": {
+              "en": "Kitchen",
+              "uk": "Кухня",
+              "de": "Küchenumbau",
+              "ru": "Кухня",
+              "original": "Kitchen"
+            }
+          },
+          {
+            "slug": "full-renovation",
+            "names": {
+              "en": "Full Renovation",
+              "uk": "Капітальний ремонт",
+              "de": "Komplettsanierung",
+              "ru": "Капитальный ремонт",
+              "original": "Full Renovation"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "professional",
+    "names": {
+      "en": "Professional Services",
+      "uk": "Професійні послуги",
+      "de": "Freiberufliche Dienstleistungen",
+      "ru": "Профессиональные услуги",
+      "original": "Professional Services"
+    },
+    "icon": "💼",
+    "naceRef": "M69-M74",
+    "subcategories": [
+      {
+        "slug": "lawyer",
+        "names": {
+          "en": "Lawyer",
+          "uk": "Адвокат",
+          "de": "Rechtsanwalt",
+          "ru": "Юрист",
+          "original": "Lawyer"
+        },
+        "osmTag": "office=lawyer",
+        "templates": [
+          {
+            "slug": "legal-consultation",
+            "names": {
+              "en": "Consultation",
+              "uk": "Консультація",
+              "de": "Rechtsberatung",
+              "ru": "Консультация",
+              "original": "Consultation"
+            }
+          },
+          {
+            "slug": "contract-review",
+            "names": {
+              "en": "Contract Review",
+              "uk": "Перевірка договору",
+              "de": "Vertragsprüfung",
+              "ru": "Проверка договора",
+              "original": "Contract Review"
+            }
+          },
+          {
+            "slug": "court-representation",
+            "names": {
+              "en": "Court Representation",
+              "uk": "Представництво в суді",
+              "de": "Gerichtsvertretung",
+              "ru": "Представительство в суде",
+              "original": "Court Representation"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "accountant",
+        "names": {
+          "en": "Accountant",
+          "uk": "Бухгалтер",
+          "de": "Steuerberater",
+          "ru": "Бухгалтер",
+          "original": "Accountant"
+        },
+        "osmTag": "office=accountant",
+        "templates": [
+          {
+            "slug": "tax-return",
+            "names": {
+              "en": "Tax Return",
+              "uk": "Податкова декларація",
+              "de": "Steuererklärung",
+              "ru": "Налоговая декларация",
+              "original": "Tax Return"
+            }
+          },
+          {
+            "slug": "bookkeeping",
+            "names": {
+              "en": "Bookkeeping",
+              "uk": "Бухгалтерський облік",
+              "de": "Buchhaltung",
+              "ru": "Бухгалтерский учёт",
+              "original": "Bookkeeping"
+            }
+          },
+          {
+            "slug": "annual-report",
+            "names": {
+              "en": "Annual Report",
+              "uk": "Річний звіт",
+              "de": "Jahresabschluss",
+              "ru": "Годовой отчёт",
+              "original": "Annual Report"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "notary",
+        "names": {
+          "en": "Notary",
+          "uk": "Нотаріус",
+          "de": "Notar",
+          "ru": "Нотариус",
+          "original": "Notary"
+        },
+        "osmTag": "office=notary",
+        "templates": [
+          {
+            "slug": "certification",
+            "names": {
+              "en": "Certification",
+              "uk": "Засвідчення",
+              "de": "Beglaubigung",
+              "ru": "Заверение",
+              "original": "Certification"
+            }
+          },
+          {
+            "slug": "real-estate-transaction",
+            "names": {
+              "en": "Real Estate Transaction",
+              "uk": "Операція з нерухомістю",
+              "de": "Immobiliengeschäft",
+              "ru": "Сделка с недвижимостью",
+              "original": "Real Estate Transaction"
+            }
+          },
+          {
+            "slug": "will",
+            "names": {
+              "en": "Will",
+              "uk": "Заповіт",
+              "de": "Testament",
+              "ru": "Завещание",
+              "original": "Will"
+            }
+          },
+          {
+            "slug": "power-of-attorney",
+            "names": {
+              "en": "Power of Attorney",
+              "uk": "Довіреність",
+              "de": "Vollmacht",
+              "ru": "Доверенность",
+              "original": "Power of Attorney"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "architect",
+        "names": {
+          "en": "Architect",
+          "uk": "Архітектор",
+          "de": "Architekt",
+          "ru": "Архитектор",
+          "original": "Architect"
+        },
+        "osmTag": "office=architect",
+        "templates": [
+          {
+            "slug": "arch-consultation",
+            "names": {
+              "en": "Consultation",
+              "uk": "Консультація",
+              "de": "Beratung",
+              "ru": "Консультация",
+              "original": "Consultation"
+            }
+          },
+          {
+            "slug": "building-plan",
+            "names": {
+              "en": "Building Plan",
+              "uk": "Проєкт будівлі",
+              "de": "Bauplan",
+              "ru": "Проект здания",
+              "original": "Building Plan"
+            }
+          },
+          {
+            "slug": "interior-design",
+            "names": {
+              "en": "Interior Design",
+              "uk": "Дизайн інтер'єру",
+              "de": "Innenarchitektur",
+              "ru": "Дизайн интерьера",
+              "original": "Interior Design"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "real-estate-agent",
+        "names": {
+          "en": "Real Estate Agent",
+          "uk": "Ріелтор",
+          "de": "Immobilienmakler",
+          "ru": "Риелтор",
+          "original": "Real Estate Agent"
+        },
+        "osmTag": "office=estate_agent",
+        "templates": [
+          {
+            "slug": "property-valuation",
+            "names": {
+              "en": "Property Valuation",
+              "uk": "Оцінка нерухомості",
+              "de": "Immobilienbewertung",
+              "ru": "Оценка недвижимости",
+              "original": "Property Valuation"
+            }
+          },
+          {
+            "slug": "buyer-representation",
+            "names": {
+              "en": "Buyer Representation",
+              "uk": "Представництво покупця",
+              "de": "Käufervertretung",
+              "ru": "Представительство покупателя",
+              "original": "Buyer Representation"
+            }
+          },
+          {
+            "slug": "rental-management",
+            "names": {
+              "en": "Rental Management",
+              "uk": "Управління орендою",
+              "de": "Mietverwaltung",
+              "ru": "Управление арендой",
+              "original": "Rental Management"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "translator",
+        "names": {
+          "en": "Translator",
+          "uk": "Перекладач",
+          "de": "Übersetzer",
+          "ru": "Переводчик",
+          "original": "Translator"
+        },
+        "osmTag": "office=translator",
+        "templates": [
+          {
+            "slug": "document-translation",
+            "names": {
+              "en": "Document Translation",
+              "uk": "Переклад документів",
+              "de": "Dokumentenübersetzung",
+              "ru": "Перевод документов",
+              "original": "Document Translation"
+            }
+          },
+          {
+            "slug": "certified-translation",
+            "names": {
+              "en": "Certified Translation",
+              "uk": "Нотаріальний переклад",
+              "de": "Beglaubigte Übersetzung",
+              "ru": "Нотариальный перевод",
+              "original": "Certified Translation"
+            }
+          },
+          {
+            "slug": "interpretation",
+            "names": {
+              "en": "Interpretation",
+              "uk": "Усний переклад",
+              "de": "Dolmetschen",
+              "ru": "Устный перевод",
+              "original": "Interpretation"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "it-digital",
+    "names": {
+      "en": "IT & Digital",
+      "uk": "ІТ та цифрові послуги",
+      "de": "IT & Digital",
+      "ru": "ИТ и цифровые услуги",
+      "original": "IT & Digital"
+    },
+    "icon": "💻",
+    "naceRef": "J62",
+    "subcategories": [
+      {
+        "slug": "web-development",
+        "names": {
+          "en": "Web Development",
+          "uk": "Веб-розробка",
+          "de": "Webentwicklung",
+          "ru": "Веб-разработка",
+          "original": "Web Development"
+        },
+        "templates": [
+          {
+            "slug": "landing-page",
+            "names": {
+              "en": "Landing Page",
+              "uk": "Лендінг",
+              "de": "Landingpage",
+              "ru": "Лендинг",
+              "original": "Landing Page"
+            }
+          },
+          {
+            "slug": "e-commerce-site",
+            "names": {
+              "en": "E-commerce Site",
+              "uk": "Інтернет-магазин",
+              "de": "Online-Shop",
+              "ru": "Интернет-магазин",
+              "original": "E-commerce Site"
+            }
+          },
+          {
+            "slug": "web-application",
+            "names": {
+              "en": "Web Application",
+              "uk": "Веб-додаток",
+              "de": "Webanwendung",
+              "ru": "Веб-приложение",
+              "original": "Web Application"
+            }
+          },
+          {
+            "slug": "website-maintenance",
+            "names": {
+              "en": "Website Maintenance",
+              "uk": "Підтримка сайту",
+              "de": "Website-Wartung",
+              "ru": "Поддержка сайта",
+              "original": "Website Maintenance"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "mobile-development",
+        "names": {
+          "en": "Mobile Development",
+          "uk": "Мобільна розробка",
+          "de": "Mobile Entwicklung",
+          "ru": "Мобильная разработка",
+          "original": "Mobile Development"
+        },
+        "templates": [
+          {
+            "slug": "ios-app",
+            "names": {
+              "en": "iOS App",
+              "uk": "Додаток для iOS",
+              "de": "iOS-App",
+              "ru": "Приложение для iOS",
+              "original": "iOS App"
+            }
+          },
+          {
+            "slug": "android-app",
+            "names": {
+              "en": "Android App",
+              "uk": "Додаток для Android",
+              "de": "Android-App",
+              "ru": "Приложение для Android",
+              "original": "Android App"
+            }
+          },
+          {
+            "slug": "cross-platform-app",
+            "names": {
+              "en": "Cross-platform App",
+              "uk": "Кросплатформний додаток",
+              "de": "Plattformübergreifende App",
+              "ru": "Кроссплатформенное приложение",
+              "original": "Cross-platform App"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "it-consulting",
+        "names": {
+          "en": "IT Consulting",
+          "uk": "ІТ-консалтинг",
+          "de": "IT-Beratung",
+          "ru": "ИТ-консалтинг",
+          "original": "IT Consulting"
+        },
+        "osmTag": "office=it",
+        "templates": [
+          {
+            "slug": "it-audit",
+            "names": {
+              "en": "IT Audit",
+              "uk": "ІТ-аудит",
+              "de": "IT-Audit",
+              "ru": "ИТ-аудит",
+              "original": "IT Audit"
+            }
+          },
+          {
+            "slug": "cloud-migration",
+            "names": {
+              "en": "Cloud Migration",
+              "uk": "Міграція в хмару",
+              "de": "Cloud-Migration",
+              "ru": "Миграция в облако",
+              "original": "Cloud Migration"
+            }
+          },
+          {
+            "slug": "cybersecurity",
+            "names": {
+              "en": "Cybersecurity Assessment",
+              "uk": "Аудит кібербезпеки",
+              "de": "Cybersicherheitsbewertung",
+              "ru": "Аудит кибербезопасности",
+              "original": "Cybersecurity Assessment"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "seo-marketing",
+        "names": {
+          "en": "SEO & Marketing",
+          "uk": "SEO та маркетинг",
+          "de": "SEO & Marketing",
+          "ru": "SEO и маркетинг",
+          "original": "SEO & Marketing"
+        },
+        "templates": [
+          {
+            "slug": "seo-audit",
+            "names": {
+              "en": "SEO Audit",
+              "uk": "SEO-аудит",
+              "de": "SEO-Audit",
+              "ru": "SEO-аудит",
+              "original": "SEO Audit"
+            }
+          },
+          {
+            "slug": "google-ads",
+            "names": {
+              "en": "Google Ads",
+              "uk": "Google Ads",
+              "de": "Google Ads",
+              "ru": "Google Ads",
+              "original": "Google Ads"
+            }
+          },
+          {
+            "slug": "social-media-mgmt",
+            "names": {
+              "en": "Social Media Management",
+              "uk": "Ведення соцмереж",
+              "de": "Social-Media-Management",
+              "ru": "Ведение соцсетей",
+              "original": "Social Media Management"
+            }
+          },
+          {
+            "slug": "content-marketing",
+            "names": {
+              "en": "Content Marketing",
+              "uk": "Контент-маркетинг",
+              "de": "Content-Marketing",
+              "ru": "Контент-маркетинг",
+              "original": "Content Marketing"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "graphic-design",
+        "names": {
+          "en": "Graphic Design",
+          "uk": "Графічний дизайн",
+          "de": "Grafikdesign",
+          "ru": "Графический дизайн",
+          "original": "Graphic Design"
+        },
+        "osmTag": "office=graphic_design",
+        "templates": [
+          {
+            "slug": "logo-design",
+            "names": {
+              "en": "Logo Design",
+              "uk": "Дизайн логотипу",
+              "de": "Logo-Design",
+              "ru": "Дизайн логотипа",
+              "original": "Logo Design"
+            }
+          },
+          {
+            "slug": "brand-identity",
+            "names": {
+              "en": "Brand Identity",
+              "uk": "Фірмовий стиль",
+              "de": "Corporate Identity",
+              "ru": "Фирменный стиль",
+              "original": "Brand Identity"
+            }
+          },
+          {
+            "slug": "print-design",
+            "names": {
+              "en": "Print Design",
+              "uk": "Друкований дизайн",
+              "de": "Printdesign",
+              "ru": "Печатный дизайн",
+              "original": "Print Design"
+            }
+          },
+          {
+            "slug": "packaging-design",
+            "names": {
+              "en": "Packaging",
+              "uk": "Дизайн упаковки",
+              "de": "Verpackungsdesign",
+              "ru": "Дизайн упаковки",
+              "original": "Packaging"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "photography",
+        "names": {
+          "en": "Photography",
+          "uk": "Фотографія",
+          "de": "Fotografie",
+          "ru": "Фотография",
+          "original": "Photography"
+        },
+        "osmTag": "craft=photographer",
+        "templates": [
+          {
+            "slug": "portrait-session",
+            "names": {
+              "en": "Portrait Session",
+              "uk": "Портретна зйомка",
+              "de": "Porträtshooting",
+              "ru": "Портретная съёмка",
+              "original": "Portrait Session"
+            }
+          },
+          {
+            "slug": "product-photography",
+            "names": {
+              "en": "Product Photography",
+              "uk": "Предметна зйомка",
+              "de": "Produktfotografie",
+              "ru": "Предметная съёмка",
+              "original": "Product Photography"
+            }
+          },
+          {
+            "slug": "event-photography",
+            "names": {
+              "en": "Event Photography",
+              "uk": "Зйомка подій",
+              "de": "Eventfotografie",
+              "ru": "Съёмка мероприятий",
+              "original": "Event Photography"
+            }
+          },
+          {
+            "slug": "wedding-photography",
+            "names": {
+              "en": "Wedding Photography",
+              "uk": "Весільна зйомка",
+              "de": "Hochzeitsfotografie",
+              "ru": "Свадебная съёмка",
+              "original": "Wedding Photography"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "videography",
+        "names": {
+          "en": "Videography",
+          "uk": "Відеозйомка",
+          "de": "Videografie",
+          "ru": "Видеосъёмка",
+          "original": "Videography"
+        },
+        "templates": [
+          {
+            "slug": "promo-video",
+            "names": {
+              "en": "Promo Video",
+              "uk": "Промо-ролик",
+              "de": "Werbefilm",
+              "ru": "Промо-ролик",
+              "original": "Promo Video"
+            }
+          },
+          {
+            "slug": "event-video",
+            "names": {
+              "en": "Event Video",
+              "uk": "Відео з подій",
+              "de": "Eventfilm",
+              "ru": "Видео с мероприятий",
+              "original": "Event Video"
+            }
+          },
+          {
+            "slug": "social-media-content",
+            "names": {
+              "en": "Social Media Content",
+              "uk": "Контент для соцмереж",
+              "de": "Social-Media-Inhalt",
+              "ru": "Контент для соцсетей",
+              "original": "Social Media Content"
+            }
+          },
+          {
+            "slug": "drone-footage",
+            "names": {
+              "en": "Drone Footage",
+              "uk": "Зйомка з дрона",
+              "de": "Drohnenaufnahmen",
+              "ru": "Съёмка с дрона",
+              "original": "Drone Footage"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sports-fitness",
+    "names": {
+      "en": "Sports & Fitness",
+      "uk": "Спорт та фітнес",
+      "de": "Sport & Fitness",
+      "ru": "Спорт и фитнес",
+      "original": "Sports & Fitness"
+    },
+    "icon": "🏋️",
+    "naceRef": "R93",
+    "subcategories": [
+      {
+        "slug": "gym",
+        "names": {
+          "en": "Gym",
+          "uk": "Тренажерний зал",
+          "de": "Fitnessstudio",
+          "ru": "Тренажёрный зал",
+          "original": "Gym"
+        },
+        "osmTag": "leisure=fitness_centre",
+        "templates": [
+          {
+            "slug": "monthly-pass",
+            "names": {
+              "en": "Monthly Pass",
+              "uk": "Місячний абонемент",
+              "de": "Monatskarte",
+              "ru": "Месячный абонемент",
+              "original": "Monthly Pass"
+            }
+          },
+          {
+            "slug": "day-pass",
+            "names": {
+              "en": "Day Pass",
+              "uk": "Разове відвідування",
+              "de": "Tageskarte",
+              "ru": "Разовое посещение",
+              "original": "Day Pass"
+            }
+          },
+          {
+            "slug": "personal-training",
+            "names": {
+              "en": "Personal Training",
+              "uk": "Персональне тренування",
+              "de": "Personal Training",
+              "ru": "Персональная тренировка",
+              "original": "Personal Training"
+            }
+          },
+          {
+            "slug": "group-fitness",
+            "names": {
+              "en": "Group Class",
+              "uk": "Групове заняття",
+              "de": "Gruppenkurs",
+              "ru": "Групповое занятие",
+              "original": "Group Class"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "yoga-studio",
+        "names": {
+          "en": "Yoga Studio",
+          "uk": "Студія йоги",
+          "de": "Yogastudio",
+          "ru": "Студия йоги",
+          "original": "Yoga Studio"
+        },
+        "osmTag": "leisure=fitness_centre",
+        "templates": [
+          {
+            "slug": "yoga-drop-in",
+            "names": {
+              "en": "Drop-in Class",
+              "uk": "Разове заняття",
+              "de": "Einzelstunde",
+              "ru": "Разовое занятие",
+              "original": "Drop-in Class"
+            }
+          },
+          {
+            "slug": "yoga-monthly",
+            "names": {
+              "en": "Monthly Unlimited",
+              "uk": "Безлімітний абонемент",
+              "de": "Monatsflatrate",
+              "ru": "Безлимитный абонемент",
+              "original": "Monthly Unlimited"
+            }
+          },
+          {
+            "slug": "yoga-private",
+            "names": {
+              "en": "Private Session",
+              "uk": "Індивідуальне заняття",
+              "de": "Privatstunde",
+              "ru": "Индивидуальное занятие",
+              "original": "Private Session"
+            }
+          },
+          {
+            "slug": "yoga-workshop",
+            "names": {
+              "en": "Workshop",
+              "uk": "Майстер-клас",
+              "de": "Workshop",
+              "ru": "Мастер-класс",
+              "original": "Workshop"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "swimming-pool",
+        "names": {
+          "en": "Swimming Pool",
+          "uk": "Басейн",
+          "de": "Schwimmbad",
+          "ru": "Бассейн",
+          "original": "Swimming Pool"
+        },
+        "osmTag": "leisure=swimming_pool",
+        "templates": [
+          {
+            "slug": "single-swim",
+            "names": {
+              "en": "Single Swim",
+              "uk": "Разове відвідування",
+              "de": "Einzeleintritt",
+              "ru": "Разовое посещение",
+              "original": "Single Swim"
+            }
+          },
+          {
+            "slug": "swim-monthly",
+            "names": {
+              "en": "Monthly Pass",
+              "uk": "Місячний абонемент",
+              "de": "Monatskarte",
+              "ru": "Месячный абонемент",
+              "original": "Monthly Pass"
+            }
+          },
+          {
+            "slug": "swim-lesson",
+            "names": {
+              "en": "Swimming Lesson",
+              "uk": "Урок плавання",
+              "de": "Schwimmunterricht",
+              "ru": "Урок плавания",
+              "original": "Swimming Lesson"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "martial-arts",
+        "names": {
+          "en": "Martial Arts",
+          "uk": "Бойові мистецтва",
+          "de": "Kampfsport",
+          "ru": "Боевые искусства",
+          "original": "Martial Arts"
+        },
+        "osmTag": "leisure=sports_centre",
+        "templates": [
+          {
+            "slug": "ma-trial",
+            "names": {
+              "en": "Trial Class",
+              "uk": "Пробне заняття",
+              "de": "Probetraining",
+              "ru": "Пробное занятие",
+              "original": "Trial Class"
+            }
+          },
+          {
+            "slug": "ma-monthly",
+            "names": {
+              "en": "Monthly Membership",
+              "uk": "Місячний абонемент",
+              "de": "Monatsbeitrag",
+              "ru": "Месячный абонемент",
+              "original": "Monthly Membership"
+            }
+          },
+          {
+            "slug": "ma-private",
+            "names": {
+              "en": "Private Lesson",
+              "uk": "Індивідуальне заняття",
+              "de": "Privatstunde",
+              "ru": "Индивидуальное занятие",
+              "original": "Private Lesson"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "personal-trainer",
+        "names": {
+          "en": "Personal Trainer",
+          "uk": "Персональний тренер",
+          "de": "Personal Trainer",
+          "ru": "Персональный тренер",
+          "original": "Personal Trainer"
+        },
+        "templates": [
+          {
+            "slug": "pt-single",
+            "names": {
+              "en": "Single Session",
+              "uk": "Одне тренування",
+              "de": "Einzeltraining",
+              "ru": "Одна тренировка",
+              "original": "Single Session"
+            }
+          },
+          {
+            "slug": "pt-package-10",
+            "names": {
+              "en": "Package of 10",
+              "uk": "Пакет 10 тренувань",
+              "de": "10er-Karte",
+              "ru": "Пакет 10 тренировок",
+              "original": "Package of 10"
+            }
+          },
+          {
+            "slug": "nutrition-plan",
+            "names": {
+              "en": "Nutrition Plan",
+              "uk": "План харчування",
+              "de": "Ernährungsplan",
+              "ru": "План питания",
+              "original": "Nutrition Plan"
+            }
+          },
+          {
+            "slug": "online-coaching",
+            "names": {
+              "en": "Online Coaching",
+              "uk": "Онлайн-тренування",
+              "de": "Online-Coaching",
+              "ru": "Онлайн-тренировки",
+              "original": "Online Coaching"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "entertainment",
+    "names": {
+      "en": "Entertainment & Leisure",
+      "uk": "Розваги та дозвілля",
+      "de": "Unterhaltung & Freizeit",
+      "ru": "Развлечения и досуг",
+      "original": "Entertainment & Leisure"
+    },
+    "icon": "🎭",
+    "naceRef": "R90+R92",
+    "subcategories": [
+      {
+        "slug": "cinema",
+        "names": {
+          "en": "Cinema",
+          "uk": "Кінотеатр",
+          "de": "Kino",
+          "ru": "Кинотеатр",
+          "original": "Cinema"
+        },
+        "osmTag": "amenity=cinema",
+        "templates": [
+          {
+            "slug": "regular-ticket",
+            "names": {
+              "en": "Regular Ticket",
+              "uk": "Звичайний квиток",
+              "de": "Kinoticket",
+              "ru": "Обычный билет",
+              "original": "Regular Ticket"
+            }
+          },
+          {
+            "slug": "3d-ticket",
+            "names": {
+              "en": "3D Ticket",
+              "uk": "3D-квиток",
+              "de": "3D-Ticket",
+              "ru": "3D-билет",
+              "original": "3D Ticket"
+            }
+          },
+          {
+            "slug": "private-screening",
+            "names": {
+              "en": "Private Screening",
+              "uk": "Приватний показ",
+              "de": "Privatvorführung",
+              "ru": "Частный показ",
+              "original": "Private Screening"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "theater",
+        "names": {
+          "en": "Theater",
+          "uk": "Театр",
+          "de": "Theater",
+          "ru": "Театр",
+          "original": "Theater"
+        },
+        "osmTag": "amenity=theatre",
+        "templates": [
+          {
+            "slug": "theater-ticket",
+            "names": {
+              "en": "Ticket",
+              "uk": "Квиток",
+              "de": "Eintrittskarte",
+              "ru": "Билет",
+              "original": "Ticket"
+            }
+          },
+          {
+            "slug": "season-pass",
+            "names": {
+              "en": "Season Pass",
+              "uk": "Сезонний абонемент",
+              "de": "Saisonkarte",
+              "ru": "Сезонный абонемент",
+              "original": "Season Pass"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "nightclub",
+        "names": {
+          "en": "Nightclub",
+          "uk": "Нічний клуб",
+          "de": "Nachtclub",
+          "ru": "Ночной клуб",
+          "original": "Nightclub"
+        },
+        "osmTag": "amenity=nightclub",
+        "templates": [
+          {
+            "slug": "club-entry",
+            "names": {
+              "en": "Entry",
+              "uk": "Вхід",
+              "de": "Eintritt",
+              "ru": "Вход",
+              "original": "Entry"
+            }
+          },
+          {
+            "slug": "vip-table",
+            "names": {
+              "en": "VIP Table",
+              "uk": "VIP-столик",
+              "de": "VIP-Tisch",
+              "ru": "VIP-столик",
+              "original": "VIP Table"
+            }
+          },
+          {
+            "slug": "private-event",
+            "names": {
+              "en": "Private Event",
+              "uk": "Приватна вечірка",
+              "de": "Privatveranstaltung",
+              "ru": "Частное мероприятие",
+              "original": "Private Event"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "bowling",
+        "names": {
+          "en": "Bowling",
+          "uk": "Боулінг",
+          "de": "Bowling",
+          "ru": "Боулинг",
+          "original": "Bowling"
+        },
+        "osmTag": "leisure=bowling_alley",
+        "templates": [
+          {
+            "slug": "bowling-game",
+            "names": {
+              "en": "Game",
+              "uk": "Гра",
+              "de": "Spiel",
+              "ru": "Игра",
+              "original": "Game"
+            }
+          },
+          {
+            "slug": "lane-rental",
+            "names": {
+              "en": "Lane Rental",
+              "uk": "Оренда доріжки",
+              "de": "Bahnmiete",
+              "ru": "Аренда дорожки",
+              "original": "Lane Rental"
+            }
+          },
+          {
+            "slug": "party-package",
+            "names": {
+              "en": "Party Package",
+              "uk": "Пакет для вечірки",
+              "de": "Partypaket",
+              "ru": "Пакет для вечеринки",
+              "original": "Party Package"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "escape-room",
+        "names": {
+          "en": "Escape Room",
+          "uk": "Квест-кімната",
+          "de": "Escape Room",
+          "ru": "Квест-комната",
+          "original": "Escape Room"
+        },
+        "osmTag": "leisure=escape_game",
+        "templates": [
+          {
+            "slug": "room-session",
+            "names": {
+              "en": "Room Session",
+              "uk": "Сеанс",
+              "de": "Spielsitzung",
+              "ru": "Сеанс",
+              "original": "Room Session"
+            }
+          },
+          {
+            "slug": "team-building",
+            "names": {
+              "en": "Team Building",
+              "uk": "Тімбілдінг",
+              "de": "Teambuilding",
+              "ru": "Тимбилдинг",
+              "original": "Team Building"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "event-venue",
+        "names": {
+          "en": "Event Venue",
+          "uk": "Простір для подій",
+          "de": "Veranstaltungsort",
+          "ru": "Площадка для мероприятий",
+          "original": "Event Venue"
+        },
+        "osmTag": "amenity=events_venue",
+        "templates": [
+          {
+            "slug": "venue-rental",
+            "names": {
+              "en": "Venue Rental",
+              "uk": "Оренда залу",
+              "de": "Raummiete",
+              "ru": "Аренда зала",
+              "original": "Venue Rental"
+            }
+          },
+          {
+            "slug": "wedding-package",
+            "names": {
+              "en": "Wedding Package",
+              "uk": "Весільний пакет",
+              "de": "Hochzeitspaket",
+              "ru": "Свадебный пакет",
+              "original": "Wedding Package"
+            }
+          },
+          {
+            "slug": "corporate-event",
+            "names": {
+              "en": "Corporate Event",
+              "uk": "Корпоратив",
+              "de": "Firmenveranstaltung",
+              "ru": "Корпоратив",
+              "original": "Corporate Event"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "finance",
+    "names": {
+      "en": "Finance & Insurance",
+      "uk": "Фінанси та страхування",
+      "de": "Finanz- & Versicherungswesen",
+      "ru": "Финансы и страхование",
+      "original": "Finance & Insurance"
+    },
+    "icon": "🏦",
+    "naceRef": "K64-K66",
+    "subcategories": [
+      {
+        "slug": "bank",
+        "names": {
+          "en": "Bank",
+          "uk": "Банк",
+          "de": "Bank",
+          "ru": "Банк",
+          "original": "Bank"
+        },
+        "osmTag": "amenity=bank",
+        "templates": [
+          {
+            "slug": "account-opening",
+            "names": {
+              "en": "Account Opening",
+              "uk": "Відкриття рахунку",
+              "de": "Kontoeröffnung",
+              "ru": "Открытие счёта",
+              "original": "Account Opening"
+            }
+          },
+          {
+            "slug": "loan-consultation",
+            "names": {
+              "en": "Loan Consultation",
+              "uk": "Консультація з кредиту",
+              "de": "Kreditberatung",
+              "ru": "Консультация по кредиту",
+              "original": "Loan Consultation"
+            }
+          },
+          {
+            "slug": "mortgage-consultation",
+            "names": {
+              "en": "Mortgage Consultation",
+              "uk": "Консультація з іпотеки",
+              "de": "Hypothekenberatung",
+              "ru": "Консультация по ипотеке",
+              "original": "Mortgage Consultation"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "currency-exchange",
+        "names": {
+          "en": "Currency Exchange",
+          "uk": "Обмін валют",
+          "de": "Wechselstube",
+          "ru": "Обмен валют",
+          "original": "Currency Exchange"
+        },
+        "osmTag": "amenity=bureau_de_change",
+        "templates": [
+          {
+            "slug": "currency-exchange-op",
+            "names": {
+              "en": "Currency Exchange",
+              "uk": "Обмін валюти",
+              "de": "Geldwechsel",
+              "ru": "Обмен валюты",
+              "original": "Currency Exchange"
+            }
+          },
+          {
+            "slug": "money-transfer",
+            "names": {
+              "en": "Money Transfer",
+              "uk": "Грошовий переказ",
+              "de": "Geldüberweisung",
+              "ru": "Денежный перевод",
+              "original": "Money Transfer"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "financial-advisor",
+        "names": {
+          "en": "Financial Advisor",
+          "uk": "Фінансовий радник",
+          "de": "Finanzberater",
+          "ru": "Финансовый советник",
+          "original": "Financial Advisor"
+        },
+        "osmTag": "office=financial_advisor",
+        "templates": [
+          {
+            "slug": "fin-consultation",
+            "names": {
+              "en": "Consultation",
+              "uk": "Консультація",
+              "de": "Beratung",
+              "ru": "Консультация",
+              "original": "Consultation"
+            }
+          },
+          {
+            "slug": "portfolio-review",
+            "names": {
+              "en": "Portfolio Review",
+              "uk": "Огляд портфеля",
+              "de": "Portfolioüberprüfung",
+              "ru": "Обзор портфеля",
+              "original": "Portfolio Review"
+            }
+          },
+          {
+            "slug": "retirement-planning",
+            "names": {
+              "en": "Retirement Planning",
+              "uk": "Пенсійне планування",
+              "de": "Altersvorsorge",
+              "ru": "Пенсионное планирование",
+              "original": "Retirement Planning"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "insurance-agent",
+        "names": {
+          "en": "Insurance Agent",
+          "uk": "Страховий агент",
+          "de": "Versicherungsmakler",
+          "ru": "Страховой агент",
+          "original": "Insurance Agent"
+        },
+        "osmTag": "office=insurance",
+        "templates": [
+          {
+            "slug": "insurance-consultation",
+            "names": {
+              "en": "Consultation",
+              "uk": "Консультація",
+              "de": "Beratung",
+              "ru": "Консультация",
+              "original": "Consultation"
+            }
+          },
+          {
+            "slug": "policy-review",
+            "names": {
+              "en": "Policy Review",
+              "uk": "Огляд поліса",
+              "de": "Policenüberprüfung",
+              "ru": "Обзор полиса",
+              "original": "Policy Review"
+            }
+          },
+          {
+            "slug": "claim-assistance",
+            "names": {
+              "en": "Claim Assistance",
+              "uk": "Допомога зі страховим випадком",
+              "de": "Schadensregulierung",
+              "ru": "Помощь со страховым случаем",
+              "original": "Claim Assistance"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "crafts-repair",
+    "names": {
+      "en": "Crafts & Repair",
+      "uk": "Ремонт та ремесла",
+      "de": "Handwerk & Reparatur",
+      "ru": "Ремонт и ремёсла",
+      "original": "Crafts & Repair"
+    },
+    "icon": "🔧",
+    "naceRef": "S95+C",
+    "subcategories": [
+      {
+        "slug": "phone-repair",
+        "names": {
+          "en": "Phone Repair",
+          "uk": "Ремонт телефонів",
+          "de": "Handy-Reparatur",
+          "ru": "Ремонт телефонов",
+          "original": "Phone Repair"
+        },
+        "osmTag": "craft=electronics_repair",
+        "templates": [
+          {
+            "slug": "screen-replacement",
+            "names": {
+              "en": "Screen Replacement",
+              "uk": "Заміна екрану",
+              "de": "Displayaustausch",
+              "ru": "Замена экрана",
+              "original": "Screen Replacement"
+            }
+          },
+          {
+            "slug": "battery-replacement",
+            "names": {
+              "en": "Battery Replacement",
+              "uk": "Заміна батареї",
+              "de": "Akkuaustausch",
+              "ru": "Замена батареи",
+              "original": "Battery Replacement"
+            }
+          },
+          {
+            "slug": "water-damage-repair",
+            "names": {
+              "en": "Water Damage Repair",
+              "uk": "Ремонт після потрапляння води",
+              "de": "Wasserschadenreparatur",
+              "ru": "Ремонт после попадания воды",
+              "original": "Water Damage Repair"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "computer-repair",
+        "names": {
+          "en": "Computer Repair",
+          "uk": "Ремонт комп\\'ютерів",
+          "de": "Computer-Reparatur",
+          "ru": "Ремонт компьютеров",
+          "original": "Computer Repair"
+        },
+        "osmTag": "craft=electronics_repair",
+        "templates": [
+          {
+            "slug": "pc-diagnostic",
+            "names": {
+              "en": "Diagnostic",
+              "uk": "Діагностика",
+              "de": "Diagnose",
+              "ru": "Диагностика",
+              "original": "Diagnostic"
+            }
+          },
+          {
+            "slug": "virus-removal",
+            "names": {
+              "en": "Virus Removal",
+              "uk": "Видалення вірусів",
+              "de": "Virenentfernung",
+              "ru": "Удаление вирусов",
+              "original": "Virus Removal"
+            }
+          },
+          {
+            "slug": "hardware-upgrade",
+            "names": {
+              "en": "Hardware Upgrade",
+              "uk": "Оновлення обладнання",
+              "de": "Hardware-Upgrade",
+              "ru": "Обновление оборудования",
+              "original": "Hardware Upgrade"
+            }
+          },
+          {
+            "slug": "data-recovery",
+            "names": {
+              "en": "Data Recovery",
+              "uk": "Відновлення даних",
+              "de": "Datenrettung",
+              "ru": "Восстановление данных",
+              "original": "Data Recovery"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "tailor",
+        "names": {
+          "en": "Tailor",
+          "uk": "Кравець",
+          "de": "Schneider",
+          "ru": "Портной",
+          "original": "Tailor"
+        },
+        "osmTag": "craft=tailor",
+        "templates": [
+          {
+            "slug": "clothes-alteration",
+            "names": {
+              "en": "Alteration",
+              "uk": "Підгонка",
+              "de": "Änderung",
+              "ru": "Подгонка",
+              "original": "Alteration"
+            }
+          },
+          {
+            "slug": "custom-suit",
+            "names": {
+              "en": "Custom Suit",
+              "uk": "Костюм на замовлення",
+              "de": "Maßanzug",
+              "ru": "Костюм на заказ",
+              "original": "Custom Suit"
+            }
+          },
+          {
+            "slug": "dress-making",
+            "names": {
+              "en": "Dress Making",
+              "uk": "Пошиття сукні",
+              "de": "Kleidanfertigung",
+              "ru": "Пошив платья",
+              "original": "Dress Making"
+            }
+          },
+          {
+            "slug": "zipper-repair",
+            "names": {
+              "en": "Zipper Repair",
+              "uk": "Заміна блискавки",
+              "de": "Reißverschluss-Reparatur",
+              "ru": "Замена молнии",
+              "original": "Zipper Repair"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "shoe-repair",
+        "names": {
+          "en": "Shoe Repair",
+          "uk": "Ремонт взуття",
+          "de": "Schuhreparatur",
+          "ru": "Ремонт обуви",
+          "original": "Shoe Repair"
+        },
+        "osmTag": "craft=shoemaker",
+        "templates": [
+          {
+            "slug": "heel-replacement",
+            "names": {
+              "en": "Heel Replacement",
+              "uk": "Заміна набійок",
+              "de": "Absatzreparatur",
+              "ru": "Замена набоек",
+              "original": "Heel Replacement"
+            }
+          },
+          {
+            "slug": "sole-repair",
+            "names": {
+              "en": "Sole Repair",
+              "uk": "Ремонт підошви",
+              "de": "Sohlenreparatur",
+              "ru": "Ремонт подошвы",
+              "original": "Sole Repair"
+            }
+          },
+          {
+            "slug": "shoe-stretching",
+            "names": {
+              "en": "Stretching",
+              "uk": "Розтягування",
+              "de": "Weitung",
+              "ru": "Растяжка",
+              "original": "Stretching"
+            }
+          },
+          {
+            "slug": "shoe-cleaning",
+            "names": {
+              "en": "Cleaning",
+              "uk": "Чистка",
+              "de": "Reinigung",
+              "ru": "Чистка",
+              "original": "Cleaning"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "watch-repair",
+        "names": {
+          "en": "Watch Repair",
+          "uk": "Ремонт годинників",
+          "de": "Uhrmacher",
+          "ru": "Ремонт часов",
+          "original": "Watch Repair"
+        },
+        "osmTag": "craft=watchmaker",
+        "templates": [
+          {
+            "slug": "watch-battery",
+            "names": {
+              "en": "Battery Replacement",
+              "uk": "Заміна батарейки",
+              "de": "Batteriewechsel",
+              "ru": "Замена батарейки",
+              "original": "Battery Replacement"
+            }
+          },
+          {
+            "slug": "watch-repair-op",
+            "names": {
+              "en": "Repair",
+              "uk": "Ремонт",
+              "de": "Reparatur",
+              "ru": "Ремонт",
+              "original": "Repair"
+            }
+          },
+          {
+            "slug": "watch-restoration",
+            "names": {
+              "en": "Restoration",
+              "uk": "Реставрація",
+              "de": "Restaurierung",
+              "ru": "Реставрация",
+              "original": "Restoration"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "furniture-repair",
+        "names": {
+          "en": "Furniture Repair",
+          "uk": "Ремонт меблів",
+          "de": "Möbelreparatur",
+          "ru": "Ремонт мебели",
+          "original": "Furniture Repair"
+        },
+        "osmTag": "craft=carpenter",
+        "templates": [
+          {
+            "slug": "furniture-restoration",
+            "names": {
+              "en": "Restoration",
+              "uk": "Реставрація",
+              "de": "Restaurierung",
+              "ru": "Реставрация",
+              "original": "Restoration"
+            }
+          },
+          {
+            "slug": "upholstery",
+            "names": {
+              "en": "Upholstery",
+              "uk": "Перетягування",
+              "de": "Polsterung",
+              "ru": "Перетяжка",
+              "original": "Upholstery"
+            }
+          },
+          {
+            "slug": "custom-furniture",
+            "names": {
+              "en": "Custom Piece",
+              "uk": "На замовлення",
+              "de": "Maßanfertigung",
+              "ru": "На заказ",
+              "original": "Custom Piece"
+            }
+          }
+        ]
+      },
+      {
+        "slug": "appliance-repair",
+        "names": {
+          "en": "Appliance Repair",
+          "uk": "Ремонт побутової техніки",
+          "de": "Haushaltsgeräte-Reparatur",
+          "ru": "Ремонт бытовой техники",
+          "original": "Appliance Repair"
+        },
+        "osmTag": "craft=electronics_repair",
+        "templates": [
+          {
+            "slug": "washing-machine-repair",
+            "names": {
+              "en": "Washing Machine",
+              "uk": "Пральна машина",
+              "de": "Waschmaschine",
+              "ru": "Стиральная машина",
+              "original": "Washing Machine"
+            }
+          },
+          {
+            "slug": "refrigerator-repair",
+            "names": {
+              "en": "Refrigerator",
+              "uk": "Холодильник",
+              "de": "Kühlschrank",
+              "ru": "Холодильник",
+              "original": "Refrigerator"
+            }
+          },
+          {
+            "slug": "dishwasher-repair",
+            "names": {
+              "en": "Dishwasher",
+              "uk": "Посудомийка",
+              "de": "Spülmaschine",
+              "ru": "Посудомоечная машина",
+              "original": "Dishwasher"
+            }
+          },
+          {
+            "slug": "oven-repair",
+            "names": {
+              "en": "Oven",
+              "uk": "Духовка",
+              "de": "Backofen",
+              "ru": "Духовка",
+              "original": "Oven"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,252 @@
+{
+  "slug": "entertainment",
+  "names": {
+    "en": "Entertainment & Leisure",
+    "uk": "Розваги та дозвілля",
+    "de": "Unterhaltung & Freizeit",
+    "ru": "Развлечения и досуг",
+    "original": "Entertainment & Leisure"
+  },
+  "icon": "🎭",
+  "naceRef": "R90+R92",
+  "subcategories": [
+    {
+      "slug": "cinema",
+      "names": {
+        "en": "Cinema",
+        "uk": "Кінотеатр",
+        "de": "Kino",
+        "ru": "Кинотеатр",
+        "original": "Cinema"
+      },
+      "osmTag": "amenity=cinema",
+      "templates": [
+        {
+          "slug": "regular-ticket",
+          "names": {
+            "en": "Regular Ticket",
+            "uk": "Звичайний квиток",
+            "de": "Kinoticket",
+            "ru": "Обычный билет",
+            "original": "Regular Ticket"
+          }
+        },
+        {
+          "slug": "3d-ticket",
+          "names": {
+            "en": "3D Ticket",
+            "uk": "3D-квиток",
+            "de": "3D-Ticket",
+            "ru": "3D-билет",
+            "original": "3D Ticket"
+          }
+        },
+        {
+          "slug": "private-screening",
+          "names": {
+            "en": "Private Screening",
+            "uk": "Приватний показ",
+            "de": "Privatvorführung",
+            "ru": "Частный показ",
+            "original": "Private Screening"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "theater",
+      "names": {
+        "en": "Theater",
+        "uk": "Театр",
+        "de": "Theater",
+        "ru": "Театр",
+        "original": "Theater"
+      },
+      "osmTag": "amenity=theatre",
+      "templates": [
+        {
+          "slug": "theater-ticket",
+          "names": {
+            "en": "Ticket",
+            "uk": "Квиток",
+            "de": "Eintrittskarte",
+            "ru": "Билет",
+            "original": "Ticket"
+          }
+        },
+        {
+          "slug": "season-pass",
+          "names": {
+            "en": "Season Pass",
+            "uk": "Сезонний абонемент",
+            "de": "Saisonkarte",
+            "ru": "Сезонный абонемент",
+            "original": "Season Pass"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nightclub",
+      "names": {
+        "en": "Nightclub",
+        "uk": "Нічний клуб",
+        "de": "Nachtclub",
+        "ru": "Ночной клуб",
+        "original": "Nightclub"
+      },
+      "osmTag": "amenity=nightclub",
+      "templates": [
+        {
+          "slug": "club-entry",
+          "names": {
+            "en": "Entry",
+            "uk": "Вхід",
+            "de": "Eintritt",
+            "ru": "Вход",
+            "original": "Entry"
+          }
+        },
+        {
+          "slug": "vip-table",
+          "names": {
+            "en": "VIP Table",
+            "uk": "VIP-столик",
+            "de": "VIP-Tisch",
+            "ru": "VIP-столик",
+            "original": "VIP Table"
+          }
+        },
+        {
+          "slug": "private-event",
+          "names": {
+            "en": "Private Event",
+            "uk": "Приватна вечірка",
+            "de": "Privatveranstaltung",
+            "ru": "Частное мероприятие",
+            "original": "Private Event"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bowling",
+      "names": {
+        "en": "Bowling",
+        "uk": "Боулінг",
+        "de": "Bowling",
+        "ru": "Боулинг",
+        "original": "Bowling"
+      },
+      "osmTag": "leisure=bowling_alley",
+      "templates": [
+        {
+          "slug": "bowling-game",
+          "names": {
+            "en": "Game",
+            "uk": "Гра",
+            "de": "Spiel",
+            "ru": "Игра",
+            "original": "Game"
+          }
+        },
+        {
+          "slug": "lane-rental",
+          "names": {
+            "en": "Lane Rental",
+            "uk": "Оренда доріжки",
+            "de": "Bahnmiete",
+            "ru": "Аренда дорожки",
+            "original": "Lane Rental"
+          }
+        },
+        {
+          "slug": "party-package",
+          "names": {
+            "en": "Party Package",
+            "uk": "Пакет для вечірки",
+            "de": "Partypaket",
+            "ru": "Пакет для вечеринки",
+            "original": "Party Package"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "escape-room",
+      "names": {
+        "en": "Escape Room",
+        "uk": "Квест-кімната",
+        "de": "Escape Room",
+        "ru": "Квест-комната",
+        "original": "Escape Room"
+      },
+      "osmTag": "leisure=escape_game",
+      "templates": [
+        {
+          "slug": "room-session",
+          "names": {
+            "en": "Room Session",
+            "uk": "Сеанс",
+            "de": "Spielsitzung",
+            "ru": "Сеанс",
+            "original": "Room Session"
+          }
+        },
+        {
+          "slug": "team-building",
+          "names": {
+            "en": "Team Building",
+            "uk": "Тімбілдінг",
+            "de": "Teambuilding",
+            "ru": "Тимбилдинг",
+            "original": "Team Building"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "event-venue",
+      "names": {
+        "en": "Event Venue",
+        "uk": "Простір для подій",
+        "de": "Veranstaltungsort",
+        "ru": "Площадка для мероприятий",
+        "original": "Event Venue"
+      },
+      "osmTag": "amenity=events_venue",
+      "templates": [
+        {
+          "slug": "venue-rental",
+          "names": {
+            "en": "Venue Rental",
+            "uk": "Оренда залу",
+            "de": "Raummiete",
+            "ru": "Аренда зала",
+            "original": "Venue Rental"
+          }
+        },
+        {
+          "slug": "wedding-package",
+          "names": {
+            "en": "Wedding Package",
+            "uk": "Весільний пакет",
+            "de": "Hochzeitspaket",
+            "ru": "Свадебный пакет",
+            "original": "Wedding Package"
+          }
+        },
+        {
+          "slug": "corporate-event",
+          "names": {
+            "en": "Corporate Event",
+            "uk": "Корпоратив",
+            "de": "Firmenveranstaltung",
+            "ru": "Корпоратив",
+            "original": "Corporate Event"
+          }
+        }
+      ]
+    }
+  ]
+}

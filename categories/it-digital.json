@@ -1,0 +1,361 @@
+{
+  "slug": "it-digital",
+  "names": {
+    "en": "IT & Digital",
+    "uk": "ІТ та цифрові послуги",
+    "de": "IT & Digital",
+    "ru": "ИТ и цифровые услуги",
+    "original": "IT & Digital"
+  },
+  "icon": "💻",
+  "naceRef": "J62",
+  "subcategories": [
+    {
+      "slug": "web-development",
+      "names": {
+        "en": "Web Development",
+        "uk": "Веб-розробка",
+        "de": "Webentwicklung",
+        "ru": "Веб-разработка",
+        "original": "Web Development"
+      },
+      "templates": [
+        {
+          "slug": "landing-page",
+          "names": {
+            "en": "Landing Page",
+            "uk": "Лендінг",
+            "de": "Landingpage",
+            "ru": "Лендинг",
+            "original": "Landing Page"
+          }
+        },
+        {
+          "slug": "e-commerce-site",
+          "names": {
+            "en": "E-commerce Site",
+            "uk": "Інтернет-магазин",
+            "de": "Online-Shop",
+            "ru": "Интернет-магазин",
+            "original": "E-commerce Site"
+          }
+        },
+        {
+          "slug": "web-application",
+          "names": {
+            "en": "Web Application",
+            "uk": "Веб-додаток",
+            "de": "Webanwendung",
+            "ru": "Веб-приложение",
+            "original": "Web Application"
+          }
+        },
+        {
+          "slug": "website-maintenance",
+          "names": {
+            "en": "Website Maintenance",
+            "uk": "Підтримка сайту",
+            "de": "Website-Wartung",
+            "ru": "Поддержка сайта",
+            "original": "Website Maintenance"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "mobile-development",
+      "names": {
+        "en": "Mobile Development",
+        "uk": "Мобільна розробка",
+        "de": "Mobile Entwicklung",
+        "ru": "Мобильная разработка",
+        "original": "Mobile Development"
+      },
+      "templates": [
+        {
+          "slug": "ios-app",
+          "names": {
+            "en": "iOS App",
+            "uk": "Додаток для iOS",
+            "de": "iOS-App",
+            "ru": "Приложение для iOS",
+            "original": "iOS App"
+          }
+        },
+        {
+          "slug": "android-app",
+          "names": {
+            "en": "Android App",
+            "uk": "Додаток для Android",
+            "de": "Android-App",
+            "ru": "Приложение для Android",
+            "original": "Android App"
+          }
+        },
+        {
+          "slug": "cross-platform-app",
+          "names": {
+            "en": "Cross-platform App",
+            "uk": "Кросплатформний додаток",
+            "de": "Plattformübergreifende App",
+            "ru": "Кроссплатформенное приложение",
+            "original": "Cross-platform App"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "it-consulting",
+      "names": {
+        "en": "IT Consulting",
+        "uk": "ІТ-консалтинг",
+        "de": "IT-Beratung",
+        "ru": "ИТ-консалтинг",
+        "original": "IT Consulting"
+      },
+      "osmTag": "office=it",
+      "templates": [
+        {
+          "slug": "it-audit",
+          "names": {
+            "en": "IT Audit",
+            "uk": "ІТ-аудит",
+            "de": "IT-Audit",
+            "ru": "ИТ-аудит",
+            "original": "IT Audit"
+          }
+        },
+        {
+          "slug": "cloud-migration",
+          "names": {
+            "en": "Cloud Migration",
+            "uk": "Міграція в хмару",
+            "de": "Cloud-Migration",
+            "ru": "Миграция в облако",
+            "original": "Cloud Migration"
+          }
+        },
+        {
+          "slug": "cybersecurity",
+          "names": {
+            "en": "Cybersecurity Assessment",
+            "uk": "Аудит кібербезпеки",
+            "de": "Cybersicherheitsbewertung",
+            "ru": "Аудит кибербезопасности",
+            "original": "Cybersecurity Assessment"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "seo-marketing",
+      "names": {
+        "en": "SEO & Marketing",
+        "uk": "SEO та маркетинг",
+        "de": "SEO & Marketing",
+        "ru": "SEO и маркетинг",
+        "original": "SEO & Marketing"
+      },
+      "templates": [
+        {
+          "slug": "seo-audit",
+          "names": {
+            "en": "SEO Audit",
+            "uk": "SEO-аудит",
+            "de": "SEO-Audit",
+            "ru": "SEO-аудит",
+            "original": "SEO Audit"
+          }
+        },
+        {
+          "slug": "google-ads",
+          "names": {
+            "en": "Google Ads",
+            "uk": "Google Ads",
+            "de": "Google Ads",
+            "ru": "Google Ads",
+            "original": "Google Ads"
+          }
+        },
+        {
+          "slug": "social-media-mgmt",
+          "names": {
+            "en": "Social Media Management",
+            "uk": "Ведення соцмереж",
+            "de": "Social-Media-Management",
+            "ru": "Ведение соцсетей",
+            "original": "Social Media Management"
+          }
+        },
+        {
+          "slug": "content-marketing",
+          "names": {
+            "en": "Content Marketing",
+            "uk": "Контент-маркетинг",
+            "de": "Content-Marketing",
+            "ru": "Контент-маркетинг",
+            "original": "Content Marketing"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "graphic-design",
+      "names": {
+        "en": "Graphic Design",
+        "uk": "Графічний дизайн",
+        "de": "Grafikdesign",
+        "ru": "Графический дизайн",
+        "original": "Graphic Design"
+      },
+      "osmTag": "office=graphic_design",
+      "templates": [
+        {
+          "slug": "logo-design",
+          "names": {
+            "en": "Logo Design",
+            "uk": "Дизайн логотипу",
+            "de": "Logo-Design",
+            "ru": "Дизайн логотипа",
+            "original": "Logo Design"
+          }
+        },
+        {
+          "slug": "brand-identity",
+          "names": {
+            "en": "Brand Identity",
+            "uk": "Фірмовий стиль",
+            "de": "Corporate Identity",
+            "ru": "Фирменный стиль",
+            "original": "Brand Identity"
+          }
+        },
+        {
+          "slug": "print-design",
+          "names": {
+            "en": "Print Design",
+            "uk": "Друкований дизайн",
+            "de": "Printdesign",
+            "ru": "Печатный дизайн",
+            "original": "Print Design"
+          }
+        },
+        {
+          "slug": "packaging-design",
+          "names": {
+            "en": "Packaging",
+            "uk": "Дизайн упаковки",
+            "de": "Verpackungsdesign",
+            "ru": "Дизайн упаковки",
+            "original": "Packaging"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "photography",
+      "names": {
+        "en": "Photography",
+        "uk": "Фотографія",
+        "de": "Fotografie",
+        "ru": "Фотография",
+        "original": "Photography"
+      },
+      "osmTag": "craft=photographer",
+      "templates": [
+        {
+          "slug": "portrait-session",
+          "names": {
+            "en": "Portrait Session",
+            "uk": "Портретна зйомка",
+            "de": "Porträtshooting",
+            "ru": "Портретная съёмка",
+            "original": "Portrait Session"
+          }
+        },
+        {
+          "slug": "product-photography",
+          "names": {
+            "en": "Product Photography",
+            "uk": "Предметна зйомка",
+            "de": "Produktfotografie",
+            "ru": "Предметная съёмка",
+            "original": "Product Photography"
+          }
+        },
+        {
+          "slug": "event-photography",
+          "names": {
+            "en": "Event Photography",
+            "uk": "Зйомка подій",
+            "de": "Eventfotografie",
+            "ru": "Съёмка мероприятий",
+            "original": "Event Photography"
+          }
+        },
+        {
+          "slug": "wedding-photography",
+          "names": {
+            "en": "Wedding Photography",
+            "uk": "Весільна зйомка",
+            "de": "Hochzeitsfotografie",
+            "ru": "Свадебная съёмка",
+            "original": "Wedding Photography"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "videography",
+      "names": {
+        "en": "Videography",
+        "uk": "Відеозйомка",
+        "de": "Videografie",
+        "ru": "Видеосъёмка",
+        "original": "Videography"
+      },
+      "templates": [
+        {
+          "slug": "promo-video",
+          "names": {
+            "en": "Promo Video",
+            "uk": "Промо-ролик",
+            "de": "Werbefilm",
+            "ru": "Промо-ролик",
+            "original": "Promo Video"
+          }
+        },
+        {
+          "slug": "event-video",
+          "names": {
+            "en": "Event Video",
+            "uk": "Відео з подій",
+            "de": "Eventfilm",
+            "ru": "Видео с мероприятий",
+            "original": "Event Video"
+          }
+        },
+        {
+          "slug": "social-media-content",
+          "names": {
+            "en": "Social Media Content",
+            "uk": "Контент для соцмереж",
+            "de": "Social-Media-Inhalt",
+            "ru": "Контент для соцсетей",
+            "original": "Social Media Content"
+          }
+        },
+        {
+          "slug": "drone-footage",
+          "names": {
+            "en": "Drone Footage",
+            "uk": "Зйомка з дрона",
+            "de": "Drohnenaufnahmen",
+            "ru": "Съёмка с дрона",
+            "original": "Drone Footage"
+          }
+        }
+      ]
+    }
+  ]
+}

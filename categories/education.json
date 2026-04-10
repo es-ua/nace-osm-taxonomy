@@ -1,0 +1,335 @@
+{
+  "slug": "education",
+  "names": {
+    "en": "Education & Training",
+    "uk": "Освіта та навчання",
+    "de": "Bildung & Ausbildung",
+    "ru": "Образование и обучение",
+    "original": "Education & Training"
+  },
+  "icon": "🎓",
+  "naceRef": "P85",
+  "subcategories": [
+    {
+      "slug": "language-school",
+      "names": {
+        "en": "Language School",
+        "uk": "Мовна школа",
+        "de": "Sprachschule",
+        "ru": "Языковая школа",
+        "original": "Language School"
+      },
+      "osmTag": "amenity=language_school",
+      "templates": [
+        {
+          "slug": "group-lesson",
+          "names": {
+            "en": "Group Lesson",
+            "uk": "Групове заняття",
+            "de": "Gruppenunterricht",
+            "ru": "Групповое занятие",
+            "original": "Group Lesson"
+          }
+        },
+        {
+          "slug": "private-lesson",
+          "names": {
+            "en": "Private Lesson",
+            "uk": "Індивідуальне заняття",
+            "de": "Einzelunterricht",
+            "ru": "Индивидуальное занятие",
+            "original": "Private Lesson"
+          }
+        },
+        {
+          "slug": "intensive-course",
+          "names": {
+            "en": "Intensive Course",
+            "uk": "Інтенсивний курс",
+            "de": "Intensivkurs",
+            "ru": "Интенсивный курс",
+            "original": "Intensive Course"
+          }
+        },
+        {
+          "slug": "exam-prep",
+          "names": {
+            "en": "Exam Preparation",
+            "uk": "Підготовка до іспиту",
+            "de": "Prüfungsvorbereitung",
+            "ru": "Подготовка к экзамену",
+            "original": "Exam Preparation"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "driving-school",
+      "names": {
+        "en": "Driving School",
+        "uk": "Автошкола",
+        "de": "Fahrschule",
+        "ru": "Автошкола",
+        "original": "Driving School"
+      },
+      "osmTag": "amenity=driving_school",
+      "templates": [
+        {
+          "slug": "theory-lesson",
+          "names": {
+            "en": "Theory Lesson",
+            "uk": "Теоретичне заняття",
+            "de": "Theorieunterricht",
+            "ru": "Теоретическое занятие",
+            "original": "Theory Lesson"
+          }
+        },
+        {
+          "slug": "practical-lesson",
+          "names": {
+            "en": "Practical Lesson",
+            "uk": "Практичне заняття",
+            "de": "Fahrstunde",
+            "ru": "Практическое занятие",
+            "original": "Practical Lesson"
+          }
+        },
+        {
+          "slug": "driving-exam-prep",
+          "names": {
+            "en": "Exam Preparation",
+            "uk": "Підготовка до іспиту",
+            "de": "Prüfungsvorbereitung",
+            "ru": "Подготовка к экзамену",
+            "original": "Exam Preparation"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "music-school",
+      "names": {
+        "en": "Music School",
+        "uk": "Музична школа",
+        "de": "Musikschule",
+        "ru": "Музыкальная школа",
+        "original": "Music School"
+      },
+      "osmTag": "amenity=music_school",
+      "templates": [
+        {
+          "slug": "music-individual",
+          "names": {
+            "en": "Individual Lesson",
+            "uk": "Індивідуальне заняття",
+            "de": "Einzelunterricht",
+            "ru": "Индивидуальное занятие",
+            "original": "Individual Lesson"
+          }
+        },
+        {
+          "slug": "music-group",
+          "names": {
+            "en": "Group Lesson",
+            "uk": "Групове заняття",
+            "de": "Gruppenunterricht",
+            "ru": "Групповое занятие",
+            "original": "Group Lesson"
+          }
+        },
+        {
+          "slug": "instrument-rental",
+          "names": {
+            "en": "Instrument Rental",
+            "uk": "Оренда інструменту",
+            "de": "Instrumentenverleih",
+            "ru": "Аренда инструмента",
+            "original": "Instrument Rental"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tutoring",
+      "names": {
+        "en": "Tutoring",
+        "uk": "Репетиторство",
+        "de": "Nachhilfe",
+        "ru": "Репетиторство",
+        "original": "Tutoring"
+      },
+      "osmTag": "office=tutoring",
+      "templates": [
+        {
+          "slug": "math-tutoring",
+          "names": {
+            "en": "Math",
+            "uk": "Математика",
+            "de": "Mathematik",
+            "ru": "Математика",
+            "original": "Math"
+          }
+        },
+        {
+          "slug": "science-tutoring",
+          "names": {
+            "en": "Science",
+            "uk": "Природничі науки",
+            "de": "Naturwissenschaften",
+            "ru": "Естественные науки",
+            "original": "Science"
+          }
+        },
+        {
+          "slug": "tutor-exam-prep",
+          "names": {
+            "en": "Exam Preparation",
+            "uk": "Підготовка до іспиту",
+            "de": "Prüfungsvorbereitung",
+            "ru": "Подготовка к экзамену",
+            "original": "Exam Preparation"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "dance-school",
+      "names": {
+        "en": "Dance School",
+        "uk": "Школа танців",
+        "de": "Tanzschule",
+        "ru": "Школа танцев",
+        "original": "Dance School"
+      },
+      "osmTag": "leisure=dance",
+      "templates": [
+        {
+          "slug": "dance-trial",
+          "names": {
+            "en": "Trial Lesson",
+            "uk": "Пробне заняття",
+            "de": "Probestunde",
+            "ru": "Пробное занятие",
+            "original": "Trial Lesson"
+          }
+        },
+        {
+          "slug": "dance-monthly",
+          "names": {
+            "en": "Monthly Pass",
+            "uk": "Місячний абонемент",
+            "de": "Monatskarte",
+            "ru": "Месячный абонемент",
+            "original": "Monthly Pass"
+          }
+        },
+        {
+          "slug": "dance-private",
+          "names": {
+            "en": "Private Lesson",
+            "uk": "Індивідуальне заняття",
+            "de": "Privatstunde",
+            "ru": "Индивидуальное занятие",
+            "original": "Private Lesson"
+          }
+        },
+        {
+          "slug": "dance-workshop",
+          "names": {
+            "en": "Workshop",
+            "uk": "Майстер-клас",
+            "de": "Workshop",
+            "ru": "Мастер-класс",
+            "original": "Workshop"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "art-school",
+      "names": {
+        "en": "Art School",
+        "uk": "Художня школа",
+        "de": "Kunstschule",
+        "ru": "Художественная школа",
+        "original": "Art School"
+      },
+      "osmTag": "amenity=school",
+      "templates": [
+        {
+          "slug": "drawing-class",
+          "names": {
+            "en": "Drawing Class",
+            "uk": "Малювання",
+            "de": "Zeichenkurs",
+            "ru": "Рисование",
+            "original": "Drawing Class"
+          }
+        },
+        {
+          "slug": "painting-class",
+          "names": {
+            "en": "Painting Class",
+            "uk": "Живопис",
+            "de": "Malkurs",
+            "ru": "Живопись",
+            "original": "Painting Class"
+          }
+        },
+        {
+          "slug": "pottery-class",
+          "names": {
+            "en": "Pottery Class",
+            "uk": "Гончарство",
+            "de": "Töpferkurs",
+            "ru": "Гончарство",
+            "original": "Pottery Class"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kindergarten",
+      "names": {
+        "en": "Kindergarten",
+        "uk": "Дитячий садок",
+        "de": "Kindergarten",
+        "ru": "Детский сад",
+        "original": "Kindergarten"
+      },
+      "osmTag": "amenity=kindergarten",
+      "templates": [
+        {
+          "slug": "full-day-care",
+          "names": {
+            "en": "Full Day",
+            "uk": "Повний день",
+            "de": "Ganztags",
+            "ru": "Полный день",
+            "original": "Full Day"
+          }
+        },
+        {
+          "slug": "half-day-care",
+          "names": {
+            "en": "Half Day",
+            "uk": "Півдня",
+            "de": "Halbtags",
+            "ru": "Полдня",
+            "original": "Half Day"
+          }
+        },
+        {
+          "slug": "after-school",
+          "names": {
+            "en": "After School",
+            "uk": "Продовжений день",
+            "de": "Nachmittagsbetreuung",
+            "ru": "Продлёнка",
+            "original": "After School"
+          }
+        }
+      ]
+    }
+  ]
+}

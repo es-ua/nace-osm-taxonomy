@@ -1,0 +1,375 @@
+{
+  "slug": "health",
+  "names": {
+    "en": "Health & Medical",
+    "uk": "Здоров\\'я та медицина",
+    "de": "Gesundheit & Medizin",
+    "ru": "Здоровье и медицина",
+    "original": "Health & Medical"
+  },
+  "icon": "🏥",
+  "naceRef": "Q86",
+  "subcategories": [
+    {
+      "slug": "general-doctor",
+      "names": {
+        "en": "General Practitioner",
+        "uk": "Сімейний лікар",
+        "de": "Hausarzt",
+        "ru": "Семейный врач",
+        "original": "General Practitioner"
+      },
+      "osmTag": "healthcare=doctor",
+      "templates": [
+        {
+          "slug": "consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Sprechstunde",
+            "ru": "Консультация",
+            "original": "Consultation"
+          }
+        },
+        {
+          "slug": "check-up",
+          "names": {
+            "en": "Check-up",
+            "uk": "Профогляд",
+            "de": "Vorsorgeuntersuchung",
+            "ru": "Медосмотр",
+            "original": "Check-up"
+          }
+        },
+        {
+          "slug": "vaccination",
+          "names": {
+            "en": "Vaccination",
+            "uk": "Вакцинація",
+            "de": "Impfung",
+            "ru": "Вакцинация",
+            "original": "Vaccination"
+          }
+        },
+        {
+          "slug": "blood-test",
+          "names": {
+            "en": "Blood Test",
+            "uk": "Аналіз крові",
+            "de": "Blutuntersuchung",
+            "ru": "Анализ крови",
+            "original": "Blood Test"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "dentist",
+      "names": {
+        "en": "Dentist",
+        "uk": "Стоматолог",
+        "de": "Zahnarzt",
+        "ru": "Стоматолог",
+        "original": "Dentist"
+      },
+      "osmTag": "healthcare=dentist",
+      "templates": [
+        {
+          "slug": "dental-cleaning",
+          "names": {
+            "en": "Cleaning",
+            "uk": "Чистка зубів",
+            "de": "Zahnreinigung",
+            "ru": "Чистка зубов",
+            "original": "Cleaning"
+          }
+        },
+        {
+          "slug": "filling",
+          "names": {
+            "en": "Filling",
+            "uk": "Пломбування",
+            "de": "Füllung",
+            "ru": "Пломбирование",
+            "original": "Filling"
+          }
+        },
+        {
+          "slug": "extraction",
+          "names": {
+            "en": "Extraction",
+            "uk": "Видалення зуба",
+            "de": "Zahnextraktion",
+            "ru": "Удаление зуба",
+            "original": "Extraction"
+          }
+        },
+        {
+          "slug": "whitening",
+          "names": {
+            "en": "Whitening",
+            "uk": "Відбілювання",
+            "de": "Zahnaufhellung",
+            "ru": "Отбеливание",
+            "original": "Whitening"
+          }
+        },
+        {
+          "slug": "implant",
+          "names": {
+            "en": "Dental Implant",
+            "uk": "Імплант",
+            "de": "Zahnimplantat",
+            "ru": "Имплант",
+            "original": "Dental Implant"
+          }
+        },
+        {
+          "slug": "crown",
+          "names": {
+            "en": "Crown",
+            "uk": "Коронка",
+            "de": "Zahnkrone",
+            "ru": "Коронка",
+            "original": "Crown"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "physiotherapy",
+      "names": {
+        "en": "Physiotherapy",
+        "uk": "Фізіотерапія",
+        "de": "Physiotherapie",
+        "ru": "Физиотерапия",
+        "original": "Physiotherapy"
+      },
+      "osmTag": "healthcare=physiotherapist",
+      "templates": [
+        {
+          "slug": "physio-session",
+          "names": {
+            "en": "Session",
+            "uk": "Сеанс",
+            "de": "Behandlung",
+            "ru": "Сеанс",
+            "original": "Session"
+          }
+        },
+        {
+          "slug": "physio-assessment",
+          "names": {
+            "en": "Assessment",
+            "uk": "Діагностика",
+            "de": "Befunderhebung",
+            "ru": "Диагностика",
+            "original": "Assessment"
+          }
+        },
+        {
+          "slug": "manual-therapy",
+          "names": {
+            "en": "Manual Therapy",
+            "uk": "Мануальна терапія",
+            "de": "Manuelle Therapie",
+            "ru": "Мануальная терапия",
+            "original": "Manual Therapy"
+          }
+        },
+        {
+          "slug": "sports-rehab",
+          "names": {
+            "en": "Sports Rehab",
+            "uk": "Спортивна реабілітація",
+            "de": "Sportrehabilitation",
+            "ru": "Спортивная реабилитация",
+            "original": "Sports Rehab"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "psychologist",
+      "names": {
+        "en": "Psychologist",
+        "uk": "Психолог",
+        "de": "Psychologe",
+        "ru": "Психолог",
+        "original": "Psychologist"
+      },
+      "osmTag": "healthcare=psychologist",
+      "templates": [
+        {
+          "slug": "individual-session",
+          "names": {
+            "en": "Individual Session",
+            "uk": "Індивідуальний сеанс",
+            "de": "Einzelsitzung",
+            "ru": "Индивидуальный сеанс",
+            "original": "Individual Session"
+          }
+        },
+        {
+          "slug": "couples-therapy",
+          "names": {
+            "en": "Couples Therapy",
+            "uk": "Парна терапія",
+            "de": "Paartherapie",
+            "ru": "Парная терапия",
+            "original": "Couples Therapy"
+          }
+        },
+        {
+          "slug": "psych-assessment",
+          "names": {
+            "en": "Assessment",
+            "uk": "Діагностика",
+            "de": "Diagnostik",
+            "ru": "Диагностика",
+            "original": "Assessment"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "veterinary",
+      "names": {
+        "en": "Veterinary",
+        "uk": "Ветеринарія",
+        "de": "Tierarzt",
+        "ru": "Ветеринария",
+        "original": "Veterinary"
+      },
+      "osmTag": "amenity=veterinary",
+      "templates": [
+        {
+          "slug": "vet-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Sprechstunde",
+            "ru": "Консультация",
+            "original": "Consultation"
+          }
+        },
+        {
+          "slug": "vet-vaccination",
+          "names": {
+            "en": "Vaccination",
+            "uk": "Вакцинація",
+            "de": "Impfung",
+            "ru": "Вакцинация",
+            "original": "Vaccination"
+          }
+        },
+        {
+          "slug": "vet-surgery",
+          "names": {
+            "en": "Surgery",
+            "uk": "Хірургія",
+            "de": "Operation",
+            "ru": "Хирургия",
+            "original": "Surgery"
+          }
+        },
+        {
+          "slug": "vet-grooming",
+          "names": {
+            "en": "Grooming",
+            "uk": "Грумінг",
+            "de": "Fellpflege",
+            "ru": "Груминг",
+            "original": "Grooming"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ophthalmologist",
+      "names": {
+        "en": "Ophthalmologist",
+        "uk": "Офтальмолог",
+        "de": "Augenarzt",
+        "ru": "Офтальмолог",
+        "original": "Ophthalmologist"
+      },
+      "osmTag": "healthcare=doctor",
+      "templates": [
+        {
+          "slug": "oph-eye-exam",
+          "names": {
+            "en": "Eye Exam",
+            "uk": "Перевірка зору",
+            "de": "Augenuntersuchung",
+            "ru": "Проверка зрения",
+            "original": "Eye Exam"
+          }
+        },
+        {
+          "slug": "laser-consultation",
+          "names": {
+            "en": "Laser Consultation",
+            "uk": "Консультація з лазерної корекції",
+            "de": "Laser-Beratung",
+            "ru": "Консультация по лазерной коррекции",
+            "original": "Laser Consultation"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "dermatologist",
+      "names": {
+        "en": "Dermatologist",
+        "uk": "Дерматолог",
+        "de": "Hautarzt",
+        "ru": "Дерматолог",
+        "original": "Dermatologist"
+      },
+      "osmTag": "healthcare=doctor",
+      "templates": [
+        {
+          "slug": "skin-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Sprechstunde",
+            "ru": "Консультация",
+            "original": "Consultation"
+          }
+        },
+        {
+          "slug": "skin-check",
+          "names": {
+            "en": "Skin Check",
+            "uk": "Перевірка шкіри",
+            "de": "Hautkrebsvorsorge",
+            "ru": "Проверка кожи",
+            "original": "Skin Check"
+          }
+        },
+        {
+          "slug": "acne-treatment",
+          "names": {
+            "en": "Acne Treatment",
+            "uk": "Лікування акне",
+            "de": "Aknebehandlung",
+            "ru": "Лечение акне",
+            "original": "Acne Treatment"
+          }
+        },
+        {
+          "slug": "mole-removal",
+          "names": {
+            "en": "Mole Removal",
+            "uk": "Видалення родимок",
+            "de": "Muttermalentfernung",
+            "ru": "Удаление родинок",
+            "original": "Mole Removal"
+          }
+        }
+      ]
+    }
+  ]
+}
