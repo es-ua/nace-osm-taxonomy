@@ -11,10 +11,23 @@
     "original": "Manufacturing & Production"
   },
   "altLabels": {
-    "en": ["production", "fabrication", "factory"],
-    "uk": ["фабрика", "цех"],
-    "de": ["fabrik", "werk"],
-    "ru": ["фабрика", "цех"]
+    "en": [
+      "production",
+      "fabrication",
+      "factory"
+    ],
+    "uk": [
+      "фабрика",
+      "цех"
+    ],
+    "de": [
+      "fabrik",
+      "werk"
+    ],
+    "ru": [
+      "фабрика",
+      "цех"
+    ]
   },
   "icon": "🏭",
   "naceRef": "C",
@@ -32,10 +45,22 @@
         "original": "Food Production"
       },
       "altLabels": {
-        "en": ["food manufacturing", "food processing"],
-        "uk": ["харчова промисловість", "переробка їжі"],
-        "de": ["lebensmittelproduktion", "lebensmittelverarbeitung"],
-        "ru": ["пищевая промышленность", "переработка продуктов"]
+        "en": [
+          "food manufacturing",
+          "food processing"
+        ],
+        "uk": [
+          "харчова промисловість",
+          "переробка їжі"
+        ],
+        "de": [
+          "lebensmittelproduktion",
+          "lebensmittelverarbeitung"
+        ],
+        "ru": [
+          "пищевая промышленность",
+          "переработка продуктов"
+        ]
       },
       "osmTag": "craft=food_production",
       "naceRef": "C10.71",
@@ -52,7 +77,36 @@
             "ru": "Контрактное производство",
             "original": "Contract Manufacturing"
           },
-          "crossLinks": ["private-label", "b2b-wholesale"]
+          "crossLinks": [
+            "private-label",
+            "b2b-wholesale"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "contract manufacturing"
+              ],
+              "uk": [
+                "контрактне виробництво"
+              ],
+              "de": [
+                "auftragsfertigung"
+              ],
+              "ru": [
+                "контрактное производство"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "private-label",
+              "b2b-wholesale"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/private-label",
@@ -64,7 +118,36 @@
             "ru": "Производство под собственной торговой маркой",
             "original": "Private Label Production"
           },
-          "crossLinks": ["contract-manufacturing", "b2b-wholesale"]
+          "crossLinks": [
+            "contract-manufacturing",
+            "b2b-wholesale"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "private label production"
+              ],
+              "uk": [
+                "виробництво під торговою маркою клієнта"
+              ],
+              "de": [
+                "eigenmarken-produktion"
+              ],
+              "ru": [
+                "производство под собственной торговой маркой"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contract-manufacturing",
+              "b2b-wholesale"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/b2b-wholesale",
@@ -76,7 +159,36 @@
             "ru": "Оптовые продажи B2B",
             "original": "B2B Wholesale"
           },
-          "crossLinks": ["contract-manufacturing", "private-label"]
+          "crossLinks": [
+            "contract-manufacturing",
+            "private-label"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "b2b wholesale"
+              ],
+              "uk": [
+                "оптові продажі b2b"
+              ],
+              "de": [
+                "b2b-großhandel"
+              ],
+              "ru": [
+                "оптовые продажи b2b"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contract-manufacturing",
+              "private-label"
+            ]
+          }
         }
       ]
     },
@@ -91,10 +203,22 @@
         "original": "Textile Production"
       },
       "altLabels": {
-        "en": ["textile manufacturing", "fabric mill"],
-        "uk": ["текстильна фабрика", "ткацьке виробництво"],
-        "de": ["textilfabrik", "weberei"],
-        "ru": ["текстильная фабрика", "ткацкое производство"]
+        "en": [
+          "textile manufacturing",
+          "fabric mill"
+        ],
+        "uk": [
+          "текстильна фабрика",
+          "ткацьке виробництво"
+        ],
+        "de": [
+          "textilfabrik",
+          "weberei"
+        ],
+        "ru": [
+          "текстильная фабрика",
+          "ткацкое производство"
+        ]
       },
       "osmTag": "craft=textile",
       "naceRef": "C13",
@@ -111,7 +235,36 @@
             "ru": "Изготовление ткани на заказ",
             "original": "Custom Fabric"
           },
-          "crossLinks": ["b2b-textile-orders", "fabric-printing"]
+          "crossLinks": [
+            "b2b-textile-orders",
+            "fabric-printing"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom fabric"
+              ],
+              "uk": [
+                "виготовлення тканини на замовлення"
+              ],
+              "de": [
+                "maßgeschneiderte stoffe"
+              ],
+              "ru": [
+                "изготовление ткани на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "b2b-textile-orders",
+              "fabric-printing"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/b2b-textile-orders",
@@ -123,7 +276,36 @@
             "ru": "Оптовые текстильные заказы",
             "original": "B2B Textile Orders"
           },
-          "crossLinks": ["custom-fabric", "fabric-printing"]
+          "crossLinks": [
+            "custom-fabric",
+            "fabric-printing"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "b2b textile orders"
+              ],
+              "uk": [
+                "оптові текстильні замовлення"
+              ],
+              "de": [
+                "b2b-textilaufträge"
+              ],
+              "ru": [
+                "оптовые текстильные заказы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-fabric",
+              "fabric-printing"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/fabric-printing",
@@ -135,7 +317,36 @@
             "ru": "Печать на ткани",
             "original": "Fabric Printing"
           },
-          "crossLinks": ["custom-fabric", "b2b-textile-orders"]
+          "crossLinks": [
+            "custom-fabric",
+            "b2b-textile-orders"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "fabric printing"
+              ],
+              "uk": [
+                "друк на тканині"
+              ],
+              "de": [
+                "stoffdruck"
+              ],
+              "ru": [
+                "печать на ткани"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-fabric",
+              "b2b-textile-orders"
+            ]
+          }
         }
       ]
     },
@@ -150,10 +361,22 @@
         "original": "Woodworking"
       },
       "altLabels": {
-        "en": ["carpentry", "wood shop"],
-        "uk": ["столярна майстерня", "столярка"],
-        "de": ["tischlerei", "schreinerei"],
-        "ru": ["столярная мастерская", "столярка"]
+        "en": [
+          "carpentry",
+          "wood shop"
+        ],
+        "uk": [
+          "столярна майстерня",
+          "столярка"
+        ],
+        "de": [
+          "tischlerei",
+          "schreinerei"
+        ],
+        "ru": [
+          "столярная мастерская",
+          "столярка"
+        ]
       },
       "osmTag": "craft=carpenter",
       "naceRef": "C16",
@@ -170,7 +393,37 @@
             "ru": "Производство мебели на заказ",
             "original": "Custom Furniture Manufacturing"
           },
-          "crossLinks": ["joinery", "custom-wooden-decor"]
+          "crossLinks": [
+            "joinery",
+            "custom-wooden-decor"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom furniture manufacturing"
+              ],
+              "uk": [
+                "виробництво меблів на замовлення"
+              ],
+              "de": [
+                "möbelanfertigung nach maß"
+              ],
+              "ru": [
+                "производство мебели на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "lumber",
+              "joinery",
+              "custom-wooden-decor"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/lumber",
@@ -182,7 +435,36 @@
             "ru": "Пиломатериалы",
             "original": "Lumber"
           },
-          "crossLinks": ["joinery"]
+          "crossLinks": [
+            "joinery"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "lumber"
+              ],
+              "uk": [
+                "пиломатеріали"
+              ],
+              "de": [
+                "schnittholz"
+              ],
+              "ru": [
+                "пиломатериалы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-furniture-mfg",
+              "joinery",
+              "custom-wooden-decor"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/joinery",
@@ -194,7 +476,37 @@
             "ru": "Столярные изделия",
             "original": "Joinery"
           },
-          "crossLinks": ["custom-furniture-mfg", "lumber"]
+          "crossLinks": [
+            "custom-furniture-mfg",
+            "lumber"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "joinery"
+              ],
+              "uk": [
+                "столярні вироби"
+              ],
+              "de": [
+                "tischlerarbeiten"
+              ],
+              "ru": [
+                "столярные изделия"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-furniture-mfg",
+              "lumber",
+              "custom-wooden-decor"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/custom-wooden-decor",
@@ -206,7 +518,37 @@
             "ru": "Деревянный декор на заказ",
             "original": "Custom Wooden Decor"
           },
-          "crossLinks": ["custom-furniture-mfg", "joinery"]
+          "crossLinks": [
+            "custom-furniture-mfg",
+            "joinery"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom wooden decor"
+              ],
+              "uk": [
+                "дерев'яний декор на замовлення"
+              ],
+              "de": [
+                "maßgefertigter holzdekor"
+              ],
+              "ru": [
+                "деревянный декор на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-furniture-mfg",
+              "lumber",
+              "joinery"
+            ]
+          }
         }
       ]
     },
@@ -221,10 +563,22 @@
         "original": "Metalworking"
       },
       "altLabels": {
-        "en": ["metal fabrication", "metal shop"],
-        "uk": ["металева майстерня", "металовироби"],
-        "de": ["metallbau", "schlosserei"],
-        "ru": ["металлическая мастерская", "металлоизделия"]
+        "en": [
+          "metal fabrication",
+          "metal shop"
+        ],
+        "uk": [
+          "металева майстерня",
+          "металовироби"
+        ],
+        "de": [
+          "metallbau",
+          "schlosserei"
+        ],
+        "ru": [
+          "металлическая мастерская",
+          "металлоизделия"
+        ]
       },
       "osmTag": "craft=metal_construction",
       "naceRef": "C25",
@@ -241,7 +595,37 @@
             "ru": "Сварочные работы",
             "original": "Welding Service"
           },
-          "crossLinks": ["custom-metal", "sheet-metal"]
+          "crossLinks": [
+            "custom-metal",
+            "sheet-metal"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "welding service"
+              ],
+              "uk": [
+                "зварювальні роботи"
+              ],
+              "de": [
+                "schweißservice"
+              ],
+              "ru": [
+                "сварочные работы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-metal",
+              "cnc-machining",
+              "sheet-metal"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/custom-metal",
@@ -253,7 +637,38 @@
             "ru": "Изготовление металлоизделий на заказ",
             "original": "Custom Metal Fabrication"
           },
-          "crossLinks": ["welding-service", "cnc-machining", "sheet-metal"]
+          "crossLinks": [
+            "welding-service",
+            "cnc-machining",
+            "sheet-metal"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom metal fabrication"
+              ],
+              "uk": [
+                "виготовлення металовиробів на замовлення"
+              ],
+              "de": [
+                "maßgefertigte metallarbeiten"
+              ],
+              "ru": [
+                "изготовление металлоизделий на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "welding-service",
+              "cnc-machining",
+              "sheet-metal"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/cnc-machining",
@@ -266,7 +681,37 @@
             "original": "CNC Machining"
           },
           "wikidataId": "Q12309480",
-          "crossLinks": ["custom-metal", "sheet-metal"]
+          "crossLinks": [
+            "custom-metal",
+            "sheet-metal"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "cnc machining"
+              ],
+              "uk": [
+                "чпк-обробка"
+              ],
+              "de": [
+                "cnc-bearbeitung"
+              ],
+              "ru": [
+                "чпу-обработка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "welding-service",
+              "custom-metal",
+              "sheet-metal"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/sheet-metal",
@@ -278,7 +723,38 @@
             "ru": "Работа с листовым металлом",
             "original": "Sheet Metal Work"
           },
-          "crossLinks": ["welding-service", "custom-metal", "cnc-machining"]
+          "crossLinks": [
+            "welding-service",
+            "custom-metal",
+            "cnc-machining"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "sheet metal work"
+              ],
+              "uk": [
+                "робота з листовим металом"
+              ],
+              "de": [
+                "blechbearbeitung"
+              ],
+              "ru": [
+                "работа с листовым металлом"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "welding-service",
+              "custom-metal",
+              "cnc-machining"
+            ]
+          }
         }
       ]
     },
@@ -293,10 +769,22 @@
         "original": "3D Printing Service"
       },
       "altLabels": {
-        "en": ["3D print", "additive manufacturing"],
-        "uk": ["адитивне виробництво", "тривимірний друк"],
-        "de": ["additive fertigung", "3d-druckservice"],
-        "ru": ["аддитивное производство", "трёхмерная печать"]
+        "en": [
+          "3D print",
+          "additive manufacturing"
+        ],
+        "uk": [
+          "адитивне виробництво",
+          "тривимірний друк"
+        ],
+        "de": [
+          "additive fertigung",
+          "3d-druckservice"
+        ],
+        "ru": [
+          "аддитивное производство",
+          "трёхмерная печать"
+        ]
       },
       "osmTag": "craft=workshop",
       "naceRef": "C25.99",
@@ -313,7 +801,37 @@
             "ru": "Печать прототипов",
             "original": "Prototype Print"
           },
-          "crossLinks": ["batch-production", "design-service"]
+          "crossLinks": [
+            "batch-production",
+            "design-service"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "prototype print"
+              ],
+              "uk": [
+                "друк прототипів"
+              ],
+              "de": [
+                "prototypendruck"
+              ],
+              "ru": [
+                "печать прототипов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "batch-production",
+              "design-service",
+              "multi-material-print"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/batch-production",
@@ -325,7 +843,37 @@
             "ru": "Серийное производство",
             "original": "Batch Production"
           },
-          "crossLinks": ["prototype-print", "multi-material-print"]
+          "crossLinks": [
+            "prototype-print",
+            "multi-material-print"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "batch production"
+              ],
+              "uk": [
+                "серійне виробництво"
+              ],
+              "de": [
+                "serienfertigung"
+              ],
+              "ru": [
+                "серийное производство"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "prototype-print",
+              "design-service",
+              "multi-material-print"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/design-service",
@@ -337,7 +885,36 @@
             "ru": "Услуги проектирования",
             "original": "Design Service"
           },
-          "crossLinks": ["prototype-print"]
+          "crossLinks": [
+            "prototype-print"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "design service"
+              ],
+              "uk": [
+                "послуги з проєктування"
+              ],
+              "de": [
+                "designservice"
+              ],
+              "ru": [
+                "услуги проектирования"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "prototype-print",
+              "batch-production",
+              "multi-material-print"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/multi-material-print",
@@ -349,7 +926,37 @@
             "ru": "Мультиматериальная печать",
             "original": "Multi-Material Print"
           },
-          "crossLinks": ["prototype-print", "batch-production"]
+          "crossLinks": [
+            "prototype-print",
+            "batch-production"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "multi-material print"
+              ],
+              "uk": [
+                "друк мультиматеріалом"
+              ],
+              "de": [
+                "multimaterial-druck"
+              ],
+              "ru": [
+                "мультиматериальная печать"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "prototype-print",
+              "batch-production",
+              "design-service"
+            ]
+          }
         }
       ]
     },
@@ -364,10 +971,23 @@
         "original": "Candle & Soap Maker"
       },
       "altLabels": {
-        "en": ["candle maker", "soap maker", "chandlery"],
-        "uk": ["свічкова майстерня", "мильна майстерня"],
-        "de": ["kerzenzieher", "seifensieder"],
-        "ru": ["свечная мастерская", "мыловарня"]
+        "en": [
+          "candle maker",
+          "soap maker",
+          "chandlery"
+        ],
+        "uk": [
+          "свічкова майстерня",
+          "мильна майстерня"
+        ],
+        "de": [
+          "kerzenzieher",
+          "seifensieder"
+        ],
+        "ru": [
+          "свечная мастерская",
+          "мыловарня"
+        ]
       },
       "osmTag": "craft=candlemaker",
       "naceRef": "C20.41",
@@ -384,7 +1004,36 @@
             "ru": "Оптовая продажа свечей",
             "original": "Wholesale Candles"
           },
-          "crossLinks": ["custom-orders", "gift-set-mfg"]
+          "crossLinks": [
+            "custom-orders",
+            "gift-set-mfg"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "wholesale candles"
+              ],
+              "uk": [
+                "оптовий продаж свічок"
+              ],
+              "de": [
+                "kerzen-großhandel"
+              ],
+              "ru": [
+                "оптовая продажа свечей"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-orders",
+              "gift-set-mfg"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/custom-orders",
@@ -396,7 +1045,36 @@
             "ru": "Индивидуальные заказы",
             "original": "Custom Orders"
           },
-          "crossLinks": ["wholesale-candles", "gift-set-mfg"]
+          "crossLinks": [
+            "wholesale-candles",
+            "gift-set-mfg"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom orders"
+              ],
+              "uk": [
+                "індивідуальні замовлення"
+              ],
+              "de": [
+                "individuelle aufträge"
+              ],
+              "ru": [
+                "индивидуальные заказы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wholesale-candles",
+              "gift-set-mfg"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/gift-set-mfg",
@@ -408,7 +1086,36 @@
             "ru": "Производство подарочных наборов",
             "original": "Gift Set Manufacturing"
           },
-          "crossLinks": ["wholesale-candles", "custom-orders"]
+          "crossLinks": [
+            "wholesale-candles",
+            "custom-orders"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "gift set manufacturing"
+              ],
+              "uk": [
+                "виробництво подарункових наборів"
+              ],
+              "de": [
+                "geschenksets-herstellung"
+              ],
+              "ru": [
+                "производство подарочных наборов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wholesale-candles",
+              "custom-orders"
+            ]
+          }
         }
       ]
     },
@@ -423,16 +1130,30 @@
         "original": "Brewery (Production)"
       },
       "altLabels": {
-        "en": ["beer production", "beer manufacturing"],
-        "uk": ["пивоварня", "пивоварне виробництво"],
-        "de": ["bierbrauerei", "brauereiproduktion"],
-        "ru": ["пивоварня", "пивоваренное производство"]
+        "en": [
+          "beer production",
+          "beer manufacturing"
+        ],
+        "uk": [
+          "пивоварня",
+          "пивоварне виробництво"
+        ],
+        "de": [
+          "bierbrauerei",
+          "brauereiproduktion"
+        ],
+        "ru": [
+          "пивоварня",
+          "пивоваренное производство"
+        ]
       },
       "osmTag": "craft=brewery",
       "naceRef": "C11.05",
       "schemaOrgType": "LocalBusiness",
       "wikidataId": "Q131734",
-      "crossLinks": ["craft-brewery"],
+      "crossLinks": [
+        "craft-brewery"
+      ],
       "templates": [
         {
           "@id": "https://taxonomy.mapko.net/v1/template/contract-brewing",
@@ -445,7 +1166,36 @@
             "original": "Contract Brewing"
           },
           "wikidataId": "Q5165435",
-          "crossLinks": ["private-label-beer", "recipe-development"]
+          "crossLinks": [
+            "private-label-beer",
+            "recipe-development"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "contract brewing"
+              ],
+              "uk": [
+                "контрактне пивоваріння"
+              ],
+              "de": [
+                "lohnbrauerei"
+              ],
+              "ru": [
+                "контрактное пивоварение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "private-label-beer",
+              "recipe-development"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/private-label-beer",
@@ -457,7 +1207,36 @@
             "ru": "Пиво под частной торговой маркой",
             "original": "Private Label Beer"
           },
-          "crossLinks": ["contract-brewing", "recipe-development"]
+          "crossLinks": [
+            "contract-brewing",
+            "recipe-development"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "private label beer"
+              ],
+              "uk": [
+                "пиво під приватною торговою маркою"
+              ],
+              "de": [
+                "eigenmarken-bier"
+              ],
+              "ru": [
+                "пиво под частной торговой маркой"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contract-brewing",
+              "recipe-development"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/recipe-development",
@@ -469,7 +1248,36 @@
             "ru": "Разработка рецептуры",
             "original": "Recipe Development"
           },
-          "crossLinks": ["contract-brewing", "private-label-beer"]
+          "crossLinks": [
+            "contract-brewing",
+            "private-label-beer"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "recipe development"
+              ],
+              "uk": [
+                "розробка рецептури"
+              ],
+              "de": [
+                "rezepturentwicklung"
+              ],
+              "ru": [
+                "разработка рецептуры"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contract-brewing",
+              "private-label-beer"
+            ]
+          }
         }
       ]
     },
@@ -484,10 +1292,18 @@
         "original": "Shipyard"
       },
       "altLabels": {
-        "en": ["ship building"],
-        "uk": ["корабельня"],
-        "de": ["schiffswerft"],
-        "ru": ["судоверфь"]
+        "en": [
+          "ship building"
+        ],
+        "uk": [
+          "корабельня"
+        ],
+        "de": [
+          "schiffswerft"
+        ],
+        "ru": [
+          "судоверфь"
+        ]
       },
       "osmTag": "industrial=shipyard",
       "naceRef": "C30.11",
@@ -503,6 +1319,33 @@
             "de": "Schiffbau",
             "ru": "Судостроение",
             "original": "Ship Construction"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ship construction"
+              ],
+              "uk": [
+                "будівництво суден"
+              ],
+              "de": [
+                "schiffbau"
+              ],
+              "ru": [
+                "судостроение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ship-repair",
+              "ship-retrofit",
+              "floating-structures"
+            ]
           }
         },
         {
@@ -514,6 +1357,33 @@
             "de": "Schiffsreparatur",
             "ru": "Ремонт судов",
             "original": "Ship Repair"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ship repair"
+              ],
+              "uk": [
+                "ремонт суден"
+              ],
+              "de": [
+                "schiffsreparatur"
+              ],
+              "ru": [
+                "ремонт судов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ship-construction",
+              "ship-retrofit",
+              "floating-structures"
+            ]
           }
         },
         {
@@ -525,6 +1395,33 @@
             "de": "Schiffsumrüstung",
             "ru": "Модернизация судов",
             "original": "Ship Retrofit"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ship retrofit"
+              ],
+              "uk": [
+                "модернізація суден"
+              ],
+              "de": [
+                "schiffsumrüstung"
+              ],
+              "ru": [
+                "модернизация судов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ship-construction",
+              "ship-repair",
+              "floating-structures"
+            ]
           }
         },
         {
@@ -536,6 +1433,33 @@
             "de": "Schwimmende Strukturen",
             "ru": "Плавучие сооружения",
             "original": "Floating Structures"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "floating structures"
+              ],
+              "uk": [
+                "плавучі споруди"
+              ],
+              "de": [
+                "schwimmende strukturen"
+              ],
+              "ru": [
+                "плавучие сооружения"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ship-construction",
+              "ship-repair",
+              "ship-retrofit"
+            ]
           }
         }
       ]
@@ -551,8 +1475,12 @@
         "original": "Aerospace Manufacturing"
       },
       "altLabels": {
-        "en": ["aviation manufacturing"],
-        "uk": ["авіабудування"],
+        "en": [
+          "aviation manufacturing"
+        ],
+        "uk": [
+          "авіабудування"
+        ],
         "de": [],
         "ru": []
       },
@@ -570,6 +1498,33 @@
             "de": "Flugzeugteile",
             "ru": "Авиационные компоненты",
             "original": "Aircraft Parts"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "aircraft parts"
+              ],
+              "uk": [
+                "авіаційні компоненти"
+              ],
+              "de": [
+                "flugzeugteile"
+              ],
+              "ru": [
+                "авиационные компоненты"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "aircraft-assembly",
+              "maintenance-repair-overhaul",
+              "drone-manufacturing"
+            ]
           }
         },
         {
@@ -581,6 +1536,33 @@
             "de": "Flugzeugmontage",
             "ru": "Сборка самолётов",
             "original": "Aircraft Assembly"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "aircraft assembly"
+              ],
+              "uk": [
+                "збірка літаків"
+              ],
+              "de": [
+                "flugzeugmontage"
+              ],
+              "ru": [
+                "сборка самолётов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "aircraft-parts",
+              "maintenance-repair-overhaul",
+              "drone-manufacturing"
+            ]
           }
         },
         {
@@ -592,6 +1574,33 @@
             "de": "Wartung, Reparatur und Überholung (MRO)",
             "ru": "Техническое обслуживание и ремонт (MRO)",
             "original": "Maintenance, Repair & Overhaul (MRO)"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "maintenance, repair & overhaul (mro)"
+              ],
+              "uk": [
+                "технічне обслуговування та ремонт (mro)"
+              ],
+              "de": [
+                "wartung, reparatur und überholung (mro)"
+              ],
+              "ru": [
+                "техническое обслуживание и ремонт (mro)"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "aircraft-parts",
+              "aircraft-assembly",
+              "drone-manufacturing"
+            ]
           }
         },
         {
@@ -603,6 +1612,33 @@
             "de": "Drohnenherstellung",
             "ru": "Производство дронов",
             "original": "Drone Manufacturing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "drone manufacturing"
+              ],
+              "uk": [
+                "виробництво безпілотників"
+              ],
+              "de": [
+                "drohnenherstellung"
+              ],
+              "ru": [
+                "производство дронов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "aircraft-parts",
+              "aircraft-assembly",
+              "maintenance-repair-overhaul"
+            ]
           }
         }
       ]
@@ -618,8 +1654,12 @@
         "original": "Rail Vehicle Manufacturing"
       },
       "altLabels": {
-        "en": ["train manufacturing"],
-        "uk": ["вагонобудування"],
+        "en": [
+          "train manufacturing"
+        ],
+        "uk": [
+          "вагонобудування"
+        ],
         "de": [],
         "ru": []
       },
@@ -637,6 +1677,33 @@
             "de": "Lokomotivbau",
             "ru": "Производство локомотивов",
             "original": "Locomotive Building"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "locomotive building"
+              ],
+              "uk": [
+                "виробництво локомотивів"
+              ],
+              "de": [
+                "lokomotivbau"
+              ],
+              "ru": [
+                "производство локомотивов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "passenger-car-build",
+              "freight-car-build",
+              "rail-maintenance"
+            ]
           }
         },
         {
@@ -648,6 +1715,33 @@
             "de": "Personenwagenbau",
             "ru": "Производство пассажирских вагонов",
             "original": "Passenger Car Building"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "passenger car building"
+              ],
+              "uk": [
+                "виробництво пасажирських вагонів"
+              ],
+              "de": [
+                "personenwagenbau"
+              ],
+              "ru": [
+                "производство пассажирских вагонов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "locomotive-build",
+              "freight-car-build",
+              "rail-maintenance"
+            ]
           }
         },
         {
@@ -659,6 +1753,33 @@
             "de": "Güterwagenbau",
             "ru": "Производство грузовых вагонов",
             "original": "Freight Car Building"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "freight car building"
+              ],
+              "uk": [
+                "виробництво вантажних вагонів"
+              ],
+              "de": [
+                "güterwagenbau"
+              ],
+              "ru": [
+                "производство грузовых вагонов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "locomotive-build",
+              "passenger-car-build",
+              "rail-maintenance"
+            ]
           }
         },
         {
@@ -670,6 +1791,33 @@
             "de": "Bahnwartung",
             "ru": "Обслуживание ж/д транспорта",
             "original": "Rail Maintenance"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "rail maintenance"
+              ],
+              "uk": [
+                "технічне обслуговування залізничного транспорту"
+              ],
+              "de": [
+                "bahnwartung"
+              ],
+              "ru": [
+                "обслуживание ж/д транспорта"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "locomotive-build",
+              "passenger-car-build",
+              "freight-car-build"
+            ]
           }
         }
       ]
@@ -685,10 +1833,16 @@
         "original": "Chemical Manufacturing"
       },
       "altLabels": {
-        "en": ["chemicals plant"],
-        "uk": ["хімпром"],
+        "en": [
+          "chemicals plant"
+        ],
+        "uk": [
+          "хімпром"
+        ],
         "de": [],
-        "ru": ["химпром"]
+        "ru": [
+          "химпром"
+        ]
       },
       "osmTag": "industrial=chemical",
       "naceRef": "C20",
@@ -704,6 +1858,33 @@
             "de": "Industriechemikalien",
             "ru": "Промышленная химия",
             "original": "Industrial Chemicals"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "industrial chemicals"
+              ],
+              "uk": [
+                "промислова хімія"
+              ],
+              "de": [
+                "industriechemikalien"
+              ],
+              "ru": [
+                "промышленная химия"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "specialty-chemicals",
+              "custom-synthesis",
+              "coatings-paints"
+            ]
           }
         },
         {
@@ -715,6 +1896,33 @@
             "de": "Spezialchemikalien",
             "ru": "Специализированная химия",
             "original": "Specialty Chemicals"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "specialty chemicals"
+              ],
+              "uk": [
+                "спеціалізована хімія"
+              ],
+              "de": [
+                "spezialchemikalien"
+              ],
+              "ru": [
+                "специализированная химия"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "industrial-chemicals",
+              "custom-synthesis",
+              "coatings-paints"
+            ]
           }
         },
         {
@@ -726,6 +1934,33 @@
             "de": "Auftragssynthese",
             "ru": "Синтез на заказ",
             "original": "Custom Synthesis"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom synthesis"
+              ],
+              "uk": [
+                "синтез на замовлення"
+              ],
+              "de": [
+                "auftragssynthese"
+              ],
+              "ru": [
+                "синтез на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "industrial-chemicals",
+              "specialty-chemicals",
+              "coatings-paints"
+            ]
           }
         },
         {
@@ -737,6 +1972,33 @@
             "de": "Beschichtungen & Farben",
             "ru": "Покрытия и краски",
             "original": "Coatings & Paints"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "coatings & paints"
+              ],
+              "uk": [
+                "покриття та фарби"
+              ],
+              "de": [
+                "beschichtungen & farben"
+              ],
+              "ru": [
+                "покрытия и краски"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "industrial-chemicals",
+              "specialty-chemicals",
+              "custom-synthesis"
+            ]
           }
         }
       ]
@@ -752,8 +2014,12 @@
         "original": "Pharmaceutical Manufacturing"
       },
       "altLabels": {
-        "en": ["pharma plant"],
-        "uk": ["фармацевтичне виробництво"],
+        "en": [
+          "pharma plant"
+        ],
+        "uk": [
+          "фармацевтичне виробництво"
+        ],
         "de": [],
         "ru": []
       },
@@ -771,6 +2037,33 @@
             "de": "Wirkstoffherstellung (API)",
             "ru": "Производство активных фармацевтических ингредиентов (API)",
             "original": "API Manufacturing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "api manufacturing"
+              ],
+              "uk": [
+                "виробництво активних фармацевтичних інгредієнтів (api)"
+              ],
+              "de": [
+                "wirkstoffherstellung (api)"
+              ],
+              "ru": [
+                "производство активных фармацевтических ингредиентов (api)"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "finished-dose-manufacturing",
+              "contract-pharma",
+              "gmp-audit-readiness"
+            ]
           }
         },
         {
@@ -782,6 +2075,33 @@
             "de": "Herstellung fertiger Darreichungsformen",
             "ru": "Производство готовых лекарственных форм",
             "original": "Finished Dose Manufacturing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "finished dose manufacturing"
+              ],
+              "uk": [
+                "виробництво готових лікарських форм"
+              ],
+              "de": [
+                "herstellung fertiger darreichungsformen"
+              ],
+              "ru": [
+                "производство готовых лекарственных форм"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "api-manufacturing",
+              "contract-pharma",
+              "gmp-audit-readiness"
+            ]
           }
         },
         {
@@ -793,6 +2113,33 @@
             "de": "Pharmazeutische Auftragsfertigung",
             "ru": "Контрактное фармацевтическое производство",
             "original": "Contract Pharma Manufacturing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "contract pharma manufacturing"
+              ],
+              "uk": [
+                "контрактне фармацевтичне виробництво"
+              ],
+              "de": [
+                "pharmazeutische auftragsfertigung"
+              ],
+              "ru": [
+                "контрактное фармацевтическое производство"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "api-manufacturing",
+              "finished-dose-manufacturing",
+              "gmp-audit-readiness"
+            ]
           }
         },
         {
@@ -804,6 +2151,33 @@
             "de": "GMP-Audit-Bereitschaft",
             "ru": "Готовность к GMP-аудиту",
             "original": "GMP Audit Readiness"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "gmp audit readiness"
+              ],
+              "uk": [
+                "готовність до gmp-аудиту"
+              ],
+              "de": [
+                "gmp-audit-bereitschaft"
+              ],
+              "ru": [
+                "готовность к gmp-аудиту"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "api-manufacturing",
+              "finished-dose-manufacturing",
+              "contract-pharma"
+            ]
           }
         }
       ]
@@ -819,8 +2193,12 @@
         "original": "Paper Mill"
       },
       "altLabels": {
-        "en": ["pulp mill"],
-        "uk": ["паперова фабрика"],
+        "en": [
+          "pulp mill"
+        ],
+        "uk": [
+          "паперова фабрика"
+        ],
         "de": [],
         "ru": []
       },
@@ -838,6 +2216,33 @@
             "de": "Zeitungspapierproduktion",
             "ru": "Производство газетной бумаги",
             "original": "Newsprint Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "newsprint production"
+              ],
+              "uk": [
+                "виробництво газетного паперу"
+              ],
+              "de": [
+                "zeitungspapierproduktion"
+              ],
+              "ru": [
+                "производство газетной бумаги"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "packaging-board",
+              "specialty-paper",
+              "pulp-production"
+            ]
           }
         },
         {
@@ -849,6 +2254,33 @@
             "de": "Verpackungskarton",
             "ru": "Упаковочный картон",
             "original": "Packaging Board"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "packaging board"
+              ],
+              "uk": [
+                "пакувальний картон"
+              ],
+              "de": [
+                "verpackungskarton"
+              ],
+              "ru": [
+                "упаковочный картон"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "newsprint-production",
+              "specialty-paper",
+              "pulp-production"
+            ]
           }
         },
         {
@@ -860,6 +2292,33 @@
             "de": "Spezialpapier",
             "ru": "Специальная бумага",
             "original": "Specialty Paper"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "specialty paper"
+              ],
+              "uk": [
+                "спеціальний папір"
+              ],
+              "de": [
+                "spezialpapier"
+              ],
+              "ru": [
+                "специальная бумага"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "newsprint-production",
+              "packaging-board",
+              "pulp-production"
+            ]
           }
         },
         {
@@ -871,6 +2330,33 @@
             "de": "Zellstoffproduktion",
             "ru": "Производство целлюлозы",
             "original": "Pulp Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "pulp production"
+              ],
+              "uk": [
+                "виробництво целюлози"
+              ],
+              "de": [
+                "zellstoffproduktion"
+              ],
+              "ru": [
+                "производство целлюлозы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "newsprint-production",
+              "packaging-board",
+              "specialty-paper"
+            ]
           }
         }
       ]
@@ -886,8 +2372,12 @@
         "original": "Foundry"
       },
       "altLabels": {
-        "en": ["metal foundry"],
-        "uk": ["ливарний цех"],
+        "en": [
+          "metal foundry"
+        ],
+        "uk": [
+          "ливарний цех"
+        ],
         "de": [],
         "ru": []
       },
@@ -905,6 +2395,33 @@
             "de": "Eisenguss",
             "ru": "Литьё чугуна",
             "original": "Iron Casting"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "iron casting"
+              ],
+              "uk": [
+                "лиття чавуну"
+              ],
+              "de": [
+                "eisenguss"
+              ],
+              "ru": [
+                "литьё чугуна"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "aluminum-casting",
+              "steel-casting",
+              "custom-castings"
+            ]
           }
         },
         {
@@ -916,6 +2433,33 @@
             "de": "Aluminiumguss",
             "ru": "Литьё алюминия",
             "original": "Aluminum Casting"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "aluminum casting"
+              ],
+              "uk": [
+                "лиття алюмінію"
+              ],
+              "de": [
+                "aluminiumguss"
+              ],
+              "ru": [
+                "литьё алюминия"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "iron-casting",
+              "steel-casting",
+              "custom-castings"
+            ]
           }
         },
         {
@@ -927,6 +2471,33 @@
             "de": "Stahlguss",
             "ru": "Литьё стали",
             "original": "Steel Casting"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "steel casting"
+              ],
+              "uk": [
+                "лиття сталі"
+              ],
+              "de": [
+                "stahlguss"
+              ],
+              "ru": [
+                "литьё стали"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "iron-casting",
+              "aluminum-casting",
+              "custom-castings"
+            ]
           }
         },
         {
@@ -938,6 +2509,33 @@
             "de": "Sonderguss",
             "ru": "Отливки на заказ",
             "original": "Custom Castings"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom castings"
+              ],
+              "uk": [
+                "виливки на замовлення"
+              ],
+              "de": [
+                "sonderguss"
+              ],
+              "ru": [
+                "отливки на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "iron-casting",
+              "aluminum-casting",
+              "steel-casting"
+            ]
           }
         }
       ]
@@ -953,8 +2551,13 @@
         "original": "Electronics Manufacturing"
       },
       "altLabels": {
-        "en": ["EMS", "PCB assembly"],
-        "uk": ["електроніка"],
+        "en": [
+          "EMS",
+          "PCB assembly"
+        ],
+        "uk": [
+          "електроніка"
+        ],
         "de": [],
         "ru": []
       },
@@ -972,6 +2575,33 @@
             "de": "Leiterplattenbestückung",
             "ru": "Сборка печатных плат",
             "original": "PCB Assembly"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "pcb assembly"
+              ],
+              "uk": [
+                "монтаж друкованих плат"
+              ],
+              "de": [
+                "leiterplattenbestückung"
+              ],
+              "ru": [
+                "сборка печатных плат"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contract-ems",
+              "smt-production",
+              "prototyping-electronics"
+            ]
           }
         },
         {
@@ -983,6 +2613,33 @@
             "de": "EMS-Auftragsfertigung",
             "ru": "Контрактное производство электроники (EMS)",
             "original": "Contract EMS"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "contract ems"
+              ],
+              "uk": [
+                "контрактне виробництво електроніки (ems)"
+              ],
+              "de": [
+                "ems-auftragsfertigung"
+              ],
+              "ru": [
+                "контрактное производство электроники (ems)"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "pcb-assembly",
+              "smt-production",
+              "prototyping-electronics"
+            ]
           }
         },
         {
@@ -994,6 +2651,33 @@
             "de": "SMT-Produktion",
             "ru": "SMT-производство",
             "original": "SMT Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "smt production"
+              ],
+              "uk": [
+                "smt-виробництво"
+              ],
+              "de": [
+                "smt-produktion"
+              ],
+              "ru": [
+                "smt-производство"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "pcb-assembly",
+              "contract-ems",
+              "prototyping-electronics"
+            ]
           }
         },
         {
@@ -1005,6 +2689,33 @@
             "de": "Elektronik-Prototyping",
             "ru": "Прототипирование электроники",
             "original": "Electronics Prototyping"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "electronics prototyping"
+              ],
+              "uk": [
+                "прототипування електроніки"
+              ],
+              "de": [
+                "elektronik-prototyping"
+              ],
+              "ru": [
+                "прототипирование электроники"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "pcb-assembly",
+              "contract-ems",
+              "smt-production"
+            ]
           }
         }
       ]

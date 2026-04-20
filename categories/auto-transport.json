@@ -11,10 +11,22 @@
     "original": "Auto & Transport"
   },
   "altLabels": {
-    "en": ["automotive", "vehicle services"],
-    "uk": ["авто", "транспортні послуги"],
-    "de": ["kfz", "automobilservice"],
-    "ru": ["автоуслуги", "транспортные услуги"]
+    "en": [
+      "automotive",
+      "vehicle services"
+    ],
+    "uk": [
+      "авто",
+      "транспортні послуги"
+    ],
+    "de": [
+      "kfz",
+      "automobilservice"
+    ],
+    "ru": [
+      "автоуслуги",
+      "транспортные услуги"
+    ]
   },
   "icon": "🚗",
   "naceRef": "G45",
@@ -24,174 +36,1919 @@
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/car-repair",
       "slug": "car-repair",
-      "names": { "en": "Car Repair", "uk": "Автосервіс", "de": "Autowerkstatt", "ru": "Автосервис", "original": "Car Repair" },
-      "altLabels": { "en": ["auto repair", "garage", "mechanic"], "uk": ["СТО", "автомайстерня"], "de": ["kfz-werkstatt"], "ru": ["СТО", "автомастерская"] },
+      "names": {
+        "en": "Car Repair",
+        "uk": "Автосервіс",
+        "de": "Autowerkstatt",
+        "ru": "Автосервис",
+        "original": "Car Repair"
+      },
+      "altLabels": {
+        "en": [
+          "auto repair",
+          "garage",
+          "mechanic"
+        ],
+        "uk": [
+          "СТО",
+          "автомайстерня"
+        ],
+        "de": [
+          "kfz-werkstatt"
+        ],
+        "ru": [
+          "СТО",
+          "автомастерская"
+        ]
+      },
       "osmTag": "shop=car_repair",
       "naceRef": "G45.20",
       "schemaOrgType": "AutoRepair",
       "wikidataId": "Q482890",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/oil-change", "slug": "oil-change", "names": { "en": "Oil Change", "uk": "Заміна мастила", "de": "Ölwechsel", "ru": "Замена масла", "original": "Oil Change" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/brake-service", "slug": "brake-service", "names": { "en": "Brake Service", "uk": "Гальмівна система", "de": "Bremsenservice", "ru": "Тормозная система", "original": "Brake Service" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/engine-diagnostic", "slug": "engine-diagnostic", "names": { "en": "Diagnostics", "uk": "Діагностика", "de": "Motordiagnose", "ru": "Диагностика", "original": "Diagnostics" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/car-inspection", "slug": "car-inspection", "names": { "en": "Inspection (TÜV)", "uk": "Техогляд", "de": "TÜV/HU", "ru": "Техосмотр", "original": "Inspection (TÜV)" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/oil-change",
+          "slug": "oil-change",
+          "names": {
+            "en": "Oil Change",
+            "uk": "Заміна мастила",
+            "de": "Ölwechsel",
+            "ru": "Замена масла",
+            "original": "Oil Change"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "oil change"
+              ],
+              "uk": [
+                "заміна мастила"
+              ],
+              "de": [
+                "ölwechsel"
+              ],
+              "ru": [
+                "замена масла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "brake-service",
+              "engine-diagnostic",
+              "car-inspection"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/brake-service",
+          "slug": "brake-service",
+          "names": {
+            "en": "Brake Service",
+            "uk": "Гальмівна система",
+            "de": "Bremsenservice",
+            "ru": "Тормозная система",
+            "original": "Brake Service"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "brake service"
+              ],
+              "uk": [
+                "гальмівна система"
+              ],
+              "de": [
+                "bremsenservice"
+              ],
+              "ru": [
+                "тормозная система"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "oil-change",
+              "engine-diagnostic",
+              "car-inspection"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/engine-diagnostic",
+          "slug": "engine-diagnostic",
+          "names": {
+            "en": "Diagnostics",
+            "uk": "Діагностика",
+            "de": "Motordiagnose",
+            "ru": "Диагностика",
+            "original": "Diagnostics"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "diagnostics"
+              ],
+              "uk": [
+                "діагностика"
+              ],
+              "de": [
+                "motordiagnose"
+              ],
+              "ru": [
+                "диагностика"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "oil-change",
+              "brake-service",
+              "car-inspection"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/car-inspection",
+          "slug": "car-inspection",
+          "names": {
+            "en": "Inspection (TÜV)",
+            "uk": "Техогляд",
+            "de": "TÜV/HU",
+            "ru": "Техосмотр",
+            "original": "Inspection (TÜV)"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "inspection (tüv)"
+              ],
+              "uk": [
+                "техогляд"
+              ],
+              "de": [
+                "tüv/hu"
+              ],
+              "ru": [
+                "техосмотр"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "oil-change",
+              "brake-service",
+              "engine-diagnostic"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/car-wash",
       "slug": "car-wash",
-      "names": { "en": "Car Wash", "uk": "Автомийка", "de": "Autowäsche", "ru": "Автомойка", "original": "Car Wash" },
+      "names": {
+        "en": "Car Wash",
+        "uk": "Автомийка",
+        "de": "Autowäsche",
+        "ru": "Автомойка",
+        "original": "Car Wash"
+      },
       "osmTag": "amenity=car_wash",
       "naceRef": "G45.20",
       "schemaOrgType": "AutoWash",
       "wikidataId": "Q691419",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/exterior-wash", "slug": "exterior-wash", "names": { "en": "Exterior Wash", "uk": "Зовнішня мийка", "de": "Außenwäsche", "ru": "Наружная мойка", "original": "Exterior Wash" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/interior-cleaning", "slug": "interior-cleaning", "names": { "en": "Interior Cleaning", "uk": "Хімчистка салону", "de": "Innenreinigung", "ru": "Химчистка салона", "original": "Interior Cleaning" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/full-detail", "slug": "full-detail", "names": { "en": "Full Detailing", "uk": "Повний детейлінг", "de": "Vollaufbereitung", "ru": "Полный детейлинг", "original": "Full Detailing" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/exterior-wash",
+          "slug": "exterior-wash",
+          "names": {
+            "en": "Exterior Wash",
+            "uk": "Зовнішня мийка",
+            "de": "Außenwäsche",
+            "ru": "Наружная мойка",
+            "original": "Exterior Wash"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "exterior wash"
+              ],
+              "uk": [
+                "зовнішня мийка"
+              ],
+              "de": [
+                "außenwäsche"
+              ],
+              "ru": [
+                "наружная мойка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "interior-cleaning",
+              "full-detail"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/interior-cleaning",
+          "slug": "interior-cleaning",
+          "names": {
+            "en": "Interior Cleaning",
+            "uk": "Хімчистка салону",
+            "de": "Innenreinigung",
+            "ru": "Химчистка салона",
+            "original": "Interior Cleaning"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "interior cleaning"
+              ],
+              "uk": [
+                "хімчистка салону"
+              ],
+              "de": [
+                "innenreinigung"
+              ],
+              "ru": [
+                "химчистка салона"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "exterior-wash",
+              "full-detail"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/full-detail",
+          "slug": "full-detail",
+          "names": {
+            "en": "Full Detailing",
+            "uk": "Повний детейлінг",
+            "de": "Vollaufbereitung",
+            "ru": "Полный детейлинг",
+            "original": "Full Detailing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "full detailing"
+              ],
+              "uk": [
+                "повний детейлінг"
+              ],
+              "de": [
+                "vollaufbereitung"
+              ],
+              "ru": [
+                "полный детейлинг"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "exterior-wash",
+              "interior-cleaning"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/tire-service",
       "slug": "tire-service",
-      "names": { "en": "Tire Service", "uk": "Шиномонтаж", "de": "Reifenservice", "ru": "Шиномонтаж", "original": "Tire Service" },
+      "names": {
+        "en": "Tire Service",
+        "uk": "Шиномонтаж",
+        "de": "Reifenservice",
+        "ru": "Шиномонтаж",
+        "original": "Tire Service"
+      },
       "osmTag": "shop=tyres",
       "naceRef": "G45.32",
       "schemaOrgType": "AutoRepair",
       "wikidataId": "Q1568849",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/tire-change", "slug": "tire-change", "names": { "en": "Tire Change", "uk": "Заміна шин", "de": "Reifenwechsel", "ru": "Замена шин", "original": "Tire Change" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/balancing", "slug": "balancing", "names": { "en": "Wheel Balancing", "uk": "Балансування", "de": "Auswuchten", "ru": "Балансировка", "original": "Wheel Balancing" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/alignment", "slug": "alignment", "names": { "en": "Wheel Alignment", "uk": "Розвал-сходження", "de": "Achsvermessung", "ru": "Развал-схождение", "original": "Wheel Alignment" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/tire-storage", "slug": "tire-storage", "names": { "en": "Tire Storage", "uk": "Зберігання шин", "de": "Reifeneinlagerung", "ru": "Хранение шин", "original": "Tire Storage" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tire-change",
+          "slug": "tire-change",
+          "names": {
+            "en": "Tire Change",
+            "uk": "Заміна шин",
+            "de": "Reifenwechsel",
+            "ru": "Замена шин",
+            "original": "Tire Change"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "tire change"
+              ],
+              "uk": [
+                "заміна шин"
+              ],
+              "de": [
+                "reifenwechsel"
+              ],
+              "ru": [
+                "замена шин"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "balancing",
+              "alignment",
+              "tire-storage"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/balancing",
+          "slug": "balancing",
+          "names": {
+            "en": "Wheel Balancing",
+            "uk": "Балансування",
+            "de": "Auswuchten",
+            "ru": "Балансировка",
+            "original": "Wheel Balancing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "wheel balancing"
+              ],
+              "uk": [
+                "балансування"
+              ],
+              "de": [
+                "auswuchten"
+              ],
+              "ru": [
+                "балансировка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tire-change",
+              "alignment",
+              "tire-storage"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/alignment",
+          "slug": "alignment",
+          "names": {
+            "en": "Wheel Alignment",
+            "uk": "Розвал-сходження",
+            "de": "Achsvermessung",
+            "ru": "Развал-схождение",
+            "original": "Wheel Alignment"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "wheel alignment"
+              ],
+              "uk": [
+                "розвал-сходження"
+              ],
+              "de": [
+                "achsvermessung"
+              ],
+              "ru": [
+                "развал-схождение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tire-change",
+              "balancing",
+              "tire-storage"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tire-storage",
+          "slug": "tire-storage",
+          "names": {
+            "en": "Tire Storage",
+            "uk": "Зберігання шин",
+            "de": "Reifeneinlagerung",
+            "ru": "Хранение шин",
+            "original": "Tire Storage"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "tire storage"
+              ],
+              "uk": [
+                "зберігання шин"
+              ],
+              "de": [
+                "reifeneinlagerung"
+              ],
+              "ru": [
+                "хранение шин"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tire-change",
+              "balancing",
+              "alignment"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/car-rental",
       "slug": "car-rental",
-      "names": { "en": "Car Rental", "uk": "Оренда авто", "de": "Autovermietung", "ru": "Аренда авто", "original": "Car Rental" },
-      "altLabels": { "en": ["rent a car", "vehicle hire"], "uk": ["прокат авто"], "de": ["mietwagen"], "ru": ["прокат авто"] },
+      "names": {
+        "en": "Car Rental",
+        "uk": "Оренда авто",
+        "de": "Autovermietung",
+        "ru": "Аренда авто",
+        "original": "Car Rental"
+      },
+      "altLabels": {
+        "en": [
+          "rent a car",
+          "vehicle hire"
+        ],
+        "uk": [
+          "прокат авто"
+        ],
+        "de": [
+          "mietwagen"
+        ],
+        "ru": [
+          "прокат авто"
+        ]
+      },
       "osmTag": "amenity=car_rental",
       "naceRef": "N77.11",
       "schemaOrgType": "AutoRental",
       "wikidataId": "Q1502369",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/daily-rental", "slug": "daily-rental", "names": { "en": "Daily Rental", "uk": "На добу", "de": "Tagesmiete", "ru": "На сутки", "original": "Daily Rental" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/weekly-rental", "slug": "weekly-rental", "names": { "en": "Weekly Rental", "uk": "На тиждень", "de": "Wochenmiete", "ru": "На неделю", "original": "Weekly Rental" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/monthly-rental", "slug": "monthly-rental", "names": { "en": "Monthly Rental", "uk": "На місяць", "de": "Monatsmiete", "ru": "На месяц", "original": "Monthly Rental" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/daily-rental",
+          "slug": "daily-rental",
+          "names": {
+            "en": "Daily Rental",
+            "uk": "На добу",
+            "de": "Tagesmiete",
+            "ru": "На сутки",
+            "original": "Daily Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "daily rental"
+              ],
+              "uk": [
+                "на добу"
+              ],
+              "de": [
+                "tagesmiete"
+              ],
+              "ru": [
+                "на сутки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "weekly-rental",
+              "monthly-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/weekly-rental",
+          "slug": "weekly-rental",
+          "names": {
+            "en": "Weekly Rental",
+            "uk": "На тиждень",
+            "de": "Wochenmiete",
+            "ru": "На неделю",
+            "original": "Weekly Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "weekly rental"
+              ],
+              "uk": [
+                "на тиждень"
+              ],
+              "de": [
+                "wochenmiete"
+              ],
+              "ru": [
+                "на неделю"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "daily-rental",
+              "monthly-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/monthly-rental",
+          "slug": "monthly-rental",
+          "names": {
+            "en": "Monthly Rental",
+            "uk": "На місяць",
+            "de": "Monatsmiete",
+            "ru": "На месяц",
+            "original": "Monthly Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "monthly rental"
+              ],
+              "uk": [
+                "на місяць"
+              ],
+              "de": [
+                "monatsmiete"
+              ],
+              "ru": [
+                "на месяц"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "daily-rental",
+              "weekly-rental"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/gas-station",
       "slug": "gas-station",
-      "names": { "en": "Gas Station", "uk": "АЗС", "de": "Tankstelle", "ru": "АЗС", "original": "Gas Station" },
-      "altLabels": { "en": ["petrol station", "filling station"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Gas Station",
+        "uk": "АЗС",
+        "de": "Tankstelle",
+        "ru": "АЗС",
+        "original": "Gas Station"
+      },
+      "altLabels": {
+        "en": [
+          "petrol station",
+          "filling station"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "amenity=fuel",
       "naceRef": "G47.30",
       "schemaOrgType": "GasStation",
       "wikidataId": "Q205495",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/fuel-purchase", "slug": "fuel-purchase", "names": { "en": "Fuel Purchase", "uk": "Заправка пальним", "de": "Tanken", "ru": "Заправка топливом", "original": "Fuel Purchase" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/premium-fuel", "slug": "premium-fuel", "names": { "en": "Premium Fuel", "uk": "Преміум пальне", "de": "Premium-Kraftstoff", "ru": "Премиум топливо", "original": "Premium Fuel" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/lpg-fill", "slug": "lpg-fill", "names": { "en": "LPG Fill", "uk": "Заправка газом", "de": "Autogas (LPG)", "ru": "Заправка газом", "original": "LPG Fill" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/station-shop", "slug": "station-shop", "names": { "en": "Station Shop", "uk": "Магазин при АЗС", "de": "Tankstellenshop", "ru": "Магазин при АЗС", "original": "Station Shop" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fuel-purchase",
+          "slug": "fuel-purchase",
+          "names": {
+            "en": "Fuel Purchase",
+            "uk": "Заправка пальним",
+            "de": "Tanken",
+            "ru": "Заправка топливом",
+            "original": "Fuel Purchase"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "fuel purchase"
+              ],
+              "uk": [
+                "заправка пальним"
+              ],
+              "de": [
+                "tanken"
+              ],
+              "ru": [
+                "заправка топливом"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "premium-fuel",
+              "lpg-fill",
+              "station-shop"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/premium-fuel",
+          "slug": "premium-fuel",
+          "names": {
+            "en": "Premium Fuel",
+            "uk": "Преміум пальне",
+            "de": "Premium-Kraftstoff",
+            "ru": "Премиум топливо",
+            "original": "Premium Fuel"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "premium fuel"
+              ],
+              "uk": [
+                "преміум пальне"
+              ],
+              "de": [
+                "premium-kraftstoff"
+              ],
+              "ru": [
+                "премиум топливо"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "fuel-purchase",
+              "lpg-fill",
+              "station-shop"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/lpg-fill",
+          "slug": "lpg-fill",
+          "names": {
+            "en": "LPG Fill",
+            "uk": "Заправка газом",
+            "de": "Autogas (LPG)",
+            "ru": "Заправка газом",
+            "original": "LPG Fill"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "lpg fill"
+              ],
+              "uk": [
+                "заправка газом"
+              ],
+              "de": [
+                "autogas (lpg)"
+              ],
+              "ru": [
+                "заправка газом"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "fuel-purchase",
+              "premium-fuel",
+              "station-shop"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/station-shop",
+          "slug": "station-shop",
+          "names": {
+            "en": "Station Shop",
+            "uk": "Магазин при АЗС",
+            "de": "Tankstellenshop",
+            "ru": "Магазин при АЗС",
+            "original": "Station Shop"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "station shop"
+              ],
+              "uk": [
+                "магазин при азс"
+              ],
+              "de": [
+                "tankstellenshop"
+              ],
+              "ru": [
+                "магазин при азс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "fuel-purchase",
+              "premium-fuel",
+              "lpg-fill"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/ev-charging",
       "slug": "ev-charging",
-      "names": { "en": "EV Charging Station", "uk": "Зарядна станція для електромобілів", "de": "Ladestation", "ru": "Зарядная станция для электромобилей", "original": "EV Charging Station" },
-      "altLabels": { "en": ["electric vehicle charging"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "EV Charging Station",
+        "uk": "Зарядна станція для електромобілів",
+        "de": "Ladestation",
+        "ru": "Зарядная станция для электромобилей",
+        "original": "EV Charging Station"
+      },
+      "altLabels": {
+        "en": [
+          "electric vehicle charging"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "amenity=charging_station",
       "naceRef": "G47.30+D35.14",
       "schemaOrgType": "LocalBusiness",
       "wikidataId": "Q1067467",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/ac-charge-session", "slug": "ac-charge-session", "names": { "en": "AC Charge Session", "uk": "Сесія AC-зарядки", "de": "AC-Ladevorgang", "ru": "Сессия AC-зарядки", "original": "AC Charge Session" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/dc-fast-charge", "slug": "dc-fast-charge", "names": { "en": "DC Fast Charge", "uk": "Швидка DC-зарядка", "de": "DC-Schnellladung", "ru": "Быстрая DC-зарядка", "original": "DC Fast Charge" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/monthly-membership-ev", "slug": "monthly-membership-ev", "names": { "en": "Monthly Membership", "uk": "Місячний абонемент", "de": "Monatsabo", "ru": "Месячный абонемент", "original": "Monthly Membership" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ac-charge-session",
+          "slug": "ac-charge-session",
+          "names": {
+            "en": "AC Charge Session",
+            "uk": "Сесія AC-зарядки",
+            "de": "AC-Ladevorgang",
+            "ru": "Сессия AC-зарядки",
+            "original": "AC Charge Session"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ac charge session"
+              ],
+              "uk": [
+                "сесія ac-зарядки"
+              ],
+              "de": [
+                "ac-ladevorgang"
+              ],
+              "ru": [
+                "сессия ac-зарядки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "dc-fast-charge",
+              "monthly-membership-ev"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dc-fast-charge",
+          "slug": "dc-fast-charge",
+          "names": {
+            "en": "DC Fast Charge",
+            "uk": "Швидка DC-зарядка",
+            "de": "DC-Schnellladung",
+            "ru": "Быстрая DC-зарядка",
+            "original": "DC Fast Charge"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "dc fast charge"
+              ],
+              "uk": [
+                "швидка dc-зарядка"
+              ],
+              "de": [
+                "dc-schnellladung"
+              ],
+              "ru": [
+                "быстрая dc-зарядка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ac-charge-session",
+              "monthly-membership-ev"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/monthly-membership-ev",
+          "slug": "monthly-membership-ev",
+          "names": {
+            "en": "Monthly Membership",
+            "uk": "Місячний абонемент",
+            "de": "Monatsabo",
+            "ru": "Месячный абонемент",
+            "original": "Monthly Membership"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "monthly membership"
+              ],
+              "uk": [
+                "місячний абонемент"
+              ],
+              "de": [
+                "monatsabo"
+              ],
+              "ru": [
+                "месячный абонемент"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ac-charge-session",
+              "dc-fast-charge"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/car-detailing-spec",
       "slug": "car-detailing-spec",
-      "names": { "en": "Car Detailing Specialist", "uk": "Детейлінг-студія", "de": "Auto-Detailing", "ru": "Детейлинг-студия", "original": "Car Detailing Specialist" },
-      "altLabels": { "en": ["auto detailing"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Car Detailing Specialist",
+        "uk": "Детейлінг-студія",
+        "de": "Auto-Detailing",
+        "ru": "Детейлинг-студия",
+        "original": "Car Detailing Specialist"
+      },
+      "altLabels": {
+        "en": [
+          "auto detailing"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "shop=car_repair",
       "naceRef": "G45.20",
       "schemaOrgType": "AutoRepair",
       "wikidataId": "Q936343",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/ceramic-coating", "slug": "ceramic-coating", "names": { "en": "Ceramic Coating", "uk": "Керамічне покриття", "de": "Keramikversiegelung", "ru": "Керамическое покрытие", "original": "Ceramic Coating" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/paint-correction", "slug": "paint-correction", "names": { "en": "Paint Correction", "uk": "Полірування ЛФП", "de": "Lackaufbereitung", "ru": "Полировка ЛКП", "original": "Paint Correction" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/leather-restoration", "slug": "leather-restoration", "names": { "en": "Leather Restoration", "uk": "Реставрація шкіри", "de": "Lederaufbereitung", "ru": "Реставрация кожи", "original": "Leather Restoration" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/headlight-restoration", "slug": "headlight-restoration", "names": { "en": "Headlight Restoration", "uk": "Полірування фар", "de": "Scheinwerferaufbereitung", "ru": "Полировка фар", "original": "Headlight Restoration" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/engine-bay-detail", "slug": "engine-bay-detail", "names": { "en": "Engine Bay Detail", "uk": "Чистка моторного відсіку", "de": "Motorraumreinigung", "ru": "Чистка моторного отсека", "original": "Engine Bay Detail" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ceramic-coating",
+          "slug": "ceramic-coating",
+          "names": {
+            "en": "Ceramic Coating",
+            "uk": "Керамічне покриття",
+            "de": "Keramikversiegelung",
+            "ru": "Керамическое покрытие",
+            "original": "Ceramic Coating"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ceramic coating"
+              ],
+              "uk": [
+                "керамічне покриття"
+              ],
+              "de": [
+                "keramikversiegelung"
+              ],
+              "ru": [
+                "керамическое покрытие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "paint-correction",
+              "leather-restoration",
+              "headlight-restoration"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/paint-correction",
+          "slug": "paint-correction",
+          "names": {
+            "en": "Paint Correction",
+            "uk": "Полірування ЛФП",
+            "de": "Lackaufbereitung",
+            "ru": "Полировка ЛКП",
+            "original": "Paint Correction"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "paint correction"
+              ],
+              "uk": [
+                "полірування лфп"
+              ],
+              "de": [
+                "lackaufbereitung"
+              ],
+              "ru": [
+                "полировка лкп"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ceramic-coating",
+              "leather-restoration",
+              "headlight-restoration"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/leather-restoration",
+          "slug": "leather-restoration",
+          "names": {
+            "en": "Leather Restoration",
+            "uk": "Реставрація шкіри",
+            "de": "Lederaufbereitung",
+            "ru": "Реставрация кожи",
+            "original": "Leather Restoration"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "leather restoration"
+              ],
+              "uk": [
+                "реставрація шкіри"
+              ],
+              "de": [
+                "lederaufbereitung"
+              ],
+              "ru": [
+                "реставрация кожи"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ceramic-coating",
+              "paint-correction",
+              "headlight-restoration"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/headlight-restoration",
+          "slug": "headlight-restoration",
+          "names": {
+            "en": "Headlight Restoration",
+            "uk": "Полірування фар",
+            "de": "Scheinwerferaufbereitung",
+            "ru": "Полировка фар",
+            "original": "Headlight Restoration"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "headlight restoration"
+              ],
+              "uk": [
+                "полірування фар"
+              ],
+              "de": [
+                "scheinwerferaufbereitung"
+              ],
+              "ru": [
+                "полировка фар"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ceramic-coating",
+              "paint-correction",
+              "leather-restoration"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/engine-bay-detail",
+          "slug": "engine-bay-detail",
+          "names": {
+            "en": "Engine Bay Detail",
+            "uk": "Чистка моторного відсіку",
+            "de": "Motorraumreinigung",
+            "ru": "Чистка моторного отсека",
+            "original": "Engine Bay Detail"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "engine bay detail"
+              ],
+              "uk": [
+                "чистка моторного відсіку"
+              ],
+              "de": [
+                "motorraumreinigung"
+              ],
+              "ru": [
+                "чистка моторного отсека"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ceramic-coating",
+              "paint-correction",
+              "leather-restoration"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/car-dealership",
       "slug": "car-dealership",
-      "names": { "en": "Car Dealership", "uk": "Автосалон", "de": "Autohaus", "ru": "Автосалон", "original": "Car Dealership" },
-      "altLabels": { "en": ["new car sales"], "uk": ["автодилер"], "de": ["autohändler"], "ru": ["автодилер"] },
+      "names": {
+        "en": "Car Dealership",
+        "uk": "Автосалон",
+        "de": "Autohaus",
+        "ru": "Автосалон",
+        "original": "Car Dealership"
+      },
+      "altLabels": {
+        "en": [
+          "new car sales"
+        ],
+        "uk": [
+          "автодилер"
+        ],
+        "de": [
+          "autohändler"
+        ],
+        "ru": [
+          "автодилер"
+        ]
+      },
       "osmTag": "shop=car",
       "naceRef": "G45.11",
       "schemaOrgType": "AutoDealer",
       "wikidataId": "Q1363016",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/new-car-sale", "slug": "new-car-sale", "names": { "en": "New Car Sale", "uk": "Продаж нового авто", "de": "Neuwagenverkauf", "ru": "Продажа нового авто", "original": "New Car Sale" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/test-drive", "slug": "test-drive", "names": { "en": "Test Drive", "uk": "Тест-драйв", "de": "Probefahrt", "ru": "Тест-драйв", "original": "Test Drive" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/trade-in", "slug": "trade-in", "names": { "en": "Trade-In", "uk": "Трейд-ін", "de": "Inzahlungnahme", "ru": "Трейд-ин", "original": "Trade-In" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/dealer-financing", "slug": "dealer-financing", "names": { "en": "Dealer Financing", "uk": "Фінансування від дилера", "de": "Händlerfinanzierung", "ru": "Финансирование от дилера", "original": "Dealer Financing" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/dealer-warranty", "slug": "dealer-warranty", "names": { "en": "Dealer Warranty", "uk": "Гарантія дилера", "de": "Händlergarantie", "ru": "Гарантия дилера", "original": "Dealer Warranty" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/new-car-sale",
+          "slug": "new-car-sale",
+          "names": {
+            "en": "New Car Sale",
+            "uk": "Продаж нового авто",
+            "de": "Neuwagenverkauf",
+            "ru": "Продажа нового авто",
+            "original": "New Car Sale"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "new car sale"
+              ],
+              "uk": [
+                "продаж нового авто"
+              ],
+              "de": [
+                "neuwagenverkauf"
+              ],
+              "ru": [
+                "продажа нового авто"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "test-drive",
+              "trade-in",
+              "dealer-financing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/test-drive",
+          "slug": "test-drive",
+          "names": {
+            "en": "Test Drive",
+            "uk": "Тест-драйв",
+            "de": "Probefahrt",
+            "ru": "Тест-драйв",
+            "original": "Test Drive"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "test drive"
+              ],
+              "uk": [
+                "тест-драйв"
+              ],
+              "de": [
+                "probefahrt"
+              ],
+              "ru": [
+                "тест-драйв"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "new-car-sale",
+              "trade-in",
+              "dealer-financing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/trade-in",
+          "slug": "trade-in",
+          "names": {
+            "en": "Trade-In",
+            "uk": "Трейд-ін",
+            "de": "Inzahlungnahme",
+            "ru": "Трейд-ин",
+            "original": "Trade-In"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "trade-in"
+              ],
+              "uk": [
+                "трейд-ін"
+              ],
+              "de": [
+                "inzahlungnahme"
+              ],
+              "ru": [
+                "трейд-ин"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "new-car-sale",
+              "test-drive",
+              "dealer-financing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dealer-financing",
+          "slug": "dealer-financing",
+          "names": {
+            "en": "Dealer Financing",
+            "uk": "Фінансування від дилера",
+            "de": "Händlerfinanzierung",
+            "ru": "Финансирование от дилера",
+            "original": "Dealer Financing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "dealer financing"
+              ],
+              "uk": [
+                "фінансування від дилера"
+              ],
+              "de": [
+                "händlerfinanzierung"
+              ],
+              "ru": [
+                "финансирование от дилера"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "new-car-sale",
+              "test-drive",
+              "trade-in"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dealer-warranty",
+          "slug": "dealer-warranty",
+          "names": {
+            "en": "Dealer Warranty",
+            "uk": "Гарантія дилера",
+            "de": "Händlergarantie",
+            "ru": "Гарантия дилера",
+            "original": "Dealer Warranty"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "dealer warranty"
+              ],
+              "uk": [
+                "гарантія дилера"
+              ],
+              "de": [
+                "händlergarantie"
+              ],
+              "ru": [
+                "гарантия дилера"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "new-car-sale",
+              "test-drive",
+              "trade-in"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/used-car-dealer",
       "slug": "used-car-dealer",
-      "names": { "en": "Used Car Dealer", "uk": "Салон вживаних авто", "de": "Gebrauchtwagenhändler", "ru": "Салон подержанных авто", "original": "Used Car Dealer" },
-      "altLabels": { "en": ["pre-owned cars"], "uk": ["вживані авто"], "de": ["gebrauchtwagen"], "ru": ["подержанные авто"] },
+      "names": {
+        "en": "Used Car Dealer",
+        "uk": "Салон вживаних авто",
+        "de": "Gebrauchtwagenhändler",
+        "ru": "Салон подержанных авто",
+        "original": "Used Car Dealer"
+      },
+      "altLabels": {
+        "en": [
+          "pre-owned cars"
+        ],
+        "uk": [
+          "вживані авто"
+        ],
+        "de": [
+          "gebrauchtwagen"
+        ],
+        "ru": [
+          "подержанные авто"
+        ]
+      },
       "osmTag": "shop=car+second_hand=yes",
       "naceRef": "G45.11",
       "schemaOrgType": "AutoDealer",
       "wikidataId": "Q7899147",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/used-car-sale", "slug": "used-car-sale", "names": { "en": "Used Car Sale", "uk": "Продаж вживаного авто", "de": "Gebrauchtwagenverkauf", "ru": "Продажа подержанного авто", "original": "Used Car Sale" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/inspection-certified", "slug": "inspection-certified", "names": { "en": "Certified Inspection", "uk": "Сертифікована перевірка", "de": "Zertifizierte Prüfung", "ru": "Сертифицированная проверка", "original": "Certified Inspection" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/trade-in-used", "slug": "trade-in-used", "names": { "en": "Trade-In (Used)", "uk": "Трейд-ін вживаного", "de": "Gebrauchtwagen-Inzahlungnahme", "ru": "Трейд-ин подержанного", "original": "Trade-In (Used)" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/consignment-sale", "slug": "consignment-sale", "names": { "en": "Consignment Sale", "uk": "Комісійний продаж", "de": "Kommissionsverkauf", "ru": "Комиссионная продажа", "original": "Consignment Sale" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/used-car-sale",
+          "slug": "used-car-sale",
+          "names": {
+            "en": "Used Car Sale",
+            "uk": "Продаж вживаного авто",
+            "de": "Gebrauchtwagenverkauf",
+            "ru": "Продажа подержанного авто",
+            "original": "Used Car Sale"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "used car sale"
+              ],
+              "uk": [
+                "продаж вживаного авто"
+              ],
+              "de": [
+                "gebrauchtwagenverkauf"
+              ],
+              "ru": [
+                "продажа подержанного авто"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "inspection-certified",
+              "trade-in-used",
+              "consignment-sale"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/inspection-certified",
+          "slug": "inspection-certified",
+          "names": {
+            "en": "Certified Inspection",
+            "uk": "Сертифікована перевірка",
+            "de": "Zertifizierte Prüfung",
+            "ru": "Сертифицированная проверка",
+            "original": "Certified Inspection"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "certified inspection"
+              ],
+              "uk": [
+                "сертифікована перевірка"
+              ],
+              "de": [
+                "zertifizierte prüfung"
+              ],
+              "ru": [
+                "сертифицированная проверка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "used-car-sale",
+              "trade-in-used",
+              "consignment-sale"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/trade-in-used",
+          "slug": "trade-in-used",
+          "names": {
+            "en": "Trade-In (Used)",
+            "uk": "Трейд-ін вживаного",
+            "de": "Gebrauchtwagen-Inzahlungnahme",
+            "ru": "Трейд-ин подержанного",
+            "original": "Trade-In (Used)"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "trade-in (used)"
+              ],
+              "uk": [
+                "трейд-ін вживаного"
+              ],
+              "de": [
+                "gebrauchtwagen-inzahlungnahme"
+              ],
+              "ru": [
+                "трейд-ин подержанного"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "used-car-sale",
+              "inspection-certified",
+              "consignment-sale"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/consignment-sale",
+          "slug": "consignment-sale",
+          "names": {
+            "en": "Consignment Sale",
+            "uk": "Комісійний продаж",
+            "de": "Kommissionsverkauf",
+            "ru": "Комиссионная продажа",
+            "original": "Consignment Sale"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "consignment sale"
+              ],
+              "uk": [
+                "комісійний продаж"
+              ],
+              "de": [
+                "kommissionsverkauf"
+              ],
+              "ru": [
+                "комиссионная продажа"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "used-car-sale",
+              "inspection-certified",
+              "trade-in-used"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/motorcycle-dealer",
       "slug": "motorcycle-dealer",
-      "names": { "en": "Motorcycle Dealer", "uk": "Салон мотоциклів", "de": "Motorradhändler", "ru": "Мотосалон", "original": "Motorcycle Dealer" },
-      "altLabels": { "en": ["bike dealer"], "uk": ["мотодилер"], "de": [], "ru": [] },
+      "names": {
+        "en": "Motorcycle Dealer",
+        "uk": "Салон мотоциклів",
+        "de": "Motorradhändler",
+        "ru": "Мотосалон",
+        "original": "Motorcycle Dealer"
+      },
+      "altLabels": {
+        "en": [
+          "bike dealer"
+        ],
+        "uk": [
+          "мотодилер"
+        ],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "shop=motorcycle",
       "naceRef": "G45.40",
       "schemaOrgType": "MotorcycleDealer",
       "wikidataId": "Q3257686",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-sale", "slug": "motorcycle-sale", "names": { "en": "Motorcycle Sale", "uk": "Продаж мотоцикла", "de": "Motorradverkauf", "ru": "Продажа мотоцикла", "original": "Motorcycle Sale" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-test-ride", "slug": "motorcycle-test-ride", "names": { "en": "Test Ride", "uk": "Тест-драйв мотоцикла", "de": "Motorrad-Probefahrt", "ru": "Тест-драйв мотоцикла", "original": "Test Ride" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-trade-in", "slug": "motorcycle-trade-in", "names": { "en": "Motorcycle Trade-In", "uk": "Трейд-ін мотоцикла", "de": "Motorrad-Inzahlungnahme", "ru": "Трейд-ин мотоцикла", "original": "Motorcycle Trade-In" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-financing", "slug": "motorcycle-financing", "names": { "en": "Motorcycle Financing", "uk": "Фінансування мотоцикла", "de": "Motorradfinanzierung", "ru": "Финансирование мотоцикла", "original": "Motorcycle Financing" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-sale",
+          "slug": "motorcycle-sale",
+          "names": {
+            "en": "Motorcycle Sale",
+            "uk": "Продаж мотоцикла",
+            "de": "Motorradverkauf",
+            "ru": "Продажа мотоцикла",
+            "original": "Motorcycle Sale"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "motorcycle sale"
+              ],
+              "uk": [
+                "продаж мотоцикла"
+              ],
+              "de": [
+                "motorradverkauf"
+              ],
+              "ru": [
+                "продажа мотоцикла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "motorcycle-test-ride",
+              "motorcycle-trade-in",
+              "motorcycle-financing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-test-ride",
+          "slug": "motorcycle-test-ride",
+          "names": {
+            "en": "Test Ride",
+            "uk": "Тест-драйв мотоцикла",
+            "de": "Motorrad-Probefahrt",
+            "ru": "Тест-драйв мотоцикла",
+            "original": "Test Ride"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "test ride"
+              ],
+              "uk": [
+                "тест-драйв мотоцикла"
+              ],
+              "de": [
+                "motorrad-probefahrt"
+              ],
+              "ru": [
+                "тест-драйв мотоцикла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "motorcycle-sale",
+              "motorcycle-trade-in",
+              "motorcycle-financing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-trade-in",
+          "slug": "motorcycle-trade-in",
+          "names": {
+            "en": "Motorcycle Trade-In",
+            "uk": "Трейд-ін мотоцикла",
+            "de": "Motorrad-Inzahlungnahme",
+            "ru": "Трейд-ин мотоцикла",
+            "original": "Motorcycle Trade-In"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "motorcycle trade-in"
+              ],
+              "uk": [
+                "трейд-ін мотоцикла"
+              ],
+              "de": [
+                "motorrad-inzahlungnahme"
+              ],
+              "ru": [
+                "трейд-ин мотоцикла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "motorcycle-sale",
+              "motorcycle-test-ride",
+              "motorcycle-financing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-financing",
+          "slug": "motorcycle-financing",
+          "names": {
+            "en": "Motorcycle Financing",
+            "uk": "Фінансування мотоцикла",
+            "de": "Motorradfinanzierung",
+            "ru": "Финансирование мотоцикла",
+            "original": "Motorcycle Financing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "motorcycle financing"
+              ],
+              "uk": [
+                "фінансування мотоцикла"
+              ],
+              "de": [
+                "motorradfinanzierung"
+              ],
+              "ru": [
+                "финансирование мотоцикла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "motorcycle-sale",
+              "motorcycle-test-ride",
+              "motorcycle-trade-in"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/motorcycle-repair",
       "slug": "motorcycle-repair",
-      "names": { "en": "Motorcycle Repair", "uk": "Мото СТО", "de": "Motorradwerkstatt", "ru": "Мотосервис", "original": "Motorcycle Repair" },
-      "altLabels": { "en": ["bike repair"], "uk": ["моторемонт"], "de": [], "ru": [] },
+      "names": {
+        "en": "Motorcycle Repair",
+        "uk": "Мото СТО",
+        "de": "Motorradwerkstatt",
+        "ru": "Мотосервис",
+        "original": "Motorcycle Repair"
+      },
+      "altLabels": {
+        "en": [
+          "bike repair"
+        ],
+        "uk": [
+          "моторемонт"
+        ],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "shop=motorcycle_repair",
       "naceRef": "G45.40",
       "schemaOrgType": "AutoRepair",
       "wikidataId": "Q3257686",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-maintenance", "slug": "motorcycle-maintenance", "names": { "en": "Motorcycle Maintenance", "uk": "ТО мотоцикла", "de": "Motorradwartung", "ru": "ТО мотоцикла", "original": "Motorcycle Maintenance" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-tire-change", "slug": "motorcycle-tire-change", "names": { "en": "Motorcycle Tire Change", "uk": "Заміна шин мотоцикла", "de": "Motorrad-Reifenwechsel", "ru": "Замена шин мотоцикла", "original": "Motorcycle Tire Change" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-diagnostic", "slug": "motorcycle-diagnostic", "names": { "en": "Motorcycle Diagnostic", "uk": "Діагностика мотоцикла", "de": "Motorrad-Diagnose", "ru": "Диагностика мотоцикла", "original": "Motorcycle Diagnostic" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-restoration", "slug": "motorcycle-restoration", "names": { "en": "Motorcycle Restoration", "uk": "Реставрація мотоцикла", "de": "Motorrad-Restaurierung", "ru": "Реставрация мотоцикла", "original": "Motorcycle Restoration" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-maintenance",
+          "slug": "motorcycle-maintenance",
+          "names": {
+            "en": "Motorcycle Maintenance",
+            "uk": "ТО мотоцикла",
+            "de": "Motorradwartung",
+            "ru": "ТО мотоцикла",
+            "original": "Motorcycle Maintenance"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "motorcycle maintenance"
+              ],
+              "uk": [
+                "то мотоцикла"
+              ],
+              "de": [
+                "motorradwartung"
+              ],
+              "ru": [
+                "то мотоцикла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "motorcycle-tire-change",
+              "motorcycle-diagnostic",
+              "motorcycle-restoration"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-tire-change",
+          "slug": "motorcycle-tire-change",
+          "names": {
+            "en": "Motorcycle Tire Change",
+            "uk": "Заміна шин мотоцикла",
+            "de": "Motorrad-Reifenwechsel",
+            "ru": "Замена шин мотоцикла",
+            "original": "Motorcycle Tire Change"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "motorcycle tire change"
+              ],
+              "uk": [
+                "заміна шин мотоцикла"
+              ],
+              "de": [
+                "motorrad-reifenwechsel"
+              ],
+              "ru": [
+                "замена шин мотоцикла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "motorcycle-maintenance",
+              "motorcycle-diagnostic",
+              "motorcycle-restoration"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-diagnostic",
+          "slug": "motorcycle-diagnostic",
+          "names": {
+            "en": "Motorcycle Diagnostic",
+            "uk": "Діагностика мотоцикла",
+            "de": "Motorrad-Diagnose",
+            "ru": "Диагностика мотоцикла",
+            "original": "Motorcycle Diagnostic"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "motorcycle diagnostic"
+              ],
+              "uk": [
+                "діагностика мотоцикла"
+              ],
+              "de": [
+                "motorrad-diagnose"
+              ],
+              "ru": [
+                "диагностика мотоцикла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "motorcycle-maintenance",
+              "motorcycle-tire-change",
+              "motorcycle-restoration"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/motorcycle-restoration",
+          "slug": "motorcycle-restoration",
+          "names": {
+            "en": "Motorcycle Restoration",
+            "uk": "Реставрація мотоцикла",
+            "de": "Motorrad-Restaurierung",
+            "ru": "Реставрация мотоцикла",
+            "original": "Motorcycle Restoration"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "motorcycle restoration"
+              ],
+              "uk": [
+                "реставрація мотоцикла"
+              ],
+              "de": [
+                "motorrad-restaurierung"
+              ],
+              "ru": [
+                "реставрация мотоцикла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "motorcycle-maintenance",
+              "motorcycle-tire-change",
+              "motorcycle-diagnostic"
+            ]
+          }
+        }
       ]
     }
   ]

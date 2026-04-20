@@ -11,10 +11,21 @@
     "original": "Accommodation"
   },
   "altLabels": {
-    "en": ["lodging", "stay", "accommodation"],
-    "uk": ["житло"],
-    "de": ["übernachtung"],
-    "ru": ["жильё", "размещение"]
+    "en": [
+      "lodging",
+      "stay",
+      "accommodation"
+    ],
+    "uk": [
+      "житло"
+    ],
+    "de": [
+      "übernachtung"
+    ],
+    "ru": [
+      "жильё",
+      "размещение"
+    ]
   },
   "icon": "🏨",
   "naceRef": "I55",
@@ -32,10 +43,18 @@
         "original": "Hotel"
       },
       "altLabels": {
-        "en": ["inn"],
-        "uk": ["готельний комплекс"],
-        "de": ["hotelkomplex"],
-        "ru": ["гостиница"]
+        "en": [
+          "inn"
+        ],
+        "uk": [
+          "готельний комплекс"
+        ],
+        "de": [
+          "hotelkomplex"
+        ],
+        "ru": [
+          "гостиница"
+        ]
       },
       "osmTag": "tourism=hotel",
       "naceRef": "I55.10",
@@ -51,6 +70,33 @@
             "de": "Einzelzimmer",
             "ru": "Одноместный номер",
             "original": "Single Room"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "single room"
+              ],
+              "uk": [
+                "одномісний номер"
+              ],
+              "de": [
+                "einzelzimmer"
+              ],
+              "ru": [
+                "одноместный номер"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "double-room",
+              "suite",
+              "conference-room"
+            ]
           }
         },
         {
@@ -62,6 +108,33 @@
             "de": "Doppelzimmer",
             "ru": "Двухместный номер",
             "original": "Double Room"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "double room"
+              ],
+              "uk": [
+                "двомісний номер"
+              ],
+              "de": [
+                "doppelzimmer"
+              ],
+              "ru": [
+                "двухместный номер"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "single-room",
+              "suite",
+              "conference-room"
+            ]
           }
         },
         {
@@ -74,7 +147,34 @@
             "ru": "Люкс",
             "original": "Suite"
           },
-          "wikidataId": "Q1517913"
+          "wikidataId": "Q1517913",
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "suite"
+              ],
+              "uk": [
+                "люкс"
+              ],
+              "de": [
+                "suite"
+              ],
+              "ru": [
+                "люкс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "single-room",
+              "double-room",
+              "conference-room"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/conference-room",
@@ -86,7 +186,34 @@
             "ru": "Конференц-зал",
             "original": "Conference Room"
           },
-          "wikidataId": "Q5159838"
+          "wikidataId": "Q5159838",
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "conference room"
+              ],
+              "uk": [
+                "конференц-зал"
+              ],
+              "de": [
+                "konferenzraum"
+              ],
+              "ru": [
+                "конференц-зал"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "single-room",
+              "double-room",
+              "suite"
+            ]
+          }
         }
       ]
     },
@@ -101,10 +228,17 @@
         "original": "Hostel"
       },
       "altLabels": {
-        "en": ["youth hostel", "backpacker"],
+        "en": [
+          "youth hostel",
+          "backpacker"
+        ],
         "uk": [],
-        "de": ["jugendherberge"],
-        "ru": ["молодёжный хостел"]
+        "de": [
+          "jugendherberge"
+        ],
+        "ru": [
+          "молодёжный хостел"
+        ]
       },
       "osmTag": "tourism=hostel",
       "naceRef": "I55.20",
@@ -120,6 +254,31 @@
             "de": "Bett im Schlafsaal",
             "ru": "Место в общей комнате",
             "original": "Dorm Bed"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "dorm bed"
+              ],
+              "uk": [
+                "місце в кімнаті"
+              ],
+              "de": [
+                "bett im schlafsaal"
+              ],
+              "ru": [
+                "место в общей комнате"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "private-room"
+            ]
           }
         },
         {
@@ -131,6 +290,31 @@
             "de": "Privatzimmer",
             "ru": "Отдельная комната",
             "original": "Private Room"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "private room"
+              ],
+              "uk": [
+                "окрема кімната"
+              ],
+              "de": [
+                "privatzimmer"
+              ],
+              "ru": [
+                "отдельная комната"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "dorm-bed"
+            ]
           }
         }
       ]
@@ -146,10 +330,19 @@
         "original": "Guest House"
       },
       "altLabels": {
-        "en": ["B&B", "bed and breakfast"],
-        "uk": ["міні-готель"],
-        "de": ["frühstückspension"],
-        "ru": ["мини-отель"]
+        "en": [
+          "B&B",
+          "bed and breakfast"
+        ],
+        "uk": [
+          "міні-готель"
+        ],
+        "de": [
+          "frühstückspension"
+        ],
+        "ru": [
+          "мини-отель"
+        ]
       },
       "osmTag": "tourism=guest_house",
       "naceRef": "I55.20",
@@ -165,6 +358,31 @@
             "de": "Zimmer pro Nacht",
             "ru": "Номер за сутки",
             "original": "Room per Night"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "room per night"
+              ],
+              "uk": [
+                "номер за добу"
+              ],
+              "de": [
+                "zimmer pro nacht"
+              ],
+              "ru": [
+                "номер за сутки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "weekly-stay"
+            ]
           }
         },
         {
@@ -176,6 +394,31 @@
             "de": "Wochenaufenthalt",
             "ru": "Проживание на неделю",
             "original": "Weekly Stay"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "weekly stay"
+              ],
+              "uk": [
+                "тижневе проживання"
+              ],
+              "de": [
+                "wochenaufenthalt"
+              ],
+              "ru": [
+                "проживание на неделю"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "room-night"
+            ]
           }
         }
       ]
@@ -191,10 +434,21 @@
         "original": "Apartment Rental"
       },
       "altLabels": {
-        "en": ["short-term rental", "vacation rental"],
-        "uk": ["короткострокова оренда"],
-        "de": ["ferienapartment", "kurzzeitmiete"],
-        "ru": ["краткосрочная аренда", "посуточно"]
+        "en": [
+          "short-term rental",
+          "vacation rental"
+        ],
+        "uk": [
+          "короткострокова оренда"
+        ],
+        "de": [
+          "ferienapartment",
+          "kurzzeitmiete"
+        ],
+        "ru": [
+          "краткосрочная аренда",
+          "посуточно"
+        ]
       },
       "osmTag": "tourism=apartment",
       "naceRef": "I55.20",
@@ -211,7 +465,33 @@
             "ru": "Студия",
             "original": "Studio"
           },
-          "wikidataId": "Q1058914"
+          "wikidataId": "Q1058914",
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "studio"
+              ],
+              "uk": [
+                "студія"
+              ],
+              "de": [
+                "studio"
+              ],
+              "ru": [
+                "студия"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "one-bedroom",
+              "two-bedroom"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/one-bedroom",
@@ -222,6 +502,32 @@
             "de": "Einzimmerwohnung",
             "ru": "Однокомнатная",
             "original": "One Bedroom"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "one bedroom"
+              ],
+              "uk": [
+                "однокімнатна"
+              ],
+              "de": [
+                "einzimmerwohnung"
+              ],
+              "ru": [
+                "однокомнатная"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "studio-apt",
+              "two-bedroom"
+            ]
           }
         },
         {
@@ -233,6 +539,32 @@
             "de": "Zweizimmerwohnung",
             "ru": "Двухкомнатная",
             "original": "Two Bedrooms"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "two bedrooms"
+              ],
+              "uk": [
+                "двокімнатна"
+              ],
+              "de": [
+                "zweizimmerwohnung"
+              ],
+              "ru": [
+                "двухкомнатная"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "studio-apt",
+              "one-bedroom"
+            ]
           }
         }
       ]
@@ -248,7 +580,9 @@
         "original": "Boutique Hotel"
       },
       "altLabels": {
-        "en": ["designer hotel"],
+        "en": [
+          "designer hotel"
+        ],
         "uk": [],
         "de": [],
         "ru": []
@@ -267,6 +601,33 @@
             "de": "Boutique-Zimmer",
             "ru": "Бутик-номер",
             "original": "Boutique Room"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "boutique room"
+              ],
+              "uk": [
+                "бутик-номер"
+              ],
+              "de": [
+                "boutique-zimmer"
+              ],
+              "ru": [
+                "бутик-номер"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "themed-suite",
+              "spa-package-boutique",
+              "gastronomy-stay"
+            ]
           }
         },
         {
@@ -278,6 +639,33 @@
             "de": "Themen-Suite",
             "ru": "Тематический люкс",
             "original": "Themed Suite"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "themed suite"
+              ],
+              "uk": [
+                "тематичний люкс"
+              ],
+              "de": [
+                "themen-suite"
+              ],
+              "ru": [
+                "тематический люкс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "boutique-room",
+              "spa-package-boutique",
+              "gastronomy-stay"
+            ]
           }
         },
         {
@@ -289,6 +677,33 @@
             "de": "Spa-Paket",
             "ru": "Спа-пакет",
             "original": "Spa Package"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "spa package"
+              ],
+              "uk": [
+                "спа-пакет"
+              ],
+              "de": [
+                "spa-paket"
+              ],
+              "ru": [
+                "спа-пакет"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "boutique-room",
+              "themed-suite",
+              "gastronomy-stay"
+            ]
           }
         },
         {
@@ -300,6 +715,33 @@
             "de": "Gastronomie-Aufenthalt",
             "ru": "Гастрономическое проживание",
             "original": "Gastronomy Stay"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "gastronomy stay"
+              ],
+              "uk": [
+                "гастрономічне проживання"
+              ],
+              "de": [
+                "gastronomie-aufenthalt"
+              ],
+              "ru": [
+                "гастрономическое проживание"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "boutique-room",
+              "themed-suite",
+              "spa-package-boutique"
+            ]
           }
         }
       ]
@@ -315,7 +757,9 @@
         "original": "Capsule Hotel"
       },
       "altLabels": {
-        "en": ["pod hotel"],
+        "en": [
+          "pod hotel"
+        ],
         "uk": [],
         "de": [],
         "ru": []
@@ -334,6 +778,32 @@
             "de": "Kapselbett",
             "ru": "Капсульная кровать",
             "original": "Capsule Bed"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "capsule bed"
+              ],
+              "uk": [
+                "капсульне ліжко"
+              ],
+              "de": [
+                "kapselbett"
+              ],
+              "ru": [
+                "капсульная кровать"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "day-capsule",
+              "hourly-capsule"
+            ]
           }
         },
         {
@@ -345,6 +815,32 @@
             "de": "Tageskapsel",
             "ru": "Дневная капсула",
             "original": "Day Capsule"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "day capsule"
+              ],
+              "uk": [
+                "денна капсула"
+              ],
+              "de": [
+                "tageskapsel"
+              ],
+              "ru": [
+                "дневная капсула"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "capsule-bed",
+              "hourly-capsule"
+            ]
           }
         },
         {
@@ -356,6 +852,32 @@
             "de": "Stundenkapsel",
             "ru": "Почасовая капсула",
             "original": "Hourly Capsule"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hourly capsule"
+              ],
+              "uk": [
+                "погодинна капсула"
+              ],
+              "de": [
+                "stundenkapsel"
+              ],
+              "ru": [
+                "почасовая капсула"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "capsule-bed",
+              "day-capsule"
+            ]
           }
         }
       ]
@@ -371,9 +893,16 @@
         "original": "Resort"
       },
       "altLabels": {
-        "en": ["resort hotel", "all-inclusive"],
-        "uk": ["курортний готель"],
-        "de": ["ferienanlage"],
+        "en": [
+          "resort hotel",
+          "all-inclusive"
+        ],
+        "uk": [
+          "курортний готель"
+        ],
+        "de": [
+          "ferienanlage"
+        ],
         "ru": []
       },
       "osmTag": "tourism=resort",
@@ -390,6 +919,33 @@
             "de": "Standard-Resortaufenthalt",
             "ru": "Стандартное проживание на курорте",
             "original": "Standard Resort Stay"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "standard resort stay"
+              ],
+              "uk": [
+                "стандартне проживання на курорті"
+              ],
+              "de": [
+                "standard-resortaufenthalt"
+              ],
+              "ru": [
+                "стандартное проживание на курорте"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "all-inclusive-package",
+              "spa-resort-package",
+              "family-resort-package"
+            ]
           }
         },
         {
@@ -401,6 +957,33 @@
             "de": "All-Inclusive-Paket",
             "ru": "Пакет «всё включено»",
             "original": "All-Inclusive Package"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "all-inclusive package"
+              ],
+              "uk": [
+                "пакет «все включено»"
+              ],
+              "de": [
+                "all-inclusive-paket"
+              ],
+              "ru": [
+                "пакет «всё включено»"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "standard-resort-stay",
+              "spa-resort-package",
+              "family-resort-package"
+            ]
           }
         },
         {
@@ -412,6 +995,33 @@
             "de": "Spa-Resort-Paket",
             "ru": "Спа-пакет курорта",
             "original": "Spa Resort Package"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "spa resort package"
+              ],
+              "uk": [
+                "спа-пакет курорту"
+              ],
+              "de": [
+                "spa-resort-paket"
+              ],
+              "ru": [
+                "спа-пакет курорта"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "standard-resort-stay",
+              "all-inclusive-package",
+              "family-resort-package"
+            ]
           }
         },
         {
@@ -423,6 +1033,33 @@
             "de": "Familien-Resort-Paket",
             "ru": "Семейный курортный пакет",
             "original": "Family Resort Package"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "family resort package"
+              ],
+              "uk": [
+                "сімейний курортний пакет"
+              ],
+              "de": [
+                "familien-resort-paket"
+              ],
+              "ru": [
+                "семейный курортный пакет"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "standard-resort-stay",
+              "all-inclusive-package",
+              "spa-resort-package"
+            ]
           }
         },
         {
@@ -434,6 +1071,33 @@
             "de": "Strandresort-Aufenthalt",
             "ru": "Проживание на пляжном курорте",
             "original": "Beach Resort Stay"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "beach resort stay"
+              ],
+              "uk": [
+                "проживання на пляжному курорті"
+              ],
+              "de": [
+                "strandresort-aufenthalt"
+              ],
+              "ru": [
+                "проживание на пляжном курорте"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "standard-resort-stay",
+              "all-inclusive-package",
+              "spa-resort-package"
+            ]
           }
         }
       ]
@@ -449,7 +1113,10 @@
         "original": "Ecotourism Lodge"
       },
       "altLabels": {
-        "en": ["eco-lodge", "nature retreat"],
+        "en": [
+          "eco-lodge",
+          "nature retreat"
+        ],
         "uk": [],
         "de": [],
         "ru": []
@@ -468,6 +1135,33 @@
             "de": "Hüttenaufenthalt",
             "ru": "Проживание в коттедже",
             "original": "Cabin Stay"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "cabin stay"
+              ],
+              "uk": [
+                "проживання в котеджі"
+              ],
+              "de": [
+                "hüttenaufenthalt"
+              ],
+              "ru": [
+                "проживание в коттедже"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "guided-nature-tour",
+              "glamping",
+              "wildlife-package"
+            ]
           }
         },
         {
@@ -479,6 +1173,33 @@
             "de": "Geführte Naturtour",
             "ru": "Экскурсия на природу с гидом",
             "original": "Guided Nature Tour"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "guided nature tour"
+              ],
+              "uk": [
+                "екскурсія на природу з гідом"
+              ],
+              "de": [
+                "geführte naturtour"
+              ],
+              "ru": [
+                "экскурсия на природу с гидом"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "cabin-stay",
+              "glamping",
+              "wildlife-package"
+            ]
           }
         },
         {
@@ -490,6 +1211,33 @@
             "de": "Glamping",
             "ru": "Глэмпинг",
             "original": "Glamping"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "glamping"
+              ],
+              "uk": [
+                "глемпінг"
+              ],
+              "de": [
+                "glamping"
+              ],
+              "ru": [
+                "глэмпинг"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "cabin-stay",
+              "guided-nature-tour",
+              "wildlife-package"
+            ]
           }
         },
         {
@@ -501,6 +1249,33 @@
             "de": "Wildlife-Paket",
             "ru": "Пакет «дикая природа»",
             "original": "Wildlife Package"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "wildlife package"
+              ],
+              "uk": [
+                "пакет «дика природа»"
+              ],
+              "de": [
+                "wildlife-paket"
+              ],
+              "ru": [
+                "пакет «дикая природа»"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "cabin-stay",
+              "guided-nature-tour",
+              "glamping"
+            ]
           }
         }
       ]
@@ -516,8 +1291,12 @@
         "original": "Beach Rental"
       },
       "altLabels": {
-        "en": ["beach equipment rental"],
-        "uk": ["прокат на пляжі"],
+        "en": [
+          "beach equipment rental"
+        ],
+        "uk": [
+          "прокат на пляжі"
+        ],
         "de": [],
         "ru": []
       },
@@ -535,6 +1314,33 @@
             "de": "Sonnenschirm-Verleih",
             "ru": "Аренда пляжного зонта",
             "original": "Beach Umbrella Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "beach umbrella rental"
+              ],
+              "uk": [
+                "оренда пляжної парасольки"
+              ],
+              "de": [
+                "sonnenschirm-verleih"
+              ],
+              "ru": [
+                "аренда пляжного зонта"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "sun-lounger-rental",
+              "surfboard-rental",
+              "jet-ski-rental"
+            ]
           }
         },
         {
@@ -546,6 +1352,33 @@
             "de": "Liegestuhl-Verleih",
             "ru": "Аренда шезлонга",
             "original": "Sun Lounger Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "sun lounger rental"
+              ],
+              "uk": [
+                "оренда шезлонга"
+              ],
+              "de": [
+                "liegestuhl-verleih"
+              ],
+              "ru": [
+                "аренда шезлонга"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "beach-umbrella-rental",
+              "surfboard-rental",
+              "jet-ski-rental"
+            ]
           }
         },
         {
@@ -557,6 +1390,33 @@
             "de": "Surfbrett-Verleih",
             "ru": "Аренда доски для сёрфинга",
             "original": "Surfboard Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "surfboard rental"
+              ],
+              "uk": [
+                "оренда дошки для серфінгу"
+              ],
+              "de": [
+                "surfbrett-verleih"
+              ],
+              "ru": [
+                "аренда доски для сёрфинга"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "beach-umbrella-rental",
+              "sun-lounger-rental",
+              "jet-ski-rental"
+            ]
           }
         },
         {
@@ -568,6 +1428,33 @@
             "de": "Jetski-Verleih",
             "ru": "Аренда гидроцикла",
             "original": "Jet Ski Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "jet ski rental"
+              ],
+              "uk": [
+                "оренда гідроцикла"
+              ],
+              "de": [
+                "jetski-verleih"
+              ],
+              "ru": [
+                "аренда гидроцикла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "beach-umbrella-rental",
+              "sun-lounger-rental",
+              "surfboard-rental"
+            ]
           }
         }
       ]
@@ -583,7 +1470,9 @@
         "original": "Christmas Market Stall"
       },
       "altLabels": {
-        "en": ["Xmas market vendor"],
+        "en": [
+          "Xmas market vendor"
+        ],
         "uk": [],
         "de": [],
         "ru": []
@@ -602,6 +1491,33 @@
             "de": "Weihnachtlicher Essensstand",
             "ru": "Рождественский продуктовый стенд",
             "original": "Food Stall (Xmas)"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "food stall (xmas)"
+              ],
+              "uk": [
+                "різдвяний продуктовий стенд"
+              ],
+              "de": [
+                "weihnachtlicher essensstand"
+              ],
+              "ru": [
+                "рождественский продуктовый стенд"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "craft-stall-xmas",
+              "mulled-wine-stand",
+              "xmas-tree-sale"
+            ]
           }
         },
         {
@@ -613,6 +1529,33 @@
             "de": "Weihnachtlicher Handwerksstand",
             "ru": "Рождественский ремесленный стенд",
             "original": "Craft Stall (Xmas)"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "craft stall (xmas)"
+              ],
+              "uk": [
+                "різдвяний ремісничий стенд"
+              ],
+              "de": [
+                "weihnachtlicher handwerksstand"
+              ],
+              "ru": [
+                "рождественский ремесленный стенд"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "food-stall-xmas",
+              "mulled-wine-stand",
+              "xmas-tree-sale"
+            ]
           }
         },
         {
@@ -624,6 +1567,33 @@
             "de": "Glühweinstand",
             "ru": "Стенд с глинтвейном",
             "original": "Mulled Wine Stand"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "mulled wine stand"
+              ],
+              "uk": [
+                "глінтвейн-стенд"
+              ],
+              "de": [
+                "glühweinstand"
+              ],
+              "ru": [
+                "стенд с глинтвейном"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "food-stall-xmas",
+              "craft-stall-xmas",
+              "xmas-tree-sale"
+            ]
           }
         },
         {
@@ -635,6 +1605,33 @@
             "de": "Weihnachtsbaumverkauf",
             "ru": "Продажа ёлок",
             "original": "Christmas Tree Sale"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "christmas tree sale"
+              ],
+              "uk": [
+                "продаж ялинок"
+              ],
+              "de": [
+                "weihnachtsbaumverkauf"
+              ],
+              "ru": [
+                "продажа ёлок"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "food-stall-xmas",
+              "craft-stall-xmas",
+              "mulled-wine-stand"
+            ]
           }
         }
       ]

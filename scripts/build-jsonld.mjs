@@ -38,7 +38,6 @@ const output = {
   '@id': 'https://taxonomy.mapko.net/v1/',
   '@type': 'skos:ConceptScheme',
   version,
-  generatedAt: new Date().toISOString(),
   categoriesCount: categories.length,
   categories,
 };

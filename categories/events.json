@@ -11,10 +11,23 @@
     "original": "Events & Wedding"
   },
   "altLabels": {
-    "en": ["event services", "wedding services", "celebration"],
-    "uk": ["організація подій", "свято"],
-    "de": ["eventplanung", "festservice"],
-    "ru": ["организация мероприятий", "праздник"]
+    "en": [
+      "event services",
+      "wedding services",
+      "celebration"
+    ],
+    "uk": [
+      "організація подій",
+      "свято"
+    ],
+    "de": [
+      "eventplanung",
+      "festservice"
+    ],
+    "ru": [
+      "организация мероприятий",
+      "праздник"
+    ]
   },
   "icon": "🎁",
   "naceRef": "N82.30",
@@ -32,8 +45,12 @@
         "original": "Wedding Planner"
       },
       "altLabels": {
-        "en": ["wedding coordinator"],
-        "ru": ["свадебный координатор"]
+        "en": [
+          "wedding coordinator"
+        ],
+        "ru": [
+          "свадебный координатор"
+        ]
       },
       "osmTag": "office=event_management",
       "naceRef": "N82.30",
@@ -50,7 +67,36 @@
             "ru": "Полная организация свадьбы",
             "original": "Full Wedding Planning"
           },
-          "crossLinks": ["day-of-coordination", "destination-wedding"]
+          "crossLinks": [
+            "day-of-coordination",
+            "destination-wedding"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "full wedding planning"
+              ],
+              "uk": [
+                "повна організація весілля"
+              ],
+              "de": [
+                "komplette hochzeitsplanung"
+              ],
+              "ru": [
+                "полная организация свадьбы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "day-of-coordination",
+              "destination-wedding"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/day-of-coordination",
@@ -62,7 +108,35 @@
             "ru": "Координация в день свадьбы",
             "original": "Day-of Coordination"
           },
-          "crossLinks": ["full-wedding-planning"]
+          "crossLinks": [
+            "full-wedding-planning"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "day-of coordination"
+              ],
+              "uk": [
+                "координація в день весілля"
+              ],
+              "de": [
+                "tageskoordination"
+              ],
+              "ru": [
+                "координация в день свадьбы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "full-wedding-planning",
+              "destination-wedding"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/destination-wedding",
@@ -74,7 +148,35 @@
             "ru": "Выездная свадьба",
             "original": "Destination Wedding"
           },
-          "crossLinks": ["full-wedding-planning"]
+          "crossLinks": [
+            "full-wedding-planning"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "destination wedding"
+              ],
+              "uk": [
+                "виїзне весілля"
+              ],
+              "de": [
+                "destination wedding"
+              ],
+              "ru": [
+                "выездная свадьба"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "full-wedding-planning",
+              "day-of-coordination"
+            ]
+          }
         }
       ]
     },
@@ -89,7 +191,9 @@
         "original": "Event Production"
       },
       "altLabels": {
-        "en": ["event production company"]
+        "en": [
+          "event production company"
+        ]
       },
       "osmTag": "office=event_management",
       "naceRef": "N82.30",
@@ -105,7 +209,37 @@
             "ru": "Продакшн корпоративных мероприятий",
             "original": "Corporate Event Production"
           },
-          "crossLinks": ["conference-production", "brand-activation"]
+          "crossLinks": [
+            "conference-production",
+            "brand-activation"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "corporate event production"
+              ],
+              "uk": [
+                "продакшн корпоративних подій"
+              ],
+              "de": [
+                "firmenevent-produktion"
+              ],
+              "ru": [
+                "продакшн корпоративных мероприятий"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "conference-production",
+              "festival-production",
+              "brand-activation"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/conference-production",
@@ -117,7 +251,36 @@
             "ru": "Продакшн конференций",
             "original": "Conference Production"
           },
-          "crossLinks": ["corporate-event-production"]
+          "crossLinks": [
+            "corporate-event-production"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "conference production"
+              ],
+              "uk": [
+                "продакшн конференцій"
+              ],
+              "de": [
+                "konferenzproduktion"
+              ],
+              "ru": [
+                "продакшн конференций"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "corporate-event-production",
+              "festival-production",
+              "brand-activation"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/festival-production",
@@ -129,7 +292,37 @@
             "ru": "Продакшн фестивалей",
             "original": "Festival Production"
           },
-          "crossLinks": ["corporate-event-production", "brand-activation"]
+          "crossLinks": [
+            "corporate-event-production",
+            "brand-activation"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "festival production"
+              ],
+              "uk": [
+                "продакшн фестивалів"
+              ],
+              "de": [
+                "festivalproduktion"
+              ],
+              "ru": [
+                "продакшн фестивалей"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "corporate-event-production",
+              "conference-production",
+              "brand-activation"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/brand-activation",
@@ -141,7 +334,37 @@
             "ru": "Бренд-активация",
             "original": "Brand Activation"
           },
-          "crossLinks": ["corporate-event-production", "festival-production"]
+          "crossLinks": [
+            "corporate-event-production",
+            "festival-production"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "brand activation"
+              ],
+              "uk": [
+                "бренд-активація"
+              ],
+              "de": [
+                "markenaktivierung"
+              ],
+              "ru": [
+                "бренд-активация"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "corporate-event-production",
+              "conference-production",
+              "festival-production"
+            ]
+          }
         }
       ]
     },
@@ -156,8 +379,12 @@
         "original": "DJ Service"
       },
       "altLabels": {
-        "en": ["mobile DJ"],
-        "ru": ["диджей на мероприятие"]
+        "en": [
+          "mobile DJ"
+        ],
+        "ru": [
+          "диджей на мероприятие"
+        ]
       },
       "osmTag": "office=event_management",
       "naceRef": "R90.01",
@@ -174,7 +401,37 @@
             "ru": "Свадебный диджей",
             "original": "Wedding DJ"
           },
-          "crossLinks": ["party-dj", "dj-equipment-rental"]
+          "crossLinks": [
+            "party-dj",
+            "dj-equipment-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "wedding dj"
+              ],
+              "uk": [
+                "весільний діджей"
+              ],
+              "de": [
+                "hochzeits-dj"
+              ],
+              "ru": [
+                "свадебный диджей"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "party-dj",
+              "corporate-dj",
+              "dj-equipment-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/party-dj",
@@ -186,7 +443,37 @@
             "ru": "Диджей на вечеринку",
             "original": "Party DJ"
           },
-          "crossLinks": ["wedding-dj", "dj-equipment-rental"]
+          "crossLinks": [
+            "wedding-dj",
+            "dj-equipment-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "party dj"
+              ],
+              "uk": [
+                "діджей на вечірку"
+              ],
+              "de": [
+                "party-dj"
+              ],
+              "ru": [
+                "диджей на вечеринку"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wedding-dj",
+              "corporate-dj",
+              "dj-equipment-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/corporate-dj",
@@ -198,7 +485,37 @@
             "ru": "Диджей для корпоративов",
             "original": "Corporate DJ"
           },
-          "crossLinks": ["wedding-dj", "party-dj"]
+          "crossLinks": [
+            "wedding-dj",
+            "party-dj"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "corporate dj"
+              ],
+              "uk": [
+                "діджей для корпоративів"
+              ],
+              "de": [
+                "firmen-dj"
+              ],
+              "ru": [
+                "диджей для корпоративов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wedding-dj",
+              "party-dj",
+              "dj-equipment-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/dj-equipment-rental",
@@ -210,7 +527,38 @@
             "ru": "Аренда диджейского оборудования",
             "original": "DJ Equipment Rental"
           },
-          "crossLinks": ["wedding-dj", "party-dj", "sound-rental"]
+          "crossLinks": [
+            "wedding-dj",
+            "party-dj",
+            "sound-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "dj equipment rental"
+              ],
+              "uk": [
+                "оренда діджейського обладнання"
+              ],
+              "de": [
+                "dj-equipment-verleih"
+              ],
+              "ru": [
+                "аренда диджейского оборудования"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wedding-dj",
+              "party-dj",
+              "corporate-dj"
+            ]
+          }
         }
       ]
     },
@@ -225,7 +573,9 @@
         "original": "Balloon Decoration"
       },
       "altLabels": {
-        "en": ["balloon styling"]
+        "en": [
+          "balloon styling"
+        ]
       },
       "osmTag": "craft=florist",
       "naceRef": "R90.04",
@@ -241,7 +591,36 @@
             "ru": "Арка из шаров",
             "original": "Balloon Arch"
           },
-          "crossLinks": ["balloon-bouquet", "themed-balloon-decor"]
+          "crossLinks": [
+            "balloon-bouquet",
+            "themed-balloon-decor"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "balloon arch"
+              ],
+              "uk": [
+                "арка з кульок"
+              ],
+              "de": [
+                "ballonbogen"
+              ],
+              "ru": [
+                "арка из шаров"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "balloon-bouquet",
+              "themed-balloon-decor"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/balloon-bouquet",
@@ -253,7 +632,36 @@
             "ru": "Букет из шаров",
             "original": "Balloon Bouquet"
           },
-          "crossLinks": ["balloon-arch", "themed-balloon-decor"]
+          "crossLinks": [
+            "balloon-arch",
+            "themed-balloon-decor"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "balloon bouquet"
+              ],
+              "uk": [
+                "букет з кульок"
+              ],
+              "de": [
+                "ballonstrauß"
+              ],
+              "ru": [
+                "букет из шаров"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "balloon-arch",
+              "themed-balloon-decor"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/themed-balloon-decor",
@@ -265,7 +673,36 @@
             "ru": "Тематический декор из шаров",
             "original": "Themed Balloon Decor"
           },
-          "crossLinks": ["balloon-arch", "balloon-bouquet"]
+          "crossLinks": [
+            "balloon-arch",
+            "balloon-bouquet"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "themed balloon decor"
+              ],
+              "uk": [
+                "тематичний декор з кульок"
+              ],
+              "de": [
+                "themen-ballondekoration"
+              ],
+              "ru": [
+                "тематический декор из шаров"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "balloon-arch",
+              "balloon-bouquet"
+            ]
+          }
         }
       ]
     },
@@ -280,7 +717,10 @@
         "original": "Photo Booth"
       },
       "altLabels": {
-        "en": ["photobooth", "selfie booth"]
+        "en": [
+          "photobooth",
+          "selfie booth"
+        ]
       },
       "osmTag": "office=event_management",
       "naceRef": "M74.20",
@@ -297,7 +737,38 @@
             "ru": "Классическая фотобудка",
             "original": "Classic Photo Booth"
           },
-          "crossLinks": ["mirror-booth", "360-booth", "props-package"]
+          "crossLinks": [
+            "mirror-booth",
+            "360-booth",
+            "props-package"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "classic photo booth"
+              ],
+              "uk": [
+                "класична фотобудка"
+              ],
+              "de": [
+                "klassische fotobox"
+              ],
+              "ru": [
+                "классическая фотобудка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "mirror-booth",
+              "360-booth",
+              "props-package"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/mirror-booth",
@@ -309,7 +780,38 @@
             "ru": "Зеркальная фотобудка",
             "original": "Mirror Booth"
           },
-          "crossLinks": ["classic-photo-booth", "360-booth", "props-package"]
+          "crossLinks": [
+            "classic-photo-booth",
+            "360-booth",
+            "props-package"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "mirror booth"
+              ],
+              "uk": [
+                "дзеркальна фотобудка"
+              ],
+              "de": [
+                "spiegel-fotobox"
+              ],
+              "ru": [
+                "зеркальная фотобудка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "classic-photo-booth",
+              "360-booth",
+              "props-package"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/360-booth",
@@ -321,7 +823,38 @@
             "ru": "360-фотобудка",
             "original": "360 Booth"
           },
-          "crossLinks": ["classic-photo-booth", "mirror-booth", "props-package"]
+          "crossLinks": [
+            "classic-photo-booth",
+            "mirror-booth",
+            "props-package"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "360 booth"
+              ],
+              "uk": [
+                "360-фотобудка"
+              ],
+              "de": [
+                "360-grad-fotobox"
+              ],
+              "ru": [
+                "360-фотобудка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "classic-photo-booth",
+              "mirror-booth",
+              "props-package"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/props-package",
@@ -333,7 +866,38 @@
             "ru": "Набор реквизита",
             "original": "Props Package"
           },
-          "crossLinks": ["classic-photo-booth", "mirror-booth", "360-booth"]
+          "crossLinks": [
+            "classic-photo-booth",
+            "mirror-booth",
+            "360-booth"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "props package"
+              ],
+              "uk": [
+                "набір реквізиту"
+              ],
+              "de": [
+                "requisitenpaket"
+              ],
+              "ru": [
+                "набор реквизита"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "classic-photo-booth",
+              "mirror-booth",
+              "360-booth"
+            ]
+          }
         }
       ]
     },
@@ -348,9 +912,16 @@
         "original": "MC / Host"
       },
       "altLabels": {
-        "en": ["emcee", "event host"],
-        "uk": ["тамада"],
-        "ru": ["тамада"]
+        "en": [
+          "emcee",
+          "event host"
+        ],
+        "uk": [
+          "тамада"
+        ],
+        "ru": [
+          "тамада"
+        ]
       },
       "osmTag": "office=event_management",
       "naceRef": "R90.04",
@@ -367,7 +938,37 @@
             "ru": "Свадебный ведущий",
             "original": "Wedding MC"
           },
-          "crossLinks": ["corporate-host", "bilingual-host"]
+          "crossLinks": [
+            "corporate-host",
+            "bilingual-host"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "wedding mc"
+              ],
+              "uk": [
+                "весільний ведучий"
+              ],
+              "de": [
+                "hochzeitsmoderator"
+              ],
+              "ru": [
+                "свадебный ведущий"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "corporate-host",
+              "kids-event-host",
+              "bilingual-host"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/corporate-host",
@@ -379,7 +980,37 @@
             "ru": "Корпоративный ведущий",
             "original": "Corporate Host"
           },
-          "crossLinks": ["wedding-mc", "bilingual-host"]
+          "crossLinks": [
+            "wedding-mc",
+            "bilingual-host"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "corporate host"
+              ],
+              "uk": [
+                "корпоративний ведучий"
+              ],
+              "de": [
+                "firmenmoderator"
+              ],
+              "ru": [
+                "корпоративный ведущий"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wedding-mc",
+              "kids-event-host",
+              "bilingual-host"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/kids-event-host",
@@ -391,7 +1022,37 @@
             "ru": "Ведущий детских праздников",
             "original": "Kids Event Host"
           },
-          "crossLinks": ["wedding-mc", "corporate-host"]
+          "crossLinks": [
+            "wedding-mc",
+            "corporate-host"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "kids event host"
+              ],
+              "uk": [
+                "ведучий дитячих свят"
+              ],
+              "de": [
+                "moderator für kinderveranstaltungen"
+              ],
+              "ru": [
+                "ведущий детских праздников"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wedding-mc",
+              "corporate-host",
+              "bilingual-host"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/bilingual-host",
@@ -403,7 +1064,37 @@
             "ru": "Двуязычный ведущий",
             "original": "Bilingual Host"
           },
-          "crossLinks": ["wedding-mc", "corporate-host"]
+          "crossLinks": [
+            "wedding-mc",
+            "corporate-host"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "bilingual host"
+              ],
+              "uk": [
+                "двомовний ведучий"
+              ],
+              "de": [
+                "zweisprachiger moderator"
+              ],
+              "ru": [
+                "двуязычный ведущий"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wedding-mc",
+              "corporate-host",
+              "kids-event-host"
+            ]
+          }
         }
       ]
     },
@@ -418,7 +1109,10 @@
         "original": "Sound Equipment Rental"
       },
       "altLabels": {
-        "en": ["audio rental", "PA hire"]
+        "en": [
+          "audio rental",
+          "PA hire"
+        ]
       },
       "osmTag": "office=event_management",
       "naceRef": "N77.39",
@@ -434,7 +1128,38 @@
             "ru": "Аренда акустических систем",
             "original": "Speaker System Rental"
           },
-          "crossLinks": ["microphone-rental", "mixing-console-rental", "sound-engineer"]
+          "crossLinks": [
+            "microphone-rental",
+            "mixing-console-rental",
+            "sound-engineer"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "speaker system rental"
+              ],
+              "uk": [
+                "оренда акустичних систем"
+              ],
+              "de": [
+                "lautsprecheranlagen-verleih"
+              ],
+              "ru": [
+                "аренда акустических систем"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "microphone-rental",
+              "mixing-console-rental",
+              "sound-engineer"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/microphone-rental",
@@ -446,7 +1171,37 @@
             "ru": "Аренда микрофонов",
             "original": "Microphone Rental"
           },
-          "crossLinks": ["speaker-system-rental", "mixing-console-rental"]
+          "crossLinks": [
+            "speaker-system-rental",
+            "mixing-console-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "microphone rental"
+              ],
+              "uk": [
+                "оренда мікрофонів"
+              ],
+              "de": [
+                "mikrofonverleih"
+              ],
+              "ru": [
+                "аренда микрофонов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "speaker-system-rental",
+              "mixing-console-rental",
+              "sound-engineer"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/mixing-console-rental",
@@ -458,7 +1213,38 @@
             "ru": "Аренда микшерных пультов",
             "original": "Mixing Console Rental"
           },
-          "crossLinks": ["speaker-system-rental", "microphone-rental", "sound-engineer"]
+          "crossLinks": [
+            "speaker-system-rental",
+            "microphone-rental",
+            "sound-engineer"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "mixing console rental"
+              ],
+              "uk": [
+                "оренда мікшерних пультів"
+              ],
+              "de": [
+                "mischpultverleih"
+              ],
+              "ru": [
+                "аренда микшерных пультов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "speaker-system-rental",
+              "microphone-rental",
+              "sound-engineer"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/sound-engineer",
@@ -470,7 +1256,37 @@
             "ru": "Звукорежиссёр",
             "original": "Sound Engineer"
           },
-          "crossLinks": ["speaker-system-rental", "mixing-console-rental"]
+          "crossLinks": [
+            "speaker-system-rental",
+            "mixing-console-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "sound engineer"
+              ],
+              "uk": [
+                "звукорежисер"
+              ],
+              "de": [
+                "tontechniker"
+              ],
+              "ru": [
+                "звукорежиссёр"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "speaker-system-rental",
+              "microphone-rental",
+              "mixing-console-rental"
+            ]
+          }
         }
       ]
     },
@@ -498,7 +1314,38 @@
             "ru": "Сценическое освещение",
             "original": "Stage Lighting"
           },
-          "crossLinks": ["mood-lighting", "intelligent-lights", "lighting-designer"]
+          "crossLinks": [
+            "mood-lighting",
+            "intelligent-lights",
+            "lighting-designer"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "stage lighting"
+              ],
+              "uk": [
+                "сценічне освітлення"
+              ],
+              "de": [
+                "bühnenbeleuchtung"
+              ],
+              "ru": [
+                "сценическое освещение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "mood-lighting",
+              "intelligent-lights",
+              "lighting-designer"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/mood-lighting",
@@ -510,7 +1357,38 @@
             "ru": "Атмосферное освещение",
             "original": "Mood Lighting"
           },
-          "crossLinks": ["stage-lighting", "intelligent-lights", "lighting-designer"]
+          "crossLinks": [
+            "stage-lighting",
+            "intelligent-lights",
+            "lighting-designer"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "mood lighting"
+              ],
+              "uk": [
+                "атмосферне освітлення"
+              ],
+              "de": [
+                "stimmungsbeleuchtung"
+              ],
+              "ru": [
+                "атмосферное освещение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "stage-lighting",
+              "intelligent-lights",
+              "lighting-designer"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/intelligent-lights",
@@ -522,7 +1400,38 @@
             "ru": "Интеллектуальный свет",
             "original": "Intelligent Lights"
           },
-          "crossLinks": ["stage-lighting", "mood-lighting", "lighting-designer"]
+          "crossLinks": [
+            "stage-lighting",
+            "mood-lighting",
+            "lighting-designer"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "intelligent lights"
+              ],
+              "uk": [
+                "інтелектуальне світло"
+              ],
+              "de": [
+                "intelligente lichttechnik"
+              ],
+              "ru": [
+                "интеллектуальный свет"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "stage-lighting",
+              "mood-lighting",
+              "lighting-designer"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/lighting-designer",
@@ -534,7 +1443,38 @@
             "ru": "Художник по свету",
             "original": "Lighting Designer"
           },
-          "crossLinks": ["stage-lighting", "mood-lighting", "intelligent-lights"]
+          "crossLinks": [
+            "stage-lighting",
+            "mood-lighting",
+            "intelligent-lights"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "lighting designer"
+              ],
+              "uk": [
+                "художник зі світла"
+              ],
+              "de": [
+                "lichtdesigner"
+              ],
+              "ru": [
+                "художник по свету"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "stage-lighting",
+              "mood-lighting",
+              "intelligent-lights"
+            ]
+          }
         }
       ]
     },
@@ -562,7 +1502,38 @@
             "ru": "Малая сцена",
             "original": "Small Stage"
           },
-          "crossLinks": ["modular-stage", "outdoor-stage", "stage-build-service"]
+          "crossLinks": [
+            "modular-stage",
+            "outdoor-stage",
+            "stage-build-service"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "small stage"
+              ],
+              "uk": [
+                "мала сцена"
+              ],
+              "de": [
+                "kleine bühne"
+              ],
+              "ru": [
+                "малая сцена"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "modular-stage",
+              "outdoor-stage",
+              "stage-build-service"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/modular-stage",
@@ -574,7 +1545,38 @@
             "ru": "Модульная сцена",
             "original": "Modular Stage"
           },
-          "crossLinks": ["small-stage", "outdoor-stage", "stage-build-service"]
+          "crossLinks": [
+            "small-stage",
+            "outdoor-stage",
+            "stage-build-service"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "modular stage"
+              ],
+              "uk": [
+                "модульна сцена"
+              ],
+              "de": [
+                "modulare bühne"
+              ],
+              "ru": [
+                "модульная сцена"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "small-stage",
+              "outdoor-stage",
+              "stage-build-service"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/outdoor-stage",
@@ -586,7 +1588,38 @@
             "ru": "Уличная сцена",
             "original": "Outdoor Stage"
           },
-          "crossLinks": ["small-stage", "modular-stage", "stage-build-service"]
+          "crossLinks": [
+            "small-stage",
+            "modular-stage",
+            "stage-build-service"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "outdoor stage"
+              ],
+              "uk": [
+                "сцена для вулиці"
+              ],
+              "de": [
+                "outdoor-bühne"
+              ],
+              "ru": [
+                "уличная сцена"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "small-stage",
+              "modular-stage",
+              "stage-build-service"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/stage-build-service",
@@ -598,7 +1631,38 @@
             "ru": "Услуги монтажа сцены",
             "original": "Stage Build Service"
           },
-          "crossLinks": ["small-stage", "modular-stage", "outdoor-stage"]
+          "crossLinks": [
+            "small-stage",
+            "modular-stage",
+            "outdoor-stage"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "stage build service"
+              ],
+              "uk": [
+                "послуги монтажу сцени"
+              ],
+              "de": [
+                "bühnenbau-service"
+              ],
+              "ru": [
+                "услуги монтажа сцены"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "small-stage",
+              "modular-stage",
+              "outdoor-stage"
+            ]
+          }
         }
       ]
     },
@@ -613,7 +1677,9 @@
         "original": "Fireworks"
       },
       "altLabels": {
-        "en": ["pyrotechnics"]
+        "en": [
+          "pyrotechnics"
+        ]
       },
       "osmTag": "craft=pyrotechnician",
       "naceRef": "R93.29",
@@ -629,7 +1695,38 @@
             "ru": "Стандартное шоу",
             "original": "Standard Show"
           },
-          "crossLinks": ["premium-show", "indoor-pyro", "custom-choreography"]
+          "crossLinks": [
+            "premium-show",
+            "indoor-pyro",
+            "custom-choreography"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "standard show"
+              ],
+              "uk": [
+                "стандартне шоу"
+              ],
+              "de": [
+                "standard-show"
+              ],
+              "ru": [
+                "стандартное шоу"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "premium-show",
+              "indoor-pyro",
+              "custom-choreography"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/premium-show",
@@ -641,7 +1738,38 @@
             "ru": "Премиум шоу",
             "original": "Premium Show"
           },
-          "crossLinks": ["standard-show", "indoor-pyro", "custom-choreography"]
+          "crossLinks": [
+            "standard-show",
+            "indoor-pyro",
+            "custom-choreography"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "premium show"
+              ],
+              "uk": [
+                "преміум шоу"
+              ],
+              "de": [
+                "premium-show"
+              ],
+              "ru": [
+                "премиум шоу"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "standard-show",
+              "indoor-pyro",
+              "custom-choreography"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/indoor-pyro",
@@ -653,7 +1781,38 @@
             "ru": "Внутренняя пиротехника",
             "original": "Indoor Pyro"
           },
-          "crossLinks": ["standard-show", "premium-show", "custom-choreography"]
+          "crossLinks": [
+            "standard-show",
+            "premium-show",
+            "custom-choreography"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "indoor pyro"
+              ],
+              "uk": [
+                "внутрішня піротехніка"
+              ],
+              "de": [
+                "indoor-pyrotechnik"
+              ],
+              "ru": [
+                "внутренняя пиротехника"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "standard-show",
+              "premium-show",
+              "custom-choreography"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/custom-choreography",
@@ -665,7 +1824,38 @@
             "ru": "Авторская хореография",
             "original": "Custom Choreography"
           },
-          "crossLinks": ["standard-show", "premium-show", "indoor-pyro"]
+          "crossLinks": [
+            "standard-show",
+            "premium-show",
+            "indoor-pyro"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom choreography"
+              ],
+              "uk": [
+                "авторська хореографія"
+              ],
+              "de": [
+                "individuelle choreografie"
+              ],
+              "ru": [
+                "авторская хореография"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "standard-show",
+              "premium-show",
+              "indoor-pyro"
+            ]
+          }
         }
       ]
     },
@@ -680,7 +1870,9 @@
         "original": "Event Decoration & Florals"
       },
       "altLabels": {
-        "en": ["event florist"]
+        "en": [
+          "event florist"
+        ]
       },
       "osmTag": "craft=florist",
       "naceRef": "R90.04",
@@ -696,7 +1888,39 @@
             "ru": "Свадебная арка",
             "original": "Wedding Arch"
           },
-          "crossLinks": ["wedding-floristry", "table-centerpieces", "ceremony-decor", "themed-decor"]
+          "crossLinks": [
+            "wedding-floristry",
+            "table-centerpieces",
+            "ceremony-decor",
+            "themed-decor"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "wedding arch"
+              ],
+              "uk": [
+                "весільна арка"
+              ],
+              "de": [
+                "hochzeitsbogen"
+              ],
+              "ru": [
+                "свадебная арка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "table-centerpieces",
+              "ceremony-decor",
+              "themed-decor"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/table-centerpieces",
@@ -708,7 +1932,39 @@
             "ru": "Настольные композиции",
             "original": "Table Centerpieces"
           },
-          "crossLinks": ["wedding-floristry", "wedding-arch", "ceremony-decor", "themed-decor"]
+          "crossLinks": [
+            "wedding-floristry",
+            "wedding-arch",
+            "ceremony-decor",
+            "themed-decor"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "table centerpieces"
+              ],
+              "uk": [
+                "столові композиції"
+              ],
+              "de": [
+                "tischgestecke"
+              ],
+              "ru": [
+                "настольные композиции"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wedding-arch",
+              "ceremony-decor",
+              "themed-decor"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/ceremony-decor",
@@ -720,7 +1976,39 @@
             "ru": "Декор церемонии",
             "original": "Ceremony Decor"
           },
-          "crossLinks": ["wedding-floristry", "wedding-arch", "table-centerpieces", "themed-decor"]
+          "crossLinks": [
+            "wedding-floristry",
+            "wedding-arch",
+            "table-centerpieces",
+            "themed-decor"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ceremony decor"
+              ],
+              "uk": [
+                "декор церемонії"
+              ],
+              "de": [
+                "zeremoniendekoration"
+              ],
+              "ru": [
+                "декор церемонии"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wedding-arch",
+              "table-centerpieces",
+              "themed-decor"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/themed-decor",
@@ -732,7 +2020,39 @@
             "ru": "Тематический декор",
             "original": "Themed Decor"
           },
-          "crossLinks": ["wedding-floristry", "wedding-arch", "table-centerpieces", "ceremony-decor"]
+          "crossLinks": [
+            "wedding-floristry",
+            "wedding-arch",
+            "table-centerpieces",
+            "ceremony-decor"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "themed decor"
+              ],
+              "uk": [
+                "тематичний декор"
+              ],
+              "de": [
+                "themendekoration"
+              ],
+              "ru": [
+                "тематический декор"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "wedding-arch",
+              "table-centerpieces",
+              "ceremony-decor"
+            ]
+          }
         }
       ]
     }

@@ -11,10 +11,23 @@
     "original": "IT & Digital"
   },
   "altLabels": {
-    "en": ["software", "digital agency", "tech services"],
-    "uk": ["діджитал", "розробка софту"],
-    "de": ["digitalagentur", "softwareentwicklung"],
-    "ru": ["диджитал", "разработка ПО"]
+    "en": [
+      "software",
+      "digital agency",
+      "tech services"
+    ],
+    "uk": [
+      "діджитал",
+      "розробка софту"
+    ],
+    "de": [
+      "digitalagentur",
+      "softwareentwicklung"
+    ],
+    "ru": [
+      "диджитал",
+      "разработка ПО"
+    ]
   },
   "icon": "💻",
   "naceRef": "J62",
@@ -24,298 +37,3401 @@
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/web-development",
       "slug": "web-development",
-      "names": { "en": "Web Development", "uk": "Веб-розробка", "de": "Webentwicklung", "ru": "Веб-разработка", "original": "Web Development" },
-      "altLabels": { "en": ["web design", "frontend", "backend"], "uk": ["веб-студія"], "de": ["webdesign"], "ru": ["веб-студия"] },
+      "names": {
+        "en": "Web Development",
+        "uk": "Веб-розробка",
+        "de": "Webentwicklung",
+        "ru": "Веб-разработка",
+        "original": "Web Development"
+      },
+      "altLabels": {
+        "en": [
+          "web design",
+          "frontend",
+          "backend"
+        ],
+        "uk": [
+          "веб-студія"
+        ],
+        "de": [
+          "webdesign"
+        ],
+        "ru": [
+          "веб-студия"
+        ]
+      },
       "naceRef": "J62.01",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q386275",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/landing-page", "slug": "landing-page", "names": { "en": "Landing Page", "uk": "Лендінг", "de": "Landingpage", "ru": "Лендинг", "original": "Landing Page" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/e-commerce-site", "slug": "e-commerce-site", "names": { "en": "E-commerce Site", "uk": "Інтернет-магазин", "de": "Online-Shop", "ru": "Интернет-магазин", "original": "E-commerce Site" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/web-application", "slug": "web-application", "names": { "en": "Web Application", "uk": "Веб-додаток", "de": "Webanwendung", "ru": "Веб-приложение", "original": "Web Application" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/website-maintenance", "slug": "website-maintenance", "names": { "en": "Website Maintenance", "uk": "Підтримка сайту", "de": "Website-Wartung", "ru": "Поддержка сайта", "original": "Website Maintenance" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/landing-page",
+          "slug": "landing-page",
+          "names": {
+            "en": "Landing Page",
+            "uk": "Лендінг",
+            "de": "Landingpage",
+            "ru": "Лендинг",
+            "original": "Landing Page"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "landing page"
+              ],
+              "uk": [
+                "лендінг"
+              ],
+              "de": [
+                "landingpage"
+              ],
+              "ru": [
+                "лендинг"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "e-commerce-site",
+              "web-application",
+              "website-maintenance"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/e-commerce-site",
+          "slug": "e-commerce-site",
+          "names": {
+            "en": "E-commerce Site",
+            "uk": "Інтернет-магазин",
+            "de": "Online-Shop",
+            "ru": "Интернет-магазин",
+            "original": "E-commerce Site"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "e-commerce site"
+              ],
+              "uk": [
+                "інтернет-магазин"
+              ],
+              "de": [
+                "online-shop"
+              ],
+              "ru": [
+                "интернет-магазин"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "landing-page",
+              "web-application",
+              "website-maintenance"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/web-application",
+          "slug": "web-application",
+          "names": {
+            "en": "Web Application",
+            "uk": "Веб-додаток",
+            "de": "Webanwendung",
+            "ru": "Веб-приложение",
+            "original": "Web Application"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "web application"
+              ],
+              "uk": [
+                "веб-додаток"
+              ],
+              "de": [
+                "webanwendung"
+              ],
+              "ru": [
+                "веб-приложение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "landing-page",
+              "e-commerce-site",
+              "website-maintenance"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/website-maintenance",
+          "slug": "website-maintenance",
+          "names": {
+            "en": "Website Maintenance",
+            "uk": "Підтримка сайту",
+            "de": "Website-Wartung",
+            "ru": "Поддержка сайта",
+            "original": "Website Maintenance"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "website maintenance"
+              ],
+              "uk": [
+                "підтримка сайту"
+              ],
+              "de": [
+                "website-wartung"
+              ],
+              "ru": [
+                "поддержка сайта"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "landing-page",
+              "e-commerce-site",
+              "web-application"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/mobile-development",
       "slug": "mobile-development",
-      "names": { "en": "Mobile Development", "uk": "Мобільна розробка", "de": "Mobile Entwicklung", "ru": "Мобильная разработка", "original": "Mobile Development" },
+      "names": {
+        "en": "Mobile Development",
+        "uk": "Мобільна розробка",
+        "de": "Mobile Entwicklung",
+        "ru": "Мобильная разработка",
+        "original": "Mobile Development"
+      },
       "naceRef": "J62.01",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q1077978",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/ios-app", "slug": "ios-app", "names": { "en": "iOS App", "uk": "Додаток для iOS", "de": "iOS-App", "ru": "Приложение для iOS", "original": "iOS App" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/android-app", "slug": "android-app", "names": { "en": "Android App", "uk": "Додаток для Android", "de": "Android-App", "ru": "Приложение для Android", "original": "Android App" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/cross-platform-app", "slug": "cross-platform-app", "names": { "en": "Cross-platform App", "uk": "Кросплатформний додаток", "de": "Plattformübergreifende App", "ru": "Кроссплатформенное приложение", "original": "Cross-platform App" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ios-app",
+          "slug": "ios-app",
+          "names": {
+            "en": "iOS App",
+            "uk": "Додаток для iOS",
+            "de": "iOS-App",
+            "ru": "Приложение для iOS",
+            "original": "iOS App"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ios app"
+              ],
+              "uk": [
+                "додаток для ios"
+              ],
+              "de": [
+                "ios-app"
+              ],
+              "ru": [
+                "приложение для ios"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "android-app",
+              "cross-platform-app"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/android-app",
+          "slug": "android-app",
+          "names": {
+            "en": "Android App",
+            "uk": "Додаток для Android",
+            "de": "Android-App",
+            "ru": "Приложение для Android",
+            "original": "Android App"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "android app"
+              ],
+              "uk": [
+                "додаток для android"
+              ],
+              "de": [
+                "android-app"
+              ],
+              "ru": [
+                "приложение для android"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ios-app",
+              "cross-platform-app"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cross-platform-app",
+          "slug": "cross-platform-app",
+          "names": {
+            "en": "Cross-platform App",
+            "uk": "Кросплатформний додаток",
+            "de": "Plattformübergreifende App",
+            "ru": "Кроссплатформенное приложение",
+            "original": "Cross-platform App"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "cross-platform app"
+              ],
+              "uk": [
+                "кросплатформний додаток"
+              ],
+              "de": [
+                "plattformübergreifende app"
+              ],
+              "ru": [
+                "кроссплатформенное приложение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ios-app",
+              "android-app"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/it-consulting",
       "slug": "it-consulting",
-      "names": { "en": "IT Consulting", "uk": "ІТ-консалтинг", "de": "IT-Beratung", "ru": "ИТ-консалтинг", "original": "IT Consulting" },
+      "names": {
+        "en": "IT Consulting",
+        "uk": "ІТ-консалтинг",
+        "de": "IT-Beratung",
+        "ru": "ИТ-консалтинг",
+        "original": "IT Consulting"
+      },
       "osmTag": "office=it",
       "naceRef": "J62.02",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q1131997",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/it-audit", "slug": "it-audit", "names": { "en": "IT Audit", "uk": "ІТ-аудит", "de": "IT-Audit", "ru": "ИТ-аудит", "original": "IT Audit" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/cloud-migration", "slug": "cloud-migration", "names": { "en": "Cloud Migration", "uk": "Міграція в хмару", "de": "Cloud-Migration", "ru": "Миграция в облако", "original": "Cloud Migration" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/cybersecurity", "slug": "cybersecurity", "names": { "en": "Cybersecurity Assessment", "uk": "Аудит кібербезпеки", "de": "Cybersicherheitsbewertung", "ru": "Аудит кибербезопасности", "original": "Cybersecurity Assessment" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/it-audit",
+          "slug": "it-audit",
+          "names": {
+            "en": "IT Audit",
+            "uk": "ІТ-аудит",
+            "de": "IT-Audit",
+            "ru": "ИТ-аудит",
+            "original": "IT Audit"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "it audit"
+              ],
+              "uk": [
+                "іт-аудит"
+              ],
+              "de": [
+                "it-audit"
+              ],
+              "ru": [
+                "ит-аудит"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "cloud-migration",
+              "cybersecurity"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cloud-migration",
+          "slug": "cloud-migration",
+          "names": {
+            "en": "Cloud Migration",
+            "uk": "Міграція в хмару",
+            "de": "Cloud-Migration",
+            "ru": "Миграция в облако",
+            "original": "Cloud Migration"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "cloud migration"
+              ],
+              "uk": [
+                "міграція в хмару"
+              ],
+              "de": [
+                "cloud-migration"
+              ],
+              "ru": [
+                "миграция в облако"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "it-audit",
+              "cybersecurity"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cybersecurity",
+          "slug": "cybersecurity",
+          "names": {
+            "en": "Cybersecurity Assessment",
+            "uk": "Аудит кібербезпеки",
+            "de": "Cybersicherheitsbewertung",
+            "ru": "Аудит кибербезопасности",
+            "original": "Cybersecurity Assessment"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "cybersecurity assessment"
+              ],
+              "uk": [
+                "аудит кібербезпеки"
+              ],
+              "de": [
+                "cybersicherheitsbewertung"
+              ],
+              "ru": [
+                "аудит кибербезопасности"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "it-audit",
+              "cloud-migration"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/seo-marketing",
       "slug": "seo-marketing",
-      "names": { "en": "SEO & Marketing", "uk": "SEO та маркетинг", "de": "SEO & Marketing", "ru": "SEO и маркетинг", "original": "SEO & Marketing" },
-      "altLabels": { "en": ["digital marketing", "online marketing"], "uk": ["діджитал-маркетинг"], "de": ["onlinemarketing"], "ru": ["цифровой маркетинг"] },
+      "names": {
+        "en": "SEO & Marketing",
+        "uk": "SEO та маркетинг",
+        "de": "SEO & Marketing",
+        "ru": "SEO и маркетинг",
+        "original": "SEO & Marketing"
+      },
+      "altLabels": {
+        "en": [
+          "digital marketing",
+          "online marketing"
+        ],
+        "uk": [
+          "діджитал-маркетинг"
+        ],
+        "de": [
+          "onlinemarketing"
+        ],
+        "ru": [
+          "цифровой маркетинг"
+        ]
+      },
       "naceRef": "M73.11",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q180711",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/seo-audit", "slug": "seo-audit", "names": { "en": "SEO Audit", "uk": "SEO-аудит", "de": "SEO-Audit", "ru": "SEO-аудит", "original": "SEO Audit" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/google-ads", "slug": "google-ads", "names": { "en": "Google Ads", "uk": "Google Ads", "de": "Google Ads", "ru": "Google Ads", "original": "Google Ads" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/social-media-mgmt", "slug": "social-media-mgmt", "names": { "en": "Social Media Management", "uk": "Ведення соцмереж", "de": "Social-Media-Management", "ru": "Ведение соцсетей", "original": "Social Media Management" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/content-marketing", "slug": "content-marketing", "names": { "en": "Content Marketing", "uk": "Контент-маркетинг", "de": "Content-Marketing", "ru": "Контент-маркетинг", "original": "Content Marketing" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/seo-audit",
+          "slug": "seo-audit",
+          "names": {
+            "en": "SEO Audit",
+            "uk": "SEO-аудит",
+            "de": "SEO-Audit",
+            "ru": "SEO-аудит",
+            "original": "SEO Audit"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "seo audit"
+              ],
+              "uk": [
+                "seo-аудит"
+              ],
+              "de": [
+                "seo-audit"
+              ],
+              "ru": [
+                "seo-аудит"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "google-ads",
+              "social-media-mgmt",
+              "content-marketing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/google-ads",
+          "slug": "google-ads",
+          "names": {
+            "en": "Google Ads",
+            "uk": "Google Ads",
+            "de": "Google Ads",
+            "ru": "Google Ads",
+            "original": "Google Ads"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "google ads"
+              ],
+              "uk": [
+                "google ads"
+              ],
+              "de": [
+                "google ads"
+              ],
+              "ru": [
+                "google ads"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "seo-audit",
+              "social-media-mgmt",
+              "content-marketing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/social-media-mgmt",
+          "slug": "social-media-mgmt",
+          "names": {
+            "en": "Social Media Management",
+            "uk": "Ведення соцмереж",
+            "de": "Social-Media-Management",
+            "ru": "Ведение соцсетей",
+            "original": "Social Media Management"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "social media management"
+              ],
+              "uk": [
+                "ведення соцмереж"
+              ],
+              "de": [
+                "social-media-management"
+              ],
+              "ru": [
+                "ведение соцсетей"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "seo-audit",
+              "google-ads",
+              "content-marketing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/content-marketing",
+          "slug": "content-marketing",
+          "names": {
+            "en": "Content Marketing",
+            "uk": "Контент-маркетинг",
+            "de": "Content-Marketing",
+            "ru": "Контент-маркетинг",
+            "original": "Content Marketing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "content marketing"
+              ],
+              "uk": [
+                "контент-маркетинг"
+              ],
+              "de": [
+                "content-marketing"
+              ],
+              "ru": [
+                "контент-маркетинг"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "seo-audit",
+              "google-ads",
+              "social-media-mgmt"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/graphic-design",
       "slug": "graphic-design",
-      "names": { "en": "Graphic Design", "uk": "Графічний дизайн", "de": "Grafikdesign", "ru": "Графический дизайн", "original": "Graphic Design" },
+      "names": {
+        "en": "Graphic Design",
+        "uk": "Графічний дизайн",
+        "de": "Grafikdesign",
+        "ru": "Графический дизайн",
+        "original": "Graphic Design"
+      },
       "osmTag": "office=graphic_design",
       "naceRef": "M74.10",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q219423",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/logo-design", "slug": "logo-design", "names": { "en": "Logo Design", "uk": "Дизайн логотипу", "de": "Logo-Design", "ru": "Дизайн логотипа", "original": "Logo Design" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/brand-identity", "slug": "brand-identity", "names": { "en": "Brand Identity", "uk": "Фірмовий стиль", "de": "Corporate Identity", "ru": "Фирменный стиль", "original": "Brand Identity" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/print-design", "slug": "print-design", "names": { "en": "Print Design", "uk": "Друкований дизайн", "de": "Printdesign", "ru": "Печатный дизайн", "original": "Print Design" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/packaging-design", "slug": "packaging-design", "names": { "en": "Packaging", "uk": "Дизайн упаковки", "de": "Verpackungsdesign", "ru": "Дизайн упаковки", "original": "Packaging" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/logo-design",
+          "slug": "logo-design",
+          "names": {
+            "en": "Logo Design",
+            "uk": "Дизайн логотипу",
+            "de": "Logo-Design",
+            "ru": "Дизайн логотипа",
+            "original": "Logo Design"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "logo design"
+              ],
+              "uk": [
+                "дизайн логотипу"
+              ],
+              "de": [
+                "logo-design"
+              ],
+              "ru": [
+                "дизайн логотипа"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "brand-identity",
+              "print-design",
+              "packaging-design"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/brand-identity",
+          "slug": "brand-identity",
+          "names": {
+            "en": "Brand Identity",
+            "uk": "Фірмовий стиль",
+            "de": "Corporate Identity",
+            "ru": "Фирменный стиль",
+            "original": "Brand Identity"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "brand identity"
+              ],
+              "uk": [
+                "фірмовий стиль"
+              ],
+              "de": [
+                "corporate identity"
+              ],
+              "ru": [
+                "фирменный стиль"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "logo-design",
+              "print-design",
+              "packaging-design"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/print-design",
+          "slug": "print-design",
+          "names": {
+            "en": "Print Design",
+            "uk": "Друкований дизайн",
+            "de": "Printdesign",
+            "ru": "Печатный дизайн",
+            "original": "Print Design"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "print design"
+              ],
+              "uk": [
+                "друкований дизайн"
+              ],
+              "de": [
+                "printdesign"
+              ],
+              "ru": [
+                "печатный дизайн"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "logo-design",
+              "brand-identity",
+              "packaging-design"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/packaging-design",
+          "slug": "packaging-design",
+          "names": {
+            "en": "Packaging",
+            "uk": "Дизайн упаковки",
+            "de": "Verpackungsdesign",
+            "ru": "Дизайн упаковки",
+            "original": "Packaging"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "packaging"
+              ],
+              "uk": [
+                "дизайн упаковки"
+              ],
+              "de": [
+                "verpackungsdesign"
+              ],
+              "ru": [
+                "дизайн упаковки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "logo-design",
+              "brand-identity",
+              "print-design"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/photography",
       "slug": "photography",
-      "names": { "en": "Photography", "uk": "Фотографія", "de": "Fotografie", "ru": "Фотография", "original": "Photography" },
-      "altLabels": { "en": ["photographer", "photo studio"], "uk": ["фотограф", "фотостудія"], "de": ["fotograf", "fotostudio"], "ru": ["фотограф", "фотостудия"] },
+      "names": {
+        "en": "Photography",
+        "uk": "Фотографія",
+        "de": "Fotografie",
+        "ru": "Фотография",
+        "original": "Photography"
+      },
+      "altLabels": {
+        "en": [
+          "photographer",
+          "photo studio"
+        ],
+        "uk": [
+          "фотограф",
+          "фотостудія"
+        ],
+        "de": [
+          "fotograf",
+          "fotostudio"
+        ],
+        "ru": [
+          "фотограф",
+          "фотостудия"
+        ]
+      },
       "osmTag": "craft=photographer",
       "naceRef": "M74.20",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q11633",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/portrait-session", "slug": "portrait-session", "names": { "en": "Portrait Session", "uk": "Портретна зйомка", "de": "Porträtshooting", "ru": "Портретная съёмка", "original": "Portrait Session" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/product-photography", "slug": "product-photography", "names": { "en": "Product Photography", "uk": "Предметна зйомка", "de": "Produktfotografie", "ru": "Предметная съёмка", "original": "Product Photography" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/event-photography", "slug": "event-photography", "names": { "en": "Event Photography", "uk": "Зйомка подій", "de": "Eventfotografie", "ru": "Съёмка мероприятий", "original": "Event Photography" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/wedding-photography", "slug": "wedding-photography", "names": { "en": "Wedding Photography", "uk": "Весільна зйомка", "de": "Hochzeitsfotografie", "ru": "Свадебная съёмка", "original": "Wedding Photography" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/portrait-session",
+          "slug": "portrait-session",
+          "names": {
+            "en": "Portrait Session",
+            "uk": "Портретна зйомка",
+            "de": "Porträtshooting",
+            "ru": "Портретная съёмка",
+            "original": "Portrait Session"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "portrait session"
+              ],
+              "uk": [
+                "портретна зйомка"
+              ],
+              "de": [
+                "porträtshooting"
+              ],
+              "ru": [
+                "портретная съёмка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "product-photography",
+              "event-photography",
+              "wedding-photography"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/product-photography",
+          "slug": "product-photography",
+          "names": {
+            "en": "Product Photography",
+            "uk": "Предметна зйомка",
+            "de": "Produktfotografie",
+            "ru": "Предметная съёмка",
+            "original": "Product Photography"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "product photography"
+              ],
+              "uk": [
+                "предметна зйомка"
+              ],
+              "de": [
+                "produktfotografie"
+              ],
+              "ru": [
+                "предметная съёмка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "portrait-session",
+              "event-photography",
+              "wedding-photography"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/event-photography",
+          "slug": "event-photography",
+          "names": {
+            "en": "Event Photography",
+            "uk": "Зйомка подій",
+            "de": "Eventfotografie",
+            "ru": "Съёмка мероприятий",
+            "original": "Event Photography"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "event photography"
+              ],
+              "uk": [
+                "зйомка подій"
+              ],
+              "de": [
+                "eventfotografie"
+              ],
+              "ru": [
+                "съёмка мероприятий"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "portrait-session",
+              "product-photography",
+              "wedding-photography"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/wedding-photography",
+          "slug": "wedding-photography",
+          "names": {
+            "en": "Wedding Photography",
+            "uk": "Весільна зйомка",
+            "de": "Hochzeitsfotografie",
+            "ru": "Свадебная съёмка",
+            "original": "Wedding Photography"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "wedding photography"
+              ],
+              "uk": [
+                "весільна зйомка"
+              ],
+              "de": [
+                "hochzeitsfotografie"
+              ],
+              "ru": [
+                "свадебная съёмка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "portrait-session",
+              "product-photography",
+              "event-photography"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/videography",
       "slug": "videography",
-      "names": { "en": "Videography", "uk": "Відеозйомка", "de": "Videografie", "ru": "Видеосъёмка", "original": "Videography" },
+      "names": {
+        "en": "Videography",
+        "uk": "Відеозйомка",
+        "de": "Videografie",
+        "ru": "Видеосъёмка",
+        "original": "Videography"
+      },
       "naceRef": "J59.11",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q593843",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/promo-video", "slug": "promo-video", "names": { "en": "Promo Video", "uk": "Промо-ролик", "de": "Werbefilm", "ru": "Промо-ролик", "original": "Promo Video" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/event-video", "slug": "event-video", "names": { "en": "Event Video", "uk": "Відео з подій", "de": "Eventfilm", "ru": "Видео с мероприятий", "original": "Event Video" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/social-media-content", "slug": "social-media-content", "names": { "en": "Social Media Content", "uk": "Контент для соцмереж", "de": "Social-Media-Inhalt", "ru": "Контент для соцсетей", "original": "Social Media Content" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/drone-footage", "slug": "drone-footage", "names": { "en": "Drone Footage", "uk": "Зйомка з дрона", "de": "Drohnenaufnahmen", "ru": "Съёмка с дрона", "original": "Drone Footage" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/promo-video",
+          "slug": "promo-video",
+          "names": {
+            "en": "Promo Video",
+            "uk": "Промо-ролик",
+            "de": "Werbefilm",
+            "ru": "Промо-ролик",
+            "original": "Promo Video"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "promo video"
+              ],
+              "uk": [
+                "промо-ролик"
+              ],
+              "de": [
+                "werbefilm"
+              ],
+              "ru": [
+                "промо-ролик"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "event-video",
+              "social-media-content",
+              "drone-footage"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/event-video",
+          "slug": "event-video",
+          "names": {
+            "en": "Event Video",
+            "uk": "Відео з подій",
+            "de": "Eventfilm",
+            "ru": "Видео с мероприятий",
+            "original": "Event Video"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "event video"
+              ],
+              "uk": [
+                "відео з подій"
+              ],
+              "de": [
+                "eventfilm"
+              ],
+              "ru": [
+                "видео с мероприятий"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "promo-video",
+              "social-media-content",
+              "drone-footage"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/social-media-content",
+          "slug": "social-media-content",
+          "names": {
+            "en": "Social Media Content",
+            "uk": "Контент для соцмереж",
+            "de": "Social-Media-Inhalt",
+            "ru": "Контент для соцсетей",
+            "original": "Social Media Content"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "social media content"
+              ],
+              "uk": [
+                "контент для соцмереж"
+              ],
+              "de": [
+                "social-media-inhalt"
+              ],
+              "ru": [
+                "контент для соцсетей"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "promo-video",
+              "event-video",
+              "drone-footage"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/drone-footage",
+          "slug": "drone-footage",
+          "names": {
+            "en": "Drone Footage",
+            "uk": "Зйомка з дрона",
+            "de": "Drohnenaufnahmen",
+            "ru": "Съёмка с дрона",
+            "original": "Drone Footage"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "drone footage"
+              ],
+              "uk": [
+                "зйомка з дрона"
+              ],
+              "de": [
+                "drohnenaufnahmen"
+              ],
+              "ru": [
+                "съёмка с дрона"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "promo-video",
+              "event-video",
+              "social-media-content"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/ai-ml-consulting",
       "slug": "ai-ml-consulting",
-      "names": { "en": "AI / ML Consulting", "uk": "AI / ML консалтинг", "de": "KI / ML-Beratung", "ru": "AI / ML консалтинг", "original": "AI / ML Consulting" },
-      "altLabels": { "en": ["machine learning consulting", "data science consulting"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "AI / ML Consulting",
+        "uk": "AI / ML консалтинг",
+        "de": "KI / ML-Beratung",
+        "ru": "AI / ML консалтинг",
+        "original": "AI / ML Consulting"
+      },
+      "altLabels": {
+        "en": [
+          "machine learning consulting",
+          "data science consulting"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=it",
       "naceRef": "J62.02",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q11660",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/ai-strategy-audit", "slug": "ai-strategy-audit", "names": { "en": "AI Strategy Audit", "uk": "Аудит AI-стратегії", "de": "KI-Strategie-Audit", "ru": "Аудит AI-стратегии", "original": "AI Strategy Audit" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/custom-model-training", "slug": "custom-model-training", "names": { "en": "Custom Model Training", "uk": "Навчання кастомних моделей", "de": "Individuelles Modelltraining", "ru": "Обучение кастомных моделей", "original": "Custom Model Training" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/llm-integration", "slug": "llm-integration", "names": { "en": "LLM Integration", "uk": "Інтеграція LLM", "de": "LLM-Integration", "ru": "Интеграция LLM", "original": "LLM Integration" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/mlops-setup", "slug": "mlops-setup", "names": { "en": "MLOps Setup", "uk": "Налаштування MLOps", "de": "MLOps-Einrichtung", "ru": "Настройка MLOps", "original": "MLOps Setup" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/data-pipeline-design", "slug": "data-pipeline-design", "names": { "en": "Data Pipeline Design", "uk": "Дизайн дата-пайплайнів", "de": "Daten-Pipeline-Design", "ru": "Дизайн дата-пайплайнов", "original": "Data Pipeline Design" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ai-strategy-audit",
+          "slug": "ai-strategy-audit",
+          "names": {
+            "en": "AI Strategy Audit",
+            "uk": "Аудит AI-стратегії",
+            "de": "KI-Strategie-Audit",
+            "ru": "Аудит AI-стратегии",
+            "original": "AI Strategy Audit"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ai strategy audit"
+              ],
+              "uk": [
+                "аудит ai-стратегії"
+              ],
+              "de": [
+                "ki-strategie-audit"
+              ],
+              "ru": [
+                "аудит ai-стратегии"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-model-training",
+              "llm-integration",
+              "mlops-setup"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-model-training",
+          "slug": "custom-model-training",
+          "names": {
+            "en": "Custom Model Training",
+            "uk": "Навчання кастомних моделей",
+            "de": "Individuelles Modelltraining",
+            "ru": "Обучение кастомных моделей",
+            "original": "Custom Model Training"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom model training"
+              ],
+              "uk": [
+                "навчання кастомних моделей"
+              ],
+              "de": [
+                "individuelles modelltraining"
+              ],
+              "ru": [
+                "обучение кастомных моделей"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ai-strategy-audit",
+              "llm-integration",
+              "mlops-setup"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/llm-integration",
+          "slug": "llm-integration",
+          "names": {
+            "en": "LLM Integration",
+            "uk": "Інтеграція LLM",
+            "de": "LLM-Integration",
+            "ru": "Интеграция LLM",
+            "original": "LLM Integration"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "llm integration"
+              ],
+              "uk": [
+                "інтеграція llm"
+              ],
+              "de": [
+                "llm-integration"
+              ],
+              "ru": [
+                "интеграция llm"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ai-strategy-audit",
+              "custom-model-training",
+              "mlops-setup"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/mlops-setup",
+          "slug": "mlops-setup",
+          "names": {
+            "en": "MLOps Setup",
+            "uk": "Налаштування MLOps",
+            "de": "MLOps-Einrichtung",
+            "ru": "Настройка MLOps",
+            "original": "MLOps Setup"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "mlops setup"
+              ],
+              "uk": [
+                "налаштування mlops"
+              ],
+              "de": [
+                "mlops-einrichtung"
+              ],
+              "ru": [
+                "настройка mlops"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ai-strategy-audit",
+              "custom-model-training",
+              "llm-integration"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/data-pipeline-design",
+          "slug": "data-pipeline-design",
+          "names": {
+            "en": "Data Pipeline Design",
+            "uk": "Дизайн дата-пайплайнів",
+            "de": "Daten-Pipeline-Design",
+            "ru": "Дизайн дата-пайплайнов",
+            "original": "Data Pipeline Design"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "data pipeline design"
+              ],
+              "uk": [
+                "дизайн дата-пайплайнів"
+              ],
+              "de": [
+                "daten-pipeline-design"
+              ],
+              "ru": [
+                "дизайн дата-пайплайнов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ai-strategy-audit",
+              "custom-model-training",
+              "llm-integration"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/devops",
       "slug": "devops",
-      "names": { "en": "DevOps", "uk": "DevOps", "de": "DevOps", "ru": "DevOps", "original": "DevOps" },
-      "altLabels": { "en": ["site reliability", "platform engineering"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "DevOps",
+        "uk": "DevOps",
+        "de": "DevOps",
+        "ru": "DevOps",
+        "original": "DevOps"
+      },
+      "altLabels": {
+        "en": [
+          "site reliability",
+          "platform engineering"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=it",
       "naceRef": "J62.02+J63.11",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q5266097",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/ci-cd-setup", "slug": "ci-cd-setup", "names": { "en": "CI/CD Setup", "uk": "Налаштування CI/CD", "de": "CI/CD-Einrichtung", "ru": "Настройка CI/CD", "original": "CI/CD Setup" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/kubernetes-migration", "slug": "kubernetes-migration", "names": { "en": "Kubernetes Migration", "uk": "Міграція на Kubernetes", "de": "Kubernetes-Migration", "ru": "Миграция на Kubernetes", "original": "Kubernetes Migration" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/infrastructure-as-code", "slug": "infrastructure-as-code", "names": { "en": "Infrastructure as Code", "uk": "Інфраструктура як код", "de": "Infrastructure as Code", "ru": "Инфраструктура как код", "original": "Infrastructure as Code" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/monitoring-setup", "slug": "monitoring-setup", "names": { "en": "Monitoring Setup", "uk": "Налаштування моніторингу", "de": "Monitoring-Einrichtung", "ru": "Настройка мониторинга", "original": "Monitoring Setup" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/cloud-cost-optimization", "slug": "cloud-cost-optimization", "names": { "en": "Cloud Cost Optimization", "uk": "Оптимізація витрат на хмару", "de": "Cloud-Kostenoptimierung", "ru": "Оптимизация затрат на облако", "original": "Cloud Cost Optimization" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ci-cd-setup",
+          "slug": "ci-cd-setup",
+          "names": {
+            "en": "CI/CD Setup",
+            "uk": "Налаштування CI/CD",
+            "de": "CI/CD-Einrichtung",
+            "ru": "Настройка CI/CD",
+            "original": "CI/CD Setup"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ci/cd setup"
+              ],
+              "uk": [
+                "налаштування ci/cd"
+              ],
+              "de": [
+                "ci/cd-einrichtung"
+              ],
+              "ru": [
+                "настройка ci/cd"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "kubernetes-migration",
+              "infrastructure-as-code",
+              "monitoring-setup"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/kubernetes-migration",
+          "slug": "kubernetes-migration",
+          "names": {
+            "en": "Kubernetes Migration",
+            "uk": "Міграція на Kubernetes",
+            "de": "Kubernetes-Migration",
+            "ru": "Миграция на Kubernetes",
+            "original": "Kubernetes Migration"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "kubernetes migration"
+              ],
+              "uk": [
+                "міграція на kubernetes"
+              ],
+              "de": [
+                "kubernetes-migration"
+              ],
+              "ru": [
+                "миграция на kubernetes"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ci-cd-setup",
+              "infrastructure-as-code",
+              "monitoring-setup"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/infrastructure-as-code",
+          "slug": "infrastructure-as-code",
+          "names": {
+            "en": "Infrastructure as Code",
+            "uk": "Інфраструктура як код",
+            "de": "Infrastructure as Code",
+            "ru": "Инфраструктура как код",
+            "original": "Infrastructure as Code"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "infrastructure as code"
+              ],
+              "uk": [
+                "інфраструктура як код"
+              ],
+              "de": [
+                "infrastructure as code"
+              ],
+              "ru": [
+                "инфраструктура как код"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ci-cd-setup",
+              "kubernetes-migration",
+              "monitoring-setup"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/monitoring-setup",
+          "slug": "monitoring-setup",
+          "names": {
+            "en": "Monitoring Setup",
+            "uk": "Налаштування моніторингу",
+            "de": "Monitoring-Einrichtung",
+            "ru": "Настройка мониторинга",
+            "original": "Monitoring Setup"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "monitoring setup"
+              ],
+              "uk": [
+                "налаштування моніторингу"
+              ],
+              "de": [
+                "monitoring-einrichtung"
+              ],
+              "ru": [
+                "настройка мониторинга"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ci-cd-setup",
+              "kubernetes-migration",
+              "infrastructure-as-code"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cloud-cost-optimization",
+          "slug": "cloud-cost-optimization",
+          "names": {
+            "en": "Cloud Cost Optimization",
+            "uk": "Оптимізація витрат на хмару",
+            "de": "Cloud-Kostenoptimierung",
+            "ru": "Оптимизация затрат на облако",
+            "original": "Cloud Cost Optimization"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "cloud cost optimization"
+              ],
+              "uk": [
+                "оптимізація витрат на хмару"
+              ],
+              "de": [
+                "cloud-kostenoptimierung"
+              ],
+              "ru": [
+                "оптимизация затрат на облако"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ci-cd-setup",
+              "kubernetes-migration",
+              "infrastructure-as-code"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/blockchain-dev",
       "slug": "blockchain-dev",
-      "names": { "en": "Blockchain Development", "uk": "Блокчейн-розробка", "de": "Blockchain-Entwicklung", "ru": "Блокчейн-разработка", "original": "Blockchain Development" },
-      "altLabels": { "en": ["smart contract", "Web3"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Blockchain Development",
+        "uk": "Блокчейн-розробка",
+        "de": "Blockchain-Entwicklung",
+        "ru": "Блокчейн-разработка",
+        "original": "Blockchain Development"
+      },
+      "altLabels": {
+        "en": [
+          "smart contract",
+          "Web3"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=it",
       "naceRef": "J62.01",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q20514253",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/smart-contract-dev", "slug": "smart-contract-dev", "names": { "en": "Smart Contract Development", "uk": "Розробка смарт-контрактів", "de": "Smart-Contract-Entwicklung", "ru": "Разработка смарт-контрактов", "original": "Smart Contract Development" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/dapp-development", "slug": "dapp-development", "names": { "en": "dApp Development", "uk": "Розробка dApp", "de": "dApp-Entwicklung", "ru": "Разработка dApp", "original": "dApp Development" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/token-launch", "slug": "token-launch", "names": { "en": "Token Launch", "uk": "Запуск токена", "de": "Token-Launch", "ru": "Запуск токена", "original": "Token Launch" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/security-audit-blockchain", "slug": "security-audit-blockchain", "names": { "en": "Blockchain Security Audit", "uk": "Аудит безпеки блокчейну", "de": "Blockchain-Sicherheitsaudit", "ru": "Аудит безопасности блокчейна", "original": "Blockchain Security Audit" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/nft-platform", "slug": "nft-platform", "names": { "en": "NFT Platform", "uk": "NFT-платформа", "de": "NFT-Plattform", "ru": "NFT-платформа", "original": "NFT Platform" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/smart-contract-dev",
+          "slug": "smart-contract-dev",
+          "names": {
+            "en": "Smart Contract Development",
+            "uk": "Розробка смарт-контрактів",
+            "de": "Smart-Contract-Entwicklung",
+            "ru": "Разработка смарт-контрактов",
+            "original": "Smart Contract Development"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "smart contract development"
+              ],
+              "uk": [
+                "розробка смарт-контрактів"
+              ],
+              "de": [
+                "smart-contract-entwicklung"
+              ],
+              "ru": [
+                "разработка смарт-контрактов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "dapp-development",
+              "token-launch",
+              "security-audit-blockchain"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dapp-development",
+          "slug": "dapp-development",
+          "names": {
+            "en": "dApp Development",
+            "uk": "Розробка dApp",
+            "de": "dApp-Entwicklung",
+            "ru": "Разработка dApp",
+            "original": "dApp Development"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "dapp development"
+              ],
+              "uk": [
+                "розробка dapp"
+              ],
+              "de": [
+                "dapp-entwicklung"
+              ],
+              "ru": [
+                "разработка dapp"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "smart-contract-dev",
+              "token-launch",
+              "security-audit-blockchain"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/token-launch",
+          "slug": "token-launch",
+          "names": {
+            "en": "Token Launch",
+            "uk": "Запуск токена",
+            "de": "Token-Launch",
+            "ru": "Запуск токена",
+            "original": "Token Launch"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "token launch"
+              ],
+              "uk": [
+                "запуск токена"
+              ],
+              "de": [
+                "token-launch"
+              ],
+              "ru": [
+                "запуск токена"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "smart-contract-dev",
+              "dapp-development",
+              "security-audit-blockchain"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/security-audit-blockchain",
+          "slug": "security-audit-blockchain",
+          "names": {
+            "en": "Blockchain Security Audit",
+            "uk": "Аудит безпеки блокчейну",
+            "de": "Blockchain-Sicherheitsaudit",
+            "ru": "Аудит безопасности блокчейна",
+            "original": "Blockchain Security Audit"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "blockchain security audit"
+              ],
+              "uk": [
+                "аудит безпеки блокчейну"
+              ],
+              "de": [
+                "blockchain-sicherheitsaudit"
+              ],
+              "ru": [
+                "аудит безопасности блокчейна"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "smart-contract-dev",
+              "dapp-development",
+              "token-launch"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/nft-platform",
+          "slug": "nft-platform",
+          "names": {
+            "en": "NFT Platform",
+            "uk": "NFT-платформа",
+            "de": "NFT-Plattform",
+            "ru": "NFT-платформа",
+            "original": "NFT Platform"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "nft platform"
+              ],
+              "uk": [
+                "nft-платформа"
+              ],
+              "de": [
+                "nft-plattform"
+              ],
+              "ru": [
+                "nft-платформа"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "smart-contract-dev",
+              "dapp-development",
+              "token-launch"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/book-publisher",
       "slug": "book-publisher",
-      "names": { "en": "Book Publisher", "uk": "Видавництво книг", "de": "Buchverlag", "ru": "Книжное издательство", "original": "Book Publisher" },
-      "altLabels": { "en": ["publisher"], "uk": ["видавництво"], "de": [], "ru": [] },
+      "names": {
+        "en": "Book Publisher",
+        "uk": "Видавництво книг",
+        "de": "Buchverlag",
+        "ru": "Книжное издательство",
+        "original": "Book Publisher"
+      },
+      "altLabels": {
+        "en": [
+          "publisher"
+        ],
+        "uk": [
+          "видавництво"
+        ],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=publishing",
       "naceRef": "J58.11",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q1320047",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/book-publishing-deal", "slug": "book-publishing-deal", "names": { "en": "Book Publishing Deal", "uk": "Угода на видання книги", "de": "Buchverlagsvertrag", "ru": "Договор на издание книги", "original": "Book Publishing Deal" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/self-publishing-service", "slug": "self-publishing-service", "names": { "en": "Self-publishing Service", "uk": "Послуга самвидаву", "de": "Self-Publishing-Service", "ru": "Услуга самиздата", "original": "Self-publishing Service" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/translation-publishing", "slug": "translation-publishing", "names": { "en": "Translation Publishing", "uk": "Перекладне видання", "de": "Übersetzungsverlag", "ru": "Переводное издание", "original": "Translation Publishing" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/ebook-production", "slug": "ebook-production", "names": { "en": "eBook Production", "uk": "Виробництво електронних книг", "de": "E-Book-Produktion", "ru": "Производство электронных книг", "original": "eBook Production" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/book-publishing-deal",
+          "slug": "book-publishing-deal",
+          "names": {
+            "en": "Book Publishing Deal",
+            "uk": "Угода на видання книги",
+            "de": "Buchverlagsvertrag",
+            "ru": "Договор на издание книги",
+            "original": "Book Publishing Deal"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "book publishing deal"
+              ],
+              "uk": [
+                "угода на видання книги"
+              ],
+              "de": [
+                "buchverlagsvertrag"
+              ],
+              "ru": [
+                "договор на издание книги"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "self-publishing-service",
+              "translation-publishing",
+              "ebook-production"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/self-publishing-service",
+          "slug": "self-publishing-service",
+          "names": {
+            "en": "Self-publishing Service",
+            "uk": "Послуга самвидаву",
+            "de": "Self-Publishing-Service",
+            "ru": "Услуга самиздата",
+            "original": "Self-publishing Service"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "self-publishing service"
+              ],
+              "uk": [
+                "послуга самвидаву"
+              ],
+              "de": [
+                "self-publishing-service"
+              ],
+              "ru": [
+                "услуга самиздата"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "book-publishing-deal",
+              "translation-publishing",
+              "ebook-production"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/translation-publishing",
+          "slug": "translation-publishing",
+          "names": {
+            "en": "Translation Publishing",
+            "uk": "Перекладне видання",
+            "de": "Übersetzungsverlag",
+            "ru": "Переводное издание",
+            "original": "Translation Publishing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "translation publishing"
+              ],
+              "uk": [
+                "перекладне видання"
+              ],
+              "de": [
+                "übersetzungsverlag"
+              ],
+              "ru": [
+                "переводное издание"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "book-publishing-deal",
+              "self-publishing-service",
+              "ebook-production"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ebook-production",
+          "slug": "ebook-production",
+          "names": {
+            "en": "eBook Production",
+            "uk": "Виробництво електронних книг",
+            "de": "E-Book-Produktion",
+            "ru": "Производство электронных книг",
+            "original": "eBook Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ebook production"
+              ],
+              "uk": [
+                "виробництво електронних книг"
+              ],
+              "de": [
+                "e-book-produktion"
+              ],
+              "ru": [
+                "производство электронных книг"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "book-publishing-deal",
+              "self-publishing-service",
+              "translation-publishing"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/film-production",
       "slug": "film-production",
-      "names": { "en": "Film Production", "uk": "Кіновиробництво", "de": "Filmproduktion", "ru": "Кинопроизводство", "original": "Film Production" },
-      "altLabels": { "en": ["video production", "film studio"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Film Production",
+        "uk": "Кіновиробництво",
+        "de": "Filmproduktion",
+        "ru": "Кинопроизводство",
+        "original": "Film Production"
+      },
+      "altLabels": {
+        "en": [
+          "video production",
+          "film studio"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=film_production",
       "naceRef": "J59.11",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q22931",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/commercial-production", "slug": "commercial-production", "names": { "en": "Commercial Production", "uk": "Виробництво реклами", "de": "Werbeproduktion", "ru": "Производство рекламы", "original": "Commercial Production" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/short-film-production", "slug": "short-film-production", "names": { "en": "Short Film Production", "uk": "Виробництво короткометражок", "de": "Kurzfilmproduktion", "ru": "Производство короткометражек", "original": "Short Film Production" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/feature-film-production", "slug": "feature-film-production", "names": { "en": "Feature Film Production", "uk": "Виробництво повнометражного фільму", "de": "Spielfilmproduktion", "ru": "Производство полнометражного фильма", "original": "Feature Film Production" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/music-video-production", "slug": "music-video-production", "names": { "en": "Music Video Production", "uk": "Виробництво музичних кліпів", "de": "Musikvideoproduktion", "ru": "Производство музыкальных клипов", "original": "Music Video Production" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/commercial-production",
+          "slug": "commercial-production",
+          "names": {
+            "en": "Commercial Production",
+            "uk": "Виробництво реклами",
+            "de": "Werbeproduktion",
+            "ru": "Производство рекламы",
+            "original": "Commercial Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "commercial production"
+              ],
+              "uk": [
+                "виробництво реклами"
+              ],
+              "de": [
+                "werbeproduktion"
+              ],
+              "ru": [
+                "производство рекламы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "short-film-production",
+              "feature-film-production",
+              "music-video-production"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/short-film-production",
+          "slug": "short-film-production",
+          "names": {
+            "en": "Short Film Production",
+            "uk": "Виробництво короткометражок",
+            "de": "Kurzfilmproduktion",
+            "ru": "Производство короткометражек",
+            "original": "Short Film Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "short film production"
+              ],
+              "uk": [
+                "виробництво короткометражок"
+              ],
+              "de": [
+                "kurzfilmproduktion"
+              ],
+              "ru": [
+                "производство короткометражек"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "commercial-production",
+              "feature-film-production",
+              "music-video-production"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/feature-film-production",
+          "slug": "feature-film-production",
+          "names": {
+            "en": "Feature Film Production",
+            "uk": "Виробництво повнометражного фільму",
+            "de": "Spielfilmproduktion",
+            "ru": "Производство полнометражного фильма",
+            "original": "Feature Film Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "feature film production"
+              ],
+              "uk": [
+                "виробництво повнометражного фільму"
+              ],
+              "de": [
+                "spielfilmproduktion"
+              ],
+              "ru": [
+                "производство полнометражного фильма"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "commercial-production",
+              "short-film-production",
+              "music-video-production"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/music-video-production",
+          "slug": "music-video-production",
+          "names": {
+            "en": "Music Video Production",
+            "uk": "Виробництво музичних кліпів",
+            "de": "Musikvideoproduktion",
+            "ru": "Производство музыкальных клипов",
+            "original": "Music Video Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "music video production"
+              ],
+              "uk": [
+                "виробництво музичних кліпів"
+              ],
+              "de": [
+                "musikvideoproduktion"
+              ],
+              "ru": [
+                "производство музыкальных клипов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "commercial-production",
+              "short-film-production",
+              "feature-film-production"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/podcast-studio",
       "slug": "podcast-studio",
-      "names": { "en": "Podcast Studio", "uk": "Подкаст-студія", "de": "Podcast-Studio", "ru": "Подкаст-студия", "original": "Podcast Studio" },
-      "altLabels": { "en": ["recording studio"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Podcast Studio",
+        "uk": "Подкаст-студія",
+        "de": "Podcast-Studio",
+        "ru": "Подкаст-студия",
+        "original": "Podcast Studio"
+      },
+      "altLabels": {
+        "en": [
+          "recording studio"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=studio",
       "naceRef": "J59.20",
       "schemaOrgType": "LocalBusiness",
       "wikidataId": "Q24634210",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/hourly-podcast-room", "slug": "hourly-podcast-room", "names": { "en": "Hourly Podcast Room", "uk": "Погодинна оренда подкаст-кімнати", "de": "Podcast-Raum stundenweise", "ru": "Почасовая аренда подкаст-комнаты", "original": "Hourly Podcast Room" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/podcast-production", "slug": "podcast-production", "names": { "en": "Podcast Production", "uk": "Виробництво подкасту", "de": "Podcast-Produktion", "ru": "Производство подкаста", "original": "Podcast Production" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/audio-editing", "slug": "audio-editing", "names": { "en": "Audio Editing", "uk": "Монтаж аудіо", "de": "Audiobearbeitung", "ru": "Монтаж аудио", "original": "Audio Editing" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/podcast-distribution", "slug": "podcast-distribution", "names": { "en": "Podcast Distribution", "uk": "Дистрибуція подкасту", "de": "Podcast-Distribution", "ru": "Дистрибуция подкаста", "original": "Podcast Distribution" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hourly-podcast-room",
+          "slug": "hourly-podcast-room",
+          "names": {
+            "en": "Hourly Podcast Room",
+            "uk": "Погодинна оренда подкаст-кімнати",
+            "de": "Podcast-Raum stundenweise",
+            "ru": "Почасовая аренда подкаст-комнаты",
+            "original": "Hourly Podcast Room"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hourly podcast room"
+              ],
+              "uk": [
+                "погодинна оренда подкаст-кімнати"
+              ],
+              "de": [
+                "podcast-raum stundenweise"
+              ],
+              "ru": [
+                "почасовая аренда подкаст-комнаты"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "podcast-production",
+              "audio-editing",
+              "podcast-distribution"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/podcast-production",
+          "slug": "podcast-production",
+          "names": {
+            "en": "Podcast Production",
+            "uk": "Виробництво подкасту",
+            "de": "Podcast-Produktion",
+            "ru": "Производство подкаста",
+            "original": "Podcast Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "podcast production"
+              ],
+              "uk": [
+                "виробництво подкасту"
+              ],
+              "de": [
+                "podcast-produktion"
+              ],
+              "ru": [
+                "производство подкаста"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "hourly-podcast-room",
+              "audio-editing",
+              "podcast-distribution"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/audio-editing",
+          "slug": "audio-editing",
+          "names": {
+            "en": "Audio Editing",
+            "uk": "Монтаж аудіо",
+            "de": "Audiobearbeitung",
+            "ru": "Монтаж аудио",
+            "original": "Audio Editing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "audio editing"
+              ],
+              "uk": [
+                "монтаж аудіо"
+              ],
+              "de": [
+                "audiobearbeitung"
+              ],
+              "ru": [
+                "монтаж аудио"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "hourly-podcast-room",
+              "podcast-production",
+              "podcast-distribution"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/podcast-distribution",
+          "slug": "podcast-distribution",
+          "names": {
+            "en": "Podcast Distribution",
+            "uk": "Дистрибуція подкасту",
+            "de": "Podcast-Distribution",
+            "ru": "Дистрибуция подкаста",
+            "original": "Podcast Distribution"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "podcast distribution"
+              ],
+              "uk": [
+                "дистрибуція подкасту"
+              ],
+              "de": [
+                "podcast-distribution"
+              ],
+              "ru": [
+                "дистрибуция подкаста"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "hourly-podcast-room",
+              "podcast-production",
+              "audio-editing"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/isp",
       "slug": "isp",
-      "names": { "en": "Internet Service Provider", "uk": "Інтернет-провайдер", "de": "Internetanbieter", "ru": "Интернет-провайдер", "original": "Internet Service Provider" },
-      "altLabels": { "en": ["ISP", "broadband"], "uk": ["провайдер"], "de": [], "ru": [] },
+      "names": {
+        "en": "Internet Service Provider",
+        "uk": "Інтернет-провайдер",
+        "de": "Internetanbieter",
+        "ru": "Интернет-провайдер",
+        "original": "Internet Service Provider"
+      },
+      "altLabels": {
+        "en": [
+          "ISP",
+          "broadband"
+        ],
+        "uk": [
+          "провайдер"
+        ],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=telecommunication",
       "naceRef": "J61.10",
       "schemaOrgType": "LocalBusiness",
       "wikidataId": "Q15286",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/home-broadband", "slug": "home-broadband", "names": { "en": "Home Broadband", "uk": "Домашній інтернет", "de": "Heim-Breitband", "ru": "Домашний интернет", "original": "Home Broadband" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/business-fiber", "slug": "business-fiber", "names": { "en": "Business Fiber", "uk": "Бізнес-оптоволокно", "de": "Geschäftsglasfaser", "ru": "Бизнес-оптоволокно", "original": "Business Fiber" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/dedicated-ip", "slug": "dedicated-ip", "names": { "en": "Dedicated IP", "uk": "Виділений IP", "de": "Dedizierte IP", "ru": "Выделенный IP", "original": "Dedicated IP" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/vpn-service", "slug": "vpn-service", "names": { "en": "VPN Service", "uk": "VPN-послуга", "de": "VPN-Dienst", "ru": "VPN-сервис", "original": "VPN Service" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/home-broadband",
+          "slug": "home-broadband",
+          "names": {
+            "en": "Home Broadband",
+            "uk": "Домашній інтернет",
+            "de": "Heim-Breitband",
+            "ru": "Домашний интернет",
+            "original": "Home Broadband"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "home broadband"
+              ],
+              "uk": [
+                "домашній інтернет"
+              ],
+              "de": [
+                "heim-breitband"
+              ],
+              "ru": [
+                "домашний интернет"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "business-fiber",
+              "dedicated-ip",
+              "vpn-service"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/business-fiber",
+          "slug": "business-fiber",
+          "names": {
+            "en": "Business Fiber",
+            "uk": "Бізнес-оптоволокно",
+            "de": "Geschäftsglasfaser",
+            "ru": "Бизнес-оптоволокно",
+            "original": "Business Fiber"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "business fiber"
+              ],
+              "uk": [
+                "бізнес-оптоволокно"
+              ],
+              "de": [
+                "geschäftsglasfaser"
+              ],
+              "ru": [
+                "бизнес-оптоволокно"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "home-broadband",
+              "dedicated-ip",
+              "vpn-service"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dedicated-ip",
+          "slug": "dedicated-ip",
+          "names": {
+            "en": "Dedicated IP",
+            "uk": "Виділений IP",
+            "de": "Dedizierte IP",
+            "ru": "Выделенный IP",
+            "original": "Dedicated IP"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "dedicated ip"
+              ],
+              "uk": [
+                "виділений ip"
+              ],
+              "de": [
+                "dedizierte ip"
+              ],
+              "ru": [
+                "выделенный ip"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "home-broadband",
+              "business-fiber",
+              "vpn-service"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/vpn-service",
+          "slug": "vpn-service",
+          "names": {
+            "en": "VPN Service",
+            "uk": "VPN-послуга",
+            "de": "VPN-Dienst",
+            "ru": "VPN-сервис",
+            "original": "VPN Service"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "vpn service"
+              ],
+              "uk": [
+                "vpn-послуга"
+              ],
+              "de": [
+                "vpn-dienst"
+              ],
+              "ru": [
+                "vpn-сервис"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "home-broadband",
+              "business-fiber",
+              "dedicated-ip"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/mobile-carrier",
       "slug": "mobile-carrier",
-      "names": { "en": "Mobile Carrier", "uk": "Мобільний оператор", "de": "Mobilfunkanbieter", "ru": "Мобильный оператор", "original": "Mobile Carrier" },
-      "altLabels": { "en": ["cellular provider"], "uk": ["оператор зв'язку"], "de": [], "ru": [] },
+      "names": {
+        "en": "Mobile Carrier",
+        "uk": "Мобільний оператор",
+        "de": "Mobilfunkanbieter",
+        "ru": "Мобильный оператор",
+        "original": "Mobile Carrier"
+      },
+      "altLabels": {
+        "en": [
+          "cellular provider"
+        ],
+        "uk": [
+          "оператор зв'язку"
+        ],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=telecommunication",
       "naceRef": "J61.20",
       "schemaOrgType": "LocalBusiness",
       "wikidataId": "Q854090",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/postpaid-plan", "slug": "postpaid-plan", "names": { "en": "Postpaid Plan", "uk": "Контрактний тариф", "de": "Postpaid-Tarif", "ru": "Контрактный тариф", "original": "Postpaid Plan" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/prepaid-plan", "slug": "prepaid-plan", "names": { "en": "Prepaid Plan", "uk": "Передплачений тариф", "de": "Prepaid-Tarif", "ru": "Предоплаченный тариф", "original": "Prepaid Plan" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/family-plan-mobile", "slug": "family-plan-mobile", "names": { "en": "Family Plan", "uk": "Сімейний тариф", "de": "Familientarif", "ru": "Семейный тариф", "original": "Family Plan" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/esim-activation", "slug": "esim-activation", "names": { "en": "eSIM Activation", "uk": "Активація eSIM", "de": "eSIM-Aktivierung", "ru": "Активация eSIM", "original": "eSIM Activation" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/postpaid-plan",
+          "slug": "postpaid-plan",
+          "names": {
+            "en": "Postpaid Plan",
+            "uk": "Контрактний тариф",
+            "de": "Postpaid-Tarif",
+            "ru": "Контрактный тариф",
+            "original": "Postpaid Plan"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "postpaid plan"
+              ],
+              "uk": [
+                "контрактний тариф"
+              ],
+              "de": [
+                "postpaid-tarif"
+              ],
+              "ru": [
+                "контрактный тариф"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "prepaid-plan",
+              "family-plan-mobile",
+              "esim-activation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/prepaid-plan",
+          "slug": "prepaid-plan",
+          "names": {
+            "en": "Prepaid Plan",
+            "uk": "Передплачений тариф",
+            "de": "Prepaid-Tarif",
+            "ru": "Предоплаченный тариф",
+            "original": "Prepaid Plan"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "prepaid plan"
+              ],
+              "uk": [
+                "передплачений тариф"
+              ],
+              "de": [
+                "prepaid-tarif"
+              ],
+              "ru": [
+                "предоплаченный тариф"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "postpaid-plan",
+              "family-plan-mobile",
+              "esim-activation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/family-plan-mobile",
+          "slug": "family-plan-mobile",
+          "names": {
+            "en": "Family Plan",
+            "uk": "Сімейний тариф",
+            "de": "Familientarif",
+            "ru": "Семейный тариф",
+            "original": "Family Plan"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "family plan"
+              ],
+              "uk": [
+                "сімейний тариф"
+              ],
+              "de": [
+                "familientarif"
+              ],
+              "ru": [
+                "семейный тариф"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "postpaid-plan",
+              "prepaid-plan",
+              "esim-activation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/esim-activation",
+          "slug": "esim-activation",
+          "names": {
+            "en": "eSIM Activation",
+            "uk": "Активація eSIM",
+            "de": "eSIM-Aktivierung",
+            "ru": "Активация eSIM",
+            "original": "eSIM Activation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "esim activation"
+              ],
+              "uk": [
+                "активація esim"
+              ],
+              "de": [
+                "esim-aktivierung"
+              ],
+              "ru": [
+                "активация esim"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "postpaid-plan",
+              "prepaid-plan",
+              "family-plan-mobile"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/newspaper-magazine",
       "slug": "newspaper-magazine",
-      "names": { "en": "Newspaper / Magazine Publisher", "uk": "Газета / Журнал", "de": "Zeitung / Zeitschrift", "ru": "Газета / Журнал", "original": "Newspaper / Magazine Publisher" },
-      "altLabels": { "en": ["press", "editorial"], "uk": ["друковане видання"], "de": [], "ru": [] },
+      "names": {
+        "en": "Newspaper / Magazine Publisher",
+        "uk": "Газета / Журнал",
+        "de": "Zeitung / Zeitschrift",
+        "ru": "Газета / Журнал",
+        "original": "Newspaper / Magazine Publisher"
+      },
+      "altLabels": {
+        "en": [
+          "press",
+          "editorial"
+        ],
+        "uk": [
+          "друковане видання"
+        ],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=newspaper",
       "naceRef": "J58.13+J58.14",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q11032",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/daily-newspaper-edition", "slug": "daily-newspaper-edition", "names": { "en": "Daily Newspaper Edition", "uk": "Щоденний випуск газети", "de": "Tageszeitungsausgabe", "ru": "Ежедневный выпуск газеты", "original": "Daily Newspaper Edition" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/weekly-magazine-edition", "slug": "weekly-magazine-edition", "names": { "en": "Weekly Magazine Edition", "uk": "Щотижневий випуск журналу", "de": "Wöchentliche Magazinausgabe", "ru": "Еженедельный выпуск журнала", "original": "Weekly Magazine Edition" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/online-edition-subscription", "slug": "online-edition-subscription", "names": { "en": "Online Edition Subscription", "uk": "Підписка на онлайн-видання", "de": "Online-Ausgabe-Abonnement", "ru": "Подписка на онлайн-издание", "original": "Online Edition Subscription" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/ad-placement", "slug": "ad-placement", "names": { "en": "Ad Placement", "uk": "Розміщення реклами", "de": "Anzeigenplatzierung", "ru": "Размещение рекламы", "original": "Ad Placement" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/daily-newspaper-edition",
+          "slug": "daily-newspaper-edition",
+          "names": {
+            "en": "Daily Newspaper Edition",
+            "uk": "Щоденний випуск газети",
+            "de": "Tageszeitungsausgabe",
+            "ru": "Ежедневный выпуск газеты",
+            "original": "Daily Newspaper Edition"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "daily newspaper edition"
+              ],
+              "uk": [
+                "щоденний випуск газети"
+              ],
+              "de": [
+                "tageszeitungsausgabe"
+              ],
+              "ru": [
+                "ежедневный выпуск газеты"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "weekly-magazine-edition",
+              "online-edition-subscription",
+              "ad-placement"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/weekly-magazine-edition",
+          "slug": "weekly-magazine-edition",
+          "names": {
+            "en": "Weekly Magazine Edition",
+            "uk": "Щотижневий випуск журналу",
+            "de": "Wöchentliche Magazinausgabe",
+            "ru": "Еженедельный выпуск журнала",
+            "original": "Weekly Magazine Edition"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "weekly magazine edition"
+              ],
+              "uk": [
+                "щотижневий випуск журналу"
+              ],
+              "de": [
+                "wöchentliche magazinausgabe"
+              ],
+              "ru": [
+                "еженедельный выпуск журнала"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "daily-newspaper-edition",
+              "online-edition-subscription",
+              "ad-placement"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/online-edition-subscription",
+          "slug": "online-edition-subscription",
+          "names": {
+            "en": "Online Edition Subscription",
+            "uk": "Підписка на онлайн-видання",
+            "de": "Online-Ausgabe-Abonnement",
+            "ru": "Подписка на онлайн-издание",
+            "original": "Online Edition Subscription"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "online edition subscription"
+              ],
+              "uk": [
+                "підписка на онлайн-видання"
+              ],
+              "de": [
+                "online-ausgabe-abonnement"
+              ],
+              "ru": [
+                "подписка на онлайн-издание"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "daily-newspaper-edition",
+              "weekly-magazine-edition",
+              "ad-placement"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ad-placement",
+          "slug": "ad-placement",
+          "names": {
+            "en": "Ad Placement",
+            "uk": "Розміщення реклами",
+            "de": "Anzeigenplatzierung",
+            "ru": "Размещение рекламы",
+            "original": "Ad Placement"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ad placement"
+              ],
+              "uk": [
+                "розміщення реклами"
+              ],
+              "de": [
+                "anzeigenplatzierung"
+              ],
+              "ru": [
+                "размещение рекламы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "daily-newspaper-edition",
+              "weekly-magazine-edition",
+              "online-edition-subscription"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/radio-station",
       "slug": "radio-station",
-      "names": { "en": "Radio Station", "uk": "Радіостанція", "de": "Radiosender", "ru": "Радиостанция", "original": "Radio Station" },
-      "altLabels": { "en": ["broadcaster"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Radio Station",
+        "uk": "Радіостанція",
+        "de": "Radiosender",
+        "ru": "Радиостанция",
+        "original": "Radio Station"
+      },
+      "altLabels": {
+        "en": [
+          "broadcaster"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=broadcaster+broadcast=radio",
       "naceRef": "J60.10",
       "schemaOrgType": "RadioBroadcastService",
       "wikidataId": "Q14350",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/radio-ad-slot", "slug": "radio-ad-slot", "names": { "en": "Radio Ad Slot", "uk": "Рекламний слот на радіо", "de": "Radio-Werbeslot", "ru": "Рекламный слот на радио", "original": "Radio Ad Slot" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/live-show-sponsorship", "slug": "live-show-sponsorship", "names": { "en": "Live Show Sponsorship", "uk": "Спонсорство прямого ефіру", "de": "Live-Show-Sponsoring", "ru": "Спонсорство прямого эфира", "original": "Live Show Sponsorship" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/podcast-distribution-radio", "slug": "podcast-distribution-radio", "names": { "en": "Podcast Distribution", "uk": "Дистрибуція подкасту", "de": "Podcast-Distribution", "ru": "Дистрибуция подкаста", "original": "Podcast Distribution" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/jingle-production", "slug": "jingle-production", "names": { "en": "Jingle Production", "uk": "Виробництво джинглів", "de": "Jingle-Produktion", "ru": "Производство джинглов", "original": "Jingle Production" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/radio-ad-slot",
+          "slug": "radio-ad-slot",
+          "names": {
+            "en": "Radio Ad Slot",
+            "uk": "Рекламний слот на радіо",
+            "de": "Radio-Werbeslot",
+            "ru": "Рекламный слот на радио",
+            "original": "Radio Ad Slot"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "radio ad slot"
+              ],
+              "uk": [
+                "рекламний слот на радіо"
+              ],
+              "de": [
+                "radio-werbeslot"
+              ],
+              "ru": [
+                "рекламный слот на радио"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "live-show-sponsorship",
+              "podcast-distribution-radio",
+              "jingle-production"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/live-show-sponsorship",
+          "slug": "live-show-sponsorship",
+          "names": {
+            "en": "Live Show Sponsorship",
+            "uk": "Спонсорство прямого ефіру",
+            "de": "Live-Show-Sponsoring",
+            "ru": "Спонсорство прямого эфира",
+            "original": "Live Show Sponsorship"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "live show sponsorship"
+              ],
+              "uk": [
+                "спонсорство прямого ефіру"
+              ],
+              "de": [
+                "live-show-sponsoring"
+              ],
+              "ru": [
+                "спонсорство прямого эфира"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "radio-ad-slot",
+              "podcast-distribution-radio",
+              "jingle-production"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/podcast-distribution-radio",
+          "slug": "podcast-distribution-radio",
+          "names": {
+            "en": "Podcast Distribution",
+            "uk": "Дистрибуція подкасту",
+            "de": "Podcast-Distribution",
+            "ru": "Дистрибуция подкаста",
+            "original": "Podcast Distribution"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "podcast distribution"
+              ],
+              "uk": [
+                "дистрибуція подкасту"
+              ],
+              "de": [
+                "podcast-distribution"
+              ],
+              "ru": [
+                "дистрибуция подкаста"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "radio-ad-slot",
+              "live-show-sponsorship",
+              "jingle-production"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/jingle-production",
+          "slug": "jingle-production",
+          "names": {
+            "en": "Jingle Production",
+            "uk": "Виробництво джинглів",
+            "de": "Jingle-Produktion",
+            "ru": "Производство джинглов",
+            "original": "Jingle Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "jingle production"
+              ],
+              "uk": [
+                "виробництво джинглів"
+              ],
+              "de": [
+                "jingle-produktion"
+              ],
+              "ru": [
+                "производство джинглов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "radio-ad-slot",
+              "live-show-sponsorship",
+              "podcast-distribution-radio"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/tv-station",
       "slug": "tv-station",
-      "names": { "en": "TV Station", "uk": "Телеканал", "de": "Fernsehsender", "ru": "Телеканал", "original": "TV Station" },
-      "altLabels": { "en": ["television station"], "uk": ["телеканал"], "de": [], "ru": [] },
+      "names": {
+        "en": "TV Station",
+        "uk": "Телеканал",
+        "de": "Fernsehsender",
+        "ru": "Телеканал",
+        "original": "TV Station"
+      },
+      "altLabels": {
+        "en": [
+          "television station"
+        ],
+        "uk": [
+          "телеканал"
+        ],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=broadcaster+broadcast=tv",
       "naceRef": "J60.20",
       "schemaOrgType": "TelevisionStation",
       "wikidataId": "Q1616075",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/tv-ad-slot", "slug": "tv-ad-slot", "names": { "en": "TV Ad Slot", "uk": "Рекламний слот на ТБ", "de": "TV-Werbeslot", "ru": "Рекламный слот на ТВ", "original": "TV Ad Slot" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/tv-show-production", "slug": "tv-show-production", "names": { "en": "TV Show Production", "uk": "Виробництво телешоу", "de": "TV-Show-Produktion", "ru": "Производство телешоу", "original": "TV Show Production" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/livestream-broadcast", "slug": "livestream-broadcast", "names": { "en": "Livestream Broadcast", "uk": "Пряма трансляція", "de": "Livestream-Übertragung", "ru": "Прямая трансляция", "original": "Livestream Broadcast" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/tv-sponsorship", "slug": "tv-sponsorship", "names": { "en": "TV Sponsorship", "uk": "ТВ-спонсорство", "de": "TV-Sponsoring", "ru": "ТВ-спонсорство", "original": "TV Sponsorship" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tv-ad-slot",
+          "slug": "tv-ad-slot",
+          "names": {
+            "en": "TV Ad Slot",
+            "uk": "Рекламний слот на ТБ",
+            "de": "TV-Werbeslot",
+            "ru": "Рекламный слот на ТВ",
+            "original": "TV Ad Slot"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "tv ad slot"
+              ],
+              "uk": [
+                "рекламний слот на тб"
+              ],
+              "de": [
+                "tv-werbeslot"
+              ],
+              "ru": [
+                "рекламный слот на тв"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tv-show-production",
+              "livestream-broadcast",
+              "tv-sponsorship"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tv-show-production",
+          "slug": "tv-show-production",
+          "names": {
+            "en": "TV Show Production",
+            "uk": "Виробництво телешоу",
+            "de": "TV-Show-Produktion",
+            "ru": "Производство телешоу",
+            "original": "TV Show Production"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "tv show production"
+              ],
+              "uk": [
+                "виробництво телешоу"
+              ],
+              "de": [
+                "tv-show-produktion"
+              ],
+              "ru": [
+                "производство телешоу"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tv-ad-slot",
+              "livestream-broadcast",
+              "tv-sponsorship"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/livestream-broadcast",
+          "slug": "livestream-broadcast",
+          "names": {
+            "en": "Livestream Broadcast",
+            "uk": "Пряма трансляція",
+            "de": "Livestream-Übertragung",
+            "ru": "Прямая трансляция",
+            "original": "Livestream Broadcast"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "livestream broadcast"
+              ],
+              "uk": [
+                "пряма трансляція"
+              ],
+              "de": [
+                "livestream-übertragung"
+              ],
+              "ru": [
+                "прямая трансляция"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tv-ad-slot",
+              "tv-show-production",
+              "tv-sponsorship"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tv-sponsorship",
+          "slug": "tv-sponsorship",
+          "names": {
+            "en": "TV Sponsorship",
+            "uk": "ТВ-спонсорство",
+            "de": "TV-Sponsoring",
+            "ru": "ТВ-спонсорство",
+            "original": "TV Sponsorship"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "tv sponsorship"
+              ],
+              "uk": [
+                "тв-спонсорство"
+              ],
+              "de": [
+                "tv-sponsoring"
+              ],
+              "ru": [
+                "тв-спонсорство"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tv-ad-slot",
+              "tv-show-production",
+              "livestream-broadcast"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/cable-tv",
       "slug": "cable-tv",
-      "names": { "en": "Cable TV", "uk": "Кабельне ТБ", "de": "Kabelfernsehen", "ru": "Кабельное ТВ", "original": "Cable TV" },
-      "altLabels": { "en": ["cable provider"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Cable TV",
+        "uk": "Кабельне ТБ",
+        "de": "Kabelfernsehen",
+        "ru": "Кабельное ТВ",
+        "original": "Cable TV"
+      },
+      "altLabels": {
+        "en": [
+          "cable provider"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=telecommunication+telecom=cable_tv",
       "naceRef": "J61.10",
       "schemaOrgType": "LocalBusiness",
       "wikidataId": "Q5014088",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/cable-tv-plan", "slug": "cable-tv-plan", "names": { "en": "Cable TV Plan", "uk": "Тариф кабельного ТБ", "de": "Kabel-TV-Tarif", "ru": "Тариф кабельного ТВ", "original": "Cable TV Plan" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/bundle-with-internet", "slug": "bundle-with-internet", "names": { "en": "Bundle with Internet", "uk": "Пакет з інтернетом", "de": "Bündel mit Internet", "ru": "Пакет с интернетом", "original": "Bundle with Internet" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/premium-channels", "slug": "premium-channels", "names": { "en": "Premium Channels", "uk": "Преміум-канали", "de": "Premium-Kanäle", "ru": "Премиум-каналы", "original": "Premium Channels" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/set-top-box-rental", "slug": "set-top-box-rental", "names": { "en": "Set-top Box Rental", "uk": "Оренда ТВ-приставки", "de": "Set-Top-Box-Miete", "ru": "Аренда ТВ-приставки", "original": "Set-top Box Rental" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cable-tv-plan",
+          "slug": "cable-tv-plan",
+          "names": {
+            "en": "Cable TV Plan",
+            "uk": "Тариф кабельного ТБ",
+            "de": "Kabel-TV-Tarif",
+            "ru": "Тариф кабельного ТВ",
+            "original": "Cable TV Plan"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "cable tv plan"
+              ],
+              "uk": [
+                "тариф кабельного тб"
+              ],
+              "de": [
+                "kabel-tv-tarif"
+              ],
+              "ru": [
+                "тариф кабельного тв"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "bundle-with-internet",
+              "premium-channels",
+              "set-top-box-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/bundle-with-internet",
+          "slug": "bundle-with-internet",
+          "names": {
+            "en": "Bundle with Internet",
+            "uk": "Пакет з інтернетом",
+            "de": "Bündel mit Internet",
+            "ru": "Пакет с интернетом",
+            "original": "Bundle with Internet"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "bundle with internet"
+              ],
+              "uk": [
+                "пакет з інтернетом"
+              ],
+              "de": [
+                "bündel mit internet"
+              ],
+              "ru": [
+                "пакет с интернетом"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "cable-tv-plan",
+              "premium-channels",
+              "set-top-box-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/premium-channels",
+          "slug": "premium-channels",
+          "names": {
+            "en": "Premium Channels",
+            "uk": "Преміум-канали",
+            "de": "Premium-Kanäle",
+            "ru": "Премиум-каналы",
+            "original": "Premium Channels"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "premium channels"
+              ],
+              "uk": [
+                "преміум-канали"
+              ],
+              "de": [
+                "premium-kanäle"
+              ],
+              "ru": [
+                "премиум-каналы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "cable-tv-plan",
+              "bundle-with-internet",
+              "set-top-box-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/set-top-box-rental",
+          "slug": "set-top-box-rental",
+          "names": {
+            "en": "Set-top Box Rental",
+            "uk": "Оренда ТВ-приставки",
+            "de": "Set-Top-Box-Miete",
+            "ru": "Аренда ТВ-приставки",
+            "original": "Set-top Box Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "set-top box rental"
+              ],
+              "uk": [
+                "оренда тв-приставки"
+              ],
+              "de": [
+                "set-top-box-miete"
+              ],
+              "ru": [
+                "аренда тв-приставки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "cable-tv-plan",
+              "bundle-with-internet",
+              "premium-channels"
+            ]
+          }
+        }
       ]
     }
   ]

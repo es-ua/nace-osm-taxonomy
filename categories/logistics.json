@@ -11,10 +11,23 @@
     "original": "Logistics & Warehousing"
   },
   "altLabels": {
-    "en": ["transport", "shipping", "freight"],
-    "uk": ["транспорт", "перевезення"],
-    "de": ["transport", "spedition"],
-    "ru": ["транспорт", "перевозки"]
+    "en": [
+      "transport",
+      "shipping",
+      "freight"
+    ],
+    "uk": [
+      "транспорт",
+      "перевезення"
+    ],
+    "de": [
+      "transport",
+      "spedition"
+    ],
+    "ru": [
+      "транспорт",
+      "перевозки"
+    ]
   },
   "icon": "🚛",
   "naceRef": "H49+H52+H53",
@@ -32,10 +45,22 @@
         "original": "Courier Service"
       },
       "altLabels": {
-        "en": ["delivery", "messenger"],
-        "uk": ["доставка", "посильний"],
-        "de": ["lieferdienst", "bote"],
-        "ru": ["доставка", "посыльный"]
+        "en": [
+          "delivery",
+          "messenger"
+        ],
+        "uk": [
+          "доставка",
+          "посильний"
+        ],
+        "de": [
+          "lieferdienst",
+          "bote"
+        ],
+        "ru": [
+          "доставка",
+          "посыльный"
+        ]
       },
       "osmTag": "office=courier",
       "naceRef": "H53.20",
@@ -52,7 +77,37 @@
             "ru": "Курьер в день заказа",
             "original": "Same-Day Courier"
           },
-          "crossLinks": ["next-day-courier", "document-delivery"]
+          "crossLinks": [
+            "next-day-courier",
+            "document-delivery"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "same-day courier"
+              ],
+              "uk": [
+                "кур'єр день в день"
+              ],
+              "de": [
+                "same-day-kurier"
+              ],
+              "ru": [
+                "курьер в день заказа"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "next-day-courier",
+              "document-delivery",
+              "b2b-courier"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/next-day-courier",
@@ -64,7 +119,37 @@
             "ru": "Курьер на следующий день",
             "original": "Next-Day Courier"
           },
-          "crossLinks": ["same-day-courier", "b2b-courier"]
+          "crossLinks": [
+            "same-day-courier",
+            "b2b-courier"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "next-day courier"
+              ],
+              "uk": [
+                "кур'єр на наступний день"
+              ],
+              "de": [
+                "next-day-kurier"
+              ],
+              "ru": [
+                "курьер на следующий день"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "same-day-courier",
+              "document-delivery",
+              "b2b-courier"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/document-delivery",
@@ -76,7 +161,37 @@
             "ru": "Доставка документов",
             "original": "Document Delivery"
           },
-          "crossLinks": ["same-day-courier", "b2b-courier"]
+          "crossLinks": [
+            "same-day-courier",
+            "b2b-courier"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "document delivery"
+              ],
+              "uk": [
+                "доставка документів"
+              ],
+              "de": [
+                "dokumentenzustellung"
+              ],
+              "ru": [
+                "доставка документов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "same-day-courier",
+              "next-day-courier",
+              "b2b-courier"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/b2b-courier",
@@ -88,7 +203,37 @@
             "ru": "B2B-курьер",
             "original": "B2B Courier"
           },
-          "crossLinks": ["next-day-courier", "document-delivery"]
+          "crossLinks": [
+            "next-day-courier",
+            "document-delivery"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "b2b courier"
+              ],
+              "uk": [
+                "b2b-кур'єр"
+              ],
+              "de": [
+                "b2b-kurier"
+              ],
+              "ru": [
+                "b2b-курьер"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "same-day-courier",
+              "next-day-courier",
+              "document-delivery"
+            ]
+          }
         }
       ]
     },
@@ -103,10 +248,21 @@
         "original": "Parcel Locker"
       },
       "altLabels": {
-        "en": ["pickup locker", "package locker"],
-        "uk": ["пакетомат"],
-        "de": ["packstation", "paketautomat"],
-        "ru": ["пакетомат", "пункт выдачи"]
+        "en": [
+          "pickup locker",
+          "package locker"
+        ],
+        "uk": [
+          "пакетомат"
+        ],
+        "de": [
+          "packstation",
+          "paketautomat"
+        ],
+        "ru": [
+          "пакетомат",
+          "пункт выдачи"
+        ]
       },
       "osmTag": "amenity=parcel_locker",
       "naceRef": "H53.20",
@@ -123,7 +279,34 @@
             "ru": "Получение посылки",
             "original": "Parcel Pickup"
           },
-          "crossLinks": ["parcel-dropoff"]
+          "crossLinks": [
+            "parcel-dropoff"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "parcel pickup"
+              ],
+              "uk": [
+                "отримання посилки"
+              ],
+              "de": [
+                "paketabholung"
+              ],
+              "ru": [
+                "получение посылки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "parcel-dropoff"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/parcel-dropoff",
@@ -135,7 +318,34 @@
             "ru": "Отправка посылки",
             "original": "Parcel Drop-off"
           },
-          "crossLinks": ["parcel-pickup"]
+          "crossLinks": [
+            "parcel-pickup"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "parcel drop-off"
+              ],
+              "uk": [
+                "відправлення посилки"
+              ],
+              "de": [
+                "paketabgabe"
+              ],
+              "ru": [
+                "отправка посылки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "parcel-pickup"
+            ]
+          }
         }
       ]
     },
@@ -150,10 +360,22 @@
         "original": "Freight Forwarder"
       },
       "altLabels": {
-        "en": ["forwarding agent", "logistics provider"],
-        "uk": ["транспортна компанія", "експедиція"],
-        "de": ["spedition", "logistikdienstleister"],
-        "ru": ["транспортная компания", "экспедиция"]
+        "en": [
+          "forwarding agent",
+          "logistics provider"
+        ],
+        "uk": [
+          "транспортна компанія",
+          "експедиція"
+        ],
+        "de": [
+          "spedition",
+          "logistikdienstleister"
+        ],
+        "ru": [
+          "транспортная компания",
+          "экспедиция"
+        ]
       },
       "osmTag": "office=logistics",
       "naceRef": "H52.29",
@@ -170,7 +392,37 @@
             "ru": "Международные перевозки",
             "original": "International Freight"
           },
-          "crossLinks": ["customs-brokerage", "b2b-cargo"]
+          "crossLinks": [
+            "customs-brokerage",
+            "b2b-cargo"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "international freight"
+              ],
+              "uk": [
+                "міжнародні перевезення"
+              ],
+              "de": [
+                "internationale fracht"
+              ],
+              "ru": [
+                "международные перевозки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "customs-brokerage",
+              "b2b-cargo",
+              "oversize-cargo"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/customs-brokerage",
@@ -182,7 +434,37 @@
             "ru": "Таможенное оформление",
             "original": "Customs Brokerage"
           },
-          "crossLinks": ["international-freight", "import-clearance"]
+          "crossLinks": [
+            "international-freight",
+            "import-clearance"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "customs brokerage"
+              ],
+              "uk": [
+                "митне оформлення"
+              ],
+              "de": [
+                "zollabwicklung"
+              ],
+              "ru": [
+                "таможенное оформление"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "international-freight",
+              "b2b-cargo",
+              "oversize-cargo"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/b2b-cargo",
@@ -194,7 +476,37 @@
             "ru": "B2B-грузы",
             "original": "B2B Cargo"
           },
-          "crossLinks": ["international-freight", "oversize-cargo"]
+          "crossLinks": [
+            "international-freight",
+            "oversize-cargo"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "b2b cargo"
+              ],
+              "uk": [
+                "b2b-вантажі"
+              ],
+              "de": [
+                "b2b-fracht"
+              ],
+              "ru": [
+                "b2b-грузы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "international-freight",
+              "customs-brokerage",
+              "oversize-cargo"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/oversize-cargo",
@@ -206,7 +518,37 @@
             "ru": "Негабаритные грузы",
             "original": "Oversize Cargo"
           },
-          "crossLinks": ["b2b-cargo", "international-freight"]
+          "crossLinks": [
+            "b2b-cargo",
+            "international-freight"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "oversize cargo"
+              ],
+              "uk": [
+                "негабаритні вантажі"
+              ],
+              "de": [
+                "schwertransport"
+              ],
+              "ru": [
+                "негабаритные грузы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "international-freight",
+              "customs-brokerage",
+              "b2b-cargo"
+            ]
+          }
         }
       ]
     },
@@ -221,10 +563,20 @@
         "original": "Customs Broker"
       },
       "altLabels": {
-        "en": ["customs agent", "import agent"],
-        "uk": ["митний агент"],
-        "de": ["zollvertreter", "zollabwickler"],
-        "ru": ["таможенный агент"]
+        "en": [
+          "customs agent",
+          "import agent"
+        ],
+        "uk": [
+          "митний агент"
+        ],
+        "de": [
+          "zollvertreter",
+          "zollabwickler"
+        ],
+        "ru": [
+          "таможенный агент"
+        ]
       },
       "osmTag": "office=customs_broker",
       "naceRef": "H52.29",
@@ -241,7 +593,36 @@
             "ru": "Импортное оформление",
             "original": "Import Clearance"
           },
-          "crossLinks": ["export-docs", "hs-code-classification"]
+          "crossLinks": [
+            "export-docs",
+            "hs-code-classification"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "import clearance"
+              ],
+              "uk": [
+                "імпортне оформлення"
+              ],
+              "de": [
+                "importabfertigung"
+              ],
+              "ru": [
+                "импортное оформление"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "export-docs",
+              "hs-code-classification"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/export-docs",
@@ -253,7 +634,36 @@
             "ru": "Экспортная документация",
             "original": "Export Documentation"
           },
-          "crossLinks": ["import-clearance", "hs-code-classification"]
+          "crossLinks": [
+            "import-clearance",
+            "hs-code-classification"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "export documentation"
+              ],
+              "uk": [
+                "експортна документація"
+              ],
+              "de": [
+                "exportdokumentation"
+              ],
+              "ru": [
+                "экспортная документация"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "import-clearance",
+              "hs-code-classification"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/hs-code-classification",
@@ -265,7 +675,36 @@
             "ru": "Классификация по ТН ВЭД",
             "original": "HS Code Classification"
           },
-          "crossLinks": ["import-clearance", "export-docs"]
+          "crossLinks": [
+            "import-clearance",
+            "export-docs"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hs code classification"
+              ],
+              "uk": [
+                "класифікація за уктзед"
+              ],
+              "de": [
+                "hs-code-einreihung"
+              ],
+              "ru": [
+                "классификация по тн вэд"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "import-clearance",
+              "export-docs"
+            ]
+          }
         }
       ]
     },
@@ -280,10 +719,21 @@
         "original": "Self-Storage"
       },
       "altLabels": {
-        "en": ["storage units"],
-        "uk": ["оренда складу", "склад на зберігання"],
-        "de": ["lagerraum", "mietlager"],
-        "ru": ["склад в аренду", "хранение вещей"]
+        "en": [
+          "storage units"
+        ],
+        "uk": [
+          "оренда складу",
+          "склад на зберігання"
+        ],
+        "de": [
+          "lagerraum",
+          "mietlager"
+        ],
+        "ru": [
+          "склад в аренду",
+          "хранение вещей"
+        ]
       },
       "osmTag": "shop=storage_rental",
       "naceRef": "H52.10",
@@ -300,7 +750,37 @@
             "ru": "Маленький бокс",
             "original": "Small Storage Unit"
           },
-          "crossLinks": ["storage-unit-large", "climate-controlled-storage"]
+          "crossLinks": [
+            "storage-unit-large",
+            "climate-controlled-storage"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "small storage unit"
+              ],
+              "uk": [
+                "малий склад"
+              ],
+              "de": [
+                "kleines lagerabteil"
+              ],
+              "ru": [
+                "маленький бокс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "storage-unit-large",
+              "climate-controlled-storage",
+              "business-storage"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/storage-unit-large",
@@ -312,7 +792,37 @@
             "ru": "Большой бокс",
             "original": "Large Storage Unit"
           },
-          "crossLinks": ["storage-unit-small", "business-storage"]
+          "crossLinks": [
+            "storage-unit-small",
+            "business-storage"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "large storage unit"
+              ],
+              "uk": [
+                "великий склад"
+              ],
+              "de": [
+                "großes lagerabteil"
+              ],
+              "ru": [
+                "большой бокс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "storage-unit-small",
+              "climate-controlled-storage",
+              "business-storage"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/climate-controlled-storage",
@@ -324,7 +834,37 @@
             "ru": "Склад с климат-контролем",
             "original": "Climate-Controlled Storage"
           },
-          "crossLinks": ["storage-unit-small", "storage-unit-large"]
+          "crossLinks": [
+            "storage-unit-small",
+            "storage-unit-large"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "climate-controlled storage"
+              ],
+              "uk": [
+                "склад з кліматконтролем"
+              ],
+              "de": [
+                "klimatisiertes lager"
+              ],
+              "ru": [
+                "склад с климат-контролем"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "storage-unit-small",
+              "storage-unit-large",
+              "business-storage"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/business-storage",
@@ -336,7 +876,37 @@
             "ru": "Бизнес-хранение",
             "original": "Business Storage"
           },
-          "crossLinks": ["storage-unit-large", "climate-controlled-storage"]
+          "crossLinks": [
+            "storage-unit-large",
+            "climate-controlled-storage"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "business storage"
+              ],
+              "uk": [
+                "бізнес-зберігання"
+              ],
+              "de": [
+                "geschäftslager"
+              ],
+              "ru": [
+                "бизнес-хранение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "storage-unit-small",
+              "storage-unit-large",
+              "climate-controlled-storage"
+            ]
+          }
         }
       ]
     },
@@ -351,10 +921,20 @@
         "original": "Taxi Service"
       },
       "altLabels": {
-        "en": ["cab", "ride service"],
-        "uk": ["служба таксі"],
-        "de": ["taxiunternehmen", "droschke"],
-        "ru": ["служба такси"]
+        "en": [
+          "cab",
+          "ride service"
+        ],
+        "uk": [
+          "служба таксі"
+        ],
+        "de": [
+          "taxiunternehmen",
+          "droschke"
+        ],
+        "ru": [
+          "служба такси"
+        ]
       },
       "osmTag": "amenity=taxi",
       "naceRef": "H49.32",
@@ -371,7 +951,36 @@
             "ru": "Поездка по городу",
             "original": "City Ride"
           },
-          "crossLinks": ["airport-transfer", "hourly-rental"]
+          "crossLinks": [
+            "airport-transfer",
+            "hourly-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "city ride"
+              ],
+              "uk": [
+                "поїздка містом"
+              ],
+              "de": [
+                "stadtfahrt"
+              ],
+              "ru": [
+                "поездка по городу"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "airport-transfer",
+              "hourly-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/airport-transfer",
@@ -383,7 +992,36 @@
             "ru": "Трансфер в аэропорт",
             "original": "Airport Transfer"
           },
-          "crossLinks": ["city-ride", "hourly-rental"]
+          "crossLinks": [
+            "city-ride",
+            "hourly-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "airport transfer"
+              ],
+              "uk": [
+                "трансфер до аеропорту"
+              ],
+              "de": [
+                "flughafentransfer"
+              ],
+              "ru": [
+                "трансфер в аэропорт"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "city-ride",
+              "hourly-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/hourly-rental",
@@ -395,7 +1033,36 @@
             "ru": "Почасовая аренда",
             "original": "Hourly Rental"
           },
-          "crossLinks": ["city-ride", "airport-transfer"]
+          "crossLinks": [
+            "city-ride",
+            "airport-transfer"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hourly rental"
+              ],
+              "uk": [
+                "погодинна оренда"
+              ],
+              "de": [
+                "stundenmiete"
+              ],
+              "ru": [
+                "почасовая аренда"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "city-ride",
+              "airport-transfer"
+            ]
+          }
         }
       ]
     },
@@ -410,10 +1077,20 @@
         "original": "Bus Charter"
       },
       "altLabels": {
-        "en": ["coach hire"],
-        "uk": ["оренда автобуса з водієм"],
-        "de": ["busvermietung", "reisebus mieten"],
-        "ru": ["аренда автобуса", "заказ микроавтобуса"]
+        "en": [
+          "coach hire"
+        ],
+        "uk": [
+          "оренда автобуса з водієм"
+        ],
+        "de": [
+          "busvermietung",
+          "reisebus mieten"
+        ],
+        "ru": [
+          "аренда автобуса",
+          "заказ микроавтобуса"
+        ]
       },
       "osmTag": "amenity=bus_station",
       "naceRef": "H49.39",
@@ -430,7 +1107,36 @@
             "ru": "Автобус на мероприятие",
             "original": "Event Bus"
           },
-          "crossLinks": ["school-trip", "tour-bus"]
+          "crossLinks": [
+            "school-trip",
+            "tour-bus"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "event bus"
+              ],
+              "uk": [
+                "автобус на подію"
+              ],
+              "de": [
+                "eventbus"
+              ],
+              "ru": [
+                "автобус на мероприятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "school-trip",
+              "tour-bus"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/school-trip",
@@ -442,7 +1148,36 @@
             "ru": "Школьная поездка",
             "original": "School Trip"
           },
-          "crossLinks": ["event-bus", "tour-bus"]
+          "crossLinks": [
+            "event-bus",
+            "tour-bus"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "school trip"
+              ],
+              "uk": [
+                "шкільна екскурсія"
+              ],
+              "de": [
+                "schulausflug"
+              ],
+              "ru": [
+                "школьная поездка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "event-bus",
+              "tour-bus"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/tour-bus",
@@ -454,7 +1189,36 @@
             "ru": "Туристический автобус",
             "original": "Tour Bus"
           },
-          "crossLinks": ["event-bus", "school-trip"]
+          "crossLinks": [
+            "event-bus",
+            "school-trip"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "tour bus"
+              ],
+              "uk": [
+                "туристичний автобус"
+              ],
+              "de": [
+                "reisebus"
+              ],
+              "ru": [
+                "туристический автобус"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "event-bus",
+              "school-trip"
+            ]
+          }
         }
       ]
     },
@@ -469,10 +1233,21 @@
         "original": "Truck Rental"
       },
       "altLabels": {
-        "en": ["lorry hire", "van rental"],
-        "uk": ["прокат вантажівок"],
-        "de": ["lkw-mieten", "transportermiete"],
-        "ru": ["прокат грузовиков", "аренда фургона"]
+        "en": [
+          "lorry hire",
+          "van rental"
+        ],
+        "uk": [
+          "прокат вантажівок"
+        ],
+        "de": [
+          "lkw-mieten",
+          "transportermiete"
+        ],
+        "ru": [
+          "прокат грузовиков",
+          "аренда фургона"
+        ]
       },
       "osmTag": "amenity=vehicle_rental",
       "naceRef": "N77.12",
@@ -489,7 +1264,37 @@
             "ru": "Аренда фургона",
             "original": "Box Truck Rental"
           },
-          "crossLinks": ["moving-truck-rental", "flatbed-rental"]
+          "crossLinks": [
+            "moving-truck-rental",
+            "flatbed-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "box truck rental"
+              ],
+              "uk": [
+                "оренда фургона"
+              ],
+              "de": [
+                "kofferaufbau-lkw-miete"
+              ],
+              "ru": [
+                "аренда фургона"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "refrigerated-truck-rental",
+              "moving-truck-rental",
+              "flatbed-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/refrigerated-truck-rental",
@@ -501,7 +1306,37 @@
             "ru": "Аренда рефрижератора",
             "original": "Refrigerated Truck Rental"
           },
-          "crossLinks": ["box-truck-rental", "flatbed-rental"]
+          "crossLinks": [
+            "box-truck-rental",
+            "flatbed-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "refrigerated truck rental"
+              ],
+              "uk": [
+                "оренда рефрижератора"
+              ],
+              "de": [
+                "kühl-lkw-miete"
+              ],
+              "ru": [
+                "аренда рефрижератора"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "box-truck-rental",
+              "moving-truck-rental",
+              "flatbed-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/moving-truck-rental",
@@ -513,7 +1348,37 @@
             "ru": "Аренда грузовика для переезда",
             "original": "Moving Truck Rental"
           },
-          "crossLinks": ["box-truck-rental", "flatbed-rental"]
+          "crossLinks": [
+            "box-truck-rental",
+            "flatbed-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "moving truck rental"
+              ],
+              "uk": [
+                "оренда вантажівки для переїзду"
+              ],
+              "de": [
+                "umzugs-lkw-miete"
+              ],
+              "ru": [
+                "аренда грузовика для переезда"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "box-truck-rental",
+              "refrigerated-truck-rental",
+              "flatbed-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/flatbed-rental",
@@ -525,7 +1390,37 @@
             "ru": "Аренда бортового грузовика",
             "original": "Flatbed Rental"
           },
-          "crossLinks": ["box-truck-rental", "moving-truck-rental"]
+          "crossLinks": [
+            "box-truck-rental",
+            "moving-truck-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "flatbed rental"
+              ],
+              "uk": [
+                "оренда бортової вантажівки"
+              ],
+              "de": [
+                "pritschenwagen-miete"
+              ],
+              "ru": [
+                "аренда бортового грузовика"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "box-truck-rental",
+              "refrigerated-truck-rental",
+              "moving-truck-rental"
+            ]
+          }
         }
       ]
     },
@@ -540,8 +1435,12 @@
         "original": "Airline"
       },
       "altLabels": {
-        "en": ["air carrier"],
-        "uk": ["перевізник"],
+        "en": [
+          "air carrier"
+        ],
+        "uk": [
+          "перевізник"
+        ],
         "de": [],
         "ru": []
       },
@@ -560,7 +1459,37 @@
             "ru": "Бронирование регулярного рейса",
             "original": "Scheduled Flight Booking"
           },
-          "crossLinks": ["charter-flight", "airline-loyalty"]
+          "crossLinks": [
+            "charter-flight",
+            "airline-loyalty"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "scheduled flight booking"
+              ],
+              "uk": [
+                "бронювання регулярного рейсу"
+              ],
+              "de": [
+                "linienflugbuchung"
+              ],
+              "ru": [
+                "бронирование регулярного рейса"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "charter-flight",
+              "cargo-flight",
+              "airline-loyalty"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/charter-flight",
@@ -572,7 +1501,37 @@
             "ru": "Чартерный рейс",
             "original": "Charter Flight"
           },
-          "crossLinks": ["scheduled-flight-booking", "cargo-flight"]
+          "crossLinks": [
+            "scheduled-flight-booking",
+            "cargo-flight"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "charter flight"
+              ],
+              "uk": [
+                "чартерний рейс"
+              ],
+              "de": [
+                "charterflug"
+              ],
+              "ru": [
+                "чартерный рейс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "scheduled-flight-booking",
+              "cargo-flight",
+              "airline-loyalty"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/cargo-flight",
@@ -584,7 +1543,37 @@
             "ru": "Грузовой рейс",
             "original": "Cargo Flight"
           },
-          "crossLinks": ["charter-flight", "scheduled-flight-booking"]
+          "crossLinks": [
+            "charter-flight",
+            "scheduled-flight-booking"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "cargo flight"
+              ],
+              "uk": [
+                "вантажний рейс"
+              ],
+              "de": [
+                "frachtflug"
+              ],
+              "ru": [
+                "грузовой рейс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "scheduled-flight-booking",
+              "charter-flight",
+              "airline-loyalty"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/airline-loyalty",
@@ -596,7 +1585,37 @@
             "ru": "Программа лояльности авиакомпании",
             "original": "Airline Loyalty Program"
           },
-          "crossLinks": ["scheduled-flight-booking", "charter-flight"]
+          "crossLinks": [
+            "scheduled-flight-booking",
+            "charter-flight"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "airline loyalty program"
+              ],
+              "uk": [
+                "програма лояльності авіакомпанії"
+              ],
+              "de": [
+                "vielfliegerprogramm"
+              ],
+              "ru": [
+                "программа лояльности авиакомпании"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "scheduled-flight-booking",
+              "charter-flight",
+              "cargo-flight"
+            ]
+          }
         }
       ]
     },
@@ -611,10 +1630,18 @@
         "original": "Shipping Line"
       },
       "altLabels": {
-        "en": ["ocean freight"],
-        "uk": ["судноплавство"],
-        "de": ["schifffahrt"],
-        "ru": ["судоходство"]
+        "en": [
+          "ocean freight"
+        ],
+        "uk": [
+          "судноплавство"
+        ],
+        "de": [
+          "schifffahrt"
+        ],
+        "ru": [
+          "судоходство"
+        ]
       },
       "osmTag": "harbour=yes",
       "naceRef": "H50.20",
@@ -631,7 +1658,37 @@
             "ru": "Контейнерные перевозки",
             "original": "Container Shipping"
           },
-          "crossLinks": ["bulk-cargo-shipping", "roro-shipping"]
+          "crossLinks": [
+            "bulk-cargo-shipping",
+            "roro-shipping"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "container shipping"
+              ],
+              "uk": [
+                "контейнерні перевезення"
+              ],
+              "de": [
+                "containerschifffahrt"
+              ],
+              "ru": [
+                "контейнерные перевозки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "bulk-cargo-shipping",
+              "roro-shipping",
+              "passenger-ferry"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/bulk-cargo-shipping",
@@ -643,7 +1700,37 @@
             "ru": "Перевозка навалочных грузов",
             "original": "Bulk Cargo Shipping"
           },
-          "crossLinks": ["container-shipping", "roro-shipping"]
+          "crossLinks": [
+            "container-shipping",
+            "roro-shipping"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "bulk cargo shipping"
+              ],
+              "uk": [
+                "насипні вантажні перевезення"
+              ],
+              "de": [
+                "massengutschifffahrt"
+              ],
+              "ru": [
+                "перевозка навалочных грузов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "container-shipping",
+              "roro-shipping",
+              "passenger-ferry"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/roro-shipping",
@@ -655,7 +1742,37 @@
             "ru": "Ро-Ро перевозки",
             "original": "Ro-Ro Shipping"
           },
-          "crossLinks": ["container-shipping", "bulk-cargo-shipping"]
+          "crossLinks": [
+            "container-shipping",
+            "bulk-cargo-shipping"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ro-ro shipping"
+              ],
+              "uk": [
+                "ро-ро перевезення"
+              ],
+              "de": [
+                "ro-ro-verschiffung"
+              ],
+              "ru": [
+                "ро-ро перевозки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "container-shipping",
+              "bulk-cargo-shipping",
+              "passenger-ferry"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/passenger-ferry",
@@ -667,7 +1784,37 @@
             "ru": "Пассажирский паром",
             "original": "Passenger Ferry"
           },
-          "crossLinks": ["roro-shipping", "container-shipping"]
+          "crossLinks": [
+            "roro-shipping",
+            "container-shipping"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "passenger ferry"
+              ],
+              "uk": [
+                "пасажирський пором"
+              ],
+              "de": [
+                "passagierfähre"
+              ],
+              "ru": [
+                "пассажирский паром"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "container-shipping",
+              "bulk-cargo-shipping",
+              "roro-shipping"
+            ]
+          }
         }
       ]
     },
@@ -682,8 +1829,12 @@
         "original": "Rail Freight"
       },
       "altLabels": {
-        "en": ["freight rail"],
-        "uk": ["залізничні вантажі"],
+        "en": [
+          "freight rail"
+        ],
+        "uk": [
+          "залізничні вантажі"
+        ],
         "de": [],
         "ru": []
       },
@@ -702,7 +1853,37 @@
             "ru": "Контейнерные ж/д перевозки",
             "original": "Container Rail"
           },
-          "crossLinks": ["bulk-rail", "intermodal-rail"]
+          "crossLinks": [
+            "bulk-rail",
+            "intermodal-rail"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "container rail"
+              ],
+              "uk": [
+                "контейнерні залізничні перевезення"
+              ],
+              "de": [
+                "containerbahn"
+              ],
+              "ru": [
+                "контейнерные ж/д перевозки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "bulk-rail",
+              "intermodal-rail",
+              "rail-car-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/bulk-rail",
@@ -714,7 +1895,37 @@
             "ru": "Навалочные ж/д перевозки",
             "original": "Bulk Rail"
           },
-          "crossLinks": ["container-rail", "intermodal-rail"]
+          "crossLinks": [
+            "container-rail",
+            "intermodal-rail"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "bulk rail"
+              ],
+              "uk": [
+                "насипні залізничні перевезення"
+              ],
+              "de": [
+                "massengutbahn"
+              ],
+              "ru": [
+                "навалочные ж/д перевозки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "container-rail",
+              "intermodal-rail",
+              "rail-car-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/intermodal-rail",
@@ -726,7 +1937,37 @@
             "ru": "Интермодальные ж/д перевозки",
             "original": "Intermodal Rail"
           },
-          "crossLinks": ["container-rail", "rail-car-rental"]
+          "crossLinks": [
+            "container-rail",
+            "rail-car-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "intermodal rail"
+              ],
+              "uk": [
+                "інтермодальні залізничні перевезення"
+              ],
+              "de": [
+                "intermodaler schienenverkehr"
+              ],
+              "ru": [
+                "интермодальные ж/д перевозки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "container-rail",
+              "bulk-rail",
+              "rail-car-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/rail-car-rental",
@@ -738,7 +1979,37 @@
             "ru": "Аренда вагонов",
             "original": "Rail Car Rental"
           },
-          "crossLinks": ["intermodal-rail", "bulk-rail"]
+          "crossLinks": [
+            "intermodal-rail",
+            "bulk-rail"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "rail car rental"
+              ],
+              "uk": [
+                "оренда вагонів"
+              ],
+              "de": [
+                "waggonvermietung"
+              ],
+              "ru": [
+                "аренда вагонов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "container-rail",
+              "bulk-rail",
+              "intermodal-rail"
+            ]
+          }
         }
       ]
     },
@@ -753,8 +2024,12 @@
         "original": "Port Services"
       },
       "altLabels": {
-        "en": ["harbour services"],
-        "uk": ["порт"],
+        "en": [
+          "harbour services"
+        ],
+        "uk": [
+          "порт"
+        ],
         "de": [],
         "ru": []
       },
@@ -773,7 +2048,37 @@
             "ru": "Стивидорные работы",
             "original": "Stevedoring"
           },
-          "crossLinks": ["container-handling", "berth-rental"]
+          "crossLinks": [
+            "container-handling",
+            "berth-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "stevedoring"
+              ],
+              "uk": [
+                "стивідорні роботи"
+              ],
+              "de": [
+                "stauerei"
+              ],
+              "ru": [
+                "стивидорные работы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "container-handling",
+              "warehouse-at-port",
+              "berth-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/container-handling",
@@ -785,7 +2090,37 @@
             "ru": "Обработка контейнеров",
             "original": "Container Handling"
           },
-          "crossLinks": ["stevedoring", "warehouse-at-port"]
+          "crossLinks": [
+            "stevedoring",
+            "warehouse-at-port"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "container handling"
+              ],
+              "uk": [
+                "обробка контейнерів"
+              ],
+              "de": [
+                "containerumschlag"
+              ],
+              "ru": [
+                "обработка контейнеров"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "stevedoring",
+              "warehouse-at-port",
+              "berth-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/warehouse-at-port",
@@ -797,7 +2132,37 @@
             "ru": "Портовый склад",
             "original": "Warehouse at Port"
           },
-          "crossLinks": ["container-handling", "berth-rental"]
+          "crossLinks": [
+            "container-handling",
+            "berth-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "warehouse at port"
+              ],
+              "uk": [
+                "склад у порту"
+              ],
+              "de": [
+                "hafenlager"
+              ],
+              "ru": [
+                "портовый склад"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "stevedoring",
+              "container-handling",
+              "berth-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/berth-rental",
@@ -809,7 +2174,37 @@
             "ru": "Аренда причала",
             "original": "Berth Rental"
           },
-          "crossLinks": ["stevedoring", "warehouse-at-port"]
+          "crossLinks": [
+            "stevedoring",
+            "warehouse-at-port"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "berth rental"
+              ],
+              "uk": [
+                "оренда причалу"
+              ],
+              "de": [
+                "liegeplatzvermietung"
+              ],
+              "ru": [
+                "аренда причала"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "stevedoring",
+              "container-handling",
+              "warehouse-at-port"
+            ]
+          }
         }
       ]
     },
@@ -824,8 +2219,12 @@
         "original": "Airport Services"
       },
       "altLabels": {
-        "en": ["ground handling"],
-        "uk": ["аеропорт"],
+        "en": [
+          "ground handling"
+        ],
+        "uk": [
+          "аеропорт"
+        ],
         "de": [],
         "ru": []
       },
@@ -844,7 +2243,37 @@
             "ru": "Наземное обслуживание",
             "original": "Ground Handling"
           },
-          "crossLinks": ["passenger-service", "aircraft-fueling"]
+          "crossLinks": [
+            "passenger-service",
+            "aircraft-fueling"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ground handling"
+              ],
+              "uk": [
+                "наземне обслуговування"
+              ],
+              "de": [
+                "bodenabfertigung"
+              ],
+              "ru": [
+                "наземное обслуживание"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "passenger-service",
+              "airport-lounge",
+              "aircraft-fueling"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/passenger-service",
@@ -856,7 +2285,37 @@
             "ru": "Обслуживание пассажиров",
             "original": "Passenger Service"
           },
-          "crossLinks": ["ground-handling", "airport-lounge"]
+          "crossLinks": [
+            "ground-handling",
+            "airport-lounge"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "passenger service"
+              ],
+              "uk": [
+                "обслуговування пасажирів"
+              ],
+              "de": [
+                "passagierservice"
+              ],
+              "ru": [
+                "обслуживание пассажиров"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ground-handling",
+              "airport-lounge",
+              "aircraft-fueling"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/airport-lounge",
@@ -868,7 +2327,37 @@
             "ru": "Зал ожидания аэропорта",
             "original": "Airport Lounge"
           },
-          "crossLinks": ["passenger-service", "ground-handling"]
+          "crossLinks": [
+            "passenger-service",
+            "ground-handling"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "airport lounge"
+              ],
+              "uk": [
+                "зал очікування в аеропорту"
+              ],
+              "de": [
+                "flughafen-lounge"
+              ],
+              "ru": [
+                "зал ожидания аэропорта"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ground-handling",
+              "passenger-service",
+              "aircraft-fueling"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/aircraft-fueling",
@@ -880,7 +2369,37 @@
             "ru": "Заправка воздушных судов",
             "original": "Aircraft Fueling"
           },
-          "crossLinks": ["ground-handling", "passenger-service"]
+          "crossLinks": [
+            "ground-handling",
+            "passenger-service"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "aircraft fueling"
+              ],
+              "uk": [
+                "заправка літаків"
+              ],
+              "de": [
+                "flugzeugbetankung"
+              ],
+              "ru": [
+                "заправка воздушных судов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ground-handling",
+              "passenger-service",
+              "airport-lounge"
+            ]
+          }
         }
       ]
     },
@@ -895,10 +2414,17 @@
         "original": "Waste Management"
       },
       "altLabels": {
-        "en": ["garbage collection", "trash pickup"],
-        "uk": ["вивезення сміття"],
+        "en": [
+          "garbage collection",
+          "trash pickup"
+        ],
+        "uk": [
+          "вивезення сміття"
+        ],
         "de": [],
-        "ru": ["вывоз мусора"]
+        "ru": [
+          "вывоз мусора"
+        ]
       },
       "osmTag": "amenity=waste_transfer_station",
       "naceRef": "E38.11",
@@ -915,7 +2441,37 @@
             "ru": "Бытовые отходы",
             "original": "Residential Waste"
           },
-          "crossLinks": ["commercial-waste", "construction-debris"]
+          "crossLinks": [
+            "commercial-waste",
+            "construction-debris"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "residential waste"
+              ],
+              "uk": [
+                "побутові відходи"
+              ],
+              "de": [
+                "hausmüll"
+              ],
+              "ru": [
+                "бытовые отходы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "commercial-waste",
+              "construction-debris",
+              "hazardous-waste"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/commercial-waste",
@@ -927,7 +2483,37 @@
             "ru": "Коммерческие отходы",
             "original": "Commercial Waste"
           },
-          "crossLinks": ["residential-waste", "hazardous-waste"]
+          "crossLinks": [
+            "residential-waste",
+            "hazardous-waste"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "commercial waste"
+              ],
+              "uk": [
+                "комерційні відходи"
+              ],
+              "de": [
+                "gewerbeabfall"
+              ],
+              "ru": [
+                "коммерческие отходы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "residential-waste",
+              "construction-debris",
+              "hazardous-waste"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/construction-debris",
@@ -939,7 +2525,37 @@
             "ru": "Строительный мусор",
             "original": "Construction Debris"
           },
-          "crossLinks": ["residential-waste", "hazardous-waste"]
+          "crossLinks": [
+            "residential-waste",
+            "hazardous-waste"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "construction debris"
+              ],
+              "uk": [
+                "будівельні відходи"
+              ],
+              "de": [
+                "bauschutt"
+              ],
+              "ru": [
+                "строительный мусор"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "residential-waste",
+              "commercial-waste",
+              "hazardous-waste"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/hazardous-waste",
@@ -951,7 +2567,37 @@
             "ru": "Опасные отходы",
             "original": "Hazardous Waste"
           },
-          "crossLinks": ["commercial-waste", "construction-debris"]
+          "crossLinks": [
+            "commercial-waste",
+            "construction-debris"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hazardous waste"
+              ],
+              "uk": [
+                "небезпечні відходи"
+              ],
+              "de": [
+                "sondermüll"
+              ],
+              "ru": [
+                "опасные отходы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "residential-waste",
+              "commercial-waste",
+              "construction-debris"
+            ]
+          }
         }
       ]
     },
@@ -966,10 +2612,16 @@
         "original": "Recycling Center"
       },
       "altLabels": {
-        "en": ["recycling drop-off"],
-        "uk": ["пункт переробки"],
+        "en": [
+          "recycling drop-off"
+        ],
+        "uk": [
+          "пункт переробки"
+        ],
         "de": [],
-        "ru": ["пункт сбора"]
+        "ru": [
+          "пункт сбора"
+        ]
       },
       "osmTag": "amenity=recycling",
       "naceRef": "E38.32",
@@ -986,7 +2638,37 @@
             "ru": "Переработка бумаги",
             "original": "Paper Recycling"
           },
-          "crossLinks": ["plastic-recycling", "metal-recycling"]
+          "crossLinks": [
+            "plastic-recycling",
+            "metal-recycling"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "paper recycling"
+              ],
+              "uk": [
+                "переробка паперу"
+              ],
+              "de": [
+                "papierrecycling"
+              ],
+              "ru": [
+                "переработка бумаги"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "plastic-recycling",
+              "metal-recycling",
+              "ewaste-recycling"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/plastic-recycling",
@@ -998,7 +2680,37 @@
             "ru": "Переработка пластика",
             "original": "Plastic Recycling"
           },
-          "crossLinks": ["paper-recycling", "metal-recycling"]
+          "crossLinks": [
+            "paper-recycling",
+            "metal-recycling"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "plastic recycling"
+              ],
+              "uk": [
+                "переробка пластику"
+              ],
+              "de": [
+                "kunststoffrecycling"
+              ],
+              "ru": [
+                "переработка пластика"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "paper-recycling",
+              "metal-recycling",
+              "ewaste-recycling"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/metal-recycling",
@@ -1010,7 +2722,37 @@
             "ru": "Переработка металла",
             "original": "Metal Recycling"
           },
-          "crossLinks": ["paper-recycling", "plastic-recycling"]
+          "crossLinks": [
+            "paper-recycling",
+            "plastic-recycling"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "metal recycling"
+              ],
+              "uk": [
+                "переробка металу"
+              ],
+              "de": [
+                "metallrecycling"
+              ],
+              "ru": [
+                "переработка металла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "paper-recycling",
+              "plastic-recycling",
+              "ewaste-recycling"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/ewaste-recycling",
@@ -1022,7 +2764,37 @@
             "ru": "Переработка электронных отходов",
             "original": "E-Waste Recycling"
           },
-          "crossLinks": ["metal-recycling", "plastic-recycling"]
+          "crossLinks": [
+            "metal-recycling",
+            "plastic-recycling"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "e-waste recycling"
+              ],
+              "uk": [
+                "переробка електронних відходів"
+              ],
+              "de": [
+                "elektroschrott-recycling"
+              ],
+              "ru": [
+                "переработка электронных отходов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "paper-recycling",
+              "plastic-recycling",
+              "metal-recycling"
+            ]
+          }
         }
       ]
     },
@@ -1037,10 +2809,16 @@
         "original": "Water Supply"
       },
       "altLabels": {
-        "en": ["water utility"],
-        "uk": ["водоканал"],
+        "en": [
+          "water utility"
+        ],
+        "uk": [
+          "водоканал"
+        ],
         "de": [],
-        "ru": ["водоканал"]
+        "ru": [
+          "водоканал"
+        ]
       },
       "osmTag": "amenity=water_utility",
       "naceRef": "E36.00",
@@ -1056,6 +2834,33 @@
             "de": "Wasseranschluss",
             "ru": "Подключение воды",
             "original": "Water Hookup"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "water hookup"
+              ],
+              "uk": [
+                "підключення води"
+              ],
+              "de": [
+                "wasseranschluss"
+              ],
+              "ru": [
+                "подключение воды"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "water-meter-reading",
+              "water-quality-test",
+              "leak-repair-utility"
+            ]
           }
         },
         {
@@ -1067,6 +2872,33 @@
             "de": "Wasserzählerablesung",
             "ru": "Снятие показаний счётчика",
             "original": "Water Meter Reading"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "water meter reading"
+              ],
+              "uk": [
+                "зняття показників лічильника"
+              ],
+              "de": [
+                "wasserzählerablesung"
+              ],
+              "ru": [
+                "снятие показаний счётчика"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "water-hookup",
+              "water-quality-test",
+              "leak-repair-utility"
+            ]
           }
         },
         {
@@ -1078,6 +2910,33 @@
             "de": "Wasserqualitätsprüfung",
             "ru": "Анализ качества воды",
             "original": "Water Quality Test"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "water quality test"
+              ],
+              "uk": [
+                "аналіз якості води"
+              ],
+              "de": [
+                "wasserqualitätsprüfung"
+              ],
+              "ru": [
+                "анализ качества воды"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "water-hookup",
+              "water-meter-reading",
+              "leak-repair-utility"
+            ]
           }
         },
         {
@@ -1089,6 +2948,33 @@
             "de": "Leckreparatur",
             "ru": "Устранение утечек",
             "original": "Leak Repair"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "leak repair"
+              ],
+              "uk": [
+                "усунення витоків"
+              ],
+              "de": [
+                "leckreparatur"
+              ],
+              "ru": [
+                "устранение утечек"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "water-hookup",
+              "water-meter-reading",
+              "water-quality-test"
+            ]
           }
         }
       ]
@@ -1104,7 +2990,9 @@
         "original": "Bike Courier"
       },
       "altLabels": {
-        "en": ["bicycle courier"],
+        "en": [
+          "bicycle courier"
+        ],
         "uk": [],
         "de": [],
         "ru": []
@@ -1123,6 +3011,33 @@
             "de": "Innerstädtische Lieferung",
             "ru": "Доставка по городу",
             "original": "Inner-city Delivery"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "inner-city delivery"
+              ],
+              "uk": [
+                "доставка в межах міста"
+              ],
+              "de": [
+                "innerstädtische lieferung"
+              ],
+              "ru": [
+                "доставка по городу"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "food-delivery-bike",
+              "document-delivery-bike",
+              "flowers-delivery-bike"
+            ]
           }
         },
         {
@@ -1134,6 +3049,33 @@
             "de": "Essenslieferung",
             "ru": "Доставка еды",
             "original": "Food Delivery"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "food delivery"
+              ],
+              "uk": [
+                "доставка їжі"
+              ],
+              "de": [
+                "essenslieferung"
+              ],
+              "ru": [
+                "доставка еды"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "inner-city-delivery",
+              "document-delivery-bike",
+              "flowers-delivery-bike"
+            ]
           }
         },
         {
@@ -1145,6 +3087,33 @@
             "de": "Dokumentenzustellung",
             "ru": "Доставка документов",
             "original": "Document Delivery"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "document delivery"
+              ],
+              "uk": [
+                "доставка документів"
+              ],
+              "de": [
+                "dokumentenzustellung"
+              ],
+              "ru": [
+                "доставка документов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "inner-city-delivery",
+              "food-delivery-bike",
+              "flowers-delivery-bike"
+            ]
           }
         },
         {
@@ -1156,6 +3125,33 @@
             "de": "Blumenlieferung",
             "ru": "Доставка цветов",
             "original": "Flowers Delivery"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "flowers delivery"
+              ],
+              "uk": [
+                "доставка квітів"
+              ],
+              "de": [
+                "blumenlieferung"
+              ],
+              "ru": [
+                "доставка цветов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "inner-city-delivery",
+              "food-delivery-bike",
+              "document-delivery-bike"
+            ]
           }
         }
       ]

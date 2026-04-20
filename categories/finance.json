@@ -11,10 +11,19 @@
     "original": "Finance & Insurance"
   },
   "altLabels": {
-    "en": ["banking", "financial services"],
-    "uk": ["банківські послуги"],
-    "de": ["bankwesen"],
-    "ru": ["финансовые услуги"]
+    "en": [
+      "banking",
+      "financial services"
+    ],
+    "uk": [
+      "банківські послуги"
+    ],
+    "de": [
+      "bankwesen"
+    ],
+    "ru": [
+      "финансовые услуги"
+    ]
   },
   "icon": "🏦",
   "naceRef": "K64",
@@ -24,122 +33,1212 @@
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/bank",
       "slug": "bank",
-      "names": { "en": "Bank", "uk": "Банк", "de": "Bank", "ru": "Банк", "original": "Bank" },
-      "altLabels": { "en": ["banking", "branch"], "uk": ["відділення банку"], "de": ["bankfiliale"], "ru": ["отделение банка"] },
+      "names": {
+        "en": "Bank",
+        "uk": "Банк",
+        "de": "Bank",
+        "ru": "Банк",
+        "original": "Bank"
+      },
+      "altLabels": {
+        "en": [
+          "banking",
+          "branch"
+        ],
+        "uk": [
+          "відділення банку"
+        ],
+        "de": [
+          "bankfiliale"
+        ],
+        "ru": [
+          "отделение банка"
+        ]
+      },
       "osmTag": "amenity=bank",
       "naceRef": "K64.19",
       "schemaOrgType": "BankOrCreditUnion",
       "wikidataId": "Q22687",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/account-opening", "slug": "account-opening", "names": { "en": "Account Opening", "uk": "Відкриття рахунку", "de": "Kontoeröffnung", "ru": "Открытие счёта", "original": "Account Opening" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/loan-consultation", "slug": "loan-consultation", "names": { "en": "Loan Consultation", "uk": "Консультація з кредиту", "de": "Kreditberatung", "ru": "Консультация по кредиту", "original": "Loan Consultation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/mortgage-consultation", "slug": "mortgage-consultation", "names": { "en": "Mortgage Consultation", "uk": "Консультація з іпотеки", "de": "Hypothekenberatung", "ru": "Консультация по ипотеке", "original": "Mortgage Consultation" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/account-opening",
+          "slug": "account-opening",
+          "names": {
+            "en": "Account Opening",
+            "uk": "Відкриття рахунку",
+            "de": "Kontoeröffnung",
+            "ru": "Открытие счёта",
+            "original": "Account Opening"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "account opening"
+              ],
+              "uk": [
+                "відкриття рахунку"
+              ],
+              "de": [
+                "kontoeröffnung"
+              ],
+              "ru": [
+                "открытие счёта"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "loan-consultation",
+              "mortgage-consultation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/loan-consultation",
+          "slug": "loan-consultation",
+          "names": {
+            "en": "Loan Consultation",
+            "uk": "Консультація з кредиту",
+            "de": "Kreditberatung",
+            "ru": "Консультация по кредиту",
+            "original": "Loan Consultation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "loan consultation"
+              ],
+              "uk": [
+                "консультація з кредиту"
+              ],
+              "de": [
+                "kreditberatung"
+              ],
+              "ru": [
+                "консультация по кредиту"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "account-opening",
+              "mortgage-consultation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/mortgage-consultation",
+          "slug": "mortgage-consultation",
+          "names": {
+            "en": "Mortgage Consultation",
+            "uk": "Консультація з іпотеки",
+            "de": "Hypothekenberatung",
+            "ru": "Консультация по ипотеке",
+            "original": "Mortgage Consultation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "mortgage consultation"
+              ],
+              "uk": [
+                "консультація з іпотеки"
+              ],
+              "de": [
+                "hypothekenberatung"
+              ],
+              "ru": [
+                "консультация по ипотеке"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "account-opening",
+              "loan-consultation"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/currency-exchange",
       "slug": "currency-exchange",
-      "names": { "en": "Currency Exchange", "uk": "Обмін валют", "de": "Wechselstube", "ru": "Обмен валют", "original": "Currency Exchange" },
+      "names": {
+        "en": "Currency Exchange",
+        "uk": "Обмін валют",
+        "de": "Wechselstube",
+        "ru": "Обмен валют",
+        "original": "Currency Exchange"
+      },
       "osmTag": "amenity=bureau_de_change",
       "naceRef": "K66.12",
       "schemaOrgType": "FinancialService",
       "wikidataId": "Q1156654",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/currency-exchange-op", "slug": "currency-exchange-op", "names": { "en": "Currency Exchange", "uk": "Обмін валюти", "de": "Geldwechsel", "ru": "Обмен валюты", "original": "Currency Exchange" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/money-transfer", "slug": "money-transfer", "names": { "en": "Money Transfer", "uk": "Грошовий переказ", "de": "Geldüberweisung", "ru": "Денежный перевод", "original": "Money Transfer" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/currency-exchange-op",
+          "slug": "currency-exchange-op",
+          "names": {
+            "en": "Currency Exchange",
+            "uk": "Обмін валюти",
+            "de": "Geldwechsel",
+            "ru": "Обмен валюты",
+            "original": "Currency Exchange"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "currency exchange"
+              ],
+              "uk": [
+                "обмін валюти"
+              ],
+              "de": [
+                "geldwechsel"
+              ],
+              "ru": [
+                "обмен валюты"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "money-transfer"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/money-transfer",
+          "slug": "money-transfer",
+          "names": {
+            "en": "Money Transfer",
+            "uk": "Грошовий переказ",
+            "de": "Geldüberweisung",
+            "ru": "Денежный перевод",
+            "original": "Money Transfer"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "money transfer"
+              ],
+              "uk": [
+                "грошовий переказ"
+              ],
+              "de": [
+                "geldüberweisung"
+              ],
+              "ru": [
+                "денежный перевод"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "currency-exchange-op"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/financial-advisor",
       "slug": "financial-advisor",
-      "names": { "en": "Financial Advisor", "uk": "Фінансовий радник", "de": "Finanzberater", "ru": "Финансовый советник", "original": "Financial Advisor" },
+      "names": {
+        "en": "Financial Advisor",
+        "uk": "Фінансовий радник",
+        "de": "Finanzberater",
+        "ru": "Финансовый советник",
+        "original": "Financial Advisor"
+      },
       "osmTag": "office=financial_advisor",
       "naceRef": "K66.19",
       "schemaOrgType": "FinancialService",
       "wikidataId": "Q5447207",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/fin-consultation", "slug": "fin-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Beratung", "ru": "Консультация", "original": "Consultation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/portfolio-review", "slug": "portfolio-review", "names": { "en": "Portfolio Review", "uk": "Огляд портфеля", "de": "Portfolioüberprüfung", "ru": "Обзор портфеля", "original": "Portfolio Review" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/retirement-planning", "slug": "retirement-planning", "names": { "en": "Retirement Planning", "uk": "Пенсійне планування", "de": "Altersvorsorge", "ru": "Пенсионное планирование", "original": "Retirement Planning" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fin-consultation",
+          "slug": "fin-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Beratung",
+            "ru": "Консультация",
+            "original": "Consultation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "consultation"
+              ],
+              "uk": [
+                "консультація"
+              ],
+              "de": [
+                "beratung"
+              ],
+              "ru": [
+                "консультация"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "portfolio-review",
+              "retirement-planning"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/portfolio-review",
+          "slug": "portfolio-review",
+          "names": {
+            "en": "Portfolio Review",
+            "uk": "Огляд портфеля",
+            "de": "Portfolioüberprüfung",
+            "ru": "Обзор портфеля",
+            "original": "Portfolio Review"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "portfolio review"
+              ],
+              "uk": [
+                "огляд портфеля"
+              ],
+              "de": [
+                "portfolioüberprüfung"
+              ],
+              "ru": [
+                "обзор портфеля"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "fin-consultation",
+              "retirement-planning"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/retirement-planning",
+          "slug": "retirement-planning",
+          "names": {
+            "en": "Retirement Planning",
+            "uk": "Пенсійне планування",
+            "de": "Altersvorsorge",
+            "ru": "Пенсионное планирование",
+            "original": "Retirement Planning"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "retirement planning"
+              ],
+              "uk": [
+                "пенсійне планування"
+              ],
+              "de": [
+                "altersvorsorge"
+              ],
+              "ru": [
+                "пенсионное планирование"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "fin-consultation",
+              "portfolio-review"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/insurance-agent",
       "slug": "insurance-agent",
-      "names": { "en": "Insurance Agent", "uk": "Страховий агент", "de": "Versicherungsmakler", "ru": "Страховой агент", "original": "Insurance Agent" },
-      "altLabels": { "en": ["insurance broker"], "uk": ["страхова компанія"], "de": ["versicherungsbüro"], "ru": ["страховая компания"] },
+      "names": {
+        "en": "Insurance Agent",
+        "uk": "Страховий агент",
+        "de": "Versicherungsmakler",
+        "ru": "Страховой агент",
+        "original": "Insurance Agent"
+      },
+      "altLabels": {
+        "en": [
+          "insurance broker"
+        ],
+        "uk": [
+          "страхова компанія"
+        ],
+        "de": [
+          "versicherungsbüro"
+        ],
+        "ru": [
+          "страховая компания"
+        ]
+      },
       "osmTag": "office=insurance",
       "naceRef": "K66.22",
       "schemaOrgType": "InsuranceAgency",
       "wikidataId": "Q1768231",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/insurance-consultation", "slug": "insurance-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Beratung", "ru": "Консультация", "original": "Consultation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/policy-review", "slug": "policy-review", "names": { "en": "Policy Review", "uk": "Огляд поліса", "de": "Policenüberprüfung", "ru": "Обзор полиса", "original": "Policy Review" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/claim-assistance", "slug": "claim-assistance", "names": { "en": "Claim Assistance", "uk": "Допомога зі страховим випадком", "de": "Schadensregulierung", "ru": "Помощь со страховым случаем", "original": "Claim Assistance" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/insurance-consultation",
+          "slug": "insurance-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Beratung",
+            "ru": "Консультация",
+            "original": "Consultation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "consultation"
+              ],
+              "uk": [
+                "консультація"
+              ],
+              "de": [
+                "beratung"
+              ],
+              "ru": [
+                "консультация"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "policy-review",
+              "claim-assistance"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/policy-review",
+          "slug": "policy-review",
+          "names": {
+            "en": "Policy Review",
+            "uk": "Огляд поліса",
+            "de": "Policenüberprüfung",
+            "ru": "Обзор полиса",
+            "original": "Policy Review"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "policy review"
+              ],
+              "uk": [
+                "огляд поліса"
+              ],
+              "de": [
+                "policenüberprüfung"
+              ],
+              "ru": [
+                "обзор полиса"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "insurance-consultation",
+              "claim-assistance"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/claim-assistance",
+          "slug": "claim-assistance",
+          "names": {
+            "en": "Claim Assistance",
+            "uk": "Допомога зі страховим випадком",
+            "de": "Schadensregulierung",
+            "ru": "Помощь со страховым случаем",
+            "original": "Claim Assistance"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "claim assistance"
+              ],
+              "uk": [
+                "допомога зі страховим випадком"
+              ],
+              "de": [
+                "schadensregulierung"
+              ],
+              "ru": [
+                "помощь со страховым случаем"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "insurance-consultation",
+              "policy-review"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/crypto-exchange",
       "slug": "crypto-exchange",
-      "names": { "en": "Crypto Exchange", "uk": "Криптовалютна біржа", "de": "Krypto-Börse", "ru": "Криптобиржа", "original": "Crypto Exchange" },
-      "altLabels": { "en": ["crypto trading"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Crypto Exchange",
+        "uk": "Криптовалютна біржа",
+        "de": "Krypto-Börse",
+        "ru": "Криптобиржа",
+        "original": "Crypto Exchange"
+      },
+      "altLabels": {
+        "en": [
+          "crypto trading"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=financial",
       "naceRef": "K66.12",
       "schemaOrgType": "FinancialService",
       "wikidataId": "Q21002001",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/account-onboarding", "slug": "account-onboarding", "names": { "en": "Account Onboarding", "uk": "Реєстрація акаунту", "de": "Konto-Onboarding", "ru": "Регистрация аккаунта", "original": "Account Onboarding" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/fiat-to-crypto", "slug": "fiat-to-crypto", "names": { "en": "Fiat-to-Crypto", "uk": "Фіат-у-крипту", "de": "Fiat-zu-Krypto", "ru": "Фиат в крипту", "original": "Fiat-to-Crypto" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/otc-trading", "slug": "otc-trading", "names": { "en": "OTC Trading", "uk": "Позабіржова торгівля", "de": "OTC-Handel", "ru": "Внебиржевая торговля", "original": "OTC Trading" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/staking-service", "slug": "staking-service", "names": { "en": "Staking Service", "uk": "Стейкінг", "de": "Staking-Dienst", "ru": "Стейкинг", "original": "Staking Service" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/account-onboarding",
+          "slug": "account-onboarding",
+          "names": {
+            "en": "Account Onboarding",
+            "uk": "Реєстрація акаунту",
+            "de": "Konto-Onboarding",
+            "ru": "Регистрация аккаунта",
+            "original": "Account Onboarding"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "account onboarding"
+              ],
+              "uk": [
+                "реєстрація акаунту"
+              ],
+              "de": [
+                "konto-onboarding"
+              ],
+              "ru": [
+                "регистрация аккаунта"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "fiat-to-crypto",
+              "otc-trading",
+              "staking-service"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fiat-to-crypto",
+          "slug": "fiat-to-crypto",
+          "names": {
+            "en": "Fiat-to-Crypto",
+            "uk": "Фіат-у-крипту",
+            "de": "Fiat-zu-Krypto",
+            "ru": "Фиат в крипту",
+            "original": "Fiat-to-Crypto"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "fiat-to-crypto"
+              ],
+              "uk": [
+                "фіат-у-крипту"
+              ],
+              "de": [
+                "fiat-zu-krypto"
+              ],
+              "ru": [
+                "фиат в крипту"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "account-onboarding",
+              "otc-trading",
+              "staking-service"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/otc-trading",
+          "slug": "otc-trading",
+          "names": {
+            "en": "OTC Trading",
+            "uk": "Позабіржова торгівля",
+            "de": "OTC-Handel",
+            "ru": "Внебиржевая торговля",
+            "original": "OTC Trading"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "otc trading"
+              ],
+              "uk": [
+                "позабіржова торгівля"
+              ],
+              "de": [
+                "otc-handel"
+              ],
+              "ru": [
+                "внебиржевая торговля"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "account-onboarding",
+              "fiat-to-crypto",
+              "staking-service"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/staking-service",
+          "slug": "staking-service",
+          "names": {
+            "en": "Staking Service",
+            "uk": "Стейкінг",
+            "de": "Staking-Dienst",
+            "ru": "Стейкинг",
+            "original": "Staking Service"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "staking service"
+              ],
+              "uk": [
+                "стейкінг"
+              ],
+              "de": [
+                "staking-dienst"
+              ],
+              "ru": [
+                "стейкинг"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "account-onboarding",
+              "fiat-to-crypto",
+              "otc-trading"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/accounting-outsourcing",
       "slug": "accounting-outsourcing",
-      "names": { "en": "Accounting Outsourcing", "uk": "Бухгалтерський аутсорсинг", "de": "Buchhaltung-Outsourcing", "ru": "Бухгалтерский аутсорсинг", "original": "Accounting Outsourcing" },
-      "altLabels": { "en": ["bookkeeping outsourcing", "fractional CFO"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Accounting Outsourcing",
+        "uk": "Бухгалтерський аутсорсинг",
+        "de": "Buchhaltung-Outsourcing",
+        "ru": "Бухгалтерский аутсорсинг",
+        "original": "Accounting Outsourcing"
+      },
+      "altLabels": {
+        "en": [
+          "bookkeeping outsourcing",
+          "fractional CFO"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=accountant",
       "naceRef": "M69.20",
       "schemaOrgType": "AccountingService",
       "wikidataId": "Q4116214",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/monthly-bookkeeping", "slug": "monthly-bookkeeping", "names": { "en": "Monthly Bookkeeping", "uk": "Щомісячний бухоблік", "de": "Monatliche Buchhaltung", "ru": "Ежемесячный бухучёт", "original": "Monthly Bookkeeping" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/payroll-outsourcing", "slug": "payroll-outsourcing", "names": { "en": "Payroll Outsourcing", "uk": "Аутсорсинг зарплати", "de": "Lohnabrechnungs-Outsourcing", "ru": "Аутсорсинг зарплаты", "original": "Payroll Outsourcing" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/fractional-cfo", "slug": "fractional-cfo", "names": { "en": "Fractional CFO", "uk": "Фінансовий директор на part-time", "de": "Teilzeit-CFO", "ru": "Финансовый директор на part-time", "original": "Fractional CFO" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/vat-handling", "slug": "vat-handling", "names": { "en": "VAT Handling", "uk": "Облік ПДВ", "de": "Umsatzsteuer-Bearbeitung", "ru": "Учёт НДС", "original": "VAT Handling" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/year-end-closing", "slug": "year-end-closing", "names": { "en": "Year-End Closing", "uk": "Закриття року", "de": "Jahresabschluss", "ru": "Закрытие года", "original": "Year-End Closing" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/monthly-bookkeeping",
+          "slug": "monthly-bookkeeping",
+          "names": {
+            "en": "Monthly Bookkeeping",
+            "uk": "Щомісячний бухоблік",
+            "de": "Monatliche Buchhaltung",
+            "ru": "Ежемесячный бухучёт",
+            "original": "Monthly Bookkeeping"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "monthly bookkeeping"
+              ],
+              "uk": [
+                "щомісячний бухоблік"
+              ],
+              "de": [
+                "monatliche buchhaltung"
+              ],
+              "ru": [
+                "ежемесячный бухучёт"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "payroll-outsourcing",
+              "fractional-cfo",
+              "vat-handling"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/payroll-outsourcing",
+          "slug": "payroll-outsourcing",
+          "names": {
+            "en": "Payroll Outsourcing",
+            "uk": "Аутсорсинг зарплати",
+            "de": "Lohnabrechnungs-Outsourcing",
+            "ru": "Аутсорсинг зарплаты",
+            "original": "Payroll Outsourcing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "payroll outsourcing"
+              ],
+              "uk": [
+                "аутсорсинг зарплати"
+              ],
+              "de": [
+                "lohnabrechnungs-outsourcing"
+              ],
+              "ru": [
+                "аутсорсинг зарплаты"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "monthly-bookkeeping",
+              "fractional-cfo",
+              "vat-handling"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fractional-cfo",
+          "slug": "fractional-cfo",
+          "names": {
+            "en": "Fractional CFO",
+            "uk": "Фінансовий директор на part-time",
+            "de": "Teilzeit-CFO",
+            "ru": "Финансовый директор на part-time",
+            "original": "Fractional CFO"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "fractional cfo"
+              ],
+              "uk": [
+                "фінансовий директор на part-time"
+              ],
+              "de": [
+                "teilzeit-cfo"
+              ],
+              "ru": [
+                "финансовый директор на part-time"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "monthly-bookkeeping",
+              "payroll-outsourcing",
+              "vat-handling"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/vat-handling",
+          "slug": "vat-handling",
+          "names": {
+            "en": "VAT Handling",
+            "uk": "Облік ПДВ",
+            "de": "Umsatzsteuer-Bearbeitung",
+            "ru": "Учёт НДС",
+            "original": "VAT Handling"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "vat handling"
+              ],
+              "uk": [
+                "облік пдв"
+              ],
+              "de": [
+                "umsatzsteuer-bearbeitung"
+              ],
+              "ru": [
+                "учёт ндс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "monthly-bookkeeping",
+              "payroll-outsourcing",
+              "fractional-cfo"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/year-end-closing",
+          "slug": "year-end-closing",
+          "names": {
+            "en": "Year-End Closing",
+            "uk": "Закриття року",
+            "de": "Jahresabschluss",
+            "ru": "Закрытие года",
+            "original": "Year-End Closing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "year-end closing"
+              ],
+              "uk": [
+                "закриття року"
+              ],
+              "de": [
+                "jahresabschluss"
+              ],
+              "ru": [
+                "закрытие года"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "monthly-bookkeeping",
+              "payroll-outsourcing",
+              "fractional-cfo"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/payday-loan",
       "slug": "payday-loan",
-      "names": { "en": "Payday Loan Office", "uk": "Мікропозики", "de": "Sofortkredit-Anbieter", "ru": "Микрозаймы", "original": "Payday Loan Office" },
-      "altLabels": { "en": ["microfinance"], "uk": ["мікрофінансова організація"], "de": [], "ru": [] },
+      "names": {
+        "en": "Payday Loan Office",
+        "uk": "Мікропозики",
+        "de": "Sofortkredit-Anbieter",
+        "ru": "Микрозаймы",
+        "original": "Payday Loan Office"
+      },
+      "altLabels": {
+        "en": [
+          "microfinance"
+        ],
+        "uk": [
+          "мікрофінансова організація"
+        ],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=loan_provider",
       "naceRef": "K64.92",
       "schemaOrgType": "FinancialService",
       "wikidataId": "Q1535362",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/short-term-loan", "slug": "short-term-loan", "names": { "en": "Short-term Loan", "uk": "Короткостроковий кредит", "de": "Kurzfristiger Kredit", "ru": "Краткосрочный заём", "original": "Short-term Loan" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/instant-loan", "slug": "instant-loan", "names": { "en": "Instant Loan", "uk": "Миттєвий кредит", "de": "Sofortkredit", "ru": "Мгновенный заём", "original": "Instant Loan" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/loan-refinancing", "slug": "loan-refinancing", "names": { "en": "Loan Refinancing", "uk": "Рефінансування кредиту", "de": "Kreditrefinanzierung", "ru": "Рефинансирование займа", "original": "Loan Refinancing" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/short-term-loan",
+          "slug": "short-term-loan",
+          "names": {
+            "en": "Short-term Loan",
+            "uk": "Короткостроковий кредит",
+            "de": "Kurzfristiger Kredit",
+            "ru": "Краткосрочный заём",
+            "original": "Short-term Loan"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "short-term loan"
+              ],
+              "uk": [
+                "короткостроковий кредит"
+              ],
+              "de": [
+                "kurzfristiger kredit"
+              ],
+              "ru": [
+                "краткосрочный заём"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "instant-loan",
+              "loan-refinancing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/instant-loan",
+          "slug": "instant-loan",
+          "names": {
+            "en": "Instant Loan",
+            "uk": "Миттєвий кредит",
+            "de": "Sofortkredit",
+            "ru": "Мгновенный заём",
+            "original": "Instant Loan"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "instant loan"
+              ],
+              "uk": [
+                "миттєвий кредит"
+              ],
+              "de": [
+                "sofortkredit"
+              ],
+              "ru": [
+                "мгновенный заём"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "short-term-loan",
+              "loan-refinancing"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/loan-refinancing",
+          "slug": "loan-refinancing",
+          "names": {
+            "en": "Loan Refinancing",
+            "uk": "Рефінансування кредиту",
+            "de": "Kreditrefinanzierung",
+            "ru": "Рефинансирование займа",
+            "original": "Loan Refinancing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "loan refinancing"
+              ],
+              "uk": [
+                "рефінансування кредиту"
+              ],
+              "de": [
+                "kreditrefinanzierung"
+              ],
+              "ru": [
+                "рефинансирование займа"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "short-term-loan",
+              "instant-loan"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/credit-counseling",
       "slug": "credit-counseling",
-      "names": { "en": "Credit Counseling", "uk": "Кредитне консультування", "de": "Schuldnerberatung", "ru": "Кредитное консультирование", "original": "Credit Counseling" },
-      "altLabels": { "en": ["debt counseling", "debt management"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Credit Counseling",
+        "uk": "Кредитне консультування",
+        "de": "Schuldnerberatung",
+        "ru": "Кредитное консультирование",
+        "original": "Credit Counseling"
+      },
+      "altLabels": {
+        "en": [
+          "debt counseling",
+          "debt management"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=consulting",
       "naceRef": "M70.22+Q88.99",
       "schemaOrgType": "FinancialService",
       "wikidataId": "Q5184997",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/debt-management-plan", "slug": "debt-management-plan", "names": { "en": "Debt Management Plan", "uk": "План управління боргом", "de": "Schuldenmanagementplan", "ru": "План управления долгом", "original": "Debt Management Plan" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/credit-report-review", "slug": "credit-report-review", "names": { "en": "Credit Report Review", "uk": "Огляд кредитного звіту", "de": "Kreditbericht-Überprüfung", "ru": "Обзор кредитного отчёта", "original": "Credit Report Review" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/budget-planning", "slug": "budget-planning", "names": { "en": "Budget Planning", "uk": "Планування бюджету", "de": "Budgetplanung", "ru": "Планирование бюджета", "original": "Budget Planning" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/bankruptcy-counseling", "slug": "bankruptcy-counseling", "names": { "en": "Bankruptcy Counseling", "uk": "Консультації з банкрутства", "de": "Insolvenzberatung", "ru": "Консультации по банкротству", "original": "Bankruptcy Counseling" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/debt-management-plan",
+          "slug": "debt-management-plan",
+          "names": {
+            "en": "Debt Management Plan",
+            "uk": "План управління боргом",
+            "de": "Schuldenmanagementplan",
+            "ru": "План управления долгом",
+            "original": "Debt Management Plan"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "debt management plan"
+              ],
+              "uk": [
+                "план управління боргом"
+              ],
+              "de": [
+                "schuldenmanagementplan"
+              ],
+              "ru": [
+                "план управления долгом"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "credit-report-review",
+              "budget-planning",
+              "bankruptcy-counseling"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/credit-report-review",
+          "slug": "credit-report-review",
+          "names": {
+            "en": "Credit Report Review",
+            "uk": "Огляд кредитного звіту",
+            "de": "Kreditbericht-Überprüfung",
+            "ru": "Обзор кредитного отчёта",
+            "original": "Credit Report Review"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "credit report review"
+              ],
+              "uk": [
+                "огляд кредитного звіту"
+              ],
+              "de": [
+                "kreditbericht-überprüfung"
+              ],
+              "ru": [
+                "обзор кредитного отчёта"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "debt-management-plan",
+              "budget-planning",
+              "bankruptcy-counseling"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/budget-planning",
+          "slug": "budget-planning",
+          "names": {
+            "en": "Budget Planning",
+            "uk": "Планування бюджету",
+            "de": "Budgetplanung",
+            "ru": "Планирование бюджета",
+            "original": "Budget Planning"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "budget planning"
+              ],
+              "uk": [
+                "планування бюджету"
+              ],
+              "de": [
+                "budgetplanung"
+              ],
+              "ru": [
+                "планирование бюджета"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "debt-management-plan",
+              "credit-report-review",
+              "bankruptcy-counseling"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/bankruptcy-counseling",
+          "slug": "bankruptcy-counseling",
+          "names": {
+            "en": "Bankruptcy Counseling",
+            "uk": "Консультації з банкрутства",
+            "de": "Insolvenzberatung",
+            "ru": "Консультации по банкротству",
+            "original": "Bankruptcy Counseling"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "bankruptcy counseling"
+              ],
+              "uk": [
+                "консультації з банкрутства"
+              ],
+              "de": [
+                "insolvenzberatung"
+              ],
+              "ru": [
+                "консультации по банкротству"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "debt-management-plan",
+              "credit-report-review",
+              "budget-planning"
+            ]
+          }
+        }
       ]
     }
   ]

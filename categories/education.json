@@ -11,10 +11,23 @@
     "original": "Education & Training"
   },
   "altLabels": {
-    "en": ["learning", "courses", "school"],
-    "uk": ["курси", "навчання"],
-    "de": ["weiterbildung", "kurse"],
-    "ru": ["курсы", "обучение"]
+    "en": [
+      "learning",
+      "courses",
+      "school"
+    ],
+    "uk": [
+      "курси",
+      "навчання"
+    ],
+    "de": [
+      "weiterbildung",
+      "kurse"
+    ],
+    "ru": [
+      "курсы",
+      "обучение"
+    ]
   },
   "icon": "🎓",
   "naceRef": "P85",
@@ -24,109 +37,1219 @@
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/language-school",
       "slug": "language-school",
-      "names": { "en": "Language School", "uk": "Мовна школа", "de": "Sprachschule", "ru": "Языковая школа", "original": "Language School" },
-      "altLabels": { "en": ["language courses"], "uk": ["курси мов"], "de": ["sprachkurse"], "ru": ["курсы иностранных языков"] },
+      "names": {
+        "en": "Language School",
+        "uk": "Мовна школа",
+        "de": "Sprachschule",
+        "ru": "Языковая школа",
+        "original": "Language School"
+      },
+      "altLabels": {
+        "en": [
+          "language courses"
+        ],
+        "uk": [
+          "курси мов"
+        ],
+        "de": [
+          "sprachkurse"
+        ],
+        "ru": [
+          "курсы иностранных языков"
+        ]
+      },
       "osmTag": "amenity=language_school",
       "naceRef": "P85.59",
       "schemaOrgType": "EducationalOrganization",
       "wikidataId": "Q1416348",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/group-lesson", "slug": "group-lesson", "names": { "en": "Group Lesson", "uk": "Групове заняття", "de": "Gruppenunterricht", "ru": "Групповое занятие", "original": "Group Lesson" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/private-lesson", "slug": "private-lesson", "names": { "en": "Private Lesson", "uk": "Індивідуальне заняття", "de": "Einzelunterricht", "ru": "Индивидуальное занятие", "original": "Private Lesson" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/intensive-course", "slug": "intensive-course", "names": { "en": "Intensive Course", "uk": "Інтенсивний курс", "de": "Intensivkurs", "ru": "Интенсивный курс", "original": "Intensive Course" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/exam-prep", "slug": "exam-prep", "names": { "en": "Exam Preparation", "uk": "Підготовка до іспиту", "de": "Prüfungsvorbereitung", "ru": "Подготовка к экзамену", "original": "Exam Preparation" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/group-lesson",
+          "slug": "group-lesson",
+          "names": {
+            "en": "Group Lesson",
+            "uk": "Групове заняття",
+            "de": "Gruppenunterricht",
+            "ru": "Групповое занятие",
+            "original": "Group Lesson"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "group lesson"
+              ],
+              "uk": [
+                "групове заняття"
+              ],
+              "de": [
+                "gruppenunterricht"
+              ],
+              "ru": [
+                "групповое занятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "private-lesson",
+              "intensive-course",
+              "exam-prep"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/private-lesson",
+          "slug": "private-lesson",
+          "names": {
+            "en": "Private Lesson",
+            "uk": "Індивідуальне заняття",
+            "de": "Einzelunterricht",
+            "ru": "Индивидуальное занятие",
+            "original": "Private Lesson"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "private lesson"
+              ],
+              "uk": [
+                "індивідуальне заняття"
+              ],
+              "de": [
+                "einzelunterricht"
+              ],
+              "ru": [
+                "индивидуальное занятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "group-lesson",
+              "intensive-course",
+              "exam-prep"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/intensive-course",
+          "slug": "intensive-course",
+          "names": {
+            "en": "Intensive Course",
+            "uk": "Інтенсивний курс",
+            "de": "Intensivkurs",
+            "ru": "Интенсивный курс",
+            "original": "Intensive Course"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "intensive course"
+              ],
+              "uk": [
+                "інтенсивний курс"
+              ],
+              "de": [
+                "intensivkurs"
+              ],
+              "ru": [
+                "интенсивный курс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "group-lesson",
+              "private-lesson",
+              "exam-prep"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/exam-prep",
+          "slug": "exam-prep",
+          "names": {
+            "en": "Exam Preparation",
+            "uk": "Підготовка до іспиту",
+            "de": "Prüfungsvorbereitung",
+            "ru": "Подготовка к экзамену",
+            "original": "Exam Preparation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "exam preparation"
+              ],
+              "uk": [
+                "підготовка до іспиту"
+              ],
+              "de": [
+                "prüfungsvorbereitung"
+              ],
+              "ru": [
+                "подготовка к экзамену"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "group-lesson",
+              "private-lesson",
+              "intensive-course"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/driving-school",
       "slug": "driving-school",
-      "names": { "en": "Driving School", "uk": "Автошкола", "de": "Fahrschule", "ru": "Автошкола", "original": "Driving School" },
+      "names": {
+        "en": "Driving School",
+        "uk": "Автошкола",
+        "de": "Fahrschule",
+        "ru": "Автошкола",
+        "original": "Driving School"
+      },
       "osmTag": "amenity=driving_school",
       "naceRef": "P85.53",
       "schemaOrgType": "EducationalOrganization",
       "wikidataId": "Q190747",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/theory-lesson", "slug": "theory-lesson", "names": { "en": "Theory Lesson", "uk": "Теоретичне заняття", "de": "Theorieunterricht", "ru": "Теоретическое занятие", "original": "Theory Lesson" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/practical-lesson", "slug": "practical-lesson", "names": { "en": "Practical Lesson", "uk": "Практичне заняття", "de": "Fahrstunde", "ru": "Практическое занятие", "original": "Practical Lesson" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/driving-exam-prep", "slug": "driving-exam-prep", "names": { "en": "Exam Preparation", "uk": "Підготовка до іспиту", "de": "Prüfungsvorbereitung", "ru": "Подготовка к экзамену", "original": "Exam Preparation" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/theory-lesson",
+          "slug": "theory-lesson",
+          "names": {
+            "en": "Theory Lesson",
+            "uk": "Теоретичне заняття",
+            "de": "Theorieunterricht",
+            "ru": "Теоретическое занятие",
+            "original": "Theory Lesson"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "theory lesson"
+              ],
+              "uk": [
+                "теоретичне заняття"
+              ],
+              "de": [
+                "theorieunterricht"
+              ],
+              "ru": [
+                "теоретическое занятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "practical-lesson",
+              "driving-exam-prep"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/practical-lesson",
+          "slug": "practical-lesson",
+          "names": {
+            "en": "Practical Lesson",
+            "uk": "Практичне заняття",
+            "de": "Fahrstunde",
+            "ru": "Практическое занятие",
+            "original": "Practical Lesson"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "practical lesson"
+              ],
+              "uk": [
+                "практичне заняття"
+              ],
+              "de": [
+                "fahrstunde"
+              ],
+              "ru": [
+                "практическое занятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "theory-lesson",
+              "driving-exam-prep"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/driving-exam-prep",
+          "slug": "driving-exam-prep",
+          "names": {
+            "en": "Exam Preparation",
+            "uk": "Підготовка до іспиту",
+            "de": "Prüfungsvorbereitung",
+            "ru": "Подготовка к экзамену",
+            "original": "Exam Preparation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "exam preparation"
+              ],
+              "uk": [
+                "підготовка до іспиту"
+              ],
+              "de": [
+                "prüfungsvorbereitung"
+              ],
+              "ru": [
+                "подготовка к экзамену"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "theory-lesson",
+              "practical-lesson"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/music-school",
       "slug": "music-school",
-      "names": { "en": "Music School", "uk": "Музична школа", "de": "Musikschule", "ru": "Музыкальная школа", "original": "Music School" },
+      "names": {
+        "en": "Music School",
+        "uk": "Музична школа",
+        "de": "Musikschule",
+        "ru": "Музыкальная школа",
+        "original": "Music School"
+      },
       "osmTag": "amenity=music_school",
       "naceRef": "P85.52",
       "schemaOrgType": "EducationalOrganization",
       "wikidataId": "Q184644",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/music-individual", "slug": "music-individual", "names": { "en": "Individual Lesson", "uk": "Індивідуальне заняття", "de": "Einzelunterricht", "ru": "Индивидуальное занятие", "original": "Individual Lesson" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/music-group", "slug": "music-group", "names": { "en": "Group Lesson", "uk": "Групове заняття", "de": "Gruppenunterricht", "ru": "Групповое занятие", "original": "Group Lesson" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/instrument-rental", "slug": "instrument-rental", "names": { "en": "Instrument Rental", "uk": "Оренда інструменту", "de": "Instrumentenverleih", "ru": "Аренда инструмента", "original": "Instrument Rental" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/music-individual",
+          "slug": "music-individual",
+          "names": {
+            "en": "Individual Lesson",
+            "uk": "Індивідуальне заняття",
+            "de": "Einzelunterricht",
+            "ru": "Индивидуальное занятие",
+            "original": "Individual Lesson"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "individual lesson"
+              ],
+              "uk": [
+                "індивідуальне заняття"
+              ],
+              "de": [
+                "einzelunterricht"
+              ],
+              "ru": [
+                "индивидуальное занятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "music-group",
+              "instrument-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/music-group",
+          "slug": "music-group",
+          "names": {
+            "en": "Group Lesson",
+            "uk": "Групове заняття",
+            "de": "Gruppenunterricht",
+            "ru": "Групповое занятие",
+            "original": "Group Lesson"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "group lesson"
+              ],
+              "uk": [
+                "групове заняття"
+              ],
+              "de": [
+                "gruppenunterricht"
+              ],
+              "ru": [
+                "групповое занятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "music-individual",
+              "instrument-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/instrument-rental",
+          "slug": "instrument-rental",
+          "names": {
+            "en": "Instrument Rental",
+            "uk": "Оренда інструменту",
+            "de": "Instrumentenverleih",
+            "ru": "Аренда инструмента",
+            "original": "Instrument Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "instrument rental"
+              ],
+              "uk": [
+                "оренда інструменту"
+              ],
+              "de": [
+                "instrumentenverleih"
+              ],
+              "ru": [
+                "аренда инструмента"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "music-individual",
+              "music-group"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/tutoring",
       "slug": "tutoring",
-      "names": { "en": "Tutoring", "uk": "Репетиторство", "de": "Nachhilfe", "ru": "Репетиторство", "original": "Tutoring" },
-      "altLabels": { "en": ["tutor", "private tuition"], "uk": ["репетитор"], "de": ["tutor", "privatlehrer"], "ru": ["репетитор"] },
+      "names": {
+        "en": "Tutoring",
+        "uk": "Репетиторство",
+        "de": "Nachhilfe",
+        "ru": "Репетиторство",
+        "original": "Tutoring"
+      },
+      "altLabels": {
+        "en": [
+          "tutor",
+          "private tuition"
+        ],
+        "uk": [
+          "репетитор"
+        ],
+        "de": [
+          "tutor",
+          "privatlehrer"
+        ],
+        "ru": [
+          "репетитор"
+        ]
+      },
       "osmTag": "office=tutoring",
       "naceRef": "P85.59",
       "schemaOrgType": "EducationalOrganization",
       "wikidataId": "Q1192722",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/math-tutoring", "slug": "math-tutoring", "names": { "en": "Math", "uk": "Математика", "de": "Mathematik", "ru": "Математика", "original": "Math" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/science-tutoring", "slug": "science-tutoring", "names": { "en": "Science", "uk": "Природничі науки", "de": "Naturwissenschaften", "ru": "Естественные науки", "original": "Science" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/tutor-exam-prep", "slug": "tutor-exam-prep", "names": { "en": "Exam Preparation", "uk": "Підготовка до іспиту", "de": "Prüfungsvorbereitung", "ru": "Подготовка к экзамену", "original": "Exam Preparation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/english-tutoring-class", "slug": "english-tutoring-class", "names": { "en": "English", "uk": "Англійська", "de": "Englisch", "ru": "Английский", "original": "English" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/language-tutoring-class", "slug": "language-tutoring-class", "names": { "en": "Language Tutoring", "uk": "Мовне репетиторство", "de": "Sprachnachhilfe", "ru": "Языковое репетиторство", "original": "Language Tutoring" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/programming-tutoring", "slug": "programming-tutoring", "names": { "en": "Programming", "uk": "Програмування", "de": "Programmierung", "ru": "Программирование", "original": "Programming" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/chess-tutoring", "slug": "chess-tutoring", "names": { "en": "Chess", "uk": "Шахи", "de": "Schach", "ru": "Шахматы", "original": "Chess" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/music-theory-tutoring", "slug": "music-theory-tutoring", "names": { "en": "Music Theory", "uk": "Теорія музики", "de": "Musiktheorie", "ru": "Теория музыки", "original": "Music Theory" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/math-tutoring",
+          "slug": "math-tutoring",
+          "names": {
+            "en": "Math",
+            "uk": "Математика",
+            "de": "Mathematik",
+            "ru": "Математика",
+            "original": "Math"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "math"
+              ],
+              "uk": [
+                "математика"
+              ],
+              "de": [
+                "mathematik"
+              ],
+              "ru": [
+                "математика"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "science-tutoring",
+              "tutor-exam-prep",
+              "english-tutoring-class"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/science-tutoring",
+          "slug": "science-tutoring",
+          "names": {
+            "en": "Science",
+            "uk": "Природничі науки",
+            "de": "Naturwissenschaften",
+            "ru": "Естественные науки",
+            "original": "Science"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "science"
+              ],
+              "uk": [
+                "природничі науки"
+              ],
+              "de": [
+                "naturwissenschaften"
+              ],
+              "ru": [
+                "естественные науки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "math-tutoring",
+              "tutor-exam-prep",
+              "english-tutoring-class"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tutor-exam-prep",
+          "slug": "tutor-exam-prep",
+          "names": {
+            "en": "Exam Preparation",
+            "uk": "Підготовка до іспиту",
+            "de": "Prüfungsvorbereitung",
+            "ru": "Подготовка к экзамену",
+            "original": "Exam Preparation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "exam preparation"
+              ],
+              "uk": [
+                "підготовка до іспиту"
+              ],
+              "de": [
+                "prüfungsvorbereitung"
+              ],
+              "ru": [
+                "подготовка к экзамену"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "math-tutoring",
+              "science-tutoring",
+              "english-tutoring-class"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/english-tutoring-class",
+          "slug": "english-tutoring-class",
+          "names": {
+            "en": "English",
+            "uk": "Англійська",
+            "de": "Englisch",
+            "ru": "Английский",
+            "original": "English"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "english"
+              ],
+              "uk": [
+                "англійська"
+              ],
+              "de": [
+                "englisch"
+              ],
+              "ru": [
+                "английский"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "math-tutoring",
+              "science-tutoring",
+              "tutor-exam-prep"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/language-tutoring-class",
+          "slug": "language-tutoring-class",
+          "names": {
+            "en": "Language Tutoring",
+            "uk": "Мовне репетиторство",
+            "de": "Sprachnachhilfe",
+            "ru": "Языковое репетиторство",
+            "original": "Language Tutoring"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "language tutoring"
+              ],
+              "uk": [
+                "мовне репетиторство"
+              ],
+              "de": [
+                "sprachnachhilfe"
+              ],
+              "ru": [
+                "языковое репетиторство"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "math-tutoring",
+              "science-tutoring",
+              "tutor-exam-prep"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/programming-tutoring",
+          "slug": "programming-tutoring",
+          "names": {
+            "en": "Programming",
+            "uk": "Програмування",
+            "de": "Programmierung",
+            "ru": "Программирование",
+            "original": "Programming"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "programming"
+              ],
+              "uk": [
+                "програмування"
+              ],
+              "de": [
+                "programmierung"
+              ],
+              "ru": [
+                "программирование"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "math-tutoring",
+              "science-tutoring",
+              "tutor-exam-prep"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/chess-tutoring",
+          "slug": "chess-tutoring",
+          "names": {
+            "en": "Chess",
+            "uk": "Шахи",
+            "de": "Schach",
+            "ru": "Шахматы",
+            "original": "Chess"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "chess"
+              ],
+              "uk": [
+                "шахи"
+              ],
+              "de": [
+                "schach"
+              ],
+              "ru": [
+                "шахматы"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "math-tutoring",
+              "science-tutoring",
+              "tutor-exam-prep"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/music-theory-tutoring",
+          "slug": "music-theory-tutoring",
+          "names": {
+            "en": "Music Theory",
+            "uk": "Теорія музики",
+            "de": "Musiktheorie",
+            "ru": "Теория музыки",
+            "original": "Music Theory"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "music theory"
+              ],
+              "uk": [
+                "теорія музики"
+              ],
+              "de": [
+                "musiktheorie"
+              ],
+              "ru": [
+                "теория музыки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "math-tutoring",
+              "science-tutoring",
+              "tutor-exam-prep"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/dance-school",
       "slug": "dance-school",
-      "names": { "en": "Dance School", "uk": "Школа танців", "de": "Tanzschule", "ru": "Школа танцев", "original": "Dance School" },
+      "names": {
+        "en": "Dance School",
+        "uk": "Школа танців",
+        "de": "Tanzschule",
+        "ru": "Школа танцев",
+        "original": "Dance School"
+      },
       "osmTag": "leisure=dance",
       "naceRef": "P85.52",
       "schemaOrgType": "EducationalOrganization",
       "wikidataId": "Q1146980",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/dance-trial", "slug": "dance-trial", "names": { "en": "Trial Lesson", "uk": "Пробне заняття", "de": "Probestunde", "ru": "Пробное занятие", "original": "Trial Lesson" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/dance-monthly", "slug": "dance-monthly", "names": { "en": "Monthly Pass", "uk": "Місячний абонемент", "de": "Monatskarte", "ru": "Месячный абонемент", "original": "Monthly Pass" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/dance-private", "slug": "dance-private", "names": { "en": "Private Lesson", "uk": "Індивідуальне заняття", "de": "Privatstunde", "ru": "Индивидуальное занятие", "original": "Private Lesson" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/dance-workshop", "slug": "dance-workshop", "names": { "en": "Workshop", "uk": "Майстер-клас", "de": "Workshop", "ru": "Мастер-класс", "original": "Workshop" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dance-trial",
+          "slug": "dance-trial",
+          "names": {
+            "en": "Trial Lesson",
+            "uk": "Пробне заняття",
+            "de": "Probestunde",
+            "ru": "Пробное занятие",
+            "original": "Trial Lesson"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "trial lesson"
+              ],
+              "uk": [
+                "пробне заняття"
+              ],
+              "de": [
+                "probestunde"
+              ],
+              "ru": [
+                "пробное занятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "dance-monthly",
+              "dance-private",
+              "dance-workshop"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dance-monthly",
+          "slug": "dance-monthly",
+          "names": {
+            "en": "Monthly Pass",
+            "uk": "Місячний абонемент",
+            "de": "Monatskarte",
+            "ru": "Месячный абонемент",
+            "original": "Monthly Pass"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "monthly pass"
+              ],
+              "uk": [
+                "місячний абонемент"
+              ],
+              "de": [
+                "monatskarte"
+              ],
+              "ru": [
+                "месячный абонемент"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "dance-trial",
+              "dance-private",
+              "dance-workshop"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dance-private",
+          "slug": "dance-private",
+          "names": {
+            "en": "Private Lesson",
+            "uk": "Індивідуальне заняття",
+            "de": "Privatstunde",
+            "ru": "Индивидуальное занятие",
+            "original": "Private Lesson"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "private lesson"
+              ],
+              "uk": [
+                "індивідуальне заняття"
+              ],
+              "de": [
+                "privatstunde"
+              ],
+              "ru": [
+                "индивидуальное занятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "dance-trial",
+              "dance-monthly",
+              "dance-workshop"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dance-workshop",
+          "slug": "dance-workshop",
+          "names": {
+            "en": "Workshop",
+            "uk": "Майстер-клас",
+            "de": "Workshop",
+            "ru": "Мастер-класс",
+            "original": "Workshop"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "workshop"
+              ],
+              "uk": [
+                "майстер-клас"
+              ],
+              "de": [
+                "workshop"
+              ],
+              "ru": [
+                "мастер-класс"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "dance-trial",
+              "dance-monthly",
+              "dance-private"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/art-school",
       "slug": "art-school",
-      "names": { "en": "Art School", "uk": "Художня школа", "de": "Kunstschule", "ru": "Художественная школа", "original": "Art School" },
+      "names": {
+        "en": "Art School",
+        "uk": "Художня школа",
+        "de": "Kunstschule",
+        "ru": "Художественная школа",
+        "original": "Art School"
+      },
       "osmTag": "amenity=school",
       "naceRef": "P85.52",
       "schemaOrgType": "EducationalOrganization",
       "wikidataId": "Q383092",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/drawing-class", "slug": "drawing-class", "names": { "en": "Drawing Class", "uk": "Малювання", "de": "Zeichenkurs", "ru": "Рисование", "original": "Drawing Class" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/painting-class", "slug": "painting-class", "names": { "en": "Painting Class", "uk": "Живопис", "de": "Malkurs", "ru": "Живопись", "original": "Painting Class" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/pottery-class", "slug": "pottery-class", "names": { "en": "Pottery Class", "uk": "Гончарство", "de": "Töpferkurs", "ru": "Гончарство", "original": "Pottery Class" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/drawing-class",
+          "slug": "drawing-class",
+          "names": {
+            "en": "Drawing Class",
+            "uk": "Малювання",
+            "de": "Zeichenkurs",
+            "ru": "Рисование",
+            "original": "Drawing Class"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "drawing class"
+              ],
+              "uk": [
+                "малювання"
+              ],
+              "de": [
+                "zeichenkurs"
+              ],
+              "ru": [
+                "рисование"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "painting-class",
+              "pottery-class"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/painting-class",
+          "slug": "painting-class",
+          "names": {
+            "en": "Painting Class",
+            "uk": "Живопис",
+            "de": "Malkurs",
+            "ru": "Живопись",
+            "original": "Painting Class"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "painting class"
+              ],
+              "uk": [
+                "живопис"
+              ],
+              "de": [
+                "malkurs"
+              ],
+              "ru": [
+                "живопись"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "drawing-class",
+              "pottery-class"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/pottery-class",
+          "slug": "pottery-class",
+          "names": {
+            "en": "Pottery Class",
+            "uk": "Гончарство",
+            "de": "Töpferkurs",
+            "ru": "Гончарство",
+            "original": "Pottery Class"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "pottery class"
+              ],
+              "uk": [
+                "гончарство"
+              ],
+              "de": [
+                "töpferkurs"
+              ],
+              "ru": [
+                "гончарство"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "drawing-class",
+              "painting-class"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/kindergarten",
       "slug": "kindergarten",
-      "names": { "en": "Kindergarten", "uk": "Дитячий садок", "de": "Kindergarten", "ru": "Детский сад", "original": "Kindergarten" },
-      "altLabels": { "en": ["preschool", "daycare", "nursery"], "uk": ["дитсадок"], "de": ["kita"], "ru": ["детсад", "ясли"] },
+      "names": {
+        "en": "Kindergarten",
+        "uk": "Дитячий садок",
+        "de": "Kindergarten",
+        "ru": "Детский сад",
+        "original": "Kindergarten"
+      },
+      "altLabels": {
+        "en": [
+          "preschool",
+          "daycare",
+          "nursery"
+        ],
+        "uk": [
+          "дитсадок"
+        ],
+        "de": [
+          "kita"
+        ],
+        "ru": [
+          "детсад",
+          "ясли"
+        ]
+      },
       "osmTag": "amenity=kindergarten",
       "naceRef": "P85.10",
       "schemaOrgType": "Preschool",
       "wikidataId": "Q131123",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/full-day-care", "slug": "full-day-care", "names": { "en": "Full Day", "uk": "Повний день", "de": "Ganztags", "ru": "Полный день", "original": "Full Day" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/half-day-care", "slug": "half-day-care", "names": { "en": "Half Day", "uk": "Півдня", "de": "Halbtags", "ru": "Полдня", "original": "Half Day" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/after-school", "slug": "after-school", "names": { "en": "After School", "uk": "Продовжений день", "de": "Nachmittagsbetreuung", "ru": "Продлёнка", "original": "After School" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/full-day-care",
+          "slug": "full-day-care",
+          "names": {
+            "en": "Full Day",
+            "uk": "Повний день",
+            "de": "Ganztags",
+            "ru": "Полный день",
+            "original": "Full Day"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "full day"
+              ],
+              "uk": [
+                "повний день"
+              ],
+              "de": [
+                "ganztags"
+              ],
+              "ru": [
+                "полный день"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "half-day-care",
+              "after-school"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/half-day-care",
+          "slug": "half-day-care",
+          "names": {
+            "en": "Half Day",
+            "uk": "Півдня",
+            "de": "Halbtags",
+            "ru": "Полдня",
+            "original": "Half Day"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "half day"
+              ],
+              "uk": [
+                "півдня"
+              ],
+              "de": [
+                "halbtags"
+              ],
+              "ru": [
+                "полдня"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "full-day-care",
+              "after-school"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/after-school",
+          "slug": "after-school",
+          "names": {
+            "en": "After School",
+            "uk": "Продовжений день",
+            "de": "Nachmittagsbetreuung",
+            "ru": "Продлёнка",
+            "original": "After School"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "after school"
+              ],
+              "uk": [
+                "продовжений день"
+              ],
+              "de": [
+                "nachmittagsbetreuung"
+              ],
+              "ru": [
+                "продлёнка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "full-day-care",
+              "half-day-care"
+            ]
+          }
+        }
       ]
     }
   ]

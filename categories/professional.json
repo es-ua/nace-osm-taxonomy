@@ -11,10 +11,22 @@
     "original": "Professional Services"
   },
   "altLabels": {
-    "en": ["consultancy", "advisory", "B2B services"],
-    "uk": ["консалтинг"],
-    "de": ["dienstleistungen", "beratung"],
-    "ru": ["консалтинг", "B2B"]
+    "en": [
+      "consultancy",
+      "advisory",
+      "B2B services"
+    ],
+    "uk": [
+      "консалтинг"
+    ],
+    "de": [
+      "dienstleistungen",
+      "beratung"
+    ],
+    "ru": [
+      "консалтинг",
+      "B2B"
+    ]
   },
   "icon": "💼",
   "naceRef": "M69",
@@ -24,253 +36,2885 @@
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/lawyer",
       "slug": "lawyer",
-      "names": { "en": "Lawyer", "uk": "Адвокат", "de": "Rechtsanwalt", "ru": "Юрист", "original": "Lawyer" },
-      "altLabels": { "en": ["attorney", "legal counsel", "law firm"], "uk": ["юрист", "адвокатське бюро"], "de": ["jurist", "anwaltskanzlei"], "ru": ["адвокат", "юрфирма"] },
+      "names": {
+        "en": "Lawyer",
+        "uk": "Адвокат",
+        "de": "Rechtsanwalt",
+        "ru": "Юрист",
+        "original": "Lawyer"
+      },
+      "altLabels": {
+        "en": [
+          "attorney",
+          "legal counsel",
+          "law firm"
+        ],
+        "uk": [
+          "юрист",
+          "адвокатське бюро"
+        ],
+        "de": [
+          "jurist",
+          "anwaltskanzlei"
+        ],
+        "ru": [
+          "адвокат",
+          "юрфирма"
+        ]
+      },
       "osmTag": "office=lawyer",
       "naceRef": "M69.10",
       "schemaOrgType": "LegalService",
       "wikidataId": "Q40348",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/legal-consultation", "slug": "legal-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Rechtsberatung", "ru": "Консультация", "original": "Consultation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/contract-review", "slug": "contract-review", "names": { "en": "Contract Review", "uk": "Перевірка договору", "de": "Vertragsprüfung", "ru": "Проверка договора", "original": "Contract Review" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/court-representation", "slug": "court-representation", "names": { "en": "Court Representation", "uk": "Представництво в суді", "de": "Gerichtsvertretung", "ru": "Представительство в суде", "original": "Court Representation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/family-law-case", "slug": "family-law-case", "names": { "en": "Family Law", "uk": "Сімейне право", "de": "Familienrecht", "ru": "Семейное право", "original": "Family Law" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/corporate-law-case", "slug": "corporate-law-case", "names": { "en": "Corporate Law", "uk": "Корпоративне право", "de": "Gesellschaftsrecht", "ru": "Корпоративное право", "original": "Corporate Law" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/immigration-law-case", "slug": "immigration-law-case", "names": { "en": "Immigration Law", "uk": "Імміграційне право", "de": "Migrationsrecht", "ru": "Иммиграционное право", "original": "Immigration Law" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/criminal-defense-case", "slug": "criminal-defense-case", "names": { "en": "Criminal Defense", "uk": "Кримінальний захист", "de": "Strafverteidigung", "ru": "Уголовная защита", "original": "Criminal Defense" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/personal-injury-case", "slug": "personal-injury-case", "names": { "en": "Personal Injury", "uk": "Компенсація за шкоду", "de": "Personenschaden", "ru": "Компенсация вреда", "original": "Personal Injury" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/legal-consultation",
+          "slug": "legal-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Rechtsberatung",
+            "ru": "Консультация",
+            "original": "Consultation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "consultation"
+              ],
+              "uk": [
+                "консультація"
+              ],
+              "de": [
+                "rechtsberatung"
+              ],
+              "ru": [
+                "консультация"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contract-review",
+              "court-representation",
+              "family-law-case"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/contract-review",
+          "slug": "contract-review",
+          "names": {
+            "en": "Contract Review",
+            "uk": "Перевірка договору",
+            "de": "Vertragsprüfung",
+            "ru": "Проверка договора",
+            "original": "Contract Review"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "contract review"
+              ],
+              "uk": [
+                "перевірка договору"
+              ],
+              "de": [
+                "vertragsprüfung"
+              ],
+              "ru": [
+                "проверка договора"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "legal-consultation",
+              "court-representation",
+              "family-law-case"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/court-representation",
+          "slug": "court-representation",
+          "names": {
+            "en": "Court Representation",
+            "uk": "Представництво в суді",
+            "de": "Gerichtsvertretung",
+            "ru": "Представительство в суде",
+            "original": "Court Representation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "court representation"
+              ],
+              "uk": [
+                "представництво в суді"
+              ],
+              "de": [
+                "gerichtsvertretung"
+              ],
+              "ru": [
+                "представительство в суде"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "legal-consultation",
+              "contract-review",
+              "family-law-case"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/family-law-case",
+          "slug": "family-law-case",
+          "names": {
+            "en": "Family Law",
+            "uk": "Сімейне право",
+            "de": "Familienrecht",
+            "ru": "Семейное право",
+            "original": "Family Law"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "family law"
+              ],
+              "uk": [
+                "сімейне право"
+              ],
+              "de": [
+                "familienrecht"
+              ],
+              "ru": [
+                "семейное право"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "legal-consultation",
+              "contract-review",
+              "court-representation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/corporate-law-case",
+          "slug": "corporate-law-case",
+          "names": {
+            "en": "Corporate Law",
+            "uk": "Корпоративне право",
+            "de": "Gesellschaftsrecht",
+            "ru": "Корпоративное право",
+            "original": "Corporate Law"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "corporate law"
+              ],
+              "uk": [
+                "корпоративне право"
+              ],
+              "de": [
+                "gesellschaftsrecht"
+              ],
+              "ru": [
+                "корпоративное право"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "legal-consultation",
+              "contract-review",
+              "court-representation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/immigration-law-case",
+          "slug": "immigration-law-case",
+          "names": {
+            "en": "Immigration Law",
+            "uk": "Імміграційне право",
+            "de": "Migrationsrecht",
+            "ru": "Иммиграционное право",
+            "original": "Immigration Law"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "immigration law"
+              ],
+              "uk": [
+                "імміграційне право"
+              ],
+              "de": [
+                "migrationsrecht"
+              ],
+              "ru": [
+                "иммиграционное право"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "legal-consultation",
+              "contract-review",
+              "court-representation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/criminal-defense-case",
+          "slug": "criminal-defense-case",
+          "names": {
+            "en": "Criminal Defense",
+            "uk": "Кримінальний захист",
+            "de": "Strafverteidigung",
+            "ru": "Уголовная защита",
+            "original": "Criminal Defense"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "criminal defense"
+              ],
+              "uk": [
+                "кримінальний захист"
+              ],
+              "de": [
+                "strafverteidigung"
+              ],
+              "ru": [
+                "уголовная защита"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "legal-consultation",
+              "contract-review",
+              "court-representation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/personal-injury-case",
+          "slug": "personal-injury-case",
+          "names": {
+            "en": "Personal Injury",
+            "uk": "Компенсація за шкоду",
+            "de": "Personenschaden",
+            "ru": "Компенсация вреда",
+            "original": "Personal Injury"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "personal injury"
+              ],
+              "uk": [
+                "компенсація за шкоду"
+              ],
+              "de": [
+                "personenschaden"
+              ],
+              "ru": [
+                "компенсация вреда"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "legal-consultation",
+              "contract-review",
+              "court-representation"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/accountant",
       "slug": "accountant",
-      "names": { "en": "Accountant", "uk": "Бухгалтер", "de": "Steuerberater", "ru": "Бухгалтер", "original": "Accountant" },
-      "altLabels": { "en": ["CPA", "tax advisor"], "uk": ["бухгалтерія"], "de": ["wirtschaftsprüfer"], "ru": ["налоговый консультант"] },
+      "names": {
+        "en": "Accountant",
+        "uk": "Бухгалтер",
+        "de": "Steuerberater",
+        "ru": "Бухгалтер",
+        "original": "Accountant"
+      },
+      "altLabels": {
+        "en": [
+          "CPA",
+          "tax advisor"
+        ],
+        "uk": [
+          "бухгалтерія"
+        ],
+        "de": [
+          "wirtschaftsprüfer"
+        ],
+        "ru": [
+          "налоговый консультант"
+        ]
+      },
       "osmTag": "office=accountant",
       "naceRef": "M69.20",
       "schemaOrgType": "AccountingService",
       "wikidataId": "Q4116214",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/tax-return", "slug": "tax-return", "names": { "en": "Tax Return", "uk": "Податкова декларація", "de": "Steuererklärung", "ru": "Налоговая декларация", "original": "Tax Return" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/bookkeeping", "slug": "bookkeeping", "names": { "en": "Bookkeeping", "uk": "Бухгалтерський облік", "de": "Buchhaltung", "ru": "Бухгалтерский учёт", "original": "Bookkeeping" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/annual-report", "slug": "annual-report", "names": { "en": "Annual Report", "uk": "Річний звіт", "de": "Jahresabschluss", "ru": "Годовой отчёт", "original": "Annual Report" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tax-return",
+          "slug": "tax-return",
+          "names": {
+            "en": "Tax Return",
+            "uk": "Податкова декларація",
+            "de": "Steuererklärung",
+            "ru": "Налоговая декларация",
+            "original": "Tax Return"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "tax return"
+              ],
+              "uk": [
+                "податкова декларація"
+              ],
+              "de": [
+                "steuererklärung"
+              ],
+              "ru": [
+                "налоговая декларация"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "bookkeeping",
+              "annual-report"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/bookkeeping",
+          "slug": "bookkeeping",
+          "names": {
+            "en": "Bookkeeping",
+            "uk": "Бухгалтерський облік",
+            "de": "Buchhaltung",
+            "ru": "Бухгалтерский учёт",
+            "original": "Bookkeeping"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "bookkeeping"
+              ],
+              "uk": [
+                "бухгалтерський облік"
+              ],
+              "de": [
+                "buchhaltung"
+              ],
+              "ru": [
+                "бухгалтерский учёт"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tax-return",
+              "annual-report"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/annual-report",
+          "slug": "annual-report",
+          "names": {
+            "en": "Annual Report",
+            "uk": "Річний звіт",
+            "de": "Jahresabschluss",
+            "ru": "Годовой отчёт",
+            "original": "Annual Report"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "annual report"
+              ],
+              "uk": [
+                "річний звіт"
+              ],
+              "de": [
+                "jahresabschluss"
+              ],
+              "ru": [
+                "годовой отчёт"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tax-return",
+              "bookkeeping"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/notary",
       "slug": "notary",
-      "names": { "en": "Notary", "uk": "Нотаріус", "de": "Notar", "ru": "Нотариус", "original": "Notary" },
+      "names": {
+        "en": "Notary",
+        "uk": "Нотаріус",
+        "de": "Notar",
+        "ru": "Нотариус",
+        "original": "Notary"
+      },
       "osmTag": "office=notary",
       "naceRef": "M69.10",
       "schemaOrgType": "LegalService",
       "wikidataId": "Q189533",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/certification", "slug": "certification", "names": { "en": "Certification", "uk": "Засвідчення", "de": "Beglaubigung", "ru": "Заверение", "original": "Certification" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/real-estate-transaction", "slug": "real-estate-transaction", "names": { "en": "Real Estate Transaction", "uk": "Операція з нерухомістю", "de": "Immobiliengeschäft", "ru": "Сделка с недвижимостью", "original": "Real Estate Transaction" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/will", "slug": "will", "names": { "en": "Will", "uk": "Заповіт", "de": "Testament", "ru": "Завещание", "original": "Will" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/power-of-attorney", "slug": "power-of-attorney", "names": { "en": "Power of Attorney", "uk": "Довіреність", "de": "Vollmacht", "ru": "Доверенность", "original": "Power of Attorney" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/certification",
+          "slug": "certification",
+          "names": {
+            "en": "Certification",
+            "uk": "Засвідчення",
+            "de": "Beglaubigung",
+            "ru": "Заверение",
+            "original": "Certification"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "certification"
+              ],
+              "uk": [
+                "засвідчення"
+              ],
+              "de": [
+                "beglaubigung"
+              ],
+              "ru": [
+                "заверение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "real-estate-transaction",
+              "will",
+              "power-of-attorney"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/real-estate-transaction",
+          "slug": "real-estate-transaction",
+          "names": {
+            "en": "Real Estate Transaction",
+            "uk": "Операція з нерухомістю",
+            "de": "Immobiliengeschäft",
+            "ru": "Сделка с недвижимостью",
+            "original": "Real Estate Transaction"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "real estate transaction"
+              ],
+              "uk": [
+                "операція з нерухомістю"
+              ],
+              "de": [
+                "immobiliengeschäft"
+              ],
+              "ru": [
+                "сделка с недвижимостью"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "certification",
+              "will",
+              "power-of-attorney"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/will",
+          "slug": "will",
+          "names": {
+            "en": "Will",
+            "uk": "Заповіт",
+            "de": "Testament",
+            "ru": "Завещание",
+            "original": "Will"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "will"
+              ],
+              "uk": [
+                "заповіт"
+              ],
+              "de": [
+                "testament"
+              ],
+              "ru": [
+                "завещание"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "certification",
+              "real-estate-transaction",
+              "power-of-attorney"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/power-of-attorney",
+          "slug": "power-of-attorney",
+          "names": {
+            "en": "Power of Attorney",
+            "uk": "Довіреність",
+            "de": "Vollmacht",
+            "ru": "Доверенность",
+            "original": "Power of Attorney"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "power of attorney"
+              ],
+              "uk": [
+                "довіреність"
+              ],
+              "de": [
+                "vollmacht"
+              ],
+              "ru": [
+                "доверенность"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "certification",
+              "real-estate-transaction",
+              "will"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/architect",
       "slug": "architect",
-      "names": { "en": "Architect", "uk": "Архітектор", "de": "Architekt", "ru": "Архитектор", "original": "Architect" },
+      "names": {
+        "en": "Architect",
+        "uk": "Архітектор",
+        "de": "Architekt",
+        "ru": "Архитектор",
+        "original": "Architect"
+      },
       "osmTag": "office=architect",
       "naceRef": "M71.11",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q42973",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/arch-consultation", "slug": "arch-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Beratung", "ru": "Консультация", "original": "Consultation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/building-plan", "slug": "building-plan", "names": { "en": "Building Plan", "uk": "Проєкт будівлі", "de": "Bauplan", "ru": "Проект здания", "original": "Building Plan" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/interior-design", "slug": "interior-design", "names": { "en": "Interior Design", "uk": "Дизайн інтер'єру", "de": "Innenarchitektur", "ru": "Дизайн интерьера", "original": "Interior Design" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/arch-consultation",
+          "slug": "arch-consultation",
+          "names": {
+            "en": "Consultation",
+            "uk": "Консультація",
+            "de": "Beratung",
+            "ru": "Консультация",
+            "original": "Consultation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "consultation"
+              ],
+              "uk": [
+                "консультація"
+              ],
+              "de": [
+                "beratung"
+              ],
+              "ru": [
+                "консультация"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "building-plan",
+              "interior-design"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/building-plan",
+          "slug": "building-plan",
+          "names": {
+            "en": "Building Plan",
+            "uk": "Проєкт будівлі",
+            "de": "Bauplan",
+            "ru": "Проект здания",
+            "original": "Building Plan"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "building plan"
+              ],
+              "uk": [
+                "проєкт будівлі"
+              ],
+              "de": [
+                "bauplan"
+              ],
+              "ru": [
+                "проект здания"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "arch-consultation",
+              "interior-design"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/interior-design",
+          "slug": "interior-design",
+          "names": {
+            "en": "Interior Design",
+            "uk": "Дизайн інтер'єру",
+            "de": "Innenarchitektur",
+            "ru": "Дизайн интерьера",
+            "original": "Interior Design"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "interior design"
+              ],
+              "uk": [
+                "дизайн інтер'єру"
+              ],
+              "de": [
+                "innenarchitektur"
+              ],
+              "ru": [
+                "дизайн интерьера"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "arch-consultation",
+              "building-plan"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/real-estate-agent",
       "slug": "real-estate-agent",
-      "names": { "en": "Real Estate Agent", "uk": "Ріелтор", "de": "Immobilienmakler", "ru": "Риелтор", "original": "Real Estate Agent" },
-      "altLabels": { "en": ["realtor", "estate agency"], "uk": ["агентство нерухомості"], "de": ["immobilienbüro"], "ru": ["агентство недвижимости"] },
+      "names": {
+        "en": "Real Estate Agent",
+        "uk": "Ріелтор",
+        "de": "Immobilienmakler",
+        "ru": "Риелтор",
+        "original": "Real Estate Agent"
+      },
+      "altLabels": {
+        "en": [
+          "realtor",
+          "estate agency"
+        ],
+        "uk": [
+          "агентство нерухомості"
+        ],
+        "de": [
+          "immobilienbüro"
+        ],
+        "ru": [
+          "агентство недвижимости"
+        ]
+      },
       "osmTag": "office=estate_agent",
       "naceRef": "L68.31",
       "schemaOrgType": "RealEstateAgent",
       "wikidataId": "Q166019",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/property-valuation", "slug": "property-valuation", "names": { "en": "Property Valuation", "uk": "Оцінка нерухомості", "de": "Immobilienbewertung", "ru": "Оценка недвижимости", "original": "Property Valuation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/buyer-representation", "slug": "buyer-representation", "names": { "en": "Buyer Representation", "uk": "Представництво покупця", "de": "Käufervertretung", "ru": "Представительство покупателя", "original": "Buyer Representation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/rental-management", "slug": "rental-management", "names": { "en": "Rental Management", "uk": "Управління орендою", "de": "Mietverwaltung", "ru": "Управление арендой", "original": "Rental Management" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/property-valuation",
+          "slug": "property-valuation",
+          "names": {
+            "en": "Property Valuation",
+            "uk": "Оцінка нерухомості",
+            "de": "Immobilienbewertung",
+            "ru": "Оценка недвижимости",
+            "original": "Property Valuation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "property valuation"
+              ],
+              "uk": [
+                "оцінка нерухомості"
+              ],
+              "de": [
+                "immobilienbewertung"
+              ],
+              "ru": [
+                "оценка недвижимости"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "buyer-representation",
+              "rental-management"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/buyer-representation",
+          "slug": "buyer-representation",
+          "names": {
+            "en": "Buyer Representation",
+            "uk": "Представництво покупця",
+            "de": "Käufervertretung",
+            "ru": "Представительство покупателя",
+            "original": "Buyer Representation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "buyer representation"
+              ],
+              "uk": [
+                "представництво покупця"
+              ],
+              "de": [
+                "käufervertretung"
+              ],
+              "ru": [
+                "представительство покупателя"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "property-valuation",
+              "rental-management"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/rental-management",
+          "slug": "rental-management",
+          "names": {
+            "en": "Rental Management",
+            "uk": "Управління орендою",
+            "de": "Mietverwaltung",
+            "ru": "Управление арендой",
+            "original": "Rental Management"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "rental management"
+              ],
+              "uk": [
+                "управління орендою"
+              ],
+              "de": [
+                "mietverwaltung"
+              ],
+              "ru": [
+                "управление арендой"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "property-valuation",
+              "buyer-representation"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/translator",
       "slug": "translator",
-      "names": { "en": "Translator", "uk": "Перекладач", "de": "Übersetzer", "ru": "Переводчик", "original": "Translator" },
+      "names": {
+        "en": "Translator",
+        "uk": "Перекладач",
+        "de": "Übersetzer",
+        "ru": "Переводчик",
+        "original": "Translator"
+      },
       "osmTag": "office=translator",
       "naceRef": "M74.30",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q333634",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/document-translation", "slug": "document-translation", "names": { "en": "Document Translation", "uk": "Переклад документів", "de": "Dokumentenübersetzung", "ru": "Перевод документов", "original": "Document Translation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/certified-translation", "slug": "certified-translation", "names": { "en": "Certified Translation", "uk": "Нотаріальний переклад", "de": "Beglaubigte Übersetzung", "ru": "Нотариальный перевод", "original": "Certified Translation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/interpretation", "slug": "interpretation", "names": { "en": "Interpretation", "uk": "Усний переклад", "de": "Dolmetschen", "ru": "Устный перевод", "original": "Interpretation" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/document-translation",
+          "slug": "document-translation",
+          "names": {
+            "en": "Document Translation",
+            "uk": "Переклад документів",
+            "de": "Dokumentenübersetzung",
+            "ru": "Перевод документов",
+            "original": "Document Translation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "document translation"
+              ],
+              "uk": [
+                "переклад документів"
+              ],
+              "de": [
+                "dokumentenübersetzung"
+              ],
+              "ru": [
+                "перевод документов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "certified-translation",
+              "interpretation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/certified-translation",
+          "slug": "certified-translation",
+          "names": {
+            "en": "Certified Translation",
+            "uk": "Нотаріальний переклад",
+            "de": "Beglaubigte Übersetzung",
+            "ru": "Нотариальный перевод",
+            "original": "Certified Translation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "certified translation"
+              ],
+              "uk": [
+                "нотаріальний переклад"
+              ],
+              "de": [
+                "beglaubigte übersetzung"
+              ],
+              "ru": [
+                "нотариальный перевод"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "document-translation",
+              "interpretation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/interpretation",
+          "slug": "interpretation",
+          "names": {
+            "en": "Interpretation",
+            "uk": "Усний переклад",
+            "de": "Dolmetschen",
+            "ru": "Устный перевод",
+            "original": "Interpretation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "interpretation"
+              ],
+              "uk": [
+                "усний переклад"
+              ],
+              "de": [
+                "dolmetschen"
+              ],
+              "ru": [
+                "устный перевод"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "document-translation",
+              "certified-translation"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/hr-consulting",
       "slug": "hr-consulting",
-      "names": { "en": "HR Consulting", "uk": "HR-консалтинг", "de": "HR-Beratung", "ru": "HR-консалтинг", "original": "HR Consulting" },
-      "altLabels": { "en": ["people operations consulting"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "HR Consulting",
+        "uk": "HR-консалтинг",
+        "de": "HR-Beratung",
+        "ru": "HR-консалтинг",
+        "original": "HR Consulting"
+      },
+      "altLabels": {
+        "en": [
+          "people operations consulting"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=consulting",
       "naceRef": "M70.22+N78.30",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q3133316",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/org-design-engagement", "slug": "org-design-engagement", "names": { "en": "Org Design Engagement", "uk": "Організаційний дизайн", "de": "Organisationsdesign", "ru": "Организационный дизайн", "original": "Org Design Engagement" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/comp-benefits-review", "slug": "comp-benefits-review", "names": { "en": "Compensation & Benefits Review", "uk": "Огляд компенсацій і пільг", "de": "Vergütungs- und Leistungsüberprüfung", "ru": "Обзор компенсаций и льгот", "original": "Compensation & Benefits Review" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/hr-policy-audit", "slug": "hr-policy-audit", "names": { "en": "HR Policy Audit", "uk": "Аудит HR-політик", "de": "HR-Richtlinien-Audit", "ru": "Аудит HR-политик", "original": "HR Policy Audit" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/employee-engagement-survey", "slug": "employee-engagement-survey", "names": { "en": "Employee Engagement Survey", "uk": "Опитування залученості співробітників", "de": "Mitarbeiterbefragung", "ru": "Опрос вовлечённости сотрудников", "original": "Employee Engagement Survey" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/org-design-engagement",
+          "slug": "org-design-engagement",
+          "names": {
+            "en": "Org Design Engagement",
+            "uk": "Організаційний дизайн",
+            "de": "Organisationsdesign",
+            "ru": "Организационный дизайн",
+            "original": "Org Design Engagement"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "org design engagement"
+              ],
+              "uk": [
+                "організаційний дизайн"
+              ],
+              "de": [
+                "organisationsdesign"
+              ],
+              "ru": [
+                "организационный дизайн"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "comp-benefits-review",
+              "hr-policy-audit",
+              "employee-engagement-survey"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/comp-benefits-review",
+          "slug": "comp-benefits-review",
+          "names": {
+            "en": "Compensation & Benefits Review",
+            "uk": "Огляд компенсацій і пільг",
+            "de": "Vergütungs- und Leistungsüberprüfung",
+            "ru": "Обзор компенсаций и льгот",
+            "original": "Compensation & Benefits Review"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "compensation & benefits review"
+              ],
+              "uk": [
+                "огляд компенсацій і пільг"
+              ],
+              "de": [
+                "vergütungs- und leistungsüberprüfung"
+              ],
+              "ru": [
+                "обзор компенсаций и льгот"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "org-design-engagement",
+              "hr-policy-audit",
+              "employee-engagement-survey"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hr-policy-audit",
+          "slug": "hr-policy-audit",
+          "names": {
+            "en": "HR Policy Audit",
+            "uk": "Аудит HR-політик",
+            "de": "HR-Richtlinien-Audit",
+            "ru": "Аудит HR-политик",
+            "original": "HR Policy Audit"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hr policy audit"
+              ],
+              "uk": [
+                "аудит hr-політик"
+              ],
+              "de": [
+                "hr-richtlinien-audit"
+              ],
+              "ru": [
+                "аудит hr-политик"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "org-design-engagement",
+              "comp-benefits-review",
+              "employee-engagement-survey"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/employee-engagement-survey",
+          "slug": "employee-engagement-survey",
+          "names": {
+            "en": "Employee Engagement Survey",
+            "uk": "Опитування залученості співробітників",
+            "de": "Mitarbeiterbefragung",
+            "ru": "Опрос вовлечённости сотрудников",
+            "original": "Employee Engagement Survey"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "employee engagement survey"
+              ],
+              "uk": [
+                "опитування залученості співробітників"
+              ],
+              "de": [
+                "mitarbeiterbefragung"
+              ],
+              "ru": [
+                "опрос вовлечённости сотрудников"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "org-design-engagement",
+              "comp-benefits-review",
+              "hr-policy-audit"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/recruitment-agency",
       "slug": "recruitment-agency",
-      "names": { "en": "Recruitment Agency", "uk": "Кадрова агенція", "de": "Personalvermittlung", "ru": "Кадровое агентство", "original": "Recruitment Agency" },
-      "altLabels": { "en": ["staffing agency", "headhunter"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Recruitment Agency",
+        "uk": "Кадрова агенція",
+        "de": "Personalvermittlung",
+        "ru": "Кадровое агентство",
+        "original": "Recruitment Agency"
+      },
+      "altLabels": {
+        "en": [
+          "staffing agency",
+          "headhunter"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=employment_agency",
       "naceRef": "N78.10",
       "schemaOrgType": "EmploymentAgency",
       "wikidataId": "Q1130920",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/contingent-search", "slug": "contingent-search", "names": { "en": "Contingent Search", "uk": "Пошук на умовах успіху", "de": "Erfolgsbasierte Suche", "ru": "Поиск с оплатой за результат", "original": "Contingent Search" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/retained-search", "slug": "retained-search", "names": { "en": "Retained Search", "uk": "Ексклюзивний пошук", "de": "Exklusivsuche", "ru": "Эксклюзивный поиск", "original": "Retained Search" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/executive-search", "slug": "executive-search", "names": { "en": "Executive Search", "uk": "Пошук топ-менеджерів", "de": "Führungskräftesuche", "ru": "Поиск топ-менеджеров", "original": "Executive Search" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/mass-hiring", "slug": "mass-hiring", "names": { "en": "Mass Hiring", "uk": "Масовий підбір персоналу", "de": "Massenrekrutierung", "ru": "Массовый подбор персонала", "original": "Mass Hiring" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/temporary-staffing", "slug": "temporary-staffing", "names": { "en": "Temporary Staffing", "uk": "Тимчасовий персонал", "de": "Zeitarbeit", "ru": "Временный персонал", "original": "Temporary Staffing" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/contingent-search",
+          "slug": "contingent-search",
+          "names": {
+            "en": "Contingent Search",
+            "uk": "Пошук на умовах успіху",
+            "de": "Erfolgsbasierte Suche",
+            "ru": "Поиск с оплатой за результат",
+            "original": "Contingent Search"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "contingent search"
+              ],
+              "uk": [
+                "пошук на умовах успіху"
+              ],
+              "de": [
+                "erfolgsbasierte suche"
+              ],
+              "ru": [
+                "поиск с оплатой за результат"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "retained-search",
+              "executive-search",
+              "mass-hiring"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/retained-search",
+          "slug": "retained-search",
+          "names": {
+            "en": "Retained Search",
+            "uk": "Ексклюзивний пошук",
+            "de": "Exklusivsuche",
+            "ru": "Эксклюзивный поиск",
+            "original": "Retained Search"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "retained search"
+              ],
+              "uk": [
+                "ексклюзивний пошук"
+              ],
+              "de": [
+                "exklusivsuche"
+              ],
+              "ru": [
+                "эксклюзивный поиск"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contingent-search",
+              "executive-search",
+              "mass-hiring"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/executive-search",
+          "slug": "executive-search",
+          "names": {
+            "en": "Executive Search",
+            "uk": "Пошук топ-менеджерів",
+            "de": "Führungskräftesuche",
+            "ru": "Поиск топ-менеджеров",
+            "original": "Executive Search"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "executive search"
+              ],
+              "uk": [
+                "пошук топ-менеджерів"
+              ],
+              "de": [
+                "führungskräftesuche"
+              ],
+              "ru": [
+                "поиск топ-менеджеров"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contingent-search",
+              "retained-search",
+              "mass-hiring"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/mass-hiring",
+          "slug": "mass-hiring",
+          "names": {
+            "en": "Mass Hiring",
+            "uk": "Масовий підбір персоналу",
+            "de": "Massenrekrutierung",
+            "ru": "Массовый подбор персонала",
+            "original": "Mass Hiring"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "mass hiring"
+              ],
+              "uk": [
+                "масовий підбір персоналу"
+              ],
+              "de": [
+                "massenrekrutierung"
+              ],
+              "ru": [
+                "массовый подбор персонала"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contingent-search",
+              "retained-search",
+              "executive-search"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/temporary-staffing",
+          "slug": "temporary-staffing",
+          "names": {
+            "en": "Temporary Staffing",
+            "uk": "Тимчасовий персонал",
+            "de": "Zeitarbeit",
+            "ru": "Временный персонал",
+            "original": "Temporary Staffing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "temporary staffing"
+              ],
+              "uk": [
+                "тимчасовий персонал"
+              ],
+              "de": [
+                "zeitarbeit"
+              ],
+              "ru": [
+                "временный персонал"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "contingent-search",
+              "retained-search",
+              "executive-search"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/market-research",
       "slug": "market-research",
-      "names": { "en": "Market Research", "uk": "Маркетингові дослідження", "de": "Marktforschung", "ru": "Маркетинговые исследования", "original": "Market Research" },
+      "names": {
+        "en": "Market Research",
+        "uk": "Маркетингові дослідження",
+        "de": "Marktforschung",
+        "ru": "Маркетинговые исследования",
+        "original": "Market Research"
+      },
       "osmTag": "office=research",
       "naceRef": "M73.20",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q1129480",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/focus-group", "slug": "focus-group", "names": { "en": "Focus Group", "uk": "Фокус-група", "de": "Fokusgruppe", "ru": "Фокус-группа", "original": "Focus Group" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/survey-fieldwork", "slug": "survey-fieldwork", "names": { "en": "Survey Fieldwork", "uk": "Польове опитування", "de": "Umfrage-Feldarbeit", "ru": "Полевой опрос", "original": "Survey Fieldwork" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/competitor-analysis", "slug": "competitor-analysis", "names": { "en": "Competitor Analysis", "uk": "Аналіз конкурентів", "de": "Wettbewerbsanalyse", "ru": "Анализ конкурентов", "original": "Competitor Analysis" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/brand-tracking-study", "slug": "brand-tracking-study", "names": { "en": "Brand Tracking Study", "uk": "Дослідження сприйняття бренду", "de": "Markentracking-Studie", "ru": "Исследование восприятия бренда", "original": "Brand Tracking Study" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/focus-group",
+          "slug": "focus-group",
+          "names": {
+            "en": "Focus Group",
+            "uk": "Фокус-група",
+            "de": "Fokusgruppe",
+            "ru": "Фокус-группа",
+            "original": "Focus Group"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "focus group"
+              ],
+              "uk": [
+                "фокус-група"
+              ],
+              "de": [
+                "fokusgruppe"
+              ],
+              "ru": [
+                "фокус-группа"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "survey-fieldwork",
+              "competitor-analysis",
+              "brand-tracking-study"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/survey-fieldwork",
+          "slug": "survey-fieldwork",
+          "names": {
+            "en": "Survey Fieldwork",
+            "uk": "Польове опитування",
+            "de": "Umfrage-Feldarbeit",
+            "ru": "Полевой опрос",
+            "original": "Survey Fieldwork"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "survey fieldwork"
+              ],
+              "uk": [
+                "польове опитування"
+              ],
+              "de": [
+                "umfrage-feldarbeit"
+              ],
+              "ru": [
+                "полевой опрос"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "focus-group",
+              "competitor-analysis",
+              "brand-tracking-study"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/competitor-analysis",
+          "slug": "competitor-analysis",
+          "names": {
+            "en": "Competitor Analysis",
+            "uk": "Аналіз конкурентів",
+            "de": "Wettbewerbsanalyse",
+            "ru": "Анализ конкурентов",
+            "original": "Competitor Analysis"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "competitor analysis"
+              ],
+              "uk": [
+                "аналіз конкурентів"
+              ],
+              "de": [
+                "wettbewerbsanalyse"
+              ],
+              "ru": [
+                "анализ конкурентов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "focus-group",
+              "survey-fieldwork",
+              "brand-tracking-study"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/brand-tracking-study",
+          "slug": "brand-tracking-study",
+          "names": {
+            "en": "Brand Tracking Study",
+            "uk": "Дослідження сприйняття бренду",
+            "de": "Markentracking-Studie",
+            "ru": "Исследование восприятия бренда",
+            "original": "Brand Tracking Study"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "brand tracking study"
+              ],
+              "uk": [
+                "дослідження сприйняття бренду"
+              ],
+              "de": [
+                "markentracking-studie"
+              ],
+              "ru": [
+                "исследование восприятия бренда"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "focus-group",
+              "survey-fieldwork",
+              "competitor-analysis"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/copywriting",
       "slug": "copywriting",
-      "names": { "en": "Copywriting", "uk": "Копірайтинг", "de": "Texten", "ru": "Копирайтинг", "original": "Copywriting" },
-      "altLabels": { "en": ["content writing"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Copywriting",
+        "uk": "Копірайтинг",
+        "de": "Texten",
+        "ru": "Копирайтинг",
+        "original": "Copywriting"
+      },
+      "altLabels": {
+        "en": [
+          "content writing"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=writer",
       "naceRef": "M73.11+J62.01",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q1141315",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/website-copy", "slug": "website-copy", "names": { "en": "Website Copy", "uk": "Тексти для сайту", "de": "Website-Texte", "ru": "Тексты для сайта", "original": "Website Copy" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/ad-copy", "slug": "ad-copy", "names": { "en": "Ad Copy", "uk": "Рекламні тексти", "de": "Anzeigentexte", "ru": "Рекламные тексты", "original": "Ad Copy" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/email-campaign-copy", "slug": "email-campaign-copy", "names": { "en": "Email Campaign Copy", "uk": "Email-розсилки", "de": "E-Mail-Kampagnentexte", "ru": "Email-рассылки", "original": "Email Campaign Copy" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/blog-articles", "slug": "blog-articles", "names": { "en": "Blog Articles", "uk": "Статті для блогу", "de": "Blogartikel", "ru": "Статьи для блога", "original": "Blog Articles" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/technical-writing", "slug": "technical-writing", "names": { "en": "Technical Writing", "uk": "Технічні тексти", "de": "Technische Dokumentation", "ru": "Техническое написание", "original": "Technical Writing" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/website-copy",
+          "slug": "website-copy",
+          "names": {
+            "en": "Website Copy",
+            "uk": "Тексти для сайту",
+            "de": "Website-Texte",
+            "ru": "Тексты для сайта",
+            "original": "Website Copy"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "website copy"
+              ],
+              "uk": [
+                "тексти для сайту"
+              ],
+              "de": [
+                "website-texte"
+              ],
+              "ru": [
+                "тексты для сайта"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "ad-copy",
+              "email-campaign-copy",
+              "blog-articles"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ad-copy",
+          "slug": "ad-copy",
+          "names": {
+            "en": "Ad Copy",
+            "uk": "Рекламні тексти",
+            "de": "Anzeigentexte",
+            "ru": "Рекламные тексты",
+            "original": "Ad Copy"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ad copy"
+              ],
+              "uk": [
+                "рекламні тексти"
+              ],
+              "de": [
+                "anzeigentexte"
+              ],
+              "ru": [
+                "рекламные тексты"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "website-copy",
+              "email-campaign-copy",
+              "blog-articles"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/email-campaign-copy",
+          "slug": "email-campaign-copy",
+          "names": {
+            "en": "Email Campaign Copy",
+            "uk": "Email-розсилки",
+            "de": "E-Mail-Kampagnentexte",
+            "ru": "Email-рассылки",
+            "original": "Email Campaign Copy"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "email campaign copy"
+              ],
+              "uk": [
+                "email-розсилки"
+              ],
+              "de": [
+                "e-mail-kampagnentexte"
+              ],
+              "ru": [
+                "email-рассылки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "website-copy",
+              "ad-copy",
+              "blog-articles"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/blog-articles",
+          "slug": "blog-articles",
+          "names": {
+            "en": "Blog Articles",
+            "uk": "Статті для блогу",
+            "de": "Blogartikel",
+            "ru": "Статьи для блога",
+            "original": "Blog Articles"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "blog articles"
+              ],
+              "uk": [
+                "статті для блогу"
+              ],
+              "de": [
+                "blogartikel"
+              ],
+              "ru": [
+                "статьи для блога"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "website-copy",
+              "ad-copy",
+              "email-campaign-copy"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/technical-writing",
+          "slug": "technical-writing",
+          "names": {
+            "en": "Technical Writing",
+            "uk": "Технічні тексти",
+            "de": "Technische Dokumentation",
+            "ru": "Техническое написание",
+            "original": "Technical Writing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "technical writing"
+              ],
+              "uk": [
+                "технічні тексти"
+              ],
+              "de": [
+                "technische dokumentation"
+              ],
+              "ru": [
+                "техническое написание"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "website-copy",
+              "ad-copy",
+              "email-campaign-copy"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/mystery-shopping",
       "slug": "mystery-shopping",
-      "names": { "en": "Mystery Shopping", "uk": "Таємний покупець", "de": "Mystery Shopping", "ru": "Тайный покупатель", "original": "Mystery Shopping" },
+      "names": {
+        "en": "Mystery Shopping",
+        "uk": "Таємний покупець",
+        "de": "Mystery Shopping",
+        "ru": "Тайный покупатель",
+        "original": "Mystery Shopping"
+      },
       "osmTag": "office=consulting",
       "naceRef": "M73.20+M70.22",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q938373",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/in-store-evaluation", "slug": "in-store-evaluation", "names": { "en": "In-store Evaluation", "uk": "Оцінка в магазині", "de": "In-Store-Bewertung", "ru": "Оценка в магазине", "original": "In-store Evaluation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/restaurant-evaluation", "slug": "restaurant-evaluation", "names": { "en": "Restaurant Evaluation", "uk": "Оцінка ресторану", "de": "Restaurantbewertung", "ru": "Оценка ресторана", "original": "Restaurant Evaluation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/phone-evaluation", "slug": "phone-evaluation", "names": { "en": "Phone Evaluation", "uk": "Оцінка телефонного обслуговування", "de": "Telefonbewertung", "ru": "Оценка телефонного обслуживания", "original": "Phone Evaluation" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/online-evaluation", "slug": "online-evaluation", "names": { "en": "Online Evaluation", "uk": "Оцінка онлайн-сервісу", "de": "Online-Bewertung", "ru": "Оценка онлайн-сервиса", "original": "Online Evaluation" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/in-store-evaluation",
+          "slug": "in-store-evaluation",
+          "names": {
+            "en": "In-store Evaluation",
+            "uk": "Оцінка в магазині",
+            "de": "In-Store-Bewertung",
+            "ru": "Оценка в магазине",
+            "original": "In-store Evaluation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "in-store evaluation"
+              ],
+              "uk": [
+                "оцінка в магазині"
+              ],
+              "de": [
+                "in-store-bewertung"
+              ],
+              "ru": [
+                "оценка в магазине"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "restaurant-evaluation",
+              "phone-evaluation",
+              "online-evaluation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/restaurant-evaluation",
+          "slug": "restaurant-evaluation",
+          "names": {
+            "en": "Restaurant Evaluation",
+            "uk": "Оцінка ресторану",
+            "de": "Restaurantbewertung",
+            "ru": "Оценка ресторана",
+            "original": "Restaurant Evaluation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "restaurant evaluation"
+              ],
+              "uk": [
+                "оцінка ресторану"
+              ],
+              "de": [
+                "restaurantbewertung"
+              ],
+              "ru": [
+                "оценка ресторана"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "in-store-evaluation",
+              "phone-evaluation",
+              "online-evaluation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/phone-evaluation",
+          "slug": "phone-evaluation",
+          "names": {
+            "en": "Phone Evaluation",
+            "uk": "Оцінка телефонного обслуговування",
+            "de": "Telefonbewertung",
+            "ru": "Оценка телефонного обслуживания",
+            "original": "Phone Evaluation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "phone evaluation"
+              ],
+              "uk": [
+                "оцінка телефонного обслуговування"
+              ],
+              "de": [
+                "telefonbewertung"
+              ],
+              "ru": [
+                "оценка телефонного обслуживания"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "in-store-evaluation",
+              "restaurant-evaluation",
+              "online-evaluation"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/online-evaluation",
+          "slug": "online-evaluation",
+          "names": {
+            "en": "Online Evaluation",
+            "uk": "Оцінка онлайн-сервісу",
+            "de": "Online-Bewertung",
+            "ru": "Оценка онлайн-сервиса",
+            "original": "Online Evaluation"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "online evaluation"
+              ],
+              "uk": [
+                "оцінка онлайн-сервісу"
+              ],
+              "de": [
+                "online-bewertung"
+              ],
+              "ru": [
+                "оценка онлайн-сервиса"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "in-store-evaluation",
+              "restaurant-evaluation",
+              "phone-evaluation"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/telemarketing",
       "slug": "telemarketing",
-      "names": { "en": "Telemarketing", "uk": "Телемаркетинг", "de": "Telefonmarketing", "ru": "Телемаркетинг", "original": "Telemarketing" },
+      "names": {
+        "en": "Telemarketing",
+        "uk": "Телемаркетинг",
+        "de": "Telefonmarketing",
+        "ru": "Телемаркетинг",
+        "original": "Telemarketing"
+      },
       "osmTag": "office=telemarketing",
       "naceRef": "N82.20",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q745294",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/outbound-campaign", "slug": "outbound-campaign", "names": { "en": "Outbound Campaign", "uk": "Вихідна кампанія", "de": "Outbound-Kampagne", "ru": "Исходящая кампания", "original": "Outbound Campaign" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/inbound-callcenter", "slug": "inbound-callcenter", "names": { "en": "Inbound Call Center", "uk": "Вхідний кол-центр", "de": "Inbound-Callcenter", "ru": "Входящий колл-центр", "original": "Inbound Call Center" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/lead-qualification", "slug": "lead-qualification", "names": { "en": "Lead Qualification", "uk": "Кваліфікація лідів", "de": "Lead-Qualifizierung", "ru": "Квалификация лидов", "original": "Lead Qualification" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/b2b-cold-calling", "slug": "b2b-cold-calling", "names": { "en": "B2B Cold Calling", "uk": "B2B холодні дзвінки", "de": "B2B-Kaltakquise", "ru": "B2B холодные звонки", "original": "B2B Cold Calling" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/outbound-campaign",
+          "slug": "outbound-campaign",
+          "names": {
+            "en": "Outbound Campaign",
+            "uk": "Вихідна кампанія",
+            "de": "Outbound-Kampagne",
+            "ru": "Исходящая кампания",
+            "original": "Outbound Campaign"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "outbound campaign"
+              ],
+              "uk": [
+                "вихідна кампанія"
+              ],
+              "de": [
+                "outbound-kampagne"
+              ],
+              "ru": [
+                "исходящая кампания"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "inbound-callcenter",
+              "lead-qualification",
+              "b2b-cold-calling"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/inbound-callcenter",
+          "slug": "inbound-callcenter",
+          "names": {
+            "en": "Inbound Call Center",
+            "uk": "Вхідний кол-центр",
+            "de": "Inbound-Callcenter",
+            "ru": "Входящий колл-центр",
+            "original": "Inbound Call Center"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "inbound call center"
+              ],
+              "uk": [
+                "вхідний кол-центр"
+              ],
+              "de": [
+                "inbound-callcenter"
+              ],
+              "ru": [
+                "входящий колл-центр"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "outbound-campaign",
+              "lead-qualification",
+              "b2b-cold-calling"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/lead-qualification",
+          "slug": "lead-qualification",
+          "names": {
+            "en": "Lead Qualification",
+            "uk": "Кваліфікація лідів",
+            "de": "Lead-Qualifizierung",
+            "ru": "Квалификация лидов",
+            "original": "Lead Qualification"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "lead qualification"
+              ],
+              "uk": [
+                "кваліфікація лідів"
+              ],
+              "de": [
+                "lead-qualifizierung"
+              ],
+              "ru": [
+                "квалификация лидов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "outbound-campaign",
+              "inbound-callcenter",
+              "b2b-cold-calling"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/b2b-cold-calling",
+          "slug": "b2b-cold-calling",
+          "names": {
+            "en": "B2B Cold Calling",
+            "uk": "B2B холодні дзвінки",
+            "de": "B2B-Kaltakquise",
+            "ru": "B2B холодные звонки",
+            "original": "B2B Cold Calling"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "b2b cold calling"
+              ],
+              "uk": [
+                "b2b холодні дзвінки"
+              ],
+              "de": [
+                "b2b-kaltakquise"
+              ],
+              "ru": [
+                "b2b холодные звонки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "outbound-campaign",
+              "inbound-callcenter",
+              "lead-qualification"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/coworking-space",
       "slug": "coworking-space",
-      "names": { "en": "Coworking Space", "uk": "Коворкінг", "de": "Coworking-Space", "ru": "Коворкинг", "original": "Coworking Space" },
-      "altLabels": { "en": ["shared workspace"], "uk": ["спільний простір"], "de": ["gemeinschaftsbüro"], "ru": [] },
+      "names": {
+        "en": "Coworking Space",
+        "uk": "Коворкінг",
+        "de": "Coworking-Space",
+        "ru": "Коворкинг",
+        "original": "Coworking Space"
+      },
+      "altLabels": {
+        "en": [
+          "shared workspace"
+        ],
+        "uk": [
+          "спільний простір"
+        ],
+        "de": [
+          "gemeinschaftsbüro"
+        ],
+        "ru": []
+      },
       "osmTag": "amenity=coworking_space",
       "naceRef": "N68.20+L68.20",
       "schemaOrgType": "LocalBusiness",
       "wikidataId": "Q1765488",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/hot-desk-day", "slug": "hot-desk-day", "names": { "en": "Hot Desk (Day)", "uk": "Гаряче місце (день)", "de": "Hot Desk (Tag)", "ru": "Гибкое место (день)", "original": "Hot Desk (Day)" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/dedicated-desk-month", "slug": "dedicated-desk-month", "names": { "en": "Dedicated Desk (Month)", "uk": "Закріплене місце (місяць)", "de": "Fixer Arbeitsplatz (Monat)", "ru": "Закреплённое место (месяц)", "original": "Dedicated Desk (Month)" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/private-office-coworking", "slug": "private-office-coworking", "names": { "en": "Private Office", "uk": "Приватний офіс", "de": "Privatbüro", "ru": "Частный офис", "original": "Private Office" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/meeting-room-rental", "slug": "meeting-room-rental", "names": { "en": "Meeting Room Rental", "uk": "Оренда переговорної", "de": "Besprechungsraum-Miete", "ru": "Аренда переговорной", "original": "Meeting Room Rental" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hot-desk-day",
+          "slug": "hot-desk-day",
+          "names": {
+            "en": "Hot Desk (Day)",
+            "uk": "Гаряче місце (день)",
+            "de": "Hot Desk (Tag)",
+            "ru": "Гибкое место (день)",
+            "original": "Hot Desk (Day)"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hot desk (day)"
+              ],
+              "uk": [
+                "гаряче місце (день)"
+              ],
+              "de": [
+                "hot desk (tag)"
+              ],
+              "ru": [
+                "гибкое место (день)"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "dedicated-desk-month",
+              "private-office-coworking",
+              "meeting-room-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dedicated-desk-month",
+          "slug": "dedicated-desk-month",
+          "names": {
+            "en": "Dedicated Desk (Month)",
+            "uk": "Закріплене місце (місяць)",
+            "de": "Fixer Arbeitsplatz (Monat)",
+            "ru": "Закреплённое место (месяц)",
+            "original": "Dedicated Desk (Month)"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "dedicated desk (month)"
+              ],
+              "uk": [
+                "закріплене місце (місяць)"
+              ],
+              "de": [
+                "fixer arbeitsplatz (monat)"
+              ],
+              "ru": [
+                "закреплённое место (месяц)"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "hot-desk-day",
+              "private-office-coworking",
+              "meeting-room-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/private-office-coworking",
+          "slug": "private-office-coworking",
+          "names": {
+            "en": "Private Office",
+            "uk": "Приватний офіс",
+            "de": "Privatbüro",
+            "ru": "Частный офис",
+            "original": "Private Office"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "private office"
+              ],
+              "uk": [
+                "приватний офіс"
+              ],
+              "de": [
+                "privatbüro"
+              ],
+              "ru": [
+                "частный офис"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "hot-desk-day",
+              "dedicated-desk-month",
+              "meeting-room-rental"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/meeting-room-rental",
+          "slug": "meeting-room-rental",
+          "names": {
+            "en": "Meeting Room Rental",
+            "uk": "Оренда переговорної",
+            "de": "Besprechungsraum-Miete",
+            "ru": "Аренда переговорной",
+            "original": "Meeting Room Rental"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "meeting room rental"
+              ],
+              "uk": [
+                "оренда переговорної"
+              ],
+              "de": [
+                "besprechungsraum-miete"
+              ],
+              "ru": [
+                "аренда переговорной"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "hot-desk-day",
+              "dedicated-desk-month",
+              "private-office-coworking"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/business-coach",
       "slug": "business-coach",
-      "names": { "en": "Business Coach", "uk": "Бізнес-коуч", "de": "Business-Coach", "ru": "Бизнес-коуч", "original": "Business Coach" },
-      "altLabels": { "en": ["executive coach"], "uk": ["коуч"], "de": [], "ru": [] },
+      "names": {
+        "en": "Business Coach",
+        "uk": "Бізнес-коуч",
+        "de": "Business-Coach",
+        "ru": "Бизнес-коуч",
+        "original": "Business Coach"
+      },
+      "altLabels": {
+        "en": [
+          "executive coach"
+        ],
+        "uk": [
+          "коуч"
+        ],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=consulting",
       "naceRef": "M70.22",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q6350498",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/executive-coaching", "slug": "executive-coaching", "names": { "en": "Executive Coaching", "uk": "Коучинг керівників", "de": "Executive Coaching", "ru": "Коучинг руководителей", "original": "Executive Coaching" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/team-coaching", "slug": "team-coaching", "names": { "en": "Team Coaching", "uk": "Командний коучинг", "de": "Team-Coaching", "ru": "Командный коучинг", "original": "Team Coaching" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/startup-mentoring", "slug": "startup-mentoring", "names": { "en": "Startup Mentoring", "uk": "Менторинг стартапів", "de": "Startup-Mentoring", "ru": "Менторинг стартапов", "original": "Startup Mentoring" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/leadership-development", "slug": "leadership-development", "names": { "en": "Leadership Development", "uk": "Розвиток лідерства", "de": "Führungskräfteentwicklung", "ru": "Развитие лидерства", "original": "Leadership Development" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/executive-coaching",
+          "slug": "executive-coaching",
+          "names": {
+            "en": "Executive Coaching",
+            "uk": "Коучинг керівників",
+            "de": "Executive Coaching",
+            "ru": "Коучинг руководителей",
+            "original": "Executive Coaching"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "executive coaching"
+              ],
+              "uk": [
+                "коучинг керівників"
+              ],
+              "de": [
+                "executive coaching"
+              ],
+              "ru": [
+                "коучинг руководителей"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "team-coaching",
+              "startup-mentoring",
+              "leadership-development"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/team-coaching",
+          "slug": "team-coaching",
+          "names": {
+            "en": "Team Coaching",
+            "uk": "Командний коучинг",
+            "de": "Team-Coaching",
+            "ru": "Командный коучинг",
+            "original": "Team Coaching"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "team coaching"
+              ],
+              "uk": [
+                "командний коучинг"
+              ],
+              "de": [
+                "team-coaching"
+              ],
+              "ru": [
+                "командный коучинг"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "executive-coaching",
+              "startup-mentoring",
+              "leadership-development"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/startup-mentoring",
+          "slug": "startup-mentoring",
+          "names": {
+            "en": "Startup Mentoring",
+            "uk": "Менторинг стартапів",
+            "de": "Startup-Mentoring",
+            "ru": "Менторинг стартапов",
+            "original": "Startup Mentoring"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "startup mentoring"
+              ],
+              "uk": [
+                "менторинг стартапів"
+              ],
+              "de": [
+                "startup-mentoring"
+              ],
+              "ru": [
+                "менторинг стартапов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "executive-coaching",
+              "team-coaching",
+              "leadership-development"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/leadership-development",
+          "slug": "leadership-development",
+          "names": {
+            "en": "Leadership Development",
+            "uk": "Розвиток лідерства",
+            "de": "Führungskräfteentwicklung",
+            "ru": "Развитие лидерства",
+            "original": "Leadership Development"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "leadership development"
+              ],
+              "uk": [
+                "розвиток лідерства"
+              ],
+              "de": [
+                "führungskräfteentwicklung"
+              ],
+              "ru": [
+                "развитие лидерства"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "executive-coaching",
+              "team-coaching",
+              "startup-mentoring"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/life-coach",
       "slug": "life-coach",
-      "names": { "en": "Life Coach", "uk": "Лайф-коуч", "de": "Life Coach", "ru": "Лайф-коуч", "original": "Life Coach" },
-      "altLabels": { "en": ["personal coach"], "uk": [], "de": [], "ru": [] },
+      "names": {
+        "en": "Life Coach",
+        "uk": "Лайф-коуч",
+        "de": "Life Coach",
+        "ru": "Лайф-коуч",
+        "original": "Life Coach"
+      },
+      "altLabels": {
+        "en": [
+          "personal coach"
+        ],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
       "osmTag": "office=coaching",
       "naceRef": "Q86.90+M70.22",
       "schemaOrgType": "ProfessionalService",
       "wikidataId": "Q2220685",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/personal-coaching", "slug": "personal-coaching", "names": { "en": "Personal Coaching", "uk": "Персональний коучинг", "de": "Personal Coaching", "ru": "Персональный коучинг", "original": "Personal Coaching" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/career-coaching", "slug": "career-coaching", "names": { "en": "Career Coaching", "uk": "Кар'єрний коучинг", "de": "Karriere-Coaching", "ru": "Карьерный коучинг", "original": "Career Coaching" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/relationship-coaching", "slug": "relationship-coaching", "names": { "en": "Relationship Coaching", "uk": "Коучинг стосунків", "de": "Beziehungs-Coaching", "ru": "Коучинг отношений", "original": "Relationship Coaching" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/mindset-coaching", "slug": "mindset-coaching", "names": { "en": "Mindset Coaching", "uk": "Коучинг мислення", "de": "Mindset-Coaching", "ru": "Коучинг мышления", "original": "Mindset Coaching" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/personal-coaching",
+          "slug": "personal-coaching",
+          "names": {
+            "en": "Personal Coaching",
+            "uk": "Персональний коучинг",
+            "de": "Personal Coaching",
+            "ru": "Персональный коучинг",
+            "original": "Personal Coaching"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "personal coaching"
+              ],
+              "uk": [
+                "персональний коучинг"
+              ],
+              "de": [
+                "personal coaching"
+              ],
+              "ru": [
+                "персональный коучинг"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "career-coaching",
+              "relationship-coaching",
+              "mindset-coaching"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/career-coaching",
+          "slug": "career-coaching",
+          "names": {
+            "en": "Career Coaching",
+            "uk": "Кар'єрний коучинг",
+            "de": "Karriere-Coaching",
+            "ru": "Карьерный коучинг",
+            "original": "Career Coaching"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "career coaching"
+              ],
+              "uk": [
+                "кар'єрний коучинг"
+              ],
+              "de": [
+                "karriere-coaching"
+              ],
+              "ru": [
+                "карьерный коучинг"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "personal-coaching",
+              "relationship-coaching",
+              "mindset-coaching"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/relationship-coaching",
+          "slug": "relationship-coaching",
+          "names": {
+            "en": "Relationship Coaching",
+            "uk": "Коучинг стосунків",
+            "de": "Beziehungs-Coaching",
+            "ru": "Коучинг отношений",
+            "original": "Relationship Coaching"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "relationship coaching"
+              ],
+              "uk": [
+                "коучинг стосунків"
+              ],
+              "de": [
+                "beziehungs-coaching"
+              ],
+              "ru": [
+                "коучинг отношений"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "personal-coaching",
+              "career-coaching",
+              "mindset-coaching"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/mindset-coaching",
+          "slug": "mindset-coaching",
+          "names": {
+            "en": "Mindset Coaching",
+            "uk": "Коучинг мислення",
+            "de": "Mindset-Coaching",
+            "ru": "Коучинг мышления",
+            "original": "Mindset Coaching"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "mindset coaching"
+              ],
+              "uk": [
+                "коучинг мислення"
+              ],
+              "de": [
+                "mindset-coaching"
+              ],
+              "ru": [
+                "коучинг мышления"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "personal-coaching",
+              "career-coaching",
+              "relationship-coaching"
+            ]
+          }
+        }
       ]
     },
     {
       "@id": "https://taxonomy.mapko.net/v1/subcategory/payroll-service",
       "slug": "payroll-service",
-      "names": { "en": "Payroll Service", "uk": "Розрахунок зарплат", "de": "Lohnbuchhaltung", "ru": "Расчёт зарплат", "original": "Payroll Service" },
-      "altLabels": { "en": ["payroll outsourcing"], "uk": ["розрахунок з/п"], "de": [], "ru": ["расчёт ЗП"] },
+      "names": {
+        "en": "Payroll Service",
+        "uk": "Розрахунок зарплат",
+        "de": "Lohnbuchhaltung",
+        "ru": "Расчёт зарплат",
+        "original": "Payroll Service"
+      },
+      "altLabels": {
+        "en": [
+          "payroll outsourcing"
+        ],
+        "uk": [
+          "розрахунок з/п"
+        ],
+        "de": [],
+        "ru": [
+          "расчёт ЗП"
+        ]
+      },
       "osmTag": "office=payroll",
       "naceRef": "M69.20+N78.10",
       "schemaOrgType": "AccountingService",
       "wikidataId": "Q2395121",
       "templates": [
-        { "@id": "https://taxonomy.mapko.net/v1/template/monthly-payroll", "slug": "monthly-payroll", "names": { "en": "Monthly Payroll", "uk": "Щомісячний розрахунок зарплат", "de": "Monatliche Lohnabrechnung", "ru": "Ежемесячный расчёт зарплат", "original": "Monthly Payroll" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/tax-filing-payroll", "slug": "tax-filing-payroll", "names": { "en": "Payroll Tax Filing", "uk": "Подання податкової звітності по з/п", "de": "Lohnsteueranmeldung", "ru": "Подача налоговой отчётности по ЗП", "original": "Payroll Tax Filing" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/hr-compliance-payroll", "slug": "hr-compliance-payroll", "names": { "en": "HR Compliance (Payroll)", "uk": "HR-комплаєнс (зарплати)", "de": "HR-Compliance (Lohn)", "ru": "HR-комплаенс (зарплаты)", "original": "HR Compliance (Payroll)" } },
-        { "@id": "https://taxonomy.mapko.net/v1/template/payslip-delivery", "slug": "payslip-delivery", "names": { "en": "Payslip Delivery", "uk": "Видача розрахункових листків", "de": "Gehaltsabrechnungsversand", "ru": "Выдача расчётных листов", "original": "Payslip Delivery" } }
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/monthly-payroll",
+          "slug": "monthly-payroll",
+          "names": {
+            "en": "Monthly Payroll",
+            "uk": "Щомісячний розрахунок зарплат",
+            "de": "Monatliche Lohnabrechnung",
+            "ru": "Ежемесячный расчёт зарплат",
+            "original": "Monthly Payroll"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "monthly payroll"
+              ],
+              "uk": [
+                "щомісячний розрахунок зарплат"
+              ],
+              "de": [
+                "monatliche lohnabrechnung"
+              ],
+              "ru": [
+                "ежемесячный расчёт зарплат"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "tax-filing-payroll",
+              "hr-compliance-payroll",
+              "payslip-delivery"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tax-filing-payroll",
+          "slug": "tax-filing-payroll",
+          "names": {
+            "en": "Payroll Tax Filing",
+            "uk": "Подання податкової звітності по з/п",
+            "de": "Lohnsteueranmeldung",
+            "ru": "Подача налоговой отчётности по ЗП",
+            "original": "Payroll Tax Filing"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "payroll tax filing"
+              ],
+              "uk": [
+                "подання податкової звітності по з/п"
+              ],
+              "de": [
+                "lohnsteueranmeldung"
+              ],
+              "ru": [
+                "подача налоговой отчётности по зп"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "monthly-payroll",
+              "hr-compliance-payroll",
+              "payslip-delivery"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hr-compliance-payroll",
+          "slug": "hr-compliance-payroll",
+          "names": {
+            "en": "HR Compliance (Payroll)",
+            "uk": "HR-комплаєнс (зарплати)",
+            "de": "HR-Compliance (Lohn)",
+            "ru": "HR-комплаенс (зарплаты)",
+            "original": "HR Compliance (Payroll)"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hr compliance (payroll)"
+              ],
+              "uk": [
+                "hr-комплаєнс (зарплати)"
+              ],
+              "de": [
+                "hr-compliance (lohn)"
+              ],
+              "ru": [
+                "hr-комплаенс (зарплаты)"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "monthly-payroll",
+              "tax-filing-payroll",
+              "payslip-delivery"
+            ]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/payslip-delivery",
+          "slug": "payslip-delivery",
+          "names": {
+            "en": "Payslip Delivery",
+            "uk": "Видача розрахункових листків",
+            "de": "Gehaltsabrechnungsversand",
+            "ru": "Выдача расчётных листов",
+            "original": "Payslip Delivery"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "payslip delivery"
+              ],
+              "uk": [
+                "видача розрахункових листків"
+              ],
+              "de": [
+                "gehaltsabrechnungsversand"
+              ],
+              "ru": [
+                "выдача расчётных листов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "monthly-payroll",
+              "tax-filing-payroll",
+              "hr-compliance-payroll"
+            ]
+          }
+        }
       ]
     }
   ]

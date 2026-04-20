@@ -2,6 +2,28 @@
 
 All notable changes to this taxonomy are documented here. The project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.12.0] — 2026-04-20
+
+P1 entity-linking enablement — bootstrap pass.
+
+### Added — `linguisticHints` on every template
+
+All **1329** templates that did not yet have a `linguisticHints` block now carry one. The bootstrap is intentionally minimal and lossless:
+
+- `triggers` (en/uk/de/ru) — seeded from the template's own `names` + `altLabels` (lowercased, de-duped). Entity Linker v1 can rely on the field being present everywhere instead of falling back per-template.
+- `antiTriggers` (en/uk/de/ru) — empty placeholder objects; enrichment per category scheduled for v1.13+ targeted PRs.
+- `adjacentTemplates` — up to 3 sibling slugs from the same subcategory (best-effort related-template hint).
+
+Coverage: 4 hand-curated + 1329 bootstrapped = **1333 / 1333 templates (100%)**.
+
+### Tooling
+
+Adds `scripts/bootstrap-linguistic-hints.mjs` so the same pass can be re-run idempotently when new templates are added in future minor versions.
+
+### Why
+
+The Entity Linker (Layer 1, next phase) walks `linguisticHints.triggers` first and falls back to `altLabels` only when the field is absent. With ~99.7% of templates missing the field, the linker would have to branch per-template, hurting latency and making disambiguation logic harder to reason about. A present-everywhere floor unlocks cleaner downstream code now and leaves the enrichment (antiTriggers, richer adjacentTemplates) to domain-expert PRs per category.
+
 ## [1.11.0] — 2026-04-20
 
 Final gap-fill + publication planning.

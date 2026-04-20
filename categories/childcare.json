@@ -11,10 +11,23 @@
     "original": "Childcare & Kids"
   },
   "altLabels": {
-    "en": ["children services", "kids", "family"],
-    "uk": ["діти", "дитячі послуги"],
-    "de": ["kinder", "familie"],
-    "ru": ["дети", "детские услуги"]
+    "en": [
+      "children services",
+      "kids",
+      "family"
+    ],
+    "uk": [
+      "діти",
+      "дитячі послуги"
+    ],
+    "de": [
+      "kinder",
+      "familie"
+    ],
+    "ru": [
+      "дети",
+      "детские услуги"
+    ]
   },
   "icon": "👶",
   "naceRef": "Q88.91+P85.10",
@@ -32,8 +45,13 @@
         "original": "Babysitter"
       },
       "altLabels": {
-        "en": ["sitter", "child minder"],
-        "uk": ["няня з погодинною оплатою"],
+        "en": [
+          "sitter",
+          "child minder"
+        ],
+        "uk": [
+          "няня з погодинною оплатою"
+        ],
         "de": [],
         "ru": []
       },
@@ -52,7 +70,36 @@
             "ru": "Почасовая няня",
             "original": "Hourly Babysitting"
           },
-          "crossLinks": ["evening-sitting", "weekend-sitting"]
+          "crossLinks": [
+            "evening-sitting",
+            "weekend-sitting"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hourly babysitting"
+              ],
+              "uk": [
+                "погодинна няня"
+              ],
+              "de": [
+                "stundenweise babysitting"
+              ],
+              "ru": [
+                "почасовая няня"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "evening-sitting",
+              "weekend-sitting"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/evening-sitting",
@@ -64,7 +111,36 @@
             "ru": "Вечерняя няня",
             "original": "Evening Sitting"
           },
-          "crossLinks": ["hourly-babysitting", "weekend-sitting"]
+          "crossLinks": [
+            "hourly-babysitting",
+            "weekend-sitting"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "evening sitting"
+              ],
+              "uk": [
+                "вечірня няня"
+              ],
+              "de": [
+                "abend-babysitting"
+              ],
+              "ru": [
+                "вечерняя няня"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "hourly-babysitting",
+              "weekend-sitting"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/weekend-sitting",
@@ -76,7 +152,36 @@
             "ru": "Няня на выходные",
             "original": "Weekend Sitting"
           },
-          "crossLinks": ["hourly-babysitting", "evening-sitting"]
+          "crossLinks": [
+            "hourly-babysitting",
+            "evening-sitting"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "weekend sitting"
+              ],
+              "uk": [
+                "няня на вихідні"
+              ],
+              "de": [
+                "wochenend-babysitting"
+              ],
+              "ru": [
+                "няня на выходные"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "hourly-babysitting",
+              "evening-sitting"
+            ]
+          }
         }
       ]
     },
@@ -91,10 +196,14 @@
         "original": "Nanny Agency"
       },
       "altLabels": {
-        "en": ["au pair agency"],
+        "en": [
+          "au pair agency"
+        ],
         "uk": [],
         "de": [],
-        "ru": ["агентство гувернанток"]
+        "ru": [
+          "агентство гувернанток"
+        ]
       },
       "osmTag": "office=employment_agency",
       "naceRef": "Q88.91",
@@ -111,7 +220,38 @@
             "ru": "Подбор няни на полный день",
             "original": "Full-Time Nanny Placement"
           },
-          "crossLinks": ["part-time-nanny-placement", "au-pair-program", "background-check-service"]
+          "crossLinks": [
+            "part-time-nanny-placement",
+            "au-pair-program",
+            "background-check-service"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "full-time nanny placement"
+              ],
+              "uk": [
+                "підбір няні на повний день"
+              ],
+              "de": [
+                "vollzeit-nanny-vermittlung"
+              ],
+              "ru": [
+                "подбор няни на полный день"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "part-time-nanny-placement",
+              "au-pair-program",
+              "background-check-service"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/part-time-nanny-placement",
@@ -123,7 +263,37 @@
             "ru": "Подбор няни на неполный день",
             "original": "Part-Time Nanny Placement"
           },
-          "crossLinks": ["full-time-nanny-placement", "background-check-service"]
+          "crossLinks": [
+            "full-time-nanny-placement",
+            "background-check-service"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "part-time nanny placement"
+              ],
+              "uk": [
+                "підбір няні на неповний день"
+              ],
+              "de": [
+                "teilzeit-nanny-vermittlung"
+              ],
+              "ru": [
+                "подбор няни на неполный день"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "full-time-nanny-placement",
+              "au-pair-program",
+              "background-check-service"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/au-pair-program",
@@ -136,7 +306,36 @@
             "original": "Au Pair Program"
           },
           "wikidataId": "Q189080",
-          "crossLinks": ["full-time-nanny-placement"]
+          "crossLinks": [
+            "full-time-nanny-placement"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "au pair program"
+              ],
+              "uk": [
+                "програма au pair"
+              ],
+              "de": [
+                "au-pair-programm"
+              ],
+              "ru": [
+                "программа au pair"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "full-time-nanny-placement",
+              "part-time-nanny-placement",
+              "background-check-service"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/background-check-service",
@@ -148,7 +347,37 @@
             "ru": "Проверка биографии",
             "original": "Background Check Service"
           },
-          "crossLinks": ["full-time-nanny-placement", "part-time-nanny-placement"]
+          "crossLinks": [
+            "full-time-nanny-placement",
+            "part-time-nanny-placement"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "background check service"
+              ],
+              "uk": [
+                "перевірка біографії"
+              ],
+              "de": [
+                "hintergrundüberprüfung"
+              ],
+              "ru": [
+                "проверка биографии"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "full-time-nanny-placement",
+              "part-time-nanny-placement",
+              "au-pair-program"
+            ]
+          }
         }
       ]
     },
@@ -163,10 +392,14 @@
         "original": "Kids Party Planner"
       },
       "altLabels": {
-        "en": ["birthday party"],
+        "en": [
+          "birthday party"
+        ],
         "uk": [],
         "de": [],
-        "ru": ["детский праздник"]
+        "ru": [
+          "детский праздник"
+        ]
       },
       "osmTag": "office=event_management",
       "naceRef": "N82.30",
@@ -182,7 +415,38 @@
             "ru": "Пакет на день рождения",
             "original": "Birthday Package"
           },
-          "crossLinks": ["themed-party", "animator-show", "magic-show"]
+          "crossLinks": [
+            "themed-party",
+            "animator-show",
+            "magic-show"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "birthday package"
+              ],
+              "uk": [
+                "пакет на день народження"
+              ],
+              "de": [
+                "geburtstagspaket"
+              ],
+              "ru": [
+                "пакет на день рождения"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "themed-party",
+              "animator-show",
+              "magic-show"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/themed-party",
@@ -194,7 +458,37 @@
             "ru": "Тематическая вечеринка",
             "original": "Themed Party"
           },
-          "crossLinks": ["birthday-package", "animator-show"]
+          "crossLinks": [
+            "birthday-package",
+            "animator-show"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "themed party"
+              ],
+              "uk": [
+                "тематичне свято"
+              ],
+              "de": [
+                "mottoparty"
+              ],
+              "ru": [
+                "тематическая вечеринка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "birthday-package",
+              "animator-show",
+              "magic-show"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/animator-show",
@@ -206,7 +500,38 @@
             "ru": "Шоу аниматора",
             "original": "Animator Show"
           },
-          "crossLinks": ["birthday-package", "themed-party", "magic-show"]
+          "crossLinks": [
+            "birthday-package",
+            "themed-party",
+            "magic-show"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "animator show"
+              ],
+              "uk": [
+                "шоу аніматора"
+              ],
+              "de": [
+                "animatoren-show"
+              ],
+              "ru": [
+                "шоу аниматора"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "birthday-package",
+              "themed-party",
+              "magic-show"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/magic-show",
@@ -219,7 +544,37 @@
             "original": "Magic Show"
           },
           "wikidataId": "Q189539",
-          "crossLinks": ["birthday-package", "animator-show"]
+          "crossLinks": [
+            "birthday-package",
+            "animator-show"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "magic show"
+              ],
+              "uk": [
+                "шоу фокусника"
+              ],
+              "de": [
+                "zaubershow"
+              ],
+              "ru": [
+                "шоу фокусника"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "birthday-package",
+              "themed-party",
+              "animator-show"
+            ]
+          }
         }
       ]
     },
@@ -253,7 +608,37 @@
             "ru": "Фотосессия новорождённых",
             "original": "Newborn Photoshoot"
           },
-          "crossLinks": ["family-photoshoot", "smash-cake-shoot"]
+          "crossLinks": [
+            "family-photoshoot",
+            "smash-cake-shoot"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "newborn photoshoot"
+              ],
+              "uk": [
+                "фотосесія новонароджених"
+              ],
+              "de": [
+                "neugeborenen-fotoshooting"
+              ],
+              "ru": [
+                "фотосессия новорождённых"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "family-photoshoot",
+              "kids-portrait",
+              "smash-cake-shoot"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/family-photoshoot",
@@ -265,7 +650,37 @@
             "ru": "Семейная фотосессия",
             "original": "Family Photoshoot"
           },
-          "crossLinks": ["newborn-photoshoot", "kids-portrait"]
+          "crossLinks": [
+            "newborn-photoshoot",
+            "kids-portrait"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "family photoshoot"
+              ],
+              "uk": [
+                "сімейна фотосесія"
+              ],
+              "de": [
+                "familienfotoshooting"
+              ],
+              "ru": [
+                "семейная фотосессия"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "newborn-photoshoot",
+              "kids-portrait",
+              "smash-cake-shoot"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/kids-portrait",
@@ -277,7 +692,37 @@
             "ru": "Детский портрет",
             "original": "Kids Portrait"
           },
-          "crossLinks": ["family-photoshoot", "smash-cake-shoot"]
+          "crossLinks": [
+            "family-photoshoot",
+            "smash-cake-shoot"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "kids portrait"
+              ],
+              "uk": [
+                "дитячий портрет"
+              ],
+              "de": [
+                "kinderporträt"
+              ],
+              "ru": [
+                "детский портрет"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "newborn-photoshoot",
+              "family-photoshoot",
+              "smash-cake-shoot"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/smash-cake-shoot",
@@ -289,7 +734,37 @@
             "ru": "Smash Cake фотосессия",
             "original": "Smash Cake Shoot"
           },
-          "crossLinks": ["newborn-photoshoot", "kids-portrait"]
+          "crossLinks": [
+            "newborn-photoshoot",
+            "kids-portrait"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "smash cake shoot"
+              ],
+              "uk": [
+                "smash cake фотосесія"
+              ],
+              "de": [
+                "smash-cake-shooting"
+              ],
+              "ru": [
+                "smash cake фотосессия"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "newborn-photoshoot",
+              "family-photoshoot",
+              "kids-portrait"
+            ]
+          }
         }
       ]
     },
@@ -324,7 +799,36 @@
             "ru": "Массаж для новорождённых",
             "original": "Newborn Massage"
           },
-          "crossLinks": ["infant-massage", "group-class"]
+          "crossLinks": [
+            "infant-massage",
+            "group-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "newborn massage"
+              ],
+              "uk": [
+                "масаж для новонароджених"
+              ],
+              "de": [
+                "neugeborenenmassage"
+              ],
+              "ru": [
+                "массаж для новорождённых"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "infant-massage",
+              "group-class"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/infant-massage",
@@ -336,7 +840,36 @@
             "ru": "Массаж для младенцев",
             "original": "Infant Massage"
           },
-          "crossLinks": ["newborn-massage", "group-class"]
+          "crossLinks": [
+            "newborn-massage",
+            "group-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "infant massage"
+              ],
+              "uk": [
+                "масаж для немовлят"
+              ],
+              "de": [
+                "säuglingsmassage"
+              ],
+              "ru": [
+                "массаж для младенцев"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "newborn-massage",
+              "group-class"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/group-class",
@@ -348,7 +881,36 @@
             "ru": "Групповое занятие",
             "original": "Group Class"
           },
-          "crossLinks": ["newborn-massage", "infant-massage"]
+          "crossLinks": [
+            "newborn-massage",
+            "infant-massage"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "group class"
+              ],
+              "uk": [
+                "групове заняття"
+              ],
+              "de": [
+                "gruppenkurs"
+              ],
+              "ru": [
+                "групповое занятие"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "newborn-massage",
+              "infant-massage"
+            ]
+          }
         }
       ]
     },
@@ -363,8 +925,13 @@
         "original": "Breastfeeding Consultant"
       },
       "altLabels": {
-        "en": ["lactation consultant", "IBCLC"],
-        "uk": ["консультант з грудного вигодовування"],
+        "en": [
+          "lactation consultant",
+          "IBCLC"
+        ],
+        "uk": [
+          "консультант з грудного вигодовування"
+        ],
         "de": [],
         "ru": []
       },
@@ -383,7 +950,36 @@
             "ru": "Очная консультация",
             "original": "In-Person Consultation"
           },
-          "crossLinks": ["video-consultation", "hospital-visit"]
+          "crossLinks": [
+            "video-consultation",
+            "hospital-visit"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "in-person consultation"
+              ],
+              "uk": [
+                "очна консультація"
+              ],
+              "de": [
+                "persönliche beratung"
+              ],
+              "ru": [
+                "очная консультация"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "video-consultation",
+              "hospital-visit"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/video-consultation",
@@ -395,7 +991,36 @@
             "ru": "Видеоконсультация",
             "original": "Video Consultation"
           },
-          "crossLinks": ["in-person-consultation", "hospital-visit"]
+          "crossLinks": [
+            "in-person-consultation",
+            "hospital-visit"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "video consultation"
+              ],
+              "uk": [
+                "відеоконсультація"
+              ],
+              "de": [
+                "video-beratung"
+              ],
+              "ru": [
+                "видеоконсультация"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "in-person-consultation",
+              "hospital-visit"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/hospital-visit",
@@ -407,7 +1032,36 @@
             "ru": "Визит в роддом",
             "original": "Hospital Visit"
           },
-          "crossLinks": ["in-person-consultation", "video-consultation"]
+          "crossLinks": [
+            "in-person-consultation",
+            "video-consultation"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "hospital visit"
+              ],
+              "uk": [
+                "візит до пологового будинку"
+              ],
+              "de": [
+                "krankenhausbesuch"
+              ],
+              "ru": [
+                "визит в роддом"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "in-person-consultation",
+              "video-consultation"
+            ]
+          }
         }
       ]
     },
@@ -422,10 +1076,15 @@
         "original": "Prenatal Courses"
       },
       "altLabels": {
-        "en": ["birthing class", "antenatal class"],
+        "en": [
+          "birthing class",
+          "antenatal class"
+        ],
         "uk": [],
         "de": [],
-        "ru": ["школа подготовки к родам"]
+        "ru": [
+          "школа подготовки к родам"
+        ]
       },
       "osmTag": "amenity=community_centre",
       "naceRef": "P85.59",
@@ -441,7 +1100,36 @@
             "ru": "Курс подготовки к родам",
             "original": "Birth Preparation Course"
           },
-          "crossLinks": ["partner-course", "breathing-techniques-class"]
+          "crossLinks": [
+            "partner-course",
+            "breathing-techniques-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "birth preparation course"
+              ],
+              "uk": [
+                "курс підготовки до пологів"
+              ],
+              "de": [
+                "geburtsvorbereitungskurs"
+              ],
+              "ru": [
+                "курс подготовки к родам"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "partner-course",
+              "breathing-techniques-class"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/partner-course",
@@ -453,7 +1141,36 @@
             "ru": "Курс для пар",
             "original": "Partner Course"
           },
-          "crossLinks": ["birth-preparation-course", "breathing-techniques-class"]
+          "crossLinks": [
+            "birth-preparation-course",
+            "breathing-techniques-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "partner course"
+              ],
+              "uk": [
+                "курс для пар"
+              ],
+              "de": [
+                "partnerkurs"
+              ],
+              "ru": [
+                "курс для пар"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "birth-preparation-course",
+              "breathing-techniques-class"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/breathing-techniques-class",
@@ -465,7 +1182,36 @@
             "ru": "Занятие по дыхательным техникам",
             "original": "Breathing Techniques Class"
           },
-          "crossLinks": ["birth-preparation-course", "partner-course"]
+          "crossLinks": [
+            "birth-preparation-course",
+            "partner-course"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "breathing techniques class"
+              ],
+              "uk": [
+                "заняття з дихальних технік"
+              ],
+              "de": [
+                "atemtechnik-kurs"
+              ],
+              "ru": [
+                "занятие по дыхательным техникам"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "birth-preparation-course",
+              "partner-course"
+            ]
+          }
         }
       ]
     },
@@ -480,10 +1226,14 @@
         "original": "Kids Developmental Center"
       },
       "altLabels": {
-        "en": ["early development center"],
+        "en": [
+          "early development center"
+        ],
         "uk": [],
         "de": [],
-        "ru": ["центр развития ребёнка"]
+        "ru": [
+          "центр развития ребёнка"
+        ]
       },
       "osmTag": "amenity=kindergarten",
       "naceRef": "P85.10",
@@ -499,7 +1249,39 @@
             "ru": "Занятие раннего развития",
             "original": "Early Development Class"
           },
-          "crossLinks": ["school-prep", "montessori-group", "drawing-and-craft", "kids-yoga"]
+          "crossLinks": [
+            "school-prep",
+            "montessori-group",
+            "drawing-and-craft",
+            "kids-yoga"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "early development class"
+              ],
+              "uk": [
+                "заняття раннього розвитку"
+              ],
+              "de": [
+                "frühförderkurs"
+              ],
+              "ru": [
+                "занятие раннего развития"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "school-prep",
+              "montessori-group",
+              "drawing-and-craft"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/school-prep",
@@ -511,7 +1293,37 @@
             "ru": "Подготовка к школе",
             "original": "School Prep"
           },
-          "crossLinks": ["early-development-class", "montessori-group"]
+          "crossLinks": [
+            "early-development-class",
+            "montessori-group"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "school prep"
+              ],
+              "uk": [
+                "підготовка до школи"
+              ],
+              "de": [
+                "schulvorbereitung"
+              ],
+              "ru": [
+                "подготовка к школе"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "early-development-class",
+              "montessori-group",
+              "drawing-and-craft"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/montessori-group",
@@ -524,7 +1336,37 @@
             "original": "Montessori Group"
           },
           "wikidataId": "Q187473",
-          "crossLinks": ["early-development-class", "school-prep"]
+          "crossLinks": [
+            "early-development-class",
+            "school-prep"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "montessori group"
+              ],
+              "uk": [
+                "монтессорі-група"
+              ],
+              "de": [
+                "montessori-gruppe"
+              ],
+              "ru": [
+                "монтессори-группа"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "early-development-class",
+              "school-prep",
+              "drawing-and-craft"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/drawing-and-craft",
@@ -536,7 +1378,37 @@
             "ru": "Рисование и творчество",
             "original": "Drawing and Craft"
           },
-          "crossLinks": ["early-development-class", "kids-yoga"]
+          "crossLinks": [
+            "early-development-class",
+            "kids-yoga"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "drawing and craft"
+              ],
+              "uk": [
+                "малювання та творчість"
+              ],
+              "de": [
+                "malen und basteln"
+              ],
+              "ru": [
+                "рисование и творчество"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "early-development-class",
+              "school-prep",
+              "montessori-group"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/kids-yoga",
@@ -548,7 +1420,37 @@
             "ru": "Детская йога",
             "original": "Kids Yoga"
           },
-          "crossLinks": ["early-development-class", "drawing-and-craft"]
+          "crossLinks": [
+            "early-development-class",
+            "drawing-and-craft"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "kids yoga"
+              ],
+              "uk": [
+                "дитяча йога"
+              ],
+              "de": [
+                "kinderyoga"
+              ],
+              "ru": [
+                "детская йога"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "early-development-class",
+              "school-prep",
+              "montessori-group"
+            ]
+          }
         }
       ]
     },
@@ -563,10 +1465,14 @@
         "original": "Kids Playground/Club"
       },
       "altLabels": {
-        "en": ["indoor playground"],
+        "en": [
+          "indoor playground"
+        ],
         "uk": [],
         "de": [],
-        "ru": ["игровой клуб"]
+        "ru": [
+          "игровой клуб"
+        ]
       },
       "osmTag": "leisure=playground",
       "naceRef": "R93.29",
@@ -582,7 +1488,38 @@
             "ru": "Разовое посещение",
             "original": "Drop-In Play"
           },
-          "crossLinks": ["monthly-membership", "birthday-rental", "kids-cafe-corner"]
+          "crossLinks": [
+            "monthly-membership",
+            "birthday-rental",
+            "kids-cafe-corner"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "drop-in play"
+              ],
+              "uk": [
+                "разове відвідування"
+              ],
+              "de": [
+                "spontaner besuch"
+              ],
+              "ru": [
+                "разовое посещение"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "monthly-membership",
+              "birthday-rental",
+              "kids-cafe-corner"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/monthly-membership",
@@ -594,7 +1531,37 @@
             "ru": "Месячный абонемент",
             "original": "Monthly Membership"
           },
-          "crossLinks": ["drop-in-play", "kids-cafe-corner"]
+          "crossLinks": [
+            "drop-in-play",
+            "kids-cafe-corner"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "monthly membership"
+              ],
+              "uk": [
+                "місячний абонемент"
+              ],
+              "de": [
+                "monatsmitgliedschaft"
+              ],
+              "ru": [
+                "месячный абонемент"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "drop-in-play",
+              "birthday-rental",
+              "kids-cafe-corner"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/birthday-rental",
@@ -606,7 +1573,37 @@
             "ru": "Аренда на день рождения",
             "original": "Birthday Rental"
           },
-          "crossLinks": ["drop-in-play", "birthday-package"]
+          "crossLinks": [
+            "drop-in-play",
+            "birthday-package"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "birthday rental"
+              ],
+              "uk": [
+                "оренда на день народження"
+              ],
+              "de": [
+                "geburtstagsmiete"
+              ],
+              "ru": [
+                "аренда на день рождения"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "drop-in-play",
+              "monthly-membership",
+              "kids-cafe-corner"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/kids-cafe-corner",
@@ -618,7 +1615,37 @@
             "ru": "Детский кафе-уголок",
             "original": "Kids Cafe Corner"
           },
-          "crossLinks": ["drop-in-play", "monthly-membership"]
+          "crossLinks": [
+            "drop-in-play",
+            "monthly-membership"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "kids cafe corner"
+              ],
+              "uk": [
+                "дитячий кафе-куточок"
+              ],
+              "de": [
+                "kindercafé-ecke"
+              ],
+              "ru": [
+                "детский кафе-уголок"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "drop-in-play",
+              "monthly-membership",
+              "birthday-rental"
+            ]
+          }
         }
       ]
     },
@@ -633,10 +1660,17 @@
         "original": "Doula Service"
       },
       "altLabels": {
-        "en": ["birth doula", "postpartum doula"],
-        "uk": ["доула"],
+        "en": [
+          "birth doula",
+          "postpartum doula"
+        ],
+        "uk": [
+          "доула"
+        ],
         "de": [],
-        "ru": ["доула"]
+        "ru": [
+          "доула"
+        ]
       },
       "osmTag": "healthcare=midwife",
       "naceRef": "Q86.90",
@@ -652,6 +1686,33 @@
             "de": "Pränatale Doula",
             "ru": "Дородовая доула",
             "original": "Prenatal Doula"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "prenatal doula"
+              ],
+              "uk": [
+                "дородова дула"
+              ],
+              "de": [
+                "pränatale doula"
+              ],
+              "ru": [
+                "дородовая доула"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "birth-support",
+              "postpartum-doula",
+              "sibling-doula"
+            ]
           }
         },
         {
@@ -663,6 +1724,33 @@
             "de": "Geburtsbegleitung",
             "ru": "Сопровождение родов",
             "original": "Birth Support"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "birth support"
+              ],
+              "uk": [
+                "супровід пологів"
+              ],
+              "de": [
+                "geburtsbegleitung"
+              ],
+              "ru": [
+                "сопровождение родов"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "prenatal-doula",
+              "postpartum-doula",
+              "sibling-doula"
+            ]
           }
         },
         {
@@ -674,6 +1762,33 @@
             "de": "Postpartum-Doula",
             "ru": "Послеродовая доула",
             "original": "Postpartum Doula"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "postpartum doula"
+              ],
+              "uk": [
+                "післяпологова дула"
+              ],
+              "de": [
+                "postpartum-doula"
+              ],
+              "ru": [
+                "послеродовая доула"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "prenatal-doula",
+              "birth-support",
+              "sibling-doula"
+            ]
           }
         },
         {
@@ -685,6 +1800,33 @@
             "de": "Geschwister-Doula",
             "ru": "Доула для старших детей",
             "original": "Sibling Doula"
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "sibling doula"
+              ],
+              "uk": [
+                "дула для старших дітей"
+              ],
+              "de": [
+                "geschwister-doula"
+              ],
+              "ru": [
+                "доула для старших детей"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "prenatal-doula",
+              "birth-support",
+              "postpartum-doula"
+            ]
           }
         }
       ]

@@ -11,10 +11,23 @@
     "original": "Arts & Handmade"
   },
   "altLabels": {
-    "en": ["handicraft", "artisan", "art"],
-    "uk": ["ремесла", "ручна робота"],
-    "de": ["handwerk", "kunsthandwerk"],
-    "ru": ["ремесло", "ручная работа"]
+    "en": [
+      "handicraft",
+      "artisan",
+      "art"
+    ],
+    "uk": [
+      "ремесла",
+      "ручна робота"
+    ],
+    "de": [
+      "handwerk",
+      "kunsthandwerk"
+    ],
+    "ru": [
+      "ремесло",
+      "ручная работа"
+    ]
   },
   "icon": "🎨",
   "naceRef": "C32+R90",
@@ -32,10 +45,18 @@
         "original": "Pottery Studio"
       },
       "altLabels": {
-        "en": ["ceramics studio"],
-        "uk": ["кераміка"],
-        "de": ["keramik"],
-        "ru": ["керамика"]
+        "en": [
+          "ceramics studio"
+        ],
+        "uk": [
+          "кераміка"
+        ],
+        "de": [
+          "keramik"
+        ],
+        "ru": [
+          "керамика"
+        ]
       },
       "osmTag": "craft=pottery",
       "naceRef": "C23.41+R90.03",
@@ -52,7 +73,36 @@
             "ru": "Мастер-класс по гончарству",
             "original": "Pottery Class"
           },
-          "crossLinks": ["custom-ceramics", "pottery-wheel-rental"]
+          "crossLinks": [
+            "custom-ceramics",
+            "pottery-wheel-rental"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "pottery class"
+              ],
+              "uk": [
+                "майстер-клас з гончарства"
+              ],
+              "de": [
+                "töpferkurs"
+              ],
+              "ru": [
+                "мастер-класс по гончарству"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-ceramics",
+              "pottery-wheel-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/custom-ceramics",
@@ -64,7 +114,35 @@
             "ru": "Керамика на заказ",
             "original": "Custom Ceramics"
           },
-          "crossLinks": ["pottery-class"]
+          "crossLinks": [
+            "pottery-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom ceramics"
+              ],
+              "uk": [
+                "кераміка на замовлення"
+              ],
+              "de": [
+                "maßgefertigte keramik"
+              ],
+              "ru": [
+                "керамика на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "pottery-class",
+              "pottery-wheel-rental"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/pottery-wheel-rental",
@@ -76,7 +154,35 @@
             "ru": "Аренда гончарного круга",
             "original": "Pottery Wheel Rental"
           },
-          "crossLinks": ["pottery-class"]
+          "crossLinks": [
+            "pottery-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "pottery wheel rental"
+              ],
+              "uk": [
+                "оренда гончарного круга"
+              ],
+              "de": [
+                "töpferscheibenvermietung"
+              ],
+              "ru": [
+                "аренда гончарного круга"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "pottery-class",
+              "custom-ceramics"
+            ]
+          }
         }
       ]
     },
@@ -91,8 +197,13 @@
         "original": "Glass Studio"
       },
       "altLabels": {
-        "en": ["glassblowing", "stained glass"],
-        "uk": ["вітраж"],
+        "en": [
+          "glassblowing",
+          "stained glass"
+        ],
+        "uk": [
+          "вітраж"
+        ],
         "de": [],
         "ru": []
       },
@@ -111,7 +222,36 @@
             "ru": "Мастер-класс по выдуванию стекла",
             "original": "Glassblowing Class"
           },
-          "crossLinks": ["stained-glass-commission", "fused-glass-workshop"]
+          "crossLinks": [
+            "stained-glass-commission",
+            "fused-glass-workshop"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "glassblowing class"
+              ],
+              "uk": [
+                "майстер-клас з видування скла"
+              ],
+              "de": [
+                "glasbläserkurs"
+              ],
+              "ru": [
+                "мастер-класс по выдуванию стекла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "stained-glass-commission",
+              "fused-glass-workshop"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/stained-glass-commission",
@@ -123,7 +263,35 @@
             "ru": "Витраж на заказ",
             "original": "Stained Glass Commission"
           },
-          "crossLinks": ["glassblowing-class"]
+          "crossLinks": [
+            "glassblowing-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "stained glass commission"
+              ],
+              "uk": [
+                "вітраж на замовлення"
+              ],
+              "de": [
+                "bleiglas-auftragsarbeit"
+              ],
+              "ru": [
+                "витраж на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "glassblowing-class",
+              "fused-glass-workshop"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/fused-glass-workshop",
@@ -135,7 +303,35 @@
             "ru": "Воркшоп по фьюзингу стекла",
             "original": "Fused Glass Workshop"
           },
-          "crossLinks": ["glassblowing-class"]
+          "crossLinks": [
+            "glassblowing-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "fused glass workshop"
+              ],
+              "uk": [
+                "воркшоп з фьюзингу скла"
+              ],
+              "de": [
+                "fusing-glas-workshop"
+              ],
+              "ru": [
+                "воркшоп по фьюзингу стекла"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "glassblowing-class",
+              "stained-glass-commission"
+            ]
+          }
         }
       ]
     },
@@ -170,7 +366,36 @@
             "ru": "Скульптура на заказ",
             "original": "Commissioned Sculpture"
           },
-          "crossLinks": ["monument-design", "sculpture-restoration"]
+          "crossLinks": [
+            "monument-design",
+            "sculpture-restoration"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "commissioned sculpture"
+              ],
+              "uk": [
+                "скульптура на замовлення"
+              ],
+              "de": [
+                "auftragsskulptur"
+              ],
+              "ru": [
+                "скульптура на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "monument-design",
+              "sculpture-restoration"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/monument-design",
@@ -182,7 +407,35 @@
             "ru": "Проектирование памятников",
             "original": "Monument Design"
           },
-          "crossLinks": ["commissioned-sculpture"]
+          "crossLinks": [
+            "commissioned-sculpture"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "monument design"
+              ],
+              "uk": [
+                "проєктування пам'ятників"
+              ],
+              "de": [
+                "denkmalgestaltung"
+              ],
+              "ru": [
+                "проектирование памятников"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "commissioned-sculpture",
+              "sculpture-restoration"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/sculpture-restoration",
@@ -194,7 +447,36 @@
             "ru": "Реставрация скульптур",
             "original": "Sculpture Restoration"
           },
-          "crossLinks": ["commissioned-sculpture", "antique-restoration"]
+          "crossLinks": [
+            "commissioned-sculpture",
+            "antique-restoration"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "sculpture restoration"
+              ],
+              "uk": [
+                "реставрація скульптур"
+              ],
+              "de": [
+                "skulpturenrestaurierung"
+              ],
+              "ru": [
+                "реставрация скульптур"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "commissioned-sculpture",
+              "monument-design"
+            ]
+          }
         }
       ]
     },
@@ -209,8 +491,12 @@
         "original": "Jewelry Artisan"
       },
       "altLabels": {
-        "en": ["handmade jewelry"],
-        "uk": ["ручна ювелірка"],
+        "en": [
+          "handmade jewelry"
+        ],
+        "uk": [
+          "ручна ювелірка"
+        ],
         "de": [],
         "ru": []
       },
@@ -229,7 +515,36 @@
             "ru": "Помолвочное кольцо на заказ",
             "original": "Bespoke Engagement Ring"
           },
-          "crossLinks": ["custom-jewelry", "custom-piece"]
+          "crossLinks": [
+            "custom-jewelry",
+            "custom-piece"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "bespoke engagement ring"
+              ],
+              "uk": [
+                "заручальна каблучка на замовлення"
+              ],
+              "de": [
+                "maßgefertigter verlobungsring"
+              ],
+              "ru": [
+                "помолвочное кольцо на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-piece",
+              "jewelry-class"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/custom-piece",
@@ -241,7 +556,36 @@
             "ru": "Изделие на заказ",
             "original": "Custom Piece"
           },
-          "crossLinks": ["bespoke-engagement-ring", "jewelry-class"]
+          "crossLinks": [
+            "bespoke-engagement-ring",
+            "jewelry-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom piece"
+              ],
+              "uk": [
+                "виріб на замовлення"
+              ],
+              "de": [
+                "maßanfertigung"
+              ],
+              "ru": [
+                "изделие на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "bespoke-engagement-ring",
+              "jewelry-class"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/jewelry-class",
@@ -253,7 +597,35 @@
             "ru": "Мастер-класс по ювелирному делу",
             "original": "Jewelry Class"
           },
-          "crossLinks": ["custom-piece"]
+          "crossLinks": [
+            "custom-piece"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "jewelry class"
+              ],
+              "uk": [
+                "майстер-клас з ювелірної справи"
+              ],
+              "de": [
+                "schmuckkurs"
+              ],
+              "ru": [
+                "мастер-класс по ювелирному делу"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "bespoke-engagement-ring",
+              "custom-piece"
+            ]
+          }
         }
       ]
     },
@@ -268,8 +640,12 @@
         "original": "Leather Workshop"
       },
       "altLabels": {
-        "en": ["leathercraft"],
-        "uk": ["шкіряні вироби"],
+        "en": [
+          "leathercraft"
+        ],
+        "uk": [
+          "шкіряні вироби"
+        ],
         "de": [],
         "ru": []
       },
@@ -288,7 +664,37 @@
             "ru": "Кожаная сумка на заказ",
             "original": "Custom Leather Bag"
           },
-          "crossLinks": ["leather-belt", "leather-crafting-class"]
+          "crossLinks": [
+            "leather-belt",
+            "leather-crafting-class"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom leather bag"
+              ],
+              "uk": [
+                "шкіряна сумка на замовлення"
+              ],
+              "de": [
+                "maßgefertigte ledertasche"
+              ],
+              "ru": [
+                "кожаная сумка на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "leather-belt",
+              "leather-repair",
+              "leather-crafting-class"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/leather-belt",
@@ -300,7 +706,36 @@
             "ru": "Кожаный ремень",
             "original": "Leather Belt"
           },
-          "crossLinks": ["custom-leather-bag"]
+          "crossLinks": [
+            "custom-leather-bag"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "leather belt"
+              ],
+              "uk": [
+                "шкіряний ремінь"
+              ],
+              "de": [
+                "ledergürtel"
+              ],
+              "ru": [
+                "кожаный ремень"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-leather-bag",
+              "leather-repair",
+              "leather-crafting-class"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/leather-repair",
@@ -312,7 +747,37 @@
             "ru": "Ремонт кожаных изделий",
             "original": "Leather Repair"
           },
-          "crossLinks": ["custom-leather-bag", "leather-belt"]
+          "crossLinks": [
+            "custom-leather-bag",
+            "leather-belt"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "leather repair"
+              ],
+              "uk": [
+                "ремонт шкіряних виробів"
+              ],
+              "de": [
+                "lederreparatur"
+              ],
+              "ru": [
+                "ремонт кожаных изделий"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-leather-bag",
+              "leather-belt",
+              "leather-crafting-class"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/leather-crafting-class",
@@ -324,7 +789,36 @@
             "ru": "Мастер-класс по работе с кожей",
             "original": "Leather Crafting Class"
           },
-          "crossLinks": ["custom-leather-bag"]
+          "crossLinks": [
+            "custom-leather-bag"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "leather crafting class"
+              ],
+              "uk": [
+                "майстер-клас зі шкіряних виробів"
+              ],
+              "de": [
+                "lederhandwerkskurs"
+              ],
+              "ru": [
+                "мастер-класс по работе с кожей"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-leather-bag",
+              "leather-belt",
+              "leather-repair"
+            ]
+          }
         }
       ]
     },
@@ -339,8 +833,12 @@
         "original": "Fine Art Gallery"
       },
       "altLabels": {
-        "en": ["art gallery"],
-        "uk": ["галерея"],
+        "en": [
+          "art gallery"
+        ],
+        "uk": [
+          "галерея"
+        ],
         "de": [],
         "ru": []
       },
@@ -359,7 +857,37 @@
             "ru": "Выставка в галерее",
             "original": "Gallery Exhibition"
           },
-          "crossLinks": ["opening-reception", "artist-representation"]
+          "crossLinks": [
+            "opening-reception",
+            "artist-representation"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "gallery exhibition"
+              ],
+              "uk": [
+                "виставка в галереї"
+              ],
+              "de": [
+                "galerieausstellung"
+              ],
+              "ru": [
+                "выставка в галерее"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "art-purchase",
+              "artist-representation",
+              "opening-reception"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/art-purchase",
@@ -371,7 +899,37 @@
             "ru": "Покупка произведений искусства",
             "original": "Art Purchase"
           },
-          "crossLinks": ["gallery-exhibition", "commissioned-artwork"]
+          "crossLinks": [
+            "gallery-exhibition",
+            "commissioned-artwork"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "art purchase"
+              ],
+              "uk": [
+                "купівля творів мистецтва"
+              ],
+              "de": [
+                "kunstankauf"
+              ],
+              "ru": [
+                "покупка произведений искусства"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "gallery-exhibition",
+              "artist-representation",
+              "opening-reception"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/artist-representation",
@@ -383,7 +941,37 @@
             "ru": "Представление художников",
             "original": "Artist Representation"
           },
-          "crossLinks": ["gallery-exhibition", "art-purchase"]
+          "crossLinks": [
+            "gallery-exhibition",
+            "art-purchase"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "artist representation"
+              ],
+              "uk": [
+                "представлення художників"
+              ],
+              "de": [
+                "künstlervertretung"
+              ],
+              "ru": [
+                "представление художников"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "gallery-exhibition",
+              "art-purchase",
+              "opening-reception"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/opening-reception",
@@ -395,7 +983,36 @@
             "ru": "Открытие выставки",
             "original": "Opening Reception"
           },
-          "crossLinks": ["gallery-exhibition"]
+          "crossLinks": [
+            "gallery-exhibition"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "opening reception"
+              ],
+              "uk": [
+                "відкриття виставки"
+              ],
+              "de": [
+                "eröffnungsempfang"
+              ],
+              "ru": [
+                "открытие выставки"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "gallery-exhibition",
+              "art-purchase",
+              "artist-representation"
+            ]
+          }
         }
       ]
     },
@@ -410,8 +1027,12 @@
         "original": "Artist Studio"
       },
       "altLabels": {
-        "en": ["atelier"],
-        "uk": ["ательє"],
+        "en": [
+          "atelier"
+        ],
+        "uk": [
+          "ательє"
+        ],
         "de": [],
         "ru": []
       },
@@ -430,7 +1051,37 @@
             "ru": "Визит в мастерскую",
             "original": "Studio Visit"
           },
-          "crossLinks": ["commissioned-artwork", "studio-residency"]
+          "crossLinks": [
+            "commissioned-artwork",
+            "studio-residency"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "studio visit"
+              ],
+              "uk": [
+                "візит до майстерні"
+              ],
+              "de": [
+                "atelierbesuch"
+              ],
+              "ru": [
+                "визит в мастерскую"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "commissioned-artwork",
+              "art-class",
+              "studio-residency"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/commissioned-artwork",
@@ -442,7 +1093,37 @@
             "ru": "Произведение искусства на заказ",
             "original": "Commissioned Artwork"
           },
-          "crossLinks": ["studio-visit", "art-purchase"]
+          "crossLinks": [
+            "studio-visit",
+            "art-purchase"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "commissioned artwork"
+              ],
+              "uk": [
+                "твір мистецтва на замовлення"
+              ],
+              "de": [
+                "auftragskunstwerk"
+              ],
+              "ru": [
+                "произведение искусства на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "studio-visit",
+              "art-class",
+              "studio-residency"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/art-class",
@@ -454,7 +1135,37 @@
             "ru": "Мастер-класс по искусству",
             "original": "Art Class"
           },
-          "crossLinks": ["studio-visit", "commissioned-artwork"]
+          "crossLinks": [
+            "studio-visit",
+            "commissioned-artwork"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "art class"
+              ],
+              "uk": [
+                "майстер-клас з мистецтва"
+              ],
+              "de": [
+                "kunstkurs"
+              ],
+              "ru": [
+                "мастер-класс по искусству"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "studio-visit",
+              "commissioned-artwork",
+              "studio-residency"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/studio-residency",
@@ -466,7 +1177,36 @@
             "ru": "Резиденция в мастерской",
             "original": "Studio Residency"
           },
-          "crossLinks": ["studio-visit"]
+          "crossLinks": [
+            "studio-visit"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "studio residency"
+              ],
+              "uk": [
+                "резиденція в майстерні"
+              ],
+              "de": [
+                "atelier-residenz"
+              ],
+              "ru": [
+                "резиденция в мастерской"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "studio-visit",
+              "commissioned-artwork",
+              "art-class"
+            ]
+          }
         }
       ]
     },
@@ -481,7 +1221,9 @@
         "original": "Framing Service"
       },
       "altLabels": {
-        "en": ["picture framing"],
+        "en": [
+          "picture framing"
+        ],
         "uk": [],
         "de": [],
         "ru": []
@@ -501,7 +1243,36 @@
             "ru": "Багет на заказ",
             "original": "Custom Frame"
           },
-          "crossLinks": ["conservation-framing", "ready-made-frame"]
+          "crossLinks": [
+            "conservation-framing",
+            "ready-made-frame"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "custom frame"
+              ],
+              "uk": [
+                "багет на замовлення"
+              ],
+              "de": [
+                "maßgefertigter rahmen"
+              ],
+              "ru": [
+                "багет на заказ"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "conservation-framing",
+              "ready-made-frame"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/conservation-framing",
@@ -513,7 +1284,36 @@
             "ru": "Консервационное обрамление",
             "original": "Conservation Framing"
           },
-          "crossLinks": ["custom-frame", "antique-restoration"]
+          "crossLinks": [
+            "custom-frame",
+            "antique-restoration"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "conservation framing"
+              ],
+              "uk": [
+                "консерваційне обрамлення"
+              ],
+              "de": [
+                "konservatorische rahmung"
+              ],
+              "ru": [
+                "консервационное обрамление"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-frame",
+              "ready-made-frame"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/ready-made-frame",
@@ -525,7 +1325,35 @@
             "ru": "Готовая рамка",
             "original": "Ready-made Frame"
           },
-          "crossLinks": ["custom-frame"]
+          "crossLinks": [
+            "custom-frame"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "ready-made frame"
+              ],
+              "uk": [
+                "готова рамка"
+              ],
+              "de": [
+                "fertigrahmen"
+              ],
+              "ru": [
+                "готовая рамка"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "custom-frame",
+              "conservation-framing"
+            ]
+          }
         }
       ]
     },
@@ -540,8 +1368,12 @@
         "original": "Antiques Restoration"
       },
       "altLabels": {
-        "en": ["antique repair"],
-        "uk": ["антикваріат"],
+        "en": [
+          "antique repair"
+        ],
+        "uk": [
+          "антикваріат"
+        ],
         "de": [],
         "ru": []
       },
@@ -560,7 +1392,37 @@
             "ru": "Реставрация антиквариата",
             "original": "Antique Restoration"
           },
-          "crossLinks": ["antique-appraisal", "antique-cleaning", "sculpture-restoration"]
+          "crossLinks": [
+            "antique-appraisal",
+            "antique-cleaning",
+            "sculpture-restoration"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "antique restoration"
+              ],
+              "uk": [
+                "реставрація антикваріату"
+              ],
+              "de": [
+                "antiquitätenrestaurierung"
+              ],
+              "ru": [
+                "реставрация антиквариата"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "antique-appraisal",
+              "antique-cleaning"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/antique-appraisal",
@@ -572,7 +1434,35 @@
             "ru": "Оценка антиквариата",
             "original": "Antique Appraisal"
           },
-          "crossLinks": ["antique-restoration"]
+          "crossLinks": [
+            "antique-restoration"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "antique appraisal"
+              ],
+              "uk": [
+                "оцінка антикваріату"
+              ],
+              "de": [
+                "antiquitätenschätzung"
+              ],
+              "ru": [
+                "оценка антиквариата"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "antique-restoration",
+              "antique-cleaning"
+            ]
+          }
         },
         {
           "@id": "https://taxonomy.mapko.net/v1/template/antique-cleaning",
@@ -584,7 +1474,36 @@
             "ru": "Чистка антиквариата",
             "original": "Antique Cleaning"
           },
-          "crossLinks": ["antique-restoration", "antique-appraisal"]
+          "crossLinks": [
+            "antique-restoration",
+            "antique-appraisal"
+          ],
+          "linguisticHints": {
+            "triggers": {
+              "en": [
+                "antique cleaning"
+              ],
+              "uk": [
+                "чищення антикваріату"
+              ],
+              "de": [
+                "antiquitätenreinigung"
+              ],
+              "ru": [
+                "чистка антиквариата"
+              ]
+            },
+            "antiTriggers": {
+              "en": [],
+              "uk": [],
+              "de": [],
+              "ru": []
+            },
+            "adjacentTemplates": [
+              "antique-restoration",
+              "antique-appraisal"
+            ]
+          }
         }
       ]
     }
