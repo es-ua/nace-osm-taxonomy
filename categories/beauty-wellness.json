@@ -1,16 +1,28 @@
 {
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/beauty-wellness",
   "slug": "beauty-wellness",
+  "version": "1.1.0",
   "names": {
     "en": "Beauty & Wellness",
-    "uk": "Краса та здоров\\'я",
+    "uk": "Краса та здоров'я",
     "de": "Schönheit & Wellness",
     "ru": "Красота и здоровье",
     "original": "Beauty & Wellness"
   },
+  "altLabels": {
+    "en": ["beauty", "wellness", "personal care", "grooming"],
+    "uk": ["краса", "велнес", "догляд за собою"],
+    "de": ["schönheit", "körperpflege", "wellness"],
+    "ru": ["красота", "уход за собой", "велнес"]
+  },
   "icon": "💇",
   "naceRef": "S96",
+  "schemaOrgType": "HealthAndBeautyBusiness",
+  "wikidataId": "Q622425",
   "subcategories": [
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/hair-salon",
       "slug": "hair-salon",
       "names": {
         "en": "Hair Salon",
@@ -19,9 +31,24 @@
         "ru": "Парикмахерская",
         "original": "Hair Salon"
       },
+      "altLabels": {
+        "en": ["hairdresser", "hair studio", "salon"],
+        "uk": ["салон краси", "стрижка", "салон"],
+        "de": ["friseur", "haarstudio", "coiffeur"],
+        "ru": ["салон", "стрижка", "парикмахер"]
+      },
       "osmTag": "shop=hairdresser",
+      "naceRef": "S96.02",
+      "schemaOrgType": "HairSalon",
+      "wikidataId": "Q3009934",
+      "expectedRelations": [
+        { "predicate": "offers", "target": "template", "cardinality": "many" },
+        { "predicate": "located_at", "target": "Place", "cardinality": "one" },
+        { "predicate": "employs", "target": "Stylist", "cardinality": "many" }
+      ],
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/womens-haircut",
           "slug": "womens-haircut",
           "names": {
             "en": "Women's Haircut",
@@ -29,9 +56,45 @@
             "de": "Damenhaarschnitt",
             "ru": "Женская стрижка",
             "original": "Women's Haircut"
-          }
+          },
+          "altLabels": {
+            "en": ["ladies haircut", "female haircut"],
+            "uk": ["жіноча зачіска", "стрижка для жінок"],
+            "de": ["damenfrisur", "frauenhaarschnitt"],
+            "ru": ["женская причёска"]
+          },
+          "wikidataId": "Q1140120",
+          "osmTag": "shop=hairdresser",
+          "attributes": {
+            "required": ["priceFrom", "duration"],
+            "optional": ["hairLengthRange", "includesWash", "includesStyling"],
+            "schema": {
+              "priceFrom": { "type": "money" },
+              "duration": { "type": "duration", "unit": "minutes" },
+              "hairLengthRange": { "type": "enum", "values": ["short", "medium", "long"] },
+              "includesWash": { "type": "boolean" },
+              "includesStyling": { "type": "boolean" }
+            }
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": ["women's cut", "ladies haircut", "female haircut"],
+              "uk": ["жіноча стрижка", "стрижка для жінок"],
+              "de": ["damenhaarschnitt", "damenfrisur"],
+              "ru": ["женская стрижка"]
+            },
+            "antiTriggers": {
+              "en": ["men's", "male", "kids", "baby"],
+              "uk": ["чоловіча", "дитяча"],
+              "de": ["herren", "kinder"],
+              "ru": ["мужская", "детская"]
+            },
+            "adjacentTemplates": ["hair-coloring", "blowdry", "hair-treatment"]
+          },
+          "crossLinks": ["blowdry", "hair-coloring"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/mens-haircut",
           "slug": "mens-haircut",
           "names": {
             "en": "Men's Haircut",
@@ -39,9 +102,44 @@
             "de": "Herrenhaarschnitt",
             "ru": "Мужская стрижка",
             "original": "Men's Haircut"
-          }
+          },
+          "altLabels": {
+            "en": ["male haircut", "gents cut"],
+            "uk": ["стрижка для чоловіків"],
+            "de": ["herrenfrisur", "männerhaarschnitt"],
+            "ru": ["стрижка для мужчин"]
+          },
+          "wikidataId": "Q1140120",
+          "osmTag": "shop=hairdresser",
+          "attributes": {
+            "required": ["priceFrom", "duration"],
+            "optional": ["includesWash", "includesBeardTrim"],
+            "schema": {
+              "priceFrom": { "type": "money" },
+              "duration": { "type": "duration", "unit": "minutes" },
+              "includesWash": { "type": "boolean" },
+              "includesBeardTrim": { "type": "boolean" }
+            }
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": ["men's cut", "gents haircut", "male haircut"],
+              "uk": ["чоловіча стрижка"],
+              "de": ["herrenhaarschnitt"],
+              "ru": ["мужская стрижка"]
+            },
+            "antiTriggers": {
+              "en": ["women's", "female", "kids"],
+              "uk": ["жіноча", "дитяча"],
+              "de": ["damen", "kinder"],
+              "ru": ["женская", "детская"]
+            },
+            "adjacentTemplates": ["beard-trim"]
+          },
+          "crossLinks": ["beard-trim", "hot-towel-shave"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/hair-coloring",
           "slug": "hair-coloring",
           "names": {
             "en": "Hair Coloring",
@@ -49,9 +147,43 @@
             "de": "Haarfärbung",
             "ru": "Окрашивание волос",
             "original": "Hair Coloring"
-          }
+          },
+          "altLabels": {
+            "en": ["hair dye", "hair color", "tint"],
+            "uk": ["фарбування", "тонування"],
+            "de": ["haare färben", "tönung"],
+            "ru": ["окраска волос", "тонирование"]
+          },
+          "wikidataId": "Q2143395",
+          "attributes": {
+            "required": ["priceFrom", "duration"],
+            "optional": ["hairLengthRange", "colorTechnique"],
+            "schema": {
+              "priceFrom": { "type": "money" },
+              "duration": { "type": "duration", "unit": "minutes" },
+              "hairLengthRange": { "type": "enum", "values": ["short", "medium", "long"] },
+              "colorTechnique": { "type": "enum", "values": ["single", "balayage", "ombre", "foil"] }
+            }
+          },
+          "linguisticHints": {
+            "triggers": {
+              "en": ["hair color", "hair dye", "balayage", "ombre"],
+              "uk": ["фарбування", "омбре", "балаяж"],
+              "de": ["haarfarbe", "färben", "balayage"],
+              "ru": ["окрашивание", "балаяж", "омбре"]
+            },
+            "antiTriggers": {
+              "en": ["nails", "eyelash"],
+              "uk": ["нігті", "вії"],
+              "de": ["nägel"],
+              "ru": ["ногти", "ресницы"]
+            },
+            "adjacentTemplates": ["highlights", "hair-treatment"]
+          },
+          "crossLinks": ["highlights", "blowdry"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/highlights",
           "slug": "highlights",
           "names": {
             "en": "Highlights",
@@ -59,9 +191,18 @@
             "de": "Strähnchen",
             "ru": "Мелирование",
             "original": "Highlights"
-          }
+          },
+          "altLabels": {
+            "en": ["foil highlights", "partial highlights"],
+            "uk": ["мелірування волосся"],
+            "de": ["highlights", "foliensträhnen"],
+            "ru": ["мелирование", "блики"]
+          },
+          "wikidataId": "Q3133826",
+          "crossLinks": ["hair-coloring"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/blowdry",
           "slug": "blowdry",
           "names": {
             "en": "Blow Dry",
@@ -69,9 +210,18 @@
             "de": "Föhnen",
             "ru": "Укладка",
             "original": "Blow Dry"
-          }
+          },
+          "altLabels": {
+            "en": ["blow out", "styling", "blow-dry"],
+            "uk": ["укладання волосся"],
+            "de": ["styling", "föhnfrisur"],
+            "ru": ["стайлинг"]
+          },
+          "wikidataId": "Q1194117",
+          "crossLinks": ["womens-haircut", "hair-coloring"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/hair-treatment",
           "slug": "hair-treatment",
           "names": {
             "en": "Hair Treatment",
@@ -79,11 +229,19 @@
             "de": "Haarbehandlung",
             "ru": "Лечение волос",
             "original": "Hair Treatment"
-          }
+          },
+          "altLabels": {
+            "en": ["hair mask", "keratin treatment", "conditioning"],
+            "uk": ["маска для волосся", "кератинове випрямлення"],
+            "de": ["haarkur", "keratin-behandlung"],
+            "ru": ["маска для волос", "кератиновое выпрямление"]
+          },
+          "crossLinks": ["womens-haircut", "hair-coloring"]
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/barbershop",
       "slug": "barbershop",
       "names": {
         "en": "Barbershop",
@@ -92,9 +250,19 @@
         "ru": "Барбершоп",
         "original": "Barbershop"
       },
+      "altLabels": {
+        "en": ["barber", "men's salon"],
+        "uk": ["чоловіча перукарня"],
+        "de": ["herrenfriseur", "barbier"],
+        "ru": ["мужская парикмахерская", "барбер"]
+      },
       "osmTag": "shop=hairdresser",
+      "naceRef": "S96.02",
+      "schemaOrgType": "HairSalon",
+      "wikidataId": "Q809960",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/barber-haircut",
           "slug": "barber-haircut",
           "names": {
             "en": "Haircut",
@@ -102,9 +270,12 @@
             "de": "Haarschnitt",
             "ru": "Стрижка",
             "original": "Haircut"
-          }
+          },
+          "wikidataId": "Q1140120",
+          "crossLinks": ["beard-trim", "hot-towel-shave"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/beard-trim",
           "slug": "beard-trim",
           "names": {
             "en": "Beard Trim",
@@ -112,9 +283,18 @@
             "de": "Barttrimmen",
             "ru": "Стрижка бороды",
             "original": "Beard Trim"
-          }
+          },
+          "altLabels": {
+            "en": ["beard shaping", "beard grooming"],
+            "uk": ["підстригання бороди"],
+            "de": ["bart schneiden", "bartpflege"],
+            "ru": ["подравнивание бороды"]
+          },
+          "wikidataId": "Q812933",
+          "crossLinks": ["barber-haircut", "hot-towel-shave"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/hot-towel-shave",
           "slug": "hot-towel-shave",
           "names": {
             "en": "Hot Towel Shave",
@@ -122,9 +302,12 @@
             "de": "Heißtuchrasur",
             "ru": "Бритьё горячим полотенцем",
             "original": "Hot Towel Shave"
-          }
+          },
+          "wikidataId": "Q3479503",
+          "crossLinks": ["beard-trim"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/head-shave",
           "slug": "head-shave",
           "names": {
             "en": "Head Shave",
@@ -137,6 +320,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/nail-studio",
       "slug": "nail-studio",
       "names": {
         "en": "Nail Studio",
@@ -145,9 +329,19 @@
         "ru": "Ногтевая студия",
         "original": "Nail Studio"
       },
+      "altLabels": {
+        "en": ["nail salon", "nail bar"],
+        "uk": ["манікюрний салон"],
+        "de": ["nagelsalon"],
+        "ru": ["маникюрный салон", "ногтевой сервис"]
+      },
       "osmTag": "shop=beauty",
+      "naceRef": "S96.02",
+      "schemaOrgType": "BeautySalon",
+      "wikidataId": "Q1124825",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/manicure",
           "slug": "manicure",
           "names": {
             "en": "Manicure",
@@ -155,9 +349,12 @@
             "de": "Maniküre",
             "ru": "Маникюр",
             "original": "Manicure"
-          }
+          },
+          "wikidataId": "Q858041",
+          "crossLinks": ["gel-nails", "nail-art", "pedicure"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/pedicure",
           "slug": "pedicure",
           "names": {
             "en": "Pedicure",
@@ -165,9 +362,12 @@
             "de": "Pediküre",
             "ru": "Педикюр",
             "original": "Pedicure"
-          }
+          },
+          "wikidataId": "Q873481",
+          "crossLinks": ["manicure"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/gel-nails",
           "slug": "gel-nails",
           "names": {
             "en": "Gel Nails",
@@ -175,9 +375,17 @@
             "de": "Gel-Nägel",
             "ru": "Гелевые ногти",
             "original": "Gel Nails"
-          }
+          },
+          "altLabels": {
+            "en": ["gel extensions", "hard gel"],
+            "uk": ["нарощування гелем"],
+            "de": ["gel-modellage"],
+            "ru": ["наращивание гелем"]
+          },
+          "crossLinks": ["manicure", "nail-art"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/nail-art",
           "slug": "nail-art",
           "names": {
             "en": "Nail Art",
@@ -185,11 +393,14 @@
             "de": "Nageldesign",
             "ru": "Нейл-арт",
             "original": "Nail Art"
-          }
+          },
+          "wikidataId": "Q7996823",
+          "crossLinks": ["manicure", "gel-nails"]
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/spa-massage",
       "slug": "spa-massage",
       "names": {
         "en": "Spa & Massage",
@@ -198,9 +409,19 @@
         "ru": "Спа и массаж",
         "original": "Spa & Massage"
       },
+      "altLabels": {
+        "en": ["spa", "massage therapy", "day spa"],
+        "uk": ["спа-салон", "масажний кабінет"],
+        "de": ["wellness", "massagepraxis"],
+        "ru": ["спа-салон", "массажный кабинет"]
+      },
       "osmTag": "shop=massage",
+      "naceRef": "S96.04",
+      "schemaOrgType": "DaySpa",
+      "wikidataId": "Q1116183",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/swedish-massage",
           "slug": "swedish-massage",
           "names": {
             "en": "Swedish Massage",
@@ -208,9 +429,12 @@
             "de": "Schwedische Massage",
             "ru": "Классический массаж",
             "original": "Swedish Massage"
-          }
+          },
+          "wikidataId": "Q2355036",
+          "crossLinks": ["deep-tissue", "hot-stone"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/deep-tissue",
           "slug": "deep-tissue",
           "names": {
             "en": "Deep Tissue Massage",
@@ -218,9 +442,11 @@
             "de": "Tiefengewebsmassage",
             "ru": "Глубокий массаж",
             "original": "Deep Tissue Massage"
-          }
+          },
+          "crossLinks": ["swedish-massage"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/hot-stone",
           "slug": "hot-stone",
           "names": {
             "en": "Hot Stone Massage",
@@ -228,9 +454,12 @@
             "de": "Hot-Stone-Massage",
             "ru": "Массаж горячими камнями",
             "original": "Hot Stone Massage"
-          }
+          },
+          "wikidataId": "Q5908800",
+          "crossLinks": ["swedish-massage"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/facial",
           "slug": "facial",
           "names": {
             "en": "Facial",
@@ -238,9 +467,12 @@
             "de": "Gesichtsbehandlung",
             "ru": "Уход за лицом",
             "original": "Facial"
-          }
+          },
+          "wikidataId": "Q3127551",
+          "crossLinks": ["facial-treatment"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/body-wrap",
           "slug": "body-wrap",
           "names": {
             "en": "Body Wrap",
@@ -249,10 +481,44 @@
             "ru": "Обёртывание",
             "original": "Body Wrap"
           }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/thai-massage",
+          "slug": "thai-massage",
+          "names": {
+            "en": "Thai Massage",
+            "uk": "Тайський масаж",
+            "de": "Thai-Massage",
+            "ru": "Тайский массаж",
+            "original": "Thai Massage"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/lymphatic-massage",
+          "slug": "lymphatic-massage",
+          "names": {
+            "en": "Lymphatic Drainage",
+            "uk": "Лімфодренаж",
+            "de": "Lymphdrainage",
+            "ru": "Лимфодренажный массаж",
+            "original": "Lymphatic Drainage"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/sports-massage",
+          "slug": "sports-massage",
+          "names": {
+            "en": "Sports Massage",
+            "uk": "Спортивний масаж",
+            "de": "Sportmassage",
+            "ru": "Спортивный массаж",
+            "original": "Sports Massage"
+          }
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/beauty-salon",
       "slug": "beauty-salon",
       "names": {
         "en": "Beauty Salon",
@@ -261,9 +527,19 @@
         "ru": "Салон красоты",
         "original": "Beauty Salon"
       },
+      "altLabels": {
+        "en": ["cosmetics salon", "aesthetics studio"],
+        "uk": ["косметологічний салон"],
+        "de": ["schönheitssalon", "kosmetikstudio"],
+        "ru": ["косметологический салон"]
+      },
       "osmTag": "shop=beauty",
+      "naceRef": "S96.02",
+      "schemaOrgType": "BeautySalon",
+      "wikidataId": "Q622425",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/facial-treatment",
           "slug": "facial-treatment",
           "names": {
             "en": "Facial Treatment",
@@ -271,9 +547,12 @@
             "de": "Gesichtsbehandlung",
             "ru": "Процедура для лица",
             "original": "Facial Treatment"
-          }
+          },
+          "wikidataId": "Q3127551",
+          "crossLinks": ["facial", "makeup"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/eyebrow-shaping",
           "slug": "eyebrow-shaping",
           "names": {
             "en": "Eyebrow Shaping",
@@ -281,9 +560,17 @@
             "de": "Augenbrauenkorrektur",
             "ru": "Коррекция бровей",
             "original": "Eyebrow Shaping"
-          }
+          },
+          "altLabels": {
+            "en": ["brow shaping", "eyebrow threading"],
+            "uk": ["оформлення брів"],
+            "de": ["augenbrauen zupfen"],
+            "ru": ["оформление бровей"]
+          },
+          "crossLinks": ["eyelash-extensions", "makeup"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/eyelash-extensions",
           "slug": "eyelash-extensions",
           "names": {
             "en": "Eyelash Extensions",
@@ -291,9 +578,12 @@
             "de": "Wimpernverlängerung",
             "ru": "Наращивание ресниц",
             "original": "Eyelash Extensions"
-          }
+          },
+          "wikidataId": "Q5420968",
+          "crossLinks": ["eyebrow-shaping", "makeup"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/waxing",
           "slug": "waxing",
           "names": {
             "en": "Waxing",
@@ -301,9 +591,11 @@
             "de": "Waxing",
             "ru": "Восковая депиляция",
             "original": "Waxing"
-          }
+          },
+          "wikidataId": "Q1050898"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/makeup",
           "slug": "makeup",
           "names": {
             "en": "Makeup",
@@ -311,11 +603,14 @@
             "de": "Make-up",
             "ru": "Макияж",
             "original": "Makeup"
-          }
+          },
+          "wikidataId": "Q169180",
+          "crossLinks": ["eyebrow-shaping", "eyelash-extensions", "facial-treatment"]
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/tattoo-piercing",
       "slug": "tattoo-piercing",
       "names": {
         "en": "Tattoo & Piercing",
@@ -324,9 +619,19 @@
         "ru": "Тату и пирсинг",
         "original": "Tattoo & Piercing"
       },
+      "altLabels": {
+        "en": ["tattoo studio", "tattoo parlor", "body art"],
+        "uk": ["тату-салон"],
+        "de": ["tätowierung", "piercing-studio"],
+        "ru": ["тату-салон", "пирсинг-салон"]
+      },
       "osmTag": "shop=tattoo",
+      "naceRef": "S96.09",
+      "schemaOrgType": "TattooParlor",
+      "wikidataId": "Q26871883",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/tattoo-small",
           "slug": "tattoo-small",
           "names": {
             "en": "Small Tattoo",
@@ -334,9 +639,12 @@
             "de": "Kleines Tattoo",
             "ru": "Маленькое тату",
             "original": "Small Tattoo"
-          }
+          },
+          "wikidataId": "Q35197",
+          "crossLinks": ["tattoo-large"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/tattoo-large",
           "slug": "tattoo-large",
           "names": {
             "en": "Large Tattoo",
@@ -344,9 +652,12 @@
             "de": "Großes Tattoo",
             "ru": "Большое тату",
             "original": "Large Tattoo"
-          }
+          },
+          "wikidataId": "Q35197",
+          "crossLinks": ["tattoo-small"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/piercing",
           "slug": "piercing",
           "names": {
             "en": "Piercing",
@@ -354,9 +665,11 @@
             "de": "Piercing",
             "ru": "Пирсинг",
             "original": "Piercing"
-          }
+          },
+          "wikidataId": "Q16744"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/tattoo-removal",
           "slug": "tattoo-removal",
           "names": {
             "en": "Tattoo Removal",
@@ -364,11 +677,13 @@
             "de": "Tattoo-Entfernung",
             "ru": "Удаление тату",
             "original": "Tattoo Removal"
-          }
+          },
+          "wikidataId": "Q1418604"
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/tanning-studio",
       "slug": "tanning-studio",
       "names": {
         "en": "Tanning Studio",
@@ -377,9 +692,19 @@
         "ru": "Солярий",
         "original": "Tanning Studio"
       },
+      "altLabels": {
+        "en": ["tanning salon", "sun studio"],
+        "uk": ["солярій-студія"],
+        "de": ["solarium", "bräunungsstudio"],
+        "ru": ["студия загара"]
+      },
       "osmTag": "leisure=tanning_salon",
+      "naceRef": "S96.04",
+      "schemaOrgType": "BeautySalon",
+      "wikidataId": "Q840394",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/tanning-session",
           "slug": "tanning-session",
           "names": {
             "en": "Tanning Session",
@@ -387,9 +712,11 @@
             "de": "Bräunungssitzung",
             "ru": "Сеанс загара",
             "original": "Tanning Session"
-          }
+          },
+          "crossLinks": ["spray-tan"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/spray-tan",
           "slug": "spray-tan",
           "names": {
             "en": "Spray Tan",
@@ -397,8 +724,88 @@
             "de": "Sprühbräune",
             "ru": "Автозагар",
             "original": "Spray Tan"
-          }
+          },
+          "wikidataId": "Q7581007",
+          "crossLinks": ["tanning-session"]
         }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/lash-extensions-studio",
+      "slug": "lash-extensions-studio",
+      "names": { "en": "Lash Extensions Studio", "uk": "Студія нарощування вій", "de": "Wimpernstudio", "ru": "Студия наращивания ресниц", "original": "Lash Extensions Studio" },
+      "altLabels": { "en": ["lash bar", "eyelash studio"], "uk": ["лешмейкер"], "de": ["wimpernverlängerung"], "ru": ["лешмейкер"] },
+      "osmTag": "shop=beauty",
+      "naceRef": "S96.02",
+      "schemaOrgType": "BeautySalon",
+      "wikidataId": "Q5420968",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/classic-lash-set", "slug": "classic-lash-set", "names": { "en": "Classic Lash Set", "uk": "Класичне нарощування", "de": "Klassische Wimpern", "ru": "Классическое наращивание", "original": "Classic Lash Set" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/volume-lash-set", "slug": "volume-lash-set", "names": { "en": "Volume Lash Set", "uk": "Об'ємне нарощування", "de": "Volumen-Wimpern", "ru": "Объёмное наращивание", "original": "Volume Lash Set" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/lash-fill", "slug": "lash-fill", "names": { "en": "Lash Refill", "uk": "Корекція вій", "de": "Wimpern-Auffüllung", "ru": "Коррекция ресниц", "original": "Lash Refill" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/lash-removal", "slug": "lash-removal", "names": { "en": "Lash Removal", "uk": "Зняття вій", "de": "Wimpern-Entfernung", "ru": "Снятие ресниц", "original": "Lash Removal" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/brow-bar",
+      "slug": "brow-bar",
+      "names": { "en": "Brow Bar", "uk": "Брову бар", "de": "Brauenstudio", "ru": "Бров-бар", "original": "Brow Bar" },
+      "altLabels": { "en": ["eyebrow studio"], "uk": ["броу-бар", "брови"], "de": ["augenbrauenstudio"], "ru": ["броу-бар", "брови"] },
+      "osmTag": "shop=beauty",
+      "naceRef": "S96.02",
+      "schemaOrgType": "BeautySalon",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/brow-shaping-wax", "slug": "brow-shaping-wax", "names": { "en": "Brow Shaping (Wax)", "uk": "Корекція брів воском", "de": "Augenbrauenkorrektur Wax", "ru": "Коррекция бровей воском", "original": "Brow Shaping (Wax)" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/brow-tint", "slug": "brow-tint", "names": { "en": "Brow Tint", "uk": "Фарбування брів", "de": "Augenbrauen-Färbung", "ru": "Окрашивание бровей", "original": "Brow Tint" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/brow-lamination", "slug": "brow-lamination", "names": { "en": "Brow Lamination", "uk": "Ламінування брів", "de": "Brauenlamination", "ru": "Ламинирование бровей", "original": "Brow Lamination" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/permanent-makeup",
+      "slug": "permanent-makeup",
+      "names": { "en": "Permanent Makeup", "uk": "Перманентний макіяж", "de": "Permanent Make-up", "ru": "Перманентный макияж", "original": "Permanent Makeup" },
+      "altLabels": { "en": ["micropigmentation", "PMU"], "uk": ["мікропігментування"], "de": ["mikropigmentierung"], "ru": ["микропигментирование"] },
+      "osmTag": "shop=beauty",
+      "naceRef": "S96.02",
+      "schemaOrgType": "BeautySalon",
+      "wikidataId": "Q1786504",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/microblading", "slug": "microblading", "names": { "en": "Microblading", "uk": "Мікроблейдінг", "de": "Microblading", "ru": "Микроблейдинг", "original": "Microblading" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/lip-blush", "slug": "lip-blush", "names": { "en": "Lip Blush", "uk": "Перманент губ", "de": "Lippen-PMU", "ru": "Перманент губ", "original": "Lip Blush" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/eyeliner-pmu", "slug": "eyeliner-pmu", "names": { "en": "Eyeliner PMU", "uk": "Перманент стрілок", "de": "Eyeliner-PMU", "ru": "Перманент стрелок", "original": "Eyeliner PMU" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/pmu-touchup", "slug": "pmu-touchup", "names": { "en": "PMU Touch-up", "uk": "Корекція перманенту", "de": "PMU-Auffrischung", "ru": "Коррекция перманента", "original": "PMU Touch-up" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/depilation-lounge",
+      "slug": "depilation-lounge",
+      "names": { "en": "Depilation Lounge", "uk": "Студія депіляції", "de": "Enthaarungsstudio", "ru": "Студия депиляции", "original": "Depilation Lounge" },
+      "altLabels": { "en": ["hair removal", "laser hair removal"], "uk": ["видалення волосся"], "de": ["haarentfernung"], "ru": ["удаление волос", "эпиляция"] },
+      "osmTag": "shop=beauty",
+      "naceRef": "S96.02",
+      "schemaOrgType": "BeautySalon",
+      "wikidataId": "Q1059073",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/sugaring", "slug": "sugaring", "names": { "en": "Sugaring", "uk": "Шугаринг", "de": "Sugaring", "ru": "Шугаринг", "original": "Sugaring" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/laser-hair-removal", "slug": "laser-hair-removal", "names": { "en": "Laser Hair Removal", "uk": "Лазерна епіляція", "de": "Laser-Haarentfernung", "ru": "Лазерная эпиляция", "original": "Laser Hair Removal" }, "wikidataId": "Q1814580" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/elos-epilation", "slug": "elos-epilation", "names": { "en": "ELOS Epilation", "uk": "Елос-епіляція", "de": "ELOS-Haarentfernung", "ru": "ELOS-эпиляция", "original": "ELOS Epilation" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/cosmetology-clinic",
+      "slug": "cosmetology-clinic",
+      "names": { "en": "Cosmetology Clinic", "uk": "Косметологічна клініка", "de": "Kosmetikklinik", "ru": "Косметологическая клиника", "original": "Cosmetology Clinic" },
+      "altLabels": { "en": ["aesthetic medicine", "med spa"], "uk": ["естетична медицина"], "de": ["ästhetische medizin"], "ru": ["эстетическая медицина"] },
+      "osmTag": "healthcare=cosmetology",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q1149361",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/botox-injection", "slug": "botox-injection", "names": { "en": "Botox Injection", "uk": "Ін'єкція ботоксу", "de": "Botox-Injektion", "ru": "Инъекция ботокса", "original": "Botox Injection" }, "wikidataId": "Q132942" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/dermal-filler", "slug": "dermal-filler", "names": { "en": "Dermal Filler", "uk": "Філлер", "de": "Hyaluronsäure-Filler", "ru": "Филлер", "original": "Dermal Filler" }, "wikidataId": "Q1185049" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/chemical-peel", "slug": "chemical-peel", "names": { "en": "Chemical Peel", "uk": "Хімічний пілінг", "de": "Chemisches Peeling", "ru": "Химический пилинг", "original": "Chemical Peel" }, "wikidataId": "Q5090897" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/mesotherapy", "slug": "mesotherapy", "names": { "en": "Mesotherapy", "uk": "Мезотерапія", "de": "Mesotherapie", "ru": "Мезотерапия", "original": "Mesotherapy" }, "wikidataId": "Q1138081" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/laser-skin-treatment", "slug": "laser-skin-treatment", "names": { "en": "Laser Skin Treatment", "uk": "Лазерна терапія шкіри", "de": "Laser-Hautbehandlung", "ru": "Лазерное лечение кожи", "original": "Laser Skin Treatment" } }
       ]
     }
   ]

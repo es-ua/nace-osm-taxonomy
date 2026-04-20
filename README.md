@@ -2,6 +2,10 @@
 
 An open, multilingual (EN/UK/DE/RU) business service taxonomy that maps **NACE Rev.2** statistical codes to **OpenStreetMap** community tags, enriched with **service templates** for marketplace use.
 
+Formalized as **JSON-LD** with `@id` URIs under `https://taxonomy.mapko.net/v1/`, anchored in **Schema.org** LocalBusiness types and **Wikidata** QIDs. Positioned as an Upper Ontology for SMB discovery platforms — inspired by Schema.org's `LocalBusiness` vocabulary but with deeper industry coverage (1300+ templates across 23 roots).
+
+**Current version:** see [VERSION](./VERSION) · **Changelog:** [CHANGELOG.md](./CHANGELOG.md) · **JSON-LD context:** [context.jsonld](./context.jsonld)
+
 ## What is this?
 
 A structured classification of businesses and their services, designed for local discovery platforms, marketplaces, and business directories.
@@ -28,256 +32,66 @@ NACE Section (statistical standard, EU)
 
 | Metric | Count |
 |--------|-------|
-| Root categories | 14 |
-| Subcategories | ~80 |
-| Service templates | ~300 |
+| Root categories | 23 |
+| Subcategories | 353 |
+| Service templates | 1333 |
 | Languages | 4 (EN, UK, DE, RU) |
 
 ## Categories
 
-| Icon | Category | NACE | Subs | Templates |
-|------|----------|------|------|-----------|
-| 🍽️ | [Food & Beverage](#-food--beverage--nace-i56) | I56 | 6 | 23 |
-| 🏨 | [Accommodation](#-accommodation--nace-i55) | I55 | 4 | 11 |
-| 🛍️ | [Retail & Shopping](#-retail--shopping--nace-g47) | G47 | 8 | 17 |
-| 💇 | [Beauty & Wellness](#-beauty--wellness--nace-s96) | S96 | 7 | 28 |
-| 🏥 | [Health & Medical](#-health--medical--nace-q86) | Q86 | 7 | 21 |
-| 🎓 | [Education & Training](#-education--training--nace-p85) | P85 | 7 | 21 |
-| 🚗 | [Auto & Transport](#-auto--transport--nace-g45h49) | G45+H49 | 4 | 14 |
-| 🏠 | [Home Services](#-home-services--nace-f43n81) | F43+N81 | 8 | 25 |
-| 💼 | [Professional Services](#-professional-services--nace-m69-m74) | M69-M74 | 6 | 17 |
-| 💻 | [IT & Digital](#-it--digital--nace-j62) | J62 | 7 | 22 |
-| 🏋️ | [Sports & Fitness](#-sports--fitness--nace-r93) | R93 | 5 | 15 |
-| 🎭 | [Entertainment & Leisure](#-entertainment--leisure--nace-r90r92) | R90+R92 | 6 | 14 |
-| 🏦 | [Finance & Insurance](#-finance--insurance--nace-k64-k66) | K64-K66 | 4 | 10 |
-| 🔧 | [Crafts & Repair](#-crafts--repair--nace-s95c) | S95+C | 7 | 23 |
+| Icon | Category | NACE Code | Subcategories |
+|------|----------|-----------|---------------|
+| 🍽️ | Food & Beverage | I56 | Restaurant, Cafe, Bar, Fast Food, Bakery, Ice Cream |
+| 🏨 | Accommodation | I55 | Hotel, Hostel, Guest House, Apartment Rental |
+| 🛍️ | Retail & Shopping | G47 | Grocery, Clothing, Electronics, Florist, Pharmacy, Jewelry, Optician |
+| 💇 | Beauty & Wellness | S96 | Hair Salon, Barbershop, Nail Studio, Spa, Beauty Salon, Tattoo |
+| 🏥 | Health & Medical | Q86 | General Doctor, Dentist, Physiotherapy, Psychologist, Veterinary |
+| 🎓 | Education & Training | P85 | Language School, Driving School, Music, Tutoring, Dance, Art |
+| 🚗 | Auto & Transport | G45+H49 | Car Repair, Car Wash, Tire Service, Car Rental |
+| 🏠 | Home Services | F43+N81 | Plumber, Electrician, Cleaning, Landscaping, Moving, Locksmith |
+| 💼 | Professional Services | M69-M74 | Lawyer, Accountant, Notary, Architect, Real Estate, Translator |
+| 💻 | IT & Digital | J62 | Web Dev, Mobile Dev, IT Consulting, SEO, Design, Photography |
+| 🏋️ | Sports & Fitness | R93 | Gym, Yoga, Swimming, Martial Arts, Personal Trainer |
+| 🎭 | Entertainment & Leisure | R90+R92 | Cinema, Theater, Nightclub, Bowling, Escape Room, Event Venue |
+| 🏦 | Finance & Insurance | K64-K66 | Bank, Currency Exchange, Financial Advisor, Insurance |
+| 🔧 | Crafts & Repair | S95+C | Phone Repair, Computer Repair, Tailor, Shoe Repair, Watch Repair |
+| 🌾 | Agriculture & Farming | A01 | Crop Farm, Livestock, Dairy, Beekeeping, Vineyard, Orchard, Greenhouse, Fish Farm |
+| 🏭 | Manufacturing & Production | C | Food Production, Textile, Woodworking, Metalworking, 3D Printing, Candle/Soap, Brewery |
+| 🚛 | Logistics & Warehousing | H49+H52+H53 | Courier, Parcel Locker, Freight Forwarder, Customs Broker, Self-Storage, Taxi, Bus Charter, Truck Rental |
+| 🐾 | Pet Services | M75+S96.09 | Pet Daycare, Dog Walking, Pet Training, Pet Sitting, Grooming Salon, Kennel, Cat Hotel, Pet Photography |
+| 👶 | Childcare & Kids | Q88.91+P85.10 | Babysitter, Nanny Agency, Kids Parties, Kids Photo, Baby Massage, Lactation Consultant, Prenatal, Kids Dev Center, Kids Club |
+| 🎁 | Events & Wedding | N82.30 | Wedding Planner, Event Production, DJ, Balloon Decor, Photo Booth, MC, Sound/Lighting/Stage Rental, Fireworks, Florals |
+| 🎨 | Arts & Handmade | C32+R90 | Pottery, Glass, Sculpture, Jewelry Artisan, Leather, Art Gallery, Artist Studio, Framing, Antiques Restoration |
+| 🏘️ | Real Estate | L68+F41 | Property Management, Building Co., Developer, Surveyor, Home Staging, Mortgage Broker, Valuator, Leasing |
+| ⚖️ | Government & Public | O84+R91 | Municipal, Post Office, Social Services, Employment, Registry, Library, Archives, Tax, Passport |
 
----
+## Install
 
-## Full Taxonomy
-
-### 🍽️ Food & Beverage · NACE I56
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Restaurant | `amenity=restaurant` | Business Lunch · Banquet · Takeaway · Delivery · Catering |
-| Cafe | `amenity=cafe` | Coffee & Drinks · Pastries · Breakfast Set · Lunch Menu |
-| Bar & Pub | `amenity=bar` | Cocktails · Craft Beer · Hookah · Live Music Night |
-| Fast Food | `amenity=fast_food` | Combo Meal · Delivery |
-| Bakery | `shop=bakery` | Fresh Bread · Pastries · Custom Cake · Wedding Cake |
-| Ice Cream Shop | `amenity=ice_cream` | Ice Cream Scoop · Milkshake · Sorbet |
-
-### 🏨 Accommodation · NACE I55
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Hotel | `tourism=hotel` | Single Room · Double Room · Suite · Conference Room |
-| Hostel | `tourism=hostel` | Dorm Bed · Private Room |
-| Guest House | `tourism=guest_house` | Room per Night · Weekly Stay |
-| Apartment Rental | `tourism=apartment` | Studio · One Bedroom · Two Bedrooms |
-
-### 🛍️ Retail & Shopping · NACE G47
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Grocery Store | `shop=supermarket` | Home Delivery · Gift Basket |
-| Clothing Store | `shop=clothes` | Personal Styling · Alterations |
-| Electronics | `shop=electronics` | Device Setup · Warranty Repair |
-| Florist | `shop=florist` | Bouquet · Wedding Floristry · Flower Subscription |
-| Pet Shop | `shop=pet` | Pet Grooming · Pet Food Delivery |
-| Pharmacy | `amenity=pharmacy` | Prescription · Consultation |
-| Jewelry | `shop=jewelry` | Custom Design · Repair · Engraving |
-| Optician | `shop=optician` | Eye Exam · Lens Fitting · Frame Adjustment |
-
-### 💇 Beauty & Wellness · NACE S96
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Hair Salon | `shop=hairdresser` | Women's Haircut · Men's Haircut · Hair Coloring · Highlights · Blow Dry · Hair Treatment |
-| Barbershop | `shop=hairdresser` | Haircut · Beard Trim · Hot Towel Shave · Head Shave |
-| Nail Studio | `shop=beauty` | Manicure · Pedicure · Gel Nails · Nail Art |
-| Spa & Massage | `shop=massage` | Swedish Massage · Deep Tissue Massage · Hot Stone Massage · Facial · Body Wrap |
-| Beauty Salon | `shop=beauty` | Facial Treatment · Eyebrow Shaping · Eyelash Extensions · Waxing · Makeup |
-| Tattoo & Piercing | `shop=tattoo` | Small Tattoo · Large Tattoo · Piercing · Tattoo Removal |
-| Tanning Studio | `leisure=tanning_salon` | Tanning Session · Spray Tan |
-
-### 🏥 Health & Medical · NACE Q86
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| General Practitioner | `healthcare=doctor` | Consultation · Check-up · Vaccination · Blood Test |
-| Dentist | `healthcare=dentist` | Cleaning · Filling · Extraction · Whitening · Dental Implant · Crown |
-| Physiotherapy | `healthcare=physiotherapist` | Session · Assessment · Manual Therapy · Sports Rehab |
-| Psychologist | `healthcare=psychologist` | Individual Session · Couples Therapy · Assessment |
-| Veterinary | `amenity=veterinary` | Consultation · Vaccination · Surgery · Grooming |
-| Ophthalmologist | `healthcare=doctor` | Eye Exam · Laser Consultation |
-| Dermatologist | `healthcare=doctor` | Consultation · Skin Check · Acne Treatment · Mole Removal |
-
-### 🎓 Education & Training · NACE P85
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Language School | `amenity=language_school` | Group Lesson · Private Lesson · Intensive Course · Exam Preparation |
-| Driving School | `amenity=driving_school` | Theory Lesson · Practical Lesson · Exam Preparation |
-| Music School | `amenity=music_school` | Individual Lesson · Group Lesson · Instrument Rental |
-| Tutoring | `office=tutoring` | Math · Science · Exam Preparation |
-| Dance School | `leisure=dance` | Trial Lesson · Monthly Pass · Private Lesson · Workshop |
-| Art School | `amenity=school` | Drawing Class · Painting Class · Pottery Class |
-| Kindergarten | `amenity=kindergarten` | Full Day · Half Day · After School |
-
-### 🚗 Auto & Transport · NACE G45+H49
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Car Repair | `shop=car_repair` | Oil Change · Brake Service · Diagnostics · Inspection (TÜV) |
-| Car Wash | `amenity=car_wash` | Exterior Wash · Interior Cleaning · Full Detailing |
-| Tire Service | `shop=tyres` | Tire Change · Wheel Balancing · Wheel Alignment · Tire Storage |
-| Car Rental | `amenity=car_rental` | Daily Rental · Weekly Rental · Monthly Rental |
-
-### 🏠 Home Services · NACE F43+N81
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Plumber | `craft=plumber` | Repair · Installation · Emergency Call · Drain Cleaning |
-| Electrician | `craft=electrician` | Wiring · Repair · Installation · Inspection |
-| Cleaning Service | `office=cleaning` | Regular Cleaning · Deep Cleaning · Window Cleaning · Office Cleaning |
-| Landscaping | `craft=gardener` | Lawn Care · Tree Trimming · Garden Design |
-| Moving Service | `office=moving_company` | Local Move · Long Distance · Packing · Furniture Assembly |
-| Locksmith | `craft=locksmith` | Lock Change · Emergency Opening · Key Copy |
-| Painter | `craft=painter` | Interior · Exterior · Wallpaper |
-| Renovation | `craft=builder` | Bathroom · Kitchen · Full Renovation |
-
-### 💼 Professional Services · NACE M69-M74
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Lawyer | `office=lawyer` | Consultation · Contract Review · Court Representation |
-| Accountant | `office=accountant` | Tax Return · Bookkeeping · Annual Report |
-| Notary | `office=notary` | Certification · Real Estate Transaction · Will · Power of Attorney |
-| Architect | `office=architect` | Consultation · Building Plan · Interior Design |
-| Real Estate Agent | `office=estate_agent` | Property Valuation · Buyer Representation · Rental Management |
-| Translator | `office=translator` | Document Translation · Certified Translation · Interpretation |
-
-### 💻 IT & Digital · NACE J62
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Web Development | — | Landing Page · E-commerce Site · Web Application · Website Maintenance |
-| Mobile Development | — | iOS App · Android App · Cross-platform App |
-| IT Consulting | `office=it` | IT Audit · Cloud Migration · Cybersecurity Assessment |
-| SEO & Marketing | — | SEO Audit · Google Ads · Social Media Management · Content Marketing |
-| Graphic Design | `office=graphic_design` | Logo Design · Brand Identity · Print Design · Packaging |
-| Photography | `craft=photographer` | Portrait Session · Product Photography · Event Photography · Wedding Photography |
-| Videography | — | Promo Video · Event Video · Social Media Content · Drone Footage |
-
-### 🏋️ Sports & Fitness · NACE R93
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Gym | `leisure=fitness_centre` | Monthly Pass · Day Pass · Personal Training · Group Class |
-| Yoga Studio | `leisure=fitness_centre` | Drop-in Class · Monthly Unlimited · Private Session · Workshop |
-| Swimming Pool | `leisure=swimming_pool` | Single Swim · Monthly Pass · Swimming Lesson |
-| Martial Arts | `leisure=sports_centre` | Trial Class · Monthly Membership · Private Lesson |
-| Personal Trainer | — | Single Session · Package of 10 · Nutrition Plan · Online Coaching |
-
-### 🎭 Entertainment & Leisure · NACE R90+R92
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Cinema | `amenity=cinema` | Regular Ticket · 3D Ticket · Private Screening |
-| Theater | `amenity=theatre` | Ticket · Season Pass |
-| Nightclub | `amenity=nightclub` | Entry · VIP Table · Private Event |
-| Bowling | `leisure=bowling_alley` | Game · Lane Rental · Party Package |
-| Escape Room | `leisure=escape_game` | Room Session · Team Building |
-| Event Venue | `amenity=events_venue` | Venue Rental · Wedding Package · Corporate Event |
-
-### 🏦 Finance & Insurance · NACE K64-K66
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Bank | `amenity=bank` | Account Opening · Loan Consultation · Mortgage Consultation |
-| Currency Exchange | `amenity=bureau_de_change` | Currency Exchange · Money Transfer |
-| Financial Advisor | `office=financial_advisor` | Consultation · Portfolio Review · Retirement Planning |
-| Insurance Agent | `office=insurance` | Consultation · Policy Review · Claim Assistance |
-
-### 🔧 Crafts & Repair · NACE S95+C
-
-| Subcategory | OSM Tag | Service Templates |
-|-------------|---------|-------------------|
-| Phone Repair | `craft=electronics_repair` | Screen Replacement · Battery Replacement · Water Damage Repair |
-| Computer Repair | `craft=electronics_repair` | Diagnostic · Virus Removal · Hardware Upgrade · Data Recovery |
-| Tailor | `craft=tailor` | Alteration · Custom Suit · Dress Making · Zipper Repair |
-| Shoe Repair | `craft=shoemaker` | Heel Replacement · Sole Repair · Stretching · Cleaning |
-| Watch Repair | `craft=watchmaker` | Battery Replacement · Repair · Restoration |
-| Furniture Repair | `craft=carpenter` | Restoration · Upholstery · Custom Piece |
-| Appliance Repair | `craft=electronics_repair` | Washing Machine · Refrigerator · Dishwasher · Oven |
-
-## File structure
-
-```
-nace-osm-taxonomy/
-├── taxonomy.json              # Complete taxonomy in a single file
-├── categories/                # Individual category files
-│   ├── food-beverage.json
-│   ├── accommodation.json
-│   ├── retail.json
-│   ├── beauty-wellness.json
-│   ├── health.json
-│   ├── education.json
-│   ├── auto-transport.json
-│   ├── home-services.json
-│   ├── professional.json
-│   ├── it-digital.json
-│   ├── sports-fitness.json
-│   ├── entertainment.json
-│   ├── finance.json
-│   └── crafts-repair.json
-├── README.md
-└── LICENSE
+```bash
+npm install @mapko/nace-osm-taxonomy
 ```
 
-## Data format
+Then in Node / TypeScript:
 
-Each category file is a JSON object:
+```ts
+import {
+  loadTaxonomy,
+  findSubcategoryBySlug,
+  findByOsmTag,
+  findByNaceRef,
+  findByWikidataId,
+} from '@mapko/nace-osm-taxonomy';
 
-```json
-{
-  "slug": "beauty-wellness",
-  "names": {
-    "en": "Beauty & Wellness",
-    "uk": "Краса та здоров'я",
-    "de": "Schönheit & Wellness",
-    "ru": "Красота и здоровье",
-    "original": "Beauty & Wellness"
-  },
-  "icon": "💇",
-  "naceRef": "S96",
-  "subcategories": [
-    {
-      "slug": "hair-salon",
-      "names": {
-        "en": "Hair Salon",
-        "uk": "Перукарня",
-        "de": "Friseursalon",
-        "ru": "Парикмахерская",
-        "original": "Hair Salon"
-      },
-      "osmTag": "shop=hairdresser",
-      "templates": [
-        {
-          "slug": "womens-haircut",
-          "names": {
-            "en": "Women's Haircut",
-            "uk": "Жіноча стрижка",
-            "de": "Damenhaarschnitt",
-            "ru": "Женская стрижка",
-            "original": "Women's Haircut"
-          }
-        }
-      ]
-    }
-  ]
-}
+const taxonomy = loadTaxonomy();
+const hairSalon = findSubcategoryBySlug('hair-salon');
+const restaurants = findByOsmTag('amenity=restaurant');
+```
+
+Or consume JSON directly (any language):
+
+```ts
+import taxonomy from '@mapko/nace-osm-taxonomy/taxonomy.jsonld';
+import beauty from '@mapko/nace-osm-taxonomy/categories/beauty-wellness.json';
 ```
 
 ## How to use
@@ -285,47 +99,61 @@ Each category file is a JSON object:
 ### JavaScript / TypeScript
 ```js
 const taxonomy = require('./taxonomy.json');
-const categories = taxonomy; // array of root categories
+const categories = taxonomy;
 
-// Find all beauty subcategories
 const beauty = categories.find(c => c.slug === 'beauty-wellness');
 console.log(beauty.subcategories.map(s => s.names.en));
-// ['Hair Salon', 'Barbershop', 'Nail Studio', ...]
 ```
 
 ### Python
 ```python
 import json
-
 with open('taxonomy.json') as f:
     taxonomy = json.load(f)
-
-# Get all subcategories with their OSM tags
 for cat in taxonomy:
     for sub in cat['subcategories']:
         print(f"{cat['icon']} {sub['names']['en']} → {sub.get('osmTag', 'N/A')}")
 ```
 
-## Data sources
+## Data format
 
-- **NACE Rev.2** — European statistical classification (Eurostat, public domain)
-- **OSM tags** — OpenStreetMap community naming conventions (tag vocabulary, not database)
-- **Service templates** — Original work by Mapko
-- **Translations** — Original work by Mapko (EN, UK, DE, RU)
+Each category file is a JSON object. Since v1.1.0 it carries additional fields for use as an ontology (URIs, Schema.org / Wikidata links, attribute schemas, linguistic hints). All new fields are **additive** — old consumers of v1.0.0 continue to work.
 
-No data from the OpenStreetMap database (ODbL) or proprietary sources (Google, Foursquare) was used. The OSM tag names (e.g., `amenity=restaurant`) are community-agreed naming conventions, not copyrightable database content.
+See `categories/beauty-wellness.json` for a fully-enriched blueprint.
+
+### Field reference (v1.1.0)
+
+| Field | Level | Purpose |
+|---|---|---|
+| `@id` | all | stable URI for cross-reference from downstream graphs |
+| `@context` | root | JSON-LD context (points to `context.jsonld`) |
+| `altLabels` | category/sub/template | synonyms per language, critical for entity linking |
+| `schemaOrgType` | subcategory | Schema.org LocalBusiness subtype for LD-JSON export |
+| `wikidataId` | subcategory/template | Wikidata QID for cross-lingual / cross-system reference |
+| `naceRef` | any | NACE Rev.2 code |
+| `osmTag` | subcategory/template | OSM tag at the most specific applicable level |
+| `attributes.{required,optional,schema}` | template | typed schema for instances (price, duration, enums) |
+| `expectedRelations` | subcategory | relation hints for downstream entity linker |
+| `linguisticHints.{triggers,antiTriggers,adjacentTemplates}` | template | LLM classifier disambiguation hints |
+| `crossLinks` | template | DAG edges between related templates |
 
 ## Contributing
 
-Contributions welcome! You can help by:
+See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-- Adding new subcategories or service templates
-- Adding translations for more languages
-- Improving existing translations
-- Suggesting new root categories
+## Attribution
+
+Inspired by and anchored in public industry standards:
+
+- **NACE Rev.2** (Eurostat, public domain) — statistical classification backbone
+- **OpenStreetMap tag conventions** — community naming vocabulary for geo-tagging
+- **Schema.org** LocalBusiness vocabulary ([CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)) — type mappings
+- **Wikidata** QIDs ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)) — cross-lingual anchors
+
+No proprietary taxonomy content from Foursquare, Google My Business, Yelp, or any closed commercial source was imported or copied.
 
 ## License
 
-MIT License - Created by [Mapko](https://mapko.net)
+MIT License — Created by [Mapko](https://mapko.net)
 
-See [LICENSE](LICENSE) for details.
+See [LICENSE](./LICENSE) for details.

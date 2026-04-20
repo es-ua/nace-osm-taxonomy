@@ -1,0 +1,593 @@
+{
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/real-estate",
+  "slug": "real-estate",
+  "version": "1.1.0",
+  "names": {
+    "en": "Real Estate",
+    "uk": "Нерухомість",
+    "de": "Immobilien",
+    "ru": "Недвижимость",
+    "original": "Real Estate"
+  },
+  "altLabels": {
+    "en": ["property services", "real estate services"],
+    "uk": ["послуги з нерухомості"],
+    "de": ["immobiliendienste"],
+    "ru": ["услуги недвижимости"]
+  },
+  "icon": "🏘️",
+  "naceRef": "L68+F41",
+  "schemaOrgType": "RealEstateAgent",
+  "wikidataId": "Q43229",
+  "subcategories": [
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/property-management",
+      "slug": "property-management",
+      "names": {
+        "en": "Property Management",
+        "uk": "Управління нерухомістю",
+        "de": "Hausverwaltung",
+        "ru": "Управление недвижимостью",
+        "original": "Property Management"
+      },
+      "altLabels": {
+        "en": ["building management"],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "office=property_management",
+      "naceRef": "L68.32",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1402461",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/residential-pm",
+          "slug": "residential-pm",
+          "names": {
+            "en": "Residential Property Management",
+            "uk": "Управління житловою нерухомістю",
+            "de": "Wohnimmobilienverwaltung",
+            "ru": "Управление жилой недвижимостью",
+            "original": "Residential Property Management"
+          },
+          "crossLinks": ["commercial-pm", "hoa-management", "tenant-screening"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/commercial-pm",
+          "slug": "commercial-pm",
+          "names": {
+            "en": "Commercial Property Management",
+            "uk": "Управління комерційною нерухомістю",
+            "de": "Gewerbeimmobilienverwaltung",
+            "ru": "Управление коммерческой недвижимостью",
+            "original": "Commercial Property Management"
+          },
+          "crossLinks": ["residential-pm", "commercial-leasing"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hoa-management",
+          "slug": "hoa-management",
+          "names": {
+            "en": "HOA Management",
+            "uk": "Управління ОСББ",
+            "de": "WEG-Verwaltung",
+            "ru": "Управление ТСЖ",
+            "original": "HOA Management"
+          },
+          "crossLinks": ["residential-pm"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tenant-screening",
+          "slug": "tenant-screening",
+          "names": {
+            "en": "Tenant Screening",
+            "uk": "Перевірка орендарів",
+            "de": "Mieterprüfung",
+            "ru": "Проверка арендаторов",
+            "original": "Tenant Screening"
+          },
+          "crossLinks": ["residential-pm", "tenant-search"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/building-company",
+      "slug": "building-company",
+      "names": {
+        "en": "Building Company",
+        "uk": "Будівельна компанія",
+        "de": "Bauunternehmen",
+        "ru": "Строительная компания",
+        "original": "Building Company"
+      },
+      "altLabels": {
+        "en": ["construction company", "general contractor"],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "office=construction_company",
+      "naceRef": "F41.20",
+      "schemaOrgType": "GeneralContractor",
+      "wikidataId": "Q1311",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/residential-build",
+          "slug": "residential-build",
+          "names": {
+            "en": "Residential Construction",
+            "uk": "Житлове будівництво",
+            "de": "Wohnungsbau",
+            "ru": "Жилищное строительство",
+            "original": "Residential Construction"
+          },
+          "crossLinks": ["custom-home", "residential-development"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/commercial-build",
+          "slug": "commercial-build",
+          "names": {
+            "en": "Commercial Construction",
+            "uk": "Комерційне будівництво",
+            "de": "Gewerbebau",
+            "ru": "Коммерческое строительство",
+            "original": "Commercial Construction"
+          },
+          "crossLinks": ["mixed-use-development"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-home",
+          "slug": "custom-home",
+          "names": {
+            "en": "Custom Home Construction",
+            "uk": "Будівництво приватного будинку",
+            "de": "Individueller Hausbau",
+            "ru": "Строительство частного дома",
+            "original": "Custom Home Construction"
+          },
+          "crossLinks": ["residential-build", "build-design-service"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/build-design-service",
+          "slug": "build-design-service",
+          "names": {
+            "en": "Design-Build Service",
+            "uk": "Послуга проектування і будівництва",
+            "de": "Planungs- und Bauleistung",
+            "ru": "Услуга проектирования и строительства",
+            "original": "Design-Build Service"
+          },
+          "crossLinks": ["custom-home", "residential-build"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/property-developer",
+      "slug": "property-developer",
+      "names": {
+        "en": "Property Developer",
+        "uk": "Девелопер",
+        "de": "Projektentwickler",
+        "ru": "Девелопер",
+        "original": "Property Developer"
+      },
+      "altLabels": {
+        "en": ["real estate developer"],
+        "uk": ["забудовник"],
+        "de": [],
+        "ru": ["застройщик"]
+      },
+      "osmTag": "office=property_developer",
+      "naceRef": "F41.10",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1146909",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/residential-development",
+          "slug": "residential-development",
+          "names": {
+            "en": "Residential Development",
+            "uk": "Житлова забудова",
+            "de": "Wohnbauentwicklung",
+            "ru": "Жилая застройка",
+            "original": "Residential Development"
+          },
+          "crossLinks": ["residential-build", "off-plan-sales"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/mixed-use-development",
+          "slug": "mixed-use-development",
+          "names": {
+            "en": "Mixed-Use Development",
+            "uk": "Багатофункціональна забудова",
+            "de": "Mischnutzungsprojekt",
+            "ru": "Многофункциональная застройка",
+            "original": "Mixed-Use Development"
+          },
+          "crossLinks": ["commercial-build", "residential-development"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/off-plan-sales",
+          "slug": "off-plan-sales",
+          "names": {
+            "en": "Off-Plan Sales",
+            "uk": "Продаж на етапі котловану",
+            "de": "Verkauf vom Plan",
+            "ru": "Продажа на этапе котлована",
+            "original": "Off-Plan Sales"
+          },
+          "crossLinks": ["residential-development"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/joint-venture",
+          "slug": "joint-venture",
+          "names": {
+            "en": "Joint Venture",
+            "uk": "Спільне підприємство",
+            "de": "Joint Venture",
+            "ru": "Совместное предприятие",
+            "original": "Joint Venture"
+          },
+          "crossLinks": ["residential-development", "mixed-use-development"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/surveyor",
+      "slug": "surveyor",
+      "names": {
+        "en": "Surveyor",
+        "uk": "Землевпорядник",
+        "de": "Vermessungsbüro",
+        "ru": "Геодезист",
+        "original": "Surveyor"
+      },
+      "altLabels": {
+        "en": ["land surveyor", "geodesy"],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "office=surveyor",
+      "naceRef": "M71.12",
+      "schemaOrgType": "ProfessionalService",
+      "wikidataId": "Q1517579",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/land-survey",
+          "slug": "land-survey",
+          "names": {
+            "en": "Land Survey",
+            "uk": "Землевпорядкування",
+            "de": "Landvermessung",
+            "ru": "Землеустройство",
+            "original": "Land Survey"
+          },
+          "crossLinks": ["boundary-survey", "topographic-survey"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/boundary-survey",
+          "slug": "boundary-survey",
+          "names": {
+            "en": "Boundary Survey",
+            "uk": "Межування",
+            "de": "Grenzvermessung",
+            "ru": "Межевание",
+            "original": "Boundary Survey"
+          },
+          "crossLinks": ["land-survey"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/topographic-survey",
+          "slug": "topographic-survey",
+          "names": {
+            "en": "Topographic Survey",
+            "uk": "Топографічна зйомка",
+            "de": "Topografische Vermessung",
+            "ru": "Топографическая съёмка",
+            "original": "Topographic Survey"
+          },
+          "crossLinks": ["land-survey", "building-measurement"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/building-measurement",
+          "slug": "building-measurement",
+          "names": {
+            "en": "Building Measurement",
+            "uk": "Обмірювання будівель",
+            "de": "Gebäudeaufmaß",
+            "ru": "Обмер зданий",
+            "original": "Building Measurement"
+          },
+          "crossLinks": ["topographic-survey"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/home-staging",
+      "slug": "home-staging",
+      "names": {
+        "en": "Home Staging",
+        "uk": "Хоум-стейджинг",
+        "de": "Home Staging",
+        "ru": "Хоум-стейджинг",
+        "original": "Home Staging"
+      },
+      "altLabels": {
+        "en": ["property staging"],
+        "uk": ["підготовка до продажу"],
+        "de": [],
+        "ru": ["предпродажная подготовка"]
+      },
+      "osmTag": "office=interior_design",
+      "naceRef": "M74.10",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q3138624",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/full-staging",
+          "slug": "full-staging",
+          "names": {
+            "en": "Full Home Staging",
+            "uk": "Повний стейджинг",
+            "de": "Komplettes Home Staging",
+            "ru": "Полный хоум-стейджинг",
+            "original": "Full Home Staging"
+          },
+          "crossLinks": ["occupied-staging", "virtual-staging"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/occupied-staging",
+          "slug": "occupied-staging",
+          "names": {
+            "en": "Occupied Home Staging",
+            "uk": "Стейджинг житлового приміщення",
+            "de": "Home Staging im bewohnten Objekt",
+            "ru": "Стейджинг жилого помещения",
+            "original": "Occupied Home Staging"
+          },
+          "crossLinks": ["full-staging", "staging-consultation"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/virtual-staging",
+          "slug": "virtual-staging",
+          "names": {
+            "en": "Virtual Staging",
+            "uk": "Віртуальний стейджинг",
+            "de": "Virtuelles Home Staging",
+            "ru": "Виртуальный стейджинг",
+            "original": "Virtual Staging"
+          },
+          "crossLinks": ["full-staging"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/staging-consultation",
+          "slug": "staging-consultation",
+          "names": {
+            "en": "Staging Consultation",
+            "uk": "Консультація зі стейджингу",
+            "de": "Home-Staging-Beratung",
+            "ru": "Консультация по стейджингу",
+            "original": "Staging Consultation"
+          },
+          "crossLinks": ["full-staging", "occupied-staging"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/mortgage-broker",
+      "slug": "mortgage-broker",
+      "names": {
+        "en": "Mortgage Broker",
+        "uk": "Іпотечний брокер",
+        "de": "Hypothekenmakler",
+        "ru": "Ипотечный брокер",
+        "original": "Mortgage Broker"
+      },
+      "altLabels": {
+        "en": ["loan broker"],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "office=financial_advisor",
+      "naceRef": "K66.19",
+      "schemaOrgType": "FinancialService",
+      "wikidataId": "Q936976",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/mortgage-consultation",
+          "slug": "mortgage-consultation",
+          "names": {
+            "en": "Mortgage Consultation",
+            "uk": "Іпотечна консультація",
+            "de": "Hypothekenberatung",
+            "ru": "Ипотечная консультация",
+            "original": "Mortgage Consultation"
+          },
+          "crossLinks": ["refinance-help", "mortgage-pre-approval"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/refinance-help",
+          "slug": "refinance-help",
+          "names": {
+            "en": "Refinance Assistance",
+            "uk": "Допомога з рефінансуванням",
+            "de": "Umschuldungshilfe",
+            "ru": "Помощь с рефинансированием",
+            "original": "Refinance Assistance"
+          },
+          "crossLinks": ["mortgage-consultation"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/first-time-buyer-help",
+          "slug": "first-time-buyer-help",
+          "names": {
+            "en": "First-Time Buyer Help",
+            "uk": "Допомога першому покупцеві",
+            "de": "Hilfe für Erstkäufer",
+            "ru": "Помощь первому покупателю",
+            "original": "First-Time Buyer Help"
+          },
+          "crossLinks": ["mortgage-consultation", "mortgage-pre-approval"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/mortgage-pre-approval",
+          "slug": "mortgage-pre-approval",
+          "names": {
+            "en": "Mortgage Pre-Approval",
+            "uk": "Попереднє схвалення іпотеки",
+            "de": "Hypotheken-Vorabgenehmigung",
+            "ru": "Предварительное одобрение ипотеки",
+            "original": "Mortgage Pre-Approval"
+          },
+          "crossLinks": ["mortgage-consultation", "first-time-buyer-help"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/property-valuator",
+      "slug": "property-valuator",
+      "names": {
+        "en": "Property Valuator",
+        "uk": "Оцінювач нерухомості",
+        "de": "Immobiliengutachter",
+        "ru": "Оценщик недвижимости",
+        "original": "Property Valuator"
+      },
+      "altLabels": {
+        "en": ["appraiser", "valuer"],
+        "uk": ["оцінка нерухомості"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "office=property_valuation",
+      "naceRef": "L68.31+M70.22",
+      "schemaOrgType": "ProfessionalService",
+      "wikidataId": "Q1755770",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/residential-appraisal",
+          "slug": "residential-appraisal",
+          "names": {
+            "en": "Residential Appraisal",
+            "uk": "Оцінка житлової нерухомості",
+            "de": "Wohnimmobilienbewertung",
+            "ru": "Оценка жилой недвижимости",
+            "original": "Residential Appraisal"
+          },
+          "crossLinks": ["market-valuation", "commercial-appraisal"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/commercial-appraisal",
+          "slug": "commercial-appraisal",
+          "names": {
+            "en": "Commercial Appraisal",
+            "uk": "Оцінка комерційної нерухомості",
+            "de": "Gewerbeimmobilienbewertung",
+            "ru": "Оценка коммерческой недвижимости",
+            "original": "Commercial Appraisal"
+          },
+          "crossLinks": ["residential-appraisal", "market-valuation"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/market-valuation",
+          "slug": "market-valuation",
+          "names": {
+            "en": "Market Valuation",
+            "uk": "Ринкова оцінка",
+            "de": "Marktbewertung",
+            "ru": "Рыночная оценка",
+            "original": "Market Valuation"
+          },
+          "crossLinks": ["residential-appraisal", "commercial-appraisal"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/court-appraisal",
+          "slug": "court-appraisal",
+          "names": {
+            "en": "Court Appraisal",
+            "uk": "Судова оцінка",
+            "de": "Gerichtsgutachten",
+            "ru": "Судебная оценка",
+            "original": "Court Appraisal"
+          },
+          "crossLinks": ["market-valuation"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/leasing-agency",
+      "slug": "leasing-agency",
+      "names": {
+        "en": "Leasing Agency",
+        "uk": "Орендна агенція",
+        "de": "Mietagentur",
+        "ru": "Агентство аренды",
+        "original": "Leasing Agency"
+      },
+      "altLabels": {
+        "en": ["rental agency"],
+        "uk": ["оренда житла"],
+        "de": [],
+        "ru": ["арендное агентство"]
+      },
+      "osmTag": "office=estate_agent",
+      "naceRef": "L68.20",
+      "schemaOrgType": "RealEstateAgent",
+      "wikidataId": "Q1141513",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/long-term-rental",
+          "slug": "long-term-rental",
+          "names": {
+            "en": "Long-Term Rental",
+            "uk": "Довгострокова оренда",
+            "de": "Langzeitvermietung",
+            "ru": "Долгосрочная аренда",
+            "original": "Long-Term Rental"
+          },
+          "crossLinks": ["short-term-rental", "tenant-search"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/short-term-rental",
+          "slug": "short-term-rental",
+          "names": {
+            "en": "Short-Term Rental",
+            "uk": "Короткострокова оренда",
+            "de": "Kurzzeitvermietung",
+            "ru": "Краткосрочная аренда",
+            "original": "Short-Term Rental"
+          },
+          "crossLinks": ["long-term-rental"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/commercial-leasing",
+          "slug": "commercial-leasing",
+          "names": {
+            "en": "Commercial Leasing",
+            "uk": "Оренда комерційної нерухомості",
+            "de": "Gewerbevermietung",
+            "ru": "Аренда коммерческой недвижимости",
+            "original": "Commercial Leasing"
+          },
+          "crossLinks": ["long-term-rental", "commercial-pm"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tenant-search",
+          "slug": "tenant-search",
+          "names": {
+            "en": "Tenant Search",
+            "uk": "Пошук орендарів",
+            "de": "Mietersuche",
+            "ru": "Поиск арендаторов",
+            "original": "Tenant Search"
+          },
+          "crossLinks": ["long-term-rental", "tenant-screening"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,8 @@
 {
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/accommodation",
   "slug": "accommodation",
+  "version": "1.1.0",
   "names": {
     "en": "Accommodation",
     "uk": "Проживання",
@@ -7,10 +10,19 @@
     "ru": "Проживание",
     "original": "Accommodation"
   },
+  "altLabels": {
+    "en": ["lodging", "stay", "accommodation"],
+    "uk": ["житло"],
+    "de": ["übernachtung"],
+    "ru": ["жильё", "размещение"]
+  },
   "icon": "🏨",
   "naceRef": "I55",
+  "schemaOrgType": "LodgingBusiness",
+  "wikidataId": "Q1273344",
   "subcategories": [
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/hotel",
       "slug": "hotel",
       "names": {
         "en": "Hotel",
@@ -19,9 +31,19 @@
         "ru": "Отель",
         "original": "Hotel"
       },
+      "altLabels": {
+        "en": ["inn"],
+        "uk": ["готельний комплекс"],
+        "de": ["hotelkomplex"],
+        "ru": ["гостиница"]
+      },
       "osmTag": "tourism=hotel",
+      "naceRef": "I55.10",
+      "schemaOrgType": "Hotel",
+      "wikidataId": "Q27686",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/single-room",
           "slug": "single-room",
           "names": {
             "en": "Single Room",
@@ -32,6 +54,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/double-room",
           "slug": "double-room",
           "names": {
             "en": "Double Room",
@@ -42,6 +65,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/suite",
           "slug": "suite",
           "names": {
             "en": "Suite",
@@ -49,9 +73,11 @@
             "de": "Suite",
             "ru": "Люкс",
             "original": "Suite"
-          }
+          },
+          "wikidataId": "Q1517913"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/conference-room",
           "slug": "conference-room",
           "names": {
             "en": "Conference Room",
@@ -59,11 +85,13 @@
             "de": "Konferenzraum",
             "ru": "Конференц-зал",
             "original": "Conference Room"
-          }
+          },
+          "wikidataId": "Q5159838"
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/hostel",
       "slug": "hostel",
       "names": {
         "en": "Hostel",
@@ -72,9 +100,19 @@
         "ru": "Хостел",
         "original": "Hostel"
       },
+      "altLabels": {
+        "en": ["youth hostel", "backpacker"],
+        "uk": [],
+        "de": ["jugendherberge"],
+        "ru": ["молодёжный хостел"]
+      },
       "osmTag": "tourism=hostel",
+      "naceRef": "I55.20",
+      "schemaOrgType": "Hostel",
+      "wikidataId": "Q5807812",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/dorm-bed",
           "slug": "dorm-bed",
           "names": {
             "en": "Dorm Bed",
@@ -85,6 +123,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/private-room",
           "slug": "private-room",
           "names": {
             "en": "Private Room",
@@ -97,6 +136,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/guest-house",
       "slug": "guest-house",
       "names": {
         "en": "Guest House",
@@ -105,9 +145,19 @@
         "ru": "Гостевой дом",
         "original": "Guest House"
       },
+      "altLabels": {
+        "en": ["B&B", "bed and breakfast"],
+        "uk": ["міні-готель"],
+        "de": ["frühstückspension"],
+        "ru": ["мини-отель"]
+      },
       "osmTag": "tourism=guest_house",
+      "naceRef": "I55.20",
+      "schemaOrgType": "BedAndBreakfast",
+      "wikidataId": "Q2197",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/room-night",
           "slug": "room-night",
           "names": {
             "en": "Room per Night",
@@ -118,6 +168,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/weekly-stay",
           "slug": "weekly-stay",
           "names": {
             "en": "Weekly Stay",
@@ -130,6 +181,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/apartment-rental",
       "slug": "apartment-rental",
       "names": {
         "en": "Apartment Rental",
@@ -138,9 +190,19 @@
         "ru": "Аренда квартиры",
         "original": "Apartment Rental"
       },
+      "altLabels": {
+        "en": ["short-term rental", "vacation rental"],
+        "uk": ["короткострокова оренда"],
+        "de": ["ferienapartment", "kurzzeitmiete"],
+        "ru": ["краткосрочная аренда", "посуточно"]
+      },
       "osmTag": "tourism=apartment",
+      "naceRef": "I55.20",
+      "schemaOrgType": "Apartment",
+      "wikidataId": "Q1018434",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/studio-apt",
           "slug": "studio-apt",
           "names": {
             "en": "Studio",
@@ -148,9 +210,11 @@
             "de": "Studio",
             "ru": "Студия",
             "original": "Studio"
-          }
+          },
+          "wikidataId": "Q1058914"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/one-bedroom",
           "slug": "one-bedroom",
           "names": {
             "en": "One Bedroom",
@@ -161,6 +225,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/two-bedroom",
           "slug": "two-bedroom",
           "names": {
             "en": "Two Bedrooms",
@@ -168,6 +233,408 @@
             "de": "Zweizimmerwohnung",
             "ru": "Двухкомнатная",
             "original": "Two Bedrooms"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/boutique-hotel",
+      "slug": "boutique-hotel",
+      "names": {
+        "en": "Boutique Hotel",
+        "uk": "Бутик-готель",
+        "de": "Boutique-Hotel",
+        "ru": "Бутик-отель",
+        "original": "Boutique Hotel"
+      },
+      "altLabels": {
+        "en": ["designer hotel"],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "tourism=hotel+boutique=yes",
+      "naceRef": "I55.10",
+      "schemaOrgType": "Hotel",
+      "wikidataId": "Q2908650",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/boutique-room",
+          "slug": "boutique-room",
+          "names": {
+            "en": "Boutique Room",
+            "uk": "Бутик-номер",
+            "de": "Boutique-Zimmer",
+            "ru": "Бутик-номер",
+            "original": "Boutique Room"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/themed-suite",
+          "slug": "themed-suite",
+          "names": {
+            "en": "Themed Suite",
+            "uk": "Тематичний люкс",
+            "de": "Themen-Suite",
+            "ru": "Тематический люкс",
+            "original": "Themed Suite"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/spa-package-boutique",
+          "slug": "spa-package-boutique",
+          "names": {
+            "en": "Spa Package",
+            "uk": "Спа-пакет",
+            "de": "Spa-Paket",
+            "ru": "Спа-пакет",
+            "original": "Spa Package"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/gastronomy-stay",
+          "slug": "gastronomy-stay",
+          "names": {
+            "en": "Gastronomy Stay",
+            "uk": "Гастрономічне проживання",
+            "de": "Gastronomie-Aufenthalt",
+            "ru": "Гастрономическое проживание",
+            "original": "Gastronomy Stay"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/capsule-hotel",
+      "slug": "capsule-hotel",
+      "names": {
+        "en": "Capsule Hotel",
+        "uk": "Капсульний готель",
+        "de": "Kapselhotel",
+        "ru": "Капсульный отель",
+        "original": "Capsule Hotel"
+      },
+      "altLabels": {
+        "en": ["pod hotel"],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "tourism=hotel+capsule=yes",
+      "naceRef": "I55.90",
+      "schemaOrgType": "Hotel",
+      "wikidataId": "Q848892",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/capsule-bed",
+          "slug": "capsule-bed",
+          "names": {
+            "en": "Capsule Bed",
+            "uk": "Капсульне ліжко",
+            "de": "Kapselbett",
+            "ru": "Капсульная кровать",
+            "original": "Capsule Bed"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/day-capsule",
+          "slug": "day-capsule",
+          "names": {
+            "en": "Day Capsule",
+            "uk": "Денна капсула",
+            "de": "Tageskapsel",
+            "ru": "Дневная капсула",
+            "original": "Day Capsule"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hourly-capsule",
+          "slug": "hourly-capsule",
+          "names": {
+            "en": "Hourly Capsule",
+            "uk": "Погодинна капсула",
+            "de": "Stundenkapsel",
+            "ru": "Почасовая капсула",
+            "original": "Hourly Capsule"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/resort",
+      "slug": "resort",
+      "names": {
+        "en": "Resort",
+        "uk": "Курорт",
+        "de": "Resort",
+        "ru": "Курорт",
+        "original": "Resort"
+      },
+      "altLabels": {
+        "en": ["resort hotel", "all-inclusive"],
+        "uk": ["курортний готель"],
+        "de": ["ferienanlage"],
+        "ru": []
+      },
+      "osmTag": "tourism=resort",
+      "naceRef": "I55.10",
+      "schemaOrgType": "Resort",
+      "wikidataId": "Q875157",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/standard-resort-stay",
+          "slug": "standard-resort-stay",
+          "names": {
+            "en": "Standard Resort Stay",
+            "uk": "Стандартне проживання на курорті",
+            "de": "Standard-Resortaufenthalt",
+            "ru": "Стандартное проживание на курорте",
+            "original": "Standard Resort Stay"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/all-inclusive-package",
+          "slug": "all-inclusive-package",
+          "names": {
+            "en": "All-Inclusive Package",
+            "uk": "Пакет «все включено»",
+            "de": "All-Inclusive-Paket",
+            "ru": "Пакет «всё включено»",
+            "original": "All-Inclusive Package"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/spa-resort-package",
+          "slug": "spa-resort-package",
+          "names": {
+            "en": "Spa Resort Package",
+            "uk": "Спа-пакет курорту",
+            "de": "Spa-Resort-Paket",
+            "ru": "Спа-пакет курорта",
+            "original": "Spa Resort Package"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/family-resort-package",
+          "slug": "family-resort-package",
+          "names": {
+            "en": "Family Resort Package",
+            "uk": "Сімейний курортний пакет",
+            "de": "Familien-Resort-Paket",
+            "ru": "Семейный курортный пакет",
+            "original": "Family Resort Package"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/beach-resort-stay",
+          "slug": "beach-resort-stay",
+          "names": {
+            "en": "Beach Resort Stay",
+            "uk": "Проживання на пляжному курорті",
+            "de": "Strandresort-Aufenthalt",
+            "ru": "Проживание на пляжном курорте",
+            "original": "Beach Resort Stay"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/ecotourism-lodge",
+      "slug": "ecotourism-lodge",
+      "names": {
+        "en": "Ecotourism Lodge",
+        "uk": "Еко-лодж",
+        "de": "Öko-Lodge",
+        "ru": "Эко-лодж",
+        "original": "Ecotourism Lodge"
+      },
+      "altLabels": {
+        "en": ["eco-lodge", "nature retreat"],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "tourism=chalet+eco=yes",
+      "naceRef": "I55.20",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q2641186",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cabin-stay",
+          "slug": "cabin-stay",
+          "names": {
+            "en": "Cabin Stay",
+            "uk": "Проживання в котеджі",
+            "de": "Hüttenaufenthalt",
+            "ru": "Проживание в коттедже",
+            "original": "Cabin Stay"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/guided-nature-tour",
+          "slug": "guided-nature-tour",
+          "names": {
+            "en": "Guided Nature Tour",
+            "uk": "Екскурсія на природу з гідом",
+            "de": "Geführte Naturtour",
+            "ru": "Экскурсия на природу с гидом",
+            "original": "Guided Nature Tour"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/glamping",
+          "slug": "glamping",
+          "names": {
+            "en": "Glamping",
+            "uk": "Глемпінг",
+            "de": "Glamping",
+            "ru": "Глэмпинг",
+            "original": "Glamping"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/wildlife-package",
+          "slug": "wildlife-package",
+          "names": {
+            "en": "Wildlife Package",
+            "uk": "Пакет «дика природа»",
+            "de": "Wildlife-Paket",
+            "ru": "Пакет «дикая природа»",
+            "original": "Wildlife Package"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/beach-rental",
+      "slug": "beach-rental",
+      "names": {
+        "en": "Beach Rental",
+        "uk": "Пляжна оренда",
+        "de": "Strandverleih",
+        "ru": "Пляжная аренда",
+        "original": "Beach Rental"
+      },
+      "altLabels": {
+        "en": ["beach equipment rental"],
+        "uk": ["прокат на пляжі"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "leisure=beach_resort",
+      "naceRef": "N77.21",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q851237",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/beach-umbrella-rental",
+          "slug": "beach-umbrella-rental",
+          "names": {
+            "en": "Beach Umbrella Rental",
+            "uk": "Оренда пляжної парасольки",
+            "de": "Sonnenschirm-Verleih",
+            "ru": "Аренда пляжного зонта",
+            "original": "Beach Umbrella Rental"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/sun-lounger-rental",
+          "slug": "sun-lounger-rental",
+          "names": {
+            "en": "Sun Lounger Rental",
+            "uk": "Оренда шезлонга",
+            "de": "Liegestuhl-Verleih",
+            "ru": "Аренда шезлонга",
+            "original": "Sun Lounger Rental"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/surfboard-rental",
+          "slug": "surfboard-rental",
+          "names": {
+            "en": "Surfboard Rental",
+            "uk": "Оренда дошки для серфінгу",
+            "de": "Surfbrett-Verleih",
+            "ru": "Аренда доски для сёрфинга",
+            "original": "Surfboard Rental"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/jet-ski-rental",
+          "slug": "jet-ski-rental",
+          "names": {
+            "en": "Jet Ski Rental",
+            "uk": "Оренда гідроцикла",
+            "de": "Jetski-Verleih",
+            "ru": "Аренда гидроцикла",
+            "original": "Jet Ski Rental"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/christmas-market-stall",
+      "slug": "christmas-market-stall",
+      "names": {
+        "en": "Christmas Market Stall",
+        "uk": "Різдвяний ярмарок",
+        "de": "Weihnachtsmarkt-Stand",
+        "ru": "Рождественская ярмарка",
+        "original": "Christmas Market Stall"
+      },
+      "altLabels": {
+        "en": ["Xmas market vendor"],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "amenity=marketplace+market:type=christmas",
+      "naceRef": "R82.30+G47.82",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q660206",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/food-stall-xmas",
+          "slug": "food-stall-xmas",
+          "names": {
+            "en": "Food Stall (Xmas)",
+            "uk": "Різдвяний продуктовий стенд",
+            "de": "Weihnachtlicher Essensstand",
+            "ru": "Рождественский продуктовый стенд",
+            "original": "Food Stall (Xmas)"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/craft-stall-xmas",
+          "slug": "craft-stall-xmas",
+          "names": {
+            "en": "Craft Stall (Xmas)",
+            "uk": "Різдвяний ремісничий стенд",
+            "de": "Weihnachtlicher Handwerksstand",
+            "ru": "Рождественский ремесленный стенд",
+            "original": "Craft Stall (Xmas)"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/mulled-wine-stand",
+          "slug": "mulled-wine-stand",
+          "names": {
+            "en": "Mulled Wine Stand",
+            "uk": "Глінтвейн-стенд",
+            "de": "Glühweinstand",
+            "ru": "Стенд с глинтвейном",
+            "original": "Mulled Wine Stand"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/xmas-tree-sale",
+          "slug": "xmas-tree-sale",
+          "names": {
+            "en": "Christmas Tree Sale",
+            "uk": "Продаж ялинок",
+            "de": "Weihnachtsbaumverkauf",
+            "ru": "Продажа ёлок",
+            "original": "Christmas Tree Sale"
           }
         }
       ]

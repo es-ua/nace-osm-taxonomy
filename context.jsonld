@@ -1,0 +1,88 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "mapko": "https://taxonomy.mapko.net/v1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "schema": "https://schema.org/",
+    "wd": "https://www.wikidata.org/entity/",
+    "osm": "https://wiki.openstreetmap.org/wiki/Tag:",
+    "nace": "https://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=DSP_GLOSSARY_NOM_DTL_VIEW&StrNom=NACE_REV2&StrLanguageCode=EN&IntKey=",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "slug": "mapko:slug",
+    "version": "mapko:version",
+    "icon": "mapko:icon",
+
+    "names": {
+      "@id": "skos:prefLabel",
+      "@container": "@language"
+    },
+    "altLabels": {
+      "@id": "skos:altLabel",
+      "@container": "@language"
+    },
+
+    "subcategories": {
+      "@id": "skos:narrower",
+      "@container": "@set"
+    },
+    "templates": {
+      "@id": "skos:narrower",
+      "@container": "@set"
+    },
+    "parent": {
+      "@id": "skos:broader",
+      "@type": "@id"
+    },
+
+    "naceRef": {
+      "@id": "mapko:naceCode",
+      "@type": "xsd:string"
+    },
+    "osmTag": {
+      "@id": "mapko:osmTag",
+      "@type": "xsd:string"
+    },
+    "schemaOrgType": {
+      "@id": "mapko:schemaOrgType",
+      "@type": "@vocab",
+      "@context": { "@vocab": "https://schema.org/" }
+    },
+    "wikidataId": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@context": { "@base": "https://www.wikidata.org/entity/" }
+    },
+
+    "attributes": "mapko:attributes",
+    "required": "mapko:requiredAttributes",
+    "optional": "mapko:optionalAttributes",
+    "schema": "mapko:attributeSchema",
+
+    "expectedRelations": "mapko:expectedRelations",
+    "predicate": "mapko:predicate",
+    "target": "mapko:relationTarget",
+    "cardinality": "mapko:cardinality",
+
+    "linguisticHints": "mapko:linguisticHints",
+    "triggers": {
+      "@id": "mapko:triggerTerms",
+      "@container": "@language"
+    },
+    "antiTriggers": {
+      "@id": "mapko:antiTriggerTerms",
+      "@container": "@language"
+    },
+    "adjacentTemplates": {
+      "@id": "mapko:adjacentTemplates",
+      "@type": "@id",
+      "@container": "@set"
+    },
+
+    "crossLinks": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    }
+  }
+}

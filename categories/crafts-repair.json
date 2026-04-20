@@ -1,5 +1,8 @@
 {
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/crafts-repair",
   "slug": "crafts-repair",
+  "version": "1.1.0",
   "names": {
     "en": "Crafts & Repair",
     "uk": "Ремонт та ремесла",
@@ -7,348 +10,118 @@
     "ru": "Ремонт и ремёсла",
     "original": "Crafts & Repair"
   },
+  "altLabels": {
+    "en": ["repair shop", "craftsman"],
+    "uk": ["майстерня"],
+    "de": ["werkstatt", "reparaturservice"],
+    "ru": ["мастерская", "ремонт"]
+  },
   "icon": "🔧",
-  "naceRef": "S95+C",
+  "naceRef": "S95",
+  "schemaOrgType": "ProfessionalService",
+  "wikidataId": "Q877546",
   "subcategories": [
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/phone-repair",
       "slug": "phone-repair",
-      "names": {
-        "en": "Phone Repair",
-        "uk": "Ремонт телефонів",
-        "de": "Handy-Reparatur",
-        "ru": "Ремонт телефонов",
-        "original": "Phone Repair"
-      },
+      "names": { "en": "Phone Repair", "uk": "Ремонт телефонів", "de": "Handy-Reparatur", "ru": "Ремонт телефонов", "original": "Phone Repair" },
+      "altLabels": { "en": ["mobile repair", "smartphone service"], "uk": ["сервіс мобільних"], "de": ["smartphone-reparatur"], "ru": ["сервис мобильных"] },
       "osmTag": "craft=electronics_repair",
+      "naceRef": "S95.12",
+      "schemaOrgType": "ProfessionalService",
       "templates": [
-        {
-          "slug": "screen-replacement",
-          "names": {
-            "en": "Screen Replacement",
-            "uk": "Заміна екрану",
-            "de": "Displayaustausch",
-            "ru": "Замена экрана",
-            "original": "Screen Replacement"
-          }
-        },
-        {
-          "slug": "battery-replacement",
-          "names": {
-            "en": "Battery Replacement",
-            "uk": "Заміна батареї",
-            "de": "Akkuaustausch",
-            "ru": "Замена батареи",
-            "original": "Battery Replacement"
-          }
-        },
-        {
-          "slug": "water-damage-repair",
-          "names": {
-            "en": "Water Damage Repair",
-            "uk": "Ремонт після потрапляння води",
-            "de": "Wasserschadenreparatur",
-            "ru": "Ремонт после попадания воды",
-            "original": "Water Damage Repair"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/screen-replacement", "slug": "screen-replacement", "names": { "en": "Screen Replacement", "uk": "Заміна екрану", "de": "Displayaustausch", "ru": "Замена экрана", "original": "Screen Replacement" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/battery-replacement", "slug": "battery-replacement", "names": { "en": "Battery Replacement", "uk": "Заміна батареї", "de": "Akkuaustausch", "ru": "Замена батареи", "original": "Battery Replacement" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/water-damage-repair", "slug": "water-damage-repair", "names": { "en": "Water Damage Repair", "uk": "Ремонт після потрапляння води", "de": "Wasserschadenreparatur", "ru": "Ремонт после попадания воды", "original": "Water Damage Repair" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/computer-repair",
       "slug": "computer-repair",
-      "names": {
-        "en": "Computer Repair",
-        "uk": "Ремонт комп\\'ютерів",
-        "de": "Computer-Reparatur",
-        "ru": "Ремонт компьютеров",
-        "original": "Computer Repair"
-      },
+      "names": { "en": "Computer Repair", "uk": "Ремонт комп'ютерів", "de": "Computer-Reparatur", "ru": "Ремонт компьютеров", "original": "Computer Repair" },
       "osmTag": "craft=electronics_repair",
+      "naceRef": "S95.11",
+      "schemaOrgType": "ProfessionalService",
+      "wikidataId": "Q1330336",
       "templates": [
-        {
-          "slug": "pc-diagnostic",
-          "names": {
-            "en": "Diagnostic",
-            "uk": "Діагностика",
-            "de": "Diagnose",
-            "ru": "Диагностика",
-            "original": "Diagnostic"
-          }
-        },
-        {
-          "slug": "virus-removal",
-          "names": {
-            "en": "Virus Removal",
-            "uk": "Видалення вірусів",
-            "de": "Virenentfernung",
-            "ru": "Удаление вирусов",
-            "original": "Virus Removal"
-          }
-        },
-        {
-          "slug": "hardware-upgrade",
-          "names": {
-            "en": "Hardware Upgrade",
-            "uk": "Оновлення обладнання",
-            "de": "Hardware-Upgrade",
-            "ru": "Обновление оборудования",
-            "original": "Hardware Upgrade"
-          }
-        },
-        {
-          "slug": "data-recovery",
-          "names": {
-            "en": "Data Recovery",
-            "uk": "Відновлення даних",
-            "de": "Datenrettung",
-            "ru": "Восстановление данных",
-            "original": "Data Recovery"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/pc-diagnostic", "slug": "pc-diagnostic", "names": { "en": "Diagnostic", "uk": "Діагностика", "de": "Diagnose", "ru": "Диагностика", "original": "Diagnostic" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/virus-removal", "slug": "virus-removal", "names": { "en": "Virus Removal", "uk": "Видалення вірусів", "de": "Virenentfernung", "ru": "Удаление вирусов", "original": "Virus Removal" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/hardware-upgrade", "slug": "hardware-upgrade", "names": { "en": "Hardware Upgrade", "uk": "Оновлення обладнання", "de": "Hardware-Upgrade", "ru": "Обновление оборудования", "original": "Hardware Upgrade" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/data-recovery", "slug": "data-recovery", "names": { "en": "Data Recovery", "uk": "Відновлення даних", "de": "Datenrettung", "ru": "Восстановление данных", "original": "Data Recovery" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/tailor",
       "slug": "tailor",
-      "names": {
-        "en": "Tailor",
-        "uk": "Кравець",
-        "de": "Schneider",
-        "ru": "Портной",
-        "original": "Tailor"
-      },
+      "names": { "en": "Tailor", "uk": "Кравець", "de": "Schneider", "ru": "Портной", "original": "Tailor" },
+      "altLabels": { "en": ["dressmaker", "seamstress"], "uk": ["ательє"], "de": ["änderungsschneider"], "ru": ["ателье"] },
       "osmTag": "craft=tailor",
+      "naceRef": "S95.29",
+      "schemaOrgType": "ClothingStore",
+      "wikidataId": "Q242468",
       "templates": [
-        {
-          "slug": "clothes-alteration",
-          "names": {
-            "en": "Alteration",
-            "uk": "Підгонка",
-            "de": "Änderung",
-            "ru": "Подгонка",
-            "original": "Alteration"
-          }
-        },
-        {
-          "slug": "custom-suit",
-          "names": {
-            "en": "Custom Suit",
-            "uk": "Костюм на замовлення",
-            "de": "Maßanzug",
-            "ru": "Костюм на заказ",
-            "original": "Custom Suit"
-          }
-        },
-        {
-          "slug": "dress-making",
-          "names": {
-            "en": "Dress Making",
-            "uk": "Пошиття сукні",
-            "de": "Kleidanfertigung",
-            "ru": "Пошив платья",
-            "original": "Dress Making"
-          }
-        },
-        {
-          "slug": "zipper-repair",
-          "names": {
-            "en": "Zipper Repair",
-            "uk": "Заміна блискавки",
-            "de": "Reißverschluss-Reparatur",
-            "ru": "Замена молнии",
-            "original": "Zipper Repair"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/clothes-alteration", "slug": "clothes-alteration", "names": { "en": "Alteration", "uk": "Підгонка", "de": "Änderung", "ru": "Подгонка", "original": "Alteration" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/custom-suit", "slug": "custom-suit", "names": { "en": "Custom Suit", "uk": "Костюм на замовлення", "de": "Maßanzug", "ru": "Костюм на заказ", "original": "Custom Suit" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/dress-making", "slug": "dress-making", "names": { "en": "Dress Making", "uk": "Пошиття сукні", "de": "Kleidanfertigung", "ru": "Пошив платья", "original": "Dress Making" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/zipper-repair", "slug": "zipper-repair", "names": { "en": "Zipper Repair", "uk": "Заміна блискавки", "de": "Reißverschluss-Reparatur", "ru": "Замена молнии", "original": "Zipper Repair" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/shoe-repair",
       "slug": "shoe-repair",
-      "names": {
-        "en": "Shoe Repair",
-        "uk": "Ремонт взуття",
-        "de": "Schuhreparatur",
-        "ru": "Ремонт обуви",
-        "original": "Shoe Repair"
-      },
+      "names": { "en": "Shoe Repair", "uk": "Ремонт взуття", "de": "Schuhreparatur", "ru": "Ремонт обуви", "original": "Shoe Repair" },
       "osmTag": "craft=shoemaker",
+      "naceRef": "S95.23",
+      "schemaOrgType": "ProfessionalService",
+      "wikidataId": "Q3960057",
       "templates": [
-        {
-          "slug": "heel-replacement",
-          "names": {
-            "en": "Heel Replacement",
-            "uk": "Заміна набійок",
-            "de": "Absatzreparatur",
-            "ru": "Замена набоек",
-            "original": "Heel Replacement"
-          }
-        },
-        {
-          "slug": "sole-repair",
-          "names": {
-            "en": "Sole Repair",
-            "uk": "Ремонт підошви",
-            "de": "Sohlenreparatur",
-            "ru": "Ремонт подошвы",
-            "original": "Sole Repair"
-          }
-        },
-        {
-          "slug": "shoe-stretching",
-          "names": {
-            "en": "Stretching",
-            "uk": "Розтягування",
-            "de": "Weitung",
-            "ru": "Растяжка",
-            "original": "Stretching"
-          }
-        },
-        {
-          "slug": "shoe-cleaning",
-          "names": {
-            "en": "Cleaning",
-            "uk": "Чистка",
-            "de": "Reinigung",
-            "ru": "Чистка",
-            "original": "Cleaning"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/heel-replacement", "slug": "heel-replacement", "names": { "en": "Heel Replacement", "uk": "Заміна набійок", "de": "Absatzreparatur", "ru": "Замена набоек", "original": "Heel Replacement" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/sole-repair", "slug": "sole-repair", "names": { "en": "Sole Repair", "uk": "Ремонт підошви", "de": "Sohlenreparatur", "ru": "Ремонт подошвы", "original": "Sole Repair" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/shoe-stretching", "slug": "shoe-stretching", "names": { "en": "Stretching", "uk": "Розтягування", "de": "Weitung", "ru": "Растяжка", "original": "Stretching" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/shoe-cleaning", "slug": "shoe-cleaning", "names": { "en": "Cleaning", "uk": "Чистка", "de": "Reinigung", "ru": "Чистка", "original": "Cleaning" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/watch-repair",
       "slug": "watch-repair",
-      "names": {
-        "en": "Watch Repair",
-        "uk": "Ремонт годинників",
-        "de": "Uhrmacher",
-        "ru": "Ремонт часов",
-        "original": "Watch Repair"
-      },
+      "names": { "en": "Watch Repair", "uk": "Ремонт годинників", "de": "Uhrmacher", "ru": "Ремонт часов", "original": "Watch Repair" },
       "osmTag": "craft=watchmaker",
+      "naceRef": "S95.25",
+      "schemaOrgType": "ProfessionalService",
+      "wikidataId": "Q157031",
       "templates": [
-        {
-          "slug": "watch-battery",
-          "names": {
-            "en": "Battery Replacement",
-            "uk": "Заміна батарейки",
-            "de": "Batteriewechsel",
-            "ru": "Замена батарейки",
-            "original": "Battery Replacement"
-          }
-        },
-        {
-          "slug": "watch-repair-op",
-          "names": {
-            "en": "Repair",
-            "uk": "Ремонт",
-            "de": "Reparatur",
-            "ru": "Ремонт",
-            "original": "Repair"
-          }
-        },
-        {
-          "slug": "watch-restoration",
-          "names": {
-            "en": "Restoration",
-            "uk": "Реставрація",
-            "de": "Restaurierung",
-            "ru": "Реставрация",
-            "original": "Restoration"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/watch-battery", "slug": "watch-battery", "names": { "en": "Battery Replacement", "uk": "Заміна батарейки", "de": "Batteriewechsel", "ru": "Замена батарейки", "original": "Battery Replacement" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/watch-repair-op", "slug": "watch-repair-op", "names": { "en": "Repair", "uk": "Ремонт", "de": "Reparatur", "ru": "Ремонт", "original": "Repair" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/watch-restoration", "slug": "watch-restoration", "names": { "en": "Restoration", "uk": "Реставрація", "de": "Restaurierung", "ru": "Реставрация", "original": "Restoration" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/furniture-repair",
       "slug": "furniture-repair",
-      "names": {
-        "en": "Furniture Repair",
-        "uk": "Ремонт меблів",
-        "de": "Möbelreparatur",
-        "ru": "Ремонт мебели",
-        "original": "Furniture Repair"
-      },
+      "names": { "en": "Furniture Repair", "uk": "Ремонт меблів", "de": "Möbelreparatur", "ru": "Ремонт мебели", "original": "Furniture Repair" },
       "osmTag": "craft=carpenter",
+      "naceRef": "S95.24",
+      "schemaOrgType": "ProfessionalService",
+      "wikidataId": "Q1066714",
       "templates": [
-        {
-          "slug": "furniture-restoration",
-          "names": {
-            "en": "Restoration",
-            "uk": "Реставрація",
-            "de": "Restaurierung",
-            "ru": "Реставрация",
-            "original": "Restoration"
-          }
-        },
-        {
-          "slug": "upholstery",
-          "names": {
-            "en": "Upholstery",
-            "uk": "Перетягування",
-            "de": "Polsterung",
-            "ru": "Перетяжка",
-            "original": "Upholstery"
-          }
-        },
-        {
-          "slug": "custom-furniture",
-          "names": {
-            "en": "Custom Piece",
-            "uk": "На замовлення",
-            "de": "Maßanfertigung",
-            "ru": "На заказ",
-            "original": "Custom Piece"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/furniture-restoration", "slug": "furniture-restoration", "names": { "en": "Restoration", "uk": "Реставрація", "de": "Restaurierung", "ru": "Реставрация", "original": "Restoration" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/upholstery", "slug": "upholstery", "names": { "en": "Upholstery", "uk": "Перетягування", "de": "Polsterung", "ru": "Перетяжка", "original": "Upholstery" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/custom-furniture", "slug": "custom-furniture", "names": { "en": "Custom Piece", "uk": "На замовлення", "de": "Maßanfertigung", "ru": "На заказ", "original": "Custom Piece" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/appliance-repair",
       "slug": "appliance-repair",
-      "names": {
-        "en": "Appliance Repair",
-        "uk": "Ремонт побутової техніки",
-        "de": "Haushaltsgeräte-Reparatur",
-        "ru": "Ремонт бытовой техники",
-        "original": "Appliance Repair"
-      },
+      "names": { "en": "Appliance Repair", "uk": "Ремонт побутової техніки", "de": "Haushaltsgeräte-Reparatur", "ru": "Ремонт бытовой техники", "original": "Appliance Repair" },
       "osmTag": "craft=electronics_repair",
+      "naceRef": "S95.22",
+      "schemaOrgType": "ProfessionalService",
+      "wikidataId": "Q4729863",
       "templates": [
-        {
-          "slug": "washing-machine-repair",
-          "names": {
-            "en": "Washing Machine",
-            "uk": "Пральна машина",
-            "de": "Waschmaschine",
-            "ru": "Стиральная машина",
-            "original": "Washing Machine"
-          }
-        },
-        {
-          "slug": "refrigerator-repair",
-          "names": {
-            "en": "Refrigerator",
-            "uk": "Холодильник",
-            "de": "Kühlschrank",
-            "ru": "Холодильник",
-            "original": "Refrigerator"
-          }
-        },
-        {
-          "slug": "dishwasher-repair",
-          "names": {
-            "en": "Dishwasher",
-            "uk": "Посудомийка",
-            "de": "Spülmaschine",
-            "ru": "Посудомоечная машина",
-            "original": "Dishwasher"
-          }
-        },
-        {
-          "slug": "oven-repair",
-          "names": {
-            "en": "Oven",
-            "uk": "Духовка",
-            "de": "Backofen",
-            "ru": "Духовка",
-            "original": "Oven"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/washing-machine-repair", "slug": "washing-machine-repair", "names": { "en": "Washing Machine", "uk": "Пральна машина", "de": "Waschmaschine", "ru": "Стиральная машина", "original": "Washing Machine" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/refrigerator-repair", "slug": "refrigerator-repair", "names": { "en": "Refrigerator", "uk": "Холодильник", "de": "Kühlschrank", "ru": "Холодильник", "original": "Refrigerator" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/dishwasher-repair", "slug": "dishwasher-repair", "names": { "en": "Dishwasher", "uk": "Посудомийка", "de": "Spülmaschine", "ru": "Посудомоечная машина", "original": "Dishwasher" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/oven-repair", "slug": "oven-repair", "names": { "en": "Oven", "uk": "Духовка", "de": "Backofen", "ru": "Духовка", "original": "Oven" } }
       ]
     }
   ]

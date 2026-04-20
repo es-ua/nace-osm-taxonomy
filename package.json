@@ -1,0 +1,65 @@
+{
+  "name": "@mapko/nace-osm-taxonomy",
+  "version": "1.11.0",
+  "description": "Open multilingual (EN/UK/DE/RU) SMB service taxonomy: 23 categories, 353 subcategories, 1333 templates. NACE Rev.2 + OpenStreetMap + Schema.org + Wikidata anchors. MIT.",
+  "license": "MIT",
+  "author": "Mapko (https://mapko.net)",
+  "homepage": "https://github.com/es-ua/nace-osm-taxonomy",
+  "bugs": {
+    "url": "https://github.com/es-ua/nace-osm-taxonomy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/es-ua/nace-osm-taxonomy.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./taxonomy.jsonld": "./taxonomy.jsonld",
+    "./context.jsonld": "./context.jsonld",
+    "./categories/*": "./categories/*"
+  },
+  "files": [
+    "src",
+    "categories",
+    "scripts",
+    "taxonomy.jsonld",
+    "context.jsonld",
+    "VERSION",
+    "CHANGELOG.md",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:jsonld": "node scripts/build-jsonld.mjs",
+    "validate": "node scripts/validate.mjs",
+    "prepublishOnly": "npm run validate && npm run build:jsonld"
+  },
+  "keywords": [
+    "taxonomy",
+    "ontology",
+    "nace",
+    "nace-rev2",
+    "openstreetmap",
+    "osm",
+    "schema-org",
+    "wikidata",
+    "smb",
+    "small-business",
+    "knowledge-graph",
+    "skos",
+    "json-ld",
+    "linked-data",
+    "multilingual",
+    "categories",
+    "directory"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

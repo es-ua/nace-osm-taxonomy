@@ -1,0 +1,534 @@
+{
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/agriculture",
+  "slug": "agriculture",
+  "version": "1.1.0",
+  "names": {
+    "en": "Agriculture & Farming",
+    "uk": "Сільське господарство",
+    "de": "Landwirtschaft",
+    "ru": "Сельское хозяйство",
+    "original": "Agriculture & Farming"
+  },
+  "altLabels": {
+    "en": ["farming", "agribusiness", "agri", "rural"],
+    "uk": ["агробізнес", "ферма", "аграрний сектор"],
+    "de": ["landbau", "agrarwirtschaft", "bauernhof"],
+    "ru": ["агробизнес", "фермерство", "аграрный сектор"]
+  },
+  "icon": "🌾",
+  "naceRef": "A01",
+  "schemaOrgType": "LocalBusiness",
+  "wikidataId": "Q11451",
+  "subcategories": [
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/crop-farm",
+      "slug": "crop-farm",
+      "names": {
+        "en": "Crop Farm",
+        "uk": "Рослинництво",
+        "de": "Ackerbau",
+        "ru": "Растениеводство",
+        "original": "Crop Farm"
+      },
+      "altLabels": {
+        "en": ["arable farm", "grain farm", "vegetable farm"],
+        "uk": ["зернова ферма", "овочева ферма"],
+        "de": ["getreidehof", "gemüsehof"],
+        "ru": ["зерновая ферма", "овощная ферма"]
+      },
+      "osmTag": "landuse=farmland",
+      "naceRef": "A01.11",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q11451",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/seasonal-produce",
+          "slug": "seasonal-produce",
+          "names": {
+            "en": "Seasonal Produce",
+            "uk": "Сезонна продукція",
+            "de": "Saisonale Erzeugnisse",
+            "ru": "Сезонные продукты",
+            "original": "Seasonal Produce"
+          },
+          "wikidataId": "Q3399118",
+          "crossLinks": ["csa-share", "pick-your-own"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/csa-share",
+          "slug": "csa-share",
+          "names": {
+            "en": "CSA Share",
+            "uk": "Підписка на врожай",
+            "de": "Solidarische Landwirtschaft",
+            "ru": "Подписка на урожай",
+            "original": "CSA Share"
+          },
+          "wikidataId": "Q1129268",
+          "crossLinks": ["seasonal-produce"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/pick-your-own",
+          "slug": "pick-your-own",
+          "names": {
+            "en": "Pick Your Own",
+            "uk": "Збір власноруч",
+            "de": "Selbstpflücken",
+            "ru": "Сбор своими руками",
+            "original": "Pick Your Own"
+          },
+          "wikidataId": "Q3389919",
+          "crossLinks": ["seasonal-produce", "fruit-picking"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/livestock-farm",
+      "slug": "livestock-farm",
+      "names": {
+        "en": "Livestock Farm",
+        "uk": "Тваринницька ферма",
+        "de": "Tierfarm",
+        "ru": "Животноводческая ферма",
+        "original": "Livestock Farm"
+      },
+      "altLabels": {
+        "en": ["cattle ranch", "animal farm"],
+        "uk": ["скотоферма", "тваринництво"],
+        "de": ["viehzucht", "tierhaltung"],
+        "ru": ["скотоферма", "животноводство"]
+      },
+      "osmTag": "landuse=meadow",
+      "naceRef": "A01.4",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q35509",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/meat-direct",
+          "slug": "meat-direct",
+          "names": {
+            "en": "Direct Meat Sales",
+            "uk": "Продаж м'яса напряму",
+            "de": "Direktvermarktung Fleisch",
+            "ru": "Продажа мяса напрямую",
+            "original": "Direct Meat Sales"
+          },
+          "wikidataId": "Q10990",
+          "crossLinks": ["dairy-direct", "breeder-services"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/dairy-direct",
+          "slug": "dairy-direct",
+          "names": {
+            "en": "Direct Dairy Sales",
+            "uk": "Продаж молочних продуктів напряму",
+            "de": "Direktvermarktung Milchprodukte",
+            "ru": "Продажа молочной продукции напрямую",
+            "original": "Direct Dairy Sales"
+          },
+          "wikidataId": "Q183314",
+          "crossLinks": ["meat-direct", "milk-subscription"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/breeder-services",
+          "slug": "breeder-services",
+          "names": {
+            "en": "Breeder Services",
+            "uk": "Послуги з розведення",
+            "de": "Zuchtdienste",
+            "ru": "Услуги разведения",
+            "original": "Breeder Services"
+          },
+          "wikidataId": "Q840332",
+          "crossLinks": ["meat-direct"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/dairy-farm",
+      "slug": "dairy-farm",
+      "names": {
+        "en": "Dairy Farm",
+        "uk": "Молочна ферма",
+        "de": "Milchhof",
+        "ru": "Молочная ферма",
+        "original": "Dairy Farm"
+      },
+      "altLabels": {
+        "en": ["dairy", "milk farm", "creamery"],
+        "uk": ["молочарня", "молочне господарство"],
+        "de": ["milchbauernhof", "molkerei"],
+        "ru": ["молочное хозяйство", "молочарня"]
+      },
+      "osmTag": "landuse=meadow",
+      "naceRef": "A01.41",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q637776",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/milk-subscription",
+          "slug": "milk-subscription",
+          "names": {
+            "en": "Milk Subscription",
+            "uk": "Підписка на молоко",
+            "de": "Milchabonnement",
+            "ru": "Подписка на молоко",
+            "original": "Milk Subscription"
+          },
+          "wikidataId": "Q8495",
+          "crossLinks": ["dairy-direct", "cheese-direct"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cheese-direct",
+          "slug": "cheese-direct",
+          "names": {
+            "en": "Direct Cheese Sales",
+            "uk": "Продаж сиру напряму",
+            "de": "Direktvermarktung Käse",
+            "ru": "Продажа сыра напрямую",
+            "original": "Direct Cheese Sales"
+          },
+          "wikidataId": "Q10943",
+          "crossLinks": ["milk-subscription"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/farm-tour",
+          "slug": "farm-tour",
+          "names": {
+            "en": "Farm Tour",
+            "uk": "Екскурсія фермою",
+            "de": "Hofführung",
+            "ru": "Экскурсия по ферме",
+            "original": "Farm Tour"
+          },
+          "wikidataId": "Q1320350",
+          "crossLinks": ["vineyard-tour", "harvest-events"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/beekeeping",
+      "slug": "beekeeping",
+      "names": {
+        "en": "Beekeeping",
+        "uk": "Бджільництво",
+        "de": "Imkerei",
+        "ru": "Пчеловодство",
+        "original": "Beekeeping"
+      },
+      "altLabels": {
+        "en": ["apiary", "beekeeper", "honey farm"],
+        "uk": ["пасіка", "бджоляр"],
+        "de": ["bienenhaltung", "imker", "bienenstand"],
+        "ru": ["пасека", "пчеловод"]
+      },
+      "osmTag": "craft=beekeeper",
+      "naceRef": "A01.49",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q132495",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/honey",
+          "slug": "honey",
+          "names": {
+            "en": "Honey",
+            "uk": "Мед",
+            "de": "Honig",
+            "ru": "Мёд",
+            "original": "Honey"
+          },
+          "wikidataId": "Q10987",
+          "crossLinks": ["beeswax-products", "propolis"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/beeswax-products",
+          "slug": "beeswax-products",
+          "names": {
+            "en": "Beeswax Products",
+            "uk": "Вироби з бджолиного воску",
+            "de": "Bienenwachsprodukte",
+            "ru": "Изделия из пчелиного воска",
+            "original": "Beeswax Products"
+          },
+          "wikidataId": "Q83366",
+          "crossLinks": ["honey", "propolis"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hive-rental",
+          "slug": "hive-rental",
+          "names": {
+            "en": "Hive Rental",
+            "uk": "Оренда вуликів",
+            "de": "Bienenstockvermietung",
+            "ru": "Аренда ульев",
+            "original": "Hive Rental"
+          },
+          "wikidataId": "Q193292",
+          "crossLinks": ["honey"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/propolis",
+          "slug": "propolis",
+          "names": {
+            "en": "Propolis",
+            "uk": "Прополіс",
+            "de": "Propolis",
+            "ru": "Прополис",
+            "original": "Propolis"
+          },
+          "wikidataId": "Q187092",
+          "crossLinks": ["honey", "beeswax-products"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/vineyard",
+      "slug": "vineyard",
+      "names": {
+        "en": "Vineyard",
+        "uk": "Виноградник",
+        "de": "Weinberg",
+        "ru": "Виноградник",
+        "original": "Vineyard"
+      },
+      "altLabels": {
+        "en": ["winery", "wine estate", "wine farm"],
+        "uk": ["винарня", "винне господарство"],
+        "de": ["weingut", "weinberg"],
+        "ru": ["винодельня", "винное хозяйство"]
+      },
+      "osmTag": "landuse=vineyard",
+      "naceRef": "A01.21",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q22715",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/wine-production",
+          "slug": "wine-production",
+          "names": {
+            "en": "Wine Production",
+            "uk": "Виробництво вина",
+            "de": "Weinherstellung",
+            "ru": "Производство вина",
+            "original": "Wine Production"
+          },
+          "wikidataId": "Q282",
+          "crossLinks": ["vineyard-tour", "grape-harvest"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/vineyard-tour",
+          "slug": "vineyard-tour",
+          "names": {
+            "en": "Vineyard Tour",
+            "uk": "Екскурсія виноградником",
+            "de": "Weinbergführung",
+            "ru": "Экскурсия по винограднику",
+            "original": "Vineyard Tour"
+          },
+          "wikidataId": "Q1320350",
+          "crossLinks": ["wine-production", "farm-tour"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/grape-harvest",
+          "slug": "grape-harvest",
+          "names": {
+            "en": "Grape Harvest",
+            "uk": "Збір винограду",
+            "de": "Weinlese",
+            "ru": "Сбор винограда",
+            "original": "Grape Harvest"
+          },
+          "wikidataId": "Q865704",
+          "crossLinks": ["wine-production", "harvest-events"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/orchard",
+      "slug": "orchard",
+      "names": {
+        "en": "Orchard",
+        "uk": "Сад",
+        "de": "Obstgarten",
+        "ru": "Сад",
+        "original": "Orchard"
+      },
+      "altLabels": {
+        "en": ["fruit orchard", "fruit farm"],
+        "uk": ["плодовий сад", "фруктовий сад"],
+        "de": ["obstplantage", "obsthof"],
+        "ru": ["плодовый сад", "фруктовый сад"]
+      },
+      "osmTag": "landuse=orchard",
+      "naceRef": "A01.24",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q236371",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fruit-direct",
+          "slug": "fruit-direct",
+          "names": {
+            "en": "Direct Fruit Sales",
+            "uk": "Продаж фруктів напряму",
+            "de": "Direktvermarktung Obst",
+            "ru": "Продажа фруктов напрямую",
+            "original": "Direct Fruit Sales"
+          },
+          "wikidataId": "Q3314483",
+          "crossLinks": ["harvest-events", "fruit-picking"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/harvest-events",
+          "slug": "harvest-events",
+          "names": {
+            "en": "Harvest Events",
+            "uk": "Святкування врожаю",
+            "de": "Erntefeste",
+            "ru": "Праздники урожая",
+            "original": "Harvest Events"
+          },
+          "wikidataId": "Q2912397",
+          "crossLinks": ["fruit-direct", "fruit-picking", "grape-harvest"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fruit-picking",
+          "slug": "fruit-picking",
+          "names": {
+            "en": "Fruit Picking",
+            "uk": "Збір фруктів",
+            "de": "Obstpflücken",
+            "ru": "Сбор фруктов",
+            "original": "Fruit Picking"
+          },
+          "wikidataId": "Q3389919",
+          "crossLinks": ["pick-your-own", "fruit-direct", "harvest-events"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/greenhouse",
+      "slug": "greenhouse",
+      "names": {
+        "en": "Greenhouse",
+        "uk": "Теплиця",
+        "de": "Gewächshaus",
+        "ru": "Теплица",
+        "original": "Greenhouse"
+      },
+      "altLabels": {
+        "en": ["glasshouse", "hothouse", "nursery"],
+        "uk": ["оранжерея", "розсадник"],
+        "de": ["glashaus", "treibhaus", "gärtnerei"],
+        "ru": ["оранжерея", "парник", "питомник"]
+      },
+      "osmTag": "landuse=greenhouse_horticulture",
+      "naceRef": "A01.13",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q56794",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/seedlings",
+          "slug": "seedlings",
+          "names": {
+            "en": "Seedlings",
+            "uk": "Розсада",
+            "de": "Setzlinge",
+            "ru": "Рассада",
+            "original": "Seedlings"
+          },
+          "wikidataId": "Q1313535",
+          "crossLinks": ["fresh-herbs", "ornamental-plants"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fresh-herbs",
+          "slug": "fresh-herbs",
+          "names": {
+            "en": "Fresh Herbs",
+            "uk": "Свіжі трави",
+            "de": "Frische Kräuter",
+            "ru": "Свежие травы",
+            "original": "Fresh Herbs"
+          },
+          "wikidataId": "Q42295",
+          "crossLinks": ["seedlings", "seasonal-produce"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ornamental-plants",
+          "slug": "ornamental-plants",
+          "names": {
+            "en": "Ornamental Plants",
+            "uk": "Декоративні рослини",
+            "de": "Zierpflanzen",
+            "ru": "Декоративные растения",
+            "original": "Ornamental Plants"
+          },
+          "wikidataId": "Q864818",
+          "crossLinks": ["seedlings"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/fish-farm",
+      "slug": "fish-farm",
+      "names": {
+        "en": "Fish Farm",
+        "uk": "Рибна ферма",
+        "de": "Fischzucht",
+        "ru": "Рыбная ферма",
+        "original": "Fish Farm"
+      },
+      "altLabels": {
+        "en": ["aquaculture", "fishery", "fish hatchery"],
+        "uk": ["аквакультура", "рибне господарство"],
+        "de": ["aquakultur", "fischzuchtbetrieb"],
+        "ru": ["аквакультура", "рыбхоз", "рыбоводство"]
+      },
+      "osmTag": "landuse=aquaculture",
+      "naceRef": "A03.21",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1469991",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fresh-fish",
+          "slug": "fresh-fish",
+          "names": {
+            "en": "Fresh Fish",
+            "uk": "Свіжа риба",
+            "de": "Frischer Fisch",
+            "ru": "Свежая рыба",
+            "original": "Fresh Fish"
+          },
+          "wikidataId": "Q152",
+          "crossLinks": ["smoked-fish", "fish-stocking"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/smoked-fish",
+          "slug": "smoked-fish",
+          "names": {
+            "en": "Smoked Fish",
+            "uk": "Копчена риба",
+            "de": "Räucherfisch",
+            "ru": "Копчёная рыба",
+            "original": "Smoked Fish"
+          },
+          "wikidataId": "Q1138197",
+          "crossLinks": ["fresh-fish"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fish-stocking",
+          "slug": "fish-stocking",
+          "names": {
+            "en": "Fish Stocking",
+            "uk": "Зариблення",
+            "de": "Fischbesatz",
+            "ru": "Зарыбление",
+            "original": "Fish Stocking"
+          },
+          "wikidataId": "Q5454279",
+          "crossLinks": ["fresh-fish"]
+        }
+      ]
+    }
+  ]
+}

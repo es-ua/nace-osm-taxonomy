@@ -1,0 +1,504 @@
+{
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/pet-services",
+  "slug": "pet-services",
+  "version": "1.1.0",
+  "names": {
+    "en": "Pet Services",
+    "uk": "Послуги для тварин",
+    "de": "Tierdienstleistungen",
+    "ru": "Услуги для животных",
+    "original": "Pet Services"
+  },
+  "altLabels": {
+    "en": ["pet care", "animal services"],
+    "uk": ["догляд за тваринами"],
+    "de": ["tierpflege"],
+    "ru": ["уход за животными"]
+  },
+  "icon": "🐾",
+  "naceRef": "M75+S96.09",
+  "schemaOrgType": "LocalBusiness",
+  "wikidataId": "Q39201",
+  "subcategories": [
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pet-daycare",
+      "slug": "pet-daycare",
+      "names": {
+        "en": "Pet Daycare",
+        "uk": "Денний догляд за тваринами",
+        "de": "Tagesbetreuung für Haustiere",
+        "ru": "Дневной уход за животными",
+        "original": "Pet Daycare"
+      },
+      "altLabels": {
+        "en": ["dog daycare"]
+      },
+      "osmTag": "amenity=animal_boarding",
+      "naceRef": "S96.09",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1640090",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/full-day-daycare",
+          "slug": "full-day-daycare",
+          "names": {
+            "en": "Full-Day Daycare",
+            "uk": "Догляд на повний день",
+            "de": "Ganztagsbetreuung",
+            "ru": "Уход на полный день",
+            "original": "Full-Day Daycare"
+          },
+          "crossLinks": ["half-day-daycare", "group-play"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/half-day-daycare",
+          "slug": "half-day-daycare",
+          "names": {
+            "en": "Half-Day Daycare",
+            "uk": "Догляд на пів дня",
+            "de": "Halbtagsbetreuung",
+            "ru": "Уход на полдня",
+            "original": "Half-Day Daycare"
+          },
+          "crossLinks": ["full-day-daycare", "group-play"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/group-play",
+          "slug": "group-play",
+          "names": {
+            "en": "Group Play",
+            "uk": "Групові ігри",
+            "de": "Gruppenspiel",
+            "ru": "Групповые игры",
+            "original": "Group Play"
+          },
+          "crossLinks": ["full-day-daycare", "half-day-daycare"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/dog-walking",
+      "slug": "dog-walking",
+      "names": {
+        "en": "Dog Walking",
+        "uk": "Вигул собак",
+        "de": "Hundeausführen",
+        "ru": "Выгул собак",
+        "original": "Dog Walking"
+      },
+      "altLabels": {
+        "en": ["dog walker"]
+      },
+      "osmTag": "office=dog_walker",
+      "naceRef": "S96.09",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q5288619",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/single-walk",
+          "slug": "single-walk",
+          "names": {
+            "en": "Single Walk",
+            "uk": "Одноразовий вигул",
+            "de": "Einzelner Spaziergang",
+            "ru": "Разовая прогулка",
+            "original": "Single Walk"
+          },
+          "crossLinks": ["weekly-package", "group-walk"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/weekly-package",
+          "slug": "weekly-package",
+          "names": {
+            "en": "Weekly Package",
+            "uk": "Тижневий пакет",
+            "de": "Wochenpaket",
+            "ru": "Недельный пакет",
+            "original": "Weekly Package"
+          },
+          "crossLinks": ["single-walk", "group-walk"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/group-walk",
+          "slug": "group-walk",
+          "names": {
+            "en": "Group Walk",
+            "uk": "Груповий вигул",
+            "de": "Gruppenspaziergang",
+            "ru": "Групповая прогулка",
+            "original": "Group Walk"
+          },
+          "crossLinks": ["single-walk", "weekly-package"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pet-training",
+      "slug": "pet-training",
+      "names": {
+        "en": "Pet Training",
+        "uk": "Дресирування тварин",
+        "de": "Tiertraining",
+        "ru": "Дрессировка животных",
+        "original": "Pet Training"
+      },
+      "altLabels": {
+        "en": ["dog training", "obedience"]
+      },
+      "osmTag": "office=animal_trainer",
+      "naceRef": "S96.09",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1473346",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/basic-obedience",
+          "slug": "basic-obedience",
+          "names": {
+            "en": "Basic Obedience",
+            "uk": "Базова слухняність",
+            "de": "Grundgehorsam",
+            "ru": "Базовое послушание",
+            "original": "Basic Obedience"
+          },
+          "crossLinks": ["behavior-correction", "puppy-class"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/behavior-correction",
+          "slug": "behavior-correction",
+          "names": {
+            "en": "Behavior Correction",
+            "uk": "Корекція поведінки",
+            "de": "Verhaltenskorrektur",
+            "ru": "Коррекция поведения",
+            "original": "Behavior Correction"
+          },
+          "crossLinks": ["basic-obedience", "puppy-class"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/puppy-class",
+          "slug": "puppy-class",
+          "names": {
+            "en": "Puppy Class",
+            "uk": "Заняття для цуценят",
+            "de": "Welpenkurs",
+            "ru": "Занятия для щенков",
+            "original": "Puppy Class"
+          },
+          "crossLinks": ["basic-obedience", "agility-training"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/agility-training",
+          "slug": "agility-training",
+          "names": {
+            "en": "Agility Training",
+            "uk": "Тренування з аджиліті",
+            "de": "Agility-Training",
+            "ru": "Тренировка по аджилити",
+            "original": "Agility Training"
+          },
+          "crossLinks": ["basic-obedience", "puppy-class"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pet-sitting",
+      "slug": "pet-sitting",
+      "names": {
+        "en": "Pet Sitting",
+        "uk": "Догляд вдома",
+        "de": "Tiersitting",
+        "ru": "Передержка",
+        "original": "Pet Sitting"
+      },
+      "altLabels": {
+        "en": ["house-sitting with pets"]
+      },
+      "osmTag": "office=pet_sitter",
+      "naceRef": "S96.09",
+      "schemaOrgType": "LocalBusiness",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/in-home-sitting",
+          "slug": "in-home-sitting",
+          "names": {
+            "en": "In-Home Sitting",
+            "uk": "Догляд вдома у клієнта",
+            "de": "Betreuung zu Hause",
+            "ru": "Уход на дому у клиента",
+            "original": "In-Home Sitting"
+          },
+          "crossLinks": ["overnight-sitting", "vacation-care"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/overnight-sitting",
+          "slug": "overnight-sitting",
+          "names": {
+            "en": "Overnight Sitting",
+            "uk": "Нічний догляд",
+            "de": "Übernachtungsbetreuung",
+            "ru": "Ночной присмотр",
+            "original": "Overnight Sitting"
+          },
+          "crossLinks": ["in-home-sitting", "vacation-care"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/vacation-care",
+          "slug": "vacation-care",
+          "names": {
+            "en": "Vacation Care",
+            "uk": "Догляд під час відпустки",
+            "de": "Urlaubsbetreuung",
+            "ru": "Уход во время отпуска",
+            "original": "Vacation Care"
+          },
+          "crossLinks": ["in-home-sitting", "overnight-sitting"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/dog-grooming-salon",
+      "slug": "dog-grooming-salon",
+      "names": {
+        "en": "Dog Grooming Salon",
+        "uk": "Грумінг-салон для собак",
+        "de": "Hundesalon",
+        "ru": "Грум-салон для собак",
+        "original": "Dog Grooming Salon"
+      },
+      "altLabels": {
+        "en": ["dog spa", "grooming"]
+      },
+      "osmTag": "shop=pet_grooming",
+      "naceRef": "S96.09",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q3406146",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/full-grooming",
+          "slug": "full-grooming",
+          "names": {
+            "en": "Full Grooming",
+            "uk": "Повний грумінг",
+            "de": "Komplettpflege",
+            "ru": "Полный груминг",
+            "original": "Full Grooming"
+          },
+          "crossLinks": ["pet-grooming", "bath-and-brush", "breed-specific-trim"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/bath-and-brush",
+          "slug": "bath-and-brush",
+          "names": {
+            "en": "Bath and Brush",
+            "uk": "Купання та розчісування",
+            "de": "Bad und Bürsten",
+            "ru": "Купание и расчёсывание",
+            "original": "Bath and Brush"
+          },
+          "crossLinks": ["pet-grooming", "full-grooming", "nail-trim"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/breed-specific-trim",
+          "slug": "breed-specific-trim",
+          "names": {
+            "en": "Breed-Specific Trim",
+            "uk": "Стрижка за стандартом породи",
+            "de": "Rassespezifischer Schnitt",
+            "ru": "Стрижка по стандарту породы",
+            "original": "Breed-Specific Trim"
+          },
+          "crossLinks": ["pet-grooming", "full-grooming"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/nail-trim",
+          "slug": "nail-trim",
+          "names": {
+            "en": "Nail Trim",
+            "uk": "Підстригання кігтів",
+            "de": "Krallenschneiden",
+            "ru": "Стрижка когтей",
+            "original": "Nail Trim"
+          },
+          "crossLinks": ["pet-grooming", "bath-and-brush", "teeth-brushing"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/teeth-brushing",
+          "slug": "teeth-brushing",
+          "names": {
+            "en": "Teeth Brushing",
+            "uk": "Чищення зубів",
+            "de": "Zahnreinigung",
+            "ru": "Чистка зубов",
+            "original": "Teeth Brushing"
+          },
+          "crossLinks": ["pet-grooming", "nail-trim"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/kennel",
+      "slug": "kennel",
+      "names": {
+        "en": "Kennel",
+        "uk": "Готель для собак",
+        "de": "Hundepension",
+        "ru": "Гостиница для собак",
+        "original": "Kennel"
+      },
+      "altLabels": {
+        "en": ["dog hotel", "boarding"]
+      },
+      "osmTag": "amenity=animal_boarding",
+      "naceRef": "M75.00",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q4346751",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/standard-boarding",
+          "slug": "standard-boarding",
+          "names": {
+            "en": "Standard Boarding",
+            "uk": "Стандартне розміщення",
+            "de": "Standardunterbringung",
+            "ru": "Стандартное размещение",
+            "original": "Standard Boarding"
+          },
+          "crossLinks": ["deluxe-suite", "multi-night-stay"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/deluxe-suite",
+          "slug": "deluxe-suite",
+          "names": {
+            "en": "Deluxe Suite",
+            "uk": "Люкс-номер",
+            "de": "Deluxe-Suite",
+            "ru": "Люкс-номер",
+            "original": "Deluxe Suite"
+          },
+          "crossLinks": ["standard-boarding", "multi-night-stay"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/multi-night-stay",
+          "slug": "multi-night-stay",
+          "names": {
+            "en": "Multi-Night Stay",
+            "uk": "Перебування на кілька ночей",
+            "de": "Mehrnächtiger Aufenthalt",
+            "ru": "Многодневное пребывание",
+            "original": "Multi-Night Stay"
+          },
+          "crossLinks": ["standard-boarding", "deluxe-suite"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/cat-hotel",
+      "slug": "cat-hotel",
+      "names": {
+        "en": "Cat Hotel",
+        "uk": "Готель для котів",
+        "de": "Katzenpension",
+        "ru": "Гостиница для кошек",
+        "original": "Cat Hotel"
+      },
+      "altLabels": {
+        "en": ["cattery"]
+      },
+      "osmTag": "amenity=animal_boarding",
+      "naceRef": "M75.00",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q56347456",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/standard-cat-room",
+          "slug": "standard-cat-room",
+          "names": {
+            "en": "Standard Cat Room",
+            "uk": "Стандартна кімната для кота",
+            "de": "Standard-Katzenzimmer",
+            "ru": "Стандартный номер для кошки",
+            "original": "Standard Cat Room"
+          },
+          "crossLinks": ["luxury-cat-suite", "long-stay-discount"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/luxury-cat-suite",
+          "slug": "luxury-cat-suite",
+          "names": {
+            "en": "Luxury Cat Suite",
+            "uk": "Люкс-номер для кота",
+            "de": "Luxus-Katzensuite",
+            "ru": "Люкс-номер для кошки",
+            "original": "Luxury Cat Suite"
+          },
+          "crossLinks": ["standard-cat-room", "long-stay-discount"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/long-stay-discount",
+          "slug": "long-stay-discount",
+          "names": {
+            "en": "Long-Stay Discount",
+            "uk": "Знижка за тривале перебування",
+            "de": "Rabatt für Langzeitaufenthalt",
+            "ru": "Скидка за длительное пребывание",
+            "original": "Long-Stay Discount"
+          },
+          "crossLinks": ["standard-cat-room", "luxury-cat-suite"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pet-photography",
+      "slug": "pet-photography",
+      "names": {
+        "en": "Pet Photography",
+        "uk": "Зйомка тварин",
+        "de": "Tierfotografie",
+        "ru": "Фотосъёмка животных",
+        "original": "Pet Photography"
+      },
+      "osmTag": "craft=photographer",
+      "naceRef": "M74.20",
+      "schemaOrgType": "LocalBusiness",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/studio-pet-shoot",
+          "slug": "studio-pet-shoot",
+          "names": {
+            "en": "Studio Pet Shoot",
+            "uk": "Студійна зйомка тварин",
+            "de": "Studio-Tiershooting",
+            "ru": "Студийная съёмка животных",
+            "original": "Studio Pet Shoot"
+          },
+          "crossLinks": ["outdoor-pet-shoot", "family-with-pet"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/outdoor-pet-shoot",
+          "slug": "outdoor-pet-shoot",
+          "names": {
+            "en": "Outdoor Pet Shoot",
+            "uk": "Зйомка тварин на природі",
+            "de": "Outdoor-Tiershooting",
+            "ru": "Съёмка животных на природе",
+            "original": "Outdoor Pet Shoot"
+          },
+          "crossLinks": ["studio-pet-shoot", "family-with-pet"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/family-with-pet",
+          "slug": "family-with-pet",
+          "names": {
+            "en": "Family with Pet",
+            "uk": "Сім'я з улюбленцем",
+            "de": "Familie mit Haustier",
+            "ru": "Семья с питомцем",
+            "original": "Family with Pet"
+          },
+          "crossLinks": ["studio-pet-shoot", "outdoor-pet-shoot"]
+        }
+      ]
+    }
+  ]
+}

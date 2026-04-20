@@ -1,0 +1,693 @@
+{
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/childcare-kids",
+  "slug": "childcare-kids",
+  "version": "1.1.0",
+  "names": {
+    "en": "Childcare & Kids",
+    "uk": "Догляд за дітьми та дитячі послуги",
+    "de": "Kinderbetreuung & Kindergerichtetes",
+    "ru": "Уход за детьми и детские услуги",
+    "original": "Childcare & Kids"
+  },
+  "altLabels": {
+    "en": ["children services", "kids", "family"],
+    "uk": ["діти", "дитячі послуги"],
+    "de": ["kinder", "familie"],
+    "ru": ["дети", "детские услуги"]
+  },
+  "icon": "👶",
+  "naceRef": "Q88.91+P85.10",
+  "schemaOrgType": "ChildCare",
+  "wikidataId": "Q1639824",
+  "subcategories": [
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/babysitter",
+      "slug": "babysitter",
+      "names": {
+        "en": "Babysitter",
+        "uk": "Няня (погодинно)",
+        "de": "Babysitter",
+        "ru": "Бэбиситтер",
+        "original": "Babysitter"
+      },
+      "altLabels": {
+        "en": ["sitter", "child minder"],
+        "uk": ["няня з погодинною оплатою"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "office=babysitter",
+      "naceRef": "Q88.91",
+      "schemaOrgType": "ChildCare",
+      "wikidataId": "Q1639824",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hourly-babysitting",
+          "slug": "hourly-babysitting",
+          "names": {
+            "en": "Hourly Babysitting",
+            "uk": "Погодинна няня",
+            "de": "Stundenweise Babysitting",
+            "ru": "Почасовая няня",
+            "original": "Hourly Babysitting"
+          },
+          "crossLinks": ["evening-sitting", "weekend-sitting"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/evening-sitting",
+          "slug": "evening-sitting",
+          "names": {
+            "en": "Evening Sitting",
+            "uk": "Вечірня няня",
+            "de": "Abend-Babysitting",
+            "ru": "Вечерняя няня",
+            "original": "Evening Sitting"
+          },
+          "crossLinks": ["hourly-babysitting", "weekend-sitting"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/weekend-sitting",
+          "slug": "weekend-sitting",
+          "names": {
+            "en": "Weekend Sitting",
+            "uk": "Няня на вихідні",
+            "de": "Wochenend-Babysitting",
+            "ru": "Няня на выходные",
+            "original": "Weekend Sitting"
+          },
+          "crossLinks": ["hourly-babysitting", "evening-sitting"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/nanny-agency",
+      "slug": "nanny-agency",
+      "names": {
+        "en": "Nanny Agency",
+        "uk": "Агенція нянь",
+        "de": "Nanny-Vermittlung",
+        "ru": "Агентство нянь",
+        "original": "Nanny Agency"
+      },
+      "altLabels": {
+        "en": ["au pair agency"],
+        "uk": [],
+        "de": [],
+        "ru": ["агентство гувернанток"]
+      },
+      "osmTag": "office=employment_agency",
+      "naceRef": "Q88.91",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1130920",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/full-time-nanny-placement",
+          "slug": "full-time-nanny-placement",
+          "names": {
+            "en": "Full-Time Nanny Placement",
+            "uk": "Підбір няні на повний день",
+            "de": "Vollzeit-Nanny-Vermittlung",
+            "ru": "Подбор няни на полный день",
+            "original": "Full-Time Nanny Placement"
+          },
+          "crossLinks": ["part-time-nanny-placement", "au-pair-program", "background-check-service"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/part-time-nanny-placement",
+          "slug": "part-time-nanny-placement",
+          "names": {
+            "en": "Part-Time Nanny Placement",
+            "uk": "Підбір няні на неповний день",
+            "de": "Teilzeit-Nanny-Vermittlung",
+            "ru": "Подбор няни на неполный день",
+            "original": "Part-Time Nanny Placement"
+          },
+          "crossLinks": ["full-time-nanny-placement", "background-check-service"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/au-pair-program",
+          "slug": "au-pair-program",
+          "names": {
+            "en": "Au Pair Program",
+            "uk": "Програма Au Pair",
+            "de": "Au-pair-Programm",
+            "ru": "Программа Au Pair",
+            "original": "Au Pair Program"
+          },
+          "wikidataId": "Q189080",
+          "crossLinks": ["full-time-nanny-placement"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/background-check-service",
+          "slug": "background-check-service",
+          "names": {
+            "en": "Background Check Service",
+            "uk": "Перевірка біографії",
+            "de": "Hintergrundüberprüfung",
+            "ru": "Проверка биографии",
+            "original": "Background Check Service"
+          },
+          "crossLinks": ["full-time-nanny-placement", "part-time-nanny-placement"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/kids-party-planner",
+      "slug": "kids-party-planner",
+      "names": {
+        "en": "Kids Party Planner",
+        "uk": "Дитячі свята",
+        "de": "Kindergeburtstag-Planer",
+        "ru": "Организация детских праздников",
+        "original": "Kids Party Planner"
+      },
+      "altLabels": {
+        "en": ["birthday party"],
+        "uk": [],
+        "de": [],
+        "ru": ["детский праздник"]
+      },
+      "osmTag": "office=event_management",
+      "naceRef": "N82.30",
+      "schemaOrgType": "LocalBusiness",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/birthday-package",
+          "slug": "birthday-package",
+          "names": {
+            "en": "Birthday Package",
+            "uk": "Пакет на день народження",
+            "de": "Geburtstagspaket",
+            "ru": "Пакет на день рождения",
+            "original": "Birthday Package"
+          },
+          "crossLinks": ["themed-party", "animator-show", "magic-show"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/themed-party",
+          "slug": "themed-party",
+          "names": {
+            "en": "Themed Party",
+            "uk": "Тематичне свято",
+            "de": "Mottoparty",
+            "ru": "Тематическая вечеринка",
+            "original": "Themed Party"
+          },
+          "crossLinks": ["birthday-package", "animator-show"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/animator-show",
+          "slug": "animator-show",
+          "names": {
+            "en": "Animator Show",
+            "uk": "Шоу аніматора",
+            "de": "Animatoren-Show",
+            "ru": "Шоу аниматора",
+            "original": "Animator Show"
+          },
+          "crossLinks": ["birthday-package", "themed-party", "magic-show"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/magic-show",
+          "slug": "magic-show",
+          "names": {
+            "en": "Magic Show",
+            "uk": "Шоу фокусника",
+            "de": "Zaubershow",
+            "ru": "Шоу фокусника",
+            "original": "Magic Show"
+          },
+          "wikidataId": "Q189539",
+          "crossLinks": ["birthday-package", "animator-show"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/kids-photo-studio",
+      "slug": "kids-photo-studio",
+      "names": {
+        "en": "Kids Photo Studio",
+        "uk": "Дитяча фотостудія",
+        "de": "Kinderfotostudio",
+        "ru": "Детская фотостудия",
+        "original": "Kids Photo Studio"
+      },
+      "altLabels": {
+        "en": [],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "craft=photographer",
+      "naceRef": "M74.20",
+      "schemaOrgType": "LocalBusiness",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/newborn-photoshoot",
+          "slug": "newborn-photoshoot",
+          "names": {
+            "en": "Newborn Photoshoot",
+            "uk": "Фотосесія новонароджених",
+            "de": "Neugeborenen-Fotoshooting",
+            "ru": "Фотосессия новорождённых",
+            "original": "Newborn Photoshoot"
+          },
+          "crossLinks": ["family-photoshoot", "smash-cake-shoot"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/family-photoshoot",
+          "slug": "family-photoshoot",
+          "names": {
+            "en": "Family Photoshoot",
+            "uk": "Сімейна фотосесія",
+            "de": "Familienfotoshooting",
+            "ru": "Семейная фотосессия",
+            "original": "Family Photoshoot"
+          },
+          "crossLinks": ["newborn-photoshoot", "kids-portrait"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/kids-portrait",
+          "slug": "kids-portrait",
+          "names": {
+            "en": "Kids Portrait",
+            "uk": "Дитячий портрет",
+            "de": "Kinderporträt",
+            "ru": "Детский портрет",
+            "original": "Kids Portrait"
+          },
+          "crossLinks": ["family-photoshoot", "smash-cake-shoot"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/smash-cake-shoot",
+          "slug": "smash-cake-shoot",
+          "names": {
+            "en": "Smash Cake Shoot",
+            "uk": "Smash Cake фотосесія",
+            "de": "Smash-Cake-Shooting",
+            "ru": "Smash Cake фотосессия",
+            "original": "Smash Cake Shoot"
+          },
+          "crossLinks": ["newborn-photoshoot", "kids-portrait"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/baby-massage",
+      "slug": "baby-massage",
+      "names": {
+        "en": "Baby Massage",
+        "uk": "Дитячий масаж",
+        "de": "Babymassage",
+        "ru": "Детский массаж",
+        "original": "Baby Massage"
+      },
+      "altLabels": {
+        "en": [],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "healthcare=alternative",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q3633050",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/newborn-massage",
+          "slug": "newborn-massage",
+          "names": {
+            "en": "Newborn Massage",
+            "uk": "Масаж для новонароджених",
+            "de": "Neugeborenenmassage",
+            "ru": "Массаж для новорождённых",
+            "original": "Newborn Massage"
+          },
+          "crossLinks": ["infant-massage", "group-class"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/infant-massage",
+          "slug": "infant-massage",
+          "names": {
+            "en": "Infant Massage",
+            "uk": "Масаж для немовлят",
+            "de": "Säuglingsmassage",
+            "ru": "Массаж для младенцев",
+            "original": "Infant Massage"
+          },
+          "crossLinks": ["newborn-massage", "group-class"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/group-class",
+          "slug": "group-class",
+          "names": {
+            "en": "Group Class",
+            "uk": "Групове заняття",
+            "de": "Gruppenkurs",
+            "ru": "Групповое занятие",
+            "original": "Group Class"
+          },
+          "crossLinks": ["newborn-massage", "infant-massage"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/breastfeeding-consultant",
+      "slug": "breastfeeding-consultant",
+      "names": {
+        "en": "Breastfeeding Consultant",
+        "uk": "Консультант з ГВ",
+        "de": "Stillberaterin",
+        "ru": "Консультант по ГВ",
+        "original": "Breastfeeding Consultant"
+      },
+      "altLabels": {
+        "en": ["lactation consultant", "IBCLC"],
+        "uk": ["консультант з грудного вигодовування"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "healthcare=lactation_consultant",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q1389069",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/in-person-consultation",
+          "slug": "in-person-consultation",
+          "names": {
+            "en": "In-Person Consultation",
+            "uk": "Очна консультація",
+            "de": "Persönliche Beratung",
+            "ru": "Очная консультация",
+            "original": "In-Person Consultation"
+          },
+          "crossLinks": ["video-consultation", "hospital-visit"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/video-consultation",
+          "slug": "video-consultation",
+          "names": {
+            "en": "Video Consultation",
+            "uk": "Відеоконсультація",
+            "de": "Video-Beratung",
+            "ru": "Видеоконсультация",
+            "original": "Video Consultation"
+          },
+          "crossLinks": ["in-person-consultation", "hospital-visit"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hospital-visit",
+          "slug": "hospital-visit",
+          "names": {
+            "en": "Hospital Visit",
+            "uk": "Візит до пологового будинку",
+            "de": "Krankenhausbesuch",
+            "ru": "Визит в роддом",
+            "original": "Hospital Visit"
+          },
+          "crossLinks": ["in-person-consultation", "video-consultation"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/prenatal-courses",
+      "slug": "prenatal-courses",
+      "names": {
+        "en": "Prenatal Courses",
+        "uk": "Курси для вагітних",
+        "de": "Geburtsvorbereitung",
+        "ru": "Курсы для беременных",
+        "original": "Prenatal Courses"
+      },
+      "altLabels": {
+        "en": ["birthing class", "antenatal class"],
+        "uk": [],
+        "de": [],
+        "ru": ["школа подготовки к родам"]
+      },
+      "osmTag": "amenity=community_centre",
+      "naceRef": "P85.59",
+      "schemaOrgType": "EducationalOrganization",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/birth-preparation-course",
+          "slug": "birth-preparation-course",
+          "names": {
+            "en": "Birth Preparation Course",
+            "uk": "Курс підготовки до пологів",
+            "de": "Geburtsvorbereitungskurs",
+            "ru": "Курс подготовки к родам",
+            "original": "Birth Preparation Course"
+          },
+          "crossLinks": ["partner-course", "breathing-techniques-class"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/partner-course",
+          "slug": "partner-course",
+          "names": {
+            "en": "Partner Course",
+            "uk": "Курс для пар",
+            "de": "Partnerkurs",
+            "ru": "Курс для пар",
+            "original": "Partner Course"
+          },
+          "crossLinks": ["birth-preparation-course", "breathing-techniques-class"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/breathing-techniques-class",
+          "slug": "breathing-techniques-class",
+          "names": {
+            "en": "Breathing Techniques Class",
+            "uk": "Заняття з дихальних технік",
+            "de": "Atemtechnik-Kurs",
+            "ru": "Занятие по дыхательным техникам",
+            "original": "Breathing Techniques Class"
+          },
+          "crossLinks": ["birth-preparation-course", "partner-course"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/kids-developmental-center",
+      "slug": "kids-developmental-center",
+      "names": {
+        "en": "Kids Developmental Center",
+        "uk": "Дитячий розвиваючий центр",
+        "de": "Frühförderzentrum",
+        "ru": "Детский развивающий центр",
+        "original": "Kids Developmental Center"
+      },
+      "altLabels": {
+        "en": ["early development center"],
+        "uk": [],
+        "de": [],
+        "ru": ["центр развития ребёнка"]
+      },
+      "osmTag": "amenity=kindergarten",
+      "naceRef": "P85.10",
+      "schemaOrgType": "EducationalOrganization",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/early-development-class",
+          "slug": "early-development-class",
+          "names": {
+            "en": "Early Development Class",
+            "uk": "Заняття раннього розвитку",
+            "de": "Frühförderkurs",
+            "ru": "Занятие раннего развития",
+            "original": "Early Development Class"
+          },
+          "crossLinks": ["school-prep", "montessori-group", "drawing-and-craft", "kids-yoga"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/school-prep",
+          "slug": "school-prep",
+          "names": {
+            "en": "School Prep",
+            "uk": "Підготовка до школи",
+            "de": "Schulvorbereitung",
+            "ru": "Подготовка к школе",
+            "original": "School Prep"
+          },
+          "crossLinks": ["early-development-class", "montessori-group"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/montessori-group",
+          "slug": "montessori-group",
+          "names": {
+            "en": "Montessori Group",
+            "uk": "Монтессорі-група",
+            "de": "Montessori-Gruppe",
+            "ru": "Монтессори-группа",
+            "original": "Montessori Group"
+          },
+          "wikidataId": "Q187473",
+          "crossLinks": ["early-development-class", "school-prep"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/drawing-and-craft",
+          "slug": "drawing-and-craft",
+          "names": {
+            "en": "Drawing and Craft",
+            "uk": "Малювання та творчість",
+            "de": "Malen und Basteln",
+            "ru": "Рисование и творчество",
+            "original": "Drawing and Craft"
+          },
+          "crossLinks": ["early-development-class", "kids-yoga"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/kids-yoga",
+          "slug": "kids-yoga",
+          "names": {
+            "en": "Kids Yoga",
+            "uk": "Дитяча йога",
+            "de": "Kinderyoga",
+            "ru": "Детская йога",
+            "original": "Kids Yoga"
+          },
+          "crossLinks": ["early-development-class", "drawing-and-craft"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/kids-club",
+      "slug": "kids-club",
+      "names": {
+        "en": "Kids Playground/Club",
+        "uk": "Дитячий клуб",
+        "de": "Kinderclub",
+        "ru": "Детский клуб",
+        "original": "Kids Playground/Club"
+      },
+      "altLabels": {
+        "en": ["indoor playground"],
+        "uk": [],
+        "de": [],
+        "ru": ["игровой клуб"]
+      },
+      "osmTag": "leisure=playground",
+      "naceRef": "R93.29",
+      "schemaOrgType": "LocalBusiness",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/drop-in-play",
+          "slug": "drop-in-play",
+          "names": {
+            "en": "Drop-In Play",
+            "uk": "Разове відвідування",
+            "de": "Spontaner Besuch",
+            "ru": "Разовое посещение",
+            "original": "Drop-In Play"
+          },
+          "crossLinks": ["monthly-membership", "birthday-rental", "kids-cafe-corner"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/monthly-membership",
+          "slug": "monthly-membership",
+          "names": {
+            "en": "Monthly Membership",
+            "uk": "Місячний абонемент",
+            "de": "Monatsmitgliedschaft",
+            "ru": "Месячный абонемент",
+            "original": "Monthly Membership"
+          },
+          "crossLinks": ["drop-in-play", "kids-cafe-corner"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/birthday-rental",
+          "slug": "birthday-rental",
+          "names": {
+            "en": "Birthday Rental",
+            "uk": "Оренда на день народження",
+            "de": "Geburtstagsmiete",
+            "ru": "Аренда на день рождения",
+            "original": "Birthday Rental"
+          },
+          "crossLinks": ["drop-in-play", "birthday-package"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/kids-cafe-corner",
+          "slug": "kids-cafe-corner",
+          "names": {
+            "en": "Kids Cafe Corner",
+            "uk": "Дитячий кафе-куточок",
+            "de": "Kindercafé-Ecke",
+            "ru": "Детский кафе-уголок",
+            "original": "Kids Cafe Corner"
+          },
+          "crossLinks": ["drop-in-play", "monthly-membership"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/doula-service",
+      "slug": "doula-service",
+      "names": {
+        "en": "Doula Service",
+        "uk": "Дула",
+        "de": "Doula-Begleitung",
+        "ru": "Доула",
+        "original": "Doula Service"
+      },
+      "altLabels": {
+        "en": ["birth doula", "postpartum doula"],
+        "uk": ["доула"],
+        "de": [],
+        "ru": ["доула"]
+      },
+      "osmTag": "healthcare=midwife",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q1202569",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/prenatal-doula",
+          "slug": "prenatal-doula",
+          "names": {
+            "en": "Prenatal Doula",
+            "uk": "Дородова дула",
+            "de": "Pränatale Doula",
+            "ru": "Дородовая доула",
+            "original": "Prenatal Doula"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/birth-support",
+          "slug": "birth-support",
+          "names": {
+            "en": "Birth Support",
+            "uk": "Супровід пологів",
+            "de": "Geburtsbegleitung",
+            "ru": "Сопровождение родов",
+            "original": "Birth Support"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/postpartum-doula",
+          "slug": "postpartum-doula",
+          "names": {
+            "en": "Postpartum Doula",
+            "uk": "Післяпологова дула",
+            "de": "Postpartum-Doula",
+            "ru": "Послеродовая доула",
+            "original": "Postpartum Doula"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/sibling-doula",
+          "slug": "sibling-doula",
+          "names": {
+            "en": "Sibling Doula",
+            "uk": "Дула для старших дітей",
+            "de": "Geschwister-Doula",
+            "ru": "Доула для старших детей",
+            "original": "Sibling Doula"
+          }
+        }
+      ]
+    }
+  ]
+}

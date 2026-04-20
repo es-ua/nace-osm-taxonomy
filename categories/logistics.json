@@ -1,0 +1,1164 @@
+{
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/logistics",
+  "slug": "logistics",
+  "version": "1.1.0",
+  "names": {
+    "en": "Logistics & Warehousing",
+    "uk": "Логістика та склади",
+    "de": "Logistik & Lagerung",
+    "ru": "Логистика и склады",
+    "original": "Logistics & Warehousing"
+  },
+  "altLabels": {
+    "en": ["transport", "shipping", "freight"],
+    "uk": ["транспорт", "перевезення"],
+    "de": ["transport", "spedition"],
+    "ru": ["транспорт", "перевозки"]
+  },
+  "icon": "🚛",
+  "naceRef": "H49+H52+H53",
+  "schemaOrgType": "LocalBusiness",
+  "wikidataId": "Q177777",
+  "subcategories": [
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/courier",
+      "slug": "courier",
+      "names": {
+        "en": "Courier Service",
+        "uk": "Кур'єрська служба",
+        "de": "Kurierdienst",
+        "ru": "Курьерская служба",
+        "original": "Courier Service"
+      },
+      "altLabels": {
+        "en": ["delivery", "messenger"],
+        "uk": ["доставка", "посильний"],
+        "de": ["lieferdienst", "bote"],
+        "ru": ["доставка", "посыльный"]
+      },
+      "osmTag": "office=courier",
+      "naceRef": "H53.20",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1057318",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/same-day-courier",
+          "slug": "same-day-courier",
+          "names": {
+            "en": "Same-Day Courier",
+            "uk": "Кур'єр день в день",
+            "de": "Same-Day-Kurier",
+            "ru": "Курьер в день заказа",
+            "original": "Same-Day Courier"
+          },
+          "crossLinks": ["next-day-courier", "document-delivery"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/next-day-courier",
+          "slug": "next-day-courier",
+          "names": {
+            "en": "Next-Day Courier",
+            "uk": "Кур'єр на наступний день",
+            "de": "Next-Day-Kurier",
+            "ru": "Курьер на следующий день",
+            "original": "Next-Day Courier"
+          },
+          "crossLinks": ["same-day-courier", "b2b-courier"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/document-delivery",
+          "slug": "document-delivery",
+          "names": {
+            "en": "Document Delivery",
+            "uk": "Доставка документів",
+            "de": "Dokumentenzustellung",
+            "ru": "Доставка документов",
+            "original": "Document Delivery"
+          },
+          "crossLinks": ["same-day-courier", "b2b-courier"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/b2b-courier",
+          "slug": "b2b-courier",
+          "names": {
+            "en": "B2B Courier",
+            "uk": "B2B-кур'єр",
+            "de": "B2B-Kurier",
+            "ru": "B2B-курьер",
+            "original": "B2B Courier"
+          },
+          "crossLinks": ["next-day-courier", "document-delivery"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/parcel-locker",
+      "slug": "parcel-locker",
+      "names": {
+        "en": "Parcel Locker",
+        "uk": "Поштомат",
+        "de": "Paketstation",
+        "ru": "Постамат",
+        "original": "Parcel Locker"
+      },
+      "altLabels": {
+        "en": ["pickup locker", "package locker"],
+        "uk": ["пакетомат"],
+        "de": ["packstation", "paketautomat"],
+        "ru": ["пакетомат", "пункт выдачи"]
+      },
+      "osmTag": "amenity=parcel_locker",
+      "naceRef": "H53.20",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q5402558",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/parcel-pickup",
+          "slug": "parcel-pickup",
+          "names": {
+            "en": "Parcel Pickup",
+            "uk": "Отримання посилки",
+            "de": "Paketabholung",
+            "ru": "Получение посылки",
+            "original": "Parcel Pickup"
+          },
+          "crossLinks": ["parcel-dropoff"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/parcel-dropoff",
+          "slug": "parcel-dropoff",
+          "names": {
+            "en": "Parcel Drop-off",
+            "uk": "Відправлення посилки",
+            "de": "Paketabgabe",
+            "ru": "Отправка посылки",
+            "original": "Parcel Drop-off"
+          },
+          "crossLinks": ["parcel-pickup"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/freight-forwarder",
+      "slug": "freight-forwarder",
+      "names": {
+        "en": "Freight Forwarder",
+        "uk": "Експедитор",
+        "de": "Spediteur",
+        "ru": "Экспедитор",
+        "original": "Freight Forwarder"
+      },
+      "altLabels": {
+        "en": ["forwarding agent", "logistics provider"],
+        "uk": ["транспортна компанія", "експедиція"],
+        "de": ["spedition", "logistikdienstleister"],
+        "ru": ["транспортная компания", "экспедиция"]
+      },
+      "osmTag": "office=logistics",
+      "naceRef": "H52.29",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1063942",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/international-freight",
+          "slug": "international-freight",
+          "names": {
+            "en": "International Freight",
+            "uk": "Міжнародні перевезення",
+            "de": "Internationale Fracht",
+            "ru": "Международные перевозки",
+            "original": "International Freight"
+          },
+          "crossLinks": ["customs-brokerage", "b2b-cargo"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/customs-brokerage",
+          "slug": "customs-brokerage",
+          "names": {
+            "en": "Customs Brokerage",
+            "uk": "Митне оформлення",
+            "de": "Zollabwicklung",
+            "ru": "Таможенное оформление",
+            "original": "Customs Brokerage"
+          },
+          "crossLinks": ["international-freight", "import-clearance"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/b2b-cargo",
+          "slug": "b2b-cargo",
+          "names": {
+            "en": "B2B Cargo",
+            "uk": "B2B-вантажі",
+            "de": "B2B-Fracht",
+            "ru": "B2B-грузы",
+            "original": "B2B Cargo"
+          },
+          "crossLinks": ["international-freight", "oversize-cargo"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/oversize-cargo",
+          "slug": "oversize-cargo",
+          "names": {
+            "en": "Oversize Cargo",
+            "uk": "Негабаритні вантажі",
+            "de": "Schwertransport",
+            "ru": "Негабаритные грузы",
+            "original": "Oversize Cargo"
+          },
+          "crossLinks": ["b2b-cargo", "international-freight"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/customs-broker",
+      "slug": "customs-broker",
+      "names": {
+        "en": "Customs Broker",
+        "uk": "Митний брокер",
+        "de": "Zollagent",
+        "ru": "Таможенный брокер",
+        "original": "Customs Broker"
+      },
+      "altLabels": {
+        "en": ["customs agent", "import agent"],
+        "uk": ["митний агент"],
+        "de": ["zollvertreter", "zollabwickler"],
+        "ru": ["таможенный агент"]
+      },
+      "osmTag": "office=customs_broker",
+      "naceRef": "H52.29",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1142856",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/import-clearance",
+          "slug": "import-clearance",
+          "names": {
+            "en": "Import Clearance",
+            "uk": "Імпортне оформлення",
+            "de": "Importabfertigung",
+            "ru": "Импортное оформление",
+            "original": "Import Clearance"
+          },
+          "crossLinks": ["export-docs", "hs-code-classification"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/export-docs",
+          "slug": "export-docs",
+          "names": {
+            "en": "Export Documentation",
+            "uk": "Експортна документація",
+            "de": "Exportdokumentation",
+            "ru": "Экспортная документация",
+            "original": "Export Documentation"
+          },
+          "crossLinks": ["import-clearance", "hs-code-classification"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hs-code-classification",
+          "slug": "hs-code-classification",
+          "names": {
+            "en": "HS Code Classification",
+            "uk": "Класифікація за УКТЗЕД",
+            "de": "HS-Code-Einreihung",
+            "ru": "Классификация по ТН ВЭД",
+            "original": "HS Code Classification"
+          },
+          "crossLinks": ["import-clearance", "export-docs"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/self-storage",
+      "slug": "self-storage",
+      "names": {
+        "en": "Self-Storage",
+        "uk": "Самообслуговуване зберігання",
+        "de": "Self-Storage",
+        "ru": "Самостоятельное хранение",
+        "original": "Self-Storage"
+      },
+      "altLabels": {
+        "en": ["storage units"],
+        "uk": ["оренда складу", "склад на зберігання"],
+        "de": ["lagerraum", "mietlager"],
+        "ru": ["склад в аренду", "хранение вещей"]
+      },
+      "osmTag": "shop=storage_rental",
+      "naceRef": "H52.10",
+      "schemaOrgType": "SelfStorage",
+      "wikidataId": "Q1416844",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/storage-unit-small",
+          "slug": "storage-unit-small",
+          "names": {
+            "en": "Small Storage Unit",
+            "uk": "Малий склад",
+            "de": "Kleines Lagerabteil",
+            "ru": "Маленький бокс",
+            "original": "Small Storage Unit"
+          },
+          "crossLinks": ["storage-unit-large", "climate-controlled-storage"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/storage-unit-large",
+          "slug": "storage-unit-large",
+          "names": {
+            "en": "Large Storage Unit",
+            "uk": "Великий склад",
+            "de": "Großes Lagerabteil",
+            "ru": "Большой бокс",
+            "original": "Large Storage Unit"
+          },
+          "crossLinks": ["storage-unit-small", "business-storage"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/climate-controlled-storage",
+          "slug": "climate-controlled-storage",
+          "names": {
+            "en": "Climate-Controlled Storage",
+            "uk": "Склад з кліматконтролем",
+            "de": "Klimatisiertes Lager",
+            "ru": "Склад с климат-контролем",
+            "original": "Climate-Controlled Storage"
+          },
+          "crossLinks": ["storage-unit-small", "storage-unit-large"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/business-storage",
+          "slug": "business-storage",
+          "names": {
+            "en": "Business Storage",
+            "uk": "Бізнес-зберігання",
+            "de": "Geschäftslager",
+            "ru": "Бизнес-хранение",
+            "original": "Business Storage"
+          },
+          "crossLinks": ["storage-unit-large", "climate-controlled-storage"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/taxi",
+      "slug": "taxi",
+      "names": {
+        "en": "Taxi Service",
+        "uk": "Таксі",
+        "de": "Taxi",
+        "ru": "Такси",
+        "original": "Taxi Service"
+      },
+      "altLabels": {
+        "en": ["cab", "ride service"],
+        "uk": ["служба таксі"],
+        "de": ["taxiunternehmen", "droschke"],
+        "ru": ["служба такси"]
+      },
+      "osmTag": "amenity=taxi",
+      "naceRef": "H49.32",
+      "schemaOrgType": "TaxiService",
+      "wikidataId": "Q63100",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/city-ride",
+          "slug": "city-ride",
+          "names": {
+            "en": "City Ride",
+            "uk": "Поїздка містом",
+            "de": "Stadtfahrt",
+            "ru": "Поездка по городу",
+            "original": "City Ride"
+          },
+          "crossLinks": ["airport-transfer", "hourly-rental"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/airport-transfer",
+          "slug": "airport-transfer",
+          "names": {
+            "en": "Airport Transfer",
+            "uk": "Трансфер до аеропорту",
+            "de": "Flughafentransfer",
+            "ru": "Трансфер в аэропорт",
+            "original": "Airport Transfer"
+          },
+          "crossLinks": ["city-ride", "hourly-rental"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hourly-rental",
+          "slug": "hourly-rental",
+          "names": {
+            "en": "Hourly Rental",
+            "uk": "Погодинна оренда",
+            "de": "Stundenmiete",
+            "ru": "Почасовая аренда",
+            "original": "Hourly Rental"
+          },
+          "crossLinks": ["city-ride", "airport-transfer"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/bus-charter",
+      "slug": "bus-charter",
+      "names": {
+        "en": "Bus Charter",
+        "uk": "Оренда автобуса",
+        "de": "Buscharter",
+        "ru": "Заказ автобуса",
+        "original": "Bus Charter"
+      },
+      "altLabels": {
+        "en": ["coach hire"],
+        "uk": ["оренда автобуса з водієм"],
+        "de": ["busvermietung", "reisebus mieten"],
+        "ru": ["аренда автобуса", "заказ микроавтобуса"]
+      },
+      "osmTag": "amenity=bus_station",
+      "naceRef": "H49.39",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q200016",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/event-bus",
+          "slug": "event-bus",
+          "names": {
+            "en": "Event Bus",
+            "uk": "Автобус на подію",
+            "de": "Eventbus",
+            "ru": "Автобус на мероприятие",
+            "original": "Event Bus"
+          },
+          "crossLinks": ["school-trip", "tour-bus"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/school-trip",
+          "slug": "school-trip",
+          "names": {
+            "en": "School Trip",
+            "uk": "Шкільна екскурсія",
+            "de": "Schulausflug",
+            "ru": "Школьная поездка",
+            "original": "School Trip"
+          },
+          "crossLinks": ["event-bus", "tour-bus"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tour-bus",
+          "slug": "tour-bus",
+          "names": {
+            "en": "Tour Bus",
+            "uk": "Туристичний автобус",
+            "de": "Reisebus",
+            "ru": "Туристический автобус",
+            "original": "Tour Bus"
+          },
+          "crossLinks": ["event-bus", "school-trip"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/truck-rental",
+      "slug": "truck-rental",
+      "names": {
+        "en": "Truck Rental",
+        "uk": "Оренда вантажівок",
+        "de": "LKW-Vermietung",
+        "ru": "Аренда грузовиков",
+        "original": "Truck Rental"
+      },
+      "altLabels": {
+        "en": ["lorry hire", "van rental"],
+        "uk": ["прокат вантажівок"],
+        "de": ["lkw-mieten", "transportermiete"],
+        "ru": ["прокат грузовиков", "аренда фургона"]
+      },
+      "osmTag": "amenity=vehicle_rental",
+      "naceRef": "N77.12",
+      "schemaOrgType": "AutoRental",
+      "wikidataId": "Q5523796",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/box-truck-rental",
+          "slug": "box-truck-rental",
+          "names": {
+            "en": "Box Truck Rental",
+            "uk": "Оренда фургона",
+            "de": "Kofferaufbau-LKW-Miete",
+            "ru": "Аренда фургона",
+            "original": "Box Truck Rental"
+          },
+          "crossLinks": ["moving-truck-rental", "flatbed-rental"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/refrigerated-truck-rental",
+          "slug": "refrigerated-truck-rental",
+          "names": {
+            "en": "Refrigerated Truck Rental",
+            "uk": "Оренда рефрижератора",
+            "de": "Kühl-LKW-Miete",
+            "ru": "Аренда рефрижератора",
+            "original": "Refrigerated Truck Rental"
+          },
+          "crossLinks": ["box-truck-rental", "flatbed-rental"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/moving-truck-rental",
+          "slug": "moving-truck-rental",
+          "names": {
+            "en": "Moving Truck Rental",
+            "uk": "Оренда вантажівки для переїзду",
+            "de": "Umzugs-LKW-Miete",
+            "ru": "Аренда грузовика для переезда",
+            "original": "Moving Truck Rental"
+          },
+          "crossLinks": ["box-truck-rental", "flatbed-rental"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/flatbed-rental",
+          "slug": "flatbed-rental",
+          "names": {
+            "en": "Flatbed Rental",
+            "uk": "Оренда бортової вантажівки",
+            "de": "Pritschenwagen-Miete",
+            "ru": "Аренда бортового грузовика",
+            "original": "Flatbed Rental"
+          },
+          "crossLinks": ["box-truck-rental", "moving-truck-rental"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/airline",
+      "slug": "airline",
+      "names": {
+        "en": "Airline",
+        "uk": "Авіакомпанія",
+        "de": "Fluggesellschaft",
+        "ru": "Авиакомпания",
+        "original": "Airline"
+      },
+      "altLabels": {
+        "en": ["air carrier"],
+        "uk": ["перевізник"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "office=airline",
+      "naceRef": "H51.10",
+      "schemaOrgType": "Airline",
+      "wikidataId": "Q46970",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/scheduled-flight-booking",
+          "slug": "scheduled-flight-booking",
+          "names": {
+            "en": "Scheduled Flight Booking",
+            "uk": "Бронювання регулярного рейсу",
+            "de": "Linienflugbuchung",
+            "ru": "Бронирование регулярного рейса",
+            "original": "Scheduled Flight Booking"
+          },
+          "crossLinks": ["charter-flight", "airline-loyalty"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/charter-flight",
+          "slug": "charter-flight",
+          "names": {
+            "en": "Charter Flight",
+            "uk": "Чартерний рейс",
+            "de": "Charterflug",
+            "ru": "Чартерный рейс",
+            "original": "Charter Flight"
+          },
+          "crossLinks": ["scheduled-flight-booking", "cargo-flight"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cargo-flight",
+          "slug": "cargo-flight",
+          "names": {
+            "en": "Cargo Flight",
+            "uk": "Вантажний рейс",
+            "de": "Frachtflug",
+            "ru": "Грузовой рейс",
+            "original": "Cargo Flight"
+          },
+          "crossLinks": ["charter-flight", "scheduled-flight-booking"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/airline-loyalty",
+          "slug": "airline-loyalty",
+          "names": {
+            "en": "Airline Loyalty Program",
+            "uk": "Програма лояльності авіакомпанії",
+            "de": "Vielfliegerprogramm",
+            "ru": "Программа лояльности авиакомпании",
+            "original": "Airline Loyalty Program"
+          },
+          "crossLinks": ["scheduled-flight-booking", "charter-flight"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/shipping-line",
+      "slug": "shipping-line",
+      "names": {
+        "en": "Shipping Line",
+        "uk": "Судноплавна лінія",
+        "de": "Reederei",
+        "ru": "Судоходная компания",
+        "original": "Shipping Line"
+      },
+      "altLabels": {
+        "en": ["ocean freight"],
+        "uk": ["судноплавство"],
+        "de": ["schifffahrt"],
+        "ru": ["судоходство"]
+      },
+      "osmTag": "harbour=yes",
+      "naceRef": "H50.20",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q14907026",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/container-shipping",
+          "slug": "container-shipping",
+          "names": {
+            "en": "Container Shipping",
+            "uk": "Контейнерні перевезення",
+            "de": "Containerschifffahrt",
+            "ru": "Контейнерные перевозки",
+            "original": "Container Shipping"
+          },
+          "crossLinks": ["bulk-cargo-shipping", "roro-shipping"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/bulk-cargo-shipping",
+          "slug": "bulk-cargo-shipping",
+          "names": {
+            "en": "Bulk Cargo Shipping",
+            "uk": "Насипні вантажні перевезення",
+            "de": "Massengutschifffahrt",
+            "ru": "Перевозка навалочных грузов",
+            "original": "Bulk Cargo Shipping"
+          },
+          "crossLinks": ["container-shipping", "roro-shipping"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/roro-shipping",
+          "slug": "roro-shipping",
+          "names": {
+            "en": "Ro-Ro Shipping",
+            "uk": "Ро-Ро перевезення",
+            "de": "Ro-Ro-Verschiffung",
+            "ru": "Ро-Ро перевозки",
+            "original": "Ro-Ro Shipping"
+          },
+          "crossLinks": ["container-shipping", "bulk-cargo-shipping"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/passenger-ferry",
+          "slug": "passenger-ferry",
+          "names": {
+            "en": "Passenger Ferry",
+            "uk": "Пасажирський пором",
+            "de": "Passagierfähre",
+            "ru": "Пассажирский паром",
+            "original": "Passenger Ferry"
+          },
+          "crossLinks": ["roro-shipping", "container-shipping"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/rail-freight",
+      "slug": "rail-freight",
+      "names": {
+        "en": "Rail Freight",
+        "uk": "Залізничні вантажні перевезення",
+        "de": "Schienengüterverkehr",
+        "ru": "Ж/д грузоперевозки",
+        "original": "Rail Freight"
+      },
+      "altLabels": {
+        "en": ["freight rail"],
+        "uk": ["залізничні вантажі"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "office=transport",
+      "naceRef": "H49.20",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q105731",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/container-rail",
+          "slug": "container-rail",
+          "names": {
+            "en": "Container Rail",
+            "uk": "Контейнерні залізничні перевезення",
+            "de": "Containerbahn",
+            "ru": "Контейнерные ж/д перевозки",
+            "original": "Container Rail"
+          },
+          "crossLinks": ["bulk-rail", "intermodal-rail"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/bulk-rail",
+          "slug": "bulk-rail",
+          "names": {
+            "en": "Bulk Rail",
+            "uk": "Насипні залізничні перевезення",
+            "de": "Massengutbahn",
+            "ru": "Навалочные ж/д перевозки",
+            "original": "Bulk Rail"
+          },
+          "crossLinks": ["container-rail", "intermodal-rail"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/intermodal-rail",
+          "slug": "intermodal-rail",
+          "names": {
+            "en": "Intermodal Rail",
+            "uk": "Інтермодальні залізничні перевезення",
+            "de": "Intermodaler Schienenverkehr",
+            "ru": "Интермодальные ж/д перевозки",
+            "original": "Intermodal Rail"
+          },
+          "crossLinks": ["container-rail", "rail-car-rental"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/rail-car-rental",
+          "slug": "rail-car-rental",
+          "names": {
+            "en": "Rail Car Rental",
+            "uk": "Оренда вагонів",
+            "de": "Waggonvermietung",
+            "ru": "Аренда вагонов",
+            "original": "Rail Car Rental"
+          },
+          "crossLinks": ["intermodal-rail", "bulk-rail"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/port-services",
+      "slug": "port-services",
+      "names": {
+        "en": "Port Services",
+        "uk": "Портові послуги",
+        "de": "Hafendienste",
+        "ru": "Портовые услуги",
+        "original": "Port Services"
+      },
+      "altLabels": {
+        "en": ["harbour services"],
+        "uk": ["порт"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "industrial=port",
+      "naceRef": "H52.22",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q44782",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/stevedoring",
+          "slug": "stevedoring",
+          "names": {
+            "en": "Stevedoring",
+            "uk": "Стивідорні роботи",
+            "de": "Stauerei",
+            "ru": "Стивидорные работы",
+            "original": "Stevedoring"
+          },
+          "crossLinks": ["container-handling", "berth-rental"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/container-handling",
+          "slug": "container-handling",
+          "names": {
+            "en": "Container Handling",
+            "uk": "Обробка контейнерів",
+            "de": "Containerumschlag",
+            "ru": "Обработка контейнеров",
+            "original": "Container Handling"
+          },
+          "crossLinks": ["stevedoring", "warehouse-at-port"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/warehouse-at-port",
+          "slug": "warehouse-at-port",
+          "names": {
+            "en": "Warehouse at Port",
+            "uk": "Склад у порту",
+            "de": "Hafenlager",
+            "ru": "Портовый склад",
+            "original": "Warehouse at Port"
+          },
+          "crossLinks": ["container-handling", "berth-rental"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/berth-rental",
+          "slug": "berth-rental",
+          "names": {
+            "en": "Berth Rental",
+            "uk": "Оренда причалу",
+            "de": "Liegeplatzvermietung",
+            "ru": "Аренда причала",
+            "original": "Berth Rental"
+          },
+          "crossLinks": ["stevedoring", "warehouse-at-port"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/airport-services",
+      "slug": "airport-services",
+      "names": {
+        "en": "Airport Services",
+        "uk": "Послуги аеропорту",
+        "de": "Flughafendienste",
+        "ru": "Услуги аэропорта",
+        "original": "Airport Services"
+      },
+      "altLabels": {
+        "en": ["ground handling"],
+        "uk": ["аеропорт"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "aeroway=aerodrome",
+      "naceRef": "H52.23",
+      "schemaOrgType": "Airport",
+      "wikidataId": "Q1248784",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ground-handling",
+          "slug": "ground-handling",
+          "names": {
+            "en": "Ground Handling",
+            "uk": "Наземне обслуговування",
+            "de": "Bodenabfertigung",
+            "ru": "Наземное обслуживание",
+            "original": "Ground Handling"
+          },
+          "crossLinks": ["passenger-service", "aircraft-fueling"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/passenger-service",
+          "slug": "passenger-service",
+          "names": {
+            "en": "Passenger Service",
+            "uk": "Обслуговування пасажирів",
+            "de": "Passagierservice",
+            "ru": "Обслуживание пассажиров",
+            "original": "Passenger Service"
+          },
+          "crossLinks": ["ground-handling", "airport-lounge"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/airport-lounge",
+          "slug": "airport-lounge",
+          "names": {
+            "en": "Airport Lounge",
+            "uk": "Зал очікування в аеропорту",
+            "de": "Flughafen-Lounge",
+            "ru": "Зал ожидания аэропорта",
+            "original": "Airport Lounge"
+          },
+          "crossLinks": ["passenger-service", "ground-handling"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/aircraft-fueling",
+          "slug": "aircraft-fueling",
+          "names": {
+            "en": "Aircraft Fueling",
+            "uk": "Заправка літаків",
+            "de": "Flugzeugbetankung",
+            "ru": "Заправка воздушных судов",
+            "original": "Aircraft Fueling"
+          },
+          "crossLinks": ["ground-handling", "passenger-service"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/waste-management",
+      "slug": "waste-management",
+      "names": {
+        "en": "Waste Management",
+        "uk": "Вивіз сміття",
+        "de": "Abfallentsorgung",
+        "ru": "Управление отходами",
+        "original": "Waste Management"
+      },
+      "altLabels": {
+        "en": ["garbage collection", "trash pickup"],
+        "uk": ["вивезення сміття"],
+        "de": [],
+        "ru": ["вывоз мусора"]
+      },
+      "osmTag": "amenity=waste_transfer_station",
+      "naceRef": "E38.11",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q180388",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/residential-waste",
+          "slug": "residential-waste",
+          "names": {
+            "en": "Residential Waste",
+            "uk": "Побутові відходи",
+            "de": "Hausmüll",
+            "ru": "Бытовые отходы",
+            "original": "Residential Waste"
+          },
+          "crossLinks": ["commercial-waste", "construction-debris"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/commercial-waste",
+          "slug": "commercial-waste",
+          "names": {
+            "en": "Commercial Waste",
+            "uk": "Комерційні відходи",
+            "de": "Gewerbeabfall",
+            "ru": "Коммерческие отходы",
+            "original": "Commercial Waste"
+          },
+          "crossLinks": ["residential-waste", "hazardous-waste"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/construction-debris",
+          "slug": "construction-debris",
+          "names": {
+            "en": "Construction Debris",
+            "uk": "Будівельні відходи",
+            "de": "Bauschutt",
+            "ru": "Строительный мусор",
+            "original": "Construction Debris"
+          },
+          "crossLinks": ["residential-waste", "hazardous-waste"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/hazardous-waste",
+          "slug": "hazardous-waste",
+          "names": {
+            "en": "Hazardous Waste",
+            "uk": "Небезпечні відходи",
+            "de": "Sondermüll",
+            "ru": "Опасные отходы",
+            "original": "Hazardous Waste"
+          },
+          "crossLinks": ["commercial-waste", "construction-debris"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/recycling-center",
+      "slug": "recycling-center",
+      "names": {
+        "en": "Recycling Center",
+        "uk": "Центр переробки",
+        "de": "Recyclinghof",
+        "ru": "Пункт приёма вторсырья",
+        "original": "Recycling Center"
+      },
+      "altLabels": {
+        "en": ["recycling drop-off"],
+        "uk": ["пункт переробки"],
+        "de": [],
+        "ru": ["пункт сбора"]
+      },
+      "osmTag": "amenity=recycling",
+      "naceRef": "E38.32",
+      "schemaOrgType": "RecyclingCenter",
+      "wikidataId": "Q1054284",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/paper-recycling",
+          "slug": "paper-recycling",
+          "names": {
+            "en": "Paper Recycling",
+            "uk": "Переробка паперу",
+            "de": "Papierrecycling",
+            "ru": "Переработка бумаги",
+            "original": "Paper Recycling"
+          },
+          "crossLinks": ["plastic-recycling", "metal-recycling"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/plastic-recycling",
+          "slug": "plastic-recycling",
+          "names": {
+            "en": "Plastic Recycling",
+            "uk": "Переробка пластику",
+            "de": "Kunststoffrecycling",
+            "ru": "Переработка пластика",
+            "original": "Plastic Recycling"
+          },
+          "crossLinks": ["paper-recycling", "metal-recycling"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/metal-recycling",
+          "slug": "metal-recycling",
+          "names": {
+            "en": "Metal Recycling",
+            "uk": "Переробка металу",
+            "de": "Metallrecycling",
+            "ru": "Переработка металла",
+            "original": "Metal Recycling"
+          },
+          "crossLinks": ["paper-recycling", "plastic-recycling"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ewaste-recycling",
+          "slug": "ewaste-recycling",
+          "names": {
+            "en": "E-Waste Recycling",
+            "uk": "Переробка електронних відходів",
+            "de": "Elektroschrott-Recycling",
+            "ru": "Переработка электронных отходов",
+            "original": "E-Waste Recycling"
+          },
+          "crossLinks": ["metal-recycling", "plastic-recycling"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/water-supply",
+      "slug": "water-supply",
+      "names": {
+        "en": "Water Supply",
+        "uk": "Водопостачання",
+        "de": "Wasserversorgung",
+        "ru": "Водоснабжение",
+        "original": "Water Supply"
+      },
+      "altLabels": {
+        "en": ["water utility"],
+        "uk": ["водоканал"],
+        "de": [],
+        "ru": ["водоканал"]
+      },
+      "osmTag": "amenity=water_utility",
+      "naceRef": "E36.00",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1151832",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/water-hookup",
+          "slug": "water-hookup",
+          "names": {
+            "en": "Water Hookup",
+            "uk": "Підключення води",
+            "de": "Wasseranschluss",
+            "ru": "Подключение воды",
+            "original": "Water Hookup"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/water-meter-reading",
+          "slug": "water-meter-reading",
+          "names": {
+            "en": "Water Meter Reading",
+            "uk": "Зняття показників лічильника",
+            "de": "Wasserzählerablesung",
+            "ru": "Снятие показаний счётчика",
+            "original": "Water Meter Reading"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/water-quality-test",
+          "slug": "water-quality-test",
+          "names": {
+            "en": "Water Quality Test",
+            "uk": "Аналіз якості води",
+            "de": "Wasserqualitätsprüfung",
+            "ru": "Анализ качества воды",
+            "original": "Water Quality Test"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/leak-repair-utility",
+          "slug": "leak-repair-utility",
+          "names": {
+            "en": "Leak Repair",
+            "uk": "Усунення витоків",
+            "de": "Leckreparatur",
+            "ru": "Устранение утечек",
+            "original": "Leak Repair"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/courier-bike",
+      "slug": "courier-bike",
+      "names": {
+        "en": "Bike Courier",
+        "uk": "Вело-кур'єр",
+        "de": "Fahrradkurier",
+        "ru": "Вело-курьер",
+        "original": "Bike Courier"
+      },
+      "altLabels": {
+        "en": ["bicycle courier"],
+        "uk": [],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "office=courier+courier_type=bike",
+      "naceRef": "H53.20",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q5175164",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/inner-city-delivery",
+          "slug": "inner-city-delivery",
+          "names": {
+            "en": "Inner-city Delivery",
+            "uk": "Доставка в межах міста",
+            "de": "Innerstädtische Lieferung",
+            "ru": "Доставка по городу",
+            "original": "Inner-city Delivery"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/food-delivery-bike",
+          "slug": "food-delivery-bike",
+          "names": {
+            "en": "Food Delivery",
+            "uk": "Доставка їжі",
+            "de": "Essenslieferung",
+            "ru": "Доставка еды",
+            "original": "Food Delivery"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/document-delivery-bike",
+          "slug": "document-delivery-bike",
+          "names": {
+            "en": "Document Delivery",
+            "uk": "Доставка документів",
+            "de": "Dokumentenzustellung",
+            "ru": "Доставка документов",
+            "original": "Document Delivery"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/flowers-delivery-bike",
+          "slug": "flowers-delivery-bike",
+          "names": {
+            "en": "Flowers Delivery",
+            "uk": "Доставка квітів",
+            "de": "Blumenlieferung",
+            "ru": "Доставка цветов",
+            "original": "Flowers Delivery"
+          }
+        }
+      ]
+    }
+  ]
+}
