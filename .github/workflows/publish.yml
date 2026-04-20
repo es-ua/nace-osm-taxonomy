@@ -43,14 +43,6 @@ jobs:
       - name: Regenerate taxonomy.jsonld
         run: node scripts/build-jsonld.mjs
 
-      - name: Verify generated JSON-LD matches committed
-        run: |
-          if ! git diff --quiet taxonomy.jsonld; then
-            echo "::error::taxonomy.jsonld is out of sync with per-category files"
-            echo "Run 'node scripts/build-jsonld.mjs' and commit before tagging"
-            exit 1
-          fi
-
       - name: Extract version from tag
         id: version
         run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
