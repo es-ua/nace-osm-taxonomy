@@ -1,5 +1,8 @@
 {
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/sports-fitness",
   "slug": "sports-fitness",
+  "version": "1.1.0",
   "names": {
     "en": "Sports & Fitness",
     "uk": "Спорт та фітнес",
@@ -7,251 +10,305 @@
     "ru": "Спорт и фитнес",
     "original": "Sports & Fitness"
   },
+  "altLabels": {
+    "en": ["fitness", "training", "wellness"],
+    "uk": ["спортивні послуги"],
+    "de": ["sportangebote"],
+    "ru": ["спортивные услуги"]
+  },
   "icon": "🏋️",
   "naceRef": "R93",
+  "schemaOrgType": "SportsActivityLocation",
+  "wikidataId": "Q349",
   "subcategories": [
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/gym",
       "slug": "gym",
-      "names": {
-        "en": "Gym",
-        "uk": "Тренажерний зал",
-        "de": "Fitnessstudio",
-        "ru": "Тренажёрный зал",
-        "original": "Gym"
-      },
+      "names": { "en": "Gym", "uk": "Тренажерний зал", "de": "Fitnessstudio", "ru": "Тренажёрный зал", "original": "Gym" },
+      "altLabels": { "en": ["fitness centre", "fitness club"], "uk": ["фітнес-клуб"], "de": ["fitnessclub"], "ru": ["фитнес-клуб"] },
       "osmTag": "leisure=fitness_centre",
+      "naceRef": "R93.13",
+      "schemaOrgType": "ExerciseGym",
+      "wikidataId": "Q1326733",
       "templates": [
-        {
-          "slug": "monthly-pass",
-          "names": {
-            "en": "Monthly Pass",
-            "uk": "Місячний абонемент",
-            "de": "Monatskarte",
-            "ru": "Месячный абонемент",
-            "original": "Monthly Pass"
-          }
-        },
-        {
-          "slug": "day-pass",
-          "names": {
-            "en": "Day Pass",
-            "uk": "Разове відвідування",
-            "de": "Tageskarte",
-            "ru": "Разовое посещение",
-            "original": "Day Pass"
-          }
-        },
-        {
-          "slug": "personal-training",
-          "names": {
-            "en": "Personal Training",
-            "uk": "Персональне тренування",
-            "de": "Personal Training",
-            "ru": "Персональная тренировка",
-            "original": "Personal Training"
-          }
-        },
-        {
-          "slug": "group-fitness",
-          "names": {
-            "en": "Group Class",
-            "uk": "Групове заняття",
-            "de": "Gruppenkurs",
-            "ru": "Групповое занятие",
-            "original": "Group Class"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/monthly-pass", "slug": "monthly-pass", "names": { "en": "Monthly Pass", "uk": "Місячний абонемент", "de": "Monatskarte", "ru": "Месячный абонемент", "original": "Monthly Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/day-pass", "slug": "day-pass", "names": { "en": "Day Pass", "uk": "Разове відвідування", "de": "Tageskarte", "ru": "Разовое посещение", "original": "Day Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/personal-training", "slug": "personal-training", "names": { "en": "Personal Training", "uk": "Персональне тренування", "de": "Personal Training", "ru": "Персональная тренировка", "original": "Personal Training" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/group-fitness", "slug": "group-fitness", "names": { "en": "Group Class", "uk": "Групове заняття", "de": "Gruppenkurs", "ru": "Групповое занятие", "original": "Group Class" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/gym-guest-pass", "slug": "gym-guest-pass", "names": { "en": "Guest Pass", "uk": "Гостьовий пропуск", "de": "Gastpass", "ru": "Гостевой пропуск", "original": "Guest Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/gym-corporate-membership", "slug": "gym-corporate-membership", "names": { "en": "Corporate Membership", "uk": "Корпоративне членство", "de": "Firmenmitgliedschaft", "ru": "Корпоративное членство", "original": "Corporate Membership" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/gym-student-discount", "slug": "gym-student-discount", "names": { "en": "Student Discount", "uk": "Студентська знижка", "de": "Studentenrabatt", "ru": "Студенческая скидка", "original": "Student Discount" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/gym-family-pass", "slug": "gym-family-pass", "names": { "en": "Family Pass", "uk": "Сімейний абонемент", "de": "Familienpass", "ru": "Семейный абонемент", "original": "Family Pass" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/yoga-studio",
       "slug": "yoga-studio",
-      "names": {
-        "en": "Yoga Studio",
-        "uk": "Студія йоги",
-        "de": "Yogastudio",
-        "ru": "Студия йоги",
-        "original": "Yoga Studio"
-      },
+      "names": { "en": "Yoga Studio", "uk": "Студія йоги", "de": "Yogastudio", "ru": "Студия йоги", "original": "Yoga Studio" },
       "osmTag": "leisure=fitness_centre",
+      "naceRef": "R93.13",
+      "schemaOrgType": "ExerciseGym",
+      "wikidataId": "Q9095",
       "templates": [
-        {
-          "slug": "yoga-drop-in",
-          "names": {
-            "en": "Drop-in Class",
-            "uk": "Разове заняття",
-            "de": "Einzelstunde",
-            "ru": "Разовое занятие",
-            "original": "Drop-in Class"
-          }
-        },
-        {
-          "slug": "yoga-monthly",
-          "names": {
-            "en": "Monthly Unlimited",
-            "uk": "Безлімітний абонемент",
-            "de": "Monatsflatrate",
-            "ru": "Безлимитный абонемент",
-            "original": "Monthly Unlimited"
-          }
-        },
-        {
-          "slug": "yoga-private",
-          "names": {
-            "en": "Private Session",
-            "uk": "Індивідуальне заняття",
-            "de": "Privatstunde",
-            "ru": "Индивидуальное занятие",
-            "original": "Private Session"
-          }
-        },
-        {
-          "slug": "yoga-workshop",
-          "names": {
-            "en": "Workshop",
-            "uk": "Майстер-клас",
-            "de": "Workshop",
-            "ru": "Мастер-класс",
-            "original": "Workshop"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/yoga-drop-in", "slug": "yoga-drop-in", "names": { "en": "Drop-in Class", "uk": "Разове заняття", "de": "Einzelstunde", "ru": "Разовое занятие", "original": "Drop-in Class" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/yoga-monthly", "slug": "yoga-monthly", "names": { "en": "Monthly Unlimited", "uk": "Безлімітний абонемент", "de": "Monatsflatrate", "ru": "Безлимитный абонемент", "original": "Monthly Unlimited" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/yoga-private", "slug": "yoga-private", "names": { "en": "Private Session", "uk": "Індивідуальне заняття", "de": "Privatstunde", "ru": "Индивидуальное занятие", "original": "Private Session" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/yoga-workshop", "slug": "yoga-workshop", "names": { "en": "Workshop", "uk": "Майстер-клас", "de": "Workshop", "ru": "Мастер-класс", "original": "Workshop" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/swimming-pool",
       "slug": "swimming-pool",
-      "names": {
-        "en": "Swimming Pool",
-        "uk": "Басейн",
-        "de": "Schwimmbad",
-        "ru": "Бассейн",
-        "original": "Swimming Pool"
-      },
+      "names": { "en": "Swimming Pool", "uk": "Басейн", "de": "Schwimmbad", "ru": "Бассейн", "original": "Swimming Pool" },
       "osmTag": "leisure=swimming_pool",
+      "naceRef": "R93.11",
+      "schemaOrgType": "PublicSwimmingPool",
+      "wikidataId": "Q1501",
       "templates": [
-        {
-          "slug": "single-swim",
-          "names": {
-            "en": "Single Swim",
-            "uk": "Разове відвідування",
-            "de": "Einzeleintritt",
-            "ru": "Разовое посещение",
-            "original": "Single Swim"
-          }
-        },
-        {
-          "slug": "swim-monthly",
-          "names": {
-            "en": "Monthly Pass",
-            "uk": "Місячний абонемент",
-            "de": "Monatskarte",
-            "ru": "Месячный абонемент",
-            "original": "Monthly Pass"
-          }
-        },
-        {
-          "slug": "swim-lesson",
-          "names": {
-            "en": "Swimming Lesson",
-            "uk": "Урок плавання",
-            "de": "Schwimmunterricht",
-            "ru": "Урок плавания",
-            "original": "Swimming Lesson"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/single-swim", "slug": "single-swim", "names": { "en": "Single Swim", "uk": "Разове відвідування", "de": "Einzeleintritt", "ru": "Разовое посещение", "original": "Single Swim" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/swim-monthly", "slug": "swim-monthly", "names": { "en": "Monthly Pass", "uk": "Місячний абонемент", "de": "Monatskarte", "ru": "Месячный абонемент", "original": "Monthly Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/swim-lesson", "slug": "swim-lesson", "names": { "en": "Swimming Lesson", "uk": "Урок плавання", "de": "Schwimmunterricht", "ru": "Урок плавания", "original": "Swimming Lesson" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/aqua-aerobics", "slug": "aqua-aerobics", "names": { "en": "Aqua Aerobics", "uk": "Аквааеробіка", "de": "Aquafitness", "ru": "Аквааэробика", "original": "Aqua Aerobics" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/lap-lanes", "slug": "lap-lanes", "names": { "en": "Lap Lanes", "uk": "Плавальні доріжки", "de": "Schwimmbahnen", "ru": "Плавательные дорожки", "original": "Lap Lanes" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-pool-session", "slug": "kids-pool-session", "names": { "en": "Kids Pool Session", "uk": "Дитячий басейн", "de": "Kinderschwimmen", "ru": "Детский бассейн", "original": "Kids Pool Session" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/martial-arts",
       "slug": "martial-arts",
-      "names": {
-        "en": "Martial Arts",
-        "uk": "Бойові мистецтва",
-        "de": "Kampfsport",
-        "ru": "Боевые искусства",
-        "original": "Martial Arts"
-      },
+      "names": { "en": "Martial Arts", "uk": "Бойові мистецтва", "de": "Kampfsport", "ru": "Боевые искусства", "original": "Martial Arts" },
       "osmTag": "leisure=sports_centre",
+      "naceRef": "R93.12",
+      "schemaOrgType": "SportsClub",
+      "wikidataId": "Q11417",
       "templates": [
-        {
-          "slug": "ma-trial",
-          "names": {
-            "en": "Trial Class",
-            "uk": "Пробне заняття",
-            "de": "Probetraining",
-            "ru": "Пробное занятие",
-            "original": "Trial Class"
-          }
-        },
-        {
-          "slug": "ma-monthly",
-          "names": {
-            "en": "Monthly Membership",
-            "uk": "Місячний абонемент",
-            "de": "Monatsbeitrag",
-            "ru": "Месячный абонемент",
-            "original": "Monthly Membership"
-          }
-        },
-        {
-          "slug": "ma-private",
-          "names": {
-            "en": "Private Lesson",
-            "uk": "Індивідуальне заняття",
-            "de": "Privatstunde",
-            "ru": "Индивидуальное занятие",
-            "original": "Private Lesson"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/ma-trial", "slug": "ma-trial", "names": { "en": "Trial Class", "uk": "Пробне заняття", "de": "Probetraining", "ru": "Пробное занятие", "original": "Trial Class" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/ma-monthly", "slug": "ma-monthly", "names": { "en": "Monthly Membership", "uk": "Місячний абонемент", "de": "Monatsbeitrag", "ru": "Месячный абонемент", "original": "Monthly Membership" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/ma-private", "slug": "ma-private", "names": { "en": "Private Lesson", "uk": "Індивідуальне заняття", "de": "Privatstunde", "ru": "Индивидуальное занятие", "original": "Private Lesson" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/personal-trainer",
       "slug": "personal-trainer",
-      "names": {
-        "en": "Personal Trainer",
-        "uk": "Персональний тренер",
-        "de": "Personal Trainer",
-        "ru": "Персональный тренер",
-        "original": "Personal Trainer"
-      },
+      "names": { "en": "Personal Trainer", "uk": "Персональний тренер", "de": "Personal Trainer", "ru": "Персональный тренер", "original": "Personal Trainer" },
+      "naceRef": "R93.13",
+      "schemaOrgType": "SportsActivityLocation",
+      "wikidataId": "Q1543692",
       "templates": [
-        {
-          "slug": "pt-single",
-          "names": {
-            "en": "Single Session",
-            "uk": "Одне тренування",
-            "de": "Einzeltraining",
-            "ru": "Одна тренировка",
-            "original": "Single Session"
-          }
-        },
-        {
-          "slug": "pt-package-10",
-          "names": {
-            "en": "Package of 10",
-            "uk": "Пакет 10 тренувань",
-            "de": "10er-Karte",
-            "ru": "Пакет 10 тренировок",
-            "original": "Package of 10"
-          }
-        },
-        {
-          "slug": "nutrition-plan",
-          "names": {
-            "en": "Nutrition Plan",
-            "uk": "План харчування",
-            "de": "Ernährungsplan",
-            "ru": "План питания",
-            "original": "Nutrition Plan"
-          }
-        },
-        {
-          "slug": "online-coaching",
-          "names": {
-            "en": "Online Coaching",
-            "uk": "Онлайн-тренування",
-            "de": "Online-Coaching",
-            "ru": "Онлайн-тренировки",
-            "original": "Online Coaching"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/pt-single", "slug": "pt-single", "names": { "en": "Single Session", "uk": "Одне тренування", "de": "Einzeltraining", "ru": "Одна тренировка", "original": "Single Session" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/pt-package-10", "slug": "pt-package-10", "names": { "en": "Package of 10", "uk": "Пакет 10 тренувань", "de": "10er-Karte", "ru": "Пакет 10 тренировок", "original": "Package of 10" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/nutrition-plan", "slug": "nutrition-plan", "names": { "en": "Nutrition Plan", "uk": "План харчування", "de": "Ernährungsplan", "ru": "План питания", "original": "Nutrition Plan" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/online-coaching", "slug": "online-coaching", "names": { "en": "Online Coaching", "uk": "Онлайн-тренування", "de": "Online-Coaching", "ru": "Онлайн-тренировки", "original": "Online Coaching" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pilates-studio",
+      "slug": "pilates-studio",
+      "names": { "en": "Pilates Studio", "uk": "Студія пілатесу", "de": "Pilates-Studio", "ru": "Студия пилатеса", "original": "Pilates Studio" },
+      "altLabels": { "en": ["reformer pilates"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "leisure=fitness_centre",
+      "naceRef": "R93.13",
+      "schemaOrgType": "ExerciseGym",
+      "wikidataId": "Q207360",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/mat-pilates", "slug": "mat-pilates", "names": { "en": "Mat Pilates", "uk": "Пілатес на килимку", "de": "Matten-Pilates", "ru": "Пилатес на коврике", "original": "Mat Pilates" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/reformer-pilates", "slug": "reformer-pilates", "names": { "en": "Reformer Pilates", "uk": "Пілатес на реформері", "de": "Reformer-Pilates", "ru": "Пилатес на реформере", "original": "Reformer Pilates" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/private-pilates", "slug": "private-pilates", "names": { "en": "Private Session", "uk": "Індивідуальне заняття", "de": "Privatstunde", "ru": "Индивидуальное занятие", "original": "Private Session" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/prenatal-pilates", "slug": "prenatal-pilates", "names": { "en": "Prenatal Pilates", "uk": "Пілатес для вагітних", "de": "Pilates für Schwangere", "ru": "Пилатес для беременных", "original": "Prenatal Pilates" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/climbing-gym",
+      "slug": "climbing-gym",
+      "names": { "en": "Climbing Gym", "uk": "Скеледром", "de": "Kletterhalle", "ru": "Скалодром", "original": "Climbing Gym" },
+      "altLabels": { "en": ["bouldering", "rock climbing"], "uk": ["боулдеринг"], "de": ["bouldern"], "ru": ["боулдеринг"] },
+      "osmTag": "leisure=climbing",
+      "naceRef": "R93.11",
+      "schemaOrgType": "SportsActivityLocation",
+      "wikidataId": "Q1066708",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/day-pass-climbing", "slug": "day-pass-climbing", "names": { "en": "Day Pass", "uk": "Денний абонемент", "de": "Tageskarte", "ru": "Дневной абонемент", "original": "Day Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/monthly-climbing", "slug": "monthly-climbing", "names": { "en": "Monthly Membership", "uk": "Місячний абонемент", "de": "Monatsmitgliedschaft", "ru": "Месячный абонемент", "original": "Monthly Membership" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/climbing-class", "slug": "climbing-class", "names": { "en": "Climbing Class", "uk": "Заняття зі скелелазіння", "de": "Kletterkurs", "ru": "Занятие по скалолазанию", "original": "Climbing Class" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-climbing", "slug": "kids-climbing", "names": { "en": "Kids Climbing", "uk": "Скелелазіння для дітей", "de": "Kinderklettern", "ru": "Скалолазание для детей", "original": "Kids Climbing" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/equipment-rental-climbing", "slug": "equipment-rental-climbing", "names": { "en": "Equipment Rental", "uk": "Прокат спорядження", "de": "Ausrüstungsverleih", "ru": "Прокат снаряжения", "original": "Equipment Rental" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/tennis-club",
+      "slug": "tennis-club",
+      "names": { "en": "Tennis Club", "uk": "Тенісний клуб", "de": "Tennisclub", "ru": "Теннисный клуб", "original": "Tennis Club" },
+      "altLabels": { "en": ["tennis court"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "leisure=pitch",
+      "naceRef": "R93.12",
+      "schemaOrgType": "SportsClub",
+      "wikidataId": "Q847",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/court-rental", "slug": "court-rental", "names": { "en": "Court Rental", "uk": "Оренда корту", "de": "Platzmiete", "ru": "Аренда корта", "original": "Court Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/tennis-coaching", "slug": "tennis-coaching", "names": { "en": "Tennis Coaching", "uk": "Тренування з тенісу", "de": "Tennistraining", "ru": "Тренировка по теннису", "original": "Tennis Coaching" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/tennis-tournament-entry", "slug": "tennis-tournament-entry", "names": { "en": "Tournament Entry", "uk": "Участь у турнірі", "de": "Turnieranmeldung", "ru": "Участие в турнире", "original": "Tournament Entry" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/junior-tennis", "slug": "junior-tennis", "names": { "en": "Junior Tennis", "uk": "Дитячий теніс", "de": "Junioren-Tennis", "ru": "Детский теннис", "original": "Junior Tennis" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/golf-club",
+      "slug": "golf-club",
+      "names": { "en": "Golf Club", "uk": "Гольф-клуб", "de": "Golfclub", "ru": "Гольф-клуб", "original": "Golf Club" },
+      "osmTag": "leisure=golf_course",
+      "naceRef": "R93.11",
+      "schemaOrgType": "GolfCourse",
+      "wikidataId": "Q1156",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/green-fee", "slug": "green-fee", "names": { "en": "Green Fee", "uk": "Грін-фі", "de": "Greenfee", "ru": "Грин-фи", "original": "Green Fee" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/golf-lesson", "slug": "golf-lesson", "names": { "en": "Golf Lesson", "uk": "Урок гольфу", "de": "Golfstunde", "ru": "Урок гольфа", "original": "Golf Lesson" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/club-membership", "slug": "club-membership", "names": { "en": "Club Membership", "uk": "Членство в клубі", "de": "Clubmitgliedschaft", "ru": "Членство в клубе", "original": "Club Membership" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/golf-cart-rental", "slug": "golf-cart-rental", "names": { "en": "Golf Cart Rental", "uk": "Оренда гольф-кара", "de": "Golfcart-Verleih", "ru": "Аренда гольф-кара", "original": "Golf Cart Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/driving-range", "slug": "driving-range", "names": { "en": "Driving Range", "uk": "Тренувальне поле", "de": "Driving Range", "ru": "Драйвинг-рейндж", "original": "Driving Range" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/paintball-field",
+      "slug": "paintball-field",
+      "names": { "en": "Paintball Field", "uk": "Пейнтбольний клуб", "de": "Paintballanlage", "ru": "Пейнтбольный клуб", "original": "Paintball Field" },
+      "altLabels": { "en": ["airsoft field"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "leisure=paintball",
+      "naceRef": "R93.29",
+      "schemaOrgType": "SportsActivityLocation",
+      "wikidataId": "Q165620",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/paintball-game", "slug": "paintball-game", "names": { "en": "Paintball Game", "uk": "Пейнтбольна гра", "de": "Paintball-Spiel", "ru": "Пейнтбольная игра", "original": "Paintball Game" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/group-package-paintball", "slug": "group-package-paintball", "names": { "en": "Group Package", "uk": "Груповий пакет", "de": "Gruppenpaket", "ru": "Групповой пакет", "original": "Group Package" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/equipment-rental-paintball", "slug": "equipment-rental-paintball", "names": { "en": "Equipment Rental", "uk": "Прокат спорядження", "de": "Ausrüstungsverleih", "ru": "Прокат снаряжения", "original": "Equipment Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/themed-scenario", "slug": "themed-scenario", "names": { "en": "Themed Scenario", "uk": "Тематичний сценарій", "de": "Themenszenario", "ru": "Тематический сценарий", "original": "Themed Scenario" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/karting-track",
+      "slug": "karting-track",
+      "names": { "en": "Karting Track", "uk": "Картинг-трек", "de": "Kartbahn", "ru": "Картинг-трек", "original": "Karting Track" },
+      "altLabels": { "en": ["go-kart track"], "uk": ["карт-клуб"], "de": [], "ru": [] },
+      "osmTag": "leisure=karting",
+      "naceRef": "R93.29",
+      "schemaOrgType": "SportsActivityLocation",
+      "wikidataId": "Q189112",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/single-race", "slug": "single-race", "names": { "en": "Single Race", "uk": "Один заїзд", "de": "Einzelrennen", "ru": "Один заезд", "original": "Single Race" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/race-package", "slug": "race-package", "names": { "en": "Race Package", "uk": "Пакет заїздів", "de": "Rennpaket", "ru": "Пакет заездов", "original": "Race Package" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-karting", "slug": "kids-karting", "names": { "en": "Kids Karting", "uk": "Картинг для дітей", "de": "Kinderkarting", "ru": "Картинг для детей", "original": "Kids Karting" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/karting-tournament", "slug": "karting-tournament", "names": { "en": "Karting Tournament", "uk": "Турнір з картингу", "de": "Kartingturnier", "ru": "Турнир по картингу", "original": "Karting Tournament" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/equestrian-club",
+      "slug": "equestrian-club",
+      "names": { "en": "Equestrian Club", "uk": "Кінний клуб", "de": "Reitverein", "ru": "Конный клуб", "original": "Equestrian Club" },
+      "altLabels": { "en": ["horse riding", "stable"], "uk": ["кінна школа"], "de": [], "ru": ["конюшня"] },
+      "osmTag": "leisure=horse_riding",
+      "naceRef": "R93.19",
+      "schemaOrgType": "SportsClub",
+      "wikidataId": "Q4131344",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/riding-lesson", "slug": "riding-lesson", "names": { "en": "Riding Lesson", "uk": "Урок верхової їзди", "de": "Reitstunde", "ru": "Урок верховой езды", "original": "Riding Lesson" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/trail-ride", "slug": "trail-ride", "names": { "en": "Trail Ride", "uk": "Кінна прогулянка", "de": "Ausritt", "ru": "Конная прогулка", "original": "Trail Ride" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/horse-boarding", "slug": "horse-boarding", "names": { "en": "Horse Boarding", "uk": "Утримання коней", "de": "Pferdepension", "ru": "Содержание лошадей", "original": "Horse Boarding" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-pony-class", "slug": "kids-pony-class", "names": { "en": "Kids Pony Class", "uk": "Заняття на поні для дітей", "de": "Ponykurs für Kinder", "ru": "Занятие на пони для детей", "original": "Kids Pony Class" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/jumping-class", "slug": "jumping-class", "names": { "en": "Jumping Class", "uk": "Заняття з конкуру", "de": "Springreitkurs", "ru": "Занятие по конкуру", "original": "Jumping Class" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/skateboarding-park",
+      "slug": "skateboarding-park",
+      "names": { "en": "Skateboarding Park", "uk": "Скейт-парк", "de": "Skatepark", "ru": "Скейт-парк", "original": "Skateboarding Park" },
+      "altLabels": { "en": ["skate park"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "leisure=sports_centre+sport=skateboard",
+      "naceRef": "R93.11",
+      "schemaOrgType": "SportsActivityLocation",
+      "wikidataId": "Q7486596",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/day-pass-skate", "slug": "day-pass-skate", "names": { "en": "Day Pass", "uk": "Денний абонемент", "de": "Tageskarte", "ru": "Дневной абонемент", "original": "Day Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/skate-lesson", "slug": "skate-lesson", "names": { "en": "Skate Lesson", "uk": "Урок скейтбордингу", "de": "Skate-Stunde", "ru": "Урок скейтбординга", "original": "Skate Lesson" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/skate-gear-rental", "slug": "skate-gear-rental", "names": { "en": "Skate Gear Rental", "uk": "Прокат скейт-спорядження", "de": "Skate-Ausrüstungsverleih", "ru": "Прокат скейт-снаряжения", "original": "Skate Gear Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/skate-competition", "slug": "skate-competition", "names": { "en": "Skate Competition", "uk": "Скейт-змагання", "de": "Skate-Wettbewerb", "ru": "Скейт-соревнование", "original": "Skate Competition" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/ice-skating-school",
+      "slug": "ice-skating-school",
+      "names": { "en": "Ice Skating School", "uk": "Школа фігурного катання", "de": "Eislaufschule", "ru": "Школа фигурного катания", "original": "Ice Skating School" },
+      "altLabels": { "en": ["figure skating school"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "leisure=ice_rink+sport=figure_skating",
+      "naceRef": "P85.51",
+      "schemaOrgType": "SportsClub",
+      "wikidataId": "Q134168",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/group-ice-lesson", "slug": "group-ice-lesson", "names": { "en": "Group Ice Lesson", "uk": "Групове заняття на льоду", "de": "Gruppen-Eisstunde", "ru": "Групповое занятие на льду", "original": "Group Ice Lesson" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/private-ice-lesson", "slug": "private-ice-lesson", "names": { "en": "Private Ice Lesson", "uk": "Індивідуальне заняття на льоду", "de": "Private Eisstunde", "ru": "Индивидуальное занятие на льду", "original": "Private Ice Lesson" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-ice-class", "slug": "kids-ice-class", "names": { "en": "Kids Ice Class", "uk": "Дитяче заняття на льоду", "de": "Kinder-Eiskurs", "ru": "Детское занятие на льду", "original": "Kids Ice Class" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/adult-ice-class", "slug": "adult-ice-class", "names": { "en": "Adult Ice Class", "uk": "Заняття на льоду для дорослих", "de": "Erwachsenen-Eiskurs", "ru": "Занятие на льду для взрослых", "original": "Adult Ice Class" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/gymnastics-club",
+      "slug": "gymnastics-club",
+      "names": { "en": "Gymnastics Club", "uk": "Гімнастичний клуб", "de": "Turnverein", "ru": "Гимнастический клуб", "original": "Gymnastics Club" },
+      "altLabels": { "en": ["gymnastics gym"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "leisure=sports_centre+sport=gymnastics",
+      "naceRef": "R93.12",
+      "schemaOrgType": "SportsClub",
+      "wikidataId": "Q14336",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/rhythmic-gymnastics-class", "slug": "rhythmic-gymnastics-class", "names": { "en": "Rhythmic Gymnastics Class", "uk": "Заняття з художньої гімнастики", "de": "Rhythmische Sportgymnastik-Kurs", "ru": "Занятие по художественной гимнастике", "original": "Rhythmic Gymnastics Class" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/artistic-gymnastics-class", "slug": "artistic-gymnastics-class", "names": { "en": "Artistic Gymnastics Class", "uk": "Заняття зі спортивної гімнастики", "de": "Kunstturnen-Kurs", "ru": "Занятие по спортивной гимнастике", "original": "Artistic Gymnastics Class" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-gymnastics", "slug": "kids-gymnastics", "names": { "en": "Kids Gymnastics", "uk": "Гімнастика для дітей", "de": "Kinderturnen", "ru": "Гимнастика для детей", "original": "Kids Gymnastics" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/competitive-gymnastics", "slug": "competitive-gymnastics", "names": { "en": "Competitive Gymnastics", "uk": "Змагальна гімнастика", "de": "Wettkampfturnen", "ru": "Соревновательная гимнастика", "original": "Competitive Gymnastics" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/court-pitch-rental",
+      "slug": "court-pitch-rental",
+      "names": { "en": "Court / Pitch Rental", "uk": "Оренда корту", "de": "Platzmiete", "ru": "Аренда площадки", "original": "Court / Pitch Rental" },
+      "altLabels": { "en": ["sports ground rental"], "uk": ["майданчик"], "de": [], "ru": ["поле"] },
+      "osmTag": "leisure=pitch",
+      "naceRef": "R93.11+N77.33",
+      "schemaOrgType": "SportsActivityLocation",
+      "wikidataId": "Q4407",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/football-pitch-rental", "slug": "football-pitch-rental", "names": { "en": "Football Pitch Rental", "uk": "Оренда футбольного поля", "de": "Fußballplatzmiete", "ru": "Аренда футбольного поля", "original": "Football Pitch Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/basketball-court-rental", "slug": "basketball-court-rental", "names": { "en": "Basketball Court Rental", "uk": "Оренда баскетбольного майданчика", "de": "Basketballplatz-Miete", "ru": "Аренда баскетбольной площадки", "original": "Basketball Court Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/volleyball-court-rental", "slug": "volleyball-court-rental", "names": { "en": "Volleyball Court Rental", "uk": "Оренда волейбольного майданчика", "de": "Volleyballplatz-Miete", "ru": "Аренда волейбольной площадки", "original": "Volleyball Court Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/padel-court-rental", "slug": "padel-court-rental", "names": { "en": "Padel Court Rental", "uk": "Оренда корту для паделу", "de": "Padel-Court-Miete", "ru": "Аренда падел-корта", "original": "Padel Court Rental" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/esports-gaming-cafe",
+      "slug": "esports-gaming-cafe",
+      "names": { "en": "Esports / Gaming Cafe", "uk": "Кіберспорт-клуб", "de": "E-Sports-Café", "ru": "Киберспортивный клуб", "original": "Esports / Gaming Cafe" },
+      "altLabels": { "en": ["gaming lounge", "LAN center"], "uk": ["комп'ютерний клуб"], "de": [], "ru": ["компьютерный клуб"] },
+      "osmTag": "amenity=internet_cafe+computer_games=yes",
+      "naceRef": "R93.29+I56.30",
+      "schemaOrgType": "EntertainmentBusiness",
+      "wikidataId": "Q13230",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/hourly-pc-station", "slug": "hourly-pc-station", "names": { "en": "Hourly PC Station", "uk": "Погодинне ПК-місце", "de": "Stunden-PC-Platz", "ru": "Почасовое ПК-место", "original": "Hourly PC Station" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/tournament-entry-esports", "slug": "tournament-entry-esports", "names": { "en": "Tournament Entry", "uk": "Участь у турнірі", "de": "Turnieranmeldung", "ru": "Участие в турнире", "original": "Tournament Entry" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/coaching-esports", "slug": "coaching-esports", "names": { "en": "Esports Coaching", "uk": "Кіберспортивний коучинг", "de": "E-Sports-Coaching", "ru": "Киберспортивный коучинг", "original": "Esports Coaching" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/private-room-esports", "slug": "private-room-esports", "names": { "en": "Private Gaming Room", "uk": "Приватна ігрова кімната", "de": "Privater Gaming-Raum", "ru": "Приватная игровая комната", "original": "Private Gaming Room" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/chess-club",
+      "slug": "chess-club",
+      "names": { "en": "Chess Club", "uk": "Шаховий клуб", "de": "Schachverein", "ru": "Шахматный клуб", "original": "Chess Club" },
+      "altLabels": { "en": ["chess center"], "uk": ["шахи"], "de": [], "ru": ["шахматы"] },
+      "osmTag": "leisure=sports_centre+sport=chess",
+      "naceRef": "R93.12",
+      "schemaOrgType": "SportsClub",
+      "wikidataId": "Q637846",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/club-membership-chess", "slug": "club-membership-chess", "names": { "en": "Club Membership", "uk": "Членство в клубі", "de": "Vereinsmitgliedschaft", "ru": "Членство в клубе", "original": "Club Membership" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/rated-tournament", "slug": "rated-tournament", "names": { "en": "Rated Tournament", "uk": "Рейтинговий турнір", "de": "Wertungsturnier", "ru": "Рейтинговый турнир", "original": "Rated Tournament" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/coaching-chess", "slug": "coaching-chess", "names": { "en": "Chess Coaching", "uk": "Шахове тренування", "de": "Schachtraining", "ru": "Шахматный коучинг", "original": "Chess Coaching" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/open-play-session", "slug": "open-play-session", "names": { "en": "Open Play Session", "uk": "Відкрита гра", "de": "Offene Spielsession", "ru": "Открытая игровая сессия", "original": "Open Play Session" } }
       ]
     }
   ]

@@ -1,0 +1,674 @@
+{
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/government-public",
+  "slug": "government-public",
+  "version": "1.1.0",
+  "names": {
+    "en": "Government & Public Services",
+    "uk": "Уряд та публічні послуги",
+    "de": "Behörden & Öffentliche Dienste",
+    "ru": "Госорганы и публичные услуги",
+    "original": "Government & Public Services"
+  },
+  "altLabels": {
+    "en": ["public services", "civic services", "government office"],
+    "uk": ["державні послуги", "адміністративні послуги"],
+    "de": ["öffentliche dienstleistungen", "verwaltung"],
+    "ru": ["государственные услуги", "административные услуги"]
+  },
+  "icon": "⚖️",
+  "naceRef": "O84+R91",
+  "schemaOrgType": "GovernmentOrganization",
+  "wikidataId": "Q7188",
+  "subcategories": [
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/municipal-office",
+      "slug": "municipal-office",
+      "names": {
+        "en": "Municipal Office",
+        "uk": "Муніципалітет",
+        "de": "Rathaus",
+        "ru": "Муниципалитет",
+        "original": "Municipal Office"
+      },
+      "altLabels": {
+        "en": ["city hall", "town hall"],
+        "uk": ["міська рада", "ратуша"],
+        "de": ["stadtverwaltung", "gemeindeamt"],
+        "ru": ["мэрия", "городская администрация"]
+      },
+      "osmTag": "amenity=townhall",
+      "naceRef": "O84.11",
+      "schemaOrgType": "GovernmentOffice",
+      "wikidataId": "Q543654",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/address-registration",
+          "slug": "address-registration",
+          "names": {
+            "en": "Address Registration",
+            "uk": "Реєстрація місця проживання",
+            "de": "Anmeldung",
+            "ru": "Регистрация по месту жительства",
+            "original": "Address Registration"
+          },
+          "wikidataId": "Q1342037",
+          "crossLinks": ["residence-permit", "civil-document-issuance"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/residence-permit",
+          "slug": "residence-permit",
+          "names": {
+            "en": "Residence Permit",
+            "uk": "Дозвіл на проживання",
+            "de": "Aufenthaltstitel",
+            "ru": "Вид на жительство",
+            "original": "Residence Permit"
+          },
+          "wikidataId": "Q1473668",
+          "crossLinks": ["address-registration", "passport-application"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/local-tax-office-visit",
+          "slug": "local-tax-office-visit",
+          "names": {
+            "en": "Local Tax Office Visit",
+            "uk": "Візит до місцевої податкової",
+            "de": "Termin im Finanzamt",
+            "ru": "Визит в местную налоговую",
+            "original": "Local Tax Office Visit"
+          },
+          "wikidataId": "Q1077266",
+          "crossLinks": ["tax-return-filing", "tax-consultation-gov"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/civil-document-issuance",
+          "slug": "civil-document-issuance",
+          "names": {
+            "en": "Civil Document Issuance",
+            "uk": "Видача цивільних документів",
+            "de": "Ausstellung von Zivilurkunden",
+            "ru": "Выдача гражданских документов",
+            "original": "Civil Document Issuance"
+          },
+          "wikidataId": "Q2304081",
+          "crossLinks": ["address-registration", "birth-certificate"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/post-office",
+      "slug": "post-office",
+      "names": {
+        "en": "Post Office",
+        "uk": "Поштове відділення",
+        "de": "Postamt",
+        "ru": "Почтовое отделение",
+        "original": "Post Office"
+      },
+      "altLabels": {
+        "en": ["post"],
+        "uk": ["пошта", "відділення пошти"],
+        "de": ["post", "postfiliale"],
+        "ru": ["почта", "отделение почты"]
+      },
+      "osmTag": "amenity=post_office",
+      "naceRef": "H53.10",
+      "schemaOrgType": "PostOffice",
+      "wikidataId": "Q35054",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/parcel-shipping",
+          "slug": "parcel-shipping",
+          "names": {
+            "en": "Parcel Shipping",
+            "uk": "Відправлення посилок",
+            "de": "Paketversand",
+            "ru": "Отправка посылок",
+            "original": "Parcel Shipping"
+          },
+          "wikidataId": "Q1062960",
+          "crossLinks": ["registered-letter", "parcel-pickup-pa"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/registered-letter",
+          "slug": "registered-letter",
+          "names": {
+            "en": "Registered Letter",
+            "uk": "Рекомендований лист",
+            "de": "Einschreiben",
+            "ru": "Заказное письмо",
+            "original": "Registered Letter"
+          },
+          "wikidataId": "Q1192305",
+          "crossLinks": ["parcel-shipping", "postal-money-order"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/postal-money-order",
+          "slug": "postal-money-order",
+          "names": {
+            "en": "Postal Money Order",
+            "uk": "Поштовий грошовий переказ",
+            "de": "Postanweisung",
+            "ru": "Почтовый денежный перевод",
+            "original": "Postal Money Order"
+          },
+          "wikidataId": "Q1132270",
+          "crossLinks": ["registered-letter"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/parcel-pickup-pa",
+          "slug": "parcel-pickup-pa",
+          "names": {
+            "en": "Parcel Pickup",
+            "uk": "Отримання посилки",
+            "de": "Paketabholung",
+            "ru": "Получение посылки",
+            "original": "Parcel Pickup"
+          },
+          "wikidataId": "Q1062960",
+          "crossLinks": ["parcel-shipping"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/social-services",
+      "slug": "social-services",
+      "names": {
+        "en": "Social Services",
+        "uk": "Соціальні послуги",
+        "de": "Sozialamt",
+        "ru": "Социальная служба",
+        "original": "Social Services"
+      },
+      "altLabels": {
+        "en": ["social work office"],
+        "uk": ["соціальний захист", "управління праці та соціального захисту"],
+        "de": ["sozialdienst", "sozialhilfe"],
+        "ru": ["социальная защита"]
+      },
+      "osmTag": "office=government",
+      "naceRef": "Q88.99",
+      "schemaOrgType": "GovernmentOffice",
+      "wikidataId": "Q1183208",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/benefits-application",
+          "slug": "benefits-application",
+          "names": {
+            "en": "Benefits Application",
+            "uk": "Заява на отримання допомоги",
+            "de": "Sozialleistungsantrag",
+            "ru": "Заявление на пособие",
+            "original": "Benefits Application"
+          },
+          "wikidataId": "Q1149984",
+          "crossLinks": ["social-worker-consultation", "disability-services"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/social-worker-consultation",
+          "slug": "social-worker-consultation",
+          "names": {
+            "en": "Social Worker Consultation",
+            "uk": "Консультація соціального працівника",
+            "de": "Sozialarbeiter-Beratung",
+            "ru": "Консультация социального работника",
+            "original": "Social Worker Consultation"
+          },
+          "wikidataId": "Q1147888",
+          "crossLinks": ["benefits-application", "child-welfare-services"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/child-welfare-services",
+          "slug": "child-welfare-services",
+          "names": {
+            "en": "Child Welfare Services",
+            "uk": "Служба у справах дітей",
+            "de": "Jugendamt",
+            "ru": "Служба по делам детей",
+            "original": "Child Welfare Services"
+          },
+          "wikidataId": "Q5096927",
+          "crossLinks": ["social-worker-consultation", "benefits-application"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/disability-services",
+          "slug": "disability-services",
+          "names": {
+            "en": "Disability Services",
+            "uk": "Послуги для людей з інвалідністю",
+            "de": "Behindertendienste",
+            "ru": "Услуги для людей с инвалидностью",
+            "original": "Disability Services"
+          },
+          "wikidataId": "Q12131",
+          "crossLinks": ["benefits-application", "social-worker-consultation"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/employment-center",
+      "slug": "employment-center",
+      "names": {
+        "en": "Employment Center",
+        "uk": "Центр зайнятості",
+        "de": "Arbeitsamt",
+        "ru": "Центр занятости",
+        "original": "Employment Center"
+      },
+      "altLabels": {
+        "en": ["job center"],
+        "uk": ["служба зайнятості"],
+        "de": ["jobcenter", "agentur für arbeit"],
+        "ru": ["биржа труда"]
+      },
+      "osmTag": "office=employment_agency",
+      "naceRef": "O84.13+N78.10",
+      "schemaOrgType": "EmploymentAgency",
+      "wikidataId": "Q5375915",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/job-registration",
+          "slug": "job-registration",
+          "names": {
+            "en": "Job Registration",
+            "uk": "Реєстрація як безробітного",
+            "de": "Arbeitslosmeldung",
+            "ru": "Регистрация в качестве безработного",
+            "original": "Job Registration"
+          },
+          "wikidataId": "Q41699",
+          "crossLinks": ["unemployment-benefit", "vacancy-search"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/unemployment-benefit",
+          "slug": "unemployment-benefit",
+          "names": {
+            "en": "Unemployment Benefit",
+            "uk": "Допомога по безробіттю",
+            "de": "Arbeitslosengeld",
+            "ru": "Пособие по безработице",
+            "original": "Unemployment Benefit"
+          },
+          "wikidataId": "Q1325769",
+          "crossLinks": ["job-registration", "benefits-application"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/retraining-program",
+          "slug": "retraining-program",
+          "names": {
+            "en": "Retraining Program",
+            "uk": "Програма перепідготовки",
+            "de": "Umschulungsprogramm",
+            "ru": "Программа переподготовки",
+            "original": "Retraining Program"
+          },
+          "wikidataId": "Q1816089",
+          "crossLinks": ["job-registration", "vacancy-search"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/vacancy-search",
+          "slug": "vacancy-search",
+          "names": {
+            "en": "Vacancy Search",
+            "uk": "Пошук вакансій",
+            "de": "Stellensuche",
+            "ru": "Поиск вакансий",
+            "original": "Vacancy Search"
+          },
+          "wikidataId": "Q1471769",
+          "crossLinks": ["job-registration", "retraining-program"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/registry-office",
+      "slug": "registry-office",
+      "names": {
+        "en": "Registry Office",
+        "uk": "РАЦС",
+        "de": "Standesamt",
+        "ru": "ЗАГС",
+        "original": "Registry Office (ZAGS / Standesamt)"
+      },
+      "altLabels": {
+        "en": ["civil registry", "vital records"],
+        "uk": ["відділ реєстрації актів цивільного стану"],
+        "de": ["personenstandsamt", "zivilstandsamt"],
+        "ru": ["отдел записи актов гражданского состояния"]
+      },
+      "osmTag": "office=government",
+      "naceRef": "O84.11",
+      "schemaOrgType": "GovernmentOffice",
+      "wikidataId": "Q1140776",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/marriage-registration",
+          "slug": "marriage-registration",
+          "names": {
+            "en": "Marriage Registration",
+            "uk": "Реєстрація шлюбу",
+            "de": "Eheschließung",
+            "ru": "Регистрация брака",
+            "original": "Marriage Registration"
+          },
+          "wikidataId": "Q8445",
+          "crossLinks": ["birth-certificate", "name-change"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/birth-certificate",
+          "slug": "birth-certificate",
+          "names": {
+            "en": "Birth Certificate",
+            "uk": "Свідоцтво про народження",
+            "de": "Geburtsurkunde",
+            "ru": "Свидетельство о рождении",
+            "original": "Birth Certificate"
+          },
+          "wikidataId": "Q1043397",
+          "crossLinks": ["civil-document-issuance", "marriage-registration"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/death-certificate",
+          "slug": "death-certificate",
+          "names": {
+            "en": "Death Certificate",
+            "uk": "Свідоцтво про смерть",
+            "de": "Sterbeurkunde",
+            "ru": "Свидетельство о смерти",
+            "original": "Death Certificate"
+          },
+          "wikidataId": "Q1198122",
+          "crossLinks": ["civil-document-issuance"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/name-change",
+          "slug": "name-change",
+          "names": {
+            "en": "Name Change",
+            "uk": "Зміна імені",
+            "de": "Namensänderung",
+            "ru": "Смена имени",
+            "original": "Name Change"
+          },
+          "wikidataId": "Q1418161",
+          "crossLinks": ["marriage-registration", "civil-document-issuance"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/library",
+      "slug": "library",
+      "names": {
+        "en": "Library",
+        "uk": "Бібліотека",
+        "de": "Bibliothek",
+        "ru": "Библиотека",
+        "original": "Library"
+      },
+      "altLabels": {
+        "en": ["public library"],
+        "uk": ["публічна бібліотека", "читальня"],
+        "de": ["öffentliche bibliothek", "stadtbibliothek"],
+        "ru": ["публичная библиотека", "читальня"]
+      },
+      "osmTag": "amenity=library",
+      "naceRef": "R91.01",
+      "schemaOrgType": "Library",
+      "wikidataId": "Q7075",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/book-borrowing",
+          "slug": "book-borrowing",
+          "names": {
+            "en": "Book Borrowing",
+            "uk": "Видача книг",
+            "de": "Buchausleihe",
+            "ru": "Выдача книг",
+            "original": "Book Borrowing"
+          },
+          "wikidataId": "Q188823",
+          "crossLinks": ["study-room-booking", "library-event"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/study-room-booking",
+          "slug": "study-room-booking",
+          "names": {
+            "en": "Study Room Booking",
+            "uk": "Бронювання читального залу",
+            "de": "Lernraumbuchung",
+            "ru": "Бронирование читального зала",
+            "original": "Study Room Booking"
+          },
+          "wikidataId": "Q1341387",
+          "crossLinks": ["book-borrowing", "library-event"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/kids-reading-club",
+          "slug": "kids-reading-club",
+          "names": {
+            "en": "Kids Reading Club",
+            "uk": "Дитячий клуб читання",
+            "de": "Kinderleseclub",
+            "ru": "Детский клуб чтения",
+            "original": "Kids Reading Club"
+          },
+          "wikidataId": "Q2155959",
+          "crossLinks": ["book-borrowing", "library-event"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/library-event",
+          "slug": "library-event",
+          "names": {
+            "en": "Library Event",
+            "uk": "Бібліотечний захід",
+            "de": "Bibliotheksveranstaltung",
+            "ru": "Библиотечное мероприятие",
+            "original": "Library Event"
+          },
+          "wikidataId": "Q1656682",
+          "crossLinks": ["book-borrowing", "kids-reading-club"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/public-archives",
+      "slug": "public-archives",
+      "names": {
+        "en": "Public Archives",
+        "uk": "Державний архів",
+        "de": "Staatsarchiv",
+        "ru": "Государственный архив",
+        "original": "Public Archives"
+      },
+      "altLabels": {
+        "en": ["state archive"],
+        "uk": ["архів", "національний архів"],
+        "de": ["archiv", "landesarchiv"],
+        "ru": ["архив", "национальный архив"]
+      },
+      "osmTag": "amenity=archive",
+      "naceRef": "R91.02",
+      "schemaOrgType": "ArchiveOrganization",
+      "wikidataId": "Q166118",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/archive-document-request",
+          "slug": "archive-document-request",
+          "names": {
+            "en": "Archive Document Request",
+            "uk": "Запит на архівний документ",
+            "de": "Archivdokumentenanfrage",
+            "ru": "Запрос архивного документа",
+            "original": "Archive Document Request"
+          },
+          "wikidataId": "Q49848",
+          "crossLinks": ["genealogy-research", "archive-tour"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/genealogy-research",
+          "slug": "genealogy-research",
+          "names": {
+            "en": "Genealogy Research",
+            "uk": "Генеалогічне дослідження",
+            "de": "Ahnenforschung",
+            "ru": "Генеалогическое исследование",
+            "original": "Genealogy Research"
+          },
+          "wikidataId": "Q179797",
+          "crossLinks": ["archive-document-request"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/archive-tour",
+          "slug": "archive-tour",
+          "names": {
+            "en": "Archive Tour",
+            "uk": "Екскурсія архівом",
+            "de": "Archivführung",
+            "ru": "Экскурсия по архиву",
+            "original": "Archive Tour"
+          },
+          "wikidataId": "Q1320350",
+          "crossLinks": ["archive-document-request", "genealogy-research"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/tax-office",
+      "slug": "tax-office",
+      "names": {
+        "en": "Tax Office",
+        "uk": "Податкова",
+        "de": "Finanzamt",
+        "ru": "Налоговая инспекция",
+        "original": "Tax Office"
+      },
+      "altLabels": {
+        "en": ["tax administration", "IRS"],
+        "uk": ["податкова інспекція", "державна податкова служба"],
+        "de": ["steuerbehörde", "steueramt"],
+        "ru": ["налоговая", "налоговая служба"]
+      },
+      "osmTag": "office=tax_advisor",
+      "naceRef": "O84.11",
+      "schemaOrgType": "GovernmentOffice",
+      "wikidataId": "Q1077266",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tax-return-filing",
+          "slug": "tax-return-filing",
+          "names": {
+            "en": "Tax Return Filing",
+            "uk": "Подання податкової декларації",
+            "de": "Steuererklärung einreichen",
+            "ru": "Подача налоговой декларации",
+            "original": "Tax Return Filing"
+          },
+          "wikidataId": "Q1066981",
+          "crossLinks": ["tax-consultation-gov", "tax-debt-resolution"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tax-consultation-gov",
+          "slug": "tax-consultation-gov",
+          "names": {
+            "en": "Tax Consultation",
+            "uk": "Податкова консультація",
+            "de": "Steuerberatung",
+            "ru": "Налоговая консультация",
+            "original": "Tax Consultation"
+          },
+          "wikidataId": "Q1153376",
+          "crossLinks": ["tax-return-filing", "tax-debt-resolution"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/tax-debt-resolution",
+          "slug": "tax-debt-resolution",
+          "names": {
+            "en": "Tax Debt Resolution",
+            "uk": "Врегулювання податкового боргу",
+            "de": "Steuerschuldenregulierung",
+            "ru": "Урегулирование налоговой задолженности",
+            "original": "Tax Debt Resolution"
+          },
+          "wikidataId": "Q1066981",
+          "crossLinks": ["tax-return-filing", "tax-consultation-gov"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/passport-office",
+      "slug": "passport-office",
+      "names": {
+        "en": "Passport / ID Office",
+        "uk": "Паспортний стіл",
+        "de": "Passamt",
+        "ru": "Паспортный стол",
+        "original": "Passport / ID Office"
+      },
+      "altLabels": {
+        "en": ["ID issuance"],
+        "uk": ["міграційна служба", "відділ оформлення паспортів"],
+        "de": ["bürgeramt", "passstelle"],
+        "ru": ["паспортный отдел", "миграционная служба"]
+      },
+      "osmTag": "office=government",
+      "naceRef": "O84.11",
+      "schemaOrgType": "GovernmentOffice",
+      "wikidataId": "Q1480919",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/passport-application",
+          "slug": "passport-application",
+          "names": {
+            "en": "Passport Application",
+            "uk": "Оформлення паспорта",
+            "de": "Passantrag",
+            "ru": "Оформление паспорта",
+            "original": "Passport Application"
+          },
+          "wikidataId": "Q170676",
+          "crossLinks": ["passport-renewal", "biometric-data-submission"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/id-card-application",
+          "slug": "id-card-application",
+          "names": {
+            "en": "ID Card Application",
+            "uk": "Оформлення ID-картки",
+            "de": "Personalausweisantrag",
+            "ru": "Оформление ID-карты",
+            "original": "ID Card Application"
+          },
+          "wikidataId": "Q1419425",
+          "crossLinks": ["passport-application", "biometric-data-submission"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/passport-renewal",
+          "slug": "passport-renewal",
+          "names": {
+            "en": "Passport Renewal",
+            "uk": "Поновлення паспорта",
+            "de": "Passverlängerung",
+            "ru": "Продление паспорта",
+            "original": "Passport Renewal"
+          },
+          "wikidataId": "Q170676",
+          "crossLinks": ["passport-application", "biometric-data-submission"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/biometric-data-submission",
+          "slug": "biometric-data-submission",
+          "names": {
+            "en": "Biometric Data Submission",
+            "uk": "Здача біометричних даних",
+            "de": "Biometrische Datenerfassung",
+            "ru": "Сдача биометрических данных",
+            "original": "Biometric Data Submission"
+          },
+          "wikidataId": "Q161410",
+          "crossLinks": ["passport-application", "id-card-application"]
+        }
+      ]
+    }
+  ]
+}

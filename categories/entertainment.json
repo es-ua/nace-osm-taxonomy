@@ -1,5 +1,8 @@
 {
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/entertainment",
   "slug": "entertainment",
+  "version": "1.1.0",
   "names": {
     "en": "Entertainment & Leisure",
     "uk": "Розваги та дозвілля",
@@ -7,245 +10,276 @@
     "ru": "Развлечения и досуг",
     "original": "Entertainment & Leisure"
   },
+  "altLabels": {
+    "en": ["leisure", "fun", "events"],
+    "uk": ["дозвілля"],
+    "de": ["freizeit"],
+    "ru": ["досуг", "развлечения"]
+  },
   "icon": "🎭",
-  "naceRef": "R90+R92",
+  "naceRef": "R90",
+  "schemaOrgType": "EntertainmentBusiness",
+  "wikidataId": "Q173799",
   "subcategories": [
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/cinema",
       "slug": "cinema",
-      "names": {
-        "en": "Cinema",
-        "uk": "Кінотеатр",
-        "de": "Kino",
-        "ru": "Кинотеатр",
-        "original": "Cinema"
-      },
+      "names": { "en": "Cinema", "uk": "Кінотеатр", "de": "Kino", "ru": "Кинотеатр", "original": "Cinema" },
+      "altLabels": { "en": ["movie theater"], "uk": ["кіно"], "de": ["lichtspielhaus"], "ru": ["киноцентр"] },
       "osmTag": "amenity=cinema",
+      "naceRef": "R59.14",
+      "schemaOrgType": "MovieTheater",
+      "wikidataId": "Q41253",
       "templates": [
-        {
-          "slug": "regular-ticket",
-          "names": {
-            "en": "Regular Ticket",
-            "uk": "Звичайний квиток",
-            "de": "Kinoticket",
-            "ru": "Обычный билет",
-            "original": "Regular Ticket"
-          }
-        },
-        {
-          "slug": "3d-ticket",
-          "names": {
-            "en": "3D Ticket",
-            "uk": "3D-квиток",
-            "de": "3D-Ticket",
-            "ru": "3D-билет",
-            "original": "3D Ticket"
-          }
-        },
-        {
-          "slug": "private-screening",
-          "names": {
-            "en": "Private Screening",
-            "uk": "Приватний показ",
-            "de": "Privatvorführung",
-            "ru": "Частный показ",
-            "original": "Private Screening"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/regular-ticket", "slug": "regular-ticket", "names": { "en": "Regular Ticket", "uk": "Звичайний квиток", "de": "Kinoticket", "ru": "Обычный билет", "original": "Regular Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/3d-ticket", "slug": "3d-ticket", "names": { "en": "3D Ticket", "uk": "3D-квиток", "de": "3D-Ticket", "ru": "3D-билет", "original": "3D Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/private-screening", "slug": "private-screening", "names": { "en": "Private Screening", "uk": "Приватний показ", "de": "Privatvorführung", "ru": "Частный показ", "original": "Private Screening" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/theater",
       "slug": "theater",
-      "names": {
-        "en": "Theater",
-        "uk": "Театр",
-        "de": "Theater",
-        "ru": "Театр",
-        "original": "Theater"
-      },
+      "names": { "en": "Theater", "uk": "Театр", "de": "Theater", "ru": "Театр", "original": "Theater" },
       "osmTag": "amenity=theatre",
+      "naceRef": "R90.04",
+      "schemaOrgType": "PerformingArtsTheater",
+      "wikidataId": "Q24354",
       "templates": [
-        {
-          "slug": "theater-ticket",
-          "names": {
-            "en": "Ticket",
-            "uk": "Квиток",
-            "de": "Eintrittskarte",
-            "ru": "Билет",
-            "original": "Ticket"
-          }
-        },
-        {
-          "slug": "season-pass",
-          "names": {
-            "en": "Season Pass",
-            "uk": "Сезонний абонемент",
-            "de": "Saisonkarte",
-            "ru": "Сезонный абонемент",
-            "original": "Season Pass"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/theater-ticket", "slug": "theater-ticket", "names": { "en": "Ticket", "uk": "Квиток", "de": "Eintrittskarte", "ru": "Билет", "original": "Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/season-pass", "slug": "season-pass", "names": { "en": "Season Pass", "uk": "Сезонний абонемент", "de": "Saisonkarte", "ru": "Сезонный абонемент", "original": "Season Pass" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/nightclub",
       "slug": "nightclub",
-      "names": {
-        "en": "Nightclub",
-        "uk": "Нічний клуб",
-        "de": "Nachtclub",
-        "ru": "Ночной клуб",
-        "original": "Nightclub"
-      },
+      "names": { "en": "Nightclub", "uk": "Нічний клуб", "de": "Nachtclub", "ru": "Ночной клуб", "original": "Nightclub" },
+      "altLabels": { "en": ["club", "disco"], "uk": ["клуб"], "de": ["club", "disco"], "ru": ["клуб", "дискотека"] },
       "osmTag": "amenity=nightclub",
+      "naceRef": "R56.30",
+      "schemaOrgType": "NightClub",
+      "wikidataId": "Q622425",
       "templates": [
-        {
-          "slug": "club-entry",
-          "names": {
-            "en": "Entry",
-            "uk": "Вхід",
-            "de": "Eintritt",
-            "ru": "Вход",
-            "original": "Entry"
-          }
-        },
-        {
-          "slug": "vip-table",
-          "names": {
-            "en": "VIP Table",
-            "uk": "VIP-столик",
-            "de": "VIP-Tisch",
-            "ru": "VIP-столик",
-            "original": "VIP Table"
-          }
-        },
-        {
-          "slug": "private-event",
-          "names": {
-            "en": "Private Event",
-            "uk": "Приватна вечірка",
-            "de": "Privatveranstaltung",
-            "ru": "Частное мероприятие",
-            "original": "Private Event"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/club-entry", "slug": "club-entry", "names": { "en": "Entry", "uk": "Вхід", "de": "Eintritt", "ru": "Вход", "original": "Entry" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/vip-table", "slug": "vip-table", "names": { "en": "VIP Table", "uk": "VIP-столик", "de": "VIP-Tisch", "ru": "VIP-столик", "original": "VIP Table" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/private-event", "slug": "private-event", "names": { "en": "Private Event", "uk": "Приватна вечірка", "de": "Privatveranstaltung", "ru": "Частное мероприятие", "original": "Private Event" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/bowling",
       "slug": "bowling",
-      "names": {
-        "en": "Bowling",
-        "uk": "Боулінг",
-        "de": "Bowling",
-        "ru": "Боулинг",
-        "original": "Bowling"
-      },
+      "names": { "en": "Bowling", "uk": "Боулінг", "de": "Bowling", "ru": "Боулинг", "original": "Bowling" },
       "osmTag": "leisure=bowling_alley",
+      "naceRef": "R93.29",
+      "schemaOrgType": "BowlingAlley",
+      "wikidataId": "Q828909",
       "templates": [
-        {
-          "slug": "bowling-game",
-          "names": {
-            "en": "Game",
-            "uk": "Гра",
-            "de": "Spiel",
-            "ru": "Игра",
-            "original": "Game"
-          }
-        },
-        {
-          "slug": "lane-rental",
-          "names": {
-            "en": "Lane Rental",
-            "uk": "Оренда доріжки",
-            "de": "Bahnmiete",
-            "ru": "Аренда дорожки",
-            "original": "Lane Rental"
-          }
-        },
-        {
-          "slug": "party-package",
-          "names": {
-            "en": "Party Package",
-            "uk": "Пакет для вечірки",
-            "de": "Partypaket",
-            "ru": "Пакет для вечеринки",
-            "original": "Party Package"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/bowling-game", "slug": "bowling-game", "names": { "en": "Game", "uk": "Гра", "de": "Spiel", "ru": "Игра", "original": "Game" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/lane-rental", "slug": "lane-rental", "names": { "en": "Lane Rental", "uk": "Оренда доріжки", "de": "Bahnmiete", "ru": "Аренда дорожки", "original": "Lane Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/party-package", "slug": "party-package", "names": { "en": "Party Package", "uk": "Пакет для вечірки", "de": "Partypaket", "ru": "Пакет для вечеринки", "original": "Party Package" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/escape-room",
       "slug": "escape-room",
-      "names": {
-        "en": "Escape Room",
-        "uk": "Квест-кімната",
-        "de": "Escape Room",
-        "ru": "Квест-комната",
-        "original": "Escape Room"
-      },
+      "names": { "en": "Escape Room", "uk": "Квест-кімната", "de": "Escape Room", "ru": "Квест-комната", "original": "Escape Room" },
+      "altLabels": { "en": ["quest room", "escape game"], "uk": ["квест"], "de": ["fluchtspiel"], "ru": ["квест"] },
       "osmTag": "leisure=escape_game",
+      "naceRef": "R93.29",
+      "schemaOrgType": "EntertainmentBusiness",
+      "wikidataId": "Q14790346",
       "templates": [
-        {
-          "slug": "room-session",
-          "names": {
-            "en": "Room Session",
-            "uk": "Сеанс",
-            "de": "Spielsitzung",
-            "ru": "Сеанс",
-            "original": "Room Session"
-          }
-        },
-        {
-          "slug": "team-building",
-          "names": {
-            "en": "Team Building",
-            "uk": "Тімбілдінг",
-            "de": "Teambuilding",
-            "ru": "Тимбилдинг",
-            "original": "Team Building"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/room-session", "slug": "room-session", "names": { "en": "Room Session", "uk": "Сеанс", "de": "Spielsitzung", "ru": "Сеанс", "original": "Room Session" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/team-building", "slug": "team-building", "names": { "en": "Team Building", "uk": "Тімбілдінг", "de": "Teambuilding", "ru": "Тимбилдинг", "original": "Team Building" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/event-venue",
       "slug": "event-venue",
-      "names": {
-        "en": "Event Venue",
-        "uk": "Простір для подій",
-        "de": "Veranstaltungsort",
-        "ru": "Площадка для мероприятий",
-        "original": "Event Venue"
-      },
+      "names": { "en": "Event Venue", "uk": "Простір для подій", "de": "Veranstaltungsort", "ru": "Площадка для мероприятий", "original": "Event Venue" },
+      "altLabels": { "en": ["banquet hall", "function hall"], "uk": ["івент-простір"], "de": ["eventlocation"], "ru": ["банкетный зал"] },
       "osmTag": "amenity=events_venue",
+      "naceRef": "N82.30",
+      "schemaOrgType": "EventVenue",
+      "wikidataId": "Q18674739",
       "templates": [
-        {
-          "slug": "venue-rental",
-          "names": {
-            "en": "Venue Rental",
-            "uk": "Оренда залу",
-            "de": "Raummiete",
-            "ru": "Аренда зала",
-            "original": "Venue Rental"
-          }
-        },
-        {
-          "slug": "wedding-package",
-          "names": {
-            "en": "Wedding Package",
-            "uk": "Весільний пакет",
-            "de": "Hochzeitspaket",
-            "ru": "Свадебный пакет",
-            "original": "Wedding Package"
-          }
-        },
-        {
-          "slug": "corporate-event",
-          "names": {
-            "en": "Corporate Event",
-            "uk": "Корпоратив",
-            "de": "Firmenveranstaltung",
-            "ru": "Корпоратив",
-            "original": "Corporate Event"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/venue-rental", "slug": "venue-rental", "names": { "en": "Venue Rental", "uk": "Оренда залу", "de": "Raummiete", "ru": "Аренда зала", "original": "Venue Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/wedding-package", "slug": "wedding-package", "names": { "en": "Wedding Package", "uk": "Весільний пакет", "de": "Hochzeitspaket", "ru": "Свадебный пакет", "original": "Wedding Package" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/corporate-event", "slug": "corporate-event", "names": { "en": "Corporate Event", "uk": "Корпоратив", "de": "Firmenveranstaltung", "ru": "Корпоратив", "original": "Corporate Event" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/vr-room",
+      "slug": "vr-room",
+      "names": { "en": "VR Room", "uk": "VR-клуб", "de": "VR-Center", "ru": "VR-клуб", "original": "VR Room" },
+      "altLabels": { "en": ["virtual reality arcade"], "uk": ["віртуальна реальність"], "de": [], "ru": [] },
+      "osmTag": "leisure=adult_gaming_centre",
+      "naceRef": "R93.29",
+      "schemaOrgType": "EntertainmentBusiness",
+      "wikidataId": "Q935616",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/vr-session-30min", "slug": "vr-session-30min", "names": { "en": "VR Session 30 min", "uk": "VR-сеанс 30 хв", "de": "VR-Sitzung 30 Min", "ru": "VR-сеанс 30 мин", "original": "VR Session 30 min" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/vr-session-60min", "slug": "vr-session-60min", "names": { "en": "VR Session 60 min", "uk": "VR-сеанс 60 хв", "de": "VR-Sitzung 60 Min", "ru": "VR-сеанс 60 мин", "original": "VR Session 60 min" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/vr-multiplayer", "slug": "vr-multiplayer", "names": { "en": "VR Multiplayer", "uk": "VR мультиплеєр", "de": "VR-Mehrspieler", "ru": "VR мультиплеер", "original": "VR Multiplayer" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/vr-birthday-party", "slug": "vr-birthday-party", "names": { "en": "VR Birthday Party", "uk": "VR день народження", "de": "VR-Geburtstagsparty", "ru": "VR день рождения", "original": "VR Birthday Party" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/board-game-cafe",
+      "slug": "board-game-cafe",
+      "names": { "en": "Board Game Cafe", "uk": "Кафе настільних ігор", "de": "Brettspiel-Café", "ru": "Кафе настольных игр", "original": "Board Game Cafe" },
+      "altLabels": { "en": ["games cafe"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "amenity=board_game_cafe",
+      "naceRef": "I56.30+R93.29",
+      "schemaOrgType": "CafeOrCoffeeShop",
+      "wikidataId": "Q24875389",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/hourly-table", "slug": "hourly-table", "names": { "en": "Hourly Table", "uk": "Погодинна оренда столу", "de": "Stundentisch", "ru": "Почасовой стол", "original": "Hourly Table" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/game-rental", "slug": "game-rental", "names": { "en": "Game Rental", "uk": "Оренда гри", "de": "Spielverleih", "ru": "Аренда игры", "original": "Game Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/game-night-event", "slug": "game-night-event", "names": { "en": "Game Night Event", "uk": "Ігровий вечір", "de": "Spieleabend", "ru": "Игровой вечер", "original": "Game Night Event" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-game-day", "slug": "kids-game-day", "names": { "en": "Kids Game Day", "uk": "Дитячий ігровий день", "de": "Kinder-Spieltag", "ru": "Детский игровой день", "original": "Kids Game Day" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/billiard-hall",
+      "slug": "billiard-hall",
+      "names": { "en": "Billiard Hall", "uk": "Більярдна", "de": "Billardsalon", "ru": "Бильярдная", "original": "Billiard Hall" },
+      "altLabels": { "en": ["pool hall"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "leisure=adult_gaming_centre",
+      "naceRef": "R93.29",
+      "schemaOrgType": "EntertainmentBusiness",
+      "wikidataId": "Q830879",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/hourly-table-billiard", "slug": "hourly-table-billiard", "names": { "en": "Hourly Table", "uk": "Погодинна оренда столу", "de": "Stundentisch", "ru": "Почасовой стол", "original": "Hourly Table" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/tournament-entry-billiard", "slug": "tournament-entry-billiard", "names": { "en": "Tournament Entry", "uk": "Участь у турнірі", "de": "Turnieranmeldung", "ru": "Участие в турнире", "original": "Tournament Entry" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/lessons-billiard", "slug": "lessons-billiard", "names": { "en": "Lessons", "uk": "Уроки", "de": "Unterricht", "ru": "Уроки", "original": "Lessons" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/water-park",
+      "slug": "water-park",
+      "names": { "en": "Water Park", "uk": "Аквапарк", "de": "Wasserpark", "ru": "Аквапарк", "original": "Water Park" },
+      "osmTag": "leisure=water_park",
+      "naceRef": "R93.29",
+      "schemaOrgType": "AmusementPark",
+      "wikidataId": "Q734023",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/day-pass-water-park", "slug": "day-pass-water-park", "names": { "en": "Day Pass", "uk": "Денний абонемент", "de": "Tageskarte", "ru": "Дневной абонемент", "original": "Day Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/family-pass-water-park", "slug": "family-pass-water-park", "names": { "en": "Family Pass", "uk": "Сімейний абонемент", "de": "Familienkarte", "ru": "Семейный абонемент", "original": "Family Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/evening-pass-water-park", "slug": "evening-pass-water-park", "names": { "en": "Evening Pass", "uk": "Вечірній абонемент", "de": "Abendkarte", "ru": "Вечерний абонемент", "original": "Evening Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-zone-pass", "slug": "kids-zone-pass", "names": { "en": "Kids Zone Pass", "uk": "Абонемент у дитячу зону", "de": "Kinderzonen-Pass", "ru": "Абонемент в детскую зону", "original": "Kids Zone Pass" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/zoo",
+      "slug": "zoo",
+      "names": { "en": "Zoo", "uk": "Зоопарк", "de": "Zoo", "ru": "Зоопарк", "original": "Zoo" },
+      "osmTag": "tourism=zoo",
+      "naceRef": "R91.04",
+      "schemaOrgType": "Zoo",
+      "wikidataId": "Q43501",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/adult-ticket-zoo", "slug": "adult-ticket-zoo", "names": { "en": "Adult Ticket", "uk": "Дорослий квиток", "de": "Erwachsenenticket", "ru": "Взрослый билет", "original": "Adult Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-ticket-zoo", "slug": "kids-ticket-zoo", "names": { "en": "Kids Ticket", "uk": "Дитячий квиток", "de": "Kinderticket", "ru": "Детский билет", "original": "Kids Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/family-pass-zoo", "slug": "family-pass-zoo", "names": { "en": "Family Pass", "uk": "Сімейний абонемент", "de": "Familienkarte", "ru": "Семейный абонемент", "original": "Family Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/guided-tour-zoo", "slug": "guided-tour-zoo", "names": { "en": "Guided Tour", "uk": "Екскурсія з гідом", "de": "Geführte Tour", "ru": "Экскурсия с гидом", "original": "Guided Tour" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/behind-scenes-zoo", "slug": "behind-scenes-zoo", "names": { "en": "Behind the Scenes", "uk": "За лаштунками", "de": "Blick hinter die Kulissen", "ru": "За кулисами", "original": "Behind the Scenes" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/museum",
+      "slug": "museum",
+      "names": { "en": "Museum", "uk": "Музей", "de": "Museum", "ru": "Музей", "original": "Museum" },
+      "osmTag": "tourism=museum",
+      "naceRef": "R91.02",
+      "schemaOrgType": "Museum",
+      "wikidataId": "Q33506",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/adult-ticket-museum", "slug": "adult-ticket-museum", "names": { "en": "Adult Ticket", "uk": "Дорослий квиток", "de": "Erwachsenenticket", "ru": "Взрослый билет", "original": "Adult Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-ticket-museum", "slug": "kids-ticket-museum", "names": { "en": "Kids Ticket", "uk": "Дитячий квиток", "de": "Kinderticket", "ru": "Детский билет", "original": "Kids Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/family-pass-museum", "slug": "family-pass-museum", "names": { "en": "Family Pass", "uk": "Сімейний абонемент", "de": "Familienkarte", "ru": "Семейный абонемент", "original": "Family Pass" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/guided-tour-museum", "slug": "guided-tour-museum", "names": { "en": "Guided Tour", "uk": "Екскурсія з гідом", "de": "Geführte Tour", "ru": "Экскурсия с гидом", "original": "Guided Tour" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/audio-guide", "slug": "audio-guide", "names": { "en": "Audio Guide", "uk": "Аудіогід", "de": "Audioguide", "ru": "Аудиогид", "original": "Audio Guide" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/planetarium",
+      "slug": "planetarium",
+      "names": { "en": "Planetarium", "uk": "Планетарій", "de": "Planetarium", "ru": "Планетарий", "original": "Planetarium" },
+      "osmTag": "amenity=planetarium",
+      "naceRef": "R91.04",
+      "schemaOrgType": "EntertainmentBusiness",
+      "wikidataId": "Q184937",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/standard-show-planetarium", "slug": "standard-show-planetarium", "names": { "en": "Standard Show", "uk": "Стандартне шоу", "de": "Standardshow", "ru": "Стандартное шоу", "original": "Standard Show" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/dome-show-planetarium", "slug": "dome-show-planetarium", "names": { "en": "Dome Show", "uk": "Купольне шоу", "de": "Kuppelshow", "ru": "Купольное шоу", "original": "Dome Show" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kids-show-planetarium", "slug": "kids-show-planetarium", "names": { "en": "Kids Show", "uk": "Дитяче шоу", "de": "Kindershow", "ru": "Детское шоу", "original": "Kids Show" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/school-group", "slug": "school-group", "names": { "en": "School Group", "uk": "Шкільна група", "de": "Schulgruppe", "ru": "Школьная группа", "original": "School Group" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/ice-rink",
+      "slug": "ice-rink",
+      "names": { "en": "Ice Rink", "uk": "Каток", "de": "Eisbahn", "ru": "Каток", "original": "Ice Rink" },
+      "altLabels": { "en": ["skating rink"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "leisure=ice_rink",
+      "naceRef": "R93.11",
+      "schemaOrgType": "SportsActivityLocation",
+      "wikidataId": "Q204032",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/public-skating", "slug": "public-skating", "names": { "en": "Public Skating", "uk": "Масове катання", "de": "Öffentliches Eislaufen", "ru": "Массовое катание", "original": "Public Skating" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/skate-rental", "slug": "skate-rental", "names": { "en": "Skate Rental", "uk": "Прокат ковзанів", "de": "Schlittschuhverleih", "ru": "Прокат коньков", "original": "Skate Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/hockey-rink-rental", "slug": "hockey-rink-rental", "names": { "en": "Hockey Rink Rental", "uk": "Оренда хокейного майданчика", "de": "Hockeybahn-Miete", "ru": "Аренда хоккейной площадки", "original": "Hockey Rink Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/figure-skating-class", "slug": "figure-skating-class", "names": { "en": "Figure Skating Class", "uk": "Заняття з фігурного катання", "de": "Eiskunstlauf-Kurs", "ru": "Занятие по фигурному катанию", "original": "Figure Skating Class" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/concert-hall",
+      "slug": "concert-hall",
+      "names": { "en": "Concert Hall", "uk": "Концертний зал", "de": "Konzerthaus", "ru": "Концертный зал", "original": "Concert Hall" },
+      "altLabels": { "en": ["music venue"] },
+      "osmTag": "amenity=concert_hall",
+      "naceRef": "R90.04",
+      "schemaOrgType": "PerformingArtsTheater",
+      "wikidataId": "Q71773",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/concert-ticket-hall", "slug": "concert-ticket-hall", "names": { "en": "Concert Ticket", "uk": "Квиток на концерт", "de": "Konzertticket", "ru": "Билет на концерт", "original": "Concert Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/vip-box-concert", "slug": "vip-box-concert", "names": { "en": "VIP Box", "uk": "VIP-ложа", "de": "VIP-Loge", "ru": "VIP-ложа", "original": "VIP Box" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/season-subscription-concert", "slug": "season-subscription-concert", "names": { "en": "Season Subscription", "uk": "Сезонний абонемент", "de": "Saisonabonnement", "ru": "Сезонный абонемент", "original": "Season Subscription" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/youth-concert-ticket", "slug": "youth-concert-ticket", "names": { "en": "Youth Ticket", "uk": "Молодіжний квиток", "de": "Jugendticket", "ru": "Молодежный билет", "original": "Youth Ticket" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/jazz-club",
+      "slug": "jazz-club",
+      "names": { "en": "Jazz Club", "uk": "Джаз-клуб", "de": "Jazzclub", "ru": "Джаз-клуб", "original": "Jazz Club" },
+      "altLabels": { "en": ["live jazz venue"] },
+      "osmTag": "amenity=bar",
+      "osmExtraTags": { "live_music": "jazz" },
+      "naceRef": "R90.01",
+      "schemaOrgType": "NightClub",
+      "wikidataId": "Q1348006",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/jazz-show-ticket", "slug": "jazz-show-ticket", "names": { "en": "Jazz Show Ticket", "uk": "Квиток на джаз-шоу", "de": "Jazz-Show-Ticket", "ru": "Билет на джаз-шоу", "original": "Jazz Show Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/dinner-and-jazz", "slug": "dinner-and-jazz", "names": { "en": "Dinner & Jazz", "uk": "Вечеря з джазом", "de": "Dinner mit Jazz", "ru": "Ужин с джазом", "original": "Dinner & Jazz" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/private-jazz-event", "slug": "private-jazz-event", "names": { "en": "Private Jazz Event", "uk": "Приватний джазовий захід", "de": "Private Jazzveranstaltung", "ru": "Частное джазовое мероприятие", "original": "Private Jazz Event" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/jam-session-entry", "slug": "jam-session-entry", "names": { "en": "Jam Session Entry", "uk": "Вхід на джем-сесію", "de": "Jam-Session-Eintritt", "ru": "Вход на джем-сейшн", "original": "Jam Session Entry" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/comedy-club",
+      "slug": "comedy-club",
+      "names": { "en": "Comedy Club", "uk": "Камеді-клуб", "de": "Comedy-Club", "ru": "Камеди-клуб", "original": "Comedy Club" },
+      "altLabels": { "en": ["stand-up venue"], "uk": ["стендап-клуб"], "ru": ["стендап-клуб"] },
+      "osmTag": "amenity=theatre",
+      "osmExtraTags": { "theatre:type": "comedy" },
+      "naceRef": "R90.04",
+      "schemaOrgType": "ComedyClub",
+      "wikidataId": "Q5152381",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/standup-show-ticket", "slug": "standup-show-ticket", "names": { "en": "Stand-up Show Ticket", "uk": "Квиток на стендап", "de": "Stand-up-Ticket", "ru": "Билет на стендап", "original": "Stand-up Show Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/improv-night-ticket", "slug": "improv-night-ticket", "names": { "en": "Improv Night Ticket", "uk": "Квиток на імпровізацію", "de": "Improv-Abend-Ticket", "ru": "Билет на импров-вечер", "original": "Improv Night Ticket" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/comedy-course", "slug": "comedy-course", "names": { "en": "Comedy Course", "uk": "Курс комедії", "de": "Comedy-Kurs", "ru": "Курс комедии", "original": "Comedy Course" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/private-comedy-event", "slug": "private-comedy-event", "names": { "en": "Private Comedy Event", "uk": "Приватний комедійний захід", "de": "Private Comedy-Veranstaltung", "ru": "Частное комедийное мероприятие", "original": "Private Comedy Event" } }
       ]
     }
   ]

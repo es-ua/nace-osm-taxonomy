@@ -1,16 +1,28 @@
 {
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/health",
   "slug": "health",
+  "version": "1.1.0",
   "names": {
     "en": "Health & Medical",
-    "uk": "Здоров\\'я та медицина",
+    "uk": "Здоров'я та медицина",
     "de": "Gesundheit & Medizin",
     "ru": "Здоровье и медицина",
     "original": "Health & Medical"
   },
+  "altLabels": {
+    "en": ["healthcare", "medical", "clinic"],
+    "uk": ["охорона здоров'я", "медицина"],
+    "de": ["gesundheitswesen", "medizin"],
+    "ru": ["здравоохранение", "медицина", "клиника"]
+  },
   "icon": "🏥",
   "naceRef": "Q86",
+  "schemaOrgType": "MedicalBusiness",
+  "wikidataId": "Q31207",
   "subcategories": [
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/general-doctor",
       "slug": "general-doctor",
       "names": {
         "en": "General Practitioner",
@@ -19,9 +31,19 @@
         "ru": "Семейный врач",
         "original": "General Practitioner"
       },
+      "altLabels": {
+        "en": ["GP", "family doctor", "primary care"],
+        "uk": ["лікар загальної практики", "терапевт"],
+        "de": ["allgemeinmediziner"],
+        "ru": ["терапевт", "врач общей практики"]
+      },
       "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.21",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q1601121",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/consultation",
           "slug": "consultation",
           "names": {
             "en": "Consultation",
@@ -29,9 +51,11 @@
             "de": "Sprechstunde",
             "ru": "Консультация",
             "original": "Consultation"
-          }
+          },
+          "wikidataId": "Q1411593"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/check-up",
           "slug": "check-up",
           "names": {
             "en": "Check-up",
@@ -39,9 +63,11 @@
             "de": "Vorsorgeuntersuchung",
             "ru": "Медосмотр",
             "original": "Check-up"
-          }
+          },
+          "wikidataId": "Q1156627"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/vaccination",
           "slug": "vaccination",
           "names": {
             "en": "Vaccination",
@@ -49,9 +75,11 @@
             "de": "Impfung",
             "ru": "Вакцинация",
             "original": "Vaccination"
-          }
+          },
+          "wikidataId": "Q145430"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/blood-test",
           "slug": "blood-test",
           "names": {
             "en": "Blood Test",
@@ -59,11 +87,13 @@
             "de": "Blutuntersuchung",
             "ru": "Анализ крови",
             "original": "Blood Test"
-          }
+          },
+          "wikidataId": "Q12130"
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/dentist",
       "slug": "dentist",
       "names": {
         "en": "Dentist",
@@ -72,9 +102,19 @@
         "ru": "Стоматолог",
         "original": "Dentist"
       },
+      "altLabels": {
+        "en": ["dental clinic", "dental surgery"],
+        "uk": ["стоматологія", "зубний"],
+        "de": ["zahnmedizin", "zahnklinik"],
+        "ru": ["зубной", "стоматология"]
+      },
       "osmTag": "healthcare=dentist",
+      "naceRef": "Q86.23",
+      "schemaOrgType": "Dentist",
+      "wikidataId": "Q40621",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/dental-cleaning",
           "slug": "dental-cleaning",
           "names": {
             "en": "Cleaning",
@@ -82,9 +122,11 @@
             "de": "Zahnreinigung",
             "ru": "Чистка зубов",
             "original": "Cleaning"
-          }
+          },
+          "wikidataId": "Q5258373"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/filling",
           "slug": "filling",
           "names": {
             "en": "Filling",
@@ -92,9 +134,11 @@
             "de": "Füllung",
             "ru": "Пломбирование",
             "original": "Filling"
-          }
+          },
+          "wikidataId": "Q15846757"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/extraction",
           "slug": "extraction",
           "names": {
             "en": "Extraction",
@@ -102,9 +146,11 @@
             "de": "Zahnextraktion",
             "ru": "Удаление зуба",
             "original": "Extraction"
-          }
+          },
+          "wikidataId": "Q1326738"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/whitening",
           "slug": "whitening",
           "names": {
             "en": "Whitening",
@@ -112,9 +158,11 @@
             "de": "Zahnaufhellung",
             "ru": "Отбеливание",
             "original": "Whitening"
-          }
+          },
+          "wikidataId": "Q874810"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/implant",
           "slug": "implant",
           "names": {
             "en": "Dental Implant",
@@ -122,9 +170,11 @@
             "de": "Zahnimplantat",
             "ru": "Имплант",
             "original": "Dental Implant"
-          }
+          },
+          "wikidataId": "Q132851"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/crown",
           "slug": "crown",
           "names": {
             "en": "Crown",
@@ -132,11 +182,46 @@
             "de": "Zahnkrone",
             "ru": "Коронка",
             "original": "Crown"
+          },
+          "wikidataId": "Q1252040"
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/pediatric-dentistry",
+          "slug": "pediatric-dentistry",
+          "names": {
+            "en": "Pediatric Dentistry",
+            "uk": "Дитяча стоматологія",
+            "de": "Kinderzahnheilkunde",
+            "ru": "Детская стоматология",
+            "original": "Pediatric Dentistry"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/orthodontics",
+          "slug": "orthodontics",
+          "names": {
+            "en": "Orthodontics",
+            "uk": "Ортодонтія",
+            "de": "Kieferorthopädie",
+            "ru": "Ортодонтия",
+            "original": "Orthodontics"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cosmetic-dentistry",
+          "slug": "cosmetic-dentistry",
+          "names": {
+            "en": "Cosmetic Dentistry",
+            "uk": "Естетична стоматологія",
+            "de": "Ästhetische Zahnmedizin",
+            "ru": "Эстетическая стоматология",
+            "original": "Cosmetic Dentistry"
           }
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/physiotherapy",
       "slug": "physiotherapy",
       "names": {
         "en": "Physiotherapy",
@@ -145,9 +230,19 @@
         "ru": "Физиотерапия",
         "original": "Physiotherapy"
       },
+      "altLabels": {
+        "en": ["physio", "physical therapy"],
+        "uk": ["фізіотерапевт"],
+        "de": ["physiotherapeut"],
+        "ru": ["физиотерапевт"]
+      },
       "osmTag": "healthcare=physiotherapist",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "Physiotherapy",
+      "wikidataId": "Q11455",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/physio-session",
           "slug": "physio-session",
           "names": {
             "en": "Session",
@@ -158,6 +253,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/physio-assessment",
           "slug": "physio-assessment",
           "names": {
             "en": "Assessment",
@@ -168,6 +264,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/manual-therapy",
           "slug": "manual-therapy",
           "names": {
             "en": "Manual Therapy",
@@ -175,9 +272,11 @@
             "de": "Manuelle Therapie",
             "ru": "Мануальная терапия",
             "original": "Manual Therapy"
-          }
+          },
+          "wikidataId": "Q1227196"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/sports-rehab",
           "slug": "sports-rehab",
           "names": {
             "en": "Sports Rehab",
@@ -190,6 +289,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/psychologist",
       "slug": "psychologist",
       "names": {
         "en": "Psychologist",
@@ -198,9 +298,19 @@
         "ru": "Психолог",
         "original": "Psychologist"
       },
+      "altLabels": {
+        "en": ["therapist", "counselor", "psychotherapist"],
+        "uk": ["психотерапевт"],
+        "de": ["psychotherapeut"],
+        "ru": ["психотерапевт"]
+      },
       "osmTag": "healthcare=psychologist",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q212980",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/individual-session",
           "slug": "individual-session",
           "names": {
             "en": "Individual Session",
@@ -211,6 +321,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/couples-therapy",
           "slug": "couples-therapy",
           "names": {
             "en": "Couples Therapy",
@@ -218,9 +329,11 @@
             "de": "Paartherapie",
             "ru": "Парная терапия",
             "original": "Couples Therapy"
-          }
+          },
+          "wikidataId": "Q5176881"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/psych-assessment",
           "slug": "psych-assessment",
           "names": {
             "en": "Assessment",
@@ -233,6 +346,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/veterinary",
       "slug": "veterinary",
       "names": {
         "en": "Veterinary",
@@ -241,9 +355,19 @@
         "ru": "Ветеринария",
         "original": "Veterinary"
       },
+      "altLabels": {
+        "en": ["vet", "animal hospital", "veterinarian"],
+        "uk": ["ветлікарня", "ветлікар"],
+        "de": ["tierklinik"],
+        "ru": ["ветклиника", "ветврач"]
+      },
       "osmTag": "amenity=veterinary",
+      "naceRef": "M75.00",
+      "schemaOrgType": "VeterinaryCare",
+      "wikidataId": "Q41364",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/vet-consultation",
           "slug": "vet-consultation",
           "names": {
             "en": "Consultation",
@@ -254,6 +378,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/vet-vaccination",
           "slug": "vet-vaccination",
           "names": {
             "en": "Vaccination",
@@ -261,9 +386,11 @@
             "de": "Impfung",
             "ru": "Вакцинация",
             "original": "Vaccination"
-          }
+          },
+          "wikidataId": "Q145430"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/vet-surgery",
           "slug": "vet-surgery",
           "names": {
             "en": "Surgery",
@@ -274,6 +401,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/vet-grooming",
           "slug": "vet-grooming",
           "names": {
             "en": "Grooming",
@@ -281,11 +409,13 @@
             "de": "Fellpflege",
             "ru": "Груминг",
             "original": "Grooming"
-          }
+          },
+          "wikidataId": "Q3406146"
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/ophthalmologist",
       "slug": "ophthalmologist",
       "names": {
         "en": "Ophthalmologist",
@@ -294,9 +424,19 @@
         "ru": "Офтальмолог",
         "original": "Ophthalmologist"
       },
+      "altLabels": {
+        "en": ["eye doctor", "eye specialist"],
+        "uk": ["окуліст"],
+        "de": ["augenheilkunde"],
+        "ru": ["окулист", "глазной врач"]
+      },
       "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q12483",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/oph-eye-exam",
           "slug": "oph-eye-exam",
           "names": {
             "en": "Eye Exam",
@@ -304,9 +444,11 @@
             "de": "Augenuntersuchung",
             "ru": "Проверка зрения",
             "original": "Eye Exam"
-          }
+          },
+          "wikidataId": "Q1349767"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/laser-consultation",
           "slug": "laser-consultation",
           "names": {
             "en": "Laser Consultation",
@@ -319,6 +461,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/dermatologist",
       "slug": "dermatologist",
       "names": {
         "en": "Dermatologist",
@@ -327,9 +470,19 @@
         "ru": "Дерматолог",
         "original": "Dermatologist"
       },
+      "altLabels": {
+        "en": ["skin doctor", "dermatology"],
+        "uk": ["шкірний лікар"],
+        "de": ["dermatologe", "dermatologie"],
+        "ru": ["кожный врач"]
+      },
       "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q53005",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/skin-consultation",
           "slug": "skin-consultation",
           "names": {
             "en": "Consultation",
@@ -340,6 +493,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/skin-check",
           "slug": "skin-check",
           "names": {
             "en": "Skin Check",
@@ -350,6 +504,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/acne-treatment",
           "slug": "acne-treatment",
           "names": {
             "en": "Acne Treatment",
@@ -357,9 +512,11 @@
             "de": "Aknebehandlung",
             "ru": "Лечение акне",
             "original": "Acne Treatment"
-          }
+          },
+          "wikidataId": "Q12252367"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/mole-removal",
           "slug": "mole-removal",
           "names": {
             "en": "Mole Removal",
@@ -369,6 +526,393 @@
             "original": "Mole Removal"
           }
         }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/cardiologist",
+      "slug": "cardiologist",
+      "names": { "en": "Cardiologist", "uk": "Кардіолог", "de": "Kardiologe", "ru": "Кардиолог", "original": "Cardiologist" },
+      "altLabels": { "en": ["heart doctor"], "uk": ["лікар-кардіолог"], "de": ["herzarzt"], "ru": ["врач-кардиолог"] },
+      "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q44729",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/cardio-consultation", "slug": "cardio-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Sprechstunde", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/ecg", "slug": "ecg", "names": { "en": "ECG", "uk": "ЕКГ", "de": "EKG", "ru": "ЭКГ", "original": "ECG" }, "wikidataId": "Q183670" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/echocardiogram", "slug": "echocardiogram", "names": { "en": "Echocardiogram", "uk": "Ехокардіографія", "de": "Echokardiographie", "ru": "Эхокардиография", "original": "Echocardiogram" }, "wikidataId": "Q1075697" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/holter-monitor", "slug": "holter-monitor", "names": { "en": "Holter Monitor", "uk": "Холтерівське моніторування", "de": "Langzeit-EKG", "ru": "Холтер-мониторинг", "original": "Holter Monitor" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/gynecologist",
+      "slug": "gynecologist",
+      "names": { "en": "Gynecologist", "uk": "Гінеколог", "de": "Gynäkologe", "ru": "Гинеколог", "original": "Gynecologist" },
+      "altLabels": { "en": ["OB-GYN", "women's health"], "uk": ["жіночий лікар"], "de": ["frauenarzt"], "ru": ["женский врач"] },
+      "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q172446",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/gyn-consultation", "slug": "gyn-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Sprechstunde", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/prenatal-checkup", "slug": "prenatal-checkup", "names": { "en": "Prenatal Checkup", "uk": "Спостереження вагітності", "de": "Schwangerschaftsvorsorge", "ru": "Ведение беременности", "original": "Prenatal Checkup" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/cervical-screening", "slug": "cervical-screening", "names": { "en": "Cervical Screening", "uk": "Скринінг шийки матки", "de": "Krebsvorsorge", "ru": "Скрининг шейки матки", "original": "Cervical Screening" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/urologist",
+      "slug": "urologist",
+      "names": { "en": "Urologist", "uk": "Уролог", "de": "Urologe", "ru": "Уролог", "original": "Urologist" },
+      "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q1003802",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/uro-consultation", "slug": "uro-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Sprechstunde", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/uro-ultrasound", "slug": "uro-ultrasound", "names": { "en": "Urological Ultrasound", "uk": "УЗД сечостатевої системи", "de": "Urologischer Ultraschall", "ru": "УЗИ мочеполовой системы", "original": "Urological Ultrasound" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/neurologist",
+      "slug": "neurologist",
+      "names": { "en": "Neurologist", "uk": "Невролог", "de": "Neurologe", "ru": "Невролог", "original": "Neurologist" },
+      "altLabels": { "en": ["nerve specialist"], "uk": ["невропатолог"], "de": ["nervenarzt"], "ru": ["невропатолог"] },
+      "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q783803",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/neuro-consultation", "slug": "neuro-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Sprechstunde", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/eeg", "slug": "eeg", "names": { "en": "EEG", "uk": "ЕЕГ", "de": "EEG", "ru": "ЭЭГ", "original": "EEG" }, "wikidataId": "Q170164" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/migraine-treatment", "slug": "migraine-treatment", "names": { "en": "Migraine Treatment", "uk": "Лікування мігрені", "de": "Migränebehandlung", "ru": "Лечение мигрени", "original": "Migraine Treatment" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/ent-doctor",
+      "slug": "ent-doctor",
+      "names": { "en": "ENT Specialist", "uk": "ЛОР", "de": "HNO-Arzt", "ru": "ЛОР", "original": "ENT Specialist" },
+      "altLabels": { "en": ["otolaryngologist", "ear nose throat"], "uk": ["оториноларинголог"], "de": ["hno"], "ru": ["оториноларинголог"] },
+      "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q49758",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/ent-consultation", "slug": "ent-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Sprechstunde", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/audiogram", "slug": "audiogram", "names": { "en": "Audiogram", "uk": "Аудіограма", "de": "Audiogramm", "ru": "Аудиограмма", "original": "Audiogram" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/sinus-irrigation", "slug": "sinus-irrigation", "names": { "en": "Sinus Irrigation", "uk": "Промивання пазух", "de": "Nasennebenhöhlenspülung", "ru": "Промывание пазух", "original": "Sinus Irrigation" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/gastroenterologist",
+      "slug": "gastroenterologist",
+      "names": { "en": "Gastroenterologist", "uk": "Гастроентеролог", "de": "Gastroenterologe", "ru": "Гастроэнтеролог", "original": "Gastroenterologist" },
+      "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q15087598",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/gastro-consultation", "slug": "gastro-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Sprechstunde", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/gastroscopy", "slug": "gastroscopy", "names": { "en": "Gastroscopy", "uk": "Гастроскопія", "de": "Gastroskopie", "ru": "Гастроскопия", "original": "Gastroscopy" }, "wikidataId": "Q839909" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/colonoscopy", "slug": "colonoscopy", "names": { "en": "Colonoscopy", "uk": "Колоноскопія", "de": "Koloskopie", "ru": "Колоноскопия", "original": "Colonoscopy" }, "wikidataId": "Q322239" }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/endocrinologist",
+      "slug": "endocrinologist",
+      "names": { "en": "Endocrinologist", "uk": "Ендокринолог", "de": "Endokrinologe", "ru": "Эндокринолог", "original": "Endocrinologist" },
+      "altLabels": { "en": ["hormone specialist", "diabetes doctor"], "uk": ["лікар з діабету"], "de": ["hormonarzt"], "ru": ["диабетолог"] },
+      "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q765778",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/endo-consultation", "slug": "endo-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Sprechstunde", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/diabetes-management", "slug": "diabetes-management", "names": { "en": "Diabetes Management", "uk": "Лікування діабету", "de": "Diabetesbehandlung", "ru": "Лечение диабета", "original": "Diabetes Management" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/thyroid-screening", "slug": "thyroid-screening", "names": { "en": "Thyroid Screening", "uk": "Скринінг щитоподібної залози", "de": "Schilddrüsen-Screening", "ru": "Скрининг щитовидной железы", "original": "Thyroid Screening" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pediatrician",
+      "slug": "pediatrician",
+      "names": { "en": "Pediatrician", "uk": "Педіатр", "de": "Kinderarzt", "ru": "Педиатр", "original": "Pediatrician" },
+      "altLabels": { "en": ["child doctor"], "uk": ["дитячий лікар"], "de": ["kindermediziner"], "ru": ["детский врач"] },
+      "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "Pediatric",
+      "wikidataId": "Q1144880",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/ped-consultation", "slug": "ped-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Sprechstunde", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/well-baby-visit", "slug": "well-baby-visit", "names": { "en": "Well-baby Visit", "uk": "Профогляд немовляти", "de": "Vorsorgeuntersuchung Baby", "ru": "Осмотр младенца", "original": "Well-baby Visit" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/childhood-vaccination", "slug": "childhood-vaccination", "names": { "en": "Childhood Vaccination", "uk": "Дитячі щеплення", "de": "Kinderimpfung", "ru": "Детская вакцинация", "original": "Childhood Vaccination" }, "wikidataId": "Q145430" }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/medical-lab",
+      "slug": "medical-lab",
+      "names": { "en": "Medical Laboratory", "uk": "Медична лабораторія", "de": "Medizinisches Labor", "ru": "Медицинская лаборатория", "original": "Medical Laboratory" },
+      "altLabels": { "en": ["clinical lab", "diagnostics"], "uk": ["діагностика"], "de": ["diagnostiklabor"], "ru": ["диагностика"] },
+      "osmTag": "healthcare=laboratory",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalClinic",
+      "wikidataId": "Q1413102",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/blood-work", "slug": "blood-work", "names": { "en": "Blood Work", "uk": "Аналізи крові", "de": "Blutuntersuchung", "ru": "Анализы крови", "original": "Blood Work" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/urine-analysis", "slug": "urine-analysis", "names": { "en": "Urine Analysis", "uk": "Аналіз сечі", "de": "Urinanalyse", "ru": "Анализ мочи", "original": "Urine Analysis" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/pcr-test", "slug": "pcr-test", "names": { "en": "PCR Test", "uk": "ПЛР-тест", "de": "PCR-Test", "ru": "ПЦР-тест", "original": "PCR Test" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/hormone-panel", "slug": "hormone-panel", "names": { "en": "Hormone Panel", "uk": "Гормональна панель", "de": "Hormonprofil", "ru": "Гормональная панель", "original": "Hormone Panel" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/imaging-center",
+      "slug": "imaging-center",
+      "names": { "en": "Imaging Center", "uk": "Центр візуалізації", "de": "Radiologie-Zentrum", "ru": "Центр визуализации", "original": "Imaging Center" },
+      "altLabels": { "en": ["radiology", "MRI", "CT scan"], "uk": ["радіологія", "МРТ"], "de": ["radiologie", "MRT"], "ru": ["радиология", "МРТ"] },
+      "osmTag": "healthcare=centre",
+      "naceRef": "Q86.10",
+      "schemaOrgType": "MedicalClinic",
+      "wikidataId": "Q336968",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/mri-scan", "slug": "mri-scan", "names": { "en": "MRI Scan", "uk": "МРТ", "de": "MRT", "ru": "МРТ", "original": "MRI Scan" }, "wikidataId": "Q25390" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/ct-scan", "slug": "ct-scan", "names": { "en": "CT Scan", "uk": "КТ", "de": "CT", "ru": "КТ", "original": "CT Scan" }, "wikidataId": "Q43197" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/x-ray", "slug": "x-ray", "names": { "en": "X-Ray", "uk": "Рентген", "de": "Röntgen", "ru": "Рентген", "original": "X-Ray" }, "wikidataId": "Q1568457" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/ultrasound", "slug": "ultrasound", "names": { "en": "Ultrasound", "uk": "УЗД", "de": "Ultraschall", "ru": "УЗИ", "original": "Ultrasound" }, "wikidataId": "Q189553" }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/nutritionist",
+      "slug": "nutritionist",
+      "names": { "en": "Nutritionist", "uk": "Дієтолог", "de": "Ernährungsberater", "ru": "Диетолог", "original": "Nutritionist" },
+      "altLabels": { "en": ["dietitian"], "uk": ["нутриціолог"], "de": ["diätologe"], "ru": ["нутрициолог"] },
+      "osmTag": "healthcare=nutrition_counselling",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q3589290",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/nutrition-consultation", "slug": "nutrition-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Beratung", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/nutrition-meal-plan", "slug": "nutrition-meal-plan", "names": { "en": "Meal Plan", "uk": "План харчування", "de": "Ernährungsplan", "ru": "План питания", "original": "Meal Plan" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/body-composition-analysis", "slug": "body-composition-analysis", "names": { "en": "Body Composition Analysis", "uk": "Аналіз складу тіла", "de": "Körperanalyse", "ru": "Анализ состава тела", "original": "Body Composition Analysis" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/chiropractor",
+      "slug": "chiropractor",
+      "names": { "en": "Chiropractor", "uk": "Хіропрактик", "de": "Chiropraktiker", "ru": "Хиропрактик", "original": "Chiropractor" },
+      "osmTag": "healthcare=alternative",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q673038",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/spinal-adjustment", "slug": "spinal-adjustment", "names": { "en": "Spinal Adjustment", "uk": "Корекція хребта", "de": "Wirbelsäulenkorrektur", "ru": "Коррекция позвоночника", "original": "Spinal Adjustment" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/posture-assessment", "slug": "posture-assessment", "names": { "en": "Posture Assessment", "uk": "Оцінка постави", "de": "Haltungsanalyse", "ru": "Оценка осанки", "original": "Posture Assessment" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/osteopath",
+      "slug": "osteopath",
+      "names": { "en": "Osteopath", "uk": "Остеопат", "de": "Osteopath", "ru": "Остеопат", "original": "Osteopath" },
+      "osmTag": "healthcare=alternative",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q1077795",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/osteopathy-session", "slug": "osteopathy-session", "names": { "en": "Session", "uk": "Сеанс", "de": "Sitzung", "ru": "Сеанс", "original": "Session" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/cranio-sacral", "slug": "cranio-sacral", "names": { "en": "Craniosacral Therapy", "uk": "Краніосакральна терапія", "de": "Craniosacrale Therapie", "ru": "Краниосакральная терапия", "original": "Craniosacral Therapy" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/speech-therapist",
+      "slug": "speech-therapist",
+      "names": { "en": "Speech Therapist", "uk": "Логопед", "de": "Logopäde", "ru": "Логопед", "original": "Speech Therapist" },
+      "altLabels": { "en": ["speech pathologist"], "uk": ["мовленнєвий терапевт"], "de": ["sprachtherapeut"], "ru": ["логопед-дефектолог"] },
+      "osmTag": "healthcare=speech_therapist",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q639008",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/speech-assessment", "slug": "speech-assessment", "names": { "en": "Assessment", "uk": "Діагностика", "de": "Diagnostik", "ru": "Диагностика", "original": "Assessment" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/speech-session", "slug": "speech-session", "names": { "en": "Therapy Session", "uk": "Сеанс терапії", "de": "Therapiesitzung", "ru": "Сеанс терапии", "original": "Therapy Session" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/childrens-speech", "slug": "childrens-speech", "names": { "en": "Children's Speech", "uk": "Дитячий логопед", "de": "Kinderlogopädie", "ru": "Детский логопед", "original": "Children's Speech" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/home-care",
+      "slug": "home-care",
+      "names": { "en": "Home Healthcare", "uk": "Домашній догляд", "de": "Häusliche Pflege", "ru": "Домашний уход", "original": "Home Healthcare" },
+      "altLabels": { "en": ["home nursing", "home care"], "uk": ["патронажна служба"], "de": ["pflegedienst"], "ru": ["патронаж", "сиделки"] },
+      "osmTag": "office=therapist",
+      "naceRef": "Q87.10",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q5887810",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/visiting-nurse", "slug": "visiting-nurse", "names": { "en": "Visiting Nurse", "uk": "Виїзна медсестра", "de": "Besuchspflege", "ru": "Выездная медсестра", "original": "Visiting Nurse" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/elderly-care", "slug": "elderly-care", "names": { "en": "Elderly Care", "uk": "Догляд за літніми", "de": "Seniorenbetreuung", "ru": "Уход за пожилыми", "original": "Elderly Care" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/post-surgery-care", "slug": "post-surgery-care", "names": { "en": "Post-Surgery Care", "uk": "Післяопераційний догляд", "de": "Nachsorge", "ru": "Послеоперационный уход", "original": "Post-Surgery Care" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/rehabilitation-center",
+      "slug": "rehabilitation-center",
+      "names": { "en": "Rehabilitation Center", "uk": "Реабілітаційний центр", "de": "Reha-Zentrum", "ru": "Реабилитационный центр", "original": "Rehabilitation Center" },
+      "altLabels": { "en": ["rehab", "physical rehabilitation"], "uk": ["реабілітація"], "de": ["rehabilitation"], "ru": ["реабилитация"] },
+      "osmTag": "healthcare=rehabilitation",
+      "naceRef": "Q86.10",
+      "schemaOrgType": "MedicalClinic",
+      "wikidataId": "Q1497364",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/post-surgery-rehab", "slug": "post-surgery-rehab", "names": { "en": "Post-Surgery Rehab", "uk": "Післяопераційна реабілітація", "de": "Postoperative Reha", "ru": "Послеоперационная реабилитация", "original": "Post-Surgery Rehab" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/stroke-rehab", "slug": "stroke-rehab", "names": { "en": "Stroke Rehab", "uk": "Реабілітація після інсульту", "de": "Schlaganfall-Reha", "ru": "Реабилитация после инсульта", "original": "Stroke Rehab" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/sports-rehab-center", "slug": "sports-rehab-center", "names": { "en": "Sports Rehab", "uk": "Спортивна реабілітація", "de": "Sportrehabilitation", "ru": "Спортивная реабилитация", "original": "Sports Rehab" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/neurological-rehab", "slug": "neurological-rehab", "names": { "en": "Neurological Rehab", "uk": "Неврологічна реабілітація", "de": "Neurologische Reha", "ru": "Неврологическая реабилитация", "original": "Neurological Rehab" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/occupational-therapy", "slug": "occupational-therapy", "names": { "en": "Occupational Therapy", "uk": "Ерготерапія", "de": "Ergotherapie", "ru": "Эрготерапия", "original": "Occupational Therapy" }, "wikidataId": "Q31886" }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/addiction-recovery",
+      "slug": "addiction-recovery",
+      "names": { "en": "Addiction Recovery", "uk": "Лікування залежностей", "de": "Suchttherapie", "ru": "Лечение зависимостей", "original": "Addiction Recovery" },
+      "altLabels": { "en": ["rehab clinic", "drug treatment"], "uk": ["наркологічна клініка"], "de": ["suchtklinik"], "ru": ["наркологическая клиника"] },
+      "osmTag": "healthcare=addiction_treatment",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q323020",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/detox-program", "slug": "detox-program", "names": { "en": "Detox Program", "uk": "Програма детоксикації", "de": "Entgiftungsprogramm", "ru": "Программа детоксикации", "original": "Detox Program" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/inpatient-rehab", "slug": "inpatient-rehab", "names": { "en": "Inpatient Rehab", "uk": "Стаціонарна реабілітація", "de": "Stationäre Reha", "ru": "Стационарная реабилитация", "original": "Inpatient Rehab" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/outpatient-counseling", "slug": "outpatient-counseling", "names": { "en": "Outpatient Counseling", "uk": "Амбулаторне консультування", "de": "Ambulante Beratung", "ru": "Амбулаторное консультирование", "original": "Outpatient Counseling" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/support-group", "slug": "support-group", "names": { "en": "Support Group", "uk": "Група підтримки", "de": "Selbsthilfegruppe", "ru": "Группа поддержки", "original": "Support Group" }, "wikidataId": "Q1936659" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/family-therapy-addiction", "slug": "family-therapy-addiction", "names": { "en": "Family Therapy", "uk": "Сімейна терапія", "de": "Familientherapie", "ru": "Семейная терапия", "original": "Family Therapy" }, "wikidataId": "Q1402073" }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/hospice",
+      "slug": "hospice",
+      "names": { "en": "Hospice", "uk": "Хоспіс", "de": "Hospiz", "ru": "Хоспис", "original": "Hospice" },
+      "altLabels": { "en": ["palliative care"], "uk": ["паліативна допомога"], "de": ["palliativpflege"], "ru": ["паллиативная помощь"] },
+      "osmTag": "amenity=hospice",
+      "naceRef": "Q87.20",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q310870",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/inpatient-hospice", "slug": "inpatient-hospice", "names": { "en": "Inpatient Hospice", "uk": "Стаціонарний хоспіс", "de": "Stationäres Hospiz", "ru": "Стационарный хоспис", "original": "Inpatient Hospice" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/home-hospice", "slug": "home-hospice", "names": { "en": "Home Hospice", "uk": "Домашній хоспіс", "de": "Häuslicher Hospizdienst", "ru": "Домашний хоспис", "original": "Home Hospice" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/palliative-consultation", "slug": "palliative-consultation", "names": { "en": "Palliative Consultation", "uk": "Паліативна консультація", "de": "Palliativberatung", "ru": "Паллиативная консультация", "original": "Palliative Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/bereavement-support", "slug": "bereavement-support", "names": { "en": "Bereavement Support", "uk": "Підтримка під час втрати", "de": "Trauerbegleitung", "ru": "Поддержка в горе", "original": "Bereavement Support" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pain-management",
+      "slug": "pain-management",
+      "names": { "en": "Pain Management", "uk": "Лікування болю", "de": "Schmerztherapie", "ru": "Лечение боли", "original": "Pain Management" },
+      "altLabels": { "en": ["pain clinic"], "uk": ["клініка болю"], "de": ["schmerzklinik"], "ru": ["клиника боли"] },
+      "osmTag": "healthcare=doctor",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q1369832",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/pain-consultation", "slug": "pain-consultation", "names": { "en": "Consultation", "uk": "Консультація", "de": "Sprechstunde", "ru": "Консультация", "original": "Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/nerve-block", "slug": "nerve-block", "names": { "en": "Nerve Block", "uk": "Блокада нерва", "de": "Nervenblockade", "ru": "Блокада нерва", "original": "Nerve Block" }, "wikidataId": "Q1755327" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/trigger-point-injection", "slug": "trigger-point-injection", "names": { "en": "Trigger Point Injection", "uk": "Ін'єкція в тригерну точку", "de": "Triggerpunkt-Injektion", "ru": "Инъекция в триггерную точку", "original": "Trigger Point Injection" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/chronic-pain-program", "slug": "chronic-pain-program", "names": { "en": "Chronic Pain Program", "uk": "Програма хронічного болю", "de": "Chronisches Schmerzprogramm", "ru": "Программа хронической боли", "original": "Chronic Pain Program" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/fertility-clinic",
+      "slug": "fertility-clinic",
+      "names": { "en": "Fertility Clinic", "uk": "Репродуктивна клініка", "de": "Kinderwunschklinik", "ru": "Клиника репродукции", "original": "Fertility Clinic" },
+      "altLabels": { "en": ["IVF clinic", "reproductive medicine"], "uk": ["ЕКЗ-клініка"], "de": ["reproduktionsmedizin"], "ru": ["ЭКО-клиника"] },
+      "osmTag": "healthcare=clinic",
+      "naceRef": "Q86.10",
+      "schemaOrgType": "MedicalClinic",
+      "wikidataId": "Q5445156",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/ivf-cycle", "slug": "ivf-cycle", "names": { "en": "IVF Cycle", "uk": "Цикл ЕКЗ", "de": "IVF-Zyklus", "ru": "Цикл ЭКО", "original": "IVF Cycle" }, "wikidataId": "Q193083" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/egg-freezing", "slug": "egg-freezing", "names": { "en": "Egg Freezing", "uk": "Заморожування яйцеклітин", "de": "Eizellen einfrieren", "ru": "Заморозка яйцеклеток", "original": "Egg Freezing" }, "wikidataId": "Q5347730" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/fertility-consultation", "slug": "fertility-consultation", "names": { "en": "Fertility Consultation", "uk": "Консультація з фертильності", "de": "Fertilitätsberatung", "ru": "Консультация по фертильности", "original": "Fertility Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/sperm-banking", "slug": "sperm-banking", "names": { "en": "Sperm Banking", "uk": "Банк сперми", "de": "Samenbank", "ru": "Банк спермы", "original": "Sperm Banking" }, "wikidataId": "Q1129774" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/embryo-transfer", "slug": "embryo-transfer", "names": { "en": "Embryo Transfer", "uk": "Перенесення ембріона", "de": "Embryotransfer", "ru": "Перенос эмбриона", "original": "Embryo Transfer" }, "wikidataId": "Q5369603" }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/urgent-care",
+      "slug": "urgent-care",
+      "names": { "en": "Urgent Care", "uk": "Невідкладна допомога", "de": "Notfallpraxis", "ru": "Неотложная помощь", "original": "Urgent Care" },
+      "altLabels": { "en": ["walk-in clinic"], "uk": ["невідкладка"], "ru": ["скорая"] },
+      "osmTag": "healthcare=clinic",
+      "osmExtraTags": { "healthcare:speciality": "urgent_care" },
+      "naceRef": "Q86.21",
+      "schemaOrgType": "EmergencyService",
+      "wikidataId": "Q2602053",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/walk-in-consultation", "slug": "walk-in-consultation", "names": { "en": "Walk-in Consultation", "uk": "Консультація без запису", "de": "Sprechstunde ohne Termin", "ru": "Консультация без записи", "original": "Walk-in Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/minor-injury-treatment", "slug": "minor-injury-treatment", "names": { "en": "Minor Injury Treatment", "uk": "Лікування легких травм", "de": "Behandlung kleiner Verletzungen", "ru": "Лечение легких травм", "original": "Minor Injury Treatment" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/infection-urgent", "slug": "infection-urgent", "names": { "en": "Infection Treatment", "uk": "Лікування інфекції", "de": "Infektionsbehandlung", "ru": "Лечение инфекции", "original": "Infection Treatment" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/diagnostic-test-urgent", "slug": "diagnostic-test-urgent", "names": { "en": "Urgent Diagnostic Test", "uk": "Термінова діагностика", "de": "Dringende Diagnostik", "ru": "Срочная диагностика", "original": "Urgent Diagnostic Test" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/telehealth",
+      "slug": "telehealth",
+      "names": { "en": "Telehealth", "uk": "Телемедицина", "de": "Telemedizin", "ru": "Телемедицина", "original": "Telehealth" },
+      "altLabels": { "en": ["virtual doctor", "online doctor"], "uk": ["онлайн-консультація"], "ru": ["онлайн-консультация"] },
+      "osmTag": "office=telemedicine",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "MedicalBusiness",
+      "wikidataId": "Q7699941",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/video-consultation", "slug": "video-consultation", "names": { "en": "Video Consultation", "uk": "Відеоконсультація", "de": "Videosprechstunde", "ru": "Видеоконсультация", "original": "Video Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/chat-consultation", "slug": "chat-consultation", "names": { "en": "Chat Consultation", "uk": "Консультація в чаті", "de": "Chat-Beratung", "ru": "Консультация в чате", "original": "Chat Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/e-prescription", "slug": "e-prescription", "names": { "en": "E-Prescription", "uk": "Електронний рецепт", "de": "E-Rezept", "ru": "Электронный рецепт", "original": "E-Prescription" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/follow-up-telehealth", "slug": "follow-up-telehealth", "names": { "en": "Follow-up Consultation", "uk": "Повторна консультація", "de": "Folgeberatung", "ru": "Повторная консультация", "original": "Follow-up Consultation" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/mental-health-clinic",
+      "slug": "mental-health-clinic",
+      "names": { "en": "Mental Health Clinic", "uk": "Психіатрична клініка", "de": "Psychiatrische Klinik", "ru": "Психиатрическая клиника", "original": "Mental Health Clinic" },
+      "altLabels": { "en": ["psychiatric clinic"], "uk": ["психоневрологічний диспансер"] },
+      "osmTag": "healthcare=psychotherapist",
+      "naceRef": "Q86.22",
+      "schemaOrgType": "MedicalClinic",
+      "wikidataId": "Q207449",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/psychiatrist-consultation", "slug": "psychiatrist-consultation", "names": { "en": "Psychiatrist Consultation", "uk": "Консультація психіатра", "de": "Psychiatrische Sprechstunde", "ru": "Консультация психиатра", "original": "Psychiatrist Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/therapy-session-clinic", "slug": "therapy-session-clinic", "names": { "en": "Therapy Session", "uk": "Сеанс терапії", "de": "Therapiesitzung", "ru": "Сеанс терапии", "original": "Therapy Session" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/group-therapy", "slug": "group-therapy", "names": { "en": "Group Therapy", "uk": "Групова терапія", "de": "Gruppentherapie", "ru": "Групповая терапия", "original": "Group Therapy" }, "wikidataId": "Q1283320" },
+        { "@id": "https://taxonomy.mapko.net/v1/template/crisis-intervention", "slug": "crisis-intervention", "names": { "en": "Crisis Intervention", "uk": "Кризова допомога", "de": "Kriseninterventionen", "ru": "Кризисная помощь", "original": "Crisis Intervention" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/inpatient-psychiatric", "slug": "inpatient-psychiatric", "names": { "en": "Inpatient Care", "uk": "Стаціонарне лікування", "de": "Stationäre Behandlung", "ru": "Стационарное лечение", "original": "Inpatient Care" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/podiatrist",
+      "slug": "podiatrist",
+      "names": { "en": "Podiatrist", "uk": "Подолог", "de": "Podologe", "ru": "Подолог", "original": "Podiatrist" },
+      "altLabels": { "en": ["chiropodist", "foot doctor"], "uk": ["лікар-подолог"], "de": ["fußpfleger"], "ru": ["врач-подолог"] },
+      "osmTag": "healthcare=podiatrist",
+      "naceRef": "Q86.90",
+      "schemaOrgType": "Physician",
+      "wikidataId": "Q1399875",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/foot-examination", "slug": "foot-examination", "names": { "en": "Foot Examination", "uk": "Огляд стоп", "de": "Fußuntersuchung", "ru": "Осмотр стоп", "original": "Foot Examination" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/nail-treatment-podiatry", "slug": "nail-treatment-podiatry", "names": { "en": "Nail Treatment", "uk": "Лікування нігтів", "de": "Nagelbehandlung", "ru": "Лечение ногтей", "original": "Nail Treatment" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/orthotics-fitting", "slug": "orthotics-fitting", "names": { "en": "Orthotics Fitting", "uk": "Підбір ортезів", "de": "Orthesenanpassung", "ru": "Подбор ортезов", "original": "Orthotics Fitting" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/diabetic-foot-care", "slug": "diabetic-foot-care", "names": { "en": "Diabetic Foot Care", "uk": "Догляд за діабетичною стопою", "de": "Diabetische Fußpflege", "ru": "Уход за диабетической стопой", "original": "Diabetic Foot Care" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/sports-medicine-clinic",
+      "slug": "sports-medicine-clinic",
+      "names": { "en": "Sports Medicine Clinic", "uk": "Спортивна медицина", "de": "Sportmedizin", "ru": "Спортивная медицина", "original": "Sports Medicine Clinic" },
+      "altLabels": { "en": ["sports physician"] },
+      "osmTag": "healthcare=doctor",
+      "osmExtraTags": { "healthcare:speciality": "sports" },
+      "naceRef": "Q86.22",
+      "schemaOrgType": "MedicalClinic",
+      "wikidataId": "Q1063527",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/sports-injury-consultation", "slug": "sports-injury-consultation", "names": { "en": "Sports Injury Consultation", "uk": "Консультація зі спортивних травм", "de": "Sportverletzungsberatung", "ru": "Консультация по спортивным травмам", "original": "Sports Injury Consultation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/performance-assessment", "slug": "performance-assessment", "names": { "en": "Performance Assessment", "uk": "Оцінка продуктивності", "de": "Leistungsdiagnostik", "ru": "Оценка производительности", "original": "Performance Assessment" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/return-to-play-clearance", "slug": "return-to-play-clearance", "names": { "en": "Return-to-Play Clearance", "uk": "Допуск до тренувань", "de": "Freigabe zum Training", "ru": "Допуск к тренировкам", "original": "Return-to-Play Clearance" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/injury-rehab", "slug": "injury-rehab", "names": { "en": "Injury Rehabilitation", "uk": "Реабілітація травм", "de": "Verletzungsrehabilitation", "ru": "Реабилитация травм", "original": "Injury Rehabilitation" } }
       ]
     }
   ]

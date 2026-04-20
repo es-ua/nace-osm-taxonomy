@@ -1,5 +1,8 @@
 {
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/home-services",
   "slug": "home-services",
+  "version": "1.1.0",
   "names": {
     "en": "Home Services",
     "uk": "Побутові послуги",
@@ -7,391 +10,341 @@
     "ru": "Бытовые услуги",
     "original": "Home Services"
   },
+  "altLabels": {
+    "en": ["household services", "maintenance"],
+    "uk": ["домашні послуги"],
+    "de": ["hausdienste"],
+    "ru": ["домашние услуги"]
+  },
   "icon": "🏠",
-  "naceRef": "F43+N81",
+  "naceRef": "F43",
+  "schemaOrgType": "HomeAndConstructionBusiness",
+  "wikidataId": "Q15303351",
   "subcategories": [
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/plumber",
       "slug": "plumber",
-      "names": {
-        "en": "Plumber",
-        "uk": "Сантехнік",
-        "de": "Klempner",
-        "ru": "Сантехник",
-        "original": "Plumber"
-      },
+      "names": { "en": "Plumber", "uk": "Сантехнік", "de": "Klempner", "ru": "Сантехник", "original": "Plumber" },
       "osmTag": "craft=plumber",
+      "naceRef": "F43.22",
+      "schemaOrgType": "Plumber",
+      "wikidataId": "Q252924",
       "templates": [
-        {
-          "slug": "plumbing-repair",
-          "names": {
-            "en": "Repair",
-            "uk": "Ремонт",
-            "de": "Reparatur",
-            "ru": "Ремонт",
-            "original": "Repair"
-          }
-        },
-        {
-          "slug": "plumbing-install",
-          "names": {
-            "en": "Installation",
-            "uk": "Встановлення",
-            "de": "Installation",
-            "ru": "Установка",
-            "original": "Installation"
-          }
-        },
-        {
-          "slug": "emergency-plumber",
-          "names": {
-            "en": "Emergency Call",
-            "uk": "Аварійний виклик",
-            "de": "Notdienst",
-            "ru": "Аварийный вызов",
-            "original": "Emergency Call"
-          }
-        },
-        {
-          "slug": "drain-cleaning",
-          "names": {
-            "en": "Drain Cleaning",
-            "uk": "Прочистка каналізації",
-            "de": "Rohrreinigung",
-            "ru": "Прочистка канализации",
-            "original": "Drain Cleaning"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/plumbing-repair", "slug": "plumbing-repair", "names": { "en": "Repair", "uk": "Ремонт", "de": "Reparatur", "ru": "Ремонт", "original": "Repair" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/plumbing-install", "slug": "plumbing-install", "names": { "en": "Installation", "uk": "Встановлення", "de": "Installation", "ru": "Установка", "original": "Installation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/emergency-plumber", "slug": "emergency-plumber", "names": { "en": "Emergency Call", "uk": "Аварійний виклик", "de": "Notdienst", "ru": "Аварийный вызов", "original": "Emergency Call" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/drain-cleaning", "slug": "drain-cleaning", "names": { "en": "Drain Cleaning", "uk": "Прочистка каналізації", "de": "Rohrreinigung", "ru": "Прочистка канализации", "original": "Drain Cleaning" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/electrician",
       "slug": "electrician",
-      "names": {
-        "en": "Electrician",
-        "uk": "Електрик",
-        "de": "Elektriker",
-        "ru": "Электрик",
-        "original": "Electrician"
-      },
+      "names": { "en": "Electrician", "uk": "Електрик", "de": "Elektriker", "ru": "Электрик", "original": "Electrician" },
       "osmTag": "craft=electrician",
+      "naceRef": "F43.21",
+      "schemaOrgType": "Electrician",
+      "wikidataId": "Q165029",
       "templates": [
-        {
-          "slug": "electrical-wiring",
-          "names": {
-            "en": "Wiring",
-            "uk": "Проводка",
-            "de": "Verkabelung",
-            "ru": "Проводка",
-            "original": "Wiring"
-          }
-        },
-        {
-          "slug": "electrical-repair",
-          "names": {
-            "en": "Repair",
-            "uk": "Ремонт",
-            "de": "Reparatur",
-            "ru": "Ремонт",
-            "original": "Repair"
-          }
-        },
-        {
-          "slug": "electrical-install",
-          "names": {
-            "en": "Installation",
-            "uk": "Встановлення",
-            "de": "Installation",
-            "ru": "Установка",
-            "original": "Installation"
-          }
-        },
-        {
-          "slug": "electrical-inspection",
-          "names": {
-            "en": "Inspection",
-            "uk": "Перевірка",
-            "de": "E-Check",
-            "ru": "Проверка",
-            "original": "Inspection"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/electrical-wiring", "slug": "electrical-wiring", "names": { "en": "Wiring", "uk": "Проводка", "de": "Verkabelung", "ru": "Проводка", "original": "Wiring" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/electrical-repair", "slug": "electrical-repair", "names": { "en": "Repair", "uk": "Ремонт", "de": "Reparatur", "ru": "Ремонт", "original": "Repair" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/electrical-install", "slug": "electrical-install", "names": { "en": "Installation", "uk": "Встановлення", "de": "Installation", "ru": "Установка", "original": "Installation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/electrical-inspection", "slug": "electrical-inspection", "names": { "en": "Inspection", "uk": "Перевірка", "de": "E-Check", "ru": "Проверка", "original": "Inspection" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/cleaning",
       "slug": "cleaning",
-      "names": {
-        "en": "Cleaning Service",
-        "uk": "Клінінг",
-        "de": "Reinigungsservice",
-        "ru": "Клининг",
-        "original": "Cleaning Service"
-      },
+      "names": { "en": "Cleaning Service", "uk": "Клінінг", "de": "Reinigungsservice", "ru": "Клининг", "original": "Cleaning Service" },
+      "altLabels": { "en": ["housekeeping"], "uk": ["прибирання"], "de": ["putzdienst"], "ru": ["уборка"] },
       "osmTag": "office=cleaning",
+      "naceRef": "N81.21",
+      "schemaOrgType": "HousePainter",
+      "wikidataId": "Q1357558",
       "templates": [
-        {
-          "slug": "regular-cleaning",
-          "names": {
-            "en": "Regular Cleaning",
-            "uk": "Регулярне прибирання",
-            "de": "Unterhaltsreinigung",
-            "ru": "Регулярная уборка",
-            "original": "Regular Cleaning"
-          }
-        },
-        {
-          "slug": "deep-cleaning",
-          "names": {
-            "en": "Deep Cleaning",
-            "uk": "Генеральне прибирання",
-            "de": "Grundreinigung",
-            "ru": "Генеральная уборка",
-            "original": "Deep Cleaning"
-          }
-        },
-        {
-          "slug": "window-cleaning",
-          "names": {
-            "en": "Window Cleaning",
-            "uk": "Миття вікон",
-            "de": "Fensterreinigung",
-            "ru": "Мытьё окон",
-            "original": "Window Cleaning"
-          }
-        },
-        {
-          "slug": "office-cleaning",
-          "names": {
-            "en": "Office Cleaning",
-            "uk": "Прибирання офісу",
-            "de": "Büroreinigung",
-            "ru": "Уборка офиса",
-            "original": "Office Cleaning"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/regular-cleaning", "slug": "regular-cleaning", "names": { "en": "Regular Cleaning", "uk": "Регулярне прибирання", "de": "Unterhaltsreinigung", "ru": "Регулярная уборка", "original": "Regular Cleaning" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/deep-cleaning", "slug": "deep-cleaning", "names": { "en": "Deep Cleaning", "uk": "Генеральне прибирання", "de": "Grundreinigung", "ru": "Генеральная уборка", "original": "Deep Cleaning" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/window-cleaning", "slug": "window-cleaning", "names": { "en": "Window Cleaning", "uk": "Миття вікон", "de": "Fensterreinigung", "ru": "Мытьё окон", "original": "Window Cleaning" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/office-cleaning", "slug": "office-cleaning", "names": { "en": "Office Cleaning", "uk": "Прибирання офісу", "de": "Büroreinigung", "ru": "Уборка офиса", "original": "Office Cleaning" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/landscaping",
       "slug": "landscaping",
-      "names": {
-        "en": "Landscaping",
-        "uk": "Ландшафтний дизайн",
-        "de": "Garten- und Landschaftsbau",
-        "ru": "Ландшафтный дизайн",
-        "original": "Landscaping"
-      },
+      "names": { "en": "Landscaping", "uk": "Ландшафтний дизайн", "de": "Garten- und Landschaftsbau", "ru": "Ландшафтный дизайн", "original": "Landscaping" },
       "osmTag": "craft=gardener",
+      "naceRef": "N81.30",
+      "schemaOrgType": "HomeAndConstructionBusiness",
+      "wikidataId": "Q1191527",
       "templates": [
-        {
-          "slug": "lawn-care",
-          "names": {
-            "en": "Lawn Care",
-            "uk": "Догляд за газоном",
-            "de": "Rasenpflege",
-            "ru": "Уход за газоном",
-            "original": "Lawn Care"
-          }
-        },
-        {
-          "slug": "tree-trimming",
-          "names": {
-            "en": "Tree Trimming",
-            "uk": "Обрізка дерев",
-            "de": "Baumschnitt",
-            "ru": "Обрезка деревьев",
-            "original": "Tree Trimming"
-          }
-        },
-        {
-          "slug": "garden-design",
-          "names": {
-            "en": "Garden Design",
-            "uk": "Дизайн саду",
-            "de": "Gartengestaltung",
-            "ru": "Дизайн сада",
-            "original": "Garden Design"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/lawn-care", "slug": "lawn-care", "names": { "en": "Lawn Care", "uk": "Догляд за газоном", "de": "Rasenpflege", "ru": "Уход за газоном", "original": "Lawn Care" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/tree-trimming", "slug": "tree-trimming", "names": { "en": "Tree Trimming", "uk": "Обрізка дерев", "de": "Baumschnitt", "ru": "Обрезка деревьев", "original": "Tree Trimming" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/garden-design", "slug": "garden-design", "names": { "en": "Garden Design", "uk": "Дизайн саду", "de": "Gartengestaltung", "ru": "Дизайн сада", "original": "Garden Design" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/moving",
       "slug": "moving",
-      "names": {
-        "en": "Moving Service",
-        "uk": "Переїзд",
-        "de": "Umzugsservice",
-        "ru": "Переезд",
-        "original": "Moving Service"
-      },
+      "names": { "en": "Moving Service", "uk": "Переїзд", "de": "Umzugsservice", "ru": "Переезд", "original": "Moving Service" },
       "osmTag": "office=moving_company",
+      "naceRef": "H49.42",
+      "schemaOrgType": "MovingCompany",
+      "wikidataId": "Q1751017",
       "templates": [
-        {
-          "slug": "local-move",
-          "names": {
-            "en": "Local Move",
-            "uk": "Місцевий переїзд",
-            "de": "Lokalumzug",
-            "ru": "Местный переезд",
-            "original": "Local Move"
-          }
-        },
-        {
-          "slug": "long-distance-move",
-          "names": {
-            "en": "Long Distance",
-            "uk": "Міжміський переїзд",
-            "de": "Fernumzug",
-            "ru": "Междугородний переезд",
-            "original": "Long Distance"
-          }
-        },
-        {
-          "slug": "packing-service",
-          "names": {
-            "en": "Packing",
-            "uk": "Пакування",
-            "de": "Verpackungsservice",
-            "ru": "Упаковка",
-            "original": "Packing"
-          }
-        },
-        {
-          "slug": "furniture-assembly",
-          "names": {
-            "en": "Furniture Assembly",
-            "uk": "Збірка меблів",
-            "de": "Möbelmontage",
-            "ru": "Сборка мебели",
-            "original": "Furniture Assembly"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/local-move", "slug": "local-move", "names": { "en": "Local Move", "uk": "Місцевий переїзд", "de": "Lokalumzug", "ru": "Местный переезд", "original": "Local Move" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/long-distance-move", "slug": "long-distance-move", "names": { "en": "Long Distance", "uk": "Міжміський переїзд", "de": "Fernumzug", "ru": "Междугородний переезд", "original": "Long Distance" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/packing-service", "slug": "packing-service", "names": { "en": "Packing", "uk": "Пакування", "de": "Verpackungsservice", "ru": "Упаковка", "original": "Packing" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/furniture-assembly", "slug": "furniture-assembly", "names": { "en": "Furniture Assembly", "uk": "Збірка меблів", "de": "Möbelmontage", "ru": "Сборка мебели", "original": "Furniture Assembly" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/locksmith",
       "slug": "locksmith",
-      "names": {
-        "en": "Locksmith",
-        "uk": "Замковий майстер",
-        "de": "Schlüsseldienst",
-        "ru": "Слесарь",
-        "original": "Locksmith"
-      },
+      "names": { "en": "Locksmith", "uk": "Замковий майстер", "de": "Schlüsseldienst", "ru": "Слесарь", "original": "Locksmith" },
       "osmTag": "craft=locksmith",
+      "naceRef": "S95.29",
+      "schemaOrgType": "Locksmith",
+      "wikidataId": "Q1396342",
       "templates": [
-        {
-          "slug": "lock-change",
-          "names": {
-            "en": "Lock Change",
-            "uk": "Заміна замка",
-            "de": "Schlossaustausch",
-            "ru": "Замена замка",
-            "original": "Lock Change"
-          }
-        },
-        {
-          "slug": "emergency-opening",
-          "names": {
-            "en": "Emergency Opening",
-            "uk": "Аварійне відкриття",
-            "de": "Türnotöffnung",
-            "ru": "Аварийное вскрытие",
-            "original": "Emergency Opening"
-          }
-        },
-        {
-          "slug": "key-copy",
-          "names": {
-            "en": "Key Copy",
-            "uk": "Дублікат ключа",
-            "de": "Schlüsselkopie",
-            "ru": "Дубликат ключа",
-            "original": "Key Copy"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/lock-change", "slug": "lock-change", "names": { "en": "Lock Change", "uk": "Заміна замка", "de": "Schlossaustausch", "ru": "Замена замка", "original": "Lock Change" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/emergency-opening", "slug": "emergency-opening", "names": { "en": "Emergency Opening", "uk": "Аварійне відкриття", "de": "Türnotöffnung", "ru": "Аварийное вскрытие", "original": "Emergency Opening" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/key-copy", "slug": "key-copy", "names": { "en": "Key Copy", "uk": "Дублікат ключа", "de": "Schlüsselkopie", "ru": "Дубликат ключа", "original": "Key Copy" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/painter",
       "slug": "painter",
-      "names": {
-        "en": "Painter",
-        "uk": "Маляр",
-        "de": "Maler",
-        "ru": "Маляр",
-        "original": "Painter"
-      },
+      "names": { "en": "Painter", "uk": "Маляр", "de": "Maler", "ru": "Маляр", "original": "Painter" },
       "osmTag": "craft=painter",
+      "naceRef": "F43.34",
+      "schemaOrgType": "HousePainter",
+      "wikidataId": "Q205966",
       "templates": [
-        {
-          "slug": "interior-painting",
-          "names": {
-            "en": "Interior",
-            "uk": "Внутрішні роботи",
-            "de": "Innenanstrich",
-            "ru": "Внутренние работы",
-            "original": "Interior"
-          }
-        },
-        {
-          "slug": "exterior-painting",
-          "names": {
-            "en": "Exterior",
-            "uk": "Зовнішні роботи",
-            "de": "Außenanstrich",
-            "ru": "Наружные работы",
-            "original": "Exterior"
-          }
-        },
-        {
-          "slug": "wallpaper",
-          "names": {
-            "en": "Wallpaper",
-            "uk": "Шпалери",
-            "de": "Tapezieren",
-            "ru": "Обои",
-            "original": "Wallpaper"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/interior-painting", "slug": "interior-painting", "names": { "en": "Interior", "uk": "Внутрішні роботи", "de": "Innenanstrich", "ru": "Внутренние работы", "original": "Interior" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/exterior-painting", "slug": "exterior-painting", "names": { "en": "Exterior", "uk": "Зовнішні роботи", "de": "Außenanstrich", "ru": "Наружные работы", "original": "Exterior" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/wallpaper", "slug": "wallpaper", "names": { "en": "Wallpaper", "uk": "Шпалери", "de": "Tapezieren", "ru": "Обои", "original": "Wallpaper" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/renovation",
       "slug": "renovation",
-      "names": {
-        "en": "Renovation",
-        "uk": "Ремонт приміщень",
-        "de": "Renovierung",
-        "ru": "Ремонт помещений",
-        "original": "Renovation"
-      },
+      "names": { "en": "Renovation", "uk": "Ремонт приміщень", "de": "Renovierung", "ru": "Ремонт помещений", "original": "Renovation" },
+      "altLabels": { "en": ["remodeling", "construction"], "uk": ["капремонт"], "de": ["sanierung"], "ru": ["капремонт"] },
       "osmTag": "craft=builder",
+      "naceRef": "F43.39",
+      "schemaOrgType": "GeneralContractor",
+      "wikidataId": "Q3179137",
       "templates": [
-        {
-          "slug": "bathroom-renovation",
-          "names": {
-            "en": "Bathroom",
-            "uk": "Ванна кімната",
-            "de": "Badsanierung",
-            "ru": "Ванная комната",
-            "original": "Bathroom"
-          }
-        },
-        {
-          "slug": "kitchen-renovation",
-          "names": {
-            "en": "Kitchen",
-            "uk": "Кухня",
-            "de": "Küchenumbau",
-            "ru": "Кухня",
-            "original": "Kitchen"
-          }
-        },
-        {
-          "slug": "full-renovation",
-          "names": {
-            "en": "Full Renovation",
-            "uk": "Капітальний ремонт",
-            "de": "Komplettsanierung",
-            "ru": "Капитальный ремонт",
-            "original": "Full Renovation"
-          }
-        }
+        { "@id": "https://taxonomy.mapko.net/v1/template/bathroom-renovation", "slug": "bathroom-renovation", "names": { "en": "Bathroom", "uk": "Ванна кімната", "de": "Badsanierung", "ru": "Ванная комната", "original": "Bathroom" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/kitchen-renovation", "slug": "kitchen-renovation", "names": { "en": "Kitchen", "uk": "Кухня", "de": "Küchenumbau", "ru": "Кухня", "original": "Kitchen" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/full-renovation", "slug": "full-renovation", "names": { "en": "Full Renovation", "uk": "Капітальний ремонт", "de": "Komplettsanierung", "ru": "Капитальный ремонт", "original": "Full Renovation" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/hvac",
+      "slug": "hvac",
+      "names": { "en": "HVAC", "uk": "Опалення та кондиціонування", "de": "Heizung & Klima", "ru": "Отопление и кондиционирование", "original": "HVAC" },
+      "altLabels": { "en": ["heating cooling", "AC repair"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "craft=hvac",
+      "naceRef": "F43.22",
+      "schemaOrgType": "HVACBusiness",
+      "wikidataId": "Q386929",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/ac-installation", "slug": "ac-installation", "names": { "en": "AC Installation", "uk": "Встановлення кондиціонера", "de": "Klimaanlagen-Installation", "ru": "Установка кондиционера", "original": "AC Installation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/ac-repair", "slug": "ac-repair", "names": { "en": "AC Repair", "uk": "Ремонт кондиціонера", "de": "Klimaanlagen-Reparatur", "ru": "Ремонт кондиционера", "original": "AC Repair" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/heating-system-install", "slug": "heating-system-install", "names": { "en": "Heating System Install", "uk": "Монтаж опалення", "de": "Heizungseinbau", "ru": "Монтаж отопления", "original": "Heating System Install" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/hvac-maintenance", "slug": "hvac-maintenance", "names": { "en": "HVAC Maintenance", "uk": "Обслуговування HVAC", "de": "HVAC-Wartung", "ru": "Обслуживание HVAC", "original": "HVAC Maintenance" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/ductwork-cleaning", "slug": "ductwork-cleaning", "names": { "en": "Ductwork Cleaning", "uk": "Чистка повітроводів", "de": "Lüftungsreinigung", "ru": "Чистка воздуховодов", "original": "Ductwork Cleaning" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/smart-home-installer",
+      "slug": "smart-home-installer",
+      "names": { "en": "Smart Home Installer", "uk": "Розумний дім", "de": "Smart-Home-Installation", "ru": "Умный дом", "original": "Smart Home Installer" },
+      "altLabels": { "en": ["home automation"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "craft=electronics_repair",
+      "naceRef": "F43.21+F43.29",
+      "schemaOrgType": "Electrician",
+      "wikidataId": "Q3076249",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/smart-lighting-install", "slug": "smart-lighting-install", "names": { "en": "Smart Lighting Install", "uk": "Розумне освітлення", "de": "Smart-Lighting-Installation", "ru": "Умное освещение", "original": "Smart Lighting Install" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/smart-thermostat", "slug": "smart-thermostat", "names": { "en": "Smart Thermostat", "uk": "Розумний термостат", "de": "Smarter Thermostat", "ru": "Умный термостат", "original": "Smart Thermostat" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/voice-assistant-setup", "slug": "voice-assistant-setup", "names": { "en": "Voice Assistant Setup", "uk": "Налаштування голосового асистента", "de": "Sprachassistent-Einrichtung", "ru": "Настройка голосового ассистента", "original": "Voice Assistant Setup" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/smart-security-system", "slug": "smart-security-system", "names": { "en": "Smart Security System", "uk": "Розумна охоронна система", "de": "Smarte Sicherheitsanlage", "ru": "Умная охранная система", "original": "Smart Security System" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/security-installer",
+      "slug": "security-installer",
+      "names": { "en": "Security & Alarm Installer", "uk": "Системи безпеки", "de": "Sicherheitstechnik", "ru": "Системы безопасности", "original": "Security & Alarm Installer" },
+      "altLabels": { "en": ["alarm installer"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "office=security",
+      "naceRef": "F43.21+N80.20",
+      "schemaOrgType": "Electrician",
+      "wikidataId": "Q474191",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/alarm-installation", "slug": "alarm-installation", "names": { "en": "Alarm Installation", "uk": "Встановлення сигналізації", "de": "Alarmanlagen-Installation", "ru": "Установка сигнализации", "original": "Alarm Installation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/cctv-install", "slug": "cctv-install", "names": { "en": "CCTV Install", "uk": "Встановлення відеоспостереження", "de": "Videoüberwachung-Installation", "ru": "Установка видеонаблюдения", "original": "CCTV Install" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/intercom-install", "slug": "intercom-install", "names": { "en": "Intercom Install", "uk": "Встановлення домофона", "de": "Gegensprechanlage-Installation", "ru": "Установка домофона", "original": "Intercom Install" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/monitoring-service", "slug": "monitoring-service", "names": { "en": "Monitoring Service", "uk": "Послуга моніторингу", "de": "Überwachungsservice", "ru": "Услуга мониторинга", "original": "Monitoring Service" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pool-service",
+      "slug": "pool-service",
+      "names": { "en": "Pool Service", "uk": "Обслуговування басейнів", "de": "Poolservice", "ru": "Обслуживание бассейнов", "original": "Pool Service" },
+      "osmTag": "craft=plumber",
+      "naceRef": "F43.99+S96.09",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q3343527",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/pool-cleaning", "slug": "pool-cleaning", "names": { "en": "Pool Cleaning", "uk": "Чистка басейну", "de": "Poolreinigung", "ru": "Чистка бассейна", "original": "Pool Cleaning" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/pool-chemistry", "slug": "pool-chemistry", "names": { "en": "Pool Chemistry", "uk": "Хімія для басейну", "de": "Wasserchemie", "ru": "Химия для бассейна", "original": "Pool Chemistry" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/pool-equipment-repair", "slug": "pool-equipment-repair", "names": { "en": "Pool Equipment Repair", "uk": "Ремонт обладнання басейну", "de": "Pooltechnik-Reparatur", "ru": "Ремонт оборудования бассейна", "original": "Pool Equipment Repair" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/pool-opening-closing", "slug": "pool-opening-closing", "names": { "en": "Pool Opening/Closing", "uk": "Відкриття/закриття басейну", "de": "Pool-Öffnung/Schließung", "ru": "Открытие/закрытие бассейна", "original": "Pool Opening/Closing" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pest-control",
+      "slug": "pest-control",
+      "names": { "en": "Pest Control", "uk": "Дезінсекція", "de": "Schädlingsbekämpfung", "ru": "Дезинсекция", "original": "Pest Control" },
+      "altLabels": { "en": ["exterminator"], "uk": ["знищення шкідників"], "de": [], "ru": ["дезинфекция"] },
+      "osmTag": "office=pest_control",
+      "naceRef": "N81.29",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q833125",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/insect-treatment", "slug": "insect-treatment", "names": { "en": "Insect Treatment", "uk": "Обробка від комах", "de": "Insektenbekämpfung", "ru": "Обработка от насекомых", "original": "Insect Treatment" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/rodent-control", "slug": "rodent-control", "names": { "en": "Rodent Control", "uk": "Боротьба з гризунами", "de": "Nagerbekämpfung", "ru": "Борьба с грызунами", "original": "Rodent Control" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/termite-treatment", "slug": "termite-treatment", "names": { "en": "Termite Treatment", "uk": "Обробка від термітів", "de": "Termitenbekämpfung", "ru": "Обработка от термитов", "original": "Termite Treatment" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/prevention-plan", "slug": "prevention-plan", "names": { "en": "Prevention Plan", "uk": "План профілактики", "de": "Präventionsplan", "ru": "План профилактики", "original": "Prevention Plan" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/roofing-contractor",
+      "slug": "roofing-contractor",
+      "names": { "en": "Roofing Contractor", "uk": "Покрівельник", "de": "Dachdecker", "ru": "Кровельщик", "original": "Roofing Contractor" },
+      "altLabels": { "en": ["roofer"], "uk": ["покрівля"], "de": [], "ru": [] },
+      "osmTag": "craft=roofer",
+      "naceRef": "F43.99",
+      "schemaOrgType": "RoofingContractor",
+      "wikidataId": "Q2376922",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/roof-installation", "slug": "roof-installation", "names": { "en": "Roof Installation", "uk": "Монтаж покрівлі", "de": "Dachmontage", "ru": "Монтаж кровли", "original": "Roof Installation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/roof-repair", "slug": "roof-repair", "names": { "en": "Roof Repair", "uk": "Ремонт покрівлі", "de": "Dachreparatur", "ru": "Ремонт кровли", "original": "Roof Repair" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/gutter-cleaning", "slug": "gutter-cleaning", "names": { "en": "Gutter Cleaning", "uk": "Чистка ринв", "de": "Dachrinnenreinigung", "ru": "Чистка желобов", "original": "Gutter Cleaning" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/roof-inspection", "slug": "roof-inspection", "names": { "en": "Roof Inspection", "uk": "Огляд покрівлі", "de": "Dachinspektion", "ru": "Осмотр кровли", "original": "Roof Inspection" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/concrete-contractor",
+      "slug": "concrete-contractor",
+      "names": { "en": "Concrete Contractor", "uk": "Бетонні роботи", "de": "Betonbauer", "ru": "Бетонщик", "original": "Concrete Contractor" },
+      "altLabels": { "en": ["concrete work"], "uk": ["бетон"], "de": ["betonarbeiten"], "ru": ["бетонные работы"] },
+      "osmTag": "craft=concrete",
+      "naceRef": "F43.99",
+      "schemaOrgType": "GeneralContractor",
+      "wikidataId": "Q22657",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/foundation-pouring", "slug": "foundation-pouring", "names": { "en": "Foundation Pouring", "uk": "Заливка фундаменту", "de": "Fundamentguss", "ru": "Заливка фундамента", "original": "Foundation Pouring" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/concrete-driveway", "slug": "concrete-driveway", "names": { "en": "Concrete Driveway", "uk": "Бетонний під'їзд", "de": "Betoneinfahrt", "ru": "Бетонная подъездная дорожка", "original": "Concrete Driveway" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/concrete-patio", "slug": "concrete-patio", "names": { "en": "Concrete Patio", "uk": "Бетонна тераса", "de": "Beton-Terrasse", "ru": "Бетонная терраса", "original": "Concrete Patio" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/concrete-repair", "slug": "concrete-repair", "names": { "en": "Concrete Repair", "uk": "Ремонт бетону", "de": "Betonsanierung", "ru": "Ремонт бетона", "original": "Concrete Repair" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/demolition-service",
+      "slug": "demolition-service",
+      "names": { "en": "Demolition Service", "uk": "Демонтаж", "de": "Abbruchunternehmen", "ru": "Демонтаж", "original": "Demolition Service" },
+      "altLabels": { "en": ["teardown service"], "uk": ["демонтаж будівель"], "de": [], "ru": ["снос зданий"] },
+      "osmTag": "office=construction_company+demolition=yes",
+      "naceRef": "F43.11",
+      "schemaOrgType": "GeneralContractor",
+      "wikidataId": "Q1193021",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/residential-demolition", "slug": "residential-demolition", "names": { "en": "Residential Demolition", "uk": "Знесення житла", "de": "Wohngebäudeabbruch", "ru": "Снос жилья", "original": "Residential Demolition" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/commercial-demolition", "slug": "commercial-demolition", "names": { "en": "Commercial Demolition", "uk": "Знесення комерції", "de": "Gewerbeabbruch", "ru": "Снос коммерции", "original": "Commercial Demolition" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/selective-demolition", "slug": "selective-demolition", "names": { "en": "Selective Demolition", "uk": "Вибірковий демонтаж", "de": "Selektiver Abbruch", "ru": "Выборочный демонтаж", "original": "Selective Demolition" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/asbestos-abatement", "slug": "asbestos-abatement", "names": { "en": "Asbestos Abatement", "uk": "Видалення азбесту", "de": "Asbestsanierung", "ru": "Удаление асбеста", "original": "Asbestos Abatement" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/excavation-service",
+      "slug": "excavation-service",
+      "names": { "en": "Excavation Service", "uk": "Земляні роботи", "de": "Erdbauunternehmen", "ru": "Земляные работы", "original": "Excavation Service" },
+      "altLabels": { "en": ["earthmoving"], "uk": ["екскаваторні роботи"], "de": [], "ru": [] },
+      "osmTag": "craft=building",
+      "naceRef": "F43.12",
+      "schemaOrgType": "GeneralContractor",
+      "wikidataId": "Q224644",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/site-preparation", "slug": "site-preparation", "names": { "en": "Site Preparation", "uk": "Підготовка ділянки", "de": "Baustellenvorbereitung", "ru": "Подготовка участка", "original": "Site Preparation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/foundation-excavation", "slug": "foundation-excavation", "names": { "en": "Foundation Excavation", "uk": "Земляні роботи під фундамент", "de": "Fundamentaushub", "ru": "Земляные работы под фундамент", "original": "Foundation Excavation" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/trenching", "slug": "trenching", "names": { "en": "Trenching", "uk": "Копання траншей", "de": "Grabenaushub", "ru": "Рытьё траншей", "original": "Trenching" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/grading", "slug": "grading", "names": { "en": "Grading", "uk": "Планування ґрунту", "de": "Geländemodellierung", "ru": "Планировка грунта", "original": "Grading" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/solar-installer",
+      "slug": "solar-installer",
+      "names": { "en": "Solar Installer", "uk": "Встановлення сонячних панелей", "de": "Solaranlagen-Installation", "ru": "Установка солнечных панелей", "original": "Solar Installer" },
+      "altLabels": { "en": ["PV installer", "solar panels"], "uk": ["сонячні панелі"], "de": ["photovoltaik"], "ru": ["солнечные батареи"] },
+      "osmTag": "craft=electrician+solar=yes",
+      "naceRef": "F43.29+D35.11",
+      "schemaOrgType": "Electrician",
+      "wikidataId": "Q1156629",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/residential-solar", "slug": "residential-solar", "names": { "en": "Residential Solar", "uk": "Сонячні панелі для дому", "de": "Wohnhaus-Solaranlage", "ru": "Солнечные панели для дома", "original": "Residential Solar" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/commercial-solar", "slug": "commercial-solar", "names": { "en": "Commercial Solar", "uk": "Комерційні сонячні панелі", "de": "Gewerbe-Solaranlage", "ru": "Коммерческие солнечные панели", "original": "Commercial Solar" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/battery-storage-install", "slug": "battery-storage-install", "names": { "en": "Battery Storage Install", "uk": "Встановлення накопичувача", "de": "Batteriespeicher-Installation", "ru": "Установка накопителя", "original": "Battery Storage Install" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/solar-maintenance", "slug": "solar-maintenance", "names": { "en": "Solar Maintenance", "uk": "Обслуговування сонячних панелей", "de": "Solaranlagen-Wartung", "ru": "Обслуживание солнечных панелей", "original": "Solar Maintenance" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/handyman",
+      "slug": "handyman",
+      "names": { "en": "Handyman", "uk": "Майстер на годину", "de": "Hausmeisterservice", "ru": "Мастер на час", "original": "Handyman" },
+      "altLabels": { "en": ["odd jobs", "fix-it"], "uk": ["муж на годину"], "de": ["hausmeister"], "ru": ["муж на час"] },
+      "osmTag": "craft=handicraft",
+      "naceRef": "F43.99",
+      "schemaOrgType": "HomeAndConstructionBusiness",
+      "wikidataId": "Q870361",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/small-repairs", "slug": "small-repairs", "names": { "en": "Small Repairs", "uk": "Дрібний ремонт", "de": "Kleinreparaturen", "ru": "Мелкий ремонт", "original": "Small Repairs" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/furniture-assembly-hm", "slug": "furniture-assembly-hm", "names": { "en": "Furniture Assembly", "uk": "Збірка меблів", "de": "Möbelmontage", "ru": "Сборка мебели", "original": "Furniture Assembly" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/light-fixture-install", "slug": "light-fixture-install", "names": { "en": "Light Fixture Install", "uk": "Монтаж світильників", "de": "Leuchtenmontage", "ru": "Монтаж светильников", "original": "Light Fixture Install" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/hanging-and-mounting", "slug": "hanging-and-mounting", "names": { "en": "Hanging & Mounting", "uk": "Підвіс та монтаж", "de": "Aufhängen & Montage", "ru": "Навеска и монтаж", "original": "Hanging & Mounting" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/road-construction",
+      "slug": "road-construction",
+      "names": { "en": "Road Construction", "uk": "Дорожні роботи", "de": "Straßenbau", "ru": "Дорожное строительство", "original": "Road Construction" },
+      "altLabels": { "en": ["road contractor"], "uk": ["дороги"], "de": [], "ru": [] },
+      "osmTag": "office=construction_company+construction=road",
+      "naceRef": "F42.11",
+      "schemaOrgType": "GeneralContractor",
+      "wikidataId": "Q179700",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/asphalt-paving", "slug": "asphalt-paving", "names": { "en": "Asphalt Paving", "uk": "Асфальтування", "de": "Asphaltierung", "ru": "Асфальтирование", "original": "Asphalt Paving" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/road-resurfacing", "slug": "road-resurfacing", "names": { "en": "Road Resurfacing", "uk": "Відновлення покриття дороги", "de": "Straßensanierung", "ru": "Восстановление покрытия дороги", "original": "Road Resurfacing" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/pothole-repair-road", "slug": "pothole-repair-road", "names": { "en": "Pothole Repair", "uk": "Ремонт вибоїн", "de": "Schlaglochreparatur", "ru": "Ремонт ям", "original": "Pothole Repair" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/parking-lot-paving", "slug": "parking-lot-paving", "names": { "en": "Parking Lot Paving", "uk": "Асфальтування стоянок", "de": "Parkplatzasphaltierung", "ru": "Асфальтирование парковок", "original": "Parking Lot Paving" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/glazier",
+      "slug": "glazier",
+      "names": { "en": "Glazier", "uk": "Склярий", "de": "Glaser", "ru": "Стекольщик", "original": "Glazier" },
+      "altLabels": { "en": ["glass installer", "window glass"], "uk": ["скління"], "de": [], "ru": ["стекольные работы"] },
+      "osmTag": "craft=glaziery",
+      "naceRef": "F43.34",
+      "schemaOrgType": "HomeAndConstructionBusiness",
+      "wikidataId": "Q1430597",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/window-glass-install", "slug": "window-glass-install", "names": { "en": "Window Glass Install", "uk": "Встановлення віконного скла", "de": "Fensterglas-Einbau", "ru": "Установка оконного стекла", "original": "Window Glass Install" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/mirror-install", "slug": "mirror-install", "names": { "en": "Mirror Install", "uk": "Встановлення дзеркала", "de": "Spiegelmontage", "ru": "Установка зеркала", "original": "Mirror Install" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/shower-glass-install", "slug": "shower-glass-install", "names": { "en": "Shower Glass Install", "uk": "Встановлення душового скла", "de": "Duschglas-Montage", "ru": "Установка душевого стекла", "original": "Shower Glass Install" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/insulated-glass-replacement", "slug": "insulated-glass-replacement", "names": { "en": "Insulated Glass Replacement", "uk": "Заміна склопакета", "de": "Isolierglasaustausch", "ru": "Замена стеклопакета", "original": "Insulated Glass Replacement" } }
       ]
     }
   ]

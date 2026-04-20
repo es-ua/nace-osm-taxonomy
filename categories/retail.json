@@ -1,5 +1,8 @@
 {
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/retail",
   "slug": "retail",
+  "version": "1.1.0",
   "names": {
     "en": "Retail & Shopping",
     "uk": "Торгівля",
@@ -7,10 +10,19 @@
     "ru": "Торговля",
     "original": "Retail & Shopping"
   },
+  "altLabels": {
+    "en": ["shop", "store", "retail"],
+    "uk": ["роздрібна торгівля", "магазини"],
+    "de": ["geschäft", "laden", "handel"],
+    "ru": ["розничная торговля", "магазины"]
+  },
   "icon": "🛍️",
   "naceRef": "G47",
+  "schemaOrgType": "Store",
+  "wikidataId": "Q213441",
   "subcategories": [
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/grocery",
       "slug": "grocery",
       "names": {
         "en": "Grocery Store",
@@ -19,9 +31,19 @@
         "ru": "Продуктовый магазин",
         "original": "Grocery Store"
       },
+      "altLabels": {
+        "en": ["supermarket", "food store", "convenience store"],
+        "uk": ["супермаркет", "продмаг"],
+        "de": ["supermarkt", "lebensmittelladen"],
+        "ru": ["супермаркет", "продмаг"]
+      },
       "osmTag": "shop=supermarket",
+      "naceRef": "G47.11",
+      "schemaOrgType": "GroceryStore",
+      "wikidataId": "Q180846",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/home-delivery",
           "slug": "home-delivery",
           "names": {
             "en": "Home Delivery",
@@ -29,9 +51,11 @@
             "de": "Lieferservice",
             "ru": "Доставка на дом",
             "original": "Home Delivery"
-          }
+          },
+          "wikidataId": "Q1373416"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/gift-basket",
           "slug": "gift-basket",
           "names": {
             "en": "Gift Basket",
@@ -40,10 +64,55 @@
             "ru": "Подарочная корзина",
             "original": "Gift Basket"
           }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/organic-produce",
+          "slug": "organic-produce",
+          "names": {
+            "en": "Organic Produce",
+            "uk": "Органічні продукти",
+            "de": "Bio-Produkte",
+            "ru": "Органические продукты",
+            "original": "Organic Produce"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/specialty-imports",
+          "slug": "specialty-imports",
+          "names": {
+            "en": "Specialty Imports",
+            "uk": "Імпортні делікатеси",
+            "de": "Import-Spezialitäten",
+            "ru": "Импортные деликатесы",
+            "original": "Specialty Imports"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/bulk-foods",
+          "slug": "bulk-foods",
+          "names": {
+            "en": "Bulk Foods",
+            "uk": "Продукти на вагу",
+            "de": "Lose Ware",
+            "ru": "Продукты на вес",
+            "original": "Bulk Foods"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/local-farm-share",
+          "slug": "local-farm-share",
+          "names": {
+            "en": "Local Farm Share",
+            "uk": "Фермерська доставка",
+            "de": "Hofkisten-Lieferung",
+            "ru": "Фермерская доставка",
+            "original": "Local Farm Share"
+          }
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/clothing",
       "slug": "clothing",
       "names": {
         "en": "Clothing Store",
@@ -52,9 +121,19 @@
         "ru": "Магазин одежды",
         "original": "Clothing Store"
       },
+      "altLabels": {
+        "en": ["fashion store", "apparel"],
+        "uk": ["бутік"],
+        "de": ["modeladen", "boutique"],
+        "ru": ["бутик", "одежда"]
+      },
       "osmTag": "shop=clothes",
+      "naceRef": "G47.71",
+      "schemaOrgType": "ClothingStore",
+      "wikidataId": "Q11460",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/personal-styling",
           "slug": "personal-styling",
           "names": {
             "en": "Personal Styling",
@@ -62,9 +141,16 @@
             "de": "Persönliche Stilberatung",
             "ru": "Персональный стилист",
             "original": "Personal Styling"
+          },
+          "altLabels": {
+            "en": ["stylist", "wardrobe consulting"],
+            "uk": ["консультація стиліста"],
+            "de": ["stylist", "modeberatung"],
+            "ru": ["стилист", "консультация стилиста"]
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/alterations",
           "slug": "alterations",
           "names": {
             "en": "Alterations",
@@ -72,11 +158,62 @@
             "de": "Änderungen",
             "ru": "Подгонка одежды",
             "original": "Alterations"
+          },
+          "altLabels": {
+            "en": ["tailoring"],
+            "uk": ["ательє"],
+            "de": ["änderungsschneiderei"],
+            "ru": ["ателье"]
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/formal-wear",
+          "slug": "formal-wear",
+          "names": {
+            "en": "Formal Wear",
+            "uk": "Офіційний одяг",
+            "de": "Abendgarderobe",
+            "ru": "Формальная одежда",
+            "original": "Formal Wear"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/sportswear-section",
+          "slug": "sportswear-section",
+          "names": {
+            "en": "Sportswear",
+            "uk": "Спортивний одяг",
+            "de": "Sportbekleidung",
+            "ru": "Спортивная одежда",
+            "original": "Sportswear"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/plus-size-clothing",
+          "slug": "plus-size-clothing",
+          "names": {
+            "en": "Plus Size",
+            "uk": "Великі розміри",
+            "de": "Große Größen",
+            "ru": "Большие размеры",
+            "original": "Plus Size"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/sustainable-clothing",
+          "slug": "sustainable-clothing",
+          "names": {
+            "en": "Sustainable Clothing",
+            "uk": "Сталий одяг",
+            "de": "Nachhaltige Mode",
+            "ru": "Устойчивая одежда",
+            "original": "Sustainable Clothing"
           }
         }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/electronics",
       "slug": "electronics",
       "names": {
         "en": "Electronics",
@@ -85,9 +222,19 @@
         "ru": "Электроника",
         "original": "Electronics"
       },
+      "altLabels": {
+        "en": ["electronics store", "tech shop"],
+        "uk": ["магазин техніки"],
+        "de": ["elektronikfachgeschäft"],
+        "ru": ["магазин техники"]
+      },
       "osmTag": "shop=electronics",
+      "naceRef": "G47.41",
+      "schemaOrgType": "ElectronicsStore",
+      "wikidataId": "Q1377139",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/device-setup",
           "slug": "device-setup",
           "names": {
             "en": "Device Setup",
@@ -98,6 +245,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/warranty-repair",
           "slug": "warranty-repair",
           "names": {
             "en": "Warranty Repair",
@@ -110,6 +258,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/florist",
       "slug": "florist",
       "names": {
         "en": "Florist",
@@ -118,9 +267,19 @@
         "ru": "Цветочный магазин",
         "original": "Florist"
       },
+      "altLabels": {
+        "en": ["flower shop"],
+        "uk": ["квіти"],
+        "de": ["blumengeschäft"],
+        "ru": ["цветочный"]
+      },
       "osmTag": "shop=florist",
+      "naceRef": "G47.76",
+      "schemaOrgType": "Florist",
+      "wikidataId": "Q1075545",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/bouquet",
           "slug": "bouquet",
           "names": {
             "en": "Bouquet",
@@ -128,9 +287,11 @@
             "de": "Blumenstrauß",
             "ru": "Букет",
             "original": "Bouquet"
-          }
+          },
+          "wikidataId": "Q210460"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/wedding-floristry",
           "slug": "wedding-floristry",
           "names": {
             "en": "Wedding Floristry",
@@ -138,9 +299,11 @@
             "de": "Hochzeitsfloristik",
             "ru": "Свадебная флористика",
             "original": "Wedding Floristry"
-          }
+          },
+          "crossLinks": ["bouquet"]
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/subscription-delivery",
           "slug": "subscription-delivery",
           "names": {
             "en": "Flower Subscription",
@@ -153,6 +316,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pet-shop",
       "slug": "pet-shop",
       "names": {
         "en": "Pet Shop",
@@ -161,9 +325,19 @@
         "ru": "Зоомагазин",
         "original": "Pet Shop"
       },
+      "altLabels": {
+        "en": ["pet store", "animal supplies"],
+        "uk": ["товари для тварин"],
+        "de": ["zoofachgeschäft"],
+        "ru": ["товары для животных"]
+      },
       "osmTag": "shop=pet",
+      "naceRef": "G47.76",
+      "schemaOrgType": "PetStore",
+      "wikidataId": "Q1369904",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/pet-grooming",
           "slug": "pet-grooming",
           "names": {
             "en": "Pet Grooming",
@@ -171,9 +345,11 @@
             "de": "Tierpflege",
             "ru": "Груминг",
             "original": "Pet Grooming"
-          }
+          },
+          "wikidataId": "Q3406146"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/pet-food-delivery",
           "slug": "pet-food-delivery",
           "names": {
             "en": "Pet Food Delivery",
@@ -186,6 +362,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pharmacy",
       "slug": "pharmacy",
       "names": {
         "en": "Pharmacy",
@@ -194,9 +371,19 @@
         "ru": "Аптека",
         "original": "Pharmacy"
       },
+      "altLabels": {
+        "en": ["drugstore", "chemist"],
+        "uk": ["фармація"],
+        "de": ["drogerie"],
+        "ru": ["фармация"]
+      },
       "osmTag": "amenity=pharmacy",
+      "naceRef": "G47.73",
+      "schemaOrgType": "Pharmacy",
+      "wikidataId": "Q188709",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/prescription",
           "slug": "prescription",
           "names": {
             "en": "Prescription",
@@ -204,9 +391,11 @@
             "de": "Rezept",
             "ru": "Рецепт",
             "original": "Prescription"
-          }
+          },
+          "wikidataId": "Q277338"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/pharma-consultation",
           "slug": "pharma-consultation",
           "names": {
             "en": "Consultation",
@@ -219,6 +408,7 @@
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/jewelry",
       "slug": "jewelry",
       "names": {
         "en": "Jewelry",
@@ -227,9 +417,19 @@
         "ru": "Ювелирный магазин",
         "original": "Jewelry"
       },
+      "altLabels": {
+        "en": ["jeweler", "jewellery shop"],
+        "uk": ["ювелірка"],
+        "de": ["schmuckgeschäft"],
+        "ru": ["ювелирка"]
+      },
       "osmTag": "shop=jewelry",
+      "naceRef": "G47.77",
+      "schemaOrgType": "JewelryStore",
+      "wikidataId": "Q380934",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-jewelry",
           "slug": "custom-jewelry",
           "names": {
             "en": "Custom Design",
@@ -240,6 +440,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/jewelry-repair",
           "slug": "jewelry-repair",
           "names": {
             "en": "Repair",
@@ -250,6 +451,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/engraving",
           "slug": "engraving",
           "names": {
             "en": "Engraving",
@@ -257,11 +459,17 @@
             "de": "Gravur",
             "ru": "Гравировка",
             "original": "Engraving"
-          }
-        }
+          },
+          "wikidataId": "Q189765"
+        },
+        { "@id": "https://taxonomy.mapko.net/v1/template/wedding-rings", "slug": "wedding-rings", "names": { "en": "Wedding Rings", "uk": "Обручки", "de": "Eheringe", "ru": "Обручальные кольца", "original": "Wedding Rings" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/watches-section", "slug": "watches-section", "names": { "en": "Watches", "uk": "Годинники", "de": "Uhren", "ru": "Часы", "original": "Watches" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/pearls-collection", "slug": "pearls-collection", "names": { "en": "Pearls Collection", "uk": "Перлини", "de": "Perlen-Kollektion", "ru": "Жемчуг", "original": "Pearls Collection" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/diamond-grading", "slug": "diamond-grading", "names": { "en": "Diamond Grading", "uk": "Оцінка діаманта", "de": "Diamantenprüfung", "ru": "Оценка бриллианта", "original": "Diamond Grading" } }
       ]
     },
     {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/optician",
       "slug": "optician",
       "names": {
         "en": "Optician",
@@ -270,9 +478,19 @@
         "ru": "Оптика",
         "original": "Optician"
       },
+      "altLabels": {
+        "en": ["optometrist", "eyewear"],
+        "uk": ["окуляри"],
+        "de": ["optiker", "brillen"],
+        "ru": ["оптик", "очки"]
+      },
       "osmTag": "shop=optician",
+      "naceRef": "G47.78",
+      "schemaOrgType": "Optician",
+      "wikidataId": "Q1023858",
       "templates": [
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/eye-exam",
           "slug": "eye-exam",
           "names": {
             "en": "Eye Exam",
@@ -280,9 +498,11 @@
             "de": "Sehtest",
             "ru": "Проверка зрения",
             "original": "Eye Exam"
-          }
+          },
+          "wikidataId": "Q1349767"
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/lens-fitting",
           "slug": "lens-fitting",
           "names": {
             "en": "Lens Fitting",
@@ -293,6 +513,7 @@
           }
         },
         {
+          "@id": "https://taxonomy.mapko.net/v1/template/frame-adjustment",
           "slug": "frame-adjustment",
           "names": {
             "en": "Frame Adjustment",
@@ -301,7 +522,400 @@
             "ru": "Регулировка оправы",
             "original": "Frame Adjustment"
           }
-        }
+        },
+        { "@id": "https://taxonomy.mapko.net/v1/template/contact-lenses", "slug": "contact-lenses", "names": { "en": "Contact Lenses", "uk": "Контактні лінзи", "de": "Kontaktlinsen", "ru": "Контактные линзы", "original": "Contact Lenses" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/sunglasses", "slug": "sunglasses", "names": { "en": "Sunglasses", "uk": "Сонцезахисні окуляри", "de": "Sonnenbrille", "ru": "Солнцезащитные очки", "original": "Sunglasses" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/eyewear-repair", "slug": "eyewear-repair", "names": { "en": "Eyewear Repair", "uk": "Ремонт окулярів", "de": "Brillenreparatur", "ru": "Ремонт очков", "original": "Eyewear Repair" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/bookstore",
+      "slug": "bookstore",
+      "names": { "en": "Bookstore", "uk": "Книгарня", "de": "Buchhandlung", "ru": "Книжный магазин", "original": "Bookstore" },
+      "altLabels": { "en": ["bookshop"], "uk": ["книжковий магазин"], "de": ["buchladen"], "ru": ["книжная"] },
+      "osmTag": "shop=books",
+      "naceRef": "G47.61",
+      "schemaOrgType": "BookStore",
+      "wikidataId": "Q213441",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/new-books", "slug": "new-books", "names": { "en": "New Books", "uk": "Нові книги", "de": "Neue Bücher", "ru": "Новые книги", "original": "New Books" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/used-books", "slug": "used-books", "names": { "en": "Used Books", "uk": "Букіністика", "de": "Gebrauchte Bücher", "ru": "Букинистика", "original": "Used Books" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/book-club", "slug": "book-club", "names": { "en": "Book Club", "uk": "Книжковий клуб", "de": "Buchclub", "ru": "Книжный клуб", "original": "Book Club" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/toy-store",
+      "slug": "toy-store",
+      "names": { "en": "Toy Store", "uk": "Магазин іграшок", "de": "Spielwarengeschäft", "ru": "Магазин игрушек", "original": "Toy Store" },
+      "altLabels": { "en": ["kids store"], "uk": ["дитячі іграшки"], "de": ["spielzeugladen"], "ru": ["детские игрушки"] },
+      "osmTag": "shop=toys",
+      "naceRef": "G47.65",
+      "schemaOrgType": "ToyStore",
+      "wikidataId": "Q1463315",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/educational-toys", "slug": "educational-toys", "names": { "en": "Educational Toys", "uk": "Розвиваючі іграшки", "de": "Lernspielzeug", "ru": "Развивающие игрушки", "original": "Educational Toys" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/board-games", "slug": "board-games", "names": { "en": "Board Games", "uk": "Настільні ігри", "de": "Brettspiele", "ru": "Настольные игры", "original": "Board Games" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/sports-equipment",
+      "slug": "sports-equipment",
+      "names": { "en": "Sports Equipment", "uk": "Спорттовари", "de": "Sportgeschäft", "ru": "Спорттовары", "original": "Sports Equipment" },
+      "altLabels": { "en": ["sporting goods"], "uk": ["спортивний магазин"], "de": ["sportartikel"], "ru": ["спортивный магазин"] },
+      "osmTag": "shop=sports",
+      "naceRef": "G47.64",
+      "schemaOrgType": "SportingGoodsStore",
+      "wikidataId": "Q3199036",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/running-shoes", "slug": "running-shoes", "names": { "en": "Running Shoes", "uk": "Бігові кросівки", "de": "Laufschuhe", "ru": "Беговые кроссовки", "original": "Running Shoes" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/fitness-gear", "slug": "fitness-gear", "names": { "en": "Fitness Gear", "uk": "Фітнес-обладнання", "de": "Fitnessgeräte", "ru": "Фитнес-оборудование", "original": "Fitness Gear" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/team-sports-gear", "slug": "team-sports-gear", "names": { "en": "Team Sports Gear", "uk": "Командні види спорту", "de": "Mannschaftssportartikel", "ru": "Командные виды спорта", "original": "Team Sports Gear" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/kids-clothing",
+      "slug": "kids-clothing",
+      "names": { "en": "Kids Clothing", "uk": "Дитячий одяг", "de": "Kinderbekleidung", "ru": "Детская одежда", "original": "Kids Clothing" },
+      "osmTag": "shop=clothes",
+      "naceRef": "G47.71",
+      "schemaOrgType": "ClothingStore",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/baby-clothes", "slug": "baby-clothes", "names": { "en": "Baby Clothes", "uk": "Одяг для немовлят", "de": "Babykleidung", "ru": "Одежда для малышей", "original": "Baby Clothes" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/school-uniform", "slug": "school-uniform", "names": { "en": "School Uniform", "uk": "Шкільна форма", "de": "Schuluniform", "ru": "Школьная форма", "original": "School Uniform" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/lingerie",
+      "slug": "lingerie",
+      "names": { "en": "Lingerie", "uk": "Білизна", "de": "Dessous", "ru": "Бельё", "original": "Lingerie" },
+      "altLabels": { "en": ["underwear"], "uk": ["спідня білизна"], "de": ["wäsche"], "ru": ["нижнее бельё"] },
+      "osmTag": "shop=clothes",
+      "naceRef": "G47.71",
+      "schemaOrgType": "ClothingStore",
+      "wikidataId": "Q852389",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/bra-fitting", "slug": "bra-fitting", "names": { "en": "Bra Fitting", "uk": "Підбір бюстгальтера", "de": "BH-Anprobe", "ru": "Подбор бюстгальтера", "original": "Bra Fitting" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/bridal-lingerie", "slug": "bridal-lingerie", "names": { "en": "Bridal Lingerie", "uk": "Весільна білизна", "de": "Brautwäsche", "ru": "Свадебное бельё", "original": "Bridal Lingerie" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/furniture-store",
+      "slug": "furniture-store",
+      "names": { "en": "Furniture Store", "uk": "Магазин меблів", "de": "Möbelhaus", "ru": "Мебельный магазин", "original": "Furniture Store" },
+      "osmTag": "shop=furniture",
+      "naceRef": "G47.59",
+      "schemaOrgType": "FurnitureStore",
+      "wikidataId": "Q1373883",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/sofa", "slug": "sofa", "names": { "en": "Sofa", "uk": "Диван", "de": "Sofa", "ru": "Диван", "original": "Sofa" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/dining-set", "slug": "dining-set", "names": { "en": "Dining Set", "uk": "Обідній набір", "de": "Esszimmer-Set", "ru": "Обеденный набор", "original": "Dining Set" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/bedroom-set", "slug": "bedroom-set", "names": { "en": "Bedroom Set", "uk": "Спальний гарнітур", "de": "Schlafzimmer-Set", "ru": "Спальный гарнитур", "original": "Bedroom Set" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/hardware-store",
+      "slug": "hardware-store",
+      "names": { "en": "Hardware Store", "uk": "Господарські товари", "de": "Baumarkt", "ru": "Хозтовары", "original": "Hardware Store" },
+      "altLabels": { "en": ["DIY store"], "uk": ["будівельний"], "de": ["heimwerkermarkt"], "ru": ["строительный"] },
+      "osmTag": "shop=hardware",
+      "naceRef": "G47.52",
+      "schemaOrgType": "HardwareStore",
+      "wikidataId": "Q681337",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/tools-purchase", "slug": "tools-purchase", "names": { "en": "Tools", "uk": "Інструменти", "de": "Werkzeug", "ru": "Инструменты", "original": "Tools" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/building-materials", "slug": "building-materials", "names": { "en": "Building Materials", "uk": "Будматеріали", "de": "Baumaterialien", "ru": "Стройматериалы", "original": "Building Materials" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/wine-shop",
+      "slug": "wine-shop",
+      "names": { "en": "Wine Shop", "uk": "Винна крамниця", "de": "Weinhandlung", "ru": "Винный магазин", "original": "Wine Shop" },
+      "altLabels": { "en": ["liquor store"], "uk": ["алкогольний магазин"], "de": ["spirituosen"], "ru": ["алкогольный магазин"] },
+      "osmTag": "shop=wine",
+      "naceRef": "G47.25",
+      "schemaOrgType": "LiquorStore",
+      "wikidataId": "Q3520032",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/wine-purchase", "slug": "wine-purchase", "names": { "en": "Wine", "uk": "Вино", "de": "Wein", "ru": "Вино", "original": "Wine" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/spirits-purchase", "slug": "spirits-purchase", "names": { "en": "Spirits", "uk": "Міцні напої", "de": "Spirituosen", "ru": "Крепкий алкоголь", "original": "Spirits" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/wine-gift-set", "slug": "wine-gift-set", "names": { "en": "Wine Gift Set", "uk": "Подарунковий винний набір", "de": "Weingeschenkset", "ru": "Подарочный винный набор", "original": "Wine Gift Set" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/vintage-wine", "slug": "vintage-wine", "names": { "en": "Vintage Wine", "uk": "Витримане вино", "de": "Jahrgangswein", "ru": "Выдержанное вино", "original": "Vintage Wine" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/champagne-selection", "slug": "champagne-selection", "names": { "en": "Champagne", "uk": "Шампанське", "de": "Champagner", "ru": "Шампанское", "original": "Champagne" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/whiskey-selection", "slug": "whiskey-selection", "names": { "en": "Whiskey", "uk": "Віскі", "de": "Whisky", "ru": "Виски", "original": "Whiskey" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/tobacco-shop",
+      "slug": "tobacco-shop",
+      "names": { "en": "Tobacco Shop", "uk": "Тютюн", "de": "Tabakladen", "ru": "Табачная лавка", "original": "Tobacco Shop" },
+      "altLabels": { "en": ["smoke shop", "vape shop"], "uk": ["вейп-шоп"], "de": ["vape-shop"], "ru": ["вейп-шоп"] },
+      "osmTag": "shop=tobacco",
+      "naceRef": "G47.26",
+      "schemaOrgType": "TobaccoShop",
+      "wikidataId": "Q1542505",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/cigarettes", "slug": "cigarettes", "names": { "en": "Cigarettes", "uk": "Сигарети", "de": "Zigaretten", "ru": "Сигареты", "original": "Cigarettes" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/vape-liquid", "slug": "vape-liquid", "names": { "en": "Vape Liquid", "uk": "Рідина для вейпу", "de": "E-Liquid", "ru": "Жидкость для вейпа", "original": "Vape Liquid" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/mobile-shop",
+      "slug": "mobile-shop",
+      "names": { "en": "Mobile Phone Store", "uk": "Магазин мобільних", "de": "Handygeschäft", "ru": "Магазин мобильных", "original": "Mobile Phone Store" },
+      "osmTag": "shop=mobile_phone",
+      "naceRef": "G47.42",
+      "schemaOrgType": "MobilePhoneStore",
+      "wikidataId": "Q22645",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/phone-purchase", "slug": "phone-purchase", "names": { "en": "Smartphone Purchase", "uk": "Покупка смартфона", "de": "Smartphone-Kauf", "ru": "Покупка смартфона", "original": "Smartphone Purchase" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/sim-card", "slug": "sim-card", "names": { "en": "SIM Card", "uk": "SIM-картка", "de": "SIM-Karte", "ru": "SIM-карта", "original": "SIM Card" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/accessories", "slug": "accessories", "names": { "en": "Accessories", "uk": "Аксесуари", "de": "Zubehör", "ru": "Аксессуары", "original": "Accessories" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/bicycle-shop",
+      "slug": "bicycle-shop",
+      "names": { "en": "Bicycle Shop", "uk": "Велосипедний магазин", "de": "Fahrradgeschäft", "ru": "Веломагазин", "original": "Bicycle Shop" },
+      "osmTag": "shop=bicycle",
+      "naceRef": "G47.64",
+      "schemaOrgType": "BikeStore",
+      "wikidataId": "Q4895891",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/bike-purchase", "slug": "bike-purchase", "names": { "en": "Bicycle", "uk": "Велосипед", "de": "Fahrrad", "ru": "Велосипед", "original": "Bicycle" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/bike-repair", "slug": "bike-repair", "names": { "en": "Bike Repair", "uk": "Ремонт велосипеда", "de": "Fahrradreparatur", "ru": "Ремонт велосипеда", "original": "Bike Repair" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/bike-rental", "slug": "bike-rental", "names": { "en": "Bike Rental", "uk": "Прокат велосипедів", "de": "Fahrradverleih", "ru": "Прокат велосипедов", "original": "Bike Rental" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/gift-shop",
+      "slug": "gift-shop",
+      "names": { "en": "Gift Shop", "uk": "Подарунки", "de": "Geschenkartikel", "ru": "Подарки", "original": "Gift Shop" },
+      "altLabels": { "en": ["souvenirs"], "uk": ["сувеніри"], "de": ["souvenirs"], "ru": ["сувениры"] },
+      "osmTag": "shop=gift",
+      "naceRef": "G47.78",
+      "schemaOrgType": "Store",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/souvenirs", "slug": "souvenirs", "names": { "en": "Souvenirs", "uk": "Сувеніри", "de": "Souvenirs", "ru": "Сувениры", "original": "Souvenirs" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/personalized-gifts", "slug": "personalized-gifts", "names": { "en": "Personalized Gifts", "uk": "Персональні подарунки", "de": "Personalisierte Geschenke", "ru": "Персонализированные подарки", "original": "Personalized Gifts" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/music-instruments",
+      "slug": "music-instruments",
+      "names": { "en": "Music Instruments", "uk": "Музичні інструменти", "de": "Musikinstrumente", "ru": "Музыкальные инструменты", "original": "Music Instruments" },
+      "osmTag": "shop=musical_instrument",
+      "naceRef": "G47.59",
+      "schemaOrgType": "MusicStore",
+      "wikidataId": "Q961434",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/guitar", "slug": "guitar", "names": { "en": "Guitar", "uk": "Гітара", "de": "Gitarre", "ru": "Гитара", "original": "Guitar" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/keyboard-piano", "slug": "keyboard-piano", "names": { "en": "Keyboard / Piano", "uk": "Клавішні", "de": "Keyboard / Klavier", "ru": "Клавишные", "original": "Keyboard / Piano" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/instrument-rental-shop", "slug": "instrument-rental-shop", "names": { "en": "Instrument Rental", "uk": "Прокат інструментів", "de": "Instrumentenverleih", "ru": "Прокат инструментов", "original": "Instrument Rental" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/comic-game-shop",
+      "slug": "comic-game-shop",
+      "names": { "en": "Comics & Games Shop", "uk": "Комікси та ігри", "de": "Comic- & Spieleladen", "ru": "Комиксы и игры", "original": "Comics & Games Shop" },
+      "altLabels": { "en": ["hobby shop"], "uk": ["хобі-шоп"], "de": ["hobbyladen"], "ru": ["хобби-шоп"] },
+      "osmTag": "shop=games",
+      "naceRef": "G47.65",
+      "schemaOrgType": "Store",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/board-games-shop", "slug": "board-games-shop", "names": { "en": "Board Games", "uk": "Настільні ігри", "de": "Brettspiele", "ru": "Настольные игры", "original": "Board Games" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/comics-shop", "slug": "comics-shop", "names": { "en": "Comics", "uk": "Комікси", "de": "Comics", "ru": "Комиксы", "original": "Comics" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/tcg-cards", "slug": "tcg-cards", "names": { "en": "Trading Cards", "uk": "Колекційні картки", "de": "Sammelkarten", "ru": "Коллекционные карты", "original": "Trading Cards" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/wedding-store",
+      "slug": "wedding-store",
+      "names": { "en": "Wedding Store", "uk": "Весільний салон", "de": "Brautmode", "ru": "Свадебный салон", "original": "Wedding Store" },
+      "altLabels": { "en": ["bridal shop"], "uk": ["наречений салон"], "de": ["brautgeschäft"], "ru": ["свадебная мода"] },
+      "osmTag": "shop=wedding_contractor",
+      "naceRef": "G47.71",
+      "schemaOrgType": "ClothingStore",
+      "wikidataId": "Q1244283",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/wedding-dress", "slug": "wedding-dress", "names": { "en": "Wedding Dress", "uk": "Весільна сукня", "de": "Brautkleid", "ru": "Свадебное платье", "original": "Wedding Dress" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/groom-suit", "slug": "groom-suit", "names": { "en": "Groom Suit", "uk": "Костюм для нареченого", "de": "Bräutigamanzug", "ru": "Костюм для жениха", "original": "Groom Suit" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/wedding-accessories", "slug": "wedding-accessories", "names": { "en": "Wedding Accessories", "uk": "Весільні аксесуари", "de": "Hochzeitsaccessoires", "ru": "Свадебные аксессуары", "original": "Wedding Accessories" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/hobby-shop",
+      "slug": "hobby-shop",
+      "names": { "en": "Hobby Shop", "uk": "Хобі-магазин", "de": "Bastelladen", "ru": "Хобби-магазин", "original": "Hobby Shop" },
+      "altLabels": { "en": ["crafts shop"], "uk": ["рукоділля"], "de": [], "ru": [] },
+      "osmTag": "shop=hobby",
+      "naceRef": "G47.65",
+      "schemaOrgType": "Store",
+      "wikidataId": "Q1758914",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/model-kits", "slug": "model-kits", "names": { "en": "Model Kits", "uk": "Моделі для збірки", "de": "Modellbausätze", "ru": "Модели для сборки", "original": "Model Kits" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/rc-models", "slug": "rc-models", "names": { "en": "RC Models", "uk": "Радіокеровані моделі", "de": "RC-Modelle", "ru": "Радиоуправляемые модели", "original": "RC Models" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/scale-modeling-supplies", "slug": "scale-modeling-supplies", "names": { "en": "Scale Modeling Supplies", "uk": "Матеріали для моделювання", "de": "Modellbau-Zubehör", "ru": "Материалы для моделирования", "original": "Scale Modeling Supplies" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/collectibles-hobby", "slug": "collectibles-hobby", "names": { "en": "Collectibles", "uk": "Колекційні предмети", "de": "Sammlerstücke", "ru": "Коллекционные предметы", "original": "Collectibles" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/fabric-store",
+      "slug": "fabric-store",
+      "names": { "en": "Fabric Store", "uk": "Магазин тканин", "de": "Stoffgeschäft", "ru": "Магазин тканей", "original": "Fabric Store" },
+      "altLabels": { "en": ["textile shop"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "shop=fabric",
+      "naceRef": "G47.51",
+      "schemaOrgType": "Store",
+      "wikidataId": "Q1538525",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/cotton-fabric", "slug": "cotton-fabric", "names": { "en": "Cotton Fabric", "uk": "Бавовняна тканина", "de": "Baumwollstoff", "ru": "Хлопковая ткань", "original": "Cotton Fabric" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/silk-fabric", "slug": "silk-fabric", "names": { "en": "Silk Fabric", "uk": "Шовкова тканина", "de": "Seidenstoff", "ru": "Шёлковая ткань", "original": "Silk Fabric" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/upholstery-fabric", "slug": "upholstery-fabric", "names": { "en": "Upholstery Fabric", "uk": "Оббивна тканина", "de": "Polsterstoff", "ru": "Обивочная ткань", "original": "Upholstery Fabric" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/custom-cut-fabric", "slug": "custom-cut-fabric", "names": { "en": "Custom Cut Fabric", "uk": "Тканина на розріз", "de": "Stoff nach Maß", "ru": "Ткань на отрез", "original": "Custom Cut Fabric" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/art-supply-store",
+      "slug": "art-supply-store",
+      "names": { "en": "Art Supply Store", "uk": "Товари для художників", "de": "Künstlerbedarf", "ru": "Художественные принадлежности", "original": "Art Supply Store" },
+      "altLabels": { "en": ["art shop"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "shop=art",
+      "naceRef": "G47.62",
+      "schemaOrgType": "Store",
+      "wikidataId": "Q1424267",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/paints-brushes", "slug": "paints-brushes", "names": { "en": "Paints & Brushes", "uk": "Фарби та пензлі", "de": "Farben & Pinsel", "ru": "Краски и кисти", "original": "Paints & Brushes" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/canvases", "slug": "canvases", "names": { "en": "Canvases", "uk": "Полотна", "de": "Leinwände", "ru": "Холсты", "original": "Canvases" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/drawing-supplies", "slug": "drawing-supplies", "names": { "en": "Drawing Supplies", "uk": "Товари для малювання", "de": "Zeichenbedarf", "ru": "Товары для рисования", "original": "Drawing Supplies" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/calligraphy-supplies", "slug": "calligraphy-supplies", "names": { "en": "Calligraphy Supplies", "uk": "Каліграфія", "de": "Kalligraphie-Bedarf", "ru": "Каллиграфия", "original": "Calligraphy Supplies" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/stationery-shop",
+      "slug": "stationery-shop",
+      "names": { "en": "Stationery Shop", "uk": "Канцтовари", "de": "Schreibwarenladen", "ru": "Канцтовары", "original": "Stationery Shop" },
+      "altLabels": { "en": ["office supplies"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "shop=stationery",
+      "naceRef": "G47.62",
+      "schemaOrgType": "Store",
+      "wikidataId": "Q334659",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/notebooks", "slug": "notebooks", "names": { "en": "Notebooks", "uk": "Зошити", "de": "Notizbücher", "ru": "Блокноты", "original": "Notebooks" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/writing-instruments", "slug": "writing-instruments", "names": { "en": "Writing Instruments", "uk": "Письмове приладдя", "de": "Schreibgeräte", "ru": "Пишущие принадлежности", "original": "Writing Instruments" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/office-organization", "slug": "office-organization", "names": { "en": "Office Organization", "uk": "Офісна організація", "de": "Büroorganisation", "ru": "Офисная организация", "original": "Office Organization" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/school-supplies", "slug": "school-supplies", "names": { "en": "School Supplies", "uk": "Шкільне приладдя", "de": "Schulbedarf", "ru": "Школьные принадлежности", "original": "School Supplies" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/antique-store",
+      "slug": "antique-store",
+      "names": { "en": "Antique Store", "uk": "Антикварний магазин", "de": "Antiquitätengeschäft", "ru": "Антикварный магазин", "original": "Antique Store" },
+      "altLabels": { "en": ["antiques shop"], "uk": ["антикваріат"], "de": [], "ru": [] },
+      "osmTag": "shop=antiques",
+      "naceRef": "G47.79",
+      "schemaOrgType": "Store",
+      "wikidataId": "Q2996721",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/furniture-antique", "slug": "furniture-antique", "names": { "en": "Antique Furniture", "uk": "Антикварні меблі", "de": "Antike Möbel", "ru": "Антикварная мебель", "original": "Antique Furniture" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/collectibles-antique", "slug": "collectibles-antique", "names": { "en": "Antique Collectibles", "uk": "Антикварні колекції", "de": "Antike Sammlerstücke", "ru": "Антикварные коллекции", "original": "Antique Collectibles" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/antique-appraisal-retail", "slug": "antique-appraisal-retail", "names": { "en": "Antique Appraisal", "uk": "Оцінка антикваріату", "de": "Antiquitätenbewertung", "ru": "Оценка антиквариата", "original": "Antique Appraisal" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/estate-sale", "slug": "estate-sale", "names": { "en": "Estate Sale", "uk": "Розпродаж спадку", "de": "Nachlassverkauf", "ru": "Распродажа наследства", "original": "Estate Sale" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pawnshop",
+      "slug": "pawnshop",
+      "names": { "en": "Pawn Shop", "uk": "Ломбард", "de": "Pfandhaus", "ru": "Ломбард", "original": "Pawn Shop" },
+      "altLabels": { "en": ["pawnbroker"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "shop=pawnbroker",
+      "naceRef": "G47.79",
+      "schemaOrgType": "Store",
+      "wikidataId": "Q199401",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/loan-against-item", "slug": "loan-against-item", "names": { "en": "Loan Against Item", "uk": "Позика під заставу", "de": "Kredit gegen Pfand", "ru": "Заём под залог", "original": "Loan Against Item" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/buy-item-pawnshop", "slug": "buy-item-pawnshop", "names": { "en": "Buy Item", "uk": "Купівля речі", "de": "Artikel kaufen", "ru": "Покупка вещи", "original": "Buy Item" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/item-appraisal-pawnshop", "slug": "item-appraisal-pawnshop", "names": { "en": "Item Appraisal", "uk": "Оцінка речі", "de": "Wertschätzung", "ru": "Оценка вещи", "original": "Item Appraisal" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/auction-pawnshop", "slug": "auction-pawnshop", "names": { "en": "Auction", "uk": "Аукціон", "de": "Auktion", "ru": "Аукцион", "original": "Auction" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/thrift-store",
+      "slug": "thrift-store",
+      "names": { "en": "Thrift Store", "uk": "Секонд-хенд", "de": "Secondhandladen", "ru": "Секонд-хенд", "original": "Thrift Store" },
+      "altLabels": { "en": ["charity shop", "secondhand store"], "uk": [], "de": [], "ru": [] },
+      "osmTag": "shop=second_hand",
+      "naceRef": "G47.79",
+      "schemaOrgType": "Store",
+      "wikidataId": "Q3518410",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/clothing-second", "slug": "clothing-second", "names": { "en": "Second-hand Clothing", "uk": "Одяг секонд-хенд", "de": "Secondhand-Kleidung", "ru": "Одежда секонд-хенд", "original": "Second-hand Clothing" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/furniture-second", "slug": "furniture-second", "names": { "en": "Second-hand Furniture", "uk": "Вживані меблі", "de": "Gebrauchte Möbel", "ru": "Б/у мебель", "original": "Second-hand Furniture" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/donation-dropoff", "slug": "donation-dropoff", "names": { "en": "Donation Drop-off", "uk": "Приймання пожертв", "de": "Spendenannahme", "ru": "Приём пожертвований", "original": "Donation Drop-off" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/vintage-finds", "slug": "vintage-finds", "names": { "en": "Vintage Finds", "uk": "Вінтажні знахідки", "de": "Vintage-Funde", "ru": "Винтажные находки", "original": "Vintage Finds" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/outdoor-gear-store",
+      "slug": "outdoor-gear-store",
+      "names": { "en": "Outdoor Gear Store", "uk": "Туристичне спорядження", "de": "Outdoor-Ausrüstung", "ru": "Магазин туристического снаряжения", "original": "Outdoor Gear Store" },
+      "altLabels": { "en": ["camping gear shop"], "uk": ["туризм"], "de": [], "ru": [] },
+      "osmTag": "shop=outdoor",
+      "naceRef": "G47.64",
+      "schemaOrgType": "SportingGoodsStore",
+      "wikidataId": "Q1129316",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/hiking-gear", "slug": "hiking-gear", "names": { "en": "Hiking Gear", "uk": "Туристичне спорядження", "de": "Wanderausrüstung", "ru": "Туристическое снаряжение", "original": "Hiking Gear" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/camping-equipment", "slug": "camping-equipment", "names": { "en": "Camping Equipment", "uk": "Кемпінгове обладнання", "de": "Campingausrüstung", "ru": "Кемпинговое оборудование", "original": "Camping Equipment" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/mountaineering-gear", "slug": "mountaineering-gear", "names": { "en": "Mountaineering Gear", "uk": "Альпіністське спорядження", "de": "Bergsteigerausrüstung", "ru": "Альпинистское снаряжение", "original": "Mountaineering Gear" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/backpack-rental", "slug": "backpack-rental", "names": { "en": "Backpack Rental", "uk": "Прокат рюкзаків", "de": "Rucksackverleih", "ru": "Прокат рюкзаков", "original": "Backpack Rental" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/farmers-market",
+      "slug": "farmers-market",
+      "names": { "en": "Farmers Market", "uk": "Фермерський ринок", "de": "Bauernmarkt", "ru": "Фермерский рынок", "original": "Farmers Market" },
+      "altLabels": { "en": ["produce market"], "uk": ["фермерський ярмарок"], "de": [], "ru": [] },
+      "osmTag": "amenity=marketplace+market:type=farmers",
+      "naceRef": "G47.81",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1469991",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/seasonal-produce-market", "slug": "seasonal-produce-market", "names": { "en": "Seasonal Produce", "uk": "Сезонні продукти", "de": "Saisonale Produkte", "ru": "Сезонные продукты", "original": "Seasonal Produce" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/artisan-goods-market", "slug": "artisan-goods-market", "names": { "en": "Artisan Goods", "uk": "Ремісничі вироби", "de": "Handwerkswaren", "ru": "Ремесленные изделия", "original": "Artisan Goods" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/food-stall-vendor-rental", "slug": "food-stall-vendor-rental", "names": { "en": "Food Stall Rental", "uk": "Оренда торгового місця", "de": "Marktstand-Vermietung", "ru": "Аренда торгового места", "original": "Food Stall Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/weekend-market-stall", "slug": "weekend-market-stall", "names": { "en": "Weekend Market Stall", "uk": "Стенд на вихідних", "de": "Wochenend-Marktstand", "ru": "Стенд на выходных", "original": "Weekend Market Stall" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/flea-market",
+      "slug": "flea-market",
+      "names": { "en": "Flea Market", "uk": "Блошиний ринок", "de": "Flohmarkt", "ru": "Блошиный рынок", "original": "Flea Market" },
+      "altLabels": { "en": ["vintage market"], "uk": ["барахолка"], "de": [], "ru": [] },
+      "osmTag": "amenity=marketplace+market:type=flea",
+      "naceRef": "G47.82",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q330284",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/vendor-stall-rental", "slug": "vendor-stall-rental", "names": { "en": "Vendor Stall Rental", "uk": "Оренда місця продавця", "de": "Händlerstand-Vermietung", "ru": "Аренда места продавца", "original": "Vendor Stall Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/vintage-item-find", "slug": "vintage-item-find", "names": { "en": "Vintage Item Find", "uk": "Вінтажні знахідки", "de": "Vintage-Fund", "ru": "Винтажные находки", "original": "Vintage Item Find" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/antique-flea-find", "slug": "antique-flea-find", "names": { "en": "Antique Find", "uk": "Антикварна знахідка", "de": "Antiquitäten-Fund", "ru": "Антикварная находка", "original": "Antique Find" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/swap-meet", "slug": "swap-meet", "names": { "en": "Swap Meet", "uk": "Обмін речами", "de": "Tauschbörse", "ru": "Обмен вещами", "original": "Swap Meet" } }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/ski-rental",
+      "slug": "ski-rental",
+      "names": { "en": "Ski Rental", "uk": "Прокат лиж", "de": "Skiverleih", "ru": "Прокат лыж", "original": "Ski Rental" },
+      "altLabels": { "en": ["ski hire"], "uk": ["прокат лижного спорядження"], "de": [], "ru": [] },
+      "osmTag": "shop=sports+rental=ski",
+      "naceRef": "N77.21",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1064904",
+      "templates": [
+        { "@id": "https://taxonomy.mapko.net/v1/template/alpine-ski-rental", "slug": "alpine-ski-rental", "names": { "en": "Alpine Ski Rental", "uk": "Прокат гірських лиж", "de": "Alpin-Skiverleih", "ru": "Прокат горных лыж", "original": "Alpine Ski Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/snowboard-rental", "slug": "snowboard-rental", "names": { "en": "Snowboard Rental", "uk": "Прокат сноуборду", "de": "Snowboard-Verleih", "ru": "Прокат сноуборда", "original": "Snowboard Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/ski-boots-rental", "slug": "ski-boots-rental", "names": { "en": "Ski Boots Rental", "uk": "Прокат лижних черевиків", "de": "Skischuh-Verleih", "ru": "Прокат лыжных ботинок", "original": "Ski Boots Rental" } },
+        { "@id": "https://taxonomy.mapko.net/v1/template/ski-maintenance-rental", "slug": "ski-maintenance-rental", "names": { "en": "Ski Maintenance", "uk": "Обслуговування лиж", "de": "Ski-Wartung", "ru": "Обслуживание лыж", "original": "Ski Maintenance" } }
       ]
     }
   ]

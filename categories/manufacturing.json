@@ -1,0 +1,1013 @@
+{
+  "@context": "../context.jsonld",
+  "@id": "https://taxonomy.mapko.net/v1/category/manufacturing",
+  "slug": "manufacturing",
+  "version": "1.1.0",
+  "names": {
+    "en": "Manufacturing & Production",
+    "uk": "Виробництво",
+    "de": "Produktion & Herstellung",
+    "ru": "Производство",
+    "original": "Manufacturing & Production"
+  },
+  "altLabels": {
+    "en": ["production", "fabrication", "factory"],
+    "uk": ["фабрика", "цех"],
+    "de": ["fabrik", "werk"],
+    "ru": ["фабрика", "цех"]
+  },
+  "icon": "🏭",
+  "naceRef": "C",
+  "schemaOrgType": "LocalBusiness",
+  "wikidataId": "Q187939",
+  "subcategories": [
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/food-production",
+      "slug": "food-production",
+      "names": {
+        "en": "Food Production",
+        "uk": "Виробництво їжі",
+        "de": "Lebensmittelherstellung",
+        "ru": "Производство продуктов",
+        "original": "Food Production"
+      },
+      "altLabels": {
+        "en": ["food manufacturing", "food processing"],
+        "uk": ["харчова промисловість", "переробка їжі"],
+        "de": ["lebensmittelproduktion", "lebensmittelverarbeitung"],
+        "ru": ["пищевая промышленность", "переработка продуктов"]
+      },
+      "osmTag": "craft=food_production",
+      "naceRef": "C10.71",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1418500",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/contract-manufacturing",
+          "slug": "contract-manufacturing",
+          "names": {
+            "en": "Contract Manufacturing",
+            "uk": "Контрактне виробництво",
+            "de": "Auftragsfertigung",
+            "ru": "Контрактное производство",
+            "original": "Contract Manufacturing"
+          },
+          "crossLinks": ["private-label", "b2b-wholesale"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/private-label",
+          "slug": "private-label",
+          "names": {
+            "en": "Private Label Production",
+            "uk": "Виробництво під торговою маркою клієнта",
+            "de": "Eigenmarken-Produktion",
+            "ru": "Производство под собственной торговой маркой",
+            "original": "Private Label Production"
+          },
+          "crossLinks": ["contract-manufacturing", "b2b-wholesale"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/b2b-wholesale",
+          "slug": "b2b-wholesale",
+          "names": {
+            "en": "B2B Wholesale",
+            "uk": "Оптові продажі B2B",
+            "de": "B2B-Großhandel",
+            "ru": "Оптовые продажи B2B",
+            "original": "B2B Wholesale"
+          },
+          "crossLinks": ["contract-manufacturing", "private-label"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/textile-production",
+      "slug": "textile-production",
+      "names": {
+        "en": "Textile Production",
+        "uk": "Текстильне виробництво",
+        "de": "Textilherstellung",
+        "ru": "Текстильное производство",
+        "original": "Textile Production"
+      },
+      "altLabels": {
+        "en": ["textile manufacturing", "fabric mill"],
+        "uk": ["текстильна фабрика", "ткацьке виробництво"],
+        "de": ["textilfabrik", "weberei"],
+        "ru": ["текстильная фабрика", "ткацкое производство"]
+      },
+      "osmTag": "craft=textile",
+      "naceRef": "C13",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q899358",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-fabric",
+          "slug": "custom-fabric",
+          "names": {
+            "en": "Custom Fabric",
+            "uk": "Виготовлення тканини на замовлення",
+            "de": "Maßgeschneiderte Stoffe",
+            "ru": "Изготовление ткани на заказ",
+            "original": "Custom Fabric"
+          },
+          "crossLinks": ["b2b-textile-orders", "fabric-printing"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/b2b-textile-orders",
+          "slug": "b2b-textile-orders",
+          "names": {
+            "en": "B2B Textile Orders",
+            "uk": "Оптові текстильні замовлення",
+            "de": "B2B-Textilaufträge",
+            "ru": "Оптовые текстильные заказы",
+            "original": "B2B Textile Orders"
+          },
+          "crossLinks": ["custom-fabric", "fabric-printing"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/fabric-printing",
+          "slug": "fabric-printing",
+          "names": {
+            "en": "Fabric Printing",
+            "uk": "Друк на тканині",
+            "de": "Stoffdruck",
+            "ru": "Печать на ткани",
+            "original": "Fabric Printing"
+          },
+          "crossLinks": ["custom-fabric", "b2b-textile-orders"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/woodworking",
+      "slug": "woodworking",
+      "names": {
+        "en": "Woodworking",
+        "uk": "Деревообробка",
+        "de": "Holzbearbeitung",
+        "ru": "Деревообработка",
+        "original": "Woodworking"
+      },
+      "altLabels": {
+        "en": ["carpentry", "wood shop"],
+        "uk": ["столярна майстерня", "столярка"],
+        "de": ["tischlerei", "schreinerei"],
+        "ru": ["столярная мастерская", "столярка"]
+      },
+      "osmTag": "craft=carpenter",
+      "naceRef": "C16",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q14373",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-furniture-mfg",
+          "slug": "custom-furniture-mfg",
+          "names": {
+            "en": "Custom Furniture Manufacturing",
+            "uk": "Виробництво меблів на замовлення",
+            "de": "Möbelanfertigung nach Maß",
+            "ru": "Производство мебели на заказ",
+            "original": "Custom Furniture Manufacturing"
+          },
+          "crossLinks": ["joinery", "custom-wooden-decor"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/lumber",
+          "slug": "lumber",
+          "names": {
+            "en": "Lumber",
+            "uk": "Пиломатеріали",
+            "de": "Schnittholz",
+            "ru": "Пиломатериалы",
+            "original": "Lumber"
+          },
+          "crossLinks": ["joinery"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/joinery",
+          "slug": "joinery",
+          "names": {
+            "en": "Joinery",
+            "uk": "Столярні вироби",
+            "de": "Tischlerarbeiten",
+            "ru": "Столярные изделия",
+            "original": "Joinery"
+          },
+          "crossLinks": ["custom-furniture-mfg", "lumber"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-wooden-decor",
+          "slug": "custom-wooden-decor",
+          "names": {
+            "en": "Custom Wooden Decor",
+            "uk": "Дерев'яний декор на замовлення",
+            "de": "Maßgefertigter Holzdekor",
+            "ru": "Деревянный декор на заказ",
+            "original": "Custom Wooden Decor"
+          },
+          "crossLinks": ["custom-furniture-mfg", "joinery"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/metalworking",
+      "slug": "metalworking",
+      "names": {
+        "en": "Metalworking",
+        "uk": "Металообробка",
+        "de": "Metallbearbeitung",
+        "ru": "Металлообработка",
+        "original": "Metalworking"
+      },
+      "altLabels": {
+        "en": ["metal fabrication", "metal shop"],
+        "uk": ["металева майстерня", "металовироби"],
+        "de": ["metallbau", "schlosserei"],
+        "ru": ["металлическая мастерская", "металлоизделия"]
+      },
+      "osmTag": "craft=metal_construction",
+      "naceRef": "C25",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q47307",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/welding-service",
+          "slug": "welding-service",
+          "names": {
+            "en": "Welding Service",
+            "uk": "Зварювальні роботи",
+            "de": "Schweißservice",
+            "ru": "Сварочные работы",
+            "original": "Welding Service"
+          },
+          "crossLinks": ["custom-metal", "sheet-metal"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-metal",
+          "slug": "custom-metal",
+          "names": {
+            "en": "Custom Metal Fabrication",
+            "uk": "Виготовлення металовиробів на замовлення",
+            "de": "Maßgefertigte Metallarbeiten",
+            "ru": "Изготовление металлоизделий на заказ",
+            "original": "Custom Metal Fabrication"
+          },
+          "crossLinks": ["welding-service", "cnc-machining", "sheet-metal"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/cnc-machining",
+          "slug": "cnc-machining",
+          "names": {
+            "en": "CNC Machining",
+            "uk": "ЧПК-обробка",
+            "de": "CNC-Bearbeitung",
+            "ru": "ЧПУ-обработка",
+            "original": "CNC Machining"
+          },
+          "wikidataId": "Q12309480",
+          "crossLinks": ["custom-metal", "sheet-metal"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/sheet-metal",
+          "slug": "sheet-metal",
+          "names": {
+            "en": "Sheet Metal Work",
+            "uk": "Робота з листовим металом",
+            "de": "Blechbearbeitung",
+            "ru": "Работа с листовым металлом",
+            "original": "Sheet Metal Work"
+          },
+          "crossLinks": ["welding-service", "custom-metal", "cnc-machining"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/3d-printing-service",
+      "slug": "3d-printing-service",
+      "names": {
+        "en": "3D Printing Service",
+        "uk": "3D-друк",
+        "de": "3D-Druck",
+        "ru": "3D-печать",
+        "original": "3D Printing Service"
+      },
+      "altLabels": {
+        "en": ["3D print", "additive manufacturing"],
+        "uk": ["адитивне виробництво", "тривимірний друк"],
+        "de": ["additive fertigung", "3d-druckservice"],
+        "ru": ["аддитивное производство", "трёхмерная печать"]
+      },
+      "osmTag": "craft=workshop",
+      "naceRef": "C25.99",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q229367",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/prototype-print",
+          "slug": "prototype-print",
+          "names": {
+            "en": "Prototype Print",
+            "uk": "Друк прототипів",
+            "de": "Prototypendruck",
+            "ru": "Печать прототипов",
+            "original": "Prototype Print"
+          },
+          "crossLinks": ["batch-production", "design-service"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/batch-production",
+          "slug": "batch-production",
+          "names": {
+            "en": "Batch Production",
+            "uk": "Серійне виробництво",
+            "de": "Serienfertigung",
+            "ru": "Серийное производство",
+            "original": "Batch Production"
+          },
+          "crossLinks": ["prototype-print", "multi-material-print"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/design-service",
+          "slug": "design-service",
+          "names": {
+            "en": "Design Service",
+            "uk": "Послуги з проєктування",
+            "de": "Designservice",
+            "ru": "Услуги проектирования",
+            "original": "Design Service"
+          },
+          "crossLinks": ["prototype-print"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/multi-material-print",
+          "slug": "multi-material-print",
+          "names": {
+            "en": "Multi-Material Print",
+            "uk": "Друк мультиматеріалом",
+            "de": "Multimaterial-Druck",
+            "ru": "Мультиматериальная печать",
+            "original": "Multi-Material Print"
+          },
+          "crossLinks": ["prototype-print", "batch-production"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/candle-soap-maker",
+      "slug": "candle-soap-maker",
+      "names": {
+        "en": "Candle & Soap Maker",
+        "uk": "Виробництво свічок та мила",
+        "de": "Kerzen- & Seifenmanufaktur",
+        "ru": "Производство свечей и мыла",
+        "original": "Candle & Soap Maker"
+      },
+      "altLabels": {
+        "en": ["candle maker", "soap maker", "chandlery"],
+        "uk": ["свічкова майстерня", "мильна майстерня"],
+        "de": ["kerzenzieher", "seifensieder"],
+        "ru": ["свечная мастерская", "мыловарня"]
+      },
+      "osmTag": "craft=candlemaker",
+      "naceRef": "C20.41",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q133682",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/wholesale-candles",
+          "slug": "wholesale-candles",
+          "names": {
+            "en": "Wholesale Candles",
+            "uk": "Оптовий продаж свічок",
+            "de": "Kerzen-Großhandel",
+            "ru": "Оптовая продажа свечей",
+            "original": "Wholesale Candles"
+          },
+          "crossLinks": ["custom-orders", "gift-set-mfg"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-orders",
+          "slug": "custom-orders",
+          "names": {
+            "en": "Custom Orders",
+            "uk": "Індивідуальні замовлення",
+            "de": "Individuelle Aufträge",
+            "ru": "Индивидуальные заказы",
+            "original": "Custom Orders"
+          },
+          "crossLinks": ["wholesale-candles", "gift-set-mfg"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/gift-set-mfg",
+          "slug": "gift-set-mfg",
+          "names": {
+            "en": "Gift Set Manufacturing",
+            "uk": "Виробництво подарункових наборів",
+            "de": "Geschenksets-Herstellung",
+            "ru": "Производство подарочных наборов",
+            "original": "Gift Set Manufacturing"
+          },
+          "crossLinks": ["wholesale-candles", "custom-orders"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/brewery-production",
+      "slug": "brewery-production",
+      "names": {
+        "en": "Brewery (Production)",
+        "uk": "Пивоварний завод",
+        "de": "Brauerei",
+        "ru": "Пивоваренный завод",
+        "original": "Brewery (Production)"
+      },
+      "altLabels": {
+        "en": ["beer production", "beer manufacturing"],
+        "uk": ["пивоварня", "пивоварне виробництво"],
+        "de": ["bierbrauerei", "brauereiproduktion"],
+        "ru": ["пивоварня", "пивоваренное производство"]
+      },
+      "osmTag": "craft=brewery",
+      "naceRef": "C11.05",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q131734",
+      "crossLinks": ["craft-brewery"],
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/contract-brewing",
+          "slug": "contract-brewing",
+          "names": {
+            "en": "Contract Brewing",
+            "uk": "Контрактне пивоваріння",
+            "de": "Lohnbrauerei",
+            "ru": "Контрактное пивоварение",
+            "original": "Contract Brewing"
+          },
+          "wikidataId": "Q5165435",
+          "crossLinks": ["private-label-beer", "recipe-development"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/private-label-beer",
+          "slug": "private-label-beer",
+          "names": {
+            "en": "Private Label Beer",
+            "uk": "Пиво під приватною торговою маркою",
+            "de": "Eigenmarken-Bier",
+            "ru": "Пиво под частной торговой маркой",
+            "original": "Private Label Beer"
+          },
+          "crossLinks": ["contract-brewing", "recipe-development"]
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/recipe-development",
+          "slug": "recipe-development",
+          "names": {
+            "en": "Recipe Development",
+            "uk": "Розробка рецептури",
+            "de": "Rezepturentwicklung",
+            "ru": "Разработка рецептуры",
+            "original": "Recipe Development"
+          },
+          "crossLinks": ["contract-brewing", "private-label-beer"]
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/shipyard",
+      "slug": "shipyard",
+      "names": {
+        "en": "Shipyard",
+        "uk": "Судноверф",
+        "de": "Werft",
+        "ru": "Верфь",
+        "original": "Shipyard"
+      },
+      "altLabels": {
+        "en": ["ship building"],
+        "uk": ["корабельня"],
+        "de": ["schiffswerft"],
+        "ru": ["судоверфь"]
+      },
+      "osmTag": "industrial=shipyard",
+      "naceRef": "C30.11",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q190928",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ship-construction",
+          "slug": "ship-construction",
+          "names": {
+            "en": "Ship Construction",
+            "uk": "Будівництво суден",
+            "de": "Schiffbau",
+            "ru": "Судостроение",
+            "original": "Ship Construction"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ship-repair",
+          "slug": "ship-repair",
+          "names": {
+            "en": "Ship Repair",
+            "uk": "Ремонт суден",
+            "de": "Schiffsreparatur",
+            "ru": "Ремонт судов",
+            "original": "Ship Repair"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/ship-retrofit",
+          "slug": "ship-retrofit",
+          "names": {
+            "en": "Ship Retrofit",
+            "uk": "Модернізація суден",
+            "de": "Schiffsumrüstung",
+            "ru": "Модернизация судов",
+            "original": "Ship Retrofit"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/floating-structures",
+          "slug": "floating-structures",
+          "names": {
+            "en": "Floating Structures",
+            "uk": "Плавучі споруди",
+            "de": "Schwimmende Strukturen",
+            "ru": "Плавучие сооружения",
+            "original": "Floating Structures"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/aerospace-manufacturing",
+      "slug": "aerospace-manufacturing",
+      "names": {
+        "en": "Aerospace Manufacturing",
+        "uk": "Авіаційне виробництво",
+        "de": "Luftfahrtindustrie",
+        "ru": "Аэрокосмическое производство",
+        "original": "Aerospace Manufacturing"
+      },
+      "altLabels": {
+        "en": ["aviation manufacturing"],
+        "uk": ["авіабудування"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "industrial=aerospace",
+      "naceRef": "C30.30",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q45912",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/aircraft-parts",
+          "slug": "aircraft-parts",
+          "names": {
+            "en": "Aircraft Parts",
+            "uk": "Авіаційні компоненти",
+            "de": "Flugzeugteile",
+            "ru": "Авиационные компоненты",
+            "original": "Aircraft Parts"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/aircraft-assembly",
+          "slug": "aircraft-assembly",
+          "names": {
+            "en": "Aircraft Assembly",
+            "uk": "Збірка літаків",
+            "de": "Flugzeugmontage",
+            "ru": "Сборка самолётов",
+            "original": "Aircraft Assembly"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/maintenance-repair-overhaul",
+          "slug": "maintenance-repair-overhaul",
+          "names": {
+            "en": "Maintenance, Repair & Overhaul (MRO)",
+            "uk": "Технічне обслуговування та ремонт (MRO)",
+            "de": "Wartung, Reparatur und Überholung (MRO)",
+            "ru": "Техническое обслуживание и ремонт (MRO)",
+            "original": "Maintenance, Repair & Overhaul (MRO)"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/drone-manufacturing",
+          "slug": "drone-manufacturing",
+          "names": {
+            "en": "Drone Manufacturing",
+            "uk": "Виробництво безпілотників",
+            "de": "Drohnenherstellung",
+            "ru": "Производство дронов",
+            "original": "Drone Manufacturing"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/rail-vehicle-manufacturing",
+      "slug": "rail-vehicle-manufacturing",
+      "names": {
+        "en": "Rail Vehicle Manufacturing",
+        "uk": "Виробництво залізничного транспорту",
+        "de": "Schienenfahrzeugbau",
+        "ru": "Производство ж/д транспорта",
+        "original": "Rail Vehicle Manufacturing"
+      },
+      "altLabels": {
+        "en": ["train manufacturing"],
+        "uk": ["вагонобудування"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "industrial=rail_yard",
+      "naceRef": "C30.20",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1412596",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/locomotive-build",
+          "slug": "locomotive-build",
+          "names": {
+            "en": "Locomotive Building",
+            "uk": "Виробництво локомотивів",
+            "de": "Lokomotivbau",
+            "ru": "Производство локомотивов",
+            "original": "Locomotive Building"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/passenger-car-build",
+          "slug": "passenger-car-build",
+          "names": {
+            "en": "Passenger Car Building",
+            "uk": "Виробництво пасажирських вагонів",
+            "de": "Personenwagenbau",
+            "ru": "Производство пассажирских вагонов",
+            "original": "Passenger Car Building"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/freight-car-build",
+          "slug": "freight-car-build",
+          "names": {
+            "en": "Freight Car Building",
+            "uk": "Виробництво вантажних вагонів",
+            "de": "Güterwagenbau",
+            "ru": "Производство грузовых вагонов",
+            "original": "Freight Car Building"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/rail-maintenance",
+          "slug": "rail-maintenance",
+          "names": {
+            "en": "Rail Maintenance",
+            "uk": "Технічне обслуговування залізничного транспорту",
+            "de": "Bahnwartung",
+            "ru": "Обслуживание ж/д транспорта",
+            "original": "Rail Maintenance"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/chemical-manufacturing",
+      "slug": "chemical-manufacturing",
+      "names": {
+        "en": "Chemical Manufacturing",
+        "uk": "Хімічне виробництво",
+        "de": "Chemische Industrie",
+        "ru": "Химическое производство",
+        "original": "Chemical Manufacturing"
+      },
+      "altLabels": {
+        "en": ["chemicals plant"],
+        "uk": ["хімпром"],
+        "de": [],
+        "ru": ["химпром"]
+      },
+      "osmTag": "industrial=chemical",
+      "naceRef": "C20",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q740498",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/industrial-chemicals",
+          "slug": "industrial-chemicals",
+          "names": {
+            "en": "Industrial Chemicals",
+            "uk": "Промислова хімія",
+            "de": "Industriechemikalien",
+            "ru": "Промышленная химия",
+            "original": "Industrial Chemicals"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/specialty-chemicals",
+          "slug": "specialty-chemicals",
+          "names": {
+            "en": "Specialty Chemicals",
+            "uk": "Спеціалізована хімія",
+            "de": "Spezialchemikalien",
+            "ru": "Специализированная химия",
+            "original": "Specialty Chemicals"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-synthesis",
+          "slug": "custom-synthesis",
+          "names": {
+            "en": "Custom Synthesis",
+            "uk": "Синтез на замовлення",
+            "de": "Auftragssynthese",
+            "ru": "Синтез на заказ",
+            "original": "Custom Synthesis"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/coatings-paints",
+          "slug": "coatings-paints",
+          "names": {
+            "en": "Coatings & Paints",
+            "uk": "Покриття та фарби",
+            "de": "Beschichtungen & Farben",
+            "ru": "Покрытия и краски",
+            "original": "Coatings & Paints"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/pharma-manufacturing",
+      "slug": "pharma-manufacturing",
+      "names": {
+        "en": "Pharmaceutical Manufacturing",
+        "uk": "Фармацевтичне виробництво",
+        "de": "Pharmaindustrie",
+        "ru": "Фармацевтическое производство",
+        "original": "Pharmaceutical Manufacturing"
+      },
+      "altLabels": {
+        "en": ["pharma plant"],
+        "uk": ["фармацевтичне виробництво"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "industrial=pharmaceutical",
+      "naceRef": "C21",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q507443",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/api-manufacturing",
+          "slug": "api-manufacturing",
+          "names": {
+            "en": "API Manufacturing",
+            "uk": "Виробництво активних фармацевтичних інгредієнтів (API)",
+            "de": "Wirkstoffherstellung (API)",
+            "ru": "Производство активных фармацевтических ингредиентов (API)",
+            "original": "API Manufacturing"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/finished-dose-manufacturing",
+          "slug": "finished-dose-manufacturing",
+          "names": {
+            "en": "Finished Dose Manufacturing",
+            "uk": "Виробництво готових лікарських форм",
+            "de": "Herstellung fertiger Darreichungsformen",
+            "ru": "Производство готовых лекарственных форм",
+            "original": "Finished Dose Manufacturing"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/contract-pharma",
+          "slug": "contract-pharma",
+          "names": {
+            "en": "Contract Pharma Manufacturing",
+            "uk": "Контрактне фармацевтичне виробництво",
+            "de": "Pharmazeutische Auftragsfertigung",
+            "ru": "Контрактное фармацевтическое производство",
+            "original": "Contract Pharma Manufacturing"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/gmp-audit-readiness",
+          "slug": "gmp-audit-readiness",
+          "names": {
+            "en": "GMP Audit Readiness",
+            "uk": "Готовність до GMP-аудиту",
+            "de": "GMP-Audit-Bereitschaft",
+            "ru": "Готовность к GMP-аудиту",
+            "original": "GMP Audit Readiness"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/paper-mill",
+      "slug": "paper-mill",
+      "names": {
+        "en": "Paper Mill",
+        "uk": "Целюлозно-паперове підприємство",
+        "de": "Papierfabrik",
+        "ru": "Целлюлозно-бумажный комбинат",
+        "original": "Paper Mill"
+      },
+      "altLabels": {
+        "en": ["pulp mill"],
+        "uk": ["паперова фабрика"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "industrial=paper_mill",
+      "naceRef": "C17.11",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q1317219",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/newsprint-production",
+          "slug": "newsprint-production",
+          "names": {
+            "en": "Newsprint Production",
+            "uk": "Виробництво газетного паперу",
+            "de": "Zeitungspapierproduktion",
+            "ru": "Производство газетной бумаги",
+            "original": "Newsprint Production"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/packaging-board",
+          "slug": "packaging-board",
+          "names": {
+            "en": "Packaging Board",
+            "uk": "Пакувальний картон",
+            "de": "Verpackungskarton",
+            "ru": "Упаковочный картон",
+            "original": "Packaging Board"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/specialty-paper",
+          "slug": "specialty-paper",
+          "names": {
+            "en": "Specialty Paper",
+            "uk": "Спеціальний папір",
+            "de": "Spezialpapier",
+            "ru": "Специальная бумага",
+            "original": "Specialty Paper"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/pulp-production",
+          "slug": "pulp-production",
+          "names": {
+            "en": "Pulp Production",
+            "uk": "Виробництво целюлози",
+            "de": "Zellstoffproduktion",
+            "ru": "Производство целлюлозы",
+            "original": "Pulp Production"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/foundry",
+      "slug": "foundry",
+      "names": {
+        "en": "Foundry",
+        "uk": "Ливарня",
+        "de": "Gießerei",
+        "ru": "Литейный завод",
+        "original": "Foundry"
+      },
+      "altLabels": {
+        "en": ["metal foundry"],
+        "uk": ["ливарний цех"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "industrial=foundry",
+      "naceRef": "C24.51",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q220475",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/iron-casting",
+          "slug": "iron-casting",
+          "names": {
+            "en": "Iron Casting",
+            "uk": "Лиття чавуну",
+            "de": "Eisenguss",
+            "ru": "Литьё чугуна",
+            "original": "Iron Casting"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/aluminum-casting",
+          "slug": "aluminum-casting",
+          "names": {
+            "en": "Aluminum Casting",
+            "uk": "Лиття алюмінію",
+            "de": "Aluminiumguss",
+            "ru": "Литьё алюминия",
+            "original": "Aluminum Casting"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/steel-casting",
+          "slug": "steel-casting",
+          "names": {
+            "en": "Steel Casting",
+            "uk": "Лиття сталі",
+            "de": "Stahlguss",
+            "ru": "Литьё стали",
+            "original": "Steel Casting"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/custom-castings",
+          "slug": "custom-castings",
+          "names": {
+            "en": "Custom Castings",
+            "uk": "Виливки на замовлення",
+            "de": "Sonderguss",
+            "ru": "Отливки на заказ",
+            "original": "Custom Castings"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "https://taxonomy.mapko.net/v1/subcategory/electronics-manufacturing",
+      "slug": "electronics-manufacturing",
+      "names": {
+        "en": "Electronics Manufacturing",
+        "uk": "Електронне виробництво",
+        "de": "Elektronikfertigung",
+        "ru": "Электронное производство",
+        "original": "Electronics Manufacturing"
+      },
+      "altLabels": {
+        "en": ["EMS", "PCB assembly"],
+        "uk": ["електроніка"],
+        "de": [],
+        "ru": []
+      },
+      "osmTag": "industrial=electronics",
+      "naceRef": "C26",
+      "schemaOrgType": "LocalBusiness",
+      "wikidataId": "Q3247056",
+      "templates": [
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/pcb-assembly",
+          "slug": "pcb-assembly",
+          "names": {
+            "en": "PCB Assembly",
+            "uk": "Монтаж друкованих плат",
+            "de": "Leiterplattenbestückung",
+            "ru": "Сборка печатных плат",
+            "original": "PCB Assembly"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/contract-ems",
+          "slug": "contract-ems",
+          "names": {
+            "en": "Contract EMS",
+            "uk": "Контрактне виробництво електроніки (EMS)",
+            "de": "EMS-Auftragsfertigung",
+            "ru": "Контрактное производство электроники (EMS)",
+            "original": "Contract EMS"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/smt-production",
+          "slug": "smt-production",
+          "names": {
+            "en": "SMT Production",
+            "uk": "SMT-виробництво",
+            "de": "SMT-Produktion",
+            "ru": "SMT-производство",
+            "original": "SMT Production"
+          }
+        },
+        {
+          "@id": "https://taxonomy.mapko.net/v1/template/prototyping-electronics",
+          "slug": "prototyping-electronics",
+          "names": {
+            "en": "Electronics Prototyping",
+            "uk": "Прототипування електроніки",
+            "de": "Elektronik-Prototyping",
+            "ru": "Прототипирование электроники",
+            "original": "Electronics Prototyping"
+          }
+        }
+      ]
+    }
+  ]
+}
