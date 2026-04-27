@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate taxonomy
+        run: node scripts/validate.mjs
+
+      - name: Regenerate taxonomy.jsonld (smoke test)
+        run: node scripts/build-jsonld.mjs
+
+      - name: Coverage report
+        run: node scripts/coverage-report.mjs
