@@ -38,6 +38,7 @@
   "scripts": {
     "build:jsonld": "node scripts/build-jsonld.mjs",
     "validate": "node scripts/validate.mjs",
+    "coverage": "node scripts/coverage-report.mjs",
     "prepublishOnly": "npm run validate && npm run build:jsonld"
   },
   "keywords": [
