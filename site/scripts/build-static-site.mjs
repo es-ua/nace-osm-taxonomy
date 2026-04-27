@@ -20,6 +20,7 @@
  *
  * Output layout:
  *   dist/index.html                    browsable landing + search (Phase 3)
+ *   dist/robots.txt                    crawl directives + Sitemap pointer
  *   dist/v1/index.jsonld               whole taxonomy
  *   dist/v1/context.jsonld             @context file
  *   dist/v1/category/<slug>.jsonld     one per category
@@ -823,6 +824,20 @@ function main() {
 
 /v1/template/*
   Link: <${CONTEXT_URL}>; rel="http://www.w3.org/ns/json-ld#context"
+`,
+  );
+
+  // ── robots.txt ──
+  // Allow all bots. Explicit Allow on /v1/*.jsonld is defensive — some
+  // crawlers default-skip non-HTML extensions. Sitemap line is what
+  // points crawlers at the 1700+ JSON-LD endpoints.
+  writeFileSync(
+    join(outRoot, 'robots.txt'),
+    `User-agent: *
+Allow: /
+Allow: /v1/
+
+Sitemap: ${V1}/sitemap.xml
 `,
   );
 
