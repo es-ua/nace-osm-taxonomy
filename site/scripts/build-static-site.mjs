@@ -691,7 +691,7 @@ import tax from
       return;
     }
     cats.style.display = 'none';
-    res.style.display = '';
+    res.style.display = 'block';
     if (!hits.length) {
       res.innerHTML = '<div style="padding:.75rem 1rem;color:var(--g5)">' + UI[curLang()].no_results + '</div>';
       return;
