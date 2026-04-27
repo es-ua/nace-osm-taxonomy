@@ -21,12 +21,14 @@
  * Output layout:
  *   dist/index.html                    browsable landing + search (Phase 3)
  *   dist/robots.txt                    crawl directives + Sitemap pointer
+ *   dist/sitemap.xml                   sitemap-index → pages + v1
+ *   dist/sitemap-pages.xml             landing in 4 langs with hreflang
  *   dist/v1/index.jsonld               whole taxonomy
  *   dist/v1/context.jsonld             @context file
  *   dist/v1/category/<slug>.jsonld     one per category
  *   dist/v1/subcategory/<slug>.jsonld  one per subcategory
  *   dist/v1/template/<slug>.jsonld     one per template
- *   dist/v1/sitemap.xml                for crawlers
+ *   dist/v1/sitemap.xml                for crawlers (JSON-LD endpoints)
  *   dist/v1/index.html                 redirect to /
  *   dist/_headers                      Cloudflare Pages response headers
  */
@@ -78,6 +80,7 @@ function loadSource() {
   const categoriesDir = join(root, 'categories');
   const contextFile = join(root, 'context.jsonld');
   const versionFile = join(root, 'VERSION');
+  const changelogFile = join(root, 'CHANGELOG.md');
   if (!existsSync(categoriesDir)) throw new Error(`categories dir not found: ${categoriesDir}`);
 
   const version = existsSync(versionFile)
@@ -88,8 +91,19 @@ function loadSource() {
   const categories = categoryFiles.map((f) =>
     JSON.parse(readFileSync(join(categoriesDir, f), 'utf8')),
   );
-  console.log(`Loading taxonomy v${version} from ${root}`);
-  return { version, context, categories };
+  // Pull lastmod date from the most recent CHANGELOG entry. Format expected:
+  //   ## [1.12.0] — 2026-04-20    (em-dash) or - or — between version and date.
+  // This keeps sitemap deterministic — bumps with each version, not with each
+  // CI rebuild — matching the precedent set by removing generatedAt earlier.
+  let lastmod = null;
+  if (existsSync(changelogFile)) {
+    const text = readFileSync(changelogFile, 'utf8');
+    const m = text.match(/^##\s*\[[^\]]+\]\s*[—\-–]\s*(\d{4}-\d{2}-\d{2})/m);
+    if (m) lastmod = m[1];
+  }
+  if (!lastmod) lastmod = new Date().toISOString().slice(0, 10);
+  console.log(`Loading taxonomy v${version} from ${root} (lastmod=${lastmod})`);
+  return { version, context, categories, lastmod };
 }
 
 function ensureDir(p) {
@@ -731,7 +745,7 @@ import tax from
 }
 
 function main() {
-  const { version, context, categories } = loadSource();
+  const { version, context, categories, lastmod } = loadSource();
 
   ensureDir(outV1);
   ensureDir(join(outV1, 'category'));
@@ -791,13 +805,55 @@ function main() {
     }
   }
 
-  // ── sitemap.xml ──
-  const sitemap =
+  // ── /v1/sitemap.xml — JSON-LD endpoints + landing redirect ──
+  // <lastmod> is the date of the most recent CHANGELOG entry, so the value
+  // changes only on real content bumps (matches the deterministic-build
+  // policy from a7a786b).
+  const v1Sitemap =
     `<?xml version="1.0" encoding="UTF-8"?>\n` +
     `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-    urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n') +
+    urls.map((u) => `  <url><loc>${u}</loc><lastmod>${lastmod}</lastmod></url>`).join('\n') +
     `\n</urlset>\n`;
-  writeFileSync(join(outV1, 'sitemap.xml'), sitemap);
+  writeFileSync(join(outV1, 'sitemap.xml'), v1Sitemap);
+
+  // ── /sitemap-pages.xml — landing page in 4 languages with hreflang ──
+  // Per Google's docs, every alternate language URL must also appear as its
+  // own <url> entry, each cross-referencing all alternates (the "reciprocal"
+  // rule). x-default points at the canonical EN URL.
+  const langs = ['en', 'uk', 'de', 'ru'];
+  const langUrl = (l) => l === 'en' ? `${BASE_URL}/` : `${BASE_URL}/?lang=${l}`;
+  const altLinks = langs
+    .map((l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${langUrl(l)}"/>`)
+    .concat([`    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/"/>`])
+    .join('\n');
+  const pageEntries = langs.map((l) =>
+    `  <url>\n` +
+    `    <loc>${langUrl(l)}</loc>\n` +
+    `    <lastmod>${lastmod}</lastmod>\n` +
+    `    <changefreq>weekly</changefreq>\n` +
+    `    <priority>1.0</priority>\n` +
+    altLinks + '\n' +
+    `  </url>`,
+  ).join('\n');
+  const pagesSitemap =
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n` +
+    `        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
+    pageEntries + `\n` +
+    `</urlset>\n`;
+  writeFileSync(join(outRoot, 'sitemap-pages.xml'), pagesSitemap);
+
+  // ── /sitemap.xml — root sitemap index, points at the two real sitemaps ──
+  // Google looks at /sitemap.xml first; the root index is the canonical
+  // entrypoint and the existing /v1/sitemap.xml stays at its old URL for
+  // backward compatibility with anyone who already linked it.
+  const sitemapIndex =
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    `  <sitemap><loc>${BASE_URL}/sitemap-pages.xml</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
+    `  <sitemap><loc>${V1}/sitemap.xml</loc><lastmod>${lastmod}</lastmod></sitemap>\n` +
+    `</sitemapindex>\n`;
+  writeFileSync(join(outRoot, 'sitemap.xml'), sitemapIndex);
 
   // ── dist/v1/index.html → redirect to landing ──
   writeFileSync(
@@ -828,16 +884,17 @@ function main() {
   );
 
   // ── robots.txt ──
-  // Allow all bots. Explicit Allow on /v1/*.jsonld is defensive — some
-  // crawlers default-skip non-HTML extensions. Sitemap line is what
-  // points crawlers at the 1700+ JSON-LD endpoints.
+  // Allow all bots. Explicit Allow on /v1/ is defensive — some crawlers
+  // default-skip non-HTML extensions like .jsonld. Sitemap directive
+  // points at the root sitemap index, which references both the landing
+  // sitemap (with hreflang alternates) and the JSON-LD endpoint sitemap.
   writeFileSync(
     join(outRoot, 'robots.txt'),
     `User-agent: *
 Allow: /
 Allow: /v1/
 
-Sitemap: ${V1}/sitemap.xml
+Sitemap: ${BASE_URL}/sitemap.xml
 `,
   );
 
