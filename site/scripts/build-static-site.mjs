@@ -25,7 +25,9 @@
  *   dist/v1/category/<slug>.jsonld     one per category
  *   dist/v1/subcategory/<slug>.jsonld  one per subcategory
  *   dist/v1/template/<slug>.jsonld     one per template
- *   dist/v1/sitemap.xml                for crawlers
+ *   dist/sitemap.xml                   crawler sitemap (root — standard location)
+ *   dist/v1/sitemap.xml                same sitemap mirrored under /v1 (back-compat)
+ *   dist/robots.txt                    points crawlers at /sitemap.xml
  *   dist/v1/index.html                 redirect to /
  *   dist/_headers                      Cloudflare Pages response headers
  */
@@ -260,7 +262,7 @@ footer a:hover{color:var(--blue)}
   <a class="logo" href="/"><em>NACE-OSM</em> Taxonomy</a>
   <div class="nav-links">
     <a href="/v1/index.jsonld">JSON-LD</a>
-    <a href="/v1/sitemap.xml">Sitemap</a>
+    <a href="/sitemap.xml">Sitemap</a>
     <a href="https://github.com/es-ua/nace-osm-taxonomy">GitHub</a>
     <a href="https://www.npmjs.com/package/@mapko/nace-osm-taxonomy">npm</a>
   </div>
@@ -352,7 +354,8 @@ import tax from
 /v1/category/&lt;slug&gt;.jsonld
 /v1/subcategory/&lt;slug&gt;.jsonld
 /v1/template/&lt;slug&gt;.jsonld
-/v1/sitemap.xml</pre>
+/sitemap.xml
+/robots.txt</pre>
       </div>
     </div>
   </div>
@@ -430,7 +433,7 @@ function main() {
   });
 
   // ── per-node files + sitemap URLs ──
-  const urls = [`${V1}/`];
+  const urls = [`${BASE_URL}/`, `${V1}/`];
   let categoryCount = 0;
   let subcategoryCount = 0;
   let templateCount = 0;
@@ -470,12 +473,21 @@ function main() {
   }
 
   // ── sitemap.xml ──
+  // Written at the root (standard crawler location) and mirrored under /v1
+  // for back-compat with the nav link in the landing page.
   const sitemap =
     `<?xml version="1.0" encoding="UTF-8"?>\n` +
     `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
     urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n') +
     `\n</urlset>\n`;
+  writeFileSync(join(outRoot, 'sitemap.xml'), sitemap);
   writeFileSync(join(outV1, 'sitemap.xml'), sitemap);
+
+  // ── robots.txt ──
+  writeFileSync(
+    join(outRoot, 'robots.txt'),
+    `User-agent: *\nAllow: /\n\nSitemap: ${BASE_URL}/sitemap.xml\n`,
+  );
 
   // ── dist/v1/index.html → redirect to landing ──
   writeFileSync(
