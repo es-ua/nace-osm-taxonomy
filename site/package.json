@@ -1,0 +1,12 @@
+{
+  "name": "@mapko/taxonomy-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static JSON-LD publication for taxonomy.mapko.net (Phase 2 of the taxonomy publication plan)",
+  "scripts": {
+    "build": "node scripts/build-static-site.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
